@@ -1,22 +1,23 @@
 Phundament 3 App
 ================
 
+
+
 ```
 cd phundament-app
 php composer.phar install
-protected/extensions/phundament/p3install/bin/setup-p3.sh /path/to/yii/framework/yiic
+p3/setup.sh /path/to/yii/framework/yiic
 ```
 
 [index.php]
-
 ```
-$config=dirname(__FILE__).'/protected/extensions/phundament/p3install/config/main.php';
+$config=dirname(__FILE__).'/p3/config.php';
 ```
 
 
 
-
-
+Troubleshooting
+---------------
 ```
 php composer.phar self-update
 ```
