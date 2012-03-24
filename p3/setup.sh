@@ -33,7 +33,7 @@ else
     echo "External yiic command not specified, skipping webapp stage.";
 fi
 
-baseDir="`dirname $0`"
+baseDir="`dirname $0`/../protected"
 pushd $baseDir  > /dev/null
 
 echo ""
