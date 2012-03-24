@@ -24,7 +24,7 @@ Get the packages with composer
 php composer.phar install
 ```
 
-Run the setup script, if you do not have a copy of Yii Framwork (>1.1.10), download it from http://www.yiiframework.com/download/
+Run the setup script, if you do not have a copy of Yii Framework (>1.1.10), download it from http://www.yiiframework.com/download/
 
 ```
 ./p3/setup.sh /path/to/yii/framework/yiic
