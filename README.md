@@ -40,8 +40,9 @@ $config=dirname(__FILE__).'/p3/config.php';
  (*) Tested on Mac OS X (Linux)
  
  
- Troubleshooting
- ---------------
+Troubleshooting
+---------------
  
  * Make sure you have git and hg installed
+ * zlib extension or unzip available on your PATH
  * php -d allow_url_fopen=1 -d memory_limit=64M composer.phar update
