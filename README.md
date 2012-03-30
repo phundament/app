@@ -46,3 +46,4 @@ Troubleshooting
  * Make sure you have git and hg installed
  * zlib extension or unzip available on your PATH
  * php -d allow_url_fopen=1 -d memory_limit=64M composer.phar update
+ * Make sure you've OpenSSL Support enabled in PHP when (https download) and git (http://git-scm.com/) and hg (http://mercurial.selenic.com/) installed 
