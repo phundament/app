@@ -26,9 +26,19 @@ php composer.phar install
 
 Run the setup script, if you do not have a copy of Yii Framework (>1.1.10), download it from http://www.yiiframework.com/download/
 
+#### *nix
 ```
-./protected/setup.sh /path/to/yii/framework/yiic
+./protected/setup-p3.sh /path/to/yii/framework/yiic
 ```
+
+#### Windows
+```
+cd \path\to\phundament-app
+C:\path\to\yii\framework\yiic.bat webapp .
+cd protected
+setup-p3.bat
+```
+
 
 Edit *index.php* and include only the p3.php config file. This will use the bootstrap theme, along with a user-interface for Phundament.
 
