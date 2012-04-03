@@ -46,4 +46,5 @@ Troubleshooting
  * Make sure you have git (http://git-scm.com/) and hg (http://mercurial.selenic.com/) installed
  * zlib extension or unzip available on your PATH
  * OpenSSL Support enabled in PHP
- * ```php -d allow_url_fopen=1 -d memory_limit=64M composer.phar update``` 
+ * ```php -d allow_url_fopen=1 -d memory_limit=64M composer.phar update```
+ * Tested on Windows with WAMPSERVER 2.2 (PHP 5.3.10)
