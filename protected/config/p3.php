@@ -16,7 +16,8 @@ $p3Config = array(
 		'log',
 		'langHandler',
 		'bootstrap',
-		'lessCompiler'),
+#		'lessCompiler' // you need to run 'composer.phar update --install-suggests' before uncommenting
+),
 	// autoloading model and component classes
 	'import' => array(
 		'application.models.*',
