@@ -112,6 +112,16 @@
 		"type": "zip"
 	    }
 	}
+    },{ 
+	"type": "package",
+	"package": {
+	    "name": "twitter/bootstrap",
+	    "version": "2.0.1",
+	    "dist": {
+		"url": "https://github.com/twitter/bootstrap/zipball/v2.0.1",
+		"type": "zip"
+	    }
+	}
     }
     ],
     "require": {
@@ -123,10 +133,8 @@
 	"phundament/p3pages": "master",
 	"phundament/p3media": "master",
 	"phundament/gii-template-collection": "master",
-	"phundament/lessii": "master",
 	"phundament/themes/p3bootstrap": "master",
 	"yiiext": "0.0.1",
-	"crisu83/yii-less": "0.0.1",
 	"crisu83/yii-bootstrap": "0.0.1"
     }
 }

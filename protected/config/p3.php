@@ -5,7 +5,7 @@
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
 
-$applicationDirectory = realpath(dirname(__FILE__). DIRECTORY_SEPARATOR . '..' );
+$applicationDirectory = realpath(dirname(__FILE__). DIRECTORY_SEPARATOR . '..' .  DIRECTORY_SEPARATOR );
 
 $p3Config = array(
 	'basePath' => $applicationDirectory,
@@ -26,6 +26,7 @@ $p3Config = array(
 		
 		'ext.crisu83.yii-rights.components.*', // TODO - Hack: needed, so rights can reside in extensions
 		'ext.phundament.p3extensions.widgets.userflash.EUserFlash', // flash messages		
+		'ext.phundament.gtc.components.*', // TODO: Hack, because of modules in extensions???
 		'ext.phundament.p3widgets.components.*', // TODO: Hack, because of modules in extensions???
 		'ext.phundament.p3pages.models.*', // TODO: Hack, because of modules in extensions???
 		'ext.mishamx.yii-user.models.*', // TODO: Hack, because of modules in extensions???
@@ -244,9 +245,9 @@ $p3Config = array(
 		),
 		'lessCompiler' => array(
 			'class' => 'ext.crisu83.yii-less.components.LessCompiler',
-			//'autoCompile' => true,
+			//'autoCompile' => true, // You may need to set xdebug.max_nesting_level = 1024
 			'paths' => array(
-				'protected/extensions/lessii/translations/blueprint-bootstrap.less' => 'protected/extensions/phundament/themes/p3bootstrap/css/blueprint-bootstrap.css',
+				'protected/extensions/phundament/themes/p3bootstrap/less/p3.less' => 'protected/extensions/phundament/themes/p3bootstrap/css/p3.css',
 			),
 		),
 		'bootstrap' => array(
