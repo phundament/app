@@ -132,9 +132,13 @@
 	"phundament/p3widgets": "master",
 	"phundament/p3pages": "master",
 	"phundament/p3media": "master",
-	"phundament/gii-template-collection": "master",
-	"phundament/themes/p3bootstrap": "master",
+	"phundament/themes/p3bootstrap": "master"
+    },
+    "recommend": {
 	"yiiext": "0.0.1",
-	"crisu83/yii-bootstrap": "0.0.1"
+	"phundament/gii-template-collection": "master"	
+    },
+    "suggest": {
+	"phundament/lessii": "master"
     }
 }
