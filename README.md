@@ -21,8 +21,16 @@ cd phundament-app
 Get the packages with composer
 
 ```
-php composer.phar install
+php composer.phar update
 ```
+
+If you want extended LESS support, choose
+
+```
+php composer.phar update --install-suggests
+```
+
+
 
 Run the setup script, if you do not have a copy of Yii Framework (>1.1.10), download it from http://www.yiiframework.com/download/
 
