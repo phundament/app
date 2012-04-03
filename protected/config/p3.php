@@ -5,7 +5,7 @@
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
 
-$applicationDirectory = realpath(dirname(__FILE__). DIRECTORY_SEPARATOR . '..' .  DIRECTORY_SEPARATOR .'protected');
+$applicationDirectory = realpath(dirname(__FILE__). DIRECTORY_SEPARATOR . '..' );
 
 $p3Config = array(
 	'basePath' => $applicationDirectory,
