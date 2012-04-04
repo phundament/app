@@ -42,9 +42,6 @@
     },{
 	"type":"vcs",
 	"url": "https://github.com/schmunk42/lessii.git"
-    },{
-	"type":"vcs",
-	"url": "https://github.com/schmunk42/jQuery-File-Upload.git"
     },{            
 	"type": "package",
 	"package": {
@@ -122,6 +119,16 @@
 	    "version": "2.0.1",
 	    "dist": {
 		"url": "https://github.com/twitter/bootstrap/zipball/v2.0.1",
+		"type": "zip"
+	    }
+	}
+    },{ 
+	"type": "package",
+	"package": {
+	    "name": "phundament/jquery-file-upload",
+	    "version": "0.0.1",
+	    "dist": {
+		"url": "https://nodeload.github.com/schmunk42/jQuery-File-Upload/zipball/5e08d974a080a931dda654086a1391e75cbda99f",
 		"type": "zip"
 	    }
 	}
