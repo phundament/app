@@ -42,6 +42,9 @@
     },{
 	"type":"vcs",
 	"url": "https://github.com/schmunk42/lessii.git"
+    },{
+	"type":"vcs",
+	"url": "https://github.com/schmunk42/jQuery-File-Upload.git"
     },{            
 	"type": "package",
 	"package": {
