@@ -45,6 +45,21 @@
     },{            
 	"type": "package",
 	"package": {
+	    "name": "phundament/jquery-file-upload",
+	    "version": "0.0.1",
+	    "source": {
+		"url": "https://github.com/schmunk42/jQuery-File-Upload.git",
+		"type": "git",
+		"reference": "5e08d974a080a931dda654086a1391e75cbda99f"
+	    },
+	    "dist": {
+		"type": "zip",
+		"url": "https://nodeload.github.com/schmunk42/jQuery-File-Upload/zipball/5e08d974a080a931dda654086a1391e75cbda99f"
+	    }
+	}
+    },{            
+	"type": "package",
+	"package": {
 	    "name": "yiiext",
 	    "version": "0.0.1",
 	    "source": {
