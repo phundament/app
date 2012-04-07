@@ -137,7 +137,17 @@
                 "type": "zip"
             }
         }
-    },{
+    },{ 
+	    "type": "package",
+    	"package": {
+	        "name": "phundament/jquery-file-upload",
+	        "version": "0.0.1",
+    	    "dist": {
+    	    	"url": "https://nodeload.github.com/schmunk42/jQuery-File-Upload/zipball/5e08d974a080a931dda654086a1391e75cbda99f",
+		        "type": "zip"
+	        }
+    	}
+	},{
         "type": "package",
         "package": {
             "name": "yii",
