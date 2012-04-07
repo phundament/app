@@ -1,0 +1,65 @@
+{
+    "hash": "336af2cddbdbd9f04e3847d332585d0c",
+    "packages": [
+        {
+            "package": "crisu83/yii-bootstrap",
+            "version": "0.0.1"
+        },
+        {
+            "package": "crisu83/yii-rights",
+            "version": "0.0.1"
+        },
+        {
+            "package": "mishamx/yii-user",
+            "version": "0.3.107"
+        },
+        {
+            "package": "phundament/gii-template-collection",
+            "version": "dev-master",
+            "source-reference": "233efe309923891d3dd0f93465f2d1294d8b5d34"
+        },
+        {
+            "package": "phundament/jquery-file-upload",
+            "version": "0.0.1"
+        },
+        {
+            "package": "phundament/p3admin",
+            "version": "dev-master",
+            "source-reference": "db24fedbd145a7b1f2c631e952d146c3ee55505d"
+        },
+        {
+            "package": "phundament/p3extensions",
+            "version": "dev-master",
+            "source-reference": "148f3c8488ba9e718c79d37847025de267481718"
+        },
+        {
+            "package": "phundament/p3media",
+            "version": "dev-master",
+            "source-reference": "1ea4aab28a36de1b800daf5be06d5d8cc7fefc49"
+        },
+        {
+            "package": "phundament/p3pages",
+            "version": "dev-master",
+            "source-reference": "4fb31bfe25c3492e9c5381a91609bf1159806f9e"
+        },
+        {
+            "package": "phundament/p3widgets",
+            "version": "dev-master",
+            "source-reference": "60203f731c2882ae51baa0e9b2973b3d71fa723e"
+        },
+        {
+            "package": "phundament/themes/p3bootstrap",
+            "version": "dev-master",
+            "source-reference": "295c1abc00012028743644df76717a0c4a699799"
+        },
+        {
+            "package": "yii",
+            "version": "1.1.10"
+        },
+        {
+            "package": "yiiext",
+            "version": "0.0.1"
+        }
+    ],
+    "aliases": []
+}
