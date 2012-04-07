@@ -59,8 +59,10 @@ class P3Setup {
                 break;
             case "phundament/p3media":
                 require_once(dirname(__FILE__) . '/../protected/yiic.php');
-                @chmod(dirname(__FILE__) . '../data/p3media', 0777);
-                @chmod(dirname(__FILE__) . '../data/p3media-import', 0777);
+                @mkdir(dirname(__FILE__) . '/../data/p3media', 0777);
+                @mkdir(dirname(__FILE__) . '/../data/p3media-import', 0777);
+                @chmod(dirname(__FILE__) . '/../data/p3media', 0777);
+                @chmod(dirname(__FILE__) . '/../data/p3media-import', 0777);
                 $args = array('yiic', 'migrate', '--migrationPath=ext.phundament.p3media.migrations', '--migrationTable=migration_module_p3media', '--interactive=0');
                 break;
             case "phundament/p3widgets":
