@@ -1,5 +1,5 @@
 {
-    "hash": "336af2cddbdbd9f04e3847d332585d0c",
+    "hash": "ebdf372e548c62884fd01538532b04ff",
     "packages": [
         {
             "package": "crisu83/yii-bootstrap",
@@ -11,7 +11,8 @@
         },
         {
             "package": "mishamx/yii-user",
-            "version": "0.3.107"
+            "version": "master",
+            "source-reference": "02ba263c64172abeef2e433223e369e7e220e9c1"
         },
         {
             "package": "phundament/gii-template-collection",

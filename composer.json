@@ -121,10 +121,15 @@
         "type": "package",
         "package": {
             "name": "mishamx/yii-user",
-            "version": "0.3.107",
+            "version": "master",
+            "source": {
+                "url": "https://github.com/schmunk42/yii-user.git",
+                "type": "git",
+                "reference": "02ba263c64172abeef2e433223e369e7e220e9c1"
+            },
             "dist": {
-                "url": "http://www.yiiframework.com/extension/yii-user/files/yii-user-0.3-r107.zip",
-                "type": "zip"
+                "type": "zip",
+                "url": "https://nodeload.github.com/schmunk42/yii-user/zipball/02ba263c64172abeef2e433223e369e7e220e9c1"
             }
         }
     },{
@@ -137,7 +142,7 @@
                 "type": "zip"
             }
         }
-    },{ 
+    },{
 	    "type": "package",
     	"package": {
 	        "name": "phundament/jquery-file-upload",
@@ -162,7 +167,7 @@
     "require": {
         "php": ">=5.3.2",
         "crisu83/yii-rights": "0.0.1",
-        "mishamx/yii-user": "0.3.107",
+        "mishamx/yii-user": "master",
         "phundament/p3admin": "master",
         "phundament/p3widgets": "master",
         "phundament/p3pages": "master",
