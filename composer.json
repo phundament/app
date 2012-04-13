@@ -165,30 +165,20 @@
     }
     ],
     "require": {
-        "php": ">=5.3.2",
-        "crisu83/yii-rights": "0.0.1",
-        "mishamx/yii-user": "master",
-        "phundament/p3admin": "master",
-        "phundament/p3widgets": "master",
-        "phundament/p3pages": "master",
-        "phundament/p3media": "master",
-        "phundament/themes/p3bootstrap": "master",
-        "yii": "1.1.10"
-    },
-    "recommend": {
-        "yiiext": "0.0.1",
-        "phundament/gii-template-collection": "master"
-    },
-    "suggest": {
-        "phundament/lessii": "master"
-    },
-    "autoload": {
-        "psr-0": {"install": "./"}
-    },
-    "scripts": {
-        "pre-install-cmd": "install\\P3Setup::preInstall",
-        "post-package-install": [
-            "install\\P3Setup::postPackageInstall"
-        ]
+        "crisu83/yii-rights": "*",
+        "crisu83/yii-bootstrap": "*",
+        "crisu83/yii-less": "*",
+        "mishamx/yii-user": "*",
+        "phundament/p3admin": "*",
+        "phundament/p3widgets": "*",
+        "phundament/p3pages": "*",
+        "phundament/p3media": "*",
+        "phundament/themes/p3bootstrap": "*",
+        "phundament/p3extensions": "*",
+        "phundament/jquery-file-upload": "*",
+        "yii": "*",
+        "yiiext": "*",
+        "phundament/gii-template-collection": "*",
+        "phundament/lessii": "*"
     }
 }
