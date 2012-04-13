@@ -1,5 +1,5 @@
 {
-    "hash": "ebdf372e548c62884fd01538532b04ff",
+    "hash": "0f6e30e8048ea7e8140834bd82ab2ad1",
     "packages": [
         {
             "package": "crisu83/yii-bootstrap",
@@ -36,7 +36,7 @@
         {
             "package": "phundament/p3media",
             "version": "dev-master",
-            "source-reference": "1ea4aab28a36de1b800daf5be06d5d8cc7fefc49"
+            "source-reference": "fe9f9d10da5112732394142af40be2bd274e0cd6"
         },
         {
             "package": "phundament/p3pages",
@@ -46,7 +46,7 @@
         {
             "package": "phundament/p3widgets",
             "version": "dev-master",
-            "source-reference": "60203f731c2882ae51baa0e9b2973b3d71fa723e"
+            "source-reference": "8d37209e8c9f052fdba65ec14652f0ffa6a0c764"
         },
         {
             "package": "phundament/themes/p3bootstrap",

@@ -19,165 +19,24 @@
     {
         "packagist": false
     },{
-        "type":"vcs",
-        "url": "https://github.com/schmunk42/p3extensions.git"
-    },{
-        "type":"vcs",
-        "url": "https://github.com/schmunk42/p3admin.git"
-    },{
-        "type":"vcs",
-        "url": "https://github.com/schmunk42/p3media.git"
-    },{
-        "type":"vcs",
-        "url": "https://github.com/schmunk42/p3widgets.git"
-    },{
-        "type":"vcs",
-        "url": "https://github.com/schmunk42/p3pages.git"
-    },{
-        "type":"vcs",
-        "url": "https://github.com/schmunk42/p3bootstrap.git"
-    },{
-        "type":"vcs",
-        "url": "https://github.com/schmunk42/gii-template-collection.git"
-    },{
-        "type":"vcs",
-        "url": "https://github.com/schmunk42/lessii.git"
-    },{
-        "type": "package",
-        "package": {
-            "name": "phundament/jquery-file-upload",
-            "version": "0.0.1",
-            "source": {
-                "url": "https://github.com/schmunk42/jQuery-File-Upload.git",
-                "type": "git",
-                "reference": "5e08d974a080a931dda654086a1391e75cbda99f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://nodeload.github.com/schmunk42/jQuery-File-Upload/zipball/5e08d974a080a931dda654086a1391e75cbda99f"
-            }
-        }
-    },{
-        "type": "package",
-        "package": {
-            "name": "yiiext",
-            "version": "0.0.1",
-            "source": {
-                "url": "https://github.com/schmunk42/yiiext.git",
-                "type": "git",
-                "reference": "b0806f876caac7ccb71b97a778219591d6be2a64"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://nodeload.github.com/schmunk42/yiiext/zipball/b0806f876caac7ccb71b97a778219591d6be2a64"
-            }
-        }
-    },{
-        "type": "package",
-        "package": {
-            "name": "crisu83/yii-less",
-            "version": "0.0.1",
-            "source": {
-                "url": "https://bitbucket.org/Crisu83/yii-less",
-                "type": "hg",
-                "reference": "045c79d2943e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://bitbucket.org/Crisu83/yii-less/get/045c79d2943e.zip"
-            }
-        }
-    },{
-        "type": "package",
-        "package": {
-            "name": "crisu83/yii-bootstrap",
-            "version": "0.0.1",
-            "source": {
-                "url": "https://bitbucket.org/Crisu83/yii-bootstrap",
-                "type": "hg",
-                "reference": "4f3ce0ae441e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://bitbucket.org/Crisu83/yii-bootstrap/get/4f3ce0ae441e.zip"
-            }
-        }
-    },{
-        "type": "package",
-        "package": {
-            "name": "crisu83/yii-rights",
-            "version": "0.0.1",
-            "source": {
-                "url": "https://bitbucket.org/Crisu83/yii-rights",
-                "type": "hg",
-                "reference": "437267d8b1ed"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://bitbucket.org/Crisu83/yii-rights/get/437267d8b1ed.zip"
-            }
-        }
-    },{
-        "type": "package",
-        "package": {
-            "name": "mishamx/yii-user",
-            "version": "master",
-            "source": {
-                "url": "https://github.com/schmunk42/yii-user.git",
-                "type": "git",
-                "reference": "02ba263c64172abeef2e433223e369e7e220e9c1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://nodeload.github.com/schmunk42/yii-user/zipball/02ba263c64172abeef2e433223e369e7e220e9c1"
-            }
-        }
-    },{
-        "type": "package",
-        "package": {
-            "name": "twitter/bootstrap",
-            "version": "2.0.1",
-            "dist": {
-                "url": "https://github.com/twitter/bootstrap/zipball/v2.0.1",
-                "type": "zip"
-            }
-        }
-    },{
-	    "type": "package",
-    	"package": {
-	        "name": "phundament/jquery-file-upload",
-	        "version": "0.0.1",
-    	    "dist": {
-    	    	"url": "https://nodeload.github.com/schmunk42/jQuery-File-Upload/zipball/5e08d974a080a931dda654086a1391e75cbda99f",
-		        "type": "zip"
-	        }
-    	}
-	},{
-        "type": "package",
-        "package": {
-            "name": "yii",
-            "version": "1.1.10",
-            "dist": {
-                "url": "http://yii.googlecode.com/files/yii-1.1.10.r3566.zip",
-                "type": "zip"
-            }
-        }
+        "type":"composer",
+        "url": "http://packages.phundament.com"
     }
     ],
     "require": {
         "php": ">=5.3.2",
         "crisu83/yii-rights": "0.0.1",
-        "mishamx/yii-user": "master",
-        "phundament/p3admin": "master",
-        "phundament/p3widgets": "master",
-        "phundament/p3pages": "master",
-        "phundament/p3media": "master",
-        "phundament/themes/p3bootstrap": "master",
+        "mishamx/yii-user": "dev-master",
+        "phundament/p3admin": "dev-master",
+        "phundament/p3widgets": "dev-master",
+        "phundament/p3pages": "dev-master",
+        "phundament/p3media": "dev-master",
+        "phundament/themes/p3bootstrap": "dev-master",
         "yii": "1.1.10"
     },
     "recommend": {
         "yiiext": "0.0.1",
-        "phundament/gii-template-collection": "master"
+        "phundament/gii-template-collection": "dev-master"
     },
     "suggest": {
         "phundament/lessii": "master"
