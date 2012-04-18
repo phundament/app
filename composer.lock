@@ -1,5 +1,5 @@
 {
-    "hash": "0f6e30e8048ea7e8140834bd82ab2ad1",
+    "hash": "50869bac10bb176f5e8fb81624ae95a0",
     "packages": [
         {
             "package": "crisu83/yii-bootstrap",
@@ -60,6 +60,21 @@
         {
             "package": "yiiext",
             "version": "0.0.1"
+        }
+    ],
+    "packages-dev": [
+        {
+            "package": "crisu83/yii-less",
+            "version": "0.0.1"
+        },
+        {
+            "package": "phundament/lessii",
+            "version": "dev-master",
+            "source-reference": "8cc40ff367c80b93cc6d16acd81dc11292816a5e"
+        },
+        {
+            "package": "twitter/bootstrap",
+            "version": "2.0.1"
         }
     ],
     "aliases": []

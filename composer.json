@@ -32,14 +32,12 @@
         "phundament/p3pages": "dev-master",
         "phundament/p3media": "dev-master",
         "phundament/themes/p3bootstrap": "dev-master",
-        "yii": "1.1.10"
+        "yii": "1.1.10",
+        "yiiext": "0.0.1"
     },
-    "recommend": {
-        "yiiext": "0.0.1",
-        "phundament/gii-template-collection": "dev-master"
-    },
-    "suggest": {
-        "phundament/lessii": "master"
+    "require-dev": {
+        "phundament/gii-template-collection": "dev-master",
+        "phundament/lessii": "dev-master"
     },
     "autoload": {
         "psr-0": {"install": "./"}
