@@ -40,12 +40,20 @@
         "phundament/lessii": "dev-master"
     },
     "autoload": {
-        "psr-0": {"install": "./"}
+        "psr-0": {
+            "install": "./"
+        }
     },
     "scripts": {
         "pre-install-cmd": "install\\P3Setup::preInstall",
+        "post-install-cmd": "install\\P3Setup::postInstall",
+        "pre-update-cmd": "install\\P3Setup::preUpdate",
+        "post-update-cmd": "install\\P3Setup::postUpdate",
         "post-package-install": [
-            "install\\P3Setup::postPackageInstall"
+        "install\\P3Setup::postPackageInstall"
+        ],
+        "post-package-update": [
+        "install\\P3Setup::postPackageUpdate"
         ]
     }
 }

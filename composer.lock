@@ -1,5 +1,5 @@
 {
-    "hash": "50869bac10bb176f5e8fb81624ae95a0",
+    "hash": "63d40ff4a1f80bef3b8e2762da50ce18",
     "packages": [
         {
             "package": "crisu83/yii-bootstrap",
@@ -12,7 +12,7 @@
         {
             "package": "mishamx/yii-user",
             "version": "master",
-            "source-reference": "02ba263c64172abeef2e433223e369e7e220e9c1"
+            "source-reference": "7affbb3cef1bd337d3e5f897258561ebb6ea1100"
         },
         {
             "package": "phundament/gii-template-collection",
@@ -26,7 +26,7 @@
         {
             "package": "phundament/p3admin",
             "version": "dev-master",
-            "source-reference": "db24fedbd145a7b1f2c631e952d146c3ee55505d"
+            "source-reference": "68d196554e646e2d1c94ff5382dc738f53e80666"
         },
         {
             "package": "phundament/p3extensions",
@@ -62,20 +62,6 @@
             "version": "0.0.1"
         }
     ],
-    "packages-dev": [
-        {
-            "package": "crisu83/yii-less",
-            "version": "0.0.1"
-        },
-        {
-            "package": "phundament/lessii",
-            "version": "dev-master",
-            "source-reference": "8cc40ff367c80b93cc6d16acd81dc11292816a5e"
-        },
-        {
-            "package": "twitter/bootstrap",
-            "version": "2.0.1"
-        }
-    ],
+    "packages-dev": null,
     "aliases": []
 }
