@@ -123,13 +123,13 @@
             "name": "mishamx/yii-user",
             "version": "master",
             "source": {
-                "url": "https://github.com/schmunk42/yii-user.git",
+                "url": "https://github.com/phundament/yii-user.git",
                 "type": "git",
-                "reference": "02ba263c64172abeef2e433223e369e7e220e9c1"
+    		    "reference": "7affbb3cef1bd337d3e5f897258561ebb6ea1100"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://nodeload.github.com/schmunk42/yii-user/zipball/02ba263c64172abeef2e433223e369e7e220e9c1"
+                "url": "https://nodeload.github.com/phundament/yii-user/zipball/7affbb3cef1bd337d3e5f897258561ebb6ea1100"
             }
         }
     },{
@@ -179,6 +179,7 @@
         "yii": "*",
         "yiiext": "*",
         "phundament/gii-template-collection": "*",
-        "phundament/lessii": "*"
+        "phundament/lessii": "*",
+	"twitter/bootstrap": "*"
     }
 }
