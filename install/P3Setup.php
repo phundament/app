@@ -41,6 +41,10 @@ class P3Setup {
         // do stuff
         switch ($installedPackage->getName()) {
             case "yii":
+                // rename config before first require ...
+                rename(dirname(__FILE__) . '/../protected/config/console.php',dirname(__FILE__) . '/../protected/config/console.yii.php');
+                rename(dirname(__FILE__) . '/../protected/config/console.p3.php',dirname(__FILE__) . '/../protected/config/console.php');
+
                 require_once(dirname(__FILE__) . '/../protected/extensions/yii/framework/yii.php');
                 @mkdir(dirname(__FILE__) . '/../runtime', 0777);
                 @chmod(dirname(__FILE__) . '/../runtime', 0777);
@@ -55,10 +59,6 @@ class P3Setup {
                 $indexPhp = file_get_contents(dirname(__FILE__) . "/../index.php");
                 $indexPhp = str_replace("/protected/config/main.php", "/protected/config/main.p3.php", $indexPhp);
                 file_put_contents(dirname(__FILE__) . "/../index.php", $indexPhp);
-
-                rename(dirname(__FILE__) . '/../protected/config/console.php',dirname(__FILE__) . '/../protected/config/console.yii.php');
-                rename(dirname(__FILE__) . '/../protected/config/console.p3.php',dirname(__FILE__) . '/../protected/config/console.php');
-
                 return;
 
                 #ob_start();
