@@ -53,8 +53,11 @@ class P3Setup {
                 $runner->run($args);
 
                 $indexPhp = file_get_contents(dirname(__FILE__) . "/../index.php");
-                $indexPhp = str_replace("/protected/config/main.php", "/protected/config/p3.php", $indexPhp);
+                $indexPhp = str_replace("/protected/config/main.php", "/protected/config/main.p3.php", $indexPhp);
                 file_put_contents(dirname(__FILE__) . "/../index.php", $indexPhp);
+
+                rename(dirname(__FILE__) . '/../config/console.php',dirname(__FILE__) . '/../config/console.yii.php');
+                rename(dirname(__FILE__) . '/../config/console.p3.php',dirname(__FILE__) . '/../config/console.php');
 
                 return;
 
