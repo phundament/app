@@ -55,14 +55,12 @@ class P3Setup {
                 $indexPhp = file_get_contents(dirname(__FILE__) . "/../index.php");
                 $indexPhp = str_replace("/protected/config/main.php", "/protected/config/main.p3.php", $indexPhp);
                 file_put_contents(dirname(__FILE__) . "/../index.php", $indexPhp);
-                return;
 
-                // rename config before first require ...
+                // replace configs
                 rename(dirname(__FILE__) . '/../protected/config/console.php',dirname(__FILE__) . '/../protected/config/console.yii.php');
                 rename(dirname(__FILE__) . '/../protected/config/console.p3.php',dirname(__FILE__) . '/../protected/config/console.php');
 
-                #ob_start();
-                #echo htmlentities(ob_get_clean(), null, \Yii::app()->charset);
+                return;
                 break;
             case "mishamx/yii-user":
                 require(dirname(__FILE__) . '/../protected/yiic.php');
