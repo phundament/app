@@ -1,5 +1,5 @@
 {
-    "hash": "63d40ff4a1f80bef3b8e2762da50ce18",
+    "hash": "98c76e39c003dc14aefd6e95072edf3b",
     "packages": [
         {
             "package": "crisu83/yii-bootstrap",
@@ -15,6 +15,11 @@
             "source-reference": "7affbb3cef1bd337d3e5f897258561ebb6ea1100"
         },
         {
+            "package": "phundament/gii-template-collection",
+            "version": "dev-master",
+            "source-reference": "233efe309923891d3dd0f93465f2d1294d8b5d34"
+        },
+        {
             "package": "phundament/jquery-file-upload",
             "version": "0.0.1"
         },
@@ -22,6 +27,11 @@
             "package": "phundament/p3admin",
             "version": "dev-master",
             "source-reference": "8cdde1ab301576304d203717f94c4d80034e8550"
+        },
+        {
+            "package": "phundament/p3extensions",
+            "version": "dev-master",
+            "source-reference": "148f3c8488ba9e718c79d37847025de267481718"
         },
         {
             "package": "phundament/p3media",
@@ -42,11 +52,6 @@
             "package": "phundament/themes/p3bootstrap",
             "version": "dev-master",
             "source-reference": "295c1abc00012028743644df76717a0c4a699799"
-        },
-        {
-            "package": "phundament/p3extensions",
-            "version": "dev-master",
-            "source-reference": "148f3c8488ba9e718c79d37847025de267481718"
         },
         {
             "package": "yii",
