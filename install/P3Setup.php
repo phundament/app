@@ -97,7 +97,7 @@ class P3Setup {
     }
 
     public static function postPackageUpdate(Event $event) {
-        $installedPackage = $event->getOperation()->getPackage();
+        $installedPackage = $event->getOperation()->getTargetPackage();
         require_once(dirname(__FILE__) . '/../protected/yiic.php');
         switch ($installedPackage->getName()) {
             case "mishamx/yii-user":
