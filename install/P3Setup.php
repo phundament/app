@@ -52,13 +52,15 @@ class P3Setup {
 
                 $runner->run($args);
 
+                echo "\nUpdating config in index.php...\n";
                 $indexPhp = file_get_contents(dirname(__FILE__) . "/../index.php");
                 $indexPhp = str_replace("/protected/config/main.php", "/protected/config/main.p3.php", $indexPhp);
                 file_put_contents(dirname(__FILE__) . "/../index.php", $indexPhp);
 
-                // replace configs
-                rename(dirname(__FILE__) . '/../protected/config/console.php',dirname(__FILE__) . '/../protected/config/console.yii.php');
-                rename(dirname(__FILE__) . '/../protected/config/console.p3.php',dirname(__FILE__) . '/../protected/config/console.php');
+                echo "\nUpdating config in protected/yiic.php...\n";
+                $yiicPhp = file_get_contents(dirname(__FILE__) . "/../protected/yiic.php");
+                $yiicPhp = str_replace("/config/console.php", "/config/console.p3.php", $yiicPhp);
+                file_put_contents(dirname(__FILE__) . "/../protected/yiic.php", $yiicPhp);
 
                 return;
                 break;
