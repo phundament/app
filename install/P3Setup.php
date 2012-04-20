@@ -63,11 +63,11 @@ class P3Setup {
                 return;
                 break;
             case "mishamx/yii-user":
-                require(dirname(__FILE__) . '/../protected/yiic.php');
+                require_once(dirname(__FILE__) . '/../protected/yiic.php');
                 $args = array('yiic', 'migrate', '--migrationPath=ext.phundament.p3admin.modules-install.user.migrations', '--migrationTable=migration_module_user', '--interactive=0');
                 break;
             case "crisu83/yii-rights":
-                require(dirname(__FILE__) . '/../protected/yiic.php');
+                require_once(dirname(__FILE__) . '/../protected/yiic.php');
                 $args = array('yiic', 'migrate', '--migrationPath=ext.phundament.p3admin.modules-install.rights.migrations', '--migrationTable=migration_module_rights', '--interactive=0');
                 break;
             case "phundament/p3media":
@@ -79,11 +79,11 @@ class P3Setup {
                 $args = array('yiic', 'migrate', '--migrationPath=ext.phundament.p3media.migrations', '--migrationTable=migration_module_p3media', '--interactive=0');
                 break;
             case "phundament/p3widgets":
-                require(dirname(__FILE__) . '/../protected/yiic.php');
+                require_once(dirname(__FILE__) . '/../protected/yiic.php');
                 $args = array('yiic', 'migrate', '--migrationPath=ext.phundament.p3widgets.migrations', '--migrationTable=migration_module_p3widgets', '--interactive=0');
                 break;
             case "phundament/p3pages":
-                require(dirname(__FILE__) . '/../protected/yiic.php');
+                require_once(dirname(__FILE__) . '/../protected/yiic.php');
                 $args = array('yiic', 'migrate', '--migrationPath=ext.phundament.p3pages.migrations', '--migrationTable=migration_module_p3pages', '--interactive=0');
                 break;
             default:
