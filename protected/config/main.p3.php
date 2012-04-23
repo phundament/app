@@ -195,6 +195,9 @@ $p3Config = array(
 			'appendParams' => false, // in general more error resistant
 			'urlFormat' => 'get',
 			'rules' => array(
+				// disabled skeleton login page
+ 				'<lang:[a-z]{2}>/site/login' => 'user/login',
+				'site/login' => 'user/login',
 				// convenience rules
 				'admin' => 'p3admin',
 				'<lang:[a-z]{2}>/pages/<view:\w+>' => 'site/page',
