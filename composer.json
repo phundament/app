@@ -164,22 +164,5 @@
         }
     }
     ],
-    "require": {
-        "crisu83/yii-rights": "*",
-        "crisu83/yii-bootstrap": "*",
-        "crisu83/yii-less": "*",
-        "mishamx/yii-user": "*",
-        "phundament/p3admin": "*",
-        "phundament/p3widgets": "*",
-        "phundament/p3pages": "*",
-        "phundament/p3media": "*",
-        "phundament/themes/p3bootstrap": "*",
-        "phundament/p3extensions": "*",
-        "phundament/jquery-file-upload": "*",
-        "yii": "*",
-        "yiiext": "*",
-        "phundament/gii-template-collection": "*",
-        "phundament/lessii": "*",
-	"twitter/bootstrap": "*"
-    }
+    "require-all": true
 }
