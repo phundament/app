@@ -27,12 +27,7 @@
             "package": "phundament/p3admin",
             "version": "dev-master",
             "source-reference": "8cdde1ab301576304d203717f94c4d80034e8550"
-        },
-        {
-            "package": "phundament/p3extensions",
-            "version": "dev-master",
-            "source-reference": "148f3c8488ba9e718c79d37847025de267481718"
-        },
+        },        
         {
             "package": "phundament/p3media",
             "version": "dev-master",
@@ -47,6 +42,11 @@
             "package": "phundament/p3widgets",
             "version": "dev-master",
             "source-reference": "8d37209e8c9f052fdba65ec14652f0ffa6a0c764"
+        },
+        {
+            "package": "phundament/p3extensions",
+            "version": "dev-master",
+            "source-reference": "148f3c8488ba9e718c79d37847025de267481718"
         },
         {
             "package": "phundament/themes/p3bootstrap",
