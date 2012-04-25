@@ -92,9 +92,10 @@ class P3Setup {
                 require_once(dirname(__FILE__) . '/../protected/yiic.php');
                 $args = array('yiic', 'composerPackage');
                 $runner = new \CConsoleCommandRunner();
-                $commandPath = \Yii::app()->basePath . DIRECTORY_SEPARATOR . 'protected' . DIRECTORY_SEPARATOR . 'extensions' . DIRECTORY_SEPARATOR . $installedPackage->getName() . DIRECTORY_SEPARATOR . "commands";
+                $commandPath = \Yii::app()->basePath . DIRECTORY_SEPARATOR . 'extensions' . DIRECTORY_SEPARATOR . $installedPackage->getName() . DIRECTORY_SEPARATOR . "commands";
                 $runner->addCommands($commandPath);
                 $runner->run($args);
+                return;
                 break;
             default:
                 return;
