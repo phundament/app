@@ -89,6 +89,7 @@ class P3Setup {
                 $args = array('yiic', 'migrate', '--migrationPath=ext.phundament.p3pages.migrations', '--migrationTable=migration_module_p3pages', '--interactive=0');
                 break;
             case "phundament/themes/p3bootstrap":
+                require_once(dirname(__FILE__) . '/../protected/yiic.php');
                 $args = array('yiic', 'composerPackage');
                 $runner = new \CConsoleCommandRunner();
                 $commandPath = \Yii::app()->basePath . DIRECTORY_SEPARATOR . 'protected' . DIRECTORY_SEPARATOR . 'extensions' . DIRECTORY_SEPARATOR . $installedPackage->getName() . DIRECTORY_SEPARATOR . "commands";
