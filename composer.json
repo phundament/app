@@ -43,6 +43,9 @@
         "type":"vcs",
         "url": "https://github.com/schmunk42/lessii.git"
     },{
+        "type":"vcs",
+        "url": "https://bitbucket.org/schmunk42/yii-bootstrap"
+    },{
         "type": "package",
         "package": {
             "name": "phundament/jquery-file-upload",
@@ -85,21 +88,6 @@
             "dist": {
                 "type": "zip",
                 "url": "https://bitbucket.org/Crisu83/yii-less/get/045c79d2943e.zip"
-            }
-        }
-    },{
-        "type": "package",
-        "package": {
-            "name": "crisu83/yii-bootstrap",
-            "version": "0.0.1",
-            "source": {
-                "url": "https://bitbucket.org/Crisu83/yii-bootstrap",
-                "type": "hg",
-                "reference": "4f3ce0ae441e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://bitbucket.org/Crisu83/yii-bootstrap/get/4f3ce0ae441e.zip"
             }
         }
     },{
