@@ -13,49 +13,22 @@ Download and extract the installer as ZIP or TAR.GZ file from
 * https://github.com/phundament/app/zipball/master
 * https://github.com/phundament/app/tarball/master
 
-Enter the app root folder
-
 ```
-cd phundament-app
+curl -L https://github.com/phundament/app/tarball/master | tar zx
+```
+
+Enter the app root folder
+```
+cd phundament-app-SHA1
 ```
 
 Get the packages with composer
 
 ```
-php composer.phar update
+php composer.phar install
 ```
 
-If you want extended LESS support, choose
-
-```
-php composer.phar update --install-suggests
-```
-
-
-
-Run the setup script, if you do not have a copy of Yii Framework (>1.1.10), download it from http://www.yiiframework.com/download/
-
-#### *nix
-```
-./protected/setup-p3.sh /path/to/yii/framework/yiic
-```
-
-#### Windows
-```
-cd \path\to\phundament-app
-C:\path\to\yii\framework\yiic.bat webapp .
-cd protected
-setup-p3.bat
-```
-
-
-Edit *index.php* and include only the p3.php config file. This will use the bootstrap theme, along with a user-interface for Phundament.
-
-```
-$config=dirname(__FILE__).'/protected/config/p3.php';
-```
-
-
+All setup, database, file permissions and config setting should be done automatically.
  
  
 Troubleshooting
