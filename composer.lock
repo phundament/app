@@ -3,7 +3,8 @@
     "packages": [
         {
             "package": "crisu83/yii-bootstrap",
-            "version": "0.0.1"
+            "version": "dev-default",
+            "source-reference": "tip"
         },
         {
             "package": "crisu83/yii-rights",
@@ -28,7 +29,6 @@
             "version": "dev-master",
             "source-reference": "8cdde1ab301576304d203717f94c4d80034e8550"
         },
-
         {
             "package": "phundament/p3media",
             "version": "dev-master",
@@ -47,7 +47,7 @@
         {
             "package": "phundament/themes/p3bootstrap",
             "version": "dev-master",
-            "source-reference": "e18f83fe23b04eb45c3f9ed55259601436dd3553"
+            "source-reference": "dd24b31530cd7b945609e4bcd00f690795df062d"
         },
         {
             "package": "phundament/p3extensions",
@@ -71,11 +71,11 @@
         {
             "package": "phundament/lessii",
             "version": "dev-master",
-            "source-reference": "8cc40ff367c80b93cc6d16acd81dc11292816a5e"
+            "source-reference": "5bb43cbfd1758752a463622f964646238cd7a9ce"
         },
         {
             "package": "twitter/bootstrap",
-            "version": "2.0.1"
+            "version": "2.0.3"
         }
     ],
     "aliases": []
