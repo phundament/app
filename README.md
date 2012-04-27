@@ -8,14 +8,9 @@ For more details visit http://phundament.com.
 Installation
 ------------
 
-Download and extract the installer as ZIP or TAR.GZ file from
+Download and extract the installer as ZIP or TAR.GZ file from a working tagged version here
 
-* https://github.com/phundament/app/zipball/master
-* https://github.com/phundament/app/tarball/master
-
-```
-curl -L https://github.com/phundament/app/tarball/master | tar zx
-```
+https://github.com/phundament/app/tags
 
 Enter the app root folder
 ```
@@ -39,7 +34,11 @@ Troubleshooting
  * OpenSSL Support enabled in PHP or try ```--prefer-source```
  * ```php -d allow_url_fopen=1 -d memory_limit=64M composer.phar -v update```
  * Tested on Windows with WAMPSERVER 2.2 (PHP 5.3.10)
- 
+ * If you want to the very lastest version
+   ```
+   curl -L https://github.com/phundament/app/tarball/master | tar zx
+   ```
+
 
 Other Sources
 -------------
