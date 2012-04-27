@@ -11,6 +11,7 @@ $p3Config = array(
     'basePath' => $applicationDirectory,
     'name' => 'My Phundament 3',
     'theme' => 'frontend',
+    'language' => 'en', // default language, see also components.langHandler
     // preloading 'log' component
     'preload' => array(
         'log',
