@@ -10,7 +10,7 @@ $applicationDirectory = realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '..' 
 $p3Config = array(
     'basePath' => $applicationDirectory,
     'name' => 'My Phundament 3',
-    'theme' => 'p3bootstrap',
+    'theme' => 'frontend',
     // preloading 'log' component
     'preload' => array(
         'log',
@@ -173,10 +173,10 @@ $p3Config = array(
       ), */
     // application components
     'components' => array(
-        'themeManager' => array(
-            'basePath' => $applicationDirectory . DIRECTORY_SEPARATOR . 'extensions' . DIRECTORY_SEPARATOR . 'phundament' . DIRECTORY_SEPARATOR . 'themes',
+        #'themeManager' => array(
+        #    'basePath' => $applicationDirectory . DIRECTORY_SEPARATOR . 'extensions' . DIRECTORY_SEPARATOR . 'phundament' . DIRECTORY_SEPARATOR . 'themes',
         // 'baseUrl' => DO NOT USE, themes are in extension. Publish assets with the assetManager instead.
-        ),
+        #),
         'user' => array(
             // enable cookie-based authentication
             'allowAutoLogin' => true,
@@ -276,6 +276,7 @@ $p3Config = array(
     // using Yii::app()->params['paramName']
     'params' => array(
         // this is used in contact page
+        'backendTheme' => 'backend', // backend is the default
         'adminEmail' => 'webmaster@example.com',
     ),
 );

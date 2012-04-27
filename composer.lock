@@ -29,6 +29,11 @@
             "source-reference": "8cdde1ab301576304d203717f94c4d80034e8550"
         },
         {
+            "package": "phundament/p3extensions",
+            "version": "dev-master",
+            "source-reference": "5a5ae46cf6c131e6b8599a33fd11ee8141201c92"
+        },
+        {
             "package": "phundament/p3media",
             "version": "dev-master",
             "source-reference": "fe9f9d10da5112732394142af40be2bd274e0cd6"
@@ -36,7 +41,7 @@
         {
             "package": "phundament/p3pages",
             "version": "dev-master",
-            "source-reference": "c76d88527e0bba3fb59262db8f49dfacc602eca3"
+            "source-reference": "51f41438c457d695c79385f299f4d66c212ff707"
         },
         {
             "package": "phundament/p3widgets",
@@ -46,13 +51,9 @@
         {
             "package": "phundament/themes/p3bootstrap",
             "version": "dev-master",
-            "source-reference": "a9d205b8d17b303773f5baccab1ac4caf891ca91"
+            "source-reference": "5100754db43b2148f4eb921fa3bdccb185564a30"
         },
         {
-            "package": "phundament/p3extensions",
-            "version": "dev-master",
-            "source-reference": "5a5ae46cf6c131e6b8599a33fd11ee8141201c92"
-        },        {
             "package": "yii",
             "version": "1.1.10"
         },

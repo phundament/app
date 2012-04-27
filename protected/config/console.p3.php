@@ -17,12 +17,16 @@ return array(
                 'prod' => 'user@exampl.com:/path/to/phundament/protected',
             ),
             'aliases' => array(
-                'data' => 'application.data' # Note: This setting syncs SQLite Database(!) and P3Media Files    
+                'data' => 'application.data' # Note: This setting syncs SQLite Database(!) and P3Media Files
             ),
 			#'params' => '--rsh="ssh -p222"',
         ),
         'dumpschema'=>array(
             'class' => 'ext.p3extensions.commands.P3DumpSchemaCommand',
+		),
+        // developer commands
+        'p3bootstrap-composer'=>array(
+            'class' => 'ext.phundament.themes.p3bootstrap.commands.ComposerPackageCommand',
 		),
     ),
 );
