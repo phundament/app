@@ -63,16 +63,11 @@
     },{
         "type": "package",
         "package": {
-            "name": "yiiext",
-            "version": "0.0.1",
-            "source": {
-                "url": "https://github.com/schmunk42/yiiext.git",
-                "type": "git",
-                "reference": "b0806f876caac7ccb71b97a778219591d6be2a64"
-            },
+            "name": "yiisoft/yii",
+            "version": "1.1.10",
             "dist": {
-                "type": "zip",
-                "url": "https://nodeload.github.com/schmunk42/yiiext/zipball/b0806f876caac7ccb71b97a778219591d6be2a64"
+                "url": "http://yii.googlecode.com/files/yii-1.1.10.r3566.zip",
+                "type": "zip"
             }
         }
     },{
@@ -109,7 +104,7 @@
         "type": "package",
         "package": {
             "name": "mishamx/yii-user",
-            "version": "master",
+            "version": "0.0.1",
             "source": {
                 "url": "https://github.com/phundament/yii-user.git",
                 "type": "git",
@@ -141,23 +136,33 @@
             }
         }
     },{
-	    "type": "package",
-    	"package": {
-	        "name": "phundament/jquery-file-upload",
-	        "version": "0.0.1",
-    	    "dist": {
-    	    	"url": "https://nodeload.github.com/schmunk42/jQuery-File-Upload/zipball/5e08d974a080a931dda654086a1391e75cbda99f",
-		        "type": "zip"
-	        }
-    	}
-	},{
         "type": "package",
         "package": {
-            "name": "yii",
-            "version": "1.1.10",
+            "name": "yiiext/fancybox-widget",
+            "version": "0.0.1",
+            "source": {
+                "url": "https://github.com/yiiext/fancybox-widget.git",
+                "type": "git",
+                "reference": "20ed3c25e54a6c990b81f56b6f24e5c34070e725"
+            },
             "dist": {
-                "url": "http://yii.googlecode.com/files/yii-1.1.10.r3566.zip",
-                "type": "zip"
+                "type": "zip",
+                "url": "https://nodeload.github.com/yiiext/fancybox-widget/zipball/20ed3c25e54a6c990b81f56b6f24e5c34070e725"
+            }
+        }
+    },{
+        "type": "package",
+        "package": {
+            "name": "yiiext/lipsum-widget",
+            "version": "0.0.1",
+            "source": {
+                "url": "https://github.com/yiiext/lipsum-widget.git",
+                "type": "git",
+                "reference": "f70ab9c91db70775cd17618d4d5d00f07e72d8da"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://nodeload.github.com/yiiext/lipsum-widget/zipball/f70ab9c91db70775cd17618d4d5d00f07e72d8da"
             }
         }
     }
