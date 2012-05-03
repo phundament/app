@@ -28,7 +28,7 @@
             "package": "phundament/p3admin",
             "version": "dev-master",
             "source-reference": "8cdde1ab301576304d203717f94c4d80034e8550"
-        },
+        },       
         {
             "package": "phundament/p3media",
             "version": "dev-master",
@@ -47,7 +47,7 @@
         {
             "package": "phundament/themes/p3bootstrap",
             "version": "dev-master",
-            "source-reference": "dd24b31530cd7b945609e4bcd00f690795df062d"
+            "source-reference": "fd00817322ddccf9616f79306fc7f0c135e3dd74"
         },
         {
             "package": "phundament/p3extensions",
@@ -63,20 +63,8 @@
             "version": "0.0.1"
         }
     ],
-    "packages-dev": [
-        {
-            "package": "crisu83/yii-less",
-            "version": "0.0.1"
-        },
-        {
-            "package": "phundament/lessii",
-            "version": "dev-master",
-            "source-reference": "5bb43cbfd1758752a463622f964646238cd7a9ce"
-        },
-        {
-            "package": "twitter/bootstrap",
-            "version": "2.0.3"
-        }
-    ],
-    "aliases": []
+    "packages-dev": null,
+    "aliases": [
+
+    ]
 }
