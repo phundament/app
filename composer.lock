@@ -1,5 +1,5 @@
 {
-    "hash": "98c76e39c003dc14aefd6e95072edf3b",
+    "hash": "0cce4161277bcd44b3006088186b6453",
     "packages": [
         {
             "package": "crisu83/yii-bootstrap",
@@ -12,8 +12,7 @@
         },
         {
             "package": "mishamx/yii-user",
-            "version": "master",
-            "source-reference": "7affbb3cef1bd337d3e5f897258561ebb6ea1100"
+            "version": "0.0.1"
         },
         {
             "package": "phundament/gii-template-collection",
@@ -28,7 +27,7 @@
             "package": "phundament/p3admin",
             "version": "dev-master",
             "source-reference": "8cdde1ab301576304d203717f94c4d80034e8550"
-        },       
+        },
         {
             "package": "phundament/p3media",
             "version": "dev-master",
@@ -47,7 +46,7 @@
         {
             "package": "phundament/themes/p3bootstrap",
             "version": "dev-master",
-            "source-reference": "fd00817322ddccf9616f79306fc7f0c135e3dd74"
+            "source-reference": "da0fe42ba95c6e25e2bac7c6910bec814b9f9375"
         },
         {
             "package": "phundament/p3extensions",
@@ -55,12 +54,16 @@
             "source-reference": "567f4ff4a0ff6f8e1954f11e2819bc75aa3b1194"
         },
         {
-            "package": "yii",
-            "version": "1.1.10"
+            "package": "yiiext/fancybox-widget",
+            "version": "0.0.1"
         },
         {
-            "package": "yiiext",
+            "package": "yiiext/lipsum-widget",
             "version": "0.0.1"
+        },
+        {
+            "package": "yiisoft/yii",
+            "version": "1.1.10"
         }
     ],
     "packages-dev": null,

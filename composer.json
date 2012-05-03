@@ -24,17 +24,18 @@
     }
     ],
     "require": {
-        "php": ">=5.3.2",
-        "crisu83/yii-rights": "0.0.1",
-        "mishamx/yii-user": "dev-master",
+        "php": "5.*",
+        "crisu83/yii-rights": "0.*",
+        "mishamx/yii-user": "0.*",
         "phundament/p3admin": "dev-master",
         "phundament/p3widgets": "dev-master",
         "phundament/p3pages": "dev-master",
         "phundament/p3media": "dev-master",
         "phundament/themes/p3bootstrap": "dev-master",
         "phundament/gii-template-collection": "dev-master",
-        "yii": "1.1.10",
-        "yiiext": "0.0.1"
+        "yiiext/lipsum-widget": "0.*",
+        "yiiext/fancybox-widget": "0.*",
+        "yiisoft/yii": "1.1.10"
     },
     "require-dev": {
         "phundament/lessii": "dev-master"

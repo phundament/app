@@ -40,8 +40,8 @@ class P3Setup {
         $installedPackage = $event->getOperation()->getPackage();
         // do stuff
         switch ($installedPackage->getName()) {
-            case "yii":
-                require_once(dirname(__FILE__) . '/../protected/extensions/yii/framework/yii.php');
+            case "yiisoft/yii":
+                require_once(dirname(__FILE__) . '/../protected/extensions/yiisoft/yii/framework/yii.php');
                 @mkdir(dirname(__FILE__) . '/../runtime', 0777);
                 @chmod(dirname(__FILE__) . '/../runtime', 0777);
 
