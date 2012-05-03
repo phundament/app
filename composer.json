@@ -131,6 +131,16 @@
             }
         }
     },{
+        "type": "package",
+        "package": {
+            "name": "twitter/bootstrap",
+            "version": "2.0.3",
+            "dist": {
+                "url": "https://github.com/twitter/bootstrap/zipball/v2.0.3",
+                "type": "zip"
+            }
+        }
+    },{
 	    "type": "package",
     	"package": {
 	        "name": "phundament/jquery-file-upload",
