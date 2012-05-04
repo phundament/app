@@ -62,7 +62,7 @@ $p3Config = array(
                 'widgets' => array(
                     'ext.yii-bootstrap.widgets.BootHero' => 'Bootstrap Hero',
                     'ext.yiiext.fancybox-widget.EFancyboxWidget' => 'Fancy Box',
-                    'ext.yiiext.lipsum-widget.lipsum.ELipsum' => 'Lorem Ipsum Text',
+                    'ext.yiiext.lipsum-widget.ELipsum' => 'Lorem Ipsum Text',
                 #'ext.yiiext.widgets.swfobject.ESwfObjectWidget' => 'SWF Object',
                 #'ext.yiiext.widgets.cycle.ECycleWidget' => 'Cycle',
                 // The following widgets work basically, but are hard to handle or can break the app when using incorrect params.
