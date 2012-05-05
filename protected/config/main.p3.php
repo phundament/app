@@ -1,4 +1,10 @@
 <?php
+/**
+ * Phundament 3 Config File
+ *
+ * Note: This file includes other config file, see bottom section.
+ * You can also use a config file local.php, which overrides settings in this file.
+ */
 
 // uncomment the following to define a path alias
 // Yii::setPathOfAlias('local','path/to/local-folder');
@@ -169,15 +175,8 @@ $p3Config = array(
         #'cssFile' => '/css/rights/default.css'
         ),
     ),
-    /* 'behaviors' => array(
-      'ext._less.components.LessCompilationBehavior'
-      ), */
     // application components
     'components' => array(
-        #'themeManager' => array(
-        #    'basePath' => $applicationDirectory . DIRECTORY_SEPARATOR . 'extensions' . DIRECTORY_SEPARATOR . 'phundament' . DIRECTORY_SEPARATOR . 'themes',
-        // 'baseUrl' => DO NOT USE, themes are in extension. Publish assets with the assetManager instead.
-        #),
         'user' => array(
             // enable cookie-based authentication
             'allowAutoLogin' => true,
