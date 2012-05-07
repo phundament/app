@@ -3,8 +3,7 @@
     "packages": [
         {
             "package": "crisu83/yii-bootstrap",
-            "version": "dev-default",
-            "source-reference": "tip"
+            "version": "0.9.12"
         },
         {
             "package": "crisu83/yii-rights",
@@ -49,13 +48,13 @@
             "source-reference": "da0fe42ba95c6e25e2bac7c6910bec814b9f9375"
         },
         {
+            "package": "yiiext/fancybox-widget",
+            "version": "0.0.1"
+        },
+        {
             "package": "phundament/p3extensions",
             "version": "dev-master",
             "source-reference": "567f4ff4a0ff6f8e1954f11e2819bc75aa3b1194"
-        },        
-        {
-            "package": "yiiext/fancybox-widget",
-            "version": "0.0.1"
         },
         {
             "package": "yiiext/lipsum-widget",
