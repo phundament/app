@@ -24,7 +24,7 @@
     }
     ],
     "require": {
-        "php": "5.*",
+        "php": ">=5.3.2",
         "crisu83/yii-rights": "0.*",
         "mishamx/yii-user": "0.*",
         "phundament/p3admin": "dev-master",
