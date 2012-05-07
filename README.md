@@ -8,7 +8,7 @@ For more details visit http://phundament.com.
 Installation
 ------------
 
-Download and extract the installer as ZIP or TAR.GZ file from a working tagged version here
+Download and extract the installer as ZIP or TAR.GZ file from a working tagged version here:
 
 https://github.com/phundament/app/tags
 
@@ -17,7 +17,7 @@ Enter the app root folder
 cd phundament-app-SHA1
 ```
 
-Get the packages with composer
+Get the packages with composer, note: if you want to install for MySQL, you have to update your config first.
 
 ```
 php composer.phar install
