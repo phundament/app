@@ -1,5 +1,5 @@
 {
-    "hash": "0cce4161277bcd44b3006088186b6453",
+    "hash": "ffe204562cb83d09b3b74d30e64038fd",
     "packages": [
         {
             "package": "crisu83/yii-bootstrap",
@@ -41,7 +41,7 @@
         {
             "package": "phundament/p3widgets",
             "version": "dev-master",
-            "source-reference": "8d37209e8c9f052fdba65ec14652f0ffa6a0c764"
+            "source-reference": "57972ffff49b670f190ba0b1df338b519aa36af8"
         },
         {
             "package": "phundament/themes/p3bootstrap",
@@ -52,7 +52,7 @@
             "package": "phundament/p3extensions",
             "version": "dev-master",
             "source-reference": "567f4ff4a0ff6f8e1954f11e2819bc75aa3b1194"
-        },
+        },        
         {
             "package": "yiiext/fancybox-widget",
             "version": "0.0.1"
