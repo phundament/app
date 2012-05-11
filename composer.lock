@@ -40,7 +40,7 @@
         {
             "package": "phundament/p3widgets",
             "version": "dev-master",
-            "source-reference": "57972ffff49b670f190ba0b1df338b519aa36af8"
+            "source-reference": "427a93ee54a60c45f034e42cb8c88361a24aca77"
         },
         {
             "package": "phundament/themes/p3bootstrap",
@@ -52,14 +52,14 @@
             "version": "0.0.1"
         },
         {
-            "package": "phundament/p3extensions",
-            "version": "dev-master",
-            "source-reference": "567f4ff4a0ff6f8e1954f11e2819bc75aa3b1194"
-        },
-        {
             "package": "yiiext/lipsum-widget",
             "version": "0.0.1"
         },
+        {
+            "package": "phundament/p3extensions",
+            "version": "dev-master",
+            "source-reference": "567f4ff4a0ff6f8e1954f11e2819bc75aa3b1194"
+        },        
         {
             "package": "yiisoft/yii",
             "version": "1.1.10"
