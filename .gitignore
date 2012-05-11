@@ -3,5 +3,6 @@ nbproject
 /protected/extensions/
 /protected/runtime/
 /protected/data/
+/protected/config/local.php
 /assets/
 /runtime/
