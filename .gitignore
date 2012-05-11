@@ -1,4 +1,6 @@
 nbproject
 .DS_Store
 /protected/extensions/
+/protected/runtime/
 /assets/
+/runtime/
