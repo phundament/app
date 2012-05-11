@@ -11,7 +11,7 @@ class P3Setup {
         // do stuff
         echo "Welcome to Phundament Installation 3 via composer\n\n";
         echo "This setup script will download all packages specified in composer.json. It will also trigger the creation of an ".
-            "Yii web application, please answer the upcoming confirmation question with [y]es.\n\n";
+            "Yii web application, please answer the upcoming confirmation questions with [y]es.\n\n";
         if(self::confirm("Install Phundament 3 now?")) {
 
         } else {
