@@ -26,7 +26,7 @@
             "package": "phundament/p3admin",
             "version": "dev-master",
             "source-reference": "8cdde1ab301576304d203717f94c4d80034e8550"
-        },
+        },       
         {
             "package": "phundament/p3media",
             "version": "dev-master",
@@ -45,7 +45,7 @@
         {
             "package": "phundament/themes/p3bootstrap",
             "version": "dev-master",
-            "source-reference": "da0fe42ba95c6e25e2bac7c6910bec814b9f9375"
+            "source-reference": "061b4e6b6e8c910c343073ac53b0254b69780b70"
         },
         {
             "package": "yiiext/fancybox-widget",
@@ -59,7 +59,7 @@
             "package": "phundament/p3extensions",
             "version": "dev-master",
             "source-reference": "567f4ff4a0ff6f8e1954f11e2819bc75aa3b1194"
-        },        
+        }, 
         {
             "package": "yiisoft/yii",
             "version": "1.1.10"
