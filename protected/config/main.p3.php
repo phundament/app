@@ -16,7 +16,7 @@ $applicationDirectory = realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '..' 
 $p3Config = array(
     'basePath' => $applicationDirectory,
     'name' => 'My Phundament 3',
-    'theme' => 'frontend',
+    'theme' => 'frontend', // theme is copied from extensions/phundament/p3bootstrap
     'language' => 'en', // default language, see also components.langHandler
     // preloading 'log' component
     'preload' => array(
@@ -276,8 +276,10 @@ $p3Config = array(
     // using Yii::app()->params['paramName']
     'params' => array(
         // this is used in contact page
-        'backendTheme' => 'backend', // backend is the default
         'adminEmail' => 'webmaster@example.com',
+        // global Phundament 3 parameters
+        'p3.version' => '0.5',
+        'p3.backendTheme' => 'backend', // backend is the default
     ),
 );
 
