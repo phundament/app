@@ -35,7 +35,7 @@
         {
             "package": "phundament/p3pages",
             "version": "dev-master",
-            "source-reference": "a96218a1fcc4fcb80cf076ed2836373f3f1dccc4"
+            "source-reference": "cc6c5c1bcda28b4915ebbd593f29fb32b140e830"
         },
         {
             "package": "phundament/p3widgets",
