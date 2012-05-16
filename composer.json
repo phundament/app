@@ -168,7 +168,6 @@
     },{
         "type": "package",
         "homepage": "http://yiiext.github.com/extensions/swf-object-widget/index.html",
-        "type": "yii-extension",        
         "package": {
             "name": "yiiext/swf-object-widget",
             "version": "0.1",
