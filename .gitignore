@@ -4,5 +4,9 @@ nbproject
 /protected/runtime/
 /protected/data/
 /protected/config/local.php
+/protected/yiic
+/protected/yiic.bat
+/protected/yiic.php
+/protected/tests/
 /assets/
 /runtime/
