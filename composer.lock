@@ -25,7 +25,12 @@
         {
             "package": "phundament/p3admin",
             "version": "dev-master",
-            "source-reference": "8cdde1ab301576304d203717f94c4d80034e8550"
+            "source-reference": "cb34321dcfe709f1a37ee29092b9ad0f26614211"
+        },
+        {
+            "package": "phundament/p3extensions",
+            "version": "dev-master",
+            "source-reference": "21ced47c32a65aac04ed15dbe76446ec8a87e025"
         },
         {
             "package": "phundament/p3media",
@@ -48,11 +53,6 @@
             "source-reference": "34c14a653e531ed1dd8034adbc7893e94a2d0c50"
         },
         {
-            "package": "phundament/p3extensions",
-            "version": "dev-master",
-            "source-reference": "567f4ff4a0ff6f8e1954f11e2819bc75aa3b1194"
-        },        
-        {
             "package": "yiiext/fancybox-widget",
             "version": "0.0.1"
         },
@@ -68,5 +68,15 @@
     "packages-dev": null,
     "aliases": [
 
-    ]
+    ],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "phundament/p3admin": 20,
+        "phundament/p3widgets": 20,
+        "phundament/p3pages": 20,
+        "phundament/p3media": 20,
+        "phundament/themes/p3bootstrap": 20,
+        "phundament/gii-template-collection": 20,
+        "phundament/lessii": 20
+    }
 }
