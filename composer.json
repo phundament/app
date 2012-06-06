@@ -70,6 +70,9 @@
             "dist": {
                 "type": "zip",
                 "url": "https://bitbucket.org/Crisu83/yii-bootstrap/get/284886a7a785.zip"
+            },
+            "require": {
+                "yiisoft/yii": ">=1.1.10"
             }
         }
     },{
@@ -95,6 +98,9 @@
             "dist": {
                 "type": "zip",
                 "url": "https://bitbucket.org/Crisu83/yii-less/get/045c79d2943e.zip"
+            },
+            "require": {
+                "yiisoft/yii": ">=1.1.10"
             }
         }
     },{
@@ -110,6 +116,10 @@
             "dist": {
                 "type": "zip",
                 "url": "https://bitbucket.org/Crisu83/yii-rights/get/437267d8b1ed.zip"
+            },
+            "require": {
+                "yiisoft/yii": ">=1.1.10",
+                "phundament/p3admin": "dev-master"
             }
         }
     },{
@@ -125,6 +135,10 @@
             "dist": {
                 "type": "zip",
                 "url": "https://nodeload.github.com/phundament/yii-user/zipball/7affbb3cef1bd337d3e5f897258561ebb6ea1100"
+            },
+            "require": {
+                "yiisoft/yii": ">=1.1.10",
+                "phundament/p3admin": "dev-master"                
             }
         }
     },{
@@ -161,7 +175,10 @@
                 "type": "zip",
                 "url": "https://nodeload.github.com/yiiext/fancybox-widget/zipball/20ed3c25e54a6c990b81f56b6f24e5c34070e725"
             }
-        }
+        },
+            "require": {
+                "yiisoft/yii": ">=1.1.10"
+            }
     },{
         "type": "package",
         "package": {
@@ -176,7 +193,10 @@
                 "type": "zip",
                 "url": "https://nodeload.github.com/yiiext/lipsum-widget/zipball/f70ab9c91db70775cd17618d4d5d00f07e72d8da"
             }
-        }
+        },
+            "require": {
+                "yiisoft/yii": ">=1.1.10"
+            }
     },{
         "type": "package",
         "homepage": "http://yiiext.github.com/extensions/swf-object-widget/index.html",
@@ -191,6 +211,9 @@
             "dist": {
                 "type": "zip",
                 "url": "https://github.com/yiiext/swf-object-widget/zipball/v0.1"
+            },
+            "require": {
+                "yiisoft/yii": ">=1.1.10"
             }
         }
     }
