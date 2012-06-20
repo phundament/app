@@ -123,9 +123,10 @@
             }
         }
     },{
-        "type": "yii-extension",
+        "type": "package",
         "package": {
             "name": "logicoder/videojs",
+            "type": "yii-extension",
             "version": "1.0",
             "dist": {
                 "url": "http://www.yiiframework.com/extension/videojs/files/videojs.zip",
