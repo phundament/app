@@ -40,17 +40,17 @@
         {
             "package": "phundament/p3pages",
             "version": "dev-master",
-            "source-reference": "b30bf9b5f6ab279c621d7a8e381fe35ff9b5b16b"
+            "source-reference": "5ad63c779e065bc8059aa03d9140c0afea124321"
         },
         {
             "package": "phundament/p3widgets",
             "version": "dev-master",
-            "source-reference": "af34766fdc713f5cee22369c7964bf42557c7b7c"
+            "source-reference": "0d33ede8748b79fe743824f7b031e1883ddd4603"
         },
         {
             "package": "phundament/themes/p3bootstrap",
             "version": "dev-master",
-            "source-reference": "8929094f548d0ad6af4efb8326e36cf1e5538c30"
+            "source-reference": "35ad4d02fed9ac85bed448b96ca65b2361b4f5cf"
         },
         {
             "package": "yiiext/fancybox-widget",

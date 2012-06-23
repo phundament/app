@@ -84,68 +84,21 @@ $p3Config = array(
             'params' => array(
                 'presets' => array(
                     // bootstrap
-                    '360x268' => array(
-                        'name' => 'Bootstrap 360x268',
+                    'medium' => array(
+                        'name' => 'Medium 500px',
                         'commands' => array(
-                            'resize' => array(360, 268, 2), // Image::AUTO
+                            'resize' => array(500, 500, 2), // Image::AUTO
+                            'quality' => '85',
                         ),
-                        'type' => 'png'
+                        'type' => 'jpg',
                     ),
-                    '280x180' => array(
-                        'name' => 'Bootstrap 160x120',
+                    'large' => array(
+                        'name' => 'Large 1400px',
                         'commands' => array(
-                            'resize' => array(280, 180, 2), // Image::AUTO
+                            'resize' => array(1400, 1400, 2), // Image::AUTO
+                            'quality' => '85',
                         ),
-                        'type' => 'png'
-                    ),
-                    '160x120' => array(
-                        'name' => 'Bootstrap 160x120',
-                        'commands' => array(
-                            'resize' => array(160, 120, 2), // Image::AUTO
-                        ),
-                        'type' => 'png'
-                    ),
-                    // blueprint
-                    'span-24' => array(
-                        'name' => '1/1 width (span-24), jpg',
-                        'commands' => array(
-                            'resize' => array(950, 950, 4), // Image::WIDTH
-                            'quality' => 85
-                        ),
-                        'type' => 'jpg'
-                    ),
-                    'span-18' => array(
-                        'name' => '2/3 width (span-18), jpg',
-                        'commands' => array(
-                            'resize' => array(710, 710, 4), // Image::WIDTH
-                            'quality' => 85
-                        ),
-                        'type' => 'jpg'
-                    ),
-                    'span-12' => array(
-                        'name' => '1/2 width (span-12), jpg',
-                        'commands' => array(
-                            'resize' => array(470, 470, 4), // Image::WIDTH
-                            'quality' => 85
-                        ),
-                        'type' => 'jpg'
-                    ),
-                    'span-8' => array(
-                        'name' => '1/3 width (span-8), jpg',
-                        'commands' => array(
-                            'resize' => array(310, 310, 4), // Image::WIDTH
-                            'quality' => 85
-                        ),
-                        'master' => 4,
-                        'type' => 'jpg'
-                    ),
-                    'span-6' => array(
-                        'name' => '1/4 width (span-6), jpg',
-                        'commands' => array(
-                            'resize' => array(230, 230, 4), // Image::WIDTH
-                            'quality' => 85
-                        ),
-                        'type' => 'jpg'
+                        'type' => 'jpg',
                     ),
                     'icon-64' => array(
                         'name' => 'Icon 64x64',
@@ -280,6 +233,7 @@ $p3Config = array(
         // global Phundament 3 parameters
         'p3.version' => '0.5',
         'p3.backendTheme' => 'backend', // backend is the default
+        'p3.fallbackLanguage' => 'en', // backend is the default
     ),
 );
 
