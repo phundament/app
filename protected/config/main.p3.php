@@ -66,17 +66,11 @@ $p3Config = array(
         'p3widgets' => array(
             'params' => array(
                 'widgets' => array(
-                    'ext.yii-bootstrap.widgets.BootHero' => 'Bootstrap Hero',
+                    'ext.crisu83.yii-bootstrap.widgets.BootHero' => 'Bootstrap Hero',
                     'ext.yiiext.fancybox-widget.EFancyboxWidget' => 'Fancy Box',
                     'ext.yiiext.lipsum-widget.ELipsum' => 'Lorem Ipsum Text',
-                #'ext.yiiext.widgets.swfobject.ESwfObjectWidget' => 'SWF Object',
-                #'ext.yiiext.widgets.cycle.ECycleWidget' => 'Cycle',
-                // The following widgets work basically, but are hard to handle or can break the app when using incorrect params.
-                #'zii.widgets.CMenu' => 'Menu Widget',
-                #'ext.yiiext.widgets.carousel.ECarouselWidget' => 'Carousel',
-                #'ext.yiiext.widgets.simplemodal.ESimpleModalWidget'=> 'Modal Widget',
-                #'ext.yiiext.widgets.menu.EMenuWidget'				=> 'Extended Menu',
-                #'ext.yiiext.widgets.iconizedMenu.EIconizedMenu'	=> 'Iconized Menu',
+                'ext.yiiext.swfobject-widget.ESwfObjectWidget' => 'SWF Object',
+                'ext.yiiext.cycle-widget.ECycleWidget' => 'Cycle',
                 ),
             ),
         ),
