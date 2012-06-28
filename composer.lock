@@ -50,8 +50,8 @@
         {
             "package": "phundament/p3widgets",
             "version": "dev-master",
-            "source-reference": "864e0c6217b4899f6ce9da17dea2a58795f8e4b6",
-            "commit-date": "1340493121"
+            "source-reference": "855f8accdadfc80a1807af9def414cca79b48094",
+            "commit-date": "1340540151"
         },
         {
             "package": "phundament/themes/p3bootstrap",
