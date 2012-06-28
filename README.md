@@ -49,10 +49,11 @@ cd phundament-app-SHA1
 Get the packages with composer, note: if you want to install for MySQL, you have to update your config first.
 
 ```
-php composer.phar install
+php composer.phar install --dev
 ```
 
 All setup, database, file permissions and config settings should be done automatically.
+You may skip the --dev option on production systems, at the moment it just adds LESS support for your bootstrap-based themes.
  
 
 First Steps
