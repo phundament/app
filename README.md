@@ -93,6 +93,7 @@ Requirements
  *  PHP >5.3.2
  *  [Yii Framework] (http://www.yiiframework.com/) 1.1.10
  *  ImageMagick or GDlib
+ *  git, hg (Mercurial), svn (subversion), php_mod_ssl
 
 ### Tested Systems
  *  Mac OS X 10.6.8
