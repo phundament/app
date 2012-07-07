@@ -32,26 +32,26 @@
         {
             "package": "phundament/p3extensions",
             "version": "dev-master",
-            "source-reference": "21ced47c32a65aac04ed15dbe76446ec8a87e025",
-            "commit-date": "1338293986"
+            "source-reference": "a523da16dcc7def594adf392c001188e1ee2e5fb",
+            "commit-date": "1341245708"
         },
         {
             "package": "phundament/p3media",
             "version": "dev-master",
-            "source-reference": "fe9f9d10da5112732394142af40be2bd274e0cd6",
-            "commit-date": "1334357389"
+            "source-reference": "8b9da6550657a960feb5bfcf7bf6386a33c67683",
+            "commit-date": "1341587553"
         },
         {
             "package": "phundament/p3pages",
             "version": "dev-master",
-            "source-reference": "08a88cd33fed3d1f3673c3709339f05a13518a46",
-            "commit-date": "1340494783"
+            "source-reference": "46fadf83d401aae4b683ff749b68528d02aa7469",
+            "commit-date": "1341230769"
         },
         {
             "package": "phundament/p3widgets",
             "version": "dev-master",
-            "source-reference": "855f8accdadfc80a1807af9def414cca79b48094",
-            "commit-date": "1340540151"
+            "source-reference": "a0aae1db6f00b55a7dae489e0dda94547e1578a4",
+            "commit-date": "1341234200"
         },
         {
             "package": "phundament/themes/p3bootstrap",
@@ -72,7 +72,22 @@
             "version": "1.1.10"
         }
     ],
-    "packages-dev": null,
+    "packages-dev": [
+        {
+            "package": "crisu83/yii-less",
+            "version": "0.0.1"
+        },
+        {
+            "package": "phundament/lessii",
+            "version": "dev-master",
+            "source-reference": "44a7777a602a97a1f86a96f10f1deccab46d2b47",
+            "commit-date": "1340304175"
+        },
+        {
+            "package": "twitter/bootstrap",
+            "version": "2.0.3"
+        }
+    ],
     "aliases": [
 
     ],
