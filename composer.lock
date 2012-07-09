@@ -26,8 +26,8 @@
         {
             "package": "phundament/p3admin",
             "version": "dev-master",
-            "source-reference": "cb34321dcfe709f1a37ee29092b9ad0f26614211",
-            "commit-date": "1338968047"
+            "source-reference": "04bbc36125bf8497d237d2112f65fb4beb3ecf62",
+            "commit-date": "1341863864"
         },
         {
             "package": "phundament/p3extensions",
@@ -56,8 +56,8 @@
         {
             "package": "phundament/themes/p3bootstrap",
             "version": "dev-master",
-            "source-reference": "5f01d96ea0c95892b1a061768a53130e62a03ecb",
-            "commit-date": "1341828332"
+            "source-reference": "90171a7b2442a2abf756b55f3068aa32a4b56016",
+            "commit-date": "1341861170"
         },
         {
             "package": "yiiext/fancybox-widget",
