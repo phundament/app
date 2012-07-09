@@ -4,7 +4,7 @@
     "keywords": ["package", "dependency", "autoload"],
     "homepage": "http://phundament.com/",
     "type": "library",
-    "license": "BSD",
+    "license": "BSD-3-Clause",
     "config": {
         "vendor-dir": "protected/extensions"
     },
@@ -56,5 +56,6 @@
         "post-package-update": [
         "install\\P3Setup::postPackageUpdate"
         ]
-    }
+    },
+    "minimum-stability": "dev"
 }

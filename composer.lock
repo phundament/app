@@ -1,5 +1,5 @@
 {
-    "hash": "f329d6f71e1c6d7499a9d5dc025554ab",
+    "hash": "978ea7a4dd0273f752d5553d66176118",
     "packages": [
         {
             "package": "crisu83/yii-bootstrap",
@@ -26,8 +26,8 @@
         {
             "package": "phundament/p3admin",
             "version": "dev-master",
-            "source-reference": "04bbc36125bf8497d237d2112f65fb4beb3ecf62",
-            "commit-date": "1341863864"
+            "source-reference": "f074528c6e6a0705900c4281217da0a4de204057",
+            "commit-date": "1341864010"
         },
         {
             "package": "phundament/p3extensions",
@@ -91,7 +91,7 @@
     "aliases": [
 
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {
         "phundament/p3admin": 20,
         "phundament/p3widgets": 20,
