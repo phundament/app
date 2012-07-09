@@ -1,5 +1,5 @@
 {
-    "hash": "ffe204562cb83d09b3b74d30e64038fd",
+    "hash": "f329d6f71e1c6d7499a9d5dc025554ab",
     "packages": [
         {
             "package": "crisu83/yii-bootstrap",
@@ -32,14 +32,14 @@
         {
             "package": "phundament/p3extensions",
             "version": "dev-master",
-            "source-reference": "a523da16dcc7def594adf392c001188e1ee2e5fb",
-            "commit-date": "1341245708"
+            "source-reference": "6ec714f3b4083180e59f879c2457bcf76b0db417",
+            "commit-date": "1341857438"
         },
         {
             "package": "phundament/p3media",
             "version": "dev-master",
-            "source-reference": "8b9da6550657a960feb5bfcf7bf6386a33c67683",
-            "commit-date": "1341587553"
+            "source-reference": "9f47e6b52079e67865167987c4b3231d5d2e9f91",
+            "commit-date": "1341858278"
         },
         {
             "package": "phundament/p3pages",
@@ -56,8 +56,8 @@
         {
             "package": "phundament/themes/p3bootstrap",
             "version": "dev-master",
-            "source-reference": "35ad4d02fed9ac85bed448b96ca65b2361b4f5cf",
-            "commit-date": "1340303218"
+            "source-reference": "5f01d96ea0c95892b1a061768a53130e62a03ecb",
+            "commit-date": "1341828332"
         },
         {
             "package": "yiiext/fancybox-widget",
@@ -91,7 +91,7 @@
     "aliases": [
 
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "stability-flags": {
         "phundament/p3admin": 20,
         "phundament/p3widgets": 20,

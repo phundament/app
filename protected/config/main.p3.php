@@ -67,10 +67,12 @@ $p3Config = array(
             'params' => array(
                 'widgets' => array(
                     'ext.crisu83.yii-bootstrap.widgets.BootHero' => 'Bootstrap Hero',
+                    'ext.crisu83.yii-bootstrap.widgets.BootMenu' => 'Bootstrap Menu',
+                    'ext.crisu83.yii-bootstrap.widgets.BootCarousel' => 'Bootstrap Carousel',
                     'ext.yiiext.fancybox-widget.EFancyboxWidget' => 'Fancy Box',
                     'ext.yiiext.lipsum-widget.ELipsum' => 'Lorem Ipsum Text',
-                'ext.yiiext.swfobject-widget.ESwfObjectWidget' => 'SWF Object',
-                'ext.yiiext.cycle-widget.ECycleWidget' => 'Cycle',
+                    // use eg. $> php composer.phar require yiiext/swf-object-widget to get the widget source
+                    #'ext.yiiext.swf-object-widget.ESwfObjectWidget' => 'SWF Object',
                 ),
             ),
         ),

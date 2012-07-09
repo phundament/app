@@ -33,8 +33,8 @@
         "phundament/p3media": "dev-master",
         "phundament/themes/p3bootstrap": "dev-master",
         "phundament/gii-template-collection": "dev-master",
-        "yiiext/lipsum-widget": "0.*",
         "yiiext/fancybox-widget": "0.*",
+        "yiiext/lipsum-widget": "0.*",
         "yiisoft/yii": "1.1.*"
     },
     "require-dev": {
