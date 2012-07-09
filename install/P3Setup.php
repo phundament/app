@@ -134,11 +134,12 @@ class P3Setup {
                 $args = array('yiic', 'migrate', '--migrationPath=ext.phundament.p3pages.migrations', '--migrationTable=migration_module_p3pages', '--interactive=0');
                 break;
             case "phundament/themes/p3bootstrap":
-                $args = array('yiic', 'composerPackage');
+                echo "NOTE! Run $ yiic p3bootstrap-compser command manually, if you want to update theme files";
+                /*$args = array('yiic', 'composerPackage');
                 $runner = new \CConsoleCommandRunner();
                 $commandPath = \Yii::app()->basePath . DIRECTORY_SEPARATOR . 'extensions' . DIRECTORY_SEPARATOR . $installedPackage->getName() . DIRECTORY_SEPARATOR . "commands";
                 $runner->addCommands($commandPath);
-                $runner->run($args);
+                $runner->run($args);*/
                 return;
                 break;
             default:

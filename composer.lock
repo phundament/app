@@ -56,8 +56,8 @@
         {
             "package": "phundament/themes/p3bootstrap",
             "version": "dev-master",
-            "source-reference": "90171a7b2442a2abf756b55f3068aa32a4b56016",
-            "commit-date": "1341861170"
+            "source-reference": "d172586921dae7188fd39fa00422cbb6fea80eee",
+            "commit-date": "1341865300"
         },
         {
             "package": "yiiext/fancybox-widget",
