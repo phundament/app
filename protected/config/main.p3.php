@@ -71,6 +71,7 @@ $p3Config = array(
                     'ext.crisu83.yii-bootstrap.widgets.BootCarousel' => 'Bootstrap Carousel',
                     'ext.yiiext.fancybox-widget.EFancyboxWidget' => 'Fancy Box',
                     'ext.yiiext.lipsum-widget.ELipsum' => 'Lorem Ipsum Text',
+                    'ext.phundament.p3extensions.widgets.P3MarkdownWidget' => 'Markdown Widget'
                     // use eg. $> php composer.phar require yiiext/swf-object-widget to get the widget source
                     #'ext.yiiext.swf-object-widget.ESwfObjectWidget' => 'SWF Object',
                 ),
