@@ -7,6 +7,12 @@ Quick Start Tutorial
 Author: Tobias Munk
 
 
+<br>
+<br>
+<br>
+<br>
+<br>
+*https://github.com/phundament/app/blob/master/docs/guide.de.md*
 
 
 Einleitung
