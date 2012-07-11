@@ -91,10 +91,10 @@ Requirements
 ------------
 
  *  PHP >5.3.2
- *  [Yii Framework] (http://www.yiiframework.com/) 1.1.10
- *  ImageMagick or GDlib
+ *  [Yii Framework Requirements] (http://www.yiiframework.com/doc/guide/1.1/en/quickstart.installation#requirements)
  *  git, hg (Mercurial), svn (subversion), php_mod_ssl
-
+ *  ImageMagick or GDlib
+ 
 ### Tested Systems
  *  Mac OS X 10.6.8
  *  Debian 5,6
