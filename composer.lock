@@ -32,14 +32,14 @@
         {
             "package": "phundament/p3extensions",
             "version": "dev-master",
-            "source-reference": "6ec714f3b4083180e59f879c2457bcf76b0db417",
-            "commit-date": "1341857438"
+            "source-reference": "1469584445deef4a74e318e7ac12a8b50569f62f",
+            "commit-date": "1342097187"
         },
         {
             "package": "phundament/p3media",
             "version": "dev-master",
-            "source-reference": "9f47e6b52079e67865167987c4b3231d5d2e9f91",
-            "commit-date": "1341858278"
+            "source-reference": "1010d66479556701e57252c37d2bafcc3f8b428c",
+            "commit-date": "1341899556"
         },
         {
             "package": "phundament/p3pages",
@@ -50,14 +50,14 @@
         {
             "package": "phundament/p3widgets",
             "version": "dev-master",
-            "source-reference": "a0aae1db6f00b55a7dae489e0dda94547e1578a4",
-            "commit-date": "1341234200"
+            "source-reference": "c1f67423a8a0f1428196e297b18b8d58f929c459",
+            "commit-date": "1341902337"
         },
         {
             "package": "phundament/themes/p3bootstrap",
             "version": "dev-master",
-            "source-reference": "d172586921dae7188fd39fa00422cbb6fea80eee",
-            "commit-date": "1341865300"
+            "source-reference": "27531791893fe4fadcbb50adb5d895ad6cc43e4d",
+            "commit-date": "1341873552"
         },
         {
             "package": "yiiext/fancybox-widget",
@@ -72,22 +72,7 @@
             "version": "1.1.10"
         }
     ],
-    "packages-dev": [
-        {
-            "package": "crisu83/yii-less",
-            "version": "0.0.1"
-        },
-        {
-            "package": "phundament/lessii",
-            "version": "dev-master",
-            "source-reference": "44a7777a602a97a1f86a96f10f1deccab46d2b47",
-            "commit-date": "1340304175"
-        },
-        {
-            "package": "twitter/bootstrap",
-            "version": "2.0.3"
-        }
-    ],
+    "packages-dev": null,
     "aliases": [
 
     ],
