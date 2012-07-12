@@ -107,7 +107,7 @@ Details zu den Requirements gibt es online unter [Software und Versionen](https:
  * git
  * mercurial
  * subversion
- * PHP mod_ssl
+ * PHP OpenSSL
  * LESS compiler
 
 
