@@ -319,6 +319,10 @@ Auf dem Produktivsystem kann das Projekt folgendermaßen installiert werden:
     $ php composer.phar install
 .
 
+### "Enterprise" Alternativen
+
+tbd ... [weitere Infos](http://getcomposer.org/doc/faqs/should-i-commit-the-dependencies-in-my-vendor-directory.md)
+
 ### rsync
 
 Zur Spiegelung der Mediadaten kann das [rsync-command](https://github.com/schmunk42/p3extensions/blob/master/commands/P3RsyncCommand.php) verwendet werden
