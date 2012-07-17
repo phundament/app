@@ -187,6 +187,18 @@
     },{
         "type": "package",
         "package": {
+            "name": "xtranophilist/awegen",
+            "description": "Code generator for Yii.",
+            "type": "yii-extension",
+            "version": "0.0.1",
+            "dist": {
+                "url": "http://www.yiiframework.com/extension/awegen/files/awegen.zip",
+                "type": "zip"
+            }
+        }
+    },{
+        "type": "package",
+        "package": {
             "name": "yiiext/fancybox-widget",
             "version": "0.0.1",
             "source": {
