@@ -43,6 +43,12 @@
         "type":"vcs",
         "url": "https://github.com/schmunk42/lessii.git"
     },{
+        "type":"vcs",
+        "url": "https://github.com/schmunk42/giix.git"
+    },{
+        "type":"vcs",
+        "url": "https://github.com/schmunk42/awegen.git"
+    },{
         "type": "package",
         "package": {
             "name": "phundament/jquery-file-upload",
@@ -125,18 +131,6 @@
     },{
         "type": "package",
         "package": {
-            "name": "mentel/giix",
-            "description": "giix is gii Extended, a code generator for Yii PHP framework.",
-            "type": "yii-extension",
-            "version": "1.9.1",
-            "dist": {
-                "url": "http://www.yiiframework.com/extension/giix/files/giix-1.9.1.tgz",
-                "type": "tar"
-            }
-        }
-    },{
-        "type": "package",
-        "package": {
             "name": "logicoder/videojs",
             "type": "yii-extension",
             "version": "1.0",
@@ -181,18 +175,6 @@
             "version": "2.0.3",
             "dist": {
                 "url": "https://github.com/twitter/bootstrap/zipball/v2.0.3",
-                "type": "zip"
-            }
-        }
-    },{
-        "type": "package",
-        "package": {
-            "name": "xtranophilist/awegen",
-            "description": "Code generator for Yii.",
-            "type": "yii-extension",
-            "version": "0.0.1",
-            "dist": {
-                "url": "http://www.yiiframework.com/extension/awegen/files/awegen.zip",
                 "type": "zip"
             }
         }
