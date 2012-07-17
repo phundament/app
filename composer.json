@@ -131,7 +131,7 @@
             "version": "1.9.1",
             "dist": {
                 "url": "http://www.yiiframework.com/extension/giix/files/giix-1.9.1.tgz",
-                "type": "zip"
+                "type": "tar"
             }
         }
     },{
