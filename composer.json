@@ -125,6 +125,18 @@
     },{
         "type": "package",
         "package": {
+            "name": "mentel/giix",
+            "description": "giix is gii Extended, a code generator for Yii PHP framework.",
+            "type": "yii-extension",
+            "version": "1.9.1",
+            "dist": {
+                "url": "http://www.yiiframework.com/extension/giix/files/giix-1.9.1.tgz",
+                "type": "zip"
+            }
+        }
+    },{
+        "type": "package",
+        "package": {
             "name": "logicoder/videojs",
             "type": "yii-extension",
             "version": "1.0",
