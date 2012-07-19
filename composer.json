@@ -49,6 +49,12 @@
         "type":"vcs",
         "url": "https://github.com/schmunk42/awegen.git"
     },{
+        "type":"vcs",
+        "url": "https://github.com/mindplay-dk/jsondoc.git"
+    },{
+        "type":"vcs",
+        "url": "https://github.com/mindplay-dk/jsonfreeze.git"
+    },{
         "type": "package",
         "package": {
             "name": "phundament/jquery-file-upload",
