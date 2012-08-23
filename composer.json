@@ -100,6 +100,36 @@
     },{
         "type": "package",
         "package": {
+            "name": "yiisoft/yii",
+            "version": "1.1.11",
+            "source": {
+                "url": "https://github.com/yiisoft/yii.git",
+                "type": "git",
+                "reference": "58da4530890b8bc465dff4f72081270453ec20e8"
+            },
+            "dist": {
+                "url": "https://github.com/yiisoft/yii/zipball/1.1.11",
+                "type": "zip"
+            }
+        }
+    },{
+        "type": "package",
+        "package": {
+            "name": "yiisoft/yii",
+            "version": "1.1.12",
+            "source": {
+                "url": "https://github.com/yiisoft/yii.git",
+                "type": "git",
+                "reference": "b600af63136a8913b192cbe651186f02632c0267"
+            },
+            "dist": {
+                "url": "https://github.com/yiisoft/yii/zipball/1.1.12",
+                "type": "zip"
+            }
+        }
+    },{
+        "type": "package",
+        "package": {
             "name": "crisu83/yii-less",
             "version": "0.0.1",
             "source": {
