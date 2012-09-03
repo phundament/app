@@ -90,6 +90,24 @@
     },{
         "type": "package",
         "package": {
+            "name": "crisu83/yii-bootstrap",
+            "version": "1.1.0",
+            "source": {
+                "url": "https://bitbucket.org/crisu83/yii-bootstrap",
+                "type": "hg",
+                "reference": "8611ae9b9006"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/Crisu83/yii-bootstrap/get/8611ae9b9006.zip"
+            },
+            "require": {
+                "yiisoft/yii": ">=1.1.10"
+            }
+        }
+    },{
+        "type": "package",
+        "package": {
             "name": "yiisoft/yii",
             "version": "1.1.10",
             "dist": {
