@@ -1,13 +1,31 @@
 {
-    "hash": "978ea7a4dd0273f752d5553d66176118",
+    "hash": "655238571da66e74d71d93006c10a513",
     "packages": [
         {
             "package": "crisu83/yii-bootstrap",
-            "version": "0.9.12"
+            "version": "1.1.0"
         },
         {
             "package": "crisu83/yii-rights",
             "version": "0.0.1"
+        },
+        {
+            "package": "mindplay/jsondoc",
+            "version": "dev-master",
+            "source-reference": "6ae810eb8e9d82bb465c06fa80e931913d2d3a59",
+            "commit-date": "1342193433"
+        },
+        {
+            "package": "mindplay/jsonfreeze",
+            "version": "dev-master",
+            "alias-pretty-version": "1.0.x-dev",
+            "alias-version": "1.0.9999999.9999999-dev"
+        },
+        {
+            "package": "mindplay/jsonfreeze",
+            "version": "dev-master",
+            "source-reference": "1dbc4af62eb66479c3895e78baf8f2afb481b14f",
+            "commit-date": "1342195115"
         },
         {
             "package": "mishamx/yii-user",
@@ -16,8 +34,8 @@
         {
             "package": "phundament/gii-template-collection",
             "version": "dev-master",
-            "source-reference": "157cc799ce61e33e66a2c0c8b38b6049ed967fa2",
-            "commit-date": "1337705299"
+            "source-reference": "412464e1823cde8ad149b0b483302f203a51bc8e",
+            "commit-date": "1346932995"
         },
         {
             "package": "phundament/jquery-file-upload",
@@ -32,32 +50,32 @@
         {
             "package": "phundament/p3extensions",
             "version": "dev-master",
-            "source-reference": "1469584445deef4a74e318e7ac12a8b50569f62f",
-            "commit-date": "1342097187"
+            "source-reference": "7e5d517ad8c2f53f498d2f3c6e8e8105b7aad25b",
+            "commit-date": "1342807282"
         },
         {
             "package": "phundament/p3media",
             "version": "dev-master",
-            "source-reference": "1010d66479556701e57252c37d2bafcc3f8b428c",
-            "commit-date": "1341899556"
+            "source-reference": "3a270e9003c2ed5b500ea817e7bc506f1276ead0",
+            "commit-date": "1342179691"
         },
         {
             "package": "phundament/p3pages",
             "version": "dev-master",
-            "source-reference": "46fadf83d401aae4b683ff749b68528d02aa7469",
-            "commit-date": "1341230769"
+            "source-reference": "1153be7ef6e42945663482b902c075ad3afed392",
+            "commit-date": "1342807233"
         },
         {
             "package": "phundament/p3widgets",
             "version": "dev-master",
-            "source-reference": "c1f67423a8a0f1428196e297b18b8d58f929c459",
-            "commit-date": "1341902337"
+            "source-reference": "6737739a9b1ce575d02bd71604f1a46a03803644",
+            "commit-date": "1342784543"
         },
         {
             "package": "phundament/themes/p3bootstrap",
             "version": "dev-master",
-            "source-reference": "27531791893fe4fadcbb50adb5d895ad6cc43e4d",
-            "commit-date": "1341873552"
+            "source-reference": "dbf402f8365f7ae3e9452cef6f4107fde3e3e775",
+            "commit-date": "1342807596"
         },
         {
             "package": "yiiext/fancybox-widget",
@@ -69,7 +87,7 @@
         },
         {
             "package": "yiisoft/yii",
-            "version": "1.1.10"
+            "version": "1.1.12"
         }
     ],
     "packages-dev": null,
@@ -84,6 +102,7 @@
         "phundament/p3media": 20,
         "phundament/themes/p3bootstrap": 20,
         "phundament/gii-template-collection": 20,
+        "mindplay/jsondoc": 20,
         "phundament/lessii": 20
     }
 }

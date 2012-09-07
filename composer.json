@@ -35,7 +35,8 @@
         "phundament/gii-template-collection": "dev-master",
         "yiiext/fancybox-widget": "0.*",
         "yiiext/lipsum-widget": "0.*",
-        "yiisoft/yii": "1.1.*"
+        "yiisoft/yii": "1.1.*",
+        "mindplay/jsondoc": ">=1.0-dev"
     },
     "require-dev": {
         "phundament/lessii": "dev-master"
