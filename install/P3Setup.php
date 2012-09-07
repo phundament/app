@@ -145,8 +145,8 @@ class P3Setup
                 return;
         }
 
-        $app->runner->addCommands($commandPath);
-        $app->runner->run($args);
+        $app->commandRunner->addCommands($commandPath);
+        $app->commandRunner->run($args);
     }
 
     /**
