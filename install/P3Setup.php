@@ -52,9 +52,6 @@ class P3Setup
     {
         $installedPackage = $event->getOperation()->getPackage();
 
-        $app = self::getYiiApplication();
-        $commandPath = \Yii::getFrameworkPath() . DIRECTORY_SEPARATOR . 'cli' . DIRECTORY_SEPARATOR . 'commands';
-
         // do stuff
         switch ($installedPackage->getName()) {
             case "yiisoft/yii":
@@ -62,11 +59,11 @@ class P3Setup
                 @chmod(dirname(__FILE__) . '/../runtime', 0777);
 
                 $args = array('yiic', 'webapp', realpath(dirname(__FILE__) . '/..'));
-                $runner = new \CConsoleCommandRunner();
-                $commandPath = \Yii::getFrameworkPath() . DIRECTORY_SEPARATOR . 'cli' . DIRECTORY_SEPARATOR . 'commands';
-                $runner->addCommands($commandPath);
 
-                $runner->run($args);
+                $app = self::getYiiApplication();
+                $commandPath = \Yii::getFrameworkPath() . DIRECTORY_SEPARATOR . 'cli' . DIRECTORY_SEPARATOR . 'commands';
+                $app->commandRunner->addCommands($commandPath);
+                $app->commandRunner->run($args);
 
                 echo "\nUpdating config in index.php...\n";
                 $indexPhp = file_get_contents(dirname(__FILE__) . "/../index.php");
@@ -101,22 +98,23 @@ class P3Setup
                 $args = array('yiic', 'migrate', '--migrationPath=ext.phundament.p3pages.migrations', '--migrationTable=migration_module_p3pages', '--interactive=0');
                 break;
             case "phundament/themes/p3bootstrap":
+                $app = self::getYiiApplication();
                 $args = array('yiic', 'composerPackage');
                 $commandPath = \Yii::app()->basePath . DIRECTORY_SEPARATOR . 'extensions' . DIRECTORY_SEPARATOR . $installedPackage->getName() . DIRECTORY_SEPARATOR . "commands";
+                $app->commandRunner->addCommands($commandPath);
                 break;
             default:
                 return;
         }
 
-        $app->commandRunner->addCommands(YII_PATH.'/cli/commands');
-        $app->commandRunner->addCommands($commandPath);
+        $app = self::getYiiApplication();
         $app->commandRunner->run($args);
     }
 
     public static function postPackageUpdate(Event $event)
     {
         $installedPackage = $event->getOperation()->getTargetPackage();
-        
+
         $app = self::getYiiApplication();
         $commandPath = \Yii::getFrameworkPath() . DIRECTORY_SEPARATOR . 'cli' . DIRECTORY_SEPARATOR . 'commands';
 
