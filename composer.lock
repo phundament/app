@@ -1,13 +1,19 @@
 {
-    "hash": "655238571da66e74d71d93006c10a513",
+    "hash": "40f0b996d375a6ec0a548894e186c043",
     "packages": [
         {
             "package": "crisu83/yii-bootstrap",
-            "version": "1.1.0"
+            "version": "1.0.0"
         },
         {
             "package": "crisu83/yii-rights",
             "version": "0.0.1"
+        },
+        {
+            "package": "mindplay/jsondoc",
+            "version": "dev-master",
+            "alias-pretty-version": "1.0.x-dev",
+            "alias-version": "1.0.9999999.9999999-dev"
         },
         {
             "package": "mindplay/jsondoc",
@@ -61,21 +67,15 @@
         },
         {
             "package": "phundament/p3pages",
-            "version": "dev-master",
-            "source-reference": "1153be7ef6e42945663482b902c075ad3afed392",
-            "commit-date": "1342807233"
+            "version": "0.6.1"
         },
         {
             "package": "phundament/p3widgets",
-            "version": "dev-master",
-            "source-reference": "6737739a9b1ce575d02bd71604f1a46a03803644",
-            "commit-date": "1342784543"
+            "version": "0.6.0"
         },
         {
             "package": "phundament/themes/p3bootstrap",
-            "version": "dev-master",
-            "source-reference": "d316ee6c40f45ac54db8125d5b2f83a91d313841",
-            "commit-date": "1347000197"
+            "version": "0.6.0"
         },
         {
             "package": "yiiext/fancybox-widget",
@@ -97,10 +97,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "phundament/p3admin": 20,
-        "phundament/p3widgets": 20,
-        "phundament/p3pages": 20,
         "phundament/p3media": 20,
-        "phundament/themes/p3bootstrap": 20,
         "phundament/gii-template-collection": 20,
         "mindplay/jsondoc": 20,
         "phundament/lessii": 20
