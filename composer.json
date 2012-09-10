@@ -91,7 +91,7 @@
         "type": "package",
         "package": {
             "name": "crisu83/yii-bootstrap",
-            "version": "1.1.0",
+            "version": "1.0.0",
             "source": {
                 "url": "https://bitbucket.org/crisu83/yii-bootstrap",
                 "type": "hg",
