@@ -272,7 +272,7 @@
         "type": "package",
         "package": {
             "name": "yiiext/migrate-command",
-            "version": "0.8.0-dev",
+            "version": "0.7.1.1",
             "source": {
                 "url": "https://github.com/yiiext/migrate-command.git",
                 "type": "git",
