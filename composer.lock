@@ -1,5 +1,5 @@
 {
-    "hash": "40f0b996d375a6ec0a548894e186c043",
+    "hash": "620369640e8108fa3bcf9a6ae8a4e9f7",
     "packages": [
         {
             "package": "crisu83/yii-bootstrap",
@@ -8,12 +8,6 @@
         {
             "package": "crisu83/yii-rights",
             "version": "0.0.1"
-        },
-        {
-            "package": "mindplay/jsondoc",
-            "version": "dev-master",
-            "alias-pretty-version": "1.0.x-dev",
-            "alias-version": "1.0.9999999.9999999-dev"
         },
         {
             "package": "mindplay/jsondoc",
@@ -40,8 +34,8 @@
         {
             "package": "phundament/gii-template-collection",
             "version": "dev-master",
-            "source-reference": "412464e1823cde8ad149b0b483302f203a51bc8e",
-            "commit-date": "1346932995"
+            "source-reference": "aa35e77bdaa32c9d577817d119e00eebf0c852c7",
+            "commit-date": "1347384897"
         },
         {
             "package": "phundament/jquery-file-upload",
@@ -56,8 +50,8 @@
         {
             "package": "phundament/p3extensions",
             "version": "dev-master",
-            "source-reference": "7e5d517ad8c2f53f498d2f3c6e8e8105b7aad25b",
-            "commit-date": "1342807282"
+            "source-reference": "2dd77d4599c95f2a5d7f7e8866fa6e71c9ec7ffc",
+            "commit-date": "1347391651"
         },
         {
             "package": "phundament/p3media",
@@ -84,6 +78,10 @@
         {
             "package": "yiiext/lipsum-widget",
             "version": "0.0.1"
+        },
+        {
+            "package": "yiiext/migrate-command",
+            "version": "0.7.1.1"
         },
         {
             "package": "yiisoft/yii",

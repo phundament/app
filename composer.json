@@ -36,7 +36,8 @@
         "yiiext/fancybox-widget": "0.*",
         "yiiext/lipsum-widget": "0.*",
         "yiisoft/yii": "1.1.*",
-        "mindplay/jsondoc": ">=1.0-dev"
+        "mindplay/jsondoc": ">=1.0-dev",
+        "yiiext/migrate-command": "0.7.1.1"
     },
     "require-dev": {
         "phundament/lessii": "dev-master"
