@@ -270,6 +270,24 @@
             }
     },{
         "type": "package",
+        "package": {
+            "name": "yiiext/migrate-command",
+            "version": "0.8.0-dev",
+            "source": {
+                "url": "https://github.com/yiiext/migrate-command.git",
+                "type": "git",
+                "reference": "79b578ed54cdf6ecaa65db0a496151f7528a7e40"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://nodeload.github.com/yiiext/migrate-command/zipball/79b578ed54cdf6ecaa65db0a496151f7528a7e40"
+            }
+        },
+            "require": {
+                "yiisoft/yii": ">=1.1.10"
+            }
+    },{
+        "type": "package",
         "homepage": "http://yiiext.github.com/extensions/swf-object-widget/index.html",
         "package": {
             "name": "yiiext/swf-object-widget",
