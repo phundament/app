@@ -42,13 +42,11 @@ return array(
             'applicationModuleName' => 'core',
             // define all available modules (if you do not set this, modules will be set from yii app config)
             'modulePaths' => array(
-                #'admin'      => 'application.modules.admin.db.migrations',
                 'user' => 'vendor.phundament.p3admin.modules-install.user.migrations',
                 'rights' => 'vendor.phundament.p3admin.modules-install.rights.migrations',
                 'p3pages' => 'vendor.phundament.p3pages.migrations',
                 'p3widgets' => 'vendor.phundament.p3widgets.migrations',
                 'p3media' => 'vendor.phundament.p3media.migrations',
-            #'yourModule' => 'application.any.other.path.possible',
             // ...
             ),
             // you can customize the modules migrations subdirectory which is used when you are using yii module config
@@ -63,10 +61,10 @@ return array(
             'templateFile' => 'application.db.migration_template',
         ),
         // composer commands
-        'p3bootstrap-composer' => array(
+        'phundament/themes/p3bootstrap-installer' => array(
             'class' => 'vendor.phundament.themes.p3bootstrap.commands.ComposerPackageCommand',
         ),
-        'p3media-composer' => array(
+        'phundament/p3media-installer' => array(
             'class' => 'vendor.phundament.p3media.commands.ComposerPackageCommand',
         ),
     ),
