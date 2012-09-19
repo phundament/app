@@ -248,6 +248,14 @@ Die Phundament Loginseite erreicht man über den *Login* Link rechts oben in der
 
 *Edit/Create Page Translation* im *Phundament 3* Menu in der *Navbar*.
 
+### Seite erstellen
+
+Layout: `//layouts/main`
+
+View: `//p3pages/default`
+
+
+
 ### Dateien hochladen
 
 Dateien können dem System über [p3media](http://www.yiiframework.com/extension/p3media) hinzugefügt

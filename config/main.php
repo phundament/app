@@ -234,9 +234,10 @@ $p3Config = array(
     ),
 );
 
+return $p3Config;
 
 // include external configs
-require_once($applicationDirectory . '/extensions/phundament/p3extensions/components/P3Configuration.php');
+/*require_once($applicationDirectory . '/extensions/phundament/p3extensions/components/P3Configuration.php');
 $config = new P3Configuration(array(
         $applicationDirectory . '/config/main.php',
         $applicationDirectory . '/extensions/phundament/p3admin/config/main.php',
@@ -247,9 +248,9 @@ $config = new P3Configuration(array(
         $applicationDirectory . '/extensions/phundament/p3admin/modules-install/rights/config/main.php',
         #dirname(__FILE__) . '/../extensions/p3admin/modules-install/webshell/config/main.php',
         #dirname(__FILE__) . '/../extensions/p3extensions/widgets/ckeditor/config/main.php', // ==> bootstrap-theme
-        $applicationDirectory . '/extensions/phundament/themes/p3bootstrap/config/main.php',
+        $applicationDirectory . '/../themes/frontend/config/main.php',
         $p3Config,
         $applicationDirectory . '/config/local.php',
     ));
 
-return $config->toArray();
+return $config->toArray();*/

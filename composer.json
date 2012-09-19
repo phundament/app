@@ -5,9 +5,6 @@
     "homepage": "http://phundament.com/",
     "type": "library",
     "license": "BSD-3-Clause",
-    "config": {
-        "vendor-dir": "protected/extensions"
-    },
     "authors": [
     {
         "name": "Tobias Munk",
