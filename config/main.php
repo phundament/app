@@ -30,23 +30,31 @@ $p3Config = array(
         'application.models.*',
         'application.components.*',
         'zii.widgets.*',
-        'ext.phundament.gii-template-collection.components.*', // gtc
 
-        'ext.crisu83.yii-rights.components.*', // TODO - Hack: needed, so rights can reside in extensions
-        'ext.phundament.p3extensions.widgets.userflash.EUserFlash', // flash messages
-        'ext.phundament.gtc.components.*', // TODO: Hack, because of modules in extensions???
-        'ext.phundament.p3widgets.components.*', // TODO: Hack, because of modules in extensions???
-        'ext.phundament.p3pages.models.*', // TODO: Hack, because of modules in extensions???
-        'ext.mishamx.yii-user.models.*', // TODO: Hack, because of modules in extensions???
-        'ext.mishamx.yii-user.components.*', // TODO - Hack: gtc fix for UActiveRecord
+        'application.vendor.phundament.p3widgets.components.*',
+        'application.vendor.phundament.p3extensions.components.*',                
+        'application.vendor.phundament.p3extensions.behaviors.*',                
+        
+#        'application.vendor.mishamx.yii-user.models.*',
+ #       'application.vendor.mishamx.yii-user.components.*',      
+#        'application.vendor.phundament.gii-template-collection.components.*', // gtc
+
+        'application.vendor.crisu83.yii-rights.components.*', // TODO - Hack: needed, so rights can reside in extensions
+  #      'vendor.phundament.p3extensions.widgets.userflash.EUserFlash', // flash messages
+   #     'vendor.phundament.gtc.components.*', // TODO: Hack, because of modules in extensions???
+ // TODO: Hack, because of modules in extensions???
+        'application.vendor.phundament.p3pages.models.*', // TODO: Hack, because of modules in extensions???
     ),
     'aliases' => array(
+        'vendor' => 'application.vendor',
+        #'ext' => 'application.vendor',
+    
         // TODO: Hack, because of modules in extensions
-        'p3widgets' => 'ext.phundament.p3widgets',
-        'p3media' => 'ext.phundament.p3media',
-        'p3pages' => 'ext.phundament.p3pages',
-        'user' => 'ext.mishamx.yii-user',
-        'rights' => 'ext.crisu83.yii-rights',
+        'p3widgets' => 'application.vendor.phundament.p3widgets',
+        'p3media' => 'vendor.phundament.p3media',
+        'p3pages' => 'vendor.phundament.p3pages',
+        'user' => 'vendor.mishamx.yii-user',
+        'rights' => 'vendor.crisu83.yii-rights',
     ),
     'modules' => array(
         // uncomment the following to enable the Gii tool
@@ -56,24 +64,30 @@ $p3Config = array(
             // If removed, Gii defaults to localhost only. Edit carefully to taste.
             'ipFilters' => array('127.0.0.1', '::1'),
             'generatorPaths' => array(
-                #'ext.giix-core', // giix generators
-                'ext.gtc', // giix generators
+                #'vendor.giix-core', // giix generators
+                'vendor.gtc', // giix generators
             ),
         ),
         'p3admin' => array(
             'params' => array('install' => false),
         ),
         'p3widgets' => array(
+			'class' => 'ext.phundament.p3widgets.P3WidgetsModule',
+			'params' => array(
+				'widgets' => array(
+					'CWidget' => 'Basic HTML Widget',
+				)
+			),
             'params' => array(
                 'widgets' => array(
-                    'ext.crisu83.yii-bootstrap.widgets.BootHero' => 'Bootstrap Hero',
-                    'ext.crisu83.yii-bootstrap.widgets.BootMenu' => 'Bootstrap Menu',
-                    'ext.crisu83.yii-bootstrap.widgets.BootCarousel' => 'Bootstrap Carousel',
-                    'ext.yiiext.fancybox-widget.EFancyboxWidget' => 'Fancy Box',
-                    'ext.yiiext.lipsum-widget.ELipsum' => 'Lorem Ipsum Text',
-                    'ext.phundament.p3extensions.widgets.P3MarkdownWidget' => 'Markdown Widget'
+                    'vendor.crisu83.yii-bootstrap.widgets.BootHero' => 'Bootstrap Hero',
+                    'vendor.crisu83.yii-bootstrap.widgets.BootMenu' => 'Bootstrap Menu',
+                    'vendor.crisu83.yii-bootstrap.widgets.BootCarousel' => 'Bootstrap Carousel',
+                    'vendor.yiivendor.fancybox-widget.EFancyboxWidget' => 'Fancy Box',
+                    'vendor.yiivendor.lipsum-widget.ELipsum' => 'Lorem Ipsum Text',
+                    'vendor.phundament.p3extensions.widgets.P3MarkdownWidget' => 'Markdown Widget'
                     // use eg. $> php composer.phar require yiiext/swf-object-widget to get the widget source
-                    #'ext.yiiext.swf-object-widget.ESwfObjectWidget' => 'SWF Object',
+                    #'vendor.yiivendor.swf-object-widget.ESwfObjectWidget' => 'SWF Object',
                 ),
             ),
         ),
@@ -121,25 +135,40 @@ $p3Config = array(
                 )
             )
         ),
-        'rights' => array(
-        #'cssFile' => '/css/rights/default.css'
+        'user' => array(
+			'class' => 'application.vendor.mishamx.yii-user.UserModule',
+			'activeAfterRegister' => false,
+		),
+		'rights' => array(
+					'class' => 'application.vendor.crisu83.yii-rights.RightsModule',
+			'userIdColumn' => 'id',
+			'userClass' => 'User',
+		#'install' => true, // Enables the installer.
+		#'superuserName' => 'admin'
+            #'cssFile' => '/css/rights/default.css'
         ),
     ),
     // application components
     'components' => array(
+    	'authManager' => array(
+			'class' => 'RDbAuthManager', // Provides support authorization item sorting.
+			'defaultRoles' => array('Authenticated', 'Guest'), // see correspoing business rules, note: superusers always get checkAcess == true
+		),
         'user' => array(
-            // enable cookie-based authentication
-            'allowAutoLogin' => true,
+        // enable cookie-based authentication
+			'class' => 'RWebUser', // mishamx/yii-rights: Allows super users access implicitly.        
+			'allowAutoLogin' => true,
+			'loginUrl' => array('/user/login'),
         ),
         'returnUrl' => array(
-            'class' => 'ext.phundament.p3extensions.components.P3ReturnUrl',
+            'class' => 'vendor.phundament.p3extensions.components.P3ReturnUrl',
         ),
         'langHandler' => array(
-            'class' => 'ext.phundament.p3extensions.components.P3LangHandler',
+            'class' => 'vendor.phundament.p3extensions.components.P3LangHandler',
             'languages' => array('en', 'de', 'ru', 'fr', 'ph_debug')
         ),
         'urlManager' => array(
-            'class' => 'ext.phundament.p3extensions.components.P3LangUrlManager',
+            'class' => 'vendor.phundament.p3extensions.components.P3LangUrlManager',
             'showScriptName' => false,
             'appendParams' => false, // in general more error resistant
             'urlFormat' => 'get', // use 'path', otherwise rules below won't work
@@ -164,6 +193,7 @@ $p3Config = array(
             ),
         ),
         'db' => array(
+            'tablePrefix' => 'usr_',
             // SQLite
             'connectionString' => 'sqlite:' . $applicationDirectory . '/data/default.db',
         // MySQL
@@ -197,14 +227,14 @@ $p3Config = array(
             'enableSkin' => true,
         ),
         'lessCompiler' => array(
-            'class' => 'ext.crisu83.yii-less.components.LessCompiler',
+            'class' => 'vendor.crisu83.yii-less.components.LessCompiler',
             //'autoCompile' => true, // You may need to set xdebug.max_nesting_level = 1024
             'paths' => array(
                 'protected/extensions/phundament/themes/p3bootstrap/less/p3.less' => 'protected/extensions/phundament/themes/p3bootstrap/css/p3.css',
             ),
         ),
         'bootstrap' => array(
-            'class' => 'ext.crisu83.yii-bootstrap.components.Bootstrap', // assuming you extracted bootstrap under extensions
+            'class' => 'vendor.crisu83.yii-bootstrap.components.Bootstrap', // assuming you extracted bootstrap under extensions
             'coreCss' => false, // whether to register the Bootstrap core CSS (bootstrap.min.css), defaults to true
             'responsiveCss' => false, // whether to register the Bootstrap responsive CSS (bootstrap-responsive.min.css), default to false
             'plugins' => array(

@@ -6,7 +6,8 @@
 $mainConfig = require('main.php');
 return array(
     'aliases' => array(
-      'vendor' => 'application.vendor'
+      'vendor' => 'application.vendor',
+      'webroot' => 'application.www'
     ),
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
     'name' => 'My Console Application',
@@ -14,7 +15,7 @@ return array(
     'modules' => $mainConfig['modules'],
     'commandMap' => array(
         'rsync' => array(
-            'class' => 'ext.p3extensions.commands.P3RsyncCommand',
+            'class' => 'vendor.p3extensions.commands.P3RsyncCommand',
             'servers' => array(
                 'dev' => realpath(dirname(__FILE__) . '/..'),
                 'prod' => 'user@exampl.com:/path/to/phundament/protected',
@@ -29,7 +30,7 @@ return array(
         ),
         // developer commands
         'p3bootstrap-composer' => array(
-            'class' => 'ext.phundament.themes.p3bootstrap.commands.ComposerPackageCommand',
+            'class' => 'vendor.phundament.themes.p3bootstrap.commands.ComposerPackageCommand',
         ),
         'p3webapp' => array(
             'class' => 'vendor.phundament.p3admin.commands.P3WebappCommand',
@@ -46,6 +47,7 @@ return array(
             // define all available modules (if you do not set this, modules will be set from yii app config)
             'modulePaths' => array(
                 #'admin'      => 'application.modules.admin.db.migrations',
+                'user' => 'vendor.phundament.p3admin.modules-install.user.migrations',
                 'rights' => 'vendor.phundament.p3admin.modules-install.rights.migrations',
                 'p3pages' => 'vendor.phundament.p3pages.migrations',
                 'p3widgets' => 'vendor.phundament.p3widgets.migrations',
