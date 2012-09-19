@@ -64,10 +64,10 @@ return array(
             'path' => realpath(dirname(__FILE__) . '/..'),
         ),
         'phundament/themes/p3bootstrap-installer' => array(
-            'class' => 'vendor.phundament.themes.p3bootstrap.commands.ComposerPackageCommand',
+            'class' => 'vendor.phundament.themes.p3bootstrap.commands.P3BootstrapCommand',
         ),
         'phundament/p3media-installer' => array(
-            'class' => 'vendor.phundament.p3media.commands.ComposerPackageCommand',
+            'class' => 'vendor.phundament.p3media.commands.P3MediaCommand',
         ),
     ),
 );
