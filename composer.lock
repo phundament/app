@@ -1,5 +1,5 @@
 {
-    "hash": "620369640e8108fa3bcf9a6ae8a4e9f7",
+    "hash": "5e9738748e7f370e42cf5ea6ed87021d",
     "packages": [
         {
             "package": "crisu83/yii-bootstrap",
@@ -8,6 +8,12 @@
         {
             "package": "crisu83/yii-rights",
             "version": "0.0.1"
+        },
+        {
+            "package": "mindplay/jsondoc",
+            "version": "dev-master",
+            "alias-pretty-version": "1.0.x-dev",
+            "alias-version": "1.0.9999999.9999999-dev"
         },
         {
             "package": "mindplay/jsondoc",
@@ -44,8 +50,8 @@
         {
             "package": "phundament/p3admin",
             "version": "dev-master",
-            "source-reference": "f074528c6e6a0705900c4281217da0a4de204057",
-            "commit-date": "1341864010"
+            "source-reference": "1ee97d5f8a91e2c5da3b93d5f97b0d547c2bafbb",
+            "commit-date": "1348068732"
         },
         {
             "package": "phundament/p3extensions",
