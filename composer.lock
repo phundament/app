@@ -2,96 +2,507 @@
     "hash": "5e9738748e7f370e42cf5ea6ed87021d",
     "packages": [
         {
-            "package": "crisu83/yii-bootstrap",
-            "version": "1.0.0"
+            "name": "crisu83/yii-bootstrap",
+            "version": "1.0.0",
+            "source": {
+                "type": "hg",
+                "url": "https://bitbucket.org/crisu83/yii-bootstrap",
+                "reference": "8611ae9b9006"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/Crisu83/yii-bootstrap/get/8611ae9b9006.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "yiisoft/yii": ">=1.1.10"
+            },
+            "type": "library",
+            "installation-source": "dist"
         },
         {
-            "package": "crisu83/yii-rights",
-            "version": "0.0.1"
+            "name": "crisu83/yii-rights",
+            "version": "0.0.1",
+            "source": {
+                "type": "hg",
+                "url": "https://bitbucket.org/Crisu83/yii-rights",
+                "reference": "437267d8b1ed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/Crisu83/yii-rights/get/437267d8b1ed.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "yiisoft/yii": ">=1.1.10",
+                "phundament/p3admin": "dev-master"
+            },
+            "type": "library",
+            "installation-source": "dist"
         },
         {
-            "package": "mindplay/jsondoc",
+            "name": "mindplay/jsondoc",
             "version": "dev-master",
-            "alias-pretty-version": "1.0.x-dev",
-            "alias-version": "1.0.9999999.9999999-dev"
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mindplay-dk/jsondoc.git",
+                "reference": "6ae810eb8e9d82bb465c06fa80e931913d2d3a59"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/mindplay-dk/jsondoc/zipball/6ae810eb8e9d82bb465c06fa80e931913d2d3a59",
+                "reference": "6ae810eb8e9d82bb465c06fa80e931913d2d3a59",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "mindplay/jsonfreeze": "1.0.*"
+            },
+            "time": "1342193433",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "mindplay\\jsondoc": ""
+                }
+            },
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Rasmus Schultz",
+                    "email": "rasmus@mindplay.dk"
+                }
+            ],
+            "description": "JSON-based object/document store"
         },
         {
-            "package": "mindplay/jsondoc",
+            "name": "mindplay/jsonfreeze",
             "version": "dev-master",
-            "source-reference": "6ae810eb8e9d82bb465c06fa80e931913d2d3a59",
-            "commit-date": "1342193433"
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mindplay-dk/jsonfreeze.git",
+                "reference": "1dbc4af62eb66479c3895e78baf8f2afb481b14f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/mindplay-dk/jsonfreeze/zipball/1dbc4af62eb66479c3895e78baf8f2afb481b14f",
+                "reference": "1dbc4af62eb66479c3895e78baf8f2afb481b14f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "time": "1342195115",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "mindplay\\jsonfreeze": ""
+                }
+            },
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Rasmus Schultz",
+                    "email": "rasmus@mindplay.dk"
+                }
+            ],
+            "description": "JSON Serialization library"
         },
         {
-            "package": "mindplay/jsonfreeze",
+            "name": "mishamx/yii-user",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phundament/yii-user.git",
+                "reference": "7affbb3cef1bd337d3e5f897258561ebb6ea1100"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://nodeload.github.com/phundament/yii-user/zipball/7affbb3cef1bd337d3e5f897258561ebb6ea1100",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "yiisoft/yii": ">=1.1.10",
+                "phundament/p3admin": "dev-master"
+            },
+            "type": "library",
+            "installation-source": "dist"
+        },
+        {
+            "name": "phundament/gii-template-collection",
             "version": "dev-master",
-            "alias-pretty-version": "1.0.x-dev",
-            "alias-version": "1.0.9999999.9999999-dev"
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmunk42/gii-template-collection.git",
+                "reference": "daee54d4cbe6d7195b1277a474d2125a8076dd96"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/schmunk42/gii-template-collection/zipball/daee54d4cbe6d7195b1277a474d2125a8076dd96",
+                "reference": "daee54d4cbe6d7195b1277a474d2125a8076dd96",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "time": "1348077988",
+            "type": "library",
+            "installation-source": "source",
+            "license": [
+                "BSD"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Munk",
+                    "email": "schmunk@usrbin.de",
+                    "homepage": "http://www.usrbin.de"
+                }
+            ],
+            "description": "Gii Template Collection",
+            "homepage": "http://phundament.com/",
+            "keywords": [
+                "package",
+                "dependency",
+                "autoload"
+            ]
         },
         {
-            "package": "mindplay/jsonfreeze",
+            "name": "phundament/jquery-file-upload",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmunk42/jQuery-File-Upload.git",
+                "reference": "5e08d974a080a931dda654086a1391e75cbda99f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://nodeload.github.com/schmunk42/jQuery-File-Upload/zipball/5e08d974a080a931dda654086a1391e75cbda99f",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library",
+            "installation-source": "dist"
+        },
+        {
+            "name": "phundament/p3admin",
             "version": "dev-master",
-            "source-reference": "1dbc4af62eb66479c3895e78baf8f2afb481b14f",
-            "commit-date": "1342195115"
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmunk42/p3admin.git",
+                "reference": "466fc733927406d7bb7e1708398dcb02b5492ebf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/schmunk42/p3admin/zipball/466fc733927406d7bb7e1708398dcb02b5492ebf",
+                "reference": "466fc733927406d7bb7e1708398dcb02b5492ebf",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "phundament/p3extensions": "dev-master"
+            },
+            "type": "library",
+            "installation-source": "source",
+            "license": [
+                "BSD"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Munk",
+                    "email": "schmunk@usrbin.de",
+                    "homepage": "http://www.usrbin.de"
+                }
+            ],
+            "description": "Admin Manager",
+            "homepage": "http://phundament.com/",
+            "keywords": [
+                "package",
+                "dependency",
+                "autoload"
+            ],
+            "time": "1348078060"
         },
         {
-            "package": "mishamx/yii-user",
-            "version": "0.0.1"
-        },
-        {
-            "package": "phundament/gii-template-collection",
+            "name": "phundament/p3extensions",
             "version": "dev-master",
-            "source-reference": "aa35e77bdaa32c9d577817d119e00eebf0c852c7",
-            "commit-date": "1347384897"
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmunk42/p3extensions.git",
+                "reference": "c805ba69631e112c23e362577b1d5304d03b49a7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/schmunk42/p3extensions/zipball/c805ba69631e112c23e362577b1d5304d03b49a7",
+                "reference": "c805ba69631e112c23e362577b1d5304d03b49a7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "time": "1348078362",
+            "type": "library",
+            "installation-source": "source",
+            "license": [
+                "BSD"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Munk",
+                    "email": "schmunk@usrbin.de",
+                    "homepage": "http://www.usrbin.de"
+                }
+            ],
+            "description": "Core Extensions",
+            "homepage": "http://phundament.com/",
+            "keywords": [
+                "package",
+                "dependency",
+                "autoload"
+            ]
         },
         {
-            "package": "phundament/jquery-file-upload",
-            "version": "0.0.1"
-        },
-        {
-            "package": "phundament/p3admin",
+            "name": "phundament/p3media",
             "version": "dev-master",
-            "source-reference": "1ee97d5f8a91e2c5da3b93d5f97b0d547c2bafbb",
-            "commit-date": "1348068732"
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmunk42/p3media.git",
+                "reference": "19a0f43452bd05de5a4600dbec31170a2bdb7240"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/schmunk42/p3media/zipball/19a0f43452bd05de5a4600dbec31170a2bdb7240",
+                "reference": "19a0f43452bd05de5a4600dbec31170a2bdb7240",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "phundament/p3extensions": "dev-master",
+                "phundament/jquery-file-upload": "0.0.1"
+            },
+            "time": "1348078164",
+            "type": "library",
+            "installation-source": "source",
+            "license": [
+                "BSD"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Munk",
+                    "email": "schmunk@usrbin.de",
+                    "homepage": "http://www.usrbin.de"
+                }
+            ],
+            "description": "Media Manager",
+            "homepage": "http://phundament.com/",
+            "keywords": [
+                "package",
+                "dependency",
+                "autoload"
+            ]
         },
         {
-            "package": "phundament/p3extensions",
-            "version": "dev-master",
-            "source-reference": "2dd77d4599c95f2a5d7f7e8866fa6e71c9ec7ffc",
-            "commit-date": "1347391651"
+            "name": "phundament/p3pages",
+            "version": "0.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmunk42/p3pages.git",
+                "reference": "0.6.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/schmunk42/p3pages/zipball/0.6.1",
+                "reference": "0.6.1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "phundament/p3extensions": "dev-master"
+            },
+            "time": "2012-09-07 00:41:35",
+            "type": "library",
+            "installation-source": "dist",
+            "license": [
+                "BSD"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Munk",
+                    "email": "schmunk@usrbin.de",
+                    "homepage": "http://www.usrbin.de"
+                }
+            ],
+            "description": "Page Manager",
+            "homepage": "http://phundament.com/",
+            "keywords": [
+                "package",
+                "dependency",
+                "autoload"
+            ]
         },
         {
-            "package": "phundament/p3media",
-            "version": "dev-master",
-            "source-reference": "3a270e9003c2ed5b500ea817e7bc506f1276ead0",
-            "commit-date": "1342179691"
+            "name": "phundament/p3widgets",
+            "version": "0.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmunk42/p3widgets.git",
+                "reference": "0.6.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/schmunk42/p3widgets/zipball/0.6.0",
+                "reference": "0.6.0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "phundament/p3extensions": "dev-master"
+            },
+            "time": "2012-07-09 12:38:57",
+            "type": "library",
+            "installation-source": "dist",
+            "license": [
+                "BSD"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Munk",
+                    "email": "schmunk@usrbin.de",
+                    "homepage": "http://www.usrbin.de"
+                }
+            ],
+            "description": "Widget Manager",
+            "homepage": "http://phundament.com/",
+            "keywords": [
+                "package",
+                "dependency",
+                "autoload"
+            ]
         },
         {
-            "package": "phundament/p3pages",
-            "version": "0.6.1"
+            "name": "phundament/themes/p3bootstrap",
+            "version": "0.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmunk42/p3bootstrap.git",
+                "reference": "0.6.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/schmunk42/p3bootstrap/zipball/0.6.0",
+                "reference": "0.6.0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "phundament/p3extensions": "master",
+                "crisu83/yii-bootstrap": ">=0.9.12"
+            },
+            "time": "2012-09-06 12:43:17",
+            "type": "library",
+            "installation-source": "dist",
+            "license": [
+                "BSD"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Munk",
+                    "email": "schmunk@usrbin.de",
+                    "homepage": "http://www.usrbin.de"
+                }
+            ],
+            "description": "Bootstrap Theme for Phundament 3",
+            "homepage": "http://phundament.com/",
+            "keywords": [
+                "package",
+                "dependency",
+                "autoload"
+            ]
         },
         {
-            "package": "phundament/p3widgets",
-            "version": "0.6.0"
+            "name": "yiiext/fancybox-widget",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiiext/fancybox-widget.git",
+                "reference": "20ed3c25e54a6c990b81f56b6f24e5c34070e725"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://nodeload.github.com/yiiext/fancybox-widget/zipball/20ed3c25e54a6c990b81f56b6f24e5c34070e725",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library",
+            "installation-source": "dist"
         },
         {
-            "package": "phundament/themes/p3bootstrap",
-            "version": "0.6.0"
+            "name": "yiiext/lipsum-widget",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiiext/lipsum-widget.git",
+                "reference": "f70ab9c91db70775cd17618d4d5d00f07e72d8da"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://nodeload.github.com/yiiext/lipsum-widget/zipball/f70ab9c91db70775cd17618d4d5d00f07e72d8da",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library",
+            "installation-source": "dist"
         },
         {
-            "package": "yiiext/fancybox-widget",
-            "version": "0.0.1"
+            "name": "yiiext/migrate-command",
+            "version": "0.7.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiiext/migrate-command.git",
+                "reference": "79b578ed54cdf6ecaa65db0a496151f7528a7e40"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://nodeload.github.com/yiiext/migrate-command/zipball/79b578ed54cdf6ecaa65db0a496151f7528a7e40",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library",
+            "installation-source": "dist"
         },
         {
-            "package": "yiiext/lipsum-widget",
-            "version": "0.0.1"
-        },
-        {
-            "package": "yiiext/migrate-command",
-            "version": "0.7.1.1"
-        },
-        {
-            "package": "yiisoft/yii",
-            "version": "1.1.12"
+            "name": "yiisoft/yii",
+            "version": "1.1.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiisoft/yii.git",
+                "reference": "b600af63136a8913b192cbe651186f02632c0267"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/yiisoft/yii/zipball/1.1.12",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library",
+            "installation-source": "dist"
         }
     ],
     "packages-dev": null,
