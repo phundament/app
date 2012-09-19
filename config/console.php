@@ -14,9 +14,6 @@ return array(
     'components' => $mainConfig['components'],
     'modules' => $mainConfig['modules'],
     'commandMap' => array(
-        'p3webapp' => array(
-            'class' => 'vendor.phundament.p3admin.commands.P3WebappCommand',
-        ),
         'rsync' => array(
             'class' => 'vendor.p3extensions.commands.P3RsyncCommand',
             'servers' => array(
@@ -60,7 +57,11 @@ return array(
             // alias of the template file used to create new migrations
             'templateFile' => 'application.db.migration_template',
         ),
+        
         // composer commands
+        'phundament/p3admin-installer' => array(
+            'class' => 'vendor.phundament.p3admin.commands.P3WebappCommand',
+        ),
         'phundament/themes/p3bootstrap-installer' => array(
             'class' => 'vendor.phundament.themes.p3bootstrap.commands.ComposerPackageCommand',
         ),
