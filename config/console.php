@@ -3,7 +3,7 @@
 // This is the configuration for yiic console application.
 // Any writable CConsoleApplication properties can be configured here.
 
-$mainConfig = require('main.p3.php');
+$mainConfig = require('main.php');
 return array(
     'aliases' => array(
       'vendor' => 'application.vendor'

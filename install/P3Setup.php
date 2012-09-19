@@ -172,11 +172,11 @@ class P3Setup
 
     private static function getYiiApplication()
     {
-        require_once(dirname(__FILE__) . '/../protected/extensions/yiisoft/yii/framework/yii.php');
+        require_once(dirname(__FILE__) . '/../vendor/yiisoft/yii/framework/yii.php');
         spl_autoload_register(array('YiiBase', 'autoload'));
 
         if (\Yii::app() === null) {
-            $config = dirname(__FILE__) . '/../config/console.p3.php';
+            $config = dirname(__FILE__) . '/../config/console.php';
             $app = \Yii::createConsoleApplication($config);
         } else {
             $app = \Yii::app();

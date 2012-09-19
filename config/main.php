@@ -165,7 +165,7 @@ $p3Config = array(
         ),
         'db' => array(
             // SQLite
-            'connectionString' => 'sqlite:' . $applicationDirectory . '/data/testdrive.db',
+            'connectionString' => 'sqlite:' . $applicationDirectory . '/data/default.db',
         // MySQL
         #'connectionString' => 'mysql:host=localhost;dbname=p3',
         #'emulatePrepare' => true,
