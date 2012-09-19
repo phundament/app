@@ -14,6 +14,9 @@ return array(
     'components' => $mainConfig['components'],
     'modules' => $mainConfig['modules'],
     'commandMap' => array(
+        'p3webapp' => array(
+            'class' => 'vendor.phundament.p3admin.commands.P3WebappCommand',
+        ),
         'rsync' => array(
             'class' => 'vendor.p3extensions.commands.P3RsyncCommand',
             'servers' => array(
@@ -27,13 +30,6 @@ return array(
         ),
         'dumpschema' => array(
             'class' => 'ext.p3extensions.commands.P3DumpSchemaCommand',
-        ),
-        // developer commands
-        'p3bootstrap-composer' => array(
-            'class' => 'vendor.phundament.themes.p3bootstrap.commands.ComposerPackageCommand',
-        ),
-        'p3webapp' => array(
-            'class' => 'vendor.phundament.p3admin.commands.P3WebappCommand',
         ),
         'migrate' => array(
             // alias of the path where you extracted the zip file
@@ -65,6 +61,13 @@ return array(
             'connectionID' => 'db',
             // alias of the template file used to create new migrations
             'templateFile' => 'application.db.migration_template',
+        ),
+        // composer commands
+        'p3bootstrap-composer' => array(
+            'class' => 'vendor.phundament.themes.p3bootstrap.commands.ComposerPackageCommand',
+        ),
+        'p3media-composer' => array(
+            'class' => 'vendor.phundament.p3media.commands.ComposerPackageCommand',
         ),
     ),
 );
