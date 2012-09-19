@@ -74,6 +74,7 @@ $mainConfig = array(
             ),
             'params' => array(
                 'widgets' => array(
+                    'CWidget' => 'Basic HTML Widget',
                     'vendor.crisu83.yii-bootstrap.widgets.TbHeroUnit' => 'Bootstrap Hero',
                     'vendor.crisu83.yii-bootstrap.widgets.TbMenu' => 'Bootstrap Menu',
                     'vendor.crisu83.yii-bootstrap.widgets.TbCarousel' => 'Bootstrap Carousel',
