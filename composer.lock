@@ -1,5 +1,5 @@
 {
-    "hash": "659fdbd5f008ce9afc1d2bce2563e397",
+    "hash": "70391d85d9299a39e5f9ec5109fcfcee",
     "packages": [
         {
             "name": "crisu83/yii-bootstrap",
@@ -163,6 +163,7 @@
             "require": {
                 "php": ">=5.3.0"
             },
+            "time": "1348077988",
             "type": "library",
             "installation-source": "source",
             "license": [
@@ -181,8 +182,7 @@
                 "package",
                 "dependency",
                 "autoload"
-            ],
-            "time": "1348077988"
+            ]
         },
         {
             "name": "phundament/jquery-file-upload",
@@ -258,6 +258,7 @@
             "require": {
                 "php": ">=5.3.0"
             },
+            "time": "1348078362",
             "type": "library",
             "installation-source": "source",
             "license": [
@@ -276,8 +277,7 @@
                 "package",
                 "dependency",
                 "autoload"
-            ],
-            "time": "1348078362"
+            ]
         },
         {
             "name": "phundament/p3media",
@@ -285,12 +285,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3media.git",
-                "reference": "19a0f43452bd05de5a4600dbec31170a2bdb7240"
+                "reference": "14da0a10fe4ea9dbfd6d77f941ad20cded3ddaba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/schmunk42/p3media/zipball/19a0f43452bd05de5a4600dbec31170a2bdb7240",
-                "reference": "19a0f43452bd05de5a4600dbec31170a2bdb7240",
+                "url": "https://github.com/schmunk42/p3media/zipball/14da0a10fe4ea9dbfd6d77f941ad20cded3ddaba",
+                "reference": "14da0a10fe4ea9dbfd6d77f941ad20cded3ddaba",
                 "shasum": ""
             },
             "require": {
@@ -298,6 +298,7 @@
                 "phundament/p3extensions": "dev-master",
                 "phundament/jquery-file-upload": "0.0.1"
             },
+            "time": "1348086958",
             "type": "library",
             "installation-source": "source",
             "license": [
@@ -316,30 +317,29 @@
                 "package",
                 "dependency",
                 "autoload"
-            ],
-            "time": "1348078164"
+            ]
         },
         {
             "name": "phundament/p3pages",
-            "version": "0.6.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3pages.git",
-                "reference": "0.6.1"
+                "reference": "146ccff74764758a1f6a030f5f8c5d569a5f351d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/schmunk42/p3pages/zipball/0.6.1",
-                "reference": "0.6.1",
+                "url": "https://github.com/schmunk42/p3pages/zipball/146ccff74764758a1f6a030f5f8c5d569a5f351d",
+                "reference": "146ccff74764758a1f6a030f5f8c5d569a5f351d",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0",
                 "phundament/p3extensions": "dev-master"
             },
-            "time": "2012-09-06 16:41:35",
+            "time": "1348078336",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "license": [
                 "BSD"
             ],
@@ -360,25 +360,25 @@
         },
         {
             "name": "phundament/p3widgets",
-            "version": "0.6.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3widgets.git",
-                "reference": "0.6.0"
+                "reference": "4672284301725e257064e0f90a031164bd5457fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/schmunk42/p3widgets/zipball/0.6.0",
-                "reference": "0.6.0",
+                "url": "https://github.com/schmunk42/p3widgets/zipball/4672284301725e257064e0f90a031164bd5457fe",
+                "reference": "4672284301725e257064e0f90a031164bd5457fe",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0",
                 "phundament/p3extensions": "dev-master"
             },
-            "time": "2012-07-09 12:38:57",
+            "time": "1348078216",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "license": [
                 "BSD"
             ],
@@ -403,12 +403,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3bootstrap.git",
-                "reference": "def58dbf64fd63a06d3a2ddf3820fb5ab4b84422"
+                "reference": "bba77a0777e09c6b62eff8edb1cdbc1f1599c43e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/schmunk42/p3bootstrap/zipball/def58dbf64fd63a06d3a2ddf3820fb5ab4b84422",
-                "reference": "def58dbf64fd63a06d3a2ddf3820fb5ab4b84422",
+                "url": "https://github.com/schmunk42/p3bootstrap/zipball/bba77a0777e09c6b62eff8edb1cdbc1f1599c43e",
+                "reference": "bba77a0777e09c6b62eff8edb1cdbc1f1599c43e",
                 "shasum": ""
             },
             "require": {
@@ -416,6 +416,7 @@
                 "phundament/p3extensions": "dev-master",
                 "crisu83/yii-bootstrap": "1.0.*"
             },
+            "time": "1348087023",
             "type": "library",
             "installation-source": "source",
             "license": [
@@ -434,8 +435,7 @@
                 "package",
                 "dependency",
                 "autoload"
-            ],
-            "time": "1348078412"
+            ]
         },
         {
             "name": "yiiext/fancybox-widget",
@@ -513,6 +513,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "phundament/p3admin": 20,
+        "phundament/p3widgets": 20,
+        "phundament/p3pages": 20,
         "phundament/p3media": 20,
         "phundament/themes/p3bootstrap": 20,
         "phundament/gii-template-collection": 20,

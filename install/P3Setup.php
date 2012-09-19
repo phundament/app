@@ -6,7 +6,7 @@ use Composer\Script\Event;
 
 class P3Setup
 {
-
+    
     public static function preInstall(Event $event)
     {
         $composer = $event->getComposer();
@@ -78,7 +78,9 @@ class P3Setup
         return !strncasecmp(trim(fgets(STDIN)), 'y', 1);
     }
 
-
+    /**
+     * internal helper function
+     */
     private static function runComposerCommand($commandName){
         $app = self::getYiiApplication();
         if ($app === null) return;
@@ -89,6 +91,9 @@ class P3Setup
         }
     }
 
+    /**
+     * internal helper function
+     */
     private static function getYiiApplication()
     {
         if (!is_file(dirname(__FILE__) . '/../vendor/yiisoft/yii/framework/yii.php')) 
