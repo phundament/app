@@ -16,8 +16,8 @@ What is Phundament?
 
 Phundament 3 is an application foundation built upon a set if independent Yii modules and extensions such as [user](http://www.yiiframework.com/extension/yii-user/), [rights](http://www.yiiframework.com/extension/rights/), [yiiext](http://code.google.com/p/yiiext/), [gtc](https://github.com/schmunk42/gii-template-collection), ckeditor, jquery-file-upload, p3widgets and p3media.
 
-The combination of p3widgets and p3media provides basic content management system (CMS) features, like dynamic widget creation and file management.  
-Combined in ckeditor, p3media acts as a ckfinder plugin which gives you the full power of HTML and media files for content creation via p3widgets.  
+The combination of p3widgets and p3media provides basic content management system (CMS) features, like dynamic widget creation and file management.
+Combined in ckeditor, p3media acts as a ckfinder plugin which gives you the full power of HTML and media files for content creation via p3widgets.
 
 It comes with a very minimalistic setup which integrates perfectly into an Yii web application skeleton and installs with one single command.
 
@@ -54,7 +54,7 @@ php composer.phar install --dev
 
 All setup, database, file permissions and config settings should be done automatically.
 You may skip the --dev option on production systems, at the moment it just adds LESS support for your bootstrap-based themes.
- 
+
 
 First Steps
 -----------
@@ -72,10 +72,10 @@ http://localhost/phundament-app-<SHA1>
   * Save widget
 
 
- 
+
 Troubleshooting
 ---------------
- 
+
  * Make sure you have git (http://git-scm.com/) and hg (http://mercurial.selenic.com/) installed
  * zlib extension or unzip available on your PATH
  * OpenSSL Support enabled in PHP or try ```--prefer-source```
@@ -94,7 +94,7 @@ Requirements
  *  [Yii Framework Requirements] (http://www.yiiframework.com/doc/guide/1.1/en/quickstart.installation#requirements)
  *  git, hg (Mercurial), svn (subversion), php_mod_ssl
  *  ImageMagick or GDlib
- 
+
 ### Tested Systems
  *  Mac OS X 10.6.8
  *  Debian 5,6
@@ -114,16 +114,26 @@ Changelog
 
 ### phundament/app
 
-#### 0.5 (pending - May/June 2012)
+#### 0.7 (September 2012)
+
+   [ENH] Installer Cleanup
+   [ENH] Unified Configuration
+*  [UPD] Refactored direcory structure
+
+#### 0.6 (August/September 2012)
+
+ * [UPD] Dependencies
+
+#### 0.5 (May/June 2012)
 
  * [UPD] Big version bump to avoid further confusion
 
-#### 0.1.x (May 2012) 
+#### 0.1.x (May 2012)
 
  * [ENH] Installation scripts
  * [FIX] Package installation
 
-#### 0.1 (April 2012) 
+#### 0.1 (April 2012)
 
 The repository phundament/app introduces Phundament 3 installation via composer (http://getcomposer.org)
 
@@ -141,7 +151,7 @@ The repository phundament/app introduces Phundament 3 installation via composer 
 #### 0.3 (12.3.2012)
 Bootstrapped it! Complete responsive design, completely editable with mobile devices. Added widget translation, updated migrations, templates. A whole bunch of other stuff (fixes, fixes, fixes).
 
-#### 0.2: 
+#### 0.2:
 Installation fixes for Linux MySQL, widget order fix, added automatic-property detection, updated image urls ... Check it out!
 
 #### 0.1:
