@@ -19,7 +19,7 @@
                 "yiisoft/yii": ">=1.1.10"
             },
             "type": "library",
-            "installation-source": "dist"
+            "installation-source": "source"
         },
         {
             "name": "crisu83/yii-rights",
@@ -40,7 +40,7 @@
                 "phundament/p3admin": "dev-master"
             },
             "type": "library",
-            "installation-source": "dist"
+            "installation-source": "source"
         },
         {
             "name": "mindplay/jsondoc",
@@ -60,6 +60,7 @@
                 "php": ">=5.3.0",
                 "mindplay/jsonfreeze": "1.0.*"
             },
+            "time": "1342193433",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -71,18 +72,7 @@
                 "psr-0": {
                     "mindplay\\jsondoc": ""
                 }
-            },
-            "license": [
-                "LGPL-3.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Rasmus Schultz",
-                    "email": "rasmus@mindplay.dk"
-                }
-            ],
-            "description": "JSON-based object/document store",
-            "time": "1342193433"
+            }
         },
         {
             "name": "mindplay/jsonfreeze",
@@ -101,6 +91,7 @@
             "require": {
                 "php": ">=5.3.0"
             },
+            "time": "1342195115",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -112,18 +103,7 @@
                 "psr-0": {
                     "mindplay\\jsonfreeze": ""
                 }
-            },
-            "license": [
-                "LGPL-3.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Rasmus Schultz",
-                    "email": "rasmus@mindplay.dk"
-                }
-            ],
-            "description": "JSON Serialization library",
-            "time": "1342195115"
+            }
         },
         {
             "name": "mishamx/yii-user",
@@ -144,7 +124,7 @@
                 "phundament/p3admin": "dev-master"
             },
             "type": "library",
-            "installation-source": "dist"
+            "installation-source": "source"
         },
         {
             "name": "phundament/gii-template-collection",
@@ -199,7 +179,7 @@
                 "shasum": null
             },
             "type": "library",
-            "installation-source": "dist"
+            "installation-source": "source"
         },
         {
             "name": "phundament/p3admin",
@@ -452,7 +432,7 @@
                 "shasum": null
             },
             "type": "library",
-            "installation-source": "dist"
+            "installation-source": "source"
         },
         {
             "name": "yiiext/lipsum-widget",
@@ -469,7 +449,7 @@
                 "shasum": null
             },
             "type": "library",
-            "installation-source": "dist"
+            "installation-source": "source"
         },
         {
             "name": "yiiext/migrate-command",
@@ -486,7 +466,7 @@
                 "shasum": null
             },
             "type": "library",
-            "installation-source": "dist"
+            "installation-source": "source"
         },
         {
             "name": "yiisoft/yii",
@@ -503,7 +483,7 @@
                 "shasum": null
             },
             "type": "library",
-            "installation-source": "dist"
+            "installation-source": "source"
         }
     ],
     "packages-dev": null,
