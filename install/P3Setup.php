@@ -50,12 +50,16 @@ class P3Setup
 
     public static function postPackageInstall(Event $event)
     {
-        self::runComposerCommand($event);        
+        $installedPackage = $event->getOperation()->getPackage();
+        $commandName = $installedPackage->getPrettyName().'-installer';
+        self::runComposerCommand($commandName);        
     }
 
     public static function postPackageUpdate(Event $event)
     {
-        self::runComposerCommand($event);        
+        $installedPackage = $event->getOperation()->getTargetPackage();
+        $commandName = $installedPackage->getPrettyName().'-installer';
+        self::runComposerCommand($commandName);
     }
     
     /**
@@ -75,13 +79,10 @@ class P3Setup
     }
 
 
-    private static function runComposerCommand(Event $event){
+    private static function runComposerCommand($commandName){
         $app = self::getYiiApplication();
         if ($app === null) return;
-        
-        $installedPackage = $event->getOperation()->getPackage();
-        $commandName = $installedPackage->getPrettyName().'-installer';
-
+       
         if (isset($app->commandMap[$commandName])) {
             $args = array('yiic', $commandName);
             $app->commandRunner->run($args);        
