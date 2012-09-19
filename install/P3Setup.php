@@ -24,9 +24,10 @@ class P3Setup
     public static function postInstall(Event $event)
     {
         $app = self::getYiiApplication();
+
         $args = array('yiic', 'migrate');
         $app->commandRunner->run($args);
-        
+
         echo "\n\nInstallation completed.\n\nThank you for choosing Phundament 3!\n\n";
     }
 
@@ -40,6 +41,7 @@ class P3Setup
     public static function postUpdate(Event $event)
     {
         $app = self::getYiiApplication();
+
         $args = array('yiic', 'migrate');
         $app->commandRunner->run($args);
 
@@ -79,6 +81,7 @@ class P3Setup
         
         $installedPackage = $event->getOperation()->getPackage();
         $commandName = $installedPackage->getPrettyName().'-installer';
+
         if (isset($app->commandMap[$commandName])) {
             $args = array('yiic', $commandName);
             $app->commandRunner->run($args);        

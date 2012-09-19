@@ -61,6 +61,7 @@ return array(
         // composer commands
         'phundament/p3admin-installer' => array(
             'class' => 'vendor.phundament.p3admin.commands.P3WebappCommand',
+            'path' => realpath(dirname(__FILE__) . '/..'),
         ),
         'phundament/themes/p3bootstrap-installer' => array(
             'class' => 'vendor.phundament.themes.p3bootstrap.commands.ComposerPackageCommand',
