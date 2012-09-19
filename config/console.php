@@ -59,14 +59,17 @@ return array(
         ),
         
         // composer commands
-        'phundament/p3admin-installer' => array(
+        'phundament/p3admin-install' => array(
             'class' => 'vendor.phundament.p3admin.commands.P3WebappCommand',
             'path' => realpath(dirname(__FILE__) . '/..'),
         ),
-        'phundament/themes/p3bootstrap-installer' => array(
+        'phundament/themes/p3bootstrap-install' => array(
             'class' => 'vendor.phundament.themes.p3bootstrap.commands.P3BootstrapCommand',
         ),
-        'phundament/p3media-installer' => array(
+        'phundament/themes/p3bootstrap-update' => array(
+            'class' => 'vendor.phundament.themes.p3bootstrap.commands.P3BootstrapCommand',
+        ),
+        'phundament/p3media-install' => array(
             'class' => 'vendor.phundament.p3media.commands.P3MediaCommand',
         ),
     ),

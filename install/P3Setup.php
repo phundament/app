@@ -51,14 +51,14 @@ class P3Setup
     public static function postPackageInstall(Event $event)
     {
         $installedPackage = $event->getOperation()->getPackage();
-        $commandName = $installedPackage->getPrettyName().'-installer';
+        $commandName = $installedPackage->getPrettyName().'-install';
         self::runComposerCommand($commandName);        
     }
 
     public static function postPackageUpdate(Event $event)
     {
         $installedPackage = $event->getOperation()->getTargetPackage();
-        $commandName = $installedPackage->getPrettyName().'-installer';
+        $commandName = $installedPackage->getPrettyName().'-update';
         self::runComposerCommand($commandName);
     }
     
