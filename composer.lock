@@ -1,5 +1,5 @@
 {
-    "hash": "5e9738748e7f370e42cf5ea6ed87021d",
+    "hash": "659fdbd5f008ce9afc1d2bce2563e397",
     "packages": [
         {
             "name": "crisu83/yii-bootstrap",
@@ -60,7 +60,6 @@
                 "php": ">=5.3.0",
                 "mindplay/jsonfreeze": "1.0.*"
             },
-            "time": "1342193433",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -82,7 +81,8 @@
                     "email": "rasmus@mindplay.dk"
                 }
             ],
-            "description": "JSON-based object/document store"
+            "description": "JSON-based object/document store",
+            "time": "1342193433"
         },
         {
             "name": "mindplay/jsonfreeze",
@@ -101,7 +101,6 @@
             "require": {
                 "php": ">=5.3.0"
             },
-            "time": "1342195115",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -123,7 +122,8 @@
                     "email": "rasmus@mindplay.dk"
                 }
             ],
-            "description": "JSON Serialization library"
+            "description": "JSON Serialization library",
+            "time": "1342195115"
         },
         {
             "name": "mishamx/yii-user",
@@ -163,7 +163,6 @@
             "require": {
                 "php": ">=5.3.0"
             },
-            "time": "1348077988",
             "type": "library",
             "installation-source": "source",
             "license": [
@@ -182,7 +181,8 @@
                 "package",
                 "dependency",
                 "autoload"
-            ]
+            ],
+            "time": "1348077988"
         },
         {
             "name": "phundament/jquery-file-upload",
@@ -207,18 +207,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3admin.git",
-                "reference": "466fc733927406d7bb7e1708398dcb02b5492ebf"
+                "reference": "9bded3aed4bea0543f91b0520ba24e14bf1a3582"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/schmunk42/p3admin/zipball/466fc733927406d7bb7e1708398dcb02b5492ebf",
-                "reference": "466fc733927406d7bb7e1708398dcb02b5492ebf",
+                "url": "https://github.com/schmunk42/p3admin/zipball/9bded3aed4bea0543f91b0520ba24e14bf1a3582",
+                "reference": "9bded3aed4bea0543f91b0520ba24e14bf1a3582",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0",
+                "yiisoft/yii": ">=1.1.12",
                 "phundament/p3extensions": "dev-master"
             },
+            "time": "1348084357",
             "type": "library",
             "installation-source": "source",
             "license": [
@@ -237,8 +239,7 @@
                 "package",
                 "dependency",
                 "autoload"
-            ],
-            "time": "1348078060"
+            ]
         },
         {
             "name": "phundament/p3extensions",
@@ -257,7 +258,6 @@
             "require": {
                 "php": ">=5.3.0"
             },
-            "time": "1348078362",
             "type": "library",
             "installation-source": "source",
             "license": [
@@ -276,7 +276,8 @@
                 "package",
                 "dependency",
                 "autoload"
-            ]
+            ],
+            "time": "1348078362"
         },
         {
             "name": "phundament/p3media",
@@ -297,7 +298,6 @@
                 "phundament/p3extensions": "dev-master",
                 "phundament/jquery-file-upload": "0.0.1"
             },
-            "time": "1348078164",
             "type": "library",
             "installation-source": "source",
             "license": [
@@ -316,7 +316,8 @@
                 "package",
                 "dependency",
                 "autoload"
-            ]
+            ],
+            "time": "1348078164"
         },
         {
             "name": "phundament/p3pages",
@@ -336,7 +337,7 @@
                 "php": ">=5.3.0",
                 "phundament/p3extensions": "dev-master"
             },
-            "time": "2012-09-07 00:41:35",
+            "time": "2012-09-06 18:41:35",
             "type": "library",
             "installation-source": "dist",
             "license": [
@@ -375,7 +376,7 @@
                 "php": ">=5.3.0",
                 "phundament/p3extensions": "dev-master"
             },
-            "time": "2012-07-09 12:38:57",
+            "time": "2012-07-09 14:38:57",
             "type": "library",
             "installation-source": "dist",
             "license": [
@@ -398,26 +399,25 @@
         },
         {
             "name": "phundament/themes/p3bootstrap",
-            "version": "0.6.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3bootstrap.git",
-                "reference": "0.6.0"
+                "reference": "def58dbf64fd63a06d3a2ddf3820fb5ab4b84422"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/schmunk42/p3bootstrap/zipball/0.6.0",
-                "reference": "0.6.0",
+                "url": "https://github.com/schmunk42/p3bootstrap/zipball/def58dbf64fd63a06d3a2ddf3820fb5ab4b84422",
+                "reference": "def58dbf64fd63a06d3a2ddf3820fb5ab4b84422",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0",
-                "phundament/p3extensions": "master",
-                "crisu83/yii-bootstrap": ">=0.9.12"
+                "phundament/p3extensions": "dev-master",
+                "crisu83/yii-bootstrap": "1.0.*"
             },
-            "time": "2012-09-06 12:43:17",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "license": [
                 "BSD"
             ],
@@ -434,7 +434,8 @@
                 "package",
                 "dependency",
                 "autoload"
-            ]
+            ],
+            "time": "1348078412"
         },
         {
             "name": "yiiext/fancybox-widget",
@@ -513,6 +514,7 @@
     "stability-flags": {
         "phundament/p3admin": 20,
         "phundament/p3media": 20,
+        "phundament/themes/p3bootstrap": 20,
         "phundament/gii-template-collection": 20,
         "mindplay/jsondoc": 20,
         "phundament/lessii": 20
