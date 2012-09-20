@@ -1,5 +1,5 @@
 {
-    "hash": "21cbf17eb7423e5a58b96a625261430c",
+    "hash": "ae8a1b2edab5d9bac55ab989275a034a",
     "packages": [
         {
             "name": "crisu83/yii-bootstrap",
@@ -41,69 +41,6 @@
             },
             "type": "library",
             "installation-source": "source"
-        },
-        {
-            "name": "mindplay/jsondoc",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mindplay-dk/jsondoc.git",
-                "reference": "6ae810eb8e9d82bb465c06fa80e931913d2d3a59"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/mindplay-dk/jsondoc/zipball/6ae810eb8e9d82bb465c06fa80e931913d2d3a59",
-                "reference": "6ae810eb8e9d82bb465c06fa80e931913d2d3a59",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0",
-                "mindplay/jsonfreeze": "1.0.*"
-            },
-            "time": "1342193433",
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "installation-source": "source",
-            "autoload": {
-                "psr-0": {
-                    "mindplay\\jsondoc": ""
-                }
-            }
-        },
-        {
-            "name": "mindplay/jsonfreeze",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mindplay-dk/jsonfreeze.git",
-                "reference": "1dbc4af62eb66479c3895e78baf8f2afb481b14f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/mindplay-dk/jsonfreeze/zipball/1dbc4af62eb66479c3895e78baf8f2afb481b14f",
-                "reference": "1dbc4af62eb66479c3895e78baf8f2afb481b14f",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "time": "1342195115",
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "installation-source": "source",
-            "autoload": {
-                "psr-0": {
-                    "mindplay\\jsonfreeze": ""
-                }
-            }
         },
         {
             "name": "mishamx/yii-user",
@@ -278,7 +215,7 @@
                 "phundament/p3extensions": "dev-master",
                 "phundament/jquery-file-upload": "0.0.1"
             },
-            "time": "2012-09-19 16:35:58",
+            "time": "2012-09-19 10:35:58",
             "type": "library",
             "installation-source": "dist",
             "license": [
@@ -319,7 +256,7 @@
             },
             "time": "2012-09-19 14:12:16",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "license": [
                 "BSD"
             ],
@@ -356,7 +293,7 @@
                 "php": ">=5.3.0",
                 "phundament/p3extensions": "dev-master"
             },
-            "time": "2012-09-19 14:10:16",
+            "time": "2012-09-19 08:10:16",
             "type": "library",
             "installation-source": "dist",
             "license": [
@@ -396,7 +333,7 @@
                 "phundament/p3extensions": "dev-master",
                 "crisu83/yii-bootstrap": "1.0.*"
             },
-            "time": "2012-09-19 16:37:03",
+            "time": "2012-09-19 10:37:03",
             "type": "library",
             "installation-source": "dist",
             "license": [
@@ -494,7 +431,6 @@
     "stability-flags": {
         "phundament/p3admin": 20,
         "phundament/gii-template-collection": 20,
-        "mindplay/jsondoc": 20,
         "phundament/lessii": 20
     }
 }
