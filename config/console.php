@@ -55,10 +55,10 @@ return array(
             // the name of the application component that should be used to connect to the database
             'connectionID' => 'db',
             // alias of the template file used to create new migrations
-            'templateFile' => 'application.db.migration_template',
+            #'templateFile' => 'system.cli.migration_template',
         ),
-        
-        // composer commands
+
+        // composer "hooks", will be executed after package install or update
         'phundament/p3admin-install' => array(
             'class' => 'vendor.phundament.p3admin.commands.P3WebAppCommand',
             'path' => realpath(dirname(__FILE__) . '/..'),
