@@ -116,7 +116,7 @@
                 "shasum": null
             },
             "type": "library",
-            "installation-source": "dist"
+            "installation-source": "source"
         },
         {
             "name": "phundament/p3admin",
@@ -124,12 +124,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3admin.git",
-                "reference": "0d04230478351fac3b565270eefd495db9dfcd56"
+                "reference": "0f5a43747188ee76de5fbbc47b45de41fcff9c69"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/schmunk42/p3admin/zipball/0d04230478351fac3b565270eefd495db9dfcd56",
-                "reference": "0d04230478351fac3b565270eefd495db9dfcd56",
+                "url": "https://github.com/schmunk42/p3admin/zipball/0f5a43747188ee76de5fbbc47b45de41fcff9c69",
+                "reference": "0f5a43747188ee76de5fbbc47b45de41fcff9c69",
                 "shasum": ""
             },
             "require": {
@@ -137,7 +137,7 @@
                 "yiisoft/yii": ">=1.1.12",
                 "phundament/p3extensions": "dev-master"
             },
-            "time": "1348142343",
+            "time": "1348177014",
             "type": "library",
             "installation-source": "source",
             "license": [
@@ -215,9 +215,9 @@
                 "phundament/p3extensions": "dev-master",
                 "phundament/jquery-file-upload": "0.0.1"
             },
-            "time": "2012-09-19 08:35:58",
+            "time": "2012-09-19 16:35:58",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "license": [
                 "BSD"
             ],
@@ -254,7 +254,7 @@
                 "php": ">=5.3.0",
                 "phundament/p3extensions": "dev-master"
             },
-            "time": "2012-09-19 12:12:16",
+            "time": "2012-09-19 18:06:28",
             "type": "library",
             "installation-source": "source",
             "license": [
@@ -277,25 +277,25 @@
         },
         {
             "name": "phundament/p3widgets",
-            "version": "0.7.0",
+            "version": "0.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3widgets.git",
-                "reference": "0.7.0"
+                "reference": "0.7.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/schmunk42/p3widgets/zipball/0.7.0",
-                "reference": "0.7.0",
+                "url": "https://github.com/schmunk42/p3widgets/zipball/0.7.1",
+                "reference": "0.7.1",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0",
                 "phundament/p3extensions": "dev-master"
             },
-            "time": "2012-09-19 06:10:16",
+            "time": "2012-09-20 10:43:20",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "license": [
                 "BSD"
             ],
@@ -333,9 +333,9 @@
                 "phundament/p3extensions": "dev-master",
                 "crisu83/yii-bootstrap": "1.0.*"
             },
-            "time": "2012-09-19 08:37:03",
+            "time": "2012-09-19 16:37:03",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "license": [
                 "BSD"
             ],
