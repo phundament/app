@@ -36,9 +36,10 @@ $mainConfig = array(
         'application.vendor.phundament.p3extensions.components.*', // shared classes
         'application.vendor.phundament.p3extensions.behaviors.*', // shared classes
         'application.vendor.phundament.p3extensions.widgets.*', // shared classes
-        'application.vendor.crisu83.yii-bootstrap.widgets.*', // Bootstrap UI
         'application.vendor.mishamx.yii-user.models.*', // User Model
         'application.vendor.crisu83.yii-rights.components.*', // RWebUser
+        'application.vendor.crisu83.yii-bootstrap.widgets.*', // Bootstrap UI
+        'application.vendor.yiiext.fancybox-widget.*', // Fancybox Widget
     ),
     'aliases' => array(
         'vendor' => 'application.vendor',
@@ -75,12 +76,11 @@ $mainConfig = array(
             'params' => array(
                 'widgets' => array(
                     'CWidget' => 'Basic HTML Widget',
-                    'vendor.crisu83.yii-bootstrap.widgets.TbHeroUnit' => 'Bootstrap Hero',
-                    'vendor.crisu83.yii-bootstrap.widgets.TbMenu' => 'Bootstrap Menu',
-                    'vendor.crisu83.yii-bootstrap.widgets.TbCarousel' => 'Bootstrap Carousel',
-                    'vendor.yiiext.fancybox-widget.EFancyboxWidget' => 'Fancy Box',
-                    'vendor.yiiext.lipsum-widget.ELipsum' => 'Lorem Ipsum Text',
-                    'vendor.phundament.p3extensions.widgets.P3MarkdownWidget' => 'Markdown Widget'
+                    'TbHeroUnit' => 'Bootstrap Hero',
+                    'TbMenu' => 'Bootstrap Menu',
+                    'TbCarousel' => 'Bootstrap Carousel',
+                    'EFancyboxWidget' => 'Fancy Box',
+                    'P3MarkdownWidget' => 'Markdown Widget'
                 // use eg. $> php composer.phar require yiiext/swf-object-widget to get the widget source
                 #'vendor.yiivendor.swf-object-widget.ESwfObjectWidget' => 'SWF Object',
                 ),
