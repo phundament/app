@@ -1,5 +1,5 @@
 {
-    "hash": "4642ee96044e5a0ca607df400fb3f9c1",
+    "hash": "6c1d272dfc58059667fb9d4a0a4bac9e",
     "packages": [
         {
             "name": "crisu83/yii-bootstrap",
@@ -36,8 +36,7 @@
                 "shasum": null
             },
             "require": {
-                "yiisoft/yii": ">=1.1.10",
-                "phundament/p3admin": "dev-master"
+                "yiisoft/yii": ">=1.1.10"
             },
             "type": "library",
             "installation-source": "dist"
@@ -57,49 +56,10 @@
                 "shasum": null
             },
             "require": {
-                "yiisoft/yii": ">=1.1.10",
-                "phundament/p3admin": "dev-master"
+                "yiisoft/yii": ">=1.1.10"
             },
             "type": "library",
             "installation-source": "dist"
-        },
-        {
-            "name": "phundament/gii-template-collection",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/schmunk42/gii-template-collection.git",
-                "reference": "daee54d4cbe6d7195b1277a474d2125a8076dd96"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/schmunk42/gii-template-collection/zipball/daee54d4cbe6d7195b1277a474d2125a8076dd96",
-                "reference": "daee54d4cbe6d7195b1277a474d2125a8076dd96",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "time": "1348077988",
-            "type": "library",
-            "installation-source": "source",
-            "license": [
-                "BSD"
-            ],
-            "authors": [
-                {
-                    "name": "Tobias Munk",
-                    "email": "schmunk@usrbin.de",
-                    "homepage": "http://www.usrbin.de"
-                }
-            ],
-            "description": "Gii Template Collection",
-            "homepage": "http://phundament.com/",
-            "keywords": [
-                "package",
-                "dependency",
-                "autoload"
-            ]
         },
         {
             "name": "phundament/jquery-file-upload",
@@ -124,12 +84,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3admin.git",
-                "reference": "0.7.1"
+                "reference": "6ae3f28dc3ba7f777e867a88befdf9b82c72c271"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/schmunk42/p3admin/zipball/0.7.1",
-                "reference": "0.7.1",
+                "url": "https://github.com/schmunk42/p3admin/zipball/6ae3f28dc3ba7f777e867a88befdf9b82c72c271",
+                "reference": "6ae3f28dc3ba7f777e867a88befdf9b82c72c271",
                 "shasum": ""
             },
             "require": {
@@ -137,11 +97,14 @@
                 "yiisoft/yii": ">=1.1.12",
                 "phundament/p3extensions": ">=0.7"
             },
-            "time": "1348240479",
+            "provide": {
+                "yii-application": "*"
+            },
+            "time": "1348264519",
             "type": "library",
             "installation-source": "source",
             "license": [
-                "BSD"
+                "BSD-3-Clause"
             ],
             "authors": [
                 {
@@ -175,7 +138,7 @@
             "require": {
                 "php": ">=5.3.0"
             },
-            "time": "2012-09-19 10:12:42",
+            "time": "2012-09-19 16:12:42",
             "type": "library",
             "installation-source": "dist",
             "license": [
@@ -198,27 +161,28 @@
         },
         {
             "name": "phundament/p3media",
-            "version": "0.7.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3media.git",
-                "reference": "0.7.1"
+                "reference": "6fead14ed0f30c70e05940235736cb85b77f5fd8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/schmunk42/p3media/zipball/0.7.1",
-                "reference": "0.7.1",
+                "url": "https://github.com/schmunk42/p3media/zipball/6fead14ed0f30c70e05940235736cb85b77f5fd8",
+                "reference": "6fead14ed0f30c70e05940235736cb85b77f5fd8",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0",
                 "yiisoft/yii": "1.1.*",
+                "yii-application": "*",
                 "phundament/p3extensions": ">=0.7",
                 "phundament/jquery-file-upload": "0.0.1"
             },
-            "time": "2012-09-21 07:14:07",
+            "time": "1348264890",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "license": [
                 "BSD"
             ],
@@ -256,7 +220,7 @@
                 "yiisoft/yii": "1.1.*",
                 "phundament/p3extensions": ">=0.7"
             },
-            "time": "2012-09-21 07:13:13",
+            "time": "2012-09-21 13:13:13",
             "type": "library",
             "installation-source": "dist",
             "license": [
@@ -295,7 +259,7 @@
                 "yiisoft/yii": "1.1.*",
                 "phundament/p3extensions": ">=0.7"
             },
-            "time": "2012-09-21 07:19:12",
+            "time": "2012-09-21 14:45:25",
             "type": "library",
             "installation-source": "dist",
             "license": [
@@ -322,24 +286,26 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3bootstrap.git",
-                "reference": "fe3b22716cf10c981b770e8423e501981f9320a4"
+                "reference": "bb20ca3e1ff3fc83f97c12126f33e660b1923eb6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/schmunk42/p3bootstrap/zipball/fe3b22716cf10c981b770e8423e501981f9320a4",
-                "reference": "fe3b22716cf10c981b770e8423e501981f9320a4",
+                "url": "https://github.com/schmunk42/p3bootstrap/zipball/bb20ca3e1ff3fc83f97c12126f33e660b1923eb6",
+                "reference": "bb20ca3e1ff3fc83f97c12126f33e660b1923eb6",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0",
+                "yiisoft/yii": "1.1.*",
+                "yii-application": "*",
                 "phundament/p3extensions": ">=0.7",
                 "crisu83/yii-bootstrap": "1.*"
             },
-            "time": "1348241302",
+            "time": "1348265491",
             "type": "library",
             "installation-source": "source",
             "license": [
-                "BSD"
+                "BSD-3-Clause"
             ],
             "authors": [
                 {
@@ -351,9 +317,8 @@
             "description": "Bootstrap Theme for Phundament 3",
             "homepage": "http://phundament.com/",
             "keywords": [
-                "package",
-                "dependency",
-                "autoload"
+                "bootstrap",
+                "theme"
             ]
         },
         {
@@ -425,86 +390,14 @@
             "installation-source": "dist"
         }
     ],
-    "packages-dev": [
-        {
-            "name": "crisu83/yii-less",
-            "version": "0.0.1",
-            "source": {
-                "type": "hg",
-                "url": "https://bitbucket.org/Crisu83/yii-less",
-                "reference": "045c79d2943e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://bitbucket.org/Crisu83/yii-less/get/045c79d2943e.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "yiisoft/yii": ">=1.1.10"
-            },
-            "type": "library",
-            "installation-source": "dist"
-        },
-        {
-            "name": "phundament/lessii",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/schmunk42/lessii.git",
-                "reference": "44a7777a602a97a1f86a96f10f1deccab46d2b47"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/schmunk42/lessii/zipball/44a7777a602a97a1f86a96f10f1deccab46d2b47",
-                "reference": "44a7777a602a97a1f86a96f10f1deccab46d2b47",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0",
-                "crisu83/yii-less": "0.0.1",
-                "twitter/bootstrap": ">2.0.1"
-            },
-            "time": "1340304175",
-            "type": "library",
-            "installation-source": "source",
-            "license": [
-                "BSD"
-            ],
-            "authors": [
-                {
-                    "name": "Tobias Munk",
-                    "email": "schmunk@usrbin.de",
-                    "homepage": "http://www.usrbin.de"
-                }
-            ],
-            "description": "LESS Translation Library",
-            "homepage": "http://phundament.com/",
-            "keywords": [
-                "package",
-                "dependency",
-                "autoload"
-            ]
-        },
-        {
-            "name": "twitter/bootstrap",
-            "version": "2.0.3",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/twitter/bootstrap/zipball/v2.0.3",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "library",
-            "installation-source": "dist"
-        }
-    ],
+    "packages-dev": null,
     "aliases": [
 
     ],
     "minimum-stability": "stable",
     "stability-flags": {
         "phundament/p3admin": 20,
+        "phundament/p3media": 20,
         "phundament/themes/p3bootstrap": 20,
         "phundament/gii-template-collection": 20,
         "phundament/lessii": 20

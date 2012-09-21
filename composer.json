@@ -22,21 +22,20 @@
     ],
     "require": {
         "php": ">=5.3.2",
-        "yiisoft/yii": "1.1.*",
         "crisu83/yii-rights": "0.*",
         "mishamx/yii-user": "0.*",
         "phundament/p3admin": "@dev",
         "phundament/p3widgets": "0.7.*",
         "phundament/p3pages": "0.7.*",
-        "phundament/p3media": "0.7.*",
+        "phundament/p3media": "@dev",
         "phundament/themes/p3bootstrap": "@dev",
-        "phundament/gii-template-collection": "@dev",
         "yiiext/fancybox-widget": "0.*",
         "yiiext/lipsum-widget": "0.*",
         "yiiext/migrate-command": "0.7.1.1"
     },
     "require-dev": {
-        "phundament/lessii": "dev-master"
+        "phundament/gii-template-collection": "@dev",
+        "phundament/lessii": "@dev"
     },
     "autoload": {
         "psr-0": {
