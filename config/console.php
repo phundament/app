@@ -1,7 +1,13 @@
 <?php
 
-// This is the configuration for yiic console application.
-// Any writable CConsoleApplication properties can be configured here.
+/**
+ * Phundament 3 Console Config File
+ *
+ * Containes predefined yiic console commands for Phundament.
+ *
+ * Define composer hooks by the following name schema: <vendor>/<packageName>-<action>
+ * 
+ */
 
 $mainConfig = require('main.php');
 return array(

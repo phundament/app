@@ -1,16 +1,12 @@
 <?php
 
 /**
- * Phundament 3 Config File
+ * Phundament 3 Application Config File
  *
- * Note: This file includes other config file, see bottom section.
- * You can also use a config file local.php, which overrides settings in this file.
+ * All modules and components have to be declared before installing a new package via composer.
+ * See also config.php, for composer installation and update "hooks"
  */
-// uncomment the following to define a path alias
-// Yii::setPathOfAlias('local','path/to/local-folder');
-// This is the main Web application configuration. Any writable
-// CWebApplication properties can be configured here.
-
+ 
 $applicationDirectory = realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR);
 $baseUrl = (dirname($_SERVER['SCRIPT_NAME']) != '/') ? dirname($_SERVER['SCRIPT_NAME']) : '';
 
@@ -24,7 +20,6 @@ $mainConfig = array(
         'log',
         'langHandler',
         'bootstrap',
-#		'lessCompiler' // you need to run 'composer.phar update --install-suggests' before uncommenting
     ),
     // autoloading model and component classes
     'import' => array(
@@ -43,12 +38,12 @@ $mainConfig = array(
     ),
     'aliases' => array(
         'vendor' => 'application.vendor',
-        // TODO -->
+        // p3widgets
         'jsonEditorView' => 'application.vendor.phundament.p3extensions.widgets.jsonEditorView',
         'ckeditor' => 'application.vendor.phundament.p3extensions.widgets.ckeditor',
+        // p3media
         'jquery-file-upload' => 'application.vendor.phundament.jquery-file-upload',
         'jquery-file-upload-widget' => 'application.vendor.phundament.p3extensions.widgets.jquery-file-upload',
-    // TODO <---
     ),
     'modules' => array(
         // uncomment the following to enable the Gii tool
@@ -81,8 +76,9 @@ $mainConfig = array(
                     'TbCarousel' => 'Bootstrap Carousel',
                     'EFancyboxWidget' => 'Fancy Box',
                     'P3MarkdownWidget' => 'Markdown Widget'
-                // use eg. $> php composer.phar require yiiext/swf-object-widget to get the widget source
-                #'vendor.yiivendor.swf-object-widget.ESwfObjectWidget' => 'SWF Object',
+                // use eg. $> php composer.phar require yiiext/swf-object-widget to get the 
+                // widget source; import widget class or set an alias.
+                #'ESwfObjectWidget' => 'SWF Object',
                 ),
             ),
         ),
@@ -125,20 +121,6 @@ $mainConfig = array(
                         ),
                         'type' => 'png'
                     ),
-                    'p3media-ckbrowse' => array(
-                        'commands' => array(
-                            'resize' => array(150, 120), // use third parameter for master setting, see Image constants
-                        #'quality' => 80, // for jpegs
-                        ),
-                        'type' => 'png'
-                    ),
-                    'p3media-upload' => array(
-                        'commands' => array(
-                            'resize' => array(60, 30), // use third parameter for master setting, see Image constants
-                        #'quality' => 80, // for jpegs
-                        ),
-                        'type' => 'png'
-                    ),
                     'original' => array(
                         'name' => 'Original File',
                         'originalFile' => true,
@@ -152,6 +134,20 @@ $mainConfig = array(
                         'name' => 'Download File',
                         'originalFile' => true,
                         'attachment' => true,
+                    ),
+                    'p3media-ckbrowse' => array(
+                        'commands' => array(
+                            'resize' => array(150, 120), // use third parameter for master setting, see Image constants
+                        #'quality' => 80, // for jpegs
+                        ),
+                        'type' => 'png'
+                    ),
+                    'p3media-upload' => array(
+                        'commands' => array(
+                            'resize' => array(60, 30), // use third parameter for master setting, see Image constants
+                        #'quality' => 80, // for jpegs
+                        ),
+                        'type' => 'png'
                     ),
                 )
             ),
@@ -196,6 +192,9 @@ $mainConfig = array(
             // If you need help with configuring the plugins, please refer to Bootstrap's own documentation:
             // http://twitter.github.com/bootstrap/javascript.html
             ),
+        ),
+        'cache' => array(
+            'class' => 'CDummyCache',
         ),
         'db' => array(
             'tablePrefix' => 'usr_',
