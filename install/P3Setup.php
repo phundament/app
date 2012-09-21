@@ -1,12 +1,37 @@
 <?php
 
-namespace install;
+/**
+ * Class file
+ *
+ * @author Tobias Munk <schmunk@usrbin.de>
+ * @link http://www.phundament.com/
+ * @copyright Copyright &copy; 2012 diemeisterei GmbH
+ * @license http://www.phundament.com/license
+ */
 
+namespace install;
 use Composer\Script\Event;
+
+/**
+ * P3Setup provides composer hooks
+ *
+ * This setup class triggers `./yiic migrate` at post-install and post-update.
+ * For a package the class triggers `./yiic <vendor/<packageName>-<action>` at post-package-install and
+ * post-package-update.
+ * See composer manual (http://getcomposer.org/doc/articles/scripts.md)
+ *
+ * @author Tobias Munk <schmunk@usrbin.de>
+ * @package phundament.app
+ * @since 0.7.1
+ */
 
 class P3Setup
 {
-    
+    /**
+     * Displays welcome message
+     * @static
+     * @param \Composer\Script\Event $event
+     */
     public static function preInstall(Event $event)
     {
         $composer = $event->getComposer();
@@ -21,6 +46,11 @@ class P3Setup
         }
     }
 
+    /**
+     * Executes ./yiic migrate
+     * @static
+     * @param \Composer\Script\Event $event
+     */
     public static function postInstall(Event $event)
     {
         $app = self::getYiiApplication();
@@ -31,6 +61,12 @@ class P3Setup
         echo "\n\nInstallation completed.\n\nThank you for choosing Phundament 3!\n\n";
     }
 
+    /**
+     * Displays welcome message
+     *
+     * @static
+     * @param \Composer\Script\Event $event
+     */
     public static function preUpdate(Event $event)
     {
         $composer = $event->getComposer();
@@ -38,6 +74,12 @@ class P3Setup
         echo "Welcome to Phundament Installation 3 via composer\n\nUpdating your application to the lastest available packages...\n";
     }
 
+    /**
+     * Executes ./yiic migrate
+     *
+     * @static
+     * @param \Composer\Script\Event $event
+     */
     public static function postUpdate(Event $event)
     {
         $app = self::getYiiApplication();
@@ -48,6 +90,12 @@ class P3Setup
         echo "\n\nUpdate completed.\n\n";
     }
 
+    /**
+     * Executes ./yiic <vendor/<packageName>-<action>
+     *
+     * @static
+     * @param \Composer\Script\Event $event
+     */
     public static function postPackageInstall(Event $event)
     {
         $installedPackage = $event->getOperation()->getPackage();
@@ -55,6 +103,12 @@ class P3Setup
         self::runComposerCommand($commandName);        
     }
 
+    /**
+     * Executes ./yiic <vendor/<packageName>-<action>
+     *
+     * @static
+     * @param \Composer\Script\Event $event
+     */
     public static function postPackageUpdate(Event $event)
     {
         $installedPackage = $event->getOperation()->getTargetPackage();
@@ -69,8 +123,6 @@ class P3Setup
      *
      * @param string $message to echo out before waiting for user input
      * @return bool if user confirmed
-     *
-     * @since 0.5
      */
     public static function confirm($message)
     {
