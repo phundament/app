@@ -215,7 +215,7 @@
                 "phundament/p3extensions": "dev-master",
                 "phundament/jquery-file-upload": "0.0.1"
             },
-            "time": "2012-09-19 14:35:58",
+            "time": "2012-09-19 12:35:58",
             "type": "library",
             "installation-source": "source",
             "license": [
@@ -254,7 +254,7 @@
                 "php": ">=5.3.0",
                 "phundament/p3extensions": "dev-master"
             },
-            "time": "2012-09-19 16:06:28",
+            "time": "2012-09-19 14:06:28",
             "type": "library",
             "installation-source": "source",
             "license": [
@@ -293,7 +293,7 @@
                 "php": ">=5.3.0",
                 "phundament/p3extensions": "dev-master"
             },
-            "time": "2012-09-20 08:43:20",
+            "time": "2012-09-20 06:43:20",
             "type": "library",
             "installation-source": "source",
             "license": [
@@ -320,12 +320,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3bootstrap.git",
-                "reference": "96e82f310d78136a872b95f59b368a5f822b4682"
+                "reference": "1f8ab86a9fb4a824e2da91798d4d2dcb3725991d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/schmunk42/p3bootstrap/zipball/96e82f310d78136a872b95f59b368a5f822b4682",
-                "reference": "96e82f310d78136a872b95f59b368a5f822b4682",
+                "url": "https://github.com/schmunk42/p3bootstrap/zipball/1f8ab86a9fb4a824e2da91798d4d2dcb3725991d",
+                "reference": "1f8ab86a9fb4a824e2da91798d4d2dcb3725991d",
                 "shasum": ""
             },
             "require": {
@@ -333,7 +333,7 @@
                 "phundament/p3extensions": "dev-master",
                 "crisu83/yii-bootstrap": "1.0.*"
             },
-            "time": "1348220640",
+            "time": "1348235088",
             "type": "library",
             "installation-source": "source",
             "license": [
@@ -423,7 +423,80 @@
             "installation-source": "source"
         }
     ],
-    "packages-dev": null,
+    "packages-dev": [
+        {
+            "name": "crisu83/yii-less",
+            "version": "0.0.1",
+            "source": {
+                "type": "hg",
+                "url": "https://bitbucket.org/Crisu83/yii-less",
+                "reference": "045c79d2943e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/Crisu83/yii-less/get/045c79d2943e.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "yiisoft/yii": ">=1.1.10"
+            },
+            "type": "library",
+            "installation-source": "dist"
+        },
+        {
+            "name": "phundament/lessii",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmunk42/lessii.git",
+                "reference": "44a7777a602a97a1f86a96f10f1deccab46d2b47"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/schmunk42/lessii/zipball/44a7777a602a97a1f86a96f10f1deccab46d2b47",
+                "reference": "44a7777a602a97a1f86a96f10f1deccab46d2b47",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "crisu83/yii-less": "0.0.1",
+                "twitter/bootstrap": ">2.0.1"
+            },
+            "time": "1340304175",
+            "type": "library",
+            "installation-source": "source",
+            "license": [
+                "BSD"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Munk",
+                    "email": "schmunk@usrbin.de",
+                    "homepage": "http://www.usrbin.de"
+                }
+            ],
+            "description": "LESS Translation Library",
+            "homepage": "http://phundament.com/",
+            "keywords": [
+                "package",
+                "dependency",
+                "autoload"
+            ]
+        },
+        {
+            "name": "twitter/bootstrap",
+            "version": "2.0.3",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/twitter/bootstrap/zipball/v2.0.3",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library",
+            "installation-source": "dist"
+        }
+    ],
     "aliases": [
 
     ],
