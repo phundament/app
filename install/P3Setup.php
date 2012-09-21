@@ -25,8 +25,8 @@ use Composer\Script\Event;
  * @since 0.7.1
  */
 
-defined('YII_PATH') or define('YII_PATH', realpath(dirname(__FILE__).'/../vendor/yiisoft/yii/framework'));
-defined('P3_CONSOLE_CONFIG') or define('P3_CONSOLE_CONFIG', realpath(dirname(__FILE__).'/../config/console.php'));
+defined('YII_PATH') or define('YII_PATH', dirname(__FILE__).'/../vendor/yiisoft/yii/framework');
+defined('P3_CONSOLE_CONFIG') or define('P3_CONSOLE_CONFIG', dirname(__FILE__).'/../config/console.php');
 
 class P3Setup
 {
