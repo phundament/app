@@ -29,12 +29,12 @@
         "phundament/p3pages": "0.7.*",
         "phundament/p3media": "@dev",
         "phundament/themes/p3bootstrap": "@dev",
+        "phundament/gii-template-collection": "@dev",
         "yiiext/fancybox-widget": "0.*",
         "yiiext/lipsum-widget": "0.*",
         "yiiext/migrate-command": "0.7.1.1"
     },
     "require-dev": {
-        "phundament/gii-template-collection": "@dev",
         "phundament/lessii": "@dev"
     },
     "autoload": {
