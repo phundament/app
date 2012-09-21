@@ -6,7 +6,7 @@
  * All modules and components have to be declared before installing a new package via composer.
  * See also config.php, for composer installation and update "hooks"
  */
- 
+
 $applicationDirectory = realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR);
 $baseUrl = (dirname($_SERVER['SCRIPT_NAME']) != '/') ? dirname($_SERVER['SCRIPT_NAME']) : '';
 
@@ -66,17 +66,12 @@ $mainConfig = array(
             'params' => array(
                 'widgets' => array(
                     'CWidget' => 'Basic HTML Widget',
-                )
-            ),
-            'params' => array(
-                'widgets' => array(
-                    'CWidget' => 'Basic HTML Widget',
                     'TbHeroUnit' => 'Bootstrap Hero',
                     'TbMenu' => 'Bootstrap Menu',
                     'TbCarousel' => 'Bootstrap Carousel',
                     'EFancyboxWidget' => 'Fancy Box',
                     'P3MarkdownWidget' => 'Markdown Widget'
-                // use eg. $> php composer.phar require yiiext/swf-object-widget to get the 
+                // use eg. $> php composer.phar require yiiext/swf-object-widget to get the
                 // widget source; import widget class or set an alias.
                 #'ESwfObjectWidget' => 'SWF Object',
                 ),
