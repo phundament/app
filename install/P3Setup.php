@@ -57,7 +57,6 @@ class P3Setup
     public static function postInstall(Event $event)
     {
         $app = self::getYiiApplication();
-
         $args = array('yiic', 'migrate');
         $app->commandRunner->run($args);
 
@@ -72,8 +71,6 @@ class P3Setup
      */
     public static function preUpdate(Event $event)
     {
-        $composer = $event->getComposer();
-        // do stuff
         echo "Welcome to Phundament Installation 3 via composer\n\nUpdating your application to the lastest available packages...\n";
     }
 
@@ -86,7 +83,6 @@ class P3Setup
     public static function postUpdate(Event $event)
     {
         $app = self::getYiiApplication();
-
         $args = array('yiic', 'migrate');
         $app->commandRunner->run($args);
 
@@ -103,7 +99,7 @@ class P3Setup
     {
         $installedPackage = $event->getOperation()->getPackage();
         $commandName = $installedPackage->getPrettyName().'-install';
-        self::runComposerCommand($commandName);        
+        self::runCommand($commandName);
     }
 
     /**
@@ -116,7 +112,7 @@ class P3Setup
     {
         $installedPackage = $event->getOperation()->getTargetPackage();
         $commandName = $installedPackage->getPrettyName().'-update';
-        self::runComposerCommand($commandName);
+        self::runCommand($commandName);
     }
     
     /**
@@ -134,9 +130,9 @@ class P3Setup
     }
 
     /**
-     * internal helper function
+     * Runs Yii command, if available (defined in config/console.php)
      */
-    private static function runComposerCommand($commandName){
+    private static function runCommand($commandName){
         $app = self::getYiiApplication();
         if ($app === null) return;
        
@@ -147,7 +143,7 @@ class P3Setup
     }
 
     /**
-     * internal helper function
+     * Creates console application, if Yii is available
      */
     private static function getYiiApplication()
     {
