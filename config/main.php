@@ -239,6 +239,11 @@ $mainConfig = array(
              */
             ),
         ),
+        'themeManager' => array(
+            'class' => 'CThemeManager',
+            'basePath' => $applicationDirectory . '/themes',
+            'baseUrl' => $baseUrl.'/themes',
+        ),
         'urlManager' => array(
             'class' => 'vendor.phundament.p3extensions.components.P3LangUrlManager',
             'showScriptName' => true,

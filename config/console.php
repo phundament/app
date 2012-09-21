@@ -7,7 +7,6 @@ $mainConfig = require('main.php');
 return array(
     'aliases' => array(
       'vendor' => 'application.vendor',
-      'webroot' => 'application.www'
     ),
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
     'name' => 'My Console Application',
