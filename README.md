@@ -84,6 +84,7 @@ Troubleshooting
    ```
    curl -L https://github.com/phundament/app/tarball/master | tar zx
    ```
+ * Don't manually enable Yii-Logger on a fresh install
 
 
 
