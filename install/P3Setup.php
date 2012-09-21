@@ -25,6 +25,9 @@ use Composer\Script\Event;
  * @since 0.7.1
  */
 
+defined('YII_PATH') or define('YII_PATH', realpath(dirname(__FILE__).'/../vendor/yiisoft/yii/framework'));
+defined('P3_CONSOLE_CONFIG') or define('P3_CONSOLE_CONFIG', realpath(dirname(__FILE__).'/../config/console.php'));
+
 class P3Setup
 {
     /**
@@ -148,16 +151,16 @@ class P3Setup
      */
     private static function getYiiApplication()
     {
-        if (!is_file(dirname(__FILE__) . '/../vendor/yiisoft/yii/framework/yii.php')) 
+        if (!is_file(YII_PATH.'/yii.php'))
         {
             return null;
         }
 
-        require_once(dirname(__FILE__) . '/../vendor/yiisoft/yii/framework/yii.php');
+        require_once(YII_PATH.'/yii.php');
         spl_autoload_register(array('YiiBase', 'autoload'));
 
         if (\Yii::app() === null) {
-            $config = dirname(__FILE__) . '/../config/console.php';
+            $config = P3_CONSOLE_CONFIG;
             $app = \Yii::createConsoleApplication($config);
         } else {
             $app = \Yii::app();
