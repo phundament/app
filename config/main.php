@@ -37,6 +37,7 @@ $mainConfig = array(
         'application.vendor.yiiext.fancybox-widget.*', // Fancybox Widget
     ),
     'aliases' => array(
+        // composer
         'vendor' => 'application.vendor',
         // p3widgets
         'jsonEditorView' => 'application.vendor.phundament.p3extensions.widgets.jsonEditorView',
@@ -282,9 +283,8 @@ $mainConfig = array(
         // this is used in contact page
         'adminEmail' => 'webmaster@example.com',
         // global Phundament 3 parameters
-        'p3.version' => '0.7.0-dev',
-        'p3.backendTheme' => 'backend', // backend is the default
-        'p3.fallbackLanguage' => 'en', // backend is the default
+        'p3.backendTheme' => 'backend', // defaults to 'backend'
+        'p3.fallbackLanguage' => 'en', // defaults to 'en'
         'ext.ckeditor.options' => array(
             'type' => 'fckeditor',
             'height' => 400,
