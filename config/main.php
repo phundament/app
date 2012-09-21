@@ -111,7 +111,7 @@ $mainConfig = array(
                         'type' => 'jpg',
                     ),
                     'icon-32' => array(
-                        'name' => 'Icon 64x64',
+                        'name' => 'Icon 32x32',
                         'commands' => array(
                             'resize' => array(32, 32),
                         ),
