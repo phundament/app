@@ -1,5 +1,5 @@
 {
-    "hash": "ae8a1b2edab5d9bac55ab989275a034a",
+    "hash": "8d43266e1ec4d7ba0bcfdc50c7bf2db4",
     "packages": [
         {
             "name": "crisu83/yii-bootstrap",
@@ -124,12 +124,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3admin.git",
-                "reference": "0f5a43747188ee76de5fbbc47b45de41fcff9c69"
+                "reference": "50b0a456b3d8e400cc9526d0f32f9ac4bcf38af1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/schmunk42/p3admin/zipball/0f5a43747188ee76de5fbbc47b45de41fcff9c69",
-                "reference": "0f5a43747188ee76de5fbbc47b45de41fcff9c69",
+                "url": "https://github.com/schmunk42/p3admin/zipball/50b0a456b3d8e400cc9526d0f32f9ac4bcf38af1",
+                "reference": "50b0a456b3d8e400cc9526d0f32f9ac4bcf38af1",
                 "shasum": ""
             },
             "require": {
@@ -137,7 +137,7 @@
                 "yiisoft/yii": ">=1.1.12",
                 "phundament/p3extensions": "dev-master"
             },
-            "time": "1348177014",
+            "time": "1348220623",
             "type": "library",
             "installation-source": "source",
             "license": [
@@ -215,7 +215,7 @@
                 "phundament/p3extensions": "dev-master",
                 "phundament/jquery-file-upload": "0.0.1"
             },
-            "time": "2012-09-19 16:35:58",
+            "time": "2012-09-19 14:35:58",
             "type": "library",
             "installation-source": "source",
             "license": [
@@ -254,7 +254,7 @@
                 "php": ">=5.3.0",
                 "phundament/p3extensions": "dev-master"
             },
-            "time": "2012-09-19 18:06:28",
+            "time": "2012-09-19 16:06:28",
             "type": "library",
             "installation-source": "source",
             "license": [
@@ -293,7 +293,7 @@
                 "php": ">=5.3.0",
                 "phundament/p3extensions": "dev-master"
             },
-            "time": "2012-09-20 10:43:20",
+            "time": "2012-09-20 08:43:20",
             "type": "library",
             "installation-source": "source",
             "license": [
@@ -316,16 +316,16 @@
         },
         {
             "name": "phundament/themes/p3bootstrap",
-            "version": "0.7.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3bootstrap.git",
-                "reference": "0.7.0"
+                "reference": "96e82f310d78136a872b95f59b368a5f822b4682"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/schmunk42/p3bootstrap/zipball/0.7.0",
-                "reference": "0.7.0",
+                "url": "https://github.com/schmunk42/p3bootstrap/zipball/96e82f310d78136a872b95f59b368a5f822b4682",
+                "reference": "96e82f310d78136a872b95f59b368a5f822b4682",
                 "shasum": ""
             },
             "require": {
@@ -333,7 +333,7 @@
                 "phundament/p3extensions": "dev-master",
                 "crisu83/yii-bootstrap": "1.0.*"
             },
-            "time": "2012-09-19 16:37:03",
+            "time": "1348220640",
             "type": "library",
             "installation-source": "source",
             "license": [
@@ -430,6 +430,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "phundament/p3admin": 20,
+        "phundament/themes/p3bootstrap": 20,
         "phundament/gii-template-collection": 20,
         "phundament/lessii": 20
     }

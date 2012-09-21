@@ -29,7 +29,7 @@
         "phundament/p3widgets": "0.7.*",
         "phundament/p3pages": "0.7.*",
         "phundament/p3media": "0.7.*",
-        "phundament/themes/p3bootstrap": "0.7.*",
+        "phundament/themes/p3bootstrap": "@dev",
         "phundament/gii-template-collection": "@dev",
         "yiiext/fancybox-widget": "0.*",
         "yiiext/lipsum-widget": "0.*",
