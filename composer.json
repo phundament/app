@@ -178,8 +178,7 @@
                 "url": "https://bitbucket.org/Crisu83/yii-rights/get/437267d8b1ed.zip"
             },
             "require": {
-                "yiisoft/yii": ">=1.1.10",
-                "phundament/p3admin": "dev-master"
+                "yiisoft/yii": ">=1.1.10"
             }
         }
     },{
@@ -208,8 +207,7 @@
                 "url": "https://nodeload.github.com/phundament/yii-user/zipball/7affbb3cef1bd337d3e5f897258561ebb6ea1100"
             },
             "require": {
-                "yiisoft/yii": ">=1.1.10",
-                "phundament/p3admin": "dev-master"                
+                "yiisoft/yii": ">=1.1.10"
             }
         }
     },{
