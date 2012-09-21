@@ -54,6 +54,5 @@
         "post-package-update": [
         "install\\P3Setup::postPackageUpdate"
         ]
-    },
-    "minimum-stability": "dev"
+    }
 }
