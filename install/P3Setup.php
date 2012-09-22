@@ -20,6 +20,34 @@ use Composer\Script\Event;
  * post-package-update.
  * See composer manual (http://getcomposer.org/doc/articles/scripts.md)
  *
+ * Usage example
+ *
+ * config.php
+ *     'params' => array(
+        'composer.hooks' => array(
+            'post-update' => array('yiic', 'migrate'),
+            'post-install' => array('yiic', 'migrate'),
+            'yiisoft/yii-install' => array('yiic', 'webapp', realpath(dirname(__FILE__))),
+        ),
+    )
+);
+
+ * composer.json
+ *     "scripts": {
+        "pre-install-cmd": "install\\P3Setup::preInstall",
+        "post-install-cmd": "install\\P3Setup::postInstall",
+        "pre-update-cmd": "install\\P3Setup::preUpdate",
+        "post-update-cmd": "install\\P3Setup::postUpdate",
+        "post-package-install": [
+        "install\\P3Setup::postPackageInstall"
+        ],
+        "post-package-update": [
+        "install\\P3Setup::postPackageUpdate"
+        ]
+    }
+
+ *
+ *
  * @author Tobias Munk <schmunk@usrbin.de>
  * @package phundament.app
  * @since 0.7.1
@@ -43,7 +71,7 @@ class P3Setup
         echo "This setup script will download all packages specified in composer.json. It will also trigger the creation of a " .
         "web application and invoke the required migrations, please answer the upcoming confirmation questions with [y]es.\n\n";
         if (self::confirm("Install Phundament 3 now?")) {
-
+            self::runHook('pre-install');
         } else {
             exit("Installation aborted.\n");
         }
@@ -56,10 +84,7 @@ class P3Setup
      */
     public static function postInstall(Event $event)
     {
-        $app = self::getYiiApplication();
-        $args = array('yiic', 'migrate');
-        $app->commandRunner->run($args);
-
+        self::runHook('post-install');
         echo "\n\nInstallation completed.\n\nThank you for choosing Phundament 3!\n\n";
     }
 
@@ -72,6 +97,7 @@ class P3Setup
     public static function preUpdate(Event $event)
     {
         echo "Welcome to Phundament Installation 3 via composer\n\nUpdating your application to the lastest available packages...\n";
+        self::runHook('pre-update');
     }
 
     /**
@@ -82,10 +108,7 @@ class P3Setup
      */
     public static function postUpdate(Event $event)
     {
-        $app = self::getYiiApplication();
-        $args = array('yiic', 'migrate');
-        $app->commandRunner->run($args);
-
+        self::runHook('post-update');
         echo "\n\nUpdate completed.\n\n";
     }
 
@@ -98,8 +121,8 @@ class P3Setup
     public static function postPackageInstall(Event $event)
     {
         $installedPackage = $event->getOperation()->getPackage();
-        $commandName = $installedPackage->getPrettyName().'-install';
-        self::runCommand($commandName);
+        $hookName = $installedPackage->getPrettyName().'-install';
+        self::runHook($hookName);
     }
 
     /**
@@ -112,9 +135,9 @@ class P3Setup
     {
         $installedPackage = $event->getOperation()->getTargetPackage();
         $commandName = $installedPackage->getPrettyName().'-update';
-        self::runCommand($commandName);
+        self::runHook($commandName);
     }
-    
+
     /**
      * Asks user to confirm by typing y or n.
      *
@@ -132,13 +155,13 @@ class P3Setup
     /**
      * Runs Yii command, if available (defined in config/console.php)
      */
-    private static function runCommand($commandName){
+    private static function runHook($name){
         $app = self::getYiiApplication();
         if ($app === null) return;
-       
-        if (isset($app->commandMap[$commandName])) {
-            $args = array('yiic', $commandName);
-            $app->commandRunner->run($args);        
+
+        if (isset($app->params['composer.hooks'][$name])) {
+            $args = $app->params['composer.hooks'][$name];
+            $app->commandRunner->run($args);
         }
     }
 

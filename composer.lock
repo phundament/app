@@ -176,7 +176,7 @@
             "require": {
                 "php": ">=5.3.0"
             },
-            "time": "2012-09-19 14:12:42",
+            "time": "2012-09-19 16:12:42",
             "type": "library",
             "installation-source": "dist",
             "license": [
@@ -258,7 +258,7 @@
                 "yiisoft/yii": "1.1.*",
                 "phundament/p3extensions": ">=0.7"
             },
-            "time": "2012-09-21 11:13:13",
+            "time": "2012-09-21 13:13:13",
             "type": "library",
             "installation-source": "dist",
             "license": [
@@ -297,7 +297,7 @@
                 "yiisoft/yii": "1.1.*",
                 "phundament/p3extensions": ">=0.7"
             },
-            "time": "2012-09-21 12:45:25",
+            "time": "2012-09-21 14:45:25",
             "type": "library",
             "installation-source": "dist",
             "license": [

@@ -6,13 +6,12 @@
  * Containes predefined yiic console commands for Phundament.
  *
  * Define composer hooks by the following name schema: <vendor>/<packageName>-<action>
- * 
+ *
  */
-
 $mainConfig = require('main.php');
 return array(
     'aliases' => array(
-      'vendor' => 'application.vendor',
+        'vendor' => 'application.vendor',
     ),
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
     'name' => 'My Console Application',
@@ -34,7 +33,7 @@ return array(
             'class' => 'ext.p3extensions.commands.P3DumpSchemaCommand',
         ),
         'migrate' => array(
-            // alias of the path where you extracted the zip file
+// alias of the path where you extracted the zip file
             'class' => 'vendor.yiiext.migrate-command.EMigrateCommand',
             // this is the path where you want your core application migrations to be created
             'migrationPath' => 'application.migrations',
@@ -55,27 +54,33 @@ return array(
             'migrationSubPath' => 'migrations',
             // here you can configure which modules should be active, you can disable a module by adding its name to this array
             'disabledModules' => array(
-            #'admin', 'anOtherModule', // ...
+#'admin', 'anOtherModule', // ...
             ),
             // the name of the application component that should be used to connect to the database
             'connectionID' => 'db',
-            // alias of the template file used to create new migrations
-            #'templateFile' => 'system.cli.migration_template',
+        // alias of the template file used to create new migrations
+#'templateFile' => 'system.cli.migration_template',
         ),
-
         // composer "hooks", will be executed after package install or update
-        'phundament/p3admin-install' => array(
+        'p3webapp' => array(
             'class' => 'vendor.phundament.p3admin.commands.P3WebAppCommand',
-            'path' => realpath(dirname(__FILE__) . '/..'),
         ),
-        'phundament/themes/p3bootstrap-install' => array(
+        'p3bootstrap' => array(
             'class' => 'vendor.phundament.themes.p3bootstrap.commands.P3BootstrapCommand',
         ),
-        'phundament/themes/p3bootstrap-update' => array(
-            'class' => 'vendor.phundament.themes.p3bootstrap.commands.P3BootstrapCommand',
-        ),
-        'phundament/p3media-install' => array(
+        'p3media' => array(
             'class' => 'vendor.phundament.p3media.commands.P3MediaCommand',
         ),
     ),
+    'params' => array(
+        'composer.hooks' => array(
+            // args for Yii command runner
+            'post-update' => array('yiic', 'migrate'),
+            'post-install' => array('yiic', 'migrate'),
+            'phundament/p3admin-install' => array('yiic', 'p3webapp', realpath(dirname(__FILE__) . '/..')),
+            'phundament/themes/p3bootstrap-install' => array('yiic', 'p3bootstrap'),
+            'phundament/themes/p3bootstrap-update' => array('yiic', 'p3bootstrap'),
+            'phundament/p3media-install' => array('yiic', 'p3media'),
+        ),
+    )
 );
