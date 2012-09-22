@@ -9,11 +9,11 @@
  * @license http://www.phundament.com/license
  */
 
-namespace install;
+namespace config;
 use Composer\Script\Event;
 
 /**
- * P3Setup provides composer hooks
+ * ComposerCallback provides composer hooks
  *
  * This setup class triggers `./yiic migrate` at post-install and post-update.
  * For a package the class triggers `./yiic <vendor/<packageName>-<action>` at post-package-install and
@@ -24,7 +24,7 @@ use Composer\Script\Event;
  *
  * config.php
  *     'params' => array(
-        'composer.hooks' => array(
+        'composer.callbacks' => array(
             'post-update' => array('yiic', 'migrate'),
             'post-install' => array('yiic', 'migrate'),
             'yiisoft/yii-install' => array('yiic', 'webapp', realpath(dirname(__FILE__))),
@@ -33,16 +33,16 @@ use Composer\Script\Event;
 );
 
  * composer.json
- *     "scripts": {
-        "pre-install-cmd": "install\\P3Setup::preInstall",
-        "post-install-cmd": "install\\P3Setup::postInstall",
-        "pre-update-cmd": "install\\P3Setup::preUpdate",
-        "post-update-cmd": "install\\P3Setup::postUpdate",
+ *   "scripts": {
+ *      "pre-install-cmd": "config\\ComposerCallback::preInstall",
+        "post-install-cmd": "config\\ComposerCallback::postInstall",
+        "pre-update-cmd": "config\\ComposerCallback::preUpdate",
+        "post-update-cmd": "config\\ComposerCallback::postUpdate",
         "post-package-install": [
-        "install\\P3Setup::postPackageInstall"
+        "config\\ComposerCallback::postPackageInstall"
         ],
         "post-package-update": [
-        "install\\P3Setup::postPackageUpdate"
+        "config\\ComposerCallback::postPackageUpdate"
         ]
     }
 
@@ -54,9 +54,9 @@ use Composer\Script\Event;
  */
 
 defined('YII_PATH') or define('YII_PATH', dirname(__FILE__).'/../vendor/yiisoft/yii/framework');
-defined('P3_CONSOLE_CONFIG') or define('P3_CONSOLE_CONFIG', dirname(__FILE__).'/../config/console.php');
+defined('CONSOLE_CONFIG') or define('CONSOLE_CONFIG', dirname(__FILE__).'/console.php');
 
-class P3Setup
+class ComposerCallback
 {
     /**
      * Displays welcome message
@@ -67,10 +67,10 @@ class P3Setup
     {
         $composer = $event->getComposer();
         // do stuff
-        echo "Welcome to Phundament Installation 3 via composer\n\n";
-        echo "This setup script will download all packages specified in composer.json. It will also trigger the creation of a " .
-        "web application and invoke the required migrations, please answer the upcoming confirmation questions with [y]es.\n\n";
-        if (self::confirm("Install Phundament 3 now?")) {
+        echo "Phundament 3 Installer\n\n";
+        echo " * download packages specified in composer.json
+ * trigger composer callbacks\n\n";
+        if (self::confirm("Start Installation?")) {
             self::runHook('pre-install');
         } else {
             exit("Installation aborted.\n");
@@ -159,8 +159,9 @@ class P3Setup
         $app = self::getYiiApplication();
         if ($app === null) return;
 
-        if (isset($app->params['composer.hooks'][$name])) {
-            $args = $app->params['composer.hooks'][$name];
+        if (isset($app->params['composer.callbacks'][$name])) {
+            $args = $app->params['composer.callbacks'][$name];
+            $app->commandRunner->addCommands(\Yii::getPathOfAlias('system.cli.commands'));
             $app->commandRunner->run($args);
         }
     }
@@ -179,8 +180,11 @@ class P3Setup
         spl_autoload_register(array('YiiBase', 'autoload'));
 
         if (\Yii::app() === null) {
-            $config = P3_CONSOLE_CONFIG;
-            $app = \Yii::createConsoleApplication($config);
+            if (is_file(CONSOLE_CONFIG)) {
+                $app = \Yii::createConsoleApplication(CONSOLE_CONFIG);
+            } else {
+                throw new \Exception("File from CONSOLE_CONFIG not found");   
+            }            
         } else {
             $app = \Yii::app();
         }
