@@ -73,7 +73,7 @@ return array(
         ),
     ),
     'params' => array(
-        'composer.hooks' => array(
+        'composer.callbacks' => array(
             // args for Yii command runner
             'post-update' => array('yiic', 'migrate'),
             'post-install' => array('yiic', 'migrate'),
