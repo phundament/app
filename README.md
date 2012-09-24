@@ -37,17 +37,11 @@ You may skip the --dev option on production systems, at the moment it just adds 
 Try a demo
 ----------
 
+### Open website
+
 [Frontend Demo Page](http://demo.phundament.com/3.0-dev)
 
 Login with editor / editor or register by e-mail.
-
-
-
-First Steps
------------
-
-### Open website
-http://localhost/phundament-app-<SHA1>
 
 ### First Steps
 
