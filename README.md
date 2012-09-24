@@ -11,14 +11,6 @@ upon [Yii](http://yiiframework.com) 1.1 and extension packages such as [user](ht
 [Get Phundament 3](https://github.com/phundament/app/tags), for more details visit [phundament.com](http://phundament.com).
 
 
-Try a demo
-----------
-
-[Demo Page](http://demo.phundament.com/3.0-dev)
-
-Login with editor / editor or register by e-mail.
-
-
 Get started
 -----------
 
@@ -40,6 +32,15 @@ php composer.phar install --dev
 
 All setup, database, file permissions and config settings should be done automatically.
 You may skip the --dev option on production systems, at the moment it just adds LESS support for your bootstrap-based themes.
+
+
+Try a demo
+----------
+
+[Frontend Demo Page](http://demo.phundament.com/3.0-dev)
+
+Login with editor / editor or register by e-mail.
+
 
 
 First Steps
