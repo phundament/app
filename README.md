@@ -1,25 +1,12 @@
 Phundament 3 App
 ================
 
-**[10.5.12] IMPORTANT NOTICE!**
-
-We've changed or main repository and the way you
-get Phundament 3, please read the updated documentation below.
-
 
 What is Phundament?
 -------------------
 
- 1.  Not a CMS *for those developers who wouldn't read on otherwise ;)*
- 2.  Yii Framework and package-based set of modules
- 3.  Solid web application foundation
-
-Phundament 3 is an application foundation built upon a set if independent Yii modules and extensions such as [user](http://www.yiiframework.com/extension/yii-user/), [rights](http://www.yiiframework.com/extension/rights/), [yiiext](http://code.google.com/p/yiiext/), [gtc](https://github.com/schmunk42/gii-template-collection), ckeditor, jquery-file-upload, p3widgets and p3media.
-
-The combination of p3widgets and p3media provides basic content management system (CMS) features, like dynamic widget creation and file management.
-Combined in ckeditor, p3media acts as a ckfinder plugin which gives you the full power of HTML and media files for content creation via p3widgets.
-
-It comes with a very minimalistic setup which integrates perfectly into an Yii web application skeleton and installs with one single command.
+Phundament 3 is a solid, highly customizable application foundation built with [composer](http://getcomposer.org) 
+upon [Yii](http://yiiframework.com) 1.1 and extension packages such as [user](http://www.yiiframework.com/extension/yii-user/), [rights](http://www.yiiframework.com/extension/rights/), [yiiext](http://code.google.com/p/yiiext/), [gtc](https://github.com/schmunk42/gii-template-collection), ckeditor, jquery-file-upload, p3widgets and p3media.
 
 Get Phundament 3 - the Yii Application Foundation with CMS features via composer.
 For more details visit [phundament.com](http://phundament.com).
@@ -30,13 +17,13 @@ Try a demo
 
 [Demo Page](http://demo.phundament.com/3.0-dev)
 
-Login with editor / editor
+Login with editor / editor register by e-mail.
 
 
 Get started
 -----------
 
-Download and extract the installer as ZIP or TAR.GZ file from a working tagged version here:
+Download and extract the installer as ZIP or TAR.GZ file from a tagged version here:
 
 [Downloads](https://github.com/phundament/app/tags)
 
@@ -63,14 +50,8 @@ First Steps
 http://localhost/phundament-app-<SHA1>
 
 ### First Steps
-  * Login with admin/admin
-  * Click on 'Upload'
-  * Upload some images
-  * Click on 'Widget Demo'
-  * Hover container and click on '+'
-  * Edit HTML, you can select from your uploaded images by clicking on 'Browse Server' in the image dialog.
-  * Save widget
 
+For some usage examples, [click here](https://github.com/phundament/app/wiki/Content-Management).
 
 
 Troubleshooting
@@ -84,7 +65,7 @@ Troubleshooting
    ```
    curl -L https://github.com/phundament/app/tarball/master | tar zx
    ```
- * Don't manually enable Yii-Logger on a fresh install
+ * Don't manually enable Yii `CLogger` on a fresh install
 
 
 
@@ -93,8 +74,7 @@ Requirements
 
  *  PHP >5.3.2
  *  [Yii Framework Requirements] (http://www.yiiframework.com/doc/guide/1.1/en/quickstart.installation#requirements)
- *  git, hg (Mercurial), svn (subversion), php_mod_ssl
- *  ImageMagick or GDlib
+ *  git, hg (Mercurial), svn (subversion), php_mod_ssl (for composer)
 
 ### Tested Systems
  *  Mac OS X 10.6.8
@@ -117,9 +97,9 @@ Changelog
 
 #### 0.7 (September 2012)
 
-   [ENH] Installer Cleanup
-   [ENH] Unified Configuration
-*  [UPD] Refactored direcory structure
+ * [ENH] Installer cleanup
+ * [ENH] Unified configuration
+ * [UPD] Refactored direcory structure
 
 #### 0.6 (August/September 2012)
 
