@@ -25,7 +25,7 @@ Get started
 
 Download and extract the installer as ZIP or TAR.GZ file from a tagged version here:
 
-[Downloads](https://github.com/phundament/app/tags)
+[Download from github](https://github.com/phundament/app/tags)
 
 Enter the app root folder
 
