@@ -16,7 +16,7 @@ Try a demo
 
 [Demo Page](http://demo.phundament.com/3.0-dev)
 
-Login with editor / editor register by e-mail.
+Login with editor / editor or register by e-mail.
 
 
 Get started
