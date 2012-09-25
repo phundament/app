@@ -20,6 +20,9 @@
         "packagist": false
     },{
         "type":"vcs",
+        "url": "https://github.com/schmunk42/database-command.git"
+    },{
+        "type":"vcs",
         "url": "https://github.com/schmunk42/p3extensions.git"
     },{
         "type":"vcs",
