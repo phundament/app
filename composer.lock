@@ -1,5 +1,5 @@
 {
-    "hash": "5ce7fece1a813684579987b7742e914f",
+    "hash": "022e5620e7b0388b10555667b4e165d8",
     "packages": [
         {
             "name": "crisu83/yii-bootstrap",
@@ -67,18 +67,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/gii-template-collection.git",
-                "reference": "daee54d4cbe6d7195b1277a474d2125a8076dd96"
+                "reference": "2b0878e2773a6889337046f6ce873bc568832ead"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/schmunk42/gii-template-collection/zipball/daee54d4cbe6d7195b1277a474d2125a8076dd96",
-                "reference": "daee54d4cbe6d7195b1277a474d2125a8076dd96",
+                "url": "https://github.com/schmunk42/gii-template-collection/zipball/2b0878e2773a6889337046f6ce873bc568832ead",
+                "reference": "2b0878e2773a6889337046f6ce873bc568832ead",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
             },
-            "time": "1348077988",
+            "time": "1348588242",
             "type": "library",
             "installation-source": "source",
             "license": [
@@ -176,9 +176,9 @@
             "require": {
                 "php": ">=5.3.0"
             },
-            "time": "2012-09-19 16:12:42",
+            "time": "2012-09-19 12:12:42",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "license": [
                 "BSD"
             ],
@@ -258,7 +258,7 @@
                 "yiisoft/yii": "1.1.*",
                 "phundament/p3extensions": ">=0.7"
             },
-            "time": "2012-09-21 13:13:13",
+            "time": "2012-09-21 05:13:13",
             "type": "library",
             "installation-source": "dist",
             "license": [
@@ -297,7 +297,7 @@
                 "yiisoft/yii": "1.1.*",
                 "phundament/p3extensions": ">=0.7"
             },
-            "time": "2012-09-21 14:45:25",
+            "time": "2012-09-21 06:45:25",
             "type": "library",
             "installation-source": "dist",
             "license": [
@@ -324,12 +324,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3bootstrap.git",
-                "reference": "bb20ca3e1ff3fc83f97c12126f33e660b1923eb6"
+                "reference": "b4f31b3892d822c0c0c7ea90f319f3b3a8a0d331"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/schmunk42/p3bootstrap/zipball/bb20ca3e1ff3fc83f97c12126f33e660b1923eb6",
-                "reference": "bb20ca3e1ff3fc83f97c12126f33e660b1923eb6",
+                "url": "https://github.com/schmunk42/p3bootstrap/zipball/b4f31b3892d822c0c0c7ea90f319f3b3a8a0d331",
+                "reference": "b4f31b3892d822c0c0c7ea90f319f3b3a8a0d331",
                 "shasum": ""
             },
             "require": {
@@ -339,7 +339,7 @@
                 "phundament/p3extensions": ">=0.7",
                 "crisu83/yii-bootstrap": "1.*"
             },
-            "time": "1348265491",
+            "time": "1348738393",
             "type": "library",
             "installation-source": "source",
             "license": [
@@ -438,6 +438,7 @@
         "phundament/p3media": 20,
         "phundament/themes/p3bootstrap": 20,
         "phundament/gii-template-collection": 20,
+        "schmunk42/database-command": 20,
         "phundament/lessii": 20
     }
 }

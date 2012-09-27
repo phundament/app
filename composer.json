@@ -35,6 +35,7 @@
         "yiiext/migrate-command": "0.7.1.1"
     },
     "require-dev": {
+        "schmunk42/database-command": "dev-master",
         "phundament/lessii": "@dev"
     },
     "autoload": {

@@ -19,7 +19,7 @@ return array(
     'modules' => $mainConfig['modules'],
     'commandMap' => array(
         'rsync' => array(
-            'class' => 'vendor.p3extensions.commands.P3RsyncCommand',
+            'class' => 'vendor.phundament.p3extensions.commands.P3RsyncCommand',
             'servers' => array(
                 'dev' => realpath(dirname(__FILE__) . '/..'),
                 'prod' => 'user@exampl.com:/path/to/phundament/protected',
@@ -29,8 +29,8 @@ return array(
             ),
         #'params' => '--rsh="ssh -p222"',
         ),
-        'dumpschema' => array(
-            'class' => 'ext.p3extensions.commands.P3DumpSchemaCommand',
+        'database' => array(
+            'class' => 'vendor.schmunk42.database-command.EDatabaseCommand',
         ),
         'migrate' => array(
 // alias of the path where you extracted the zip file
@@ -79,7 +79,6 @@ return array(
             'post-install' => array('yiic', 'migrate'),
             'phundament/p3admin-install' => array('yiic', 'p3webapp', realpath(dirname(__FILE__) . '/..')),
             'phundament/themes/p3bootstrap-install' => array('yiic', 'p3bootstrap'),
-            'phundament/themes/p3bootstrap-update' => array('yiic', 'p3bootstrap'),
             'phundament/p3media-install' => array('yiic', 'p3media'),
         ),
     )
