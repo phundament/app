@@ -226,6 +226,16 @@
     },{
         "type": "package",
         "package": {
+            "name": "vitalets/yii-bootstrap-editable",
+            "version": "1.0.0",
+            "dist": {
+                "url": "http://www.yiiframework.com/extension/yii-bootstrap-editable/files/yii-bootstrap-editable-1.0.0.zip",
+                "type": "zip"
+            }
+        }
+    },{
+        "type": "package",
+        "package": {
             "name": "twitter/bootstrap",
             "version": "2.0.3",
             "dist": {
