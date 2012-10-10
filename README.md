@@ -14,24 +14,17 @@ upon [Yii](http://yiiframework.com) 1.1 and extension packages such as [user](ht
 Get started
 -----------
 
-Download and extract the installer as ZIP or TAR.GZ file from a tagged version here:
-
-[Download from github](https://github.com/phundament/app/tags)
-
-Enter the app root folder
-
+1. [Download from github](https://github.com/phundament/app/tags) & extract file
+2. Enter the app root folder and run the installer
 ```
-cd phundament-app-SHA1
+php composer.phar install --dev --prefer-source
 ```
+3. Open `phundament-app/www/index.php` in your browser
 
-Get the packages with composer, note: if you want to install for MySQL, you have to update your config first.
+The installer retrieves the packages specified in [composer.json](https://github.com/phundament/app/blob/master/composer.json)
 
-```
-php composer.phar install --dev
-```
-
-All setup, database, file permissions and config settings should be done automatically.
-You may skip the --dev option on production systems, at the moment it just adds LESS support for your bootstrap-based themes.
+*Note: if you want to install Phundament 3 with a MySQL database, you have to update your config first.*
+*You may skip the `--dev` and `--prefer-source` options on production systems.*
 
 
 Try a demo
