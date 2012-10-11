@@ -21,10 +21,16 @@ php composer.phar install --dev --prefer-source
 ```
 3. Open `phundament-app/www/index.php` in your browser
 
-The installer retrieves the packages specified in [composer.json](https://github.com/phundament/app/blob/master/composer.json)
-
 *Note: if you want to install Phundament 3 with a MySQL database, you have to update your config first.*
 *You may skip the `--dev` and `--prefer-source` options on production systems.*
+
+How it works?
+-------------
+ * the installer retrieves the packages specified in [composer.json](https://github.com/phundament/app/blob/master/composer.json)
+ * executes the `composer.callbacks` from `config/console.php`
+ * the web-application is pre-configured in `config/main.php`
+
+More [details](https://github.com/phundament/app/blob/master/docs/creating-yii-applications-with-composer.en.md).
 
 
 Try a demo
