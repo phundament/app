@@ -35,6 +35,7 @@ $mainConfig = array(
         'application.vendor.crisu83.yii-rights.components.*', // RWebUser
         'application.vendor.crisu83.yii-bootstrap.widgets.*', // Bootstrap UI
         'application.vendor.yiiext.fancybox-widget.*', // Fancybox Widget
+        'application.vendor.vitalets.yii-bootstrap-editable.*', // p3media
     ),
     'aliases' => array(
         // composer
@@ -135,6 +136,13 @@ $mainConfig = array(
                         'commands' => array(
                             'resize' => array(150, 120), // use third parameter for master setting, see Image constants
                         #'quality' => 80, // for jpegs
+                        ),
+                        'type' => 'png'
+                    ),
+                    'p3media-manager' => array(
+                        'commands' => array(
+                            'resize' => array(300, 200), // use third parameter for master setting, see Image constants
+                            #'quality' => 80, // for jpegs
                         ),
                         'type' => 'png'
                     ),

@@ -1,5 +1,5 @@
 {
-    "hash": "022e5620e7b0388b10555667b4e165d8",
+    "hash": "d71e84858ed23e68390283dcb6e80f57",
     "packages": [
         {
             "name": "crisu83/yii-bootstrap",
@@ -63,22 +63,22 @@
         },
         {
             "name": "phundament/gii-template-collection",
-            "version": "dev-master",
+            "version": "0.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/gii-template-collection.git",
-                "reference": "2b0878e2773a6889337046f6ce873bc568832ead"
+                "reference": "0.7.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/schmunk42/gii-template-collection/zipball/2b0878e2773a6889337046f6ce873bc568832ead",
-                "reference": "2b0878e2773a6889337046f6ce873bc568832ead",
+                "url": "https://github.com/schmunk42/gii-template-collection/zipball/0.7.0",
+                "reference": "0.7.0",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
             },
-            "time": "1348588242",
+            "time": "2012-10-10 06:37:16",
             "type": "library",
             "installation-source": "source",
             "license": [
@@ -118,16 +118,16 @@
         },
         {
             "name": "phundament/p3admin",
-            "version": "dev-master",
+            "version": "0.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3admin.git",
-                "reference": "6ae3f28dc3ba7f777e867a88befdf9b82c72c271"
+                "reference": "0.7.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/schmunk42/p3admin/zipball/6ae3f28dc3ba7f777e867a88befdf9b82c72c271",
-                "reference": "6ae3f28dc3ba7f777e867a88befdf9b82c72c271",
+                "url": "https://github.com/schmunk42/p3admin/zipball/0.7.2",
+                "reference": "0.7.2",
                 "shasum": ""
             },
             "require": {
@@ -138,7 +138,7 @@
             "provide": {
                 "yii-application": "*"
             },
-            "time": "1348264519",
+            "time": "2012-10-09 05:44:25",
             "type": "library",
             "installation-source": "source",
             "license": [
@@ -161,22 +161,22 @@
         },
         {
             "name": "phundament/p3extensions",
-            "version": "0.7.0",
+            "version": "0.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3extensions.git",
-                "reference": "0.7.0"
+                "reference": "0.7.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/schmunk42/p3extensions/zipball/0.7.0",
-                "reference": "0.7.0",
+                "url": "https://github.com/schmunk42/p3extensions/zipball/0.7.1",
+                "reference": "0.7.1",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
             },
-            "time": "2012-09-19 10:12:42",
+            "time": "2012-10-10 06:46:00",
             "type": "library",
             "installation-source": "source",
             "license": [
@@ -199,27 +199,29 @@
         },
         {
             "name": "phundament/p3media",
-            "version": "dev-master",
+            "version": "0.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3media.git",
-                "reference": "6fead14ed0f30c70e05940235736cb85b77f5fd8"
+                "reference": "0.8.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/schmunk42/p3media/zipball/6fead14ed0f30c70e05940235736cb85b77f5fd8",
-                "reference": "6fead14ed0f30c70e05940235736cb85b77f5fd8",
+                "url": "https://github.com/schmunk42/p3media/zipball/0.8.0",
+                "reference": "0.8.0",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0",
                 "yiisoft/yii": "1.1.*",
                 "yii-application": "*",
+                "crisu83/yii-bootstrap": ">=1.0",
+                "vitalets/yii-bootstrap-editable": "1.*",
                 "phundament/p3extensions": ">=0.7",
                 "phundament/jquery-file-upload": "0.0.1"
             },
-            "time": "1348264890",
-            "type": "library",
+            "time": "2012-10-11 15:50:08",
+            "type": "yii-extension",
             "installation-source": "source",
             "license": [
                 "BSD"
@@ -241,16 +243,16 @@
         },
         {
             "name": "phundament/p3pages",
-            "version": "0.7.1",
+            "version": "0.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3pages.git",
-                "reference": "0.7.1"
+                "reference": "0.8.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/schmunk42/p3pages/zipball/0.7.1",
-                "reference": "0.7.1",
+                "url": "https://github.com/schmunk42/p3pages/zipball/0.8.0",
+                "reference": "0.8.0",
                 "shasum": ""
             },
             "require": {
@@ -258,9 +260,9 @@
                 "yiisoft/yii": "1.1.*",
                 "phundament/p3extensions": ">=0.7"
             },
-            "time": "2012-09-21 03:13:13",
+            "time": "2012-10-11 15:52:29",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "license": [
                 "BSD"
             ],
@@ -280,16 +282,16 @@
         },
         {
             "name": "phundament/p3widgets",
-            "version": "0.7.3",
+            "version": "0.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3widgets.git",
-                "reference": "0.7.3"
+                "reference": "0.8.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/schmunk42/p3widgets/zipball/0.7.3",
-                "reference": "0.7.3",
+                "url": "https://github.com/schmunk42/p3widgets/zipball/0.8.0",
+                "reference": "0.8.0",
                 "shasum": ""
             },
             "require": {
@@ -297,7 +299,7 @@
                 "yiisoft/yii": "1.1.*",
                 "phundament/p3extensions": ">=0.7"
             },
-            "time": "2012-09-21 04:45:25",
+            "time": "2012-10-11 15:51:46",
             "type": "library",
             "installation-source": "dist",
             "license": [
@@ -320,16 +322,16 @@
         },
         {
             "name": "phundament/themes/p3bootstrap",
-            "version": "dev-master",
+            "version": "0.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3bootstrap.git",
-                "reference": "0.7.2"
+                "reference": "0.7.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/schmunk42/p3bootstrap/zipball/0.7.2",
-                "reference": "0.7.2",
+                "url": "https://github.com/schmunk42/p3bootstrap/zipball/0.7.3",
+                "reference": "0.7.3",
                 "shasum": ""
             },
             "require": {
@@ -339,7 +341,7 @@
                 "phundament/p3extensions": ">=0.7",
                 "crisu83/yii-bootstrap": "1.*"
             },
-            "time": "1348739649",
+            "time": "2012-10-11 15:55:13",
             "type": "library",
             "installation-source": "source",
             "license": [
@@ -358,6 +360,18 @@
                 "bootstrap",
                 "theme"
             ]
+        },
+        {
+            "name": "vitalets/yii-bootstrap-editable",
+            "version": "1.0.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/schmunk42/yii-bootstrap-editable/zipball/dda01eae0742ea89bdba554c5231bb49f0a28287",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library",
+            "installation-source": "dist"
         },
         {
             "name": "yiiext/fancybox-widget",
@@ -428,16 +442,117 @@
             "installation-source": "dist"
         }
     ],
-    "packages-dev": null,
+    "packages-dev": [
+        {
+            "name": "crisu83/yii-less",
+            "version": "0.0.1",
+            "source": {
+                "type": "hg",
+                "url": "https://bitbucket.org/Crisu83/yii-less",
+                "reference": "045c79d2943e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/Crisu83/yii-less/get/045c79d2943e.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "yiisoft/yii": ">=1.1.10"
+            },
+            "type": "library",
+            "installation-source": "dist"
+        },
+        {
+            "name": "phundament/lessii",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmunk42/lessii.git",
+                "reference": "44a7777a602a97a1f86a96f10f1deccab46d2b47"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/schmunk42/lessii/zipball/44a7777a602a97a1f86a96f10f1deccab46d2b47",
+                "reference": "44a7777a602a97a1f86a96f10f1deccab46d2b47",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "crisu83/yii-less": "0.0.1",
+                "twitter/bootstrap": ">2.0.1"
+            },
+            "time": "1340304175",
+            "type": "library",
+            "installation-source": "source",
+            "license": [
+                "BSD"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Munk",
+                    "email": "schmunk@usrbin.de",
+                    "homepage": "http://www.usrbin.de"
+                }
+            ],
+            "description": "LESS Translation Library",
+            "homepage": "http://phundament.com/",
+            "keywords": [
+                "package",
+                "dependency",
+                "autoload"
+            ]
+        },
+        {
+            "name": "schmunk42/database-command",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmunk42/database-command.git",
+                "reference": "fd347f2ccb1d08002f520089a5d9a1345a87a650"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/schmunk42/database-command/zipball/fd347f2ccb1d08002f520089a5d9a1345a87a650",
+                "reference": "fd347f2ccb1d08002f520089a5d9a1345a87a650",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "yiisoft/yii": "1.1.*"
+            },
+            "time": "1350034929",
+            "type": "library",
+            "installation-source": "source",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Munk",
+                    "email": "schmunk@usrbin.de"
+                }
+            ],
+            "description": "Yii command to create database migrations from existing schema"
+        },
+        {
+            "name": "twitter/bootstrap",
+            "version": "2.0.3",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/twitter/bootstrap/zipball/v2.0.3",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library",
+            "installation-source": "dist"
+        }
+    ],
     "aliases": [
 
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "phundament/p3admin": 20,
-        "phundament/p3media": 20,
-        "phundament/themes/p3bootstrap": 20,
-        "phundament/gii-template-collection": 20,
         "schmunk42/database-command": 20,
         "phundament/lessii": 20
     }
