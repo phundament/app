@@ -1,6 +1,8 @@
 Phundament 3 App
 ================
 
+**Version 0.8.0**
+
 
 What is Phundament?
 -------------------
@@ -8,7 +10,7 @@ What is Phundament?
 Phundament 3 is a solid, highly customizable application foundation built with [composer](http://getcomposer.org) 
 upon [Yii](http://yiiframework.com) 1.1 and extension packages such as [user](http://www.yiiframework.com/extension/yii-user/), [rights](http://www.yiiframework.com/extension/rights/), [yiiext](http://code.google.com/p/yiiext/), [gtc](https://github.com/schmunk42/gii-template-collection), ckeditor, jquery-file-upload, p3widgets and p3media.
 
-[Get Phundament 3](https://github.com/phundament/app/tags), for more details visit [phundament.com](http://phundament.com).
+For more details visit [phundament.com](http://phundament.com).
 
 
 Get started
@@ -51,10 +53,10 @@ For some usage examples, [click here](https://github.com/phundament/app/wiki/Con
 Troubleshooting
 ---------------
 
- * Make sure you have git (http://git-scm.com/) and hg (http://mercurial.selenic.com/) installed
+ * Make sure you have [git](http://git-scm.com/) and [hg](http://mercurial.selenic.com/) installed
  * zlib extension or unzip available on your PATH
  * OpenSSL Support enabled in PHP or try ```--prefer-source```
- * If you get SSL or memory limit errors, try: ```php -d allow_url_fopen=1 -d memory_limit=64M composer.phar -v update```
+ * if you get SSL or memory limit errors, try: ```php -d allow_url_fopen=1 -d memory_limit=64M composer.phar -v update```
  * If you want to the very lastest version
    ```
    curl -L https://github.com/phundament/app/tarball/master | tar zx
@@ -80,58 +82,15 @@ Requirements
  *  SQLite 3
 
 ### License
- *  BSD
+ *  [BSD](https://github.com/phundament/app/blob/0.8.0/LICENSE)
 
 
 
 Changelog
 ---------
 
-### phundament/app
-
-#### 0.7 (September 2012)
-
- * [ENH] Installer cleanup
- * [ENH] Unified configuration
- * [UPD] Refactored direcory structure
-
-#### 0.6 (August/September 2012)
-
- * [UPD] Dependencies
-
-#### 0.5 (May/June 2012)
-
- * [UPD] Big version bump to avoid further confusion
-
-#### 0.1.x (May 2012)
-
- * [ENH] Installation scripts
- * [FIX] Package installation
-
-#### 0.1 (April 2012)
-
-The repository phundament/app introduces Phundament 3 installation via composer (http://getcomposer.org)
-
-### schmunk42/phundament
-
-#### 0.4 (April 2012)
-
-#### 0.3.x (March 2012)
-
- * [FIX] P3 controller permissions
- * [UPD] updated demo content
- * [ENH] added Windows installer
- * [ENH] code cleanup
-
-#### 0.3 (12.3.2012)
-Bootstrapped it! Complete responsive design, completely editable with mobile devices. Added widget translation, updated migrations, templates. A whole bunch of other stuff (fixes, fixes, fixes).
-
-#### 0.2:
-Installation fixes for Linux MySQL, widget order fix, added automatic-property detection, updated image urls ... Check it out!
-
-#### 0.1:
-Initial release
-
+ * [CHANGELOG](https://github.com/phundament/app/blob/0.8.0/CHANGELOG.md)
+ * [Packages contained in Phundament 3](https://github.com/phundament/app/blob/0.8.0/composer.lock)
 
 
 Resources
