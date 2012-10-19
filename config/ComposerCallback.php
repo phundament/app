@@ -70,11 +70,12 @@ class ComposerCallback
         echo "Phundament 3 Installer\n\n";
         echo " * download packages specified in composer.json
  * trigger composer callbacks\n\n";
-        if (self::confirm("Start Installation?")) {
+        
+        //if (self::confirm("Start Installation?")) {
             self::runHook('pre-install');
-        } else {
+        //} else {
             exit("Installation aborted.\n");
-        }
+        //}
     }
 
     /**
