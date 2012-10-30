@@ -4,8 +4,16 @@ Phundament 3 App
 Upgrade Guide
 -------------
 
+### Upgrading from v0.0.x
+
 ### Upgrading from v0.8.x
 
+#### config/console.php
+
+`composer.callbacks`
+
+     'phundament/p3admin-install' => array('yiic', 'p3webapp', 'create', realpath(dirname(__FILE__) . '/..'), 'git', '--interactive=0'),
+     
 ### Upgrading from v0.7.x
 
 #### config/main.php
