@@ -117,7 +117,7 @@ Resources
  *  [Company Website](http://herzogkommunikation.de)
 
 ### Extensions
- *  tbd
+ *  [packages.phundament.com](http://packages.phundament.com)
 
 ### Contact
  *  phundament@usrbin.de
