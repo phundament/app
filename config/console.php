@@ -77,7 +77,7 @@ return array(
             // args for Yii command runner
             'post-update' => array('yiic', 'migrate'),
             'post-install' => array('yiic', 'migrate'),
-            'phundament/p3admin-install' => array('yiic', 'p3webapp', realpath(dirname(__FILE__) . '/..'), 'git', '--interactive=0'),
+            'phundament/p3admin-install' => array('yiic', 'p3webapp', 'create', realpath(dirname(__FILE__) . '/..'), 'git', '--interactive=0'),
             'phundament/themes/p3bootstrap-install' => array('yiic', 'p3bootstrap'),
             'phundament/p3media-install' => array('yiic', 'p3media'),
         ),
