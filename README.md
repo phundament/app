@@ -108,7 +108,7 @@ Resources
 
 
 ### Additional Ressources
- *  [Quick Start Guide](https://github.com/schmunk42/phundament/wiki/Quick-Start)
+ *  [Docs](https://github.com/phundament/app/tree/master/docs)
  *  [Downloads](https://github.com/phundament/app/tags)
  *  [Wiki](https://github.com/schmunk42/phundament/wiki/)
  *  [Development Discussion](http://www.yiiframework.com/forum/index.php?/topic/17591-planning-yii-cms-a-different-approach/)
