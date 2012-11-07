@@ -55,7 +55,7 @@ Troubleshooting
  * Make sure you have [git](http://git-scm.com/) and [hg](http://mercurial.selenic.com/) installed
  * zlib extension or unzip available on your PATH
  * OpenSSL Support enabled in PHP or try ```--prefer-source```
- * if you get SSL or memory limit errors, try: ```php -d allow_url_fopen=1 -d memory_limit=64M composer.phar -v update```
+ * if you get SSL or memory limit errors, try: ```php -d allow_url_fopen=1 -d memory_limit=64M composer.phar -v install```
  * If you want to the very lastest version
    ```
    curl -L https://github.com/phundament/app/tarball/master | tar zx
