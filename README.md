@@ -61,7 +61,7 @@ Troubleshooting
    curl -L https://github.com/phundament/app/tarball/master | tar zx
    ```
  * Don't manually enable Yii `CLogger` on a fresh install
-
+ * To upgrade phundament from version 0.8.0, please follow [these instructions] (https://github.com/phundament/app/blob/master/UPGRADE.md) 
 
 
 Requirements
