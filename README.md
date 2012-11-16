@@ -28,7 +28,7 @@ php composer.phar install --dev --prefer-source
 
 How it works?
 -------------
- * the installer retrieves the packages specified in [`composer.json`](https://github.com/phundament/app/blob/master/composer.json)
+ * the installer retrieves the packages specified in [`composer.lock`](https://github.com/phundament/app/blob/master/composer.lock)
  * executes the `composer.callbacks` from [`config/console.php`](https://github.com/phundament/app/blob/master/config/console.php)
  * the web-application is pre-configured in [`config/main.php`](https://github.com/phundament/app/blob/master/config/main.php)
 
