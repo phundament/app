@@ -26,6 +26,8 @@ php composer.phar install --dev --prefer-source
 *Note: if you want to install Phundament 3 with a MySQL database, you have to update your config first.*
 *You may skip the `--dev` and `--prefer-source` options on production systems.*
 
+Continue to the [Wiki](https://github.com/phundament/app/wiki/_pages)...
+
 How it works?
 -------------
  * the installer retrieves the packages specified in [`composer.lock`](https://github.com/phundament/app/blob/master/composer.lock)
