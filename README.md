@@ -72,13 +72,14 @@ Requirements
  *  PHP >5.3.2
  *  [Yii Framework Requirements] (http://www.yiiframework.com/doc/guide/1.1/en/quickstart.installation#requirements)
  *  git, hg (Mercurial), svn (subversion), php_mod_ssl (for composer)
+ *  Shell access
 
 ### Tested Systems
  *  Mac OS X 10.6.8
  *  Debian 5,6
  *  Windows XP
 
-### Supported Databases
+### Tested Databases
  *  MySQL 5
  *  SQLite 3
 
