@@ -17,7 +17,7 @@
         "packagist": false
     },{
         "type":"composer",
-        "url": "http://packages.phundament.com"
+        "url": "http://localhost/NetBeans/phundament.com/www/packages/"
     }
     ],
     "require": {
@@ -27,7 +27,7 @@
         "phundament/p3admin": "0.8.*",
         "phundament/p3widgets": "0.8.*",
         "phundament/p3pages": "0.8.*",
-        "phundament/p3media": "0.8.*",
+        "phundament/p3media": "0.9.*",
         "phundament/themes/p3bootstrap": "0.7.*",
         "phundament/gii-template-collection": "0.7.*",
         "yiiext/fancybox-widget": "0.*",
