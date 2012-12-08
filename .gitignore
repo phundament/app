@@ -1,11 +1,11 @@
 nbproject
 .DS_Store
-/assets/
+/config/local.php
 /data/
 /vendor/
 /runtime/
 /www/runtime/
-/config/local.php
+/www/assets/
 /yiic
 /yiic.bat
 /yiic.php

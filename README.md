@@ -26,9 +26,11 @@ php composer.phar install --dev --prefer-source
 *Note: if you want to install Phundament 3 with a MySQL database, you have to update your config first.*
 *You may skip the `--dev` and `--prefer-source` options on production systems.*
 
+Continue to the [Wiki](https://github.com/phundament/app/wiki)...
+
 How it works?
 -------------
- * the installer retrieves the packages specified in [`composer.json`](https://github.com/phundament/app/blob/master/composer.json)
+ * the installer retrieves the packages specified in [`composer.lock`](https://github.com/phundament/app/blob/master/composer.lock)
  * executes the `composer.callbacks` from [`config/console.php`](https://github.com/phundament/app/blob/master/config/console.php)
  * the web-application is pre-configured in [`config/main.php`](https://github.com/phundament/app/blob/master/config/main.php)
 
@@ -61,7 +63,7 @@ Troubleshooting
    curl -L https://github.com/phundament/app/tarball/master | tar zx
    ```
  * Don't manually enable Yii `CLogger` on a fresh install
-
+ * To upgrade phundament from version 0.8.0, please follow [these upgrading instructions] (https://github.com/phundament/app/blob/master/UPGRADE.md) 
 
 
 Requirements
@@ -70,13 +72,14 @@ Requirements
  *  PHP >5.3.2
  *  [Yii Framework Requirements] (http://www.yiiframework.com/doc/guide/1.1/en/quickstart.installation#requirements)
  *  git, hg (Mercurial), svn (subversion), php_mod_ssl (for composer)
+ *  Shell access
 
 ### Tested Systems
  *  Mac OS X 10.6.8
  *  Debian 5,6
  *  Windows XP
 
-### Supported Databases
+### Tested Databases
  *  MySQL 5
  *  SQLite 3
 
