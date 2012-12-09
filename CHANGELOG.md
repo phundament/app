@@ -6,6 +6,10 @@ Changelog
 
 ### phundament/app
 
+#### 0.10 (December 2012)
+
+ * [UPD] Updated packages (repository refactoring)
+
 #### 0.9 (October 2012)
 
  * [UPD] Updated install command hook parameters

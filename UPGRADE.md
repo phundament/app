@@ -4,7 +4,17 @@ Phundament 3 App
 Upgrade Guide
 -------------
 
-### Upgrading from v0.0.x
+### Upgrading from v0.9.x
+
+`composer.json`
+
+        "crisu83/yii-rights": "@dev",
+        "mishamx/yii-user": "dev-master as 0.3.999",
+        "yiiext/migrate-command": "@dev",
+        "vitalets/yii-bootstrap-editable": "dev-master as 1.0",
+        "phundament/jquery-file-upload": "dev-master as 0.0.1"
+
+
 
 ### Upgrading from v0.8.x
 
