@@ -1,5 +1,5 @@
 {
-    "hash": "18112d53d7d2a58b6b7f363f394b5f42",
+    "hash": "98e5dafeb378a46f43b62945a0e304a7",
     "packages": [
         {
             "name": "crisu83/yii-bootstrap",
@@ -466,7 +466,124 @@
             "homepage": "https://github.com/yiisoft/yii"
         }
     ],
-    "packages-dev": null,
+    "packages-dev": [
+        {
+            "name": "crisu83/yii-less",
+            "version": "dev-tip",
+            "source": {
+                "type": "hg",
+                "url": "https://bitbucket.org/Crisu83/yii-less",
+                "reference": "6f848535dd3f3f9cf682ed4983bd1a2ec04f7bde"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/Crisu83/yii-less/get/6f848535dd.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "yii-extension",
+            "installation-source": "source"
+        },
+        {
+            "name": "phundament/lessii",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmunk42/lessii.git",
+                "reference": "44a7777a602a97a1f86a96f10f1deccab46d2b47"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schmunk42/lessii/zipball/44a7777a602a97a1f86a96f10f1deccab46d2b47",
+                "reference": "44a7777a602a97a1f86a96f10f1deccab46d2b47",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "crisu83/yii-less": "0.0.1",
+                "twitter/bootstrap": ">2.0.1"
+            },
+            "time": "2012-06-21 18:42:55",
+            "type": "library",
+            "installation-source": "source",
+            "license": [
+                "BSD"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Munk",
+                    "email": "schmunk@usrbin.de",
+                    "homepage": "http://www.usrbin.de"
+                }
+            ],
+            "description": "LESS Translation Library",
+            "homepage": "http://phundament.com/",
+            "keywords": [
+                "package",
+                "dependency",
+                "autoload"
+            ],
+            "support": {
+                "source": "https://github.com/schmunk42/lessii/tree/master",
+                "issues": "https://github.com/schmunk42/lessii/issues"
+            }
+        },
+        {
+            "name": "schmunk42/database-command",
+            "version": "0.8.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmunk42/database-command.git",
+                "reference": "0.8.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schmunk42/database-command/zipball/0.8.5",
+                "reference": "0.8.5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "yiisoft/yii": "1.1.*"
+            },
+            "time": "2012-12-06 16:43:29",
+            "type": "library",
+            "installation-source": "dist",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Munk",
+                    "email": "schmunk@usrbin.de"
+                }
+            ],
+            "description": "Yii command to create database migrations from existing schema",
+            "support": {
+                "source": "https://github.com/schmunk42/database-command/tree/0.8.5",
+                "issues": "https://github.com/schmunk42/database-command/issues"
+            }
+        },
+        {
+            "name": "twitter/bootstrap",
+            "version": "v2.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twitter/bootstrap.git",
+                "reference": "9376a7c221a64c2bf508d02ea2ccd85748d10fcc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/twitter/bootstrap/archive/v2.2.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library",
+            "installation-source": "dist",
+            "description": "Sleek, intuitive, and powerful front-end framework for faster and easier web development.",
+            "homepage": "https://github.com/twitter/bootstrap"
+        }
+    ],
     "aliases": [
         {
             "alias": "0.3.999",
@@ -485,6 +602,12 @@
             "alias_normalized": "0.0.1.0",
             "version": "9999999-dev",
             "package": "phundament/jquery-file-upload"
+        },
+        {
+            "alias": "0.0.1",
+            "alias_normalized": "0.0.1.0",
+            "version": "dev-tip",
+            "package": "crisu83/yii-less"
         }
     ],
     "minimum-stability": "stable",
@@ -494,6 +617,7 @@
         "yiiext/migrate-command": 20,
         "vitalets/yii-bootstrap-editable": 20,
         "phundament/jquery-file-upload": 20,
-        "phundament/lessii": 20
+        "phundament/lessii": 20,
+        "crisu83/yii-less": 20
     }
 }
