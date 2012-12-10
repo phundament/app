@@ -14,6 +14,7 @@ Upgrade Guide
         "vitalets/yii-bootstrap-editable": "dev-master as 1.0",
         "phundament/jquery-file-upload": "dev-master as 0.0.1"
 
+Legacy package repository for 0.9.x versions: `http://packages.phundament.com/0.9/`
 
 
 ### Upgrading from v0.8.x
