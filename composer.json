@@ -34,7 +34,7 @@
         "yiiext/lipsum-widget": "0.*",
         "yiiext/migrate-command": "@dev",
         "vitalets/yii-bootstrap-editable": "dev-master as 1.0",
-        "phundament/jquery-file-upload": "dev-master as 0.0.1"        
+        "phundament/jquery-file-upload": "dev-master as 0.0.1"
     },
     "require-dev": {
         "schmunk42/database-command": "0.8.*",

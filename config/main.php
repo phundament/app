@@ -72,10 +72,10 @@ $mainConfig = array(
                     'TbMenu' => 'Bootstrap Menu',
                     'TbCarousel' => 'Bootstrap Carousel',
                     'EFancyboxWidget' => 'Fancy Box',
-                    'P3MarkdownWidget' => 'Markdown Widget'
-                // use eg. $> php composer.phar require yiiext/swf-object-widget to get the
-                // widget source; import widget class or set an alias.
-                #'ESwfObjectWidget' => 'SWF Object',
+                    // use eg. $> php composer.phar require yiiext/swf-object-widget to get the
+                    // widget source; import widget class or set an alias.
+                    #'P3MarkdownWidget' => 'Markdown Widget'
+                    #'ESwfObjectWidget' => 'SWF Object',
                 ),
             ),
         ),
@@ -225,7 +225,7 @@ $mainConfig = array(
         ),
         'langHandler' => array(
             'class' => 'vendor.phundament.p3extensions.components.P3LangHandler',
-            'languages' => array('en', 'de', 'ru', 'fr', 'ph_debug')
+            'languages' => array('en', 'de') // available languages 'ru', 'fr'
         ),
         'log' => array(
             'class' => 'CLogRouter',
