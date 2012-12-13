@@ -1,5 +1,5 @@
 {
-    "hash": "403d56bb86fda14174b20b1900b82f71",
+    "hash": "73d341130ba35949cbb7b459a34d6818",
     "packages": [
         {
             "name": "crisu83/yii-bootstrap",
@@ -16,7 +16,7 @@
                 "shasum": null
             },
             "type": "yii-extension",
-            "installation-source": "dist",
+            "installation-source": "source",
             "description": "Bootstrap is an extension for the Yii PHP framework that provides a wide range of server-side widgets that allow you to easily use Twitter's Bootstrap together with Yii.",
             "homepage": "http://www.cniska.net/yii-bootstrap"
         },
@@ -41,7 +41,7 @@
         },
         {
             "name": "mishamx/yii-user",
-            "version": "master",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phundament/yii-user.git",
@@ -72,7 +72,7 @@
             },
             "time": "2012-11-20 19:53:19",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "license": [
                 "BSD"
             ],
@@ -97,7 +97,7 @@
         },
         {
             "name": "phundament/jquery-file-upload",
-            "version": "master",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/jQuery-File-Upload.git",
@@ -131,9 +131,9 @@
             "provide": {
                 "yii-application": "*"
             },
-            "time": "2012-10-30 09:31:08",
+            "time": "2012-10-30 16:31:08",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -158,26 +158,27 @@
         },
         {
             "name": "phundament/p3extensions",
-            "version": "0.8.0",
+            "version": "0.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3extensions.git",
-                "reference": "0.8.0"
+                "reference": "0.8.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3extensions/zipball/0.8.0",
-                "reference": "0.8.0",
+                "url": "https://api.github.com/repos/schmunk42/p3extensions/zipball/0.8.1",
+                "reference": "0.8.1",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "php": ">=5.3.0",
+                "yiisoft/yii": "1.1.*"
             },
-            "time": "2012-11-09 10:42:48",
+            "time": "2012-12-13 13:57:35",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "license": [
-                "BSD"
+                "BSD-3-Clause"
             ],
             "authors": [
                 {
@@ -186,30 +187,29 @@
                     "homepage": "http://www.usrbin.de"
                 }
             ],
-            "description": "Core Extensions",
-            "homepage": "http://phundament.com/",
+            "description": "Phundament 3 Core Extensions",
+            "homepage": "https://github.com/schmunk42/p3extensions",
             "keywords": [
-                "package",
-                "dependency",
-                "autoload"
+                "phundament",
+                "components"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3extensions/tree/0.8.0",
+                "source": "https://github.com/schmunk42/p3extensions/tree/0.8.1",
                 "issues": "https://github.com/schmunk42/p3extensions/issues"
             }
         },
         {
             "name": "phundament/p3media",
-            "version": "0.9.2",
+            "version": "0.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3media.git",
-                "reference": "0.9.2"
+                "reference": "0.9.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3media/zipball/0.9.2",
-                "reference": "0.9.2",
+                "url": "https://api.github.com/repos/schmunk42/p3media/zipball/0.9.3",
+                "reference": "0.9.3",
                 "shasum": ""
             },
             "require": {
@@ -217,13 +217,13 @@
                 "yiisoft/yii": "1.1.*",
                 "yii-application": "*",
                 "crisu83/yii-bootstrap": ">=1.0",
-                "vitalets/yii-bootstrap-editable": "1.*",
+                "vitalets/yii-bootstrap-editable": "@dev",
                 "phundament/p3extensions": ">=0.7",
-                "phundament/jquery-file-upload": "0.0.1"
+                "phundament/jquery-file-upload": "@dev"
             },
-            "time": "2012-11-22 22:09:42",
+            "time": "2012-12-13 14:23:01",
             "type": "yii-extension",
-            "installation-source": "dist",
+            "installation-source": "source",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -235,7 +235,7 @@
                 }
             ],
             "description": "Yii media file manager module with ckeditor integration",
-            "homepage": "http://phundament.com/",
+            "homepage": "https://github.com/schmunk42/p3media",
             "keywords": [
                 "file",
                 "manager",
@@ -244,7 +244,7 @@
                 "extension"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3media/tree/0.9.2",
+                "source": "https://github.com/schmunk42/p3media/tree/0.9.3",
                 "issues": "https://github.com/schmunk42/p3media/issues"
             }
         },
@@ -267,9 +267,9 @@
                 "yiisoft/yii": "1.1.*",
                 "phundament/p3extensions": ">=0.7"
             },
-            "time": "2012-10-30 06:22:31",
+            "time": "2012-10-30 13:22:31",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "license": [
                 "BSD"
             ],
@@ -293,28 +293,28 @@
         },
         {
             "name": "phundament/p3widgets",
-            "version": "0.8.1",
+            "version": "0.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3widgets.git",
-                "reference": "0.8.1"
+                "reference": "0.8.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/0.8.1",
-                "reference": "0.8.1",
+                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/0.8.2",
+                "reference": "0.8.2",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0",
                 "yiisoft/yii": "1.1.*",
-                "phundament/p3extensions": ">=0.7"
+                "phundament/p3extensions": ">=0.8.1"
             },
-            "time": "2012-10-29 08:14:34",
-            "type": "library",
-            "installation-source": "dist",
+            "time": "2012-12-13 14:02:53",
+            "type": "yii-extension",
+            "installation-source": "source",
             "license": [
-                "BSD"
+                "BSD-3-Clause"
             ],
             "authors": [
                 {
@@ -324,14 +324,14 @@
                 }
             ],
             "description": "Widget Manager",
-            "homepage": "http://phundament.com/",
+            "homepage": "https://github.com/schmunk42/p3widgets",
             "keywords": [
                 "widget",
                 "cms",
                 "p3media"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3widgets/tree/0.8.1",
+                "source": "https://github.com/schmunk42/p3widgets/tree/0.8.2",
                 "issues": "https://github.com/schmunk42/p3widgets/issues"
             }
         },
@@ -358,7 +358,7 @@
             },
             "time": "2012-11-23 09:16:26",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -376,13 +376,13 @@
                 "theme"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3bootstrap/tree/master",
+                "source": "https://github.com/schmunk42/p3bootstrap/tree/0.7.4",
                 "issues": "https://github.com/schmunk42/p3bootstrap/issues"
             }
         },
         {
             "name": "vitalets/yii-bootstrap-editable",
-            "version": "master",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii-bootstrap-editable.git",
@@ -409,7 +409,7 @@
                 "shasum": null
             },
             "type": "yii-extension",
-            "installation-source": "dist",
+            "installation-source": "source",
             "description": "Wrapper around fancybox.",
             "homepage": "https://github.com/yiiext/fancybox-widget"
         },
@@ -428,13 +428,13 @@
                 "shasum": null
             },
             "type": "yii-extension",
-            "installation-source": "dist",
+            "installation-source": "source",
             "description": "Lorem Ipsum placeholder text generator",
             "homepage": "https://github.com/yiiext/lipsum-widget"
         },
         {
             "name": "yiiext/migrate-command",
-            "version": "master",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiiext/migrate-command.git",
@@ -461,7 +461,7 @@
                 "shasum": null
             },
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "description": "Yii PHP Framework",
             "homepage": "https://github.com/yiisoft/yii"
         }
@@ -548,7 +548,7 @@
             },
             "time": "2012-12-06 16:43:29",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -579,7 +579,7 @@
                 "shasum": null
             },
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "description": "Sleek, intuitive, and powerful front-end framework for faster and easier web development.",
             "homepage": "https://github.com/twitter/bootstrap"
         }
@@ -590,18 +590,6 @@
             "alias_normalized": "0.3.999.0",
             "version": "9999999-dev",
             "package": "mishamx/yii-user"
-        },
-        {
-            "alias": "1.0",
-            "alias_normalized": "1.0.0.0",
-            "version": "9999999-dev",
-            "package": "vitalets/yii-bootstrap-editable"
-        },
-        {
-            "alias": "0.0.1",
-            "alias_normalized": "0.0.1.0",
-            "version": "9999999-dev",
-            "package": "phundament/jquery-file-upload"
         },
         {
             "alias": "0.0.1",

@@ -22,23 +22,24 @@
     ],
     "require": {
         "php": ">=5.3.2",
+        "yiisoft/yii": "1.1.12",
         "crisu83/yii-rights": "@dev",
         "mishamx/yii-user": "dev-master as 0.3.999",
         "phundament/p3admin": "0.8.*",
         "phundament/p3widgets": "0.8.*",
         "phundament/p3pages": "0.8.*",
-        "phundament/p3media": "0.9.*",
+        "phundament/p3media": "0.9.*,>=0.9.3",
         "phundament/themes/p3bootstrap": "0.7.*",
         "phundament/gii-template-collection": "0.7.*",
         "yiiext/fancybox-widget": "0.*",
         "yiiext/lipsum-widget": "0.*",
         "yiiext/migrate-command": "@dev",
-        "vitalets/yii-bootstrap-editable": "dev-master as 1.0",
-        "phundament/jquery-file-upload": "dev-master as 0.0.1"
+        "vitalets/yii-bootstrap-editable": "@dev",
+        "phundament/jquery-file-upload": "@dev"
     },
     "require-dev": {
         "schmunk42/database-command": "0.8.*",
-        "phundament/lessii": "master@dev",
+        "phundament/lessii": "@dev",
         "crisu83/yii-less": "dev-tip as 0.0.1"        
     },
     "autoload": {
