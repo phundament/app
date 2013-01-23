@@ -37,8 +37,10 @@
         "vitalets/yii-bootstrap-editable": "@dev",
         "phundament/jquery-file-upload": "@dev"
     },
-    "suggest": {
-        "schmunk42/database-command": "Yii command to dump existing schemas and data, useful for database migrations"
+    "require-dev": {
+        "schmunk42/database-command": "0.8.*",
+        "phundament/lessii": "@dev",
+        "crisu83/yii-less": "dev-tip as 0.0.1"
     },
     "autoload": {
         "psr-0": {
