@@ -6,10 +6,9 @@
 
 return array(
     #'theme' => 'classic',
-    'import' => array(
-    #'fullcrud.models.*',
-    #'sakila.components.*',
-    #'sakila.models.*',
+    'import' => array(#'fullcrud.models.*',
+        #'sakila.components.*',
+        #'sakila.models.*',
     ),
     // application components
     'components' => array(
@@ -33,8 +32,17 @@ return array(
           'password' => 'test',
           'charset' => 'utf8',
           ), */
-        'urlManager' => array(
-            'urlFormat' => 'path', // you'll need to use the supplied _.htaccess file
+        'less' => array(
+            'class' => 'vendor.crisu83.yii-less.components.Less',
+            'mode' => 'server',
+            'files' => array(
+                'themes/frontend/less/p3.less' => 'themes/frontend/css/p3.css',
+            ),
+            'options' => array(
+                //'forceCompile' => true,
+                'nodePath' => '/opt/local/bin/node',
+                'compilerPath' => $applicationDirectory . '/vendor/cloudhead/less.js/bin/lessc',
+            ),
         ),
         'log' => array(
             'class' => 'CLogRouter',
@@ -44,36 +52,30 @@ return array(
                     #'categories' => 'application',
                     'levels' => '',
                 ),
-            // uncomment the following to show log messages on web pages
-            /*
-              array(
-              'class'=>'CWebLogRoute',
-              ),
-             */
+                // uncomment the following to show log messages on web pages
+                /*
+                  array(
+                  'class'=>'CWebLogRoute',
+                  ),
+                 */
             ),
         ),
-    /* 'image' => array(
-      'class' => 'ext.phundament.p3extensions.components.image.CImageComponent',
-      // GD or ImageMagick
-      'driver' => 'ImageMagick',
-      'params' => array('directory' => '/opt/local/bin'),
-      ), */
-    /*  'lessCompiler' => array(
-      'class' => 'vendor.crisu83.yii-less.components.LessCompiler',
-      //'autoCompile' => true, // You may need to set xdebug.max_nesting_level = 1024
-      'paths' => array(
-      'protected/extensions/phundament/themes/p3bootstrap/less/p3.less' => 'protected/extensions/phundament/themes/p3bootstrap/css/p3.css',
-      ),
-      ), */
+        'urlManager' => array(
+            'urlFormat' => 'path', // you'll need to use the supplied _.htaccess file
+        ),
+        /* 'image' => array(
+          'class' => 'ext.phundament.p3extensions.components.image.CImageComponent',
+          // GD or ImageMagick
+          'driver' => 'ImageMagick',
+          'params' => array('directory' => '/opt/local/bin'),
+          ), */
     ),
-    'modules' => array(
-    #'fullcrud',
-    #'sakila',
-    #'fullcrudWorld',
+    'modules' => array(#'fullcrud',
+        #'sakila',
+        #'fullcrudWorld',
     ),
-    'params' => array(
-    // this is used in contact page
-    #'adminEmail' => 'webmaster@h17n.de',
+    'params' => array(// this is used in contact page
+        #'adminEmail' => 'webmaster@h17n.de',
     ),
 );
 ?>
