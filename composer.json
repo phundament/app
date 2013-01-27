@@ -39,11 +39,10 @@
     },
     "require-dev": {
         "schmunk42/database-command": "0.8.*",
-        "phundament/lessii": "@dev",
         "crisu83/yii-less": "1.*",
-        "joyent/node": "0.*",
         "cloudhead/less.js": "1.*",
-        "twitter/bootstrap": "2.*"
+        "phundament/lessii": "@dev",
+        "twitter/bootstrap": "*"
     },
     "autoload": {
         "psr-0": {

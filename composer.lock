@@ -1,5 +1,5 @@
 {
-    "hash": "4912c2a02c4e53b904da32e3540d7ba3",
+    "hash": "82edf8a50fcbe784839cc0e585b68d1d",
     "packages": [
         {
             "name": "crisu83/yii-bootstrap",
@@ -487,24 +487,6 @@
             "type": "yii-extension",
             "description": "Yii extension for compiling LESS files client and server-side.",
             "homepage": "https://github.com/Crisu83/yii-less"
-        },
-        {
-            "name": "joyent/node",
-            "version": "v0.9.8",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/joyent/node.git",
-                "reference": "5f2f8400f665dc32c3e10e7d31d53d756ded9156"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/joyent/node/zipball/v0.9.8",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "library",
-            "description": "evented I/O for v8 javascript",
-            "homepage": "https://github.com/joyent/node"
         },
         {
             "name": "phundament/lessii",
