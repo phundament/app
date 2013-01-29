@@ -55,8 +55,7 @@ $mainConfig = array(
             // If removed, Gii defaults to localhost only. Edit carefully to taste.
             'ipFilters' => array('127.0.0.1', '::1'),
             'generatorPaths' => array(
-                #'vendor.giix-core', // giix generators
-                'vendor.gtc', // giix generators
+                'vendor.phundament.gii-template-collection', // giix generators
             ),
         ),
         'p3admin' => array(
