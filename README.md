@@ -75,7 +75,7 @@ Requirements
  *  Shell access
 
 ### Tested Systems
- *  Mac OS X 10.6.8
+ *  Mac OS X 10.6, 10.7
  *  Debian 5,6
  *  Windows XP
 
