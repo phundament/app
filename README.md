@@ -34,7 +34,7 @@ How it works?
  * executes the `composer.callbacks` from [`config/console.php`](https://github.com/phundament/app/blob/master/config/console.php)
  * the web-application is pre-configured in [`config/main.php`](https://github.com/phundament/app/blob/master/config/main.php)
 
-More [details](https://github.com/phundament/app/blob/master/docs/creating-yii-applications-with-composer.en.md).
+More [details](https://github.com/phundament/app/wiki/How-it-works).
 
 
 Try a demo
