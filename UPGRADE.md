@@ -4,6 +4,24 @@ Phundament 3 App
 Upgrade Guide
 -------------
 
+### Upgrading from v0.10.x
+
+`./yiic p3bootstrap`
+
+        'p3pages' => array(
+            'class' => 'vendor.phundament.p3pages.P3PagesModule',
+            'params' => array(
+                'availableLayouts' => array(
+                    '//layouts/main' => 'Main Layout',
+                    '_TbNavbar' => '_TbNavbar (Top-Menu Container)'
+                ),
+                'availableViews' => array(
+                    '//p3pages/column1' => 'One Column',
+                    '//p3pages/column2' => 'Two Columns',
+                )
+            ),
+        ),
+
 ### Upgrading from v0.9.x
 
 `composer.json`

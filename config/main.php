@@ -31,6 +31,7 @@ $mainConfig = array(
         'application.vendor.phundament.p3extensions.components.*', // shared classes
         'application.vendor.phundament.p3extensions.behaviors.*', // shared classes
         'application.vendor.phundament.p3extensions.widgets.*', // shared classes
+        'application.vendor.phundament.p3extensions.helpers.*', // shared classes - P3StringHelper
         'application.vendor.mishamx.yii-user.models.*', // User Model
         'application.vendor.crisu83.yii-rights.components.*', // RWebUser
         'application.vendor.crisu83.yii-bootstrap.widgets.*', // Bootstrap UI
@@ -40,6 +41,7 @@ $mainConfig = array(
     'aliases' => array(
         // composer
         'vendor' => 'application.vendor',
+        'bootstrap' => 'application.vendor.crisu83.yii-bootstrap',
         // p3widgets
         'jsonEditorView' => 'application.vendor.phundament.p3extensions.widgets.jsonEditorView',
         'ckeditor' => 'application.vendor.phundament.p3extensions.widgets.ckeditor',
@@ -61,6 +63,11 @@ $mainConfig = array(
         'p3admin' => array(
             'class' => 'vendor.phundament.p3admin.P3AdminModule',
             'params' => array('install' => false),
+            'components' => array(
+                'metadata' => array(
+                    'class' => 'vendor.phundament.p3admin.components.Metadata',
+                )
+            )
         ),
         'p3widgets' => array(
             'class' => 'vendor.phundament.p3widgets.P3WidgetsModule',
@@ -157,6 +164,16 @@ $mainConfig = array(
         ),
         'p3pages' => array(
             'class' => 'vendor.phundament.p3pages.P3PagesModule',
+            'params' => array(
+                'availableLayouts' => array(
+                    '//layouts/main' => 'Main Layout',
+                    '_TbNavbar' => '_TbNavbar (Top-Menu Container)'
+                ),
+                'availableViews' => array(
+                    '//p3pages/column1' => 'One Column',
+                    '//p3pages/column2' => 'Two Columns',
+                )
+            ),
         ),
         'rights' => array(
             'class' => 'application.vendor.crisu83.yii-rights.RightsModule',
@@ -165,7 +182,7 @@ $mainConfig = array(
             'userClass' => 'User',
         #'install' => true, // Enables the installer.
         #'superuserName' => 'admin'
-        #'cssFile' => '/css/rights/default.css'
+        'cssFile' => '/themes/backend/css/yii-rights.css'
         ),
         'user' => array(
             'class' => 'application.vendor.mishamx.yii-user.UserModule',

@@ -16,7 +16,7 @@ return array(
 		'yiit.php',
 		'/i18n/data',
 		'/messages',
-		'/vendors',
+        '/vendor',
 		'/web/js',
         '/extensions',
         '/tests',
