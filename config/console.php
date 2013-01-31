@@ -46,7 +46,9 @@ return array(
                 'user' => 'vendor.phundament.p3admin.modules-install.user.migrations',
                 'rights' => 'vendor.phundament.p3admin.modules-install.rights.migrations',
                 'p3pages' => 'vendor.phundament.p3pages.migrations',
+                'p3pages-demo' => 'vendor.phundament.p3pages.migrations-demo',
                 'p3widgets' => 'vendor.phundament.p3widgets.migrations',
+                'p3widgets-demo' => 'vendor.phundament.p3widgets.migrations-demo',
                 'p3media' => 'vendor.phundament.p3media.migrations',
             // ...
             ),
@@ -54,7 +56,7 @@ return array(
             'migrationSubPath' => 'migrations',
             // here you can configure which modules should be active, you can disable a module by adding its name to this array
             'disabledModules' => array(
-#'admin', 'anOtherModule', // ...
+                'p3pages-demo', 'p3widgets-demo', // ...
             ),
             // the name of the application component that should be used to connect to the database
             'connectionID' => 'db',
