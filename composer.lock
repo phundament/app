@@ -156,7 +156,7 @@
         },
         {
             "name": "phundament/p3extensions",
-            "version": "dev-master",
+            "version": "0.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3extensions.git",
@@ -404,7 +404,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/yiiext/fancybox-widget/archive/v0.3.zip",
+                "url": "https://api.github.com/repos/yiiext/fancybox-widget/zipball/v0.3",
                 "reference": null,
                 "shasum": null
             },
@@ -422,7 +422,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/yiiext/lipsum-widget/archive/v0.1.zip",
+                "url": "https://api.github.com/repos/yiiext/lipsum-widget/zipball/v0.1",
                 "reference": null,
                 "shasum": null
             },
@@ -453,7 +453,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/yiisoft/yii/archive/1.1.12.zip",
+                "url": "https://api.github.com/repos/yiisoft/yii/zipball/1.1.12",
                 "reference": null,
                 "shasum": null
             },
@@ -462,7 +462,142 @@
             "homepage": "https://github.com/yiisoft/yii"
         }
     ],
-    "packages-dev": null,
+    "packages-dev": [
+        {
+            "name": "cloudhead/less.js",
+            "version": "v1.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cloudhead/less.js.git",
+                "reference": "a9775a34dad65482535e670a0c3dae925b824431"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cloudhead/less.js/zipball/v1.3.3",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library",
+            "description": "Leaner CSS",
+            "homepage": "https://github.com/cloudhead/less.js"
+        },
+        {
+            "name": "crisu83/yii-less",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Crisu83/yii-less.git",
+                "reference": "fc46b4cc5ead3907494970eda39629d6fe4d314b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Crisu83/yii-less/zipball/v1.0.0",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "yii-extension",
+            "description": "Yii extension for compiling LESS files client and server-side.",
+            "homepage": "https://github.com/Crisu83/yii-less"
+        },
+        {
+            "name": "phundament/lessii",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmunk42/lessii.git",
+                "reference": "0.1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schmunk42/lessii/zipball/0.1.0",
+                "reference": "0.1.0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "suggest": {
+                "twitter/bootstrap": "Bootstrap source files",
+                "crisu83/yii-less": "LESS/CSS compiler"
+            },
+            "time": "2013-01-24 01:09:57",
+            "type": "library",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Munk",
+                    "email": "schmunk@usrbin.de",
+                    "homepage": "http://www.usrbin.de"
+                }
+            ],
+            "description": "LESS Translation Library",
+            "homepage": "http://phundament.com/",
+            "keywords": [
+                "package",
+                "dependency",
+                "autoload"
+            ],
+            "support": {
+                "source": "https://github.com/schmunk42/lessii/tree/master",
+                "issues": "https://github.com/schmunk42/lessii/issues"
+            }
+        },
+        {
+            "name": "schmunk42/database-command",
+            "version": "0.8.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmunk42/database-command.git",
+                "reference": "0.8.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schmunk42/database-command/zipball/0.8.6",
+                "reference": "0.8.6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "yiisoft/yii": "1.1.*"
+            },
+            "time": "2013-01-17 22:55:22",
+            "type": "library",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Munk",
+                    "email": "schmunk@usrbin.de"
+                }
+            ],
+            "description": "Yii command to create database migrations from existing schema",
+            "support": {
+                "source": "https://github.com/schmunk42/database-command/tree/0.8.6",
+                "issues": "https://github.com/schmunk42/database-command/issues"
+            }
+        },
+        {
+            "name": "twitter/bootstrap",
+            "version": "v2.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twitter/bootstrap.git",
+                "reference": "9376a7c221a64c2bf508d02ea2ccd85748d10fcc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twitter/bootstrap/zipball/v2.2.2",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library",
+            "description": "Sleek, intuitive, and powerful front-end framework for faster and easier web development.",
+            "homepage": "https://github.com/twitter/bootstrap"
+        }
+    ],
     "aliases": [
         {
             "alias": "0.3.999",
