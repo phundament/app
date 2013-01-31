@@ -6,7 +6,11 @@ Upgrade Guide
 
 ### Upgrading from v0.10.x
 
+Shell
+
 `./yiic p3bootstrap`
+
+`config/console.php`
 
         'p3pages' => array(
             'class' => 'vendor.phundament.p3pages.P3PagesModule',
@@ -20,6 +24,11 @@ Upgrade Guide
                     '//p3pages/column2' => 'Two Columns',
                 )
             ),
+        ),
+
+        'rights' => array(
+            'class' => 'application.vendor.crisu83.yii-rights.RightsModule',
+            'cssFile' => '/themes/backend/css/yii-rights.css'
         ),
 
 ### Upgrading from v0.9.x

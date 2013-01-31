@@ -6,9 +6,15 @@ Changelog
 
 ### phundament/app
 
-#### 0.11 (January 2013) - pending
+#### 0.12 () - pending
 
  * [UPD] Added yii-less
+ * [UPD] Updated dependencies
+
+#### 0.11 (January 2013)
+
+ * [UPD] Added yii-less
+ * [UPD] Updated dependencies
 
 #### 0.10 (December 2012)
 
