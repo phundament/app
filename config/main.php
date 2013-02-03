@@ -92,11 +92,10 @@ $mainConfig = array(
                 'publicRuntimeUrl' => '/runtime/p3media',
                 'protectedRuntimePath' => 'runtime/p3media',
                 'presets' => array(
-                    // bootstrap
-                    'small' => array(
-                        'name' => 'Small 300px',
+                    'large' => array(
+                        'name' => 'Large 1400px',
                         'commands' => array(
-                            'resize' => array(300, 300, 2), // Image::AUTO
+                            'resize' => array(1400, 1400, 2), // Image::AUTO
                             'quality' => '85',
                         ),
                         'type' => 'jpg',
@@ -109,10 +108,10 @@ $mainConfig = array(
                         ),
                         'type' => 'jpg',
                     ),
-                    'large' => array(
-                        'name' => 'Large 1400px',
+                    'small' => array(
+                        'name' => 'Small 300px',
                         'commands' => array(
-                            'resize' => array(1400, 1400, 2), // Image::AUTO
+                            'resize' => array(300, 300, 2), // Image::AUTO
                             'quality' => '85',
                         ),
                         'type' => 'jpg',
@@ -336,20 +335,18 @@ $mainConfig = array(
             'bodyId' => 'ckeditor',
             'bodyClass' => 'ckeditor',
             /* Assets will be published with publishAsset() */
-
             'templates_files' => array($baseUrl . '/themes/frontend/ckeditor/cktemplates.js'),
             'stylesCombo_stylesSet' => 'my_styles:' . $baseUrl . '/themes/frontend/ckeditor/ckstyles.js',
             /* Standard-way to specify URLs - deprecated */
-            /* 'filebrowserBrowseUrl' => '/p3media/ckeditor',
+            /*'filebrowserBrowseUrl' => '/p3media/ckeditor',
               'filebrowserImageBrowseUrl' => '/p3media/ckeditor/image',
-              'filebrowserFlashBrowseUrl' => '/p3media/ckeditor/flash', */
-            // 'filebrowserUploadUrl' => 'null', // can not use, pre-resizing of images
-
+              'filebrowserFlashBrowseUrl' => '/p3media/ckeditor/flash',
+              'filebrowserUploadUrl' => $baseUrl . '/p3media/import/ckeditorUpload',*/
             /* URLs will be parsed with createUrl() */
             'filebrowserBrowseCreateUrl' => array('/p3media/ckeditor'),
             'filebrowserImageBrowseCreateUrl' => array('/p3media/ckeditor/image'),
             'filebrowserFlashBrowseCreateUrl' => array('/p3media/ckeditor/flash'),
-            'filebrowserUploadCreateUrl' => array('/p3media/import/upload'), // TODO (tbd)
+            'filebrowserUploadCreateUrl' => array('/p3media/import/ckeditorUpload'), // TODO (tbd)
         ),
     ),
 );
