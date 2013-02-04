@@ -1,7 +1,7 @@
 {
     "name": "phundament/app",
-    "description": "Yii Distribution",
-    "keywords": ["package", "dependency", "autoload"],
+    "description": "Yii Application Foundation, with packages from composer repository: http://packages.phundament.com",
+    "keywords": ["yii", "web", "application", "boilerplate"],
     "homepage": "http://phundament.com/",
     "type": "library",
     "license": "BSD-3-Clause",
@@ -26,7 +26,7 @@
         "crisu83/yii-rights": "@dev",
         "mishamx/yii-user": "dev-master as 0.3.999",
         "phundament/p3admin": "0.9.*",
-        "phundament/p3widgets": "0.9.*",
+        "phundament/p3widgets": "0.10.*",
         "phundament/p3pages": "0.9.*",
         "phundament/p3media": "0.10.*",
         "phundament/themes/p3bootstrap": "0.9.*",

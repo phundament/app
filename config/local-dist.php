@@ -6,7 +6,7 @@
 
 return array(
     #'theme' => 'classic',
-    'import' => array(#'fullcrud.models.*',
+    'import' => array( #'fullcrud.models.*',
         #'sakila.components.*',
         #'sakila.models.*',
     ),
@@ -60,21 +60,21 @@ return array(
                  */
             ),
         ),
-        'urlManager' => array(
+        /*'urlManager' => array(
             'urlFormat' => 'path', // you'll need to use the supplied _.htaccess file
         ),
-        /* 'image' => array(
+         'image' => array(
           'class' => 'ext.phundament.p3extensions.components.image.CImageComponent',
           // GD or ImageMagick
           'driver' => 'ImageMagick',
           'params' => array('directory' => '/opt/local/bin'),
           ), */
     ),
-    'modules' => array(#'fullcrud',
+    'modules' => array( #'fullcrud',
         #'sakila',
         #'fullcrudWorld',
     ),
-    'params' => array(// this is used in contact page
+    'params' => array( // this is used in contact page
         #'adminEmail' => 'webmaster@h17n.de',
     ),
 );
