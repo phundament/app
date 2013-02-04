@@ -346,7 +346,7 @@ $mainConfig = array(
             'filebrowserBrowseCreateUrl' => array('/p3media/ckeditor'),
             'filebrowserImageBrowseCreateUrl' => array('/p3media/ckeditor/image'),
             'filebrowserFlashBrowseCreateUrl' => array('/p3media/ckeditor/flash'),
-            'filebrowserUploadCreateUrl' => array('/p3media/import/ckeditorUpload'), // TODO (tbd)
+            'filebrowserUploadCreateUrl' => array('/p3media/import/ckeditorUpload'),
         ),
     ),
 );
