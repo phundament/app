@@ -30,6 +30,18 @@ Shell
             'class' => 'application.vendor.crisu83.yii-rights.RightsModule',
             'cssFile' => '/themes/backend/css/yii-rights.css'
         ),
+        
+`p3admin`
+
+        'p3admin' => array(
+            'class' => 'vendor.phundament.p3admin.P3AdminModule',
+            'params' => array('install' => false),
+            'components' => array(
+                'metadata' => array(
+                    'class' => 'vendor.phundament.p3admin.components.Metadata',
+                )
+            )
+        ),
 
 ### Upgrading from v0.9.x
 
