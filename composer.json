@@ -12,6 +12,14 @@
         "homepage": "http://www.phundament.com"
     }
     ],
+    "support": {
+        "email": "phundament@usrbin.de",
+        "issues": "https://github.com/phundament/app/issues",
+        "forum": "http://phundament.com/en/forum-13.html",
+        "faq": "http://stackoverflow.com/questions/tagged/phundament",
+        "wiki": "https://github.com/phundament/app/wiki",
+        "source": "https://github.com/phundament/app"
+    },
     "repositories": [
     {
         "packagist": false
