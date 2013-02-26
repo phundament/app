@@ -28,11 +28,12 @@
         "url": "http://packages.phundament.com"
     }
     ],
+    "minimum-stability": "dev",
     "require": {
         "php": ">=5.3.2",
         "yiisoft/yii": "1.1.12",
         "crisu83/yii-rights": "@dev",
-        "mishamx/yii-user": "dev-master as 0.3.999",
+        "mishamx/yii-user": "@dev",
         "phundament/p3admin": "0.9.*",
         "phundament/p3widgets": "0.10.*",
         "phundament/p3pages": "0.9.*",
@@ -41,16 +42,16 @@
         "phundament/gii-template-collection": "0.8.*",
         "yiiext/fancybox-widget": "0.*",
         "yiiext/lipsum-widget": "0.*",        
-        "yiiext/migrate-command": "@dev",
-        "vitalets/yii-bootstrap-editable": "@dev",
-        "phundament/jquery-file-upload": "@dev"
+        "yiiext/migrate-command": "0.7.*"
     },
     "require-dev": {
+        "malyshev/yii-debug-toolbar": "@dev",
         "schmunk42/database-command": "0.8.*",
         "crisu83/yii-less": "1.*",
         "cloudhead/less.js": "1.*",
         "phundament/lessii": "@dev",
-        "twitter/bootstrap": "*"
+        "twitter/bootstrap": "*",
+        "ifdattic/echosen": "@dev"
     },
     "autoload": {
         "psr-0": {
