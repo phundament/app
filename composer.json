@@ -1,9 +1,9 @@
 {
     "name": "phundament/app",
-    "description": "Yii Application Foundation, with packages from composer repository: http://packages.phundament.com",
-    "keywords": ["yii", "web", "application", "boilerplate"],
+    "description": "Yii Application Boilerplate, with packages from composer repository http://packages.phundament.com",
+    "keywords": ["yii", "web", "application", "boilerplate", "foundation", "template"],
     "homepage": "http://phundament.com/",
-    "type": "library",
+    "type": "yii-application",
     "license": "BSD-3-Clause",
     "authors": [
     {
