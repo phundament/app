@@ -8,7 +8,7 @@ Upgrade Guide
 
 `config/main.php`
 
-`aliases
+`aliases`
 
         // yii-user path fixes
         'application.modules.user.views.asset' => 'application.vendor.mishamx.yii-user.views.asset',
