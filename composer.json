@@ -1,73 +1,74 @@
 {
-    "name": "phundament/app",
-    "description": "Yii Application Boilerplate, with packages from composer repository http://packages.phundament.com",
-    "keywords": ["yii", "web", "application", "boilerplate", "foundation", "template"],
-    "homepage": "http://phundament.com/",
-    "type": "yii-application",
-    "license": "BSD-3-Clause",
-    "authors": [
-    {
-        "name": "Tobias Munk",
-        "email": "schmunk@usrbin.de",
-        "homepage": "http://www.phundament.com"
-    }
+    "name":"phundament/app",
+    "description":"Yii Application Boilerplate, with packages from composer repository http://packages.phundament.com",
+    "keywords":["yii", "web", "application", "boilerplate", "foundation", "template"],
+    "homepage":"http://phundament.com/",
+    "type":"yii-application",
+    "license":"BSD-3-Clause",
+    "authors":[
+        {
+            "name":"Tobias Munk",
+            "email":"schmunk@usrbin.de",
+            "homepage":"http://www.phundament.com"
+        }
     ],
-    "support": {
-        "email": "phundament@usrbin.de",
-        "issues": "https://github.com/phundament/app/issues",
-        "forum": "http://phundament.com/en/forum-13.html",
-        "faq": "http://stackoverflow.com/questions/tagged/phundament",
-        "wiki": "https://github.com/phundament/app/wiki",
-        "source": "https://github.com/phundament/app"
+    "support":{
+        "email":"phundament@usrbin.de",
+        "issues":"https://github.com/phundament/app/issues",
+        "forum":"http://phundament.com/en/forum-13.html",
+        "faq":"http://stackoverflow.com/questions/tagged/phundament",
+        "wiki":"https://github.com/phundament/app/wiki",
+        "source":"https://github.com/phundament/app"
     },
-    "repositories": [
-    {
-        "packagist": false
-    },{
-        "type":"composer",
-        "url": "http://packages.phundament.com"
-    }
+    "repositories":[
+        {
+            "packagist":false
+        },
+        {
+            "type":"composer",
+            "url":"http://packages.phundament.com"
+        }
     ],
-    "minimum-stability": "dev",
-    "require": {
-        "php": ">=5.3.2",
-        "yiisoft/yii": "1.1.12",
-        "crisu83/yii-rights": "@dev",
-        "mishamx/yii-user": "@dev",
-        "phundament/p3admin": "0.9.*",
-        "phundament/p3widgets": "0.10.*",
-        "phundament/p3pages": "0.9.*",
-        "phundament/p3media": "0.10.*",
-        "phundament/themes/p3bootstrap": "0.9.*",
-        "phundament/gii-template-collection": "0.8.*",
-        "yiiext/fancybox-widget": "0.*",
-        "yiiext/lipsum-widget": "0.*",        
-        "yiiext/migrate-command": "0.7.*"
+    "minimum-stability":"dev",
+    "require":{
+        "php":">=5.3.2",
+        "yiisoft/yii":"1.1.12",
+        "crisu83/yii-rights":"@dev",
+        "mishamx/yii-user":"@dev",
+        "phundament/p3admin":"0.10.*",
+        "phundament/p3widgets":"0.10.*",
+        "phundament/p3pages":"0.9.*",
+        "phundament/p3media":"0.11.*",
+        "phundament/themes/p3bootstrap":"0.10.*",
+        "phundament/gii-template-collection":"0.8.*",
+        "yiiext/fancybox-widget":"0.*",
+        "yiiext/lipsum-widget":"0.*",
+        "yiiext/migrate-command":"0.7.*"
     },
-    "require-dev": {
-        "malyshev/yii-debug-toolbar": "@dev",
-        "schmunk42/database-command": "0.8.*",
-        "crisu83/yii-less": "1.*",
-        "cloudhead/less.js": "1.*",
-        "phundament/lessii": "@dev",
-        "twitter/bootstrap": "*",
-        "ifdattic/echosen": "@dev"
+    "require-dev":{
+        "malyshev/yii-debug-toolbar":"@dev",
+        "schmunk42/database-command":"0.8.*",
+        "crisu83/yii-less":"1.*",
+        "cloudhead/less.js":"1.*",
+        "phundament/lessii":"@dev",
+        "twitter/bootstrap":"*",
+        "ifdattic/echosen":"@dev"
     },
-    "autoload": {
-        "psr-0": {
-            "config": "./"
+    "autoload":{
+        "psr-0":{
+            "Phundament":"./config"
         }
     },
-    "scripts": {
-        "pre-install-cmd": "config\\ComposerCallback::preInstall",
-        "post-install-cmd": "config\\ComposerCallback::postInstall",
-        "pre-update-cmd": "config\\ComposerCallback::preUpdate",
-        "post-update-cmd": "config\\ComposerCallback::postUpdate",
-        "post-package-install": [
-        "config\\ComposerCallback::postPackageInstall"
+    "scripts":{
+        "pre-install-cmd":"Phundament\\ComposerCallback::preInstall",
+        "post-install-cmd":"Phundament\\ComposerCallback::postInstall",
+        "pre-update-cmd":"Phundament\\ComposerCallback::preUpdate",
+        "post-update-cmd":"Phundament\\ComposerCallback::postUpdate",
+        "post-package-install":[
+            "Phundament\\ComposerCallback::postPackageInstall"
         ],
-        "post-package-update": [
-        "config\\ComposerCallback::postPackageUpdate"
+        "post-package-update":[
+            "Phundament\\ComposerCallback::postPackageUpdate"
         ]
     }
 }

@@ -1,5 +1,5 @@
 {
-    "hash": "05c278cac92ae3f3cdc19239e655843b",
+    "hash": "0db2d722d8912313541d9acd1bf19651",
     "packages": [
         {
             "name": "anggiaj/eselect2",
@@ -136,16 +136,16 @@
         },
         {
             "name": "phundament/p3admin",
-            "version": "0.9.3",
+            "version": "0.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3admin.git",
-                "reference": "0.9.3"
+                "reference": "0.10.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3admin/zipball/0.9.3",
-                "reference": "0.9.3",
+                "url": "https://api.github.com/repos/schmunk42/p3admin/zipball/0.10.0",
+                "reference": "0.10.0",
                 "shasum": ""
             },
             "require": {
@@ -153,9 +153,6 @@
                 "php": ">=5.3.0",
                 "phundament/p3extensions": ">=0.7",
                 "yiisoft/yii": ">=1.1.12"
-            },
-            "provide": {
-                "yii-application": "*"
             },
             "type": "yii-extension",
             "license": [
@@ -181,7 +178,7 @@
                 "source": "https://github.com/schmunk42/p3admin/tree/master",
                 "issues": "https://github.com/schmunk42/p3admin/issues"
             },
-            "time": "2013-02-26 03:06:53"
+            "time": "2013-02-27 00:36:00"
         },
         {
             "name": "phundament/p3extensions",
@@ -226,16 +223,16 @@
         },
         {
             "name": "phundament/p3media",
-            "version": "0.10.3",
+            "version": "0.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3media.git",
-                "reference": "0.10.3"
+                "reference": "0.11.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3media/zipball/0.10.3",
-                "reference": "0.10.3",
+                "url": "https://api.github.com/repos/schmunk42/p3media/zipball/0.11.0",
+                "reference": "0.11.0",
                 "shasum": ""
             },
             "require": {
@@ -245,7 +242,6 @@
                 "phundament/jquery-file-upload": "@dev",
                 "phundament/p3extensions": ">=0.7",
                 "vitalets/yii-bootstrap-editable": "@dev",
-                "yii-application": "*",
                 "yiisoft/yii": "1.1.*"
             },
             "type": "yii-extension",
@@ -269,10 +265,10 @@
                 "yii"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3media/tree/0.10.3",
+                "source": "https://github.com/schmunk42/p3media/tree/master",
                 "issues": "https://github.com/schmunk42/p3media/issues"
             },
-            "time": "2013-02-26 01:21:19"
+            "time": "2013-02-27 00:03:30"
         },
         {
             "name": "phundament/p3pages",
@@ -365,23 +361,22 @@
         },
         {
             "name": "phundament/themes/p3bootstrap",
-            "version": "0.9.2",
+            "version": "0.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3bootstrap.git",
-                "reference": "0.9.2"
+                "reference": "0.10.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3bootstrap/zipball/0.9.2",
-                "reference": "0.9.2",
+                "url": "https://api.github.com/repos/schmunk42/p3bootstrap/zipball/0.10.0",
+                "reference": "0.10.0",
                 "shasum": ""
             },
             "require": {
                 "crisu83/yii-bootstrap": "1.*",
                 "php": ">=5.3.0",
                 "phundament/p3extensions": ">=0.7",
-                "yii-application": "*",
                 "yiisoft/yii": "1.1.*"
             },
             "suggest": {
@@ -406,10 +401,10 @@
                 "theme"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3bootstrap/tree/0.9.2",
+                "source": "https://github.com/schmunk42/p3bootstrap/tree/master",
                 "issues": "https://github.com/schmunk42/p3bootstrap/issues"
             },
-            "time": "2013-02-04 21:26:00"
+            "time": "2013-02-27 00:04:20"
         },
         {
             "name": "vitalets/yii-bootstrap-editable",

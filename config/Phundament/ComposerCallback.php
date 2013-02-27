@@ -9,7 +9,7 @@
  * @license http://www.phundament.com/license
  */
 
-namespace config;
+namespace Phundament;
 use Composer\Script\Event;
 
 /**
@@ -53,8 +53,8 @@ use Composer\Script\Event;
  * @since 0.7.1
  */
 
-defined('YII_PATH') or define('YII_PATH', dirname(__FILE__).'/../vendor/yiisoft/yii/framework');
-defined('CONSOLE_CONFIG') or define('CONSOLE_CONFIG', dirname(__FILE__).'/console.php');
+defined('YII_PATH') or define('YII_PATH', dirname(__FILE__).'/../../vendor/yiisoft/yii/framework');
+defined('CONSOLE_CONFIG') or define('CONSOLE_CONFIG', dirname(__FILE__).'/../console.php');
 
 class ComposerCallback
 {
@@ -131,8 +131,8 @@ class ComposerCallback
     public static function postPackageUpdate(Event $event)
     {
         $installedPackage = $event->getOperation()->getTargetPackage();
-        $commandName = $installedPackage->getPrettyName().'-update';
-        self::runHook($commandName);
+        $hookName = $installedPackage->getPrettyName().'-update';
+        self::runHook($hookName);
     }
 
     /**
@@ -157,6 +157,7 @@ class ComposerCallback
         if ($app === null) return;
 
         if (isset($app->params['composer.callbacks'][$name])) {
+            echo "composer.callback: ".$name."\n\n";
             $args = $app->params['composer.callbacks'][$name];
             $app->commandRunner->addCommands(\Yii::getPathOfAlias('system.cli.commands'));
             $app->commandRunner->run($args);
@@ -173,7 +174,7 @@ class ComposerCallback
             return null;
         }
 
-        require_once(YII_PATH.'/yii.php');
+        require_once(YII_PATH . '/yii.php');
         spl_autoload_register(array('YiiBase', 'autoload'));
 
         if (\Yii::app() === null) {
