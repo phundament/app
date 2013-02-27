@@ -12,7 +12,7 @@ $baseUrl = (dirname($_SERVER['SCRIPT_NAME']) != '/') ? dirname($_SERVER['SCRIPT_
 
 $mainConfig = array(
     'basePath' => $applicationDirectory,
-    'name' => 'My Phundament 3',
+    'name' => 'Phundament',
     'theme' => 'frontend', // theme is copied from extensions/phundament/p3bootstrap
     'language' => 'en', // default language, see also components.langHandler
     // preloading 'log' component
