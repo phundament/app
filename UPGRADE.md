@@ -4,6 +4,20 @@ Phundament 3 App
 Upgrade Guide
 -------------
 
+### Upgrading from v0.11.x
+
+`config/main.php`
+
+`aliases
+
+        // yii-user path fixes
+        'application.modules.user.views.asset' => 'application.vendor.mishamx.yii-user.views.asset',
+        'application.modules.user.components' => 'application.vendor.mishamx.yii-user.components',
+        'ext.editable.assets.js.locales' => 'application.vendor.vitalets.yii-bootstrap-editable.assets.js.locales',
+        'ext.editable.assets' => 'application.vendor.vitalets.yii-bootstrap-editable.assets',
+        
+`blueimp/jquery-file-upload` replaces the former fork from `phundament/jquery-file-upload`.
+
 ### Upgrading from v0.10.x
 
 Shell
