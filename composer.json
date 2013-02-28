@@ -35,6 +35,7 @@
         "yiisoft/yii":"1.1.12",
         "crisu83/yii-rights":"@dev",
         "mishamx/yii-user":"@dev",
+        "schmunk42/web-user-behavior":"*",
         "phundament/p3admin":"0.10.*",
         "phundament/p3widgets":"0.10.*",
         "phundament/p3pages":"0.9.*",

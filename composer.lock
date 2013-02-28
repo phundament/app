@@ -1,5 +1,5 @@
 {
-    "hash": "0db2d722d8912313541d9acd1bf19651",
+    "hash": "b3cd22319c5021f6258835a5b8dab12f",
     "packages": [
         {
             "name": "anggiaj/eselect2",
@@ -56,26 +56,26 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/schmunk42/EChosen.git",
-                "reference": "fcc98ef542c27bad99861f41ae4643e4975fdcbb"
+                "url": "https://github.com/ifdattic/EChosen.git",
+                "reference": "5342d91e76a0783a6ecc2619ec9e747c4edfb83b"
             },
             "type": "yii-extension",
             "description": "Yii extension which adds Chosen JavaScript plugin.",
-            "homepage": "https://github.com/schmunk42/EChosen",
-            "time": "2013-02-02 15:59:58"
+            "homepage": "https://github.com/ifdattic/EChosen",
+            "time": "2012-02-24 14:21:58"
         },
         {
             "name": "mishamx/yii-user",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/phundament/yii-user.git",
-                "reference": "7affbb3cef1bd337d3e5f897258561ebb6ea1100"
+                "url": "https://github.com/mishamx/yii-user.git",
+                "reference": "7f8f7a0d2a96ab9601bf5d733b5e43dc8ad4a795"
             },
             "type": "yii-extension",
             "description": "Yii PHP Framework extension for registration and management users accounts.",
-            "homepage": "https://github.com/phundament/yii-user",
-            "time": "2012-04-19 06:59:17"
+            "homepage": "https://github.com/mishamx/yii-user",
+            "time": "2013-01-09 13:30:42"
         },
         {
             "name": "phundament/gii-template-collection",
@@ -361,16 +361,16 @@
         },
         {
             "name": "phundament/themes/p3bootstrap",
-            "version": "0.10.0",
+            "version": "0.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3bootstrap.git",
-                "reference": "0.10.0"
+                "reference": "0.10.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3bootstrap/zipball/0.10.0",
-                "reference": "0.10.0",
+                "url": "https://api.github.com/repos/schmunk42/p3bootstrap/zipball/0.10.1",
+                "reference": "0.10.1",
                 "shasum": ""
             },
             "require": {
@@ -401,23 +401,63 @@
                 "theme"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3bootstrap/tree/master",
+                "source": "https://github.com/schmunk42/p3bootstrap/tree/0.10.1",
                 "issues": "https://github.com/schmunk42/p3bootstrap/issues"
             },
-            "time": "2013-02-27 00:04:20"
+            "time": "2013-02-27 02:54:04"
+        },
+        {
+            "name": "schmunk42/web-user-behavior",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmunk42/web-user-behavior.git",
+                "reference": "0.1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schmunk42/web-user-behavior/zipball/0.1.0",
+                "reference": "0.1.0",
+                "shasum": ""
+            },
+            "type": "yii-extension",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Munk",
+                    "email": "schmunk@usrbin.de",
+                    "homepage": "http://www.usrbin.de"
+                }
+            ],
+            "description": "Yii Behavior, which implments features from WebUser from mishamx/yii-user",
+            "homepage": "https://github.com/schmunk42/web-user-behavior",
+            "keywords": [
+                "behavior",
+                "webuser",
+                "yii",
+                "yii-rights",
+                "yii-user"
+            ],
+            "support": {
+                "source": "https://github.com/schmunk42/web-user-behavior/tree/0.1.0",
+                "issues": "https://github.com/schmunk42/web-user-behavior/issues"
+            },
+            "time": "2013-02-28 00:23:21"
         },
         {
             "name": "vitalets/yii-bootstrap-editable",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/schmunk42/yii-bootstrap-editable.git",
-                "reference": "dda01eae0742ea89bdba554c5231bb49f0a28287"
+                "url": "https://github.com/vitalets/yii-bootstrap-editable.git",
+                "reference": "a61601b0d2350ca0a496b25b019d481aaa4da529"
             },
             "type": "yii-extension",
             "description": "Yii extension for Bootstrap-editable plugin",
-            "homepage": "https://github.com/schmunk42/yii-bootstrap-editable",
-            "time": "2012-10-08 22:00:35"
+            "homepage": "https://github.com/vitalets/yii-bootstrap-editable",
+            "time": "2012-12-27 09:22:45"
         },
         {
             "name": "yiiext/fancybox-widget",

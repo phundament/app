@@ -48,6 +48,12 @@ $mainConfig = array(
         // p3media
         'jquery-file-upload' => 'application.vendor.phundament.jquery-file-upload',
         'jquery-file-upload-widget' => 'application.vendor.phundament.p3extensions.widgets.jquery-file-upload',
+
+        // yii-user path fixes
+        'application.modules.user.views.asset' => 'application.vendor.mishamx.yii-user.views.asset',
+        'application.modules.user.components' => 'application.vendor.mishamx.yii-user.components',
+        'ext.editable.assets.js.locales' => 'application.vendor.vitalets.yii-bootstrap-editable.assets.js.locales',
+        'ext.editable.assets' => 'application.vendor.vitalets.yii-bootstrap-editable.assets',
     ),
     'modules' => array(
         // uncomment the following to enable the Gii tool
@@ -287,6 +293,7 @@ $mainConfig = array(
         'user' => array(
             // enable cookie-based authentication
             'class' => 'RWebUser', // mishamx/yii-rights: Allows super users access implicitly.
+            'behaviors' => array('application.vendor.schmunk42.web-user-behavior.WebUserBehavior'), // compatibility behavior for yii-user and yii-rights
             'allowAutoLogin' => true,
             'loginUrl' => array('/user/login'),
         ),

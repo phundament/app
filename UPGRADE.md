@@ -6,6 +6,10 @@ Upgrade Guide
 
 ### Upgrading from v0.11.x
 
+`composer.json`
+
+        "schmunk42/web-user-behavior":"*",
+
 `config/main.php`
 
 `aliases`
@@ -15,7 +19,13 @@ Upgrade Guide
         'application.modules.user.components' => 'application.vendor.mishamx.yii-user.components',
         'ext.editable.assets.js.locales' => 'application.vendor.vitalets.yii-bootstrap-editable.assets.js.locales',
         'ext.editable.assets' => 'application.vendor.vitalets.yii-bootstrap-editable.assets',
-        
+
+`components`
+
+        'user' => array(
+            'behaviors' => array('application.vendor.schmunk42.web-user-behavior.WebUserBehavior'), // compatibility behavior for yii-user and yii-rights
+        ),
+
 `blueimp/jquery-file-upload` replaces the former fork from `phundament/jquery-file-upload`.
 
 ### Upgrading from v0.10.x
