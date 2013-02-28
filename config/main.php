@@ -21,23 +21,6 @@ $mainConfig = array(
         'langHandler',
         'bootstrap',
     ),
-    // autoloading model and component classes
-    'import' => array(
-        'application.models.*',
-        'application.components.*',
-        'zii.widgets.*',
-        'application.vendor.phundament.gii-template-collection.components.*', // Relation Widget
-        'application.vendor.phundament.p3widgets.components.*', // P3WidgetContainer
-        'application.vendor.phundament.p3extensions.components.*', // shared classes
-        'application.vendor.phundament.p3extensions.behaviors.*', // shared classes
-        'application.vendor.phundament.p3extensions.widgets.*', // shared classes
-        'application.vendor.phundament.p3extensions.helpers.*', // shared classes - P3StringHelper
-        'application.vendor.mishamx.yii-user.models.*', // User Model
-        'application.vendor.crisu83.yii-rights.components.*', // RWebUser
-        'application.vendor.crisu83.yii-bootstrap.widgets.*', // Bootstrap UI
-        'application.vendor.yiiext.fancybox-widget.*', // Fancybox Widget
-        'application.vendor.vitalets.yii-bootstrap-editable.*', // p3media
-    ),
     'aliases' => array(
         // composer
         'vendor' => 'application.vendor',
@@ -46,14 +29,31 @@ $mainConfig = array(
         'jsonEditorView' => 'application.vendor.phundament.p3extensions.widgets.jsonEditorView',
         'ckeditor' => 'application.vendor.phundament.p3extensions.widgets.ckeditor',
         // p3media
-        'jquery-file-upload' => 'application.vendor.phundament.jquery-file-upload',
+        'jquery-file-upload' => 'vendor.phundament.jquery-file-upload',
         'jquery-file-upload-widget' => 'application.vendor.phundament.p3extensions.widgets.jquery-file-upload',
 
-        // yii-user path fixes
-        'application.modules.user.views.asset' => 'application.vendor.mishamx.yii-user.views.asset',
-        'application.modules.user.components' => 'application.vendor.mishamx.yii-user.components',
-        'ext.editable.assets.js.locales' => 'application.vendor.vitalets.yii-bootstrap-editable.assets.js.locales',
-        'ext.editable.assets' => 'application.vendor.vitalets.yii-bootstrap-editable.assets',
+        // fixing aliases (use full path)
+        'application.modules.user.views.asset' => 'vendor.mishamx.yii-user.views.asset',
+        'application.modules.user.components' => 'vendor.mishamx.yii-user.components',
+        'ext.editable.assets.js.locales' => 'vendor.vitalets.yii-bootstrap-editable.assets.js.locales',
+        'ext.editable.assets' => 'vendor.vitalets.yii-bootstrap-editable.assets',
+    ),
+    // autoloading model and component classes
+    'import' => array(
+        'application.models.*',
+        'application.components.*',
+        'zii.widgets.*',
+        'vendor.phundament.gii-template-collection.components.*', // Relation Widget
+        'vendor.phundament.p3widgets.components.*', // P3WidgetContainer
+        'vendor.phundament.p3extensions.components.*', // shared classes
+        'vendor.phundament.p3extensions.behaviors.*', // shared classes
+        'vendor.phundament.p3extensions.widgets.*', // shared classes
+        'vendor.phundament.p3extensions.helpers.*', // shared classes - P3StringHelper
+        'vendor.mishamx.yii-user.models.*', // User Model
+        'vendor.crisu83.yii-rights.components.*', // RWebUser
+        'vendor.crisu83.yii-bootstrap.widgets.*', // Bootstrap UI
+        'vendor.yiiext.fancybox-widget.*', // Fancybox Widget
+        'vendor.vitalets.yii-bootstrap-editable.*', // p3media
     ),
     'modules' => array(
         // uncomment the following to enable the Gii tool
