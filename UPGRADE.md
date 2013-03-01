@@ -8,6 +8,7 @@ Upgrade Guide
 
 `composer.json`
 
+        "mishamx/yii-user": "@dev",
         "schmunk42/web-user-behavior":"*",
 
 `config/main.php`
