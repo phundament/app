@@ -48,8 +48,7 @@
             },
             "type": "yii-extension",
             "description": "Rights is a module for the Yii PHP framework. This module utilizes Yii's built-in Database Authorization Manager (CDbAuthManager) to provide a web interface for advanced access control within Yii-applications.",
-            "homepage": "http://www.yiiframework.com/extension/rights",
-            "time": "2011-10-12 09:05:52"
+            "homepage": "http://www.yiiframework.com/extension/rights"
         },
         {
             "name": "ifdattic/echosen",
