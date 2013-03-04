@@ -1,5 +1,6 @@
 nbproject
 .DS_Store
+.idea
 /config/local.php
 /data/
 /vendor/
@@ -9,5 +10,3 @@ nbproject
 /yiic
 /yiic.bat
 /yiic.php
-/tests/
-/__vendor/crisu83/yii-bootstrap/.idea/
