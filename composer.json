@@ -22,9 +22,6 @@
     },
     "repositories":[
         {
-            "packagist":false
-        },
-        {
             "type":"composer",
             "url":"http://packages.phundament.com"
         }
@@ -50,10 +47,11 @@
         "malyshev/yii-debug-toolbar":"@dev",
         "schmunk42/database-command":"0.8.*",
         "crisu83/yii-less":"1.*",
-        "cloudhead/less.js":"1.*",
+        "cloudhead/less.js":"1.3.*",
         "phundament/lessii":"@dev",
-        "twitter/bootstrap":"*",
-        "ifdattic/echosen":"@dev"
+        "twitter/bootstrap":"2.3.*",
+        "ifdattic/echosen":"@dev",
+        "codeception/codeception": "@stable"
     },
     "autoload":{
         "psr-0":{
