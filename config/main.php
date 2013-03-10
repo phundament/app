@@ -49,6 +49,7 @@ $mainConfig = array(
         'vendor.phundament.p3extensions.behaviors.*', // shared classes
         'vendor.phundament.p3extensions.widgets.*', // shared classes
         'vendor.phundament.p3extensions.helpers.*', // shared classes - P3StringHelper
+        'vendor.phundament.p3pages.models.*', // Meta description and keywords (P3Media)
         'vendor.mishamx.yii-user.models.*', // User Model
         'vendor.crisu83.yii-rights.components.*', // RWebUser
         'vendor.crisu83.yii-bootstrap.widgets.*', // Bootstrap UI
