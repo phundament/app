@@ -1,7 +1,7 @@
 Phundament 3 App
 ================
 
-**Version 0.11.0**
+**Version 0.12.4**
 
 
 What is Phundament?
@@ -84,15 +84,15 @@ Requirements
  *  SQLite 3
 
 ### License
- *  [BSD](https://github.com/phundament/app/blob/0.11.0/LICENSE)
+ *  [BSD](https://github.com/phundament/app/blob/0.12.4/LICENSE)
 
 
 
 Changelog
 ---------
 
- * [CHANGELOG](https://github.com/phundament/app/blob/0.11.0/CHANGELOG.md)
- * [Packages contained in Phundament 3](https://github.com/phundament/app/blob/0.11.0/composer.lock)
+ * [CHANGELOG](https://github.com/phundament/app/blob/0.12.4/CHANGELOG.md)
+ * [Packages contained in Phundament 3](https://github.com/phundament/app/blob/0.12.4/composer.lock)
 
 
 Resources
