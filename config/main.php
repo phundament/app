@@ -32,11 +32,13 @@ $mainConfig = array(
         'jquery-file-upload' => 'vendor.phundament.jquery-file-upload',
         'jquery-file-upload-widget' => 'application.vendor.phundament.p3extensions.widgets.jquery-file-upload',
 
-        // fixing aliases (use full path)
+        // fixing 'hardcoded aliases' from extension (note: you have to use the full path)
         'application.modules.user.views.asset' => 'vendor.mishamx.yii-user.views.asset',
         'application.modules.user.components' => 'vendor.mishamx.yii-user.components',
         'ext.editable.assets.js.locales' => 'vendor.vitalets.yii-bootstrap-editable.assets.js.locales',
         'ext.editable.assets' => 'vendor.vitalets.yii-bootstrap-editable.assets',
+        'echosen' => 'vendor.ifdattic.echosen',
+        'ext.EChosen' => 'vendor.ifdattic.echosen',
     ),
     // autoloading model and component classes
     'import' => array(
@@ -180,9 +182,9 @@ $mainConfig = array(
             'appLayout' => '//layouts/main',
             'userIdColumn' => 'id',
             'userClass' => 'User',
-        #'install' => true, // Enables the installer.
-        #'superuserName' => 'admin'
-        'cssFile' => '/themes/backend/css/yii-rights.css'
+            'cssFile' => '/themes/backend/css/yii-rights.css'
+            #'install' => true, // Enables the installer.
+            #'superuserName' => 'admin'
         ),
         'user' => array(
             'class' => 'application.vendor.mishamx.yii-user.UserModule',
