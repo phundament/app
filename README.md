@@ -44,44 +44,15 @@ Try a demo
 
 [Frontend Demo Page](http://demo.phundament.com/3.0-dev)
 
-Login with editor / editor or register by e-mail.
+Login with `editor` / `editor` or register by e-mail.
 
 ### First Steps
 
 For some usage examples, [click here](https://github.com/phundament/app/wiki/Content-Management).
 
 
-Troubleshooting
----------------
+* [Requirements](https://github.com/phundament/app/wiki/Requirements)
 
- * Make sure you have [git](http://git-scm.com/) and [hg](http://mercurial.selenic.com/) installed
- * zlib extension or unzip available on your PATH
- * OpenSSL Support enabled in PHP or try ```--prefer-source```
- * if you get SSL or memory limit errors, try: ```php -d allow_url_fopen=1 -d memory_limit=64M composer.phar -v install```
- * If you want to the very lastest version
-   ```
-   curl -L https://github.com/phundament/app/tarball/master | tar zx
-   ```
- * Don't manually enable Yii `CLogger` on a fresh install
- * To upgrade phundament from version 0.8.0, please follow [these upgrading instructions] (https://github.com/phundament/app/blob/master/UPGRADE.md) 
-
-
-Requirements
-------------
-
- *  PHP >5.3.2
- *  [Yii Framework Requirements] (http://www.yiiframework.com/doc/guide/1.1/en/quickstart.installation#requirements)
- *  git, hg (Mercurial), svn (subversion), php_mod_ssl (for composer)
- *  Shell access
-
-### Tested Systems
- *  Mac OS X 10.6, 10.7
- *  Debian 5,6
- *  Windows XP
-
-### Tested Databases
- *  MySQL 5
- *  SQLite 3
 
 ### License
  *  [BSD](https://github.com/phundament/app/blob/0.12.4/LICENSE)
@@ -92,38 +63,31 @@ Changelog
 ---------
 
  * [CHANGELOG](https://github.com/phundament/app/blob/0.12.4/CHANGELOG.md)
- * [Packages contained in Phundament 3](https://github.com/phundament/app/blob/0.12.4/composer.lock)
+ * [Packages in Phundament 0.12.4](https://github.com/phundament/app/blob/0.12.4/composer.lock)
 
 
 Resources
 ---------
 
-### Developer
- *  [Yii Extension Page](http://www.yiiframework.com/extension/phundament/)
- *  [Fork us on github](https://github.com/phundament/app)
+### Basic
+ *  [View at Yii Extensions](http://www.yiiframework.com/extension/phundament/)
+ *  [Fork on github](https://github.com/phundament/app)
  *  [Report a bug](https://github.com/phundament/app/issues)
  *  [FAQ / Troubleshooting](https://github.com/schmunk42/phundament/wiki/FAQ)
+ *  [Support](https://github.com/schmunk42/phundament/wiki/Support)
 
-
-### Help needed?
- *  [Yii Forum](http://www.yiiframework.com/forum/index.php?/topic/24696-extension-phundament/)
- *  [Google Group phundament-dev](http://groups.google.com/group/phundament-dev/)
-
-
-### Additional Ressources
- *  [Docs](https://github.com/phundament/app/tree/master/docs)
- *  [Downloads](https://github.com/phundament/app/tags)
+### Additional
+ *  Extensions [packages.phundament.com](http://packages.phundament.com)
  *  [Wiki](https://github.com/schmunk42/phundament/wiki/)
- *  [Development Discussion](http://www.yiiframework.com/forum/index.php?/topic/17591-planning-yii-cms-a-different-approach/)
- *  [Demo Website](http://demo.phundament.com/3.0-dev/)
+ *  [Downloads](https://github.com/phundament/app/tags)
  *  [Phundament Website](http://phundament.com)
  *  [Company Website](http://herzogkommunikation.de)
-
-### Extensions
- *  [packages.phundament.com](http://packages.phundament.com)
-
-### Contact
- *  phundament@usrbin.de
+ *  [Demo Website](http://demo.phundament.com/3.0-dev/)
+ 
+### Social Networks
  *  [Twitter](http://twitter.com/#!/phundament)
  *  [Facebook](http://www.facebook.com/phundament)
  *  [Google+](https://plus.google.com/114873431066202526630)
+
+### Contact
+ *  phundament@usrbin.de
