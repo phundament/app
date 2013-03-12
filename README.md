@@ -1,7 +1,7 @@
-Phundament 3 App
-================
+Phundament
+==========
 
-**Version 0.12.4**
+**Version 3-0.12.4**
 
 
 What is Phundament?
