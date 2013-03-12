@@ -70,25 +70,25 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mishamx/yii-user.git",
-                "reference": "7f8f7a0d2a96ab9601bf5d733b5e43dc8ad4a795"
+                "reference": "a59308da167831072e901deb6f5e592c115e13c0"
             },
             "type": "yii-extension",
             "description": "Yii PHP Framework extension for registration and management users accounts.",
             "homepage": "https://github.com/mishamx/yii-user",
-            "time": "2013-01-09 13:30:42"
+            "time": "2013-03-11 14:15:45"
         },
         {
             "name": "phundament/gii-template-collection",
-            "version": "0.8.4",
+            "version": "0.8.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/gii-template-collection.git",
-                "reference": "0.8.4"
+                "reference": "0.8.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/gii-template-collection/zipball/0.8.4",
-                "reference": "0.8.4",
+                "url": "https://api.github.com/repos/schmunk42/gii-template-collection/zipball/0.8.5",
+                "reference": "0.8.5",
                 "shasum": ""
             },
             "require": {
@@ -116,10 +116,10 @@
                 "package"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/gii-template-collection/tree/0.8.4",
+                "source": "https://github.com/schmunk42/gii-template-collection/tree/master",
                 "issues": "https://github.com/schmunk42/gii-template-collection/issues"
             },
-            "time": "2013-02-26 17:00:26"
+            "time": "2013-03-11 13:38:04"
         },
         {
             "name": "phundament/jquery-file-upload",
