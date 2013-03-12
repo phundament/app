@@ -37,7 +37,9 @@ $mainConfig = array(
         'application.modules.user.components' => 'vendor.mishamx.yii-user.components',
         'ext.editable.assets.js.locales' => 'vendor.vitalets.yii-bootstrap-editable.assets.js.locales',
         'ext.editable.assets' => 'vendor.vitalets.yii-bootstrap-editable.assets',
+        'gii-template-collection' => 'vendor.phundament.gii-template-collection',
         'echosen' => 'vendor.ifdattic.echosen',
+        'echosen.EChosen' => 'vendor.ifdattic.echosen.EChosen',
         'ext.EChosen' => 'vendor.ifdattic.echosen',
     ),
     // autoloading model and component classes
