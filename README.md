@@ -19,22 +19,14 @@ Get started
 1. [Download from github](https://github.com/phundament/app/tags) & extract file
 2. Enter the app root folder and run the installer
 ```
-php composer.phar install --dev --prefer-source
+php composer.phar install
 ```
 3. Open `phundament-app/www/index.php` in your browser
 
-*Note: if you want to install Phundament 3 with a MySQL database, you have to update your config first.*
-*You may skip the `--dev` and `--prefer-source` options on production systems.*
+*Note: if you want to install Phundament 3 with a MySQL database, you have to update your config first, see the [Setup](https://github.com/phundament/app/wiki/Setup) section in our wiki.*
+*You may add the `--dev` and `--prefer-source` options on development systems.*
 
 Continue to the [Wiki](https://github.com/phundament/app/wiki)...
-
-How it works?
--------------
- * the installer retrieves the packages specified in [`composer.lock`](https://github.com/phundament/app/blob/master/composer.lock)
- * executes the `composer.callbacks` from [`config/console.php`](https://github.com/phundament/app/blob/master/config/console.php)
- * the web-application is pre-configured in [`config/main.php`](https://github.com/phundament/app/blob/master/config/main.php)
-
-More [details](https://github.com/phundament/app/wiki/How-it-works).
 
 
 Try a demo
@@ -51,20 +43,6 @@ Login with `editor` / `editor` or register by e-mail.
 For some usage examples, [click here](https://github.com/phundament/app/wiki/Content-Management).
 
 
-* [Requirements](https://github.com/phundament/app/wiki/Requirements)
-
-
-### License
- *  [BSD](https://github.com/phundament/app/blob/0.12.4/LICENSE)
-
-
-
-Changelog
----------
-
- * [CHANGELOG](https://github.com/phundament/app/blob/0.12.4/CHANGELOG.md)
- * [Packages in Phundament 0.12.4](https://github.com/phundament/app/blob/0.12.4/composer.lock)
-
 
 Resources
 ---------
@@ -75,6 +53,10 @@ Resources
  *  [Report a bug](https://github.com/phundament/app/issues)
  *  [FAQ / Troubleshooting](https://github.com/schmunk42/phundament/wiki/FAQ)
  *  [Support](https://github.com/schmunk42/phundament/wiki/Support)
+ *  [CHANGELOG](https://github.com/phundament/app/blob/0.12.4/CHANGELOG.md)
+ *  [Packages in Phundament 0.12.4](https://github.com/phundament/app/blob/0.12.4/composer.lock)
+ *  [Requirements](https://github.com/phundament/app/wiki/Requirements)
+ *  License [BSD](https://github.com/phundament/app/blob/0.12.4/LICENSE)
 
 ### Additional
  *  Extensions [packages.phundament.com](http://packages.phundament.com)
