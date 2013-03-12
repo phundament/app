@@ -7,17 +7,22 @@ Phundament
 What is Phundament?
 -------------------
 
-Phundament 3 is a solid, highly customizable application foundation built with [composer](http://getcomposer.org) 
-upon [Yii](http://yiiframework.com) 1.1 and extension packages such as [user](http://www.yiiframework.com/extension/yii-user/), [rights](http://www.yiiframework.com/extension/rights/), [yiiext](http://code.google.com/p/yiiext/), [gtc](https://github.com/schmunk42/gii-template-collection), ckeditor, jquery-file-upload, p3widgets and p3media.
+Phundament 3 is a solid, highly customizable universal application foundation built with [composer](http://getcomposer.org) 
+upon [Yii Framework](http://yiiframework.com). 
 
-For more details visit [phundament.com](http://phundament.com).
+It's goal is the seamless integration of extensions and libraries in composer packages packages,
+such as [user](http://www.yiiframework.com/extension/yii-user/), 
+[rights](http://www.yiiframework.com/extension/rights/), [yiiext](http://code.google.com/p/yiiext/), 
+[gtc](https://github.com/schmunk42/gii-template-collection), ckeditor, jquery-file-upload, p3widgets and p3media and many, many more ...
 
+ * Visit [phundament.com](http://phundament.com).
+ * Show [Packages](http://packages.phundament.com).
 
 Get started
 -----------
 
-1. [Download from github](https://github.com/phundament/app/tags) & extract file
-2. Enter the app root folder and run the installer
+1. [Download](https://github.com/phundament/app/tags) & extract
+2. Enter the app root folder and start the installation process
 ```
 php composer.phar install
 ```
@@ -26,22 +31,10 @@ php composer.phar install
 *Note: if you want to install Phundament 3 with a MySQL database, you have to update your config first, see the [Setup](https://github.com/phundament/app/wiki/Setup) section in our wiki.*
 *You may add the `--dev` and `--prefer-source` options on development systems.*
 
-Continue to the [Wiki](https://github.com/phundament/app/wiki)...
-
-
-Try a demo
-----------
-
-### Open website
-
-[Frontend Demo Page](http://demo.phundament.com/3.0-dev)
-
-Login with `editor` / `editor` or register by e-mail.
-
-### First Steps
-
-For some usage examples, [click here](https://github.com/phundament/app/wiki/Content-Management).
-
+ * Continue to the [Wiki](https://github.com/phundament/app/wiki)...
+ * Try a test-drive at the [Frontend Demo Page](http://demo.phundament.com/3.0-dev)
+   * Login with `editor` / `editor` or register by e-mail.
+ * Edit your site with the built-in [Content-Management Tools](https://github.com/phundament/app/wiki/Content-Management).
 
 
 Resources
