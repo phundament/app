@@ -30,7 +30,7 @@ php composer.phar install
 *You may add the `--dev` and `--prefer-source` options on development systems.*
 
  * Edit your site with the built-in [Content-Management Tools](https://github.com/phundament/app/wiki/Content-Management).
- * Continue to the [Wiki](https://github.com/phundament/app/wiki) for detailed setup instructions.
+ * Continue to the [Documentation Wiki](https://github.com/phundament/app/wiki).
  * Show available [Packages](http://packages.phundament.com).
  * Try a test-drive at the [Frontend Demo Page](http://demo.phundament.com/3.0-dev)
    * Login with `editor` / `editor` or register by e-mail.
