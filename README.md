@@ -15,8 +15,6 @@ such as [user](http://www.yiiframework.com/extension/yii-user/),
 [rights](http://www.yiiframework.com/extension/rights/), [yiiext](http://code.google.com/p/yiiext/), 
 [gtc](https://github.com/schmunk42/gii-template-collection), ckeditor, jquery-file-upload, p3widgets and p3media and many, many more ...
 
- * Visit [phundament.com](http://phundament.com).
- * Show [Packages](http://packages.phundament.com).
 
 Get started
 -----------
@@ -31,10 +29,12 @@ php composer.phar install
 *Note: if you want to install Phundament 3 with a MySQL database, you have to update your config first, see the [Setup](https://github.com/phundament/app/wiki/Setup) section in our wiki.*
 *You may add the `--dev` and `--prefer-source` options on development systems.*
 
- * Continue to the [Wiki](https://github.com/phundament/app/wiki)...
+ * Edit your site with the built-in [Content-Management Tools](https://github.com/phundament/app/wiki/Content-Management).
+ * Continue to the [Wiki](https://github.com/phundament/app/wiki) for detailed setup instructions.
+ * Show available [Packages](http://packages.phundament.com).
  * Try a test-drive at the [Frontend Demo Page](http://demo.phundament.com/3.0-dev)
    * Login with `editor` / `editor` or register by e-mail.
- * Edit your site with the built-in [Content-Management Tools](https://github.com/phundament/app/wiki/Content-Management).
+ * Visit [phundament.com](http://phundament.com).
 
 
 Resources
