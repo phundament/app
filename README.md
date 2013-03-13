@@ -46,25 +46,26 @@ Demo
 Resources
 ---------
 
+### Fundamentals
+ *  [Documentation](https://github.com/phundament/app/wiki/)
+ *  [FAQ / Troubleshooting](https://github.com/phundament/app/wiki/FAQ)
+ *  [Support](https://github.com/phundament/app/wiki/Support)
+ *  [Report a bug](https://github.com/phundament/app/issues)
+ *  Composer Repository [packages.phundament.com](http://packages.phundament.com)
+
+### Information
+ *  [CHANGELOG](https://github.com/phundament/app/blob/0.12.4/CHANGELOG.md)
+ *  [Packages in Phundament 0.12.4](https://github.com/phundament/app/blob/0.12.4/composer.lock)
+ *  [License](https://github.com/phundament/app/blob/0.12.4/LICENSE) BSD
+
 ### Links
  *  [Phundament Website](http://phundament.com)
  *  [View at Yii Extensions](http://www.yiiframework.com/extension/phundament/)
  *  [Fork on github](https://github.com/phundament/app)
  *  [Downloads](https://github.com/phundament/app/tags)
- *  [Documentation](https://github.com/phundament/app/wiki/)
  *  [Company Website](http://herzogkommunikation.de)
  *  [Demo Website](http://demo.phundament.com/3.0-dev/)
 
-### Fundamentals
- *  [Requirements](https://github.com/phundament/app/wiki/Requirements)
- *  [FAQ / Troubleshooting](https://github.com/phundament/app/wiki/FAQ)
- *  [Support](https://github.com/phundament/app/wiki/Support)
- *  [Report a bug](https://github.com/phundament/app/issues)
- *  [CHANGELOG](https://github.com/phundament/app/blob/0.12.4/CHANGELOG.md)
- *  [Packages in Phundament 0.12.4](https://github.com/phundament/app/blob/0.12.4/composer.lock)
- *  Composer Repository [packages.phundament.com](http://packages.phundament.com)
- *  [License] BSD(https://github.com/phundament/app/blob/0.12.4/LICENSE)
- 
 ### Social Networks
  *  [Twitter](http://twitter.com/#!/phundament)
  *  [Facebook](http://www.facebook.com/phundament)
