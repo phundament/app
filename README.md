@@ -10,7 +10,7 @@ What is Phundament?
 Phundament 3 is a solid, highly customizable universal application foundation built with [composer](http://getcomposer.org) 
 upon [Yii Framework](http://yiiframework.com). 
 
-It's goal is the seamless integration of extensions and libraries in composer packages packages,
+It's goal is the seamless integration of Yii extensions and libraries bundled in composer packages packages,
 such as [user](http://www.yiiframework.com/extension/yii-user/), 
 [rights](http://www.yiiframework.com/extension/rights/), [yiiext](http://code.google.com/p/yiiext/), 
 [gtc](https://github.com/schmunk42/gii-template-collection), ckeditor, jquery-file-upload, p3widgets and p3media and many, many more ...
