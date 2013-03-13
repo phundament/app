@@ -6,7 +6,9 @@ Upgrade Guide
 
 ### Upgrading from v0.12.x
 
-...
+`composer.json`
+
+        "cloudhead/less.js": "1.3.*",
 
 ### Upgrading from v0.11.x
 
