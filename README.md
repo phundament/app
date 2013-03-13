@@ -51,7 +51,7 @@ Resources
  *  [View at Yii Extensions](http://www.yiiframework.com/extension/phundament/)
  *  [Fork on github](https://github.com/phundament/app)
  *  [Downloads](https://github.com/phundament/app/tags)
- *  [Wiki](https://github.com/phundament/app/wiki/)
+ *  [Documentation](https://github.com/phundament/app/wiki/)
  *  [Company Website](http://herzogkommunikation.de)
  *  [Demo Website](http://demo.phundament.com/3.0-dev/)
 
