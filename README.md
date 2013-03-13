@@ -51,19 +51,21 @@ Resources
  *  [View at Yii Extensions](http://www.yiiframework.com/extension/phundament/)
  *  [Fork on github](https://github.com/phundament/app)
  *  [Downloads](https://github.com/phundament/app/tags)
- *  [Wiki](https://github.com/schmunk42/phundament/wiki/)
+ *  [Wiki](https://github.com/phundament/app/wiki/)
  *  [Company Website](http://herzogkommunikation.de)
  *  [Demo Website](http://demo.phundament.com/3.0-dev/)
 
 ### Fundamentals
  *  [Requirements](https://github.com/phundament/app/wiki/Requirements)
  *  [FAQ / Troubleshooting](https://github.com/phundament/app/wiki/FAQ)
+ *  [Support](https://github.com/phundament/app/wiki/Support)
  *  [Report a bug](https://github.com/phundament/app/issues)
- *  [Support](https://github.com/schmunk42/phundament/wiki/Support)
- *  License [BSD](https://github.com/phundament/app/blob/0.12.4/LICENSE)
+
  *  [CHANGELOG](https://github.com/phundament/app/blob/0.12.4/CHANGELOG.md)
  *  [Packages in Phundament 0.12.4](https://github.com/phundament/app/blob/0.12.4/composer.lock)
  *  Extensions [packages.phundament.com](http://packages.phundament.com)
+
+ *  License [BSD](https://github.com/phundament/app/blob/0.12.4/LICENSE)
  
 ### Social Networks
  *  [Twitter](http://twitter.com/#!/phundament)
