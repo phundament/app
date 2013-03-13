@@ -39,7 +39,7 @@ Documentation
 Demo
 ----
 
- * Try a test-drive at the [Frontend Demo Page](http://demo.phundament.com/3.0-dev)
+ * Try a test-drive at the [Demo Page](http://demo.phundament.com/3.0-dev)
    * Login with `editor` / `editor` or register by e-mail.
 
 
