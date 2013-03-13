@@ -62,8 +62,8 @@ Resources
  *  [Report a bug](https://github.com/phundament/app/issues)
  *  [CHANGELOG](https://github.com/phundament/app/blob/0.12.4/CHANGELOG.md)
  *  [Packages in Phundament 0.12.4](https://github.com/phundament/app/blob/0.12.4/composer.lock)
- *  Extensions [packages.phundament.com](http://packages.phundament.com)
- *  License [BSD](https://github.com/phundament/app/blob/0.12.4/LICENSE)
+ *  Composer Repository [packages.phundament.com](http://packages.phundament.com)
+ *  [License] BSD(https://github.com/phundament/app/blob/0.12.4/LICENSE)
  
 ### Social Networks
  *  [Twitter](http://twitter.com/#!/phundament)
