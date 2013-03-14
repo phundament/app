@@ -7,7 +7,7 @@ Phundament
 What is Phundament?
 -------------------
 
-Phundament 3 is a solid, highly customizable universal application foundation built with [composer](http://getcomposer.org) 
+Phundament is a solid, highly customizable universal application foundation built with [composer](http://getcomposer.org) 
 upon [Yii Framework](http://yiiframework.com). 
 
 It's goal is the seamless integration of Yii extensions and libraries bundled in composer packages packages,
