@@ -26,6 +26,9 @@ Upgrade Guide
         'application.modules.user.components' => 'application.vendor.mishamx.yii-user.components',
         'ext.editable.assets.js.locales' => 'application.vendor.vitalets.yii-bootstrap-editable.assets.js.locales',
         'ext.editable.assets' => 'application.vendor.vitalets.yii-bootstrap-editable.assets',
+        'echosen' => 'vendor.ifdattic.echosen',
+        'echosen.EChosen' => 'vendor.ifdattic.echosen.EChosen',
+        'ext.EChosen' => 'vendor.ifdattic.echosen',
 
 `components`
 
