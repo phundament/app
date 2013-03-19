@@ -34,7 +34,7 @@ php composer.phar install
 Documentation
 -------------
 
- * [The Definitive Guide to Phundament](https://github.com/phundament/app/wiki).
+ * [The Definitive Guide to Phundament](https://github.com/phundament/app/wiki)
 
 Demo
 ----
