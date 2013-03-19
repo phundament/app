@@ -24,7 +24,7 @@ Quick-Start
 php composer.phar install
 ```
 3. Open `phundament-app/www/index.php` in your browser
-4. [Manage your application](https://github.com/phundament/app/wiki/Content-Management).
+4. [Manage your application](https://github.com/phundament/app/wiki/Content-Management)
 
 *Note: if you want to install Phundament 3 with a MySQL database, you have to update your config first, see the [Setup](https://github.com/phundament/app/wiki/Setup) section in our wiki.*
 *You may add the `--dev` and `--prefer-source` options on development systems.*
