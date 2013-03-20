@@ -79,16 +79,16 @@
         },
         {
             "name": "phundament/gii-template-collection",
-            "version": "0.8.5",
+            "version": "0.8.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/gii-template-collection.git",
-                "reference": "0.8.5"
+                "reference": "0.8.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/gii-template-collection/zipball/0.8.5",
-                "reference": "0.8.5",
+                "url": "https://api.github.com/repos/schmunk42/gii-template-collection/zipball/0.8.6",
+                "reference": "0.8.6",
                 "shasum": ""
             },
             "require": {
@@ -116,10 +116,10 @@
                 "package"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/gii-template-collection/tree/master",
+                "source": "https://github.com/schmunk42/gii-template-collection/tree/0.8.6",
                 "issues": "https://github.com/schmunk42/gii-template-collection/issues"
             },
-            "time": "2013-03-11 13:38:04"
+            "time": "2013-03-11 19:09:19"
         },
         {
             "name": "phundament/jquery-file-upload",
@@ -452,12 +452,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vitalets/yii-bootstrap-editable.git",
-                "reference": "a61601b0d2350ca0a496b25b019d481aaa4da529"
+                "reference": "24f8fbaa111f53a3325fc02351add4e20bcba6be"
             },
             "type": "yii-extension",
             "description": "Yii extension for Bootstrap-editable plugin",
             "homepage": "https://github.com/vitalets/yii-bootstrap-editable",
-            "time": "2012-12-27 09:22:45"
+            "time": "2013-03-14 06:44:35"
         },
         {
             "name": "yiiext/fancybox-widget",
@@ -640,12 +640,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Behat/Mink.git",
-                "reference": "de7c3f2596837b2135ec49d45dfb5e745d928fbf"
+                "reference": "fb92a89923068cb21811a8830063602e90d83dab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Behat/Mink/zipball/de7c3f2596837b2135ec49d45dfb5e745d928fbf",
-                "reference": "de7c3f2596837b2135ec49d45dfb5e745d928fbf",
+                "url": "https://api.github.com/repos/Behat/Mink/zipball/fb92a89923068cb21811a8830063602e90d83dab",
+                "reference": "fb92a89923068cb21811a8830063602e90d83dab",
                 "shasum": ""
             },
             "require": {
@@ -687,7 +687,7 @@
                 "testing",
                 "web"
             ],
-            "time": "2013-03-08 10:24:42"
+            "time": "2013-03-11 19:39:00"
         },
         {
             "name": "behat/mink-browserkit-driver",
@@ -695,12 +695,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Behat/MinkBrowserKitDriver.git",
-                "reference": "v1.0.4"
+                "reference": "2c89051d35f39d80f0f51c72cdc536b32015f278"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Behat/MinkBrowserKitDriver/zipball/v1.0.4",
-                "reference": "v1.0.4",
+                "url": "https://api.github.com/repos/Behat/MinkBrowserKitDriver/zipball/2c89051d35f39d80f0f51c72cdc536b32015f278",
+                "reference": "2c89051d35f39d80f0f51c72cdc536b32015f278",
                 "shasum": ""
             },
             "require": {
@@ -742,7 +742,7 @@
                 "browser",
                 "testing"
             ],
-            "time": "2013-03-08 09:50:41"
+            "time": "2013-03-13 10:34:15"
         },
         {
             "name": "behat/mink-goutte-driver",
@@ -802,12 +802,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Behat/MinkSeleniumDriver.git",
-                "reference": "v1.0.5"
+                "reference": "d6bc5854a45e791173355ab46535b9ffb85cde7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Behat/MinkSeleniumDriver/zipball/v1.0.5",
-                "reference": "v1.0.5",
+                "url": "https://api.github.com/repos/Behat/MinkSeleniumDriver/zipball/d6bc5854a45e791173355ab46535b9ffb85cde7a",
+                "reference": "d6bc5854a45e791173355ab46535b9ffb85cde7a",
                 "shasum": ""
             },
             "require": {
@@ -847,7 +847,7 @@
                 "selenium",
                 "testing"
             ],
-            "time": "2013-03-08 10:15:49"
+            "time": "2013-03-13 10:34:48"
         },
         {
             "name": "behat/mink-selenium2-driver",
@@ -1007,12 +1007,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Goutte.git",
-                "reference": "v1.0.1"
+                "reference": "3ebd52cee0c997d4e4c5e2fb5f10ee9de0e3fc46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Goutte/zipball/v1.0.1",
-                "reference": "v1.0.1",
+                "url": "https://api.github.com/repos/fabpot/Goutte/zipball/3ebd52cee0c997d4e4c5e2fb5f10ee9de0e3fc46",
+                "reference": "3ebd52cee0c997d4e4c5e2fb5f10ee9de0e3fc46",
                 "shasum": ""
             },
             "require": {
@@ -1051,7 +1051,7 @@
             "keywords": [
                 "scraper"
             ],
-            "time": "2013-03-08 08:00:58"
+            "time": "2013-03-15 10:18:26"
         },
         {
             "name": "guzzle/guzzle",
@@ -1059,12 +1059,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "v3.3.1"
+                "reference": "20f4ff381689ec61936f2bb3edcb5cb7c1e6439f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/v3.3.1",
-                "reference": "v3.3.1",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/20f4ff381689ec61936f2bb3edcb5cb7c1e6439f",
+                "reference": "20f4ff381689ec61936f2bb3edcb5cb7c1e6439f",
                 "shasum": ""
             },
             "require": {
@@ -1144,7 +1144,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2013-03-10 23:05:38"
+            "time": "2013-03-19 18:28:11"
         },
         {
             "name": "instaclick/php-webdriver",
@@ -1187,7 +1187,7 @@
                 {
                     "name": "Anthon Pang",
                     "email": "apang@softwaredevelopment.ca",
-                    "role": "developer"
+                    "role": "Fork Maintainer"
                 }
             ],
             "description": "PHP WebDriver for Selenium 2",
@@ -1219,12 +1219,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "041aa3930f8d2b466ae897440ec9471d5159c5bf"
+                "reference": "dd0b216e0229a24178c2f0782f8a7172c7ed1c96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/041aa3930f8d2b466ae897440ec9471d5159c5bf",
-                "reference": "041aa3930f8d2b466ae897440ec9471d5159c5bf",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/dd0b216e0229a24178c2f0782f8a7172c7ed1c96",
+                "reference": "dd0b216e0229a24178c2f0782f8a7172c7ed1c96",
                 "shasum": ""
             },
             "require": {
@@ -1273,7 +1273,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2013-02-26 10:18:11"
+            "time": "2013-03-18 18:06:02"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -1512,12 +1512,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "2c67e52445416bb7c14046b432acd7eb79e4e612"
+                "reference": "a09a260b6b1a3fa31f24b59c03da8d137f4fbfb2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/2c67e52445416bb7c14046b432acd7eb79e4e612",
-                "reference": "2c67e52445416bb7c14046b432acd7eb79e4e612",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/a09a260b6b1a3fa31f24b59c03da8d137f4fbfb2",
+                "reference": "a09a260b6b1a3fa31f24b59c03da8d137f4fbfb2",
                 "shasum": ""
             },
             "require": {
@@ -1531,7 +1531,7 @@
                 "phpunit/php-text-template": ">=1.1.1",
                 "phpunit/php-timer": ">=1.0.2,<1.1.0",
                 "phpunit/phpunit-mock-objects": ">=1.2.0,<1.3.0",
-                "symfony/yaml": ">=2.2.0"
+                "symfony/yaml": ">=2.0.0,<2.3.0"
             },
             "require-dev": {
                 "pear-pear/pear": "1.9.4"
@@ -1578,7 +1578,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2013-03-11 07:06:05"
+            "time": "2013-03-19 10:54:27"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -1714,16 +1714,16 @@
         },
         {
             "name": "schmunk42/database-command",
-            "version": "0.8.6",
+            "version": "0.8.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/database-command.git",
-                "reference": "0.8.6"
+                "reference": "0.8.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/database-command/zipball/0.8.6",
-                "reference": "0.8.6",
+                "url": "https://api.github.com/repos/schmunk42/database-command/zipball/0.8.7",
+                "reference": "0.8.7",
                 "shasum": ""
             },
             "require": {
@@ -1742,10 +1742,10 @@
             ],
             "description": "Yii command to create database migrations from existing schema",
             "support": {
-                "source": "https://github.com/schmunk42/database-command/tree/0.8.6",
+                "source": "https://github.com/schmunk42/database-command/tree/0.8.7",
                 "issues": "https://github.com/schmunk42/database-command/issues"
             },
-            "time": "2013-01-17 22:55:22"
+            "time": "2013-03-13 20:55:01"
         },
         {
             "name": "symfony/browser-kit",
@@ -1754,12 +1754,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/BrowserKit.git",
-                "reference": "63ea9f3b5ca08ddbd336cd9957c2409fcb435757"
+                "reference": "b0aa5249d957930f93c0c2a3f1f10db0721cb6e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/BrowserKit/zipball/63ea9f3b5ca08ddbd336cd9957c2409fcb435757",
-                "reference": "63ea9f3b5ca08ddbd336cd9957c2409fcb435757",
+                "url": "https://api.github.com/repos/symfony/BrowserKit/zipball/b0aa5249d957930f93c0c2a3f1f10db0721cb6e9",
+                "reference": "b0aa5249d957930f93c0c2a3f1f10db0721cb6e9",
                 "shasum": ""
             },
             "require": {
@@ -1800,7 +1800,7 @@
             ],
             "description": "Symfony BrowserKit Component",
             "homepage": "http://symfony.com",
-            "time": "2013-02-23 06:47:02"
+            "time": "2013-03-20 14:03:03"
         },
         {
             "name": "symfony/console",
@@ -1809,12 +1809,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "aa28bbe2c3c4210f9e9f44df16d71d63c53adf9b"
+                "reference": "4285104166a0741f85ba9aa176a12a9f2e4df7c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/aa28bbe2c3c4210f9e9f44df16d71d63c53adf9b",
-                "reference": "aa28bbe2c3c4210f9e9f44df16d71d63c53adf9b",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/4285104166a0741f85ba9aa176a12a9f2e4df7c3",
+                "reference": "4285104166a0741f85ba9aa176a12a9f2e4df7c3",
                 "shasum": ""
             },
             "require": {
@@ -1847,7 +1847,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2013-03-06 17:50:21"
+            "time": "2013-03-20 14:03:03"
         },
         {
             "name": "symfony/css-selector",
@@ -2099,17 +2099,17 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "dev-master",
+            "version": "2.2.x-dev",
             "target-dir": "Symfony/Component/Yaml",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "f198ac28048eeceae852419c076123aaee59cd1c"
+                "reference": "bf9bdaaa9b6e5e6aeda5f9e995c00ce4b9befcaf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/f198ac28048eeceae852419c076123aaee59cd1c",
-                "reference": "f198ac28048eeceae852419c076123aaee59cd1c",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/bf9bdaaa9b6e5e6aeda5f9e995c00ce4b9befcaf",
+                "reference": "bf9bdaaa9b6e5e6aeda5f9e995c00ce4b9befcaf",
                 "shasum": ""
             },
             "require": {
@@ -2118,7 +2118,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3-dev"
+                    "dev-master": "2.2-dev"
                 }
             },
             "autoload": {
@@ -2142,7 +2142,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2013-01-31 21:39:01"
+            "time": "2013-03-06 17:38:49"
         },
         {
             "name": "twitter/bootstrap",
