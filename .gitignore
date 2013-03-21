@@ -1,9 +1,9 @@
 nbproject
 .DS_Store
 .idea
-/config/local.php
-/data/
 /vendor/
-/runtime/
+/app/config/local.php
+/app/data/
+/app/runtime/
 /www/runtime/
 /www/assets/
