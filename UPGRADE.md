@@ -7,8 +7,8 @@ Upgrade Guide
 ### Upgrading from v0.13.x
 
 `config/main.php`
-Define a `vendor` and a `root` alias.
-Use only `vendor` alias, not `application.vendor` anymore.
+ * Define a `vendor` and a `root` alias.
+ * Use only `vendor` alias, not `application.vendor` anymore.
 
 ### Upgrading from v0.12.x
 
