@@ -7,7 +7,7 @@
 /www/runtime/
 /www/assets/
 
-/app/tests/codeception/tests/_log
+/app/tests/codeception/_log
 
 
 nbproject
