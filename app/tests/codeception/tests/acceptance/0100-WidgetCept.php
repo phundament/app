@@ -8,7 +8,7 @@ $I->click('.form INPUT[type=submit]');
 $I->see('Your Profile');
 $I->dontSee('Login');
 
-$I->amOnPage('index.php/');
+$I->amOnPage('index.php');
 $I->click('Create Widget');
 $I->see('P3 Widget Create');
 $I->click('Save');
