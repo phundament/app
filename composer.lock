@@ -1,5 +1,5 @@
 {
-    "hash": "f9b7b42bce9ee29184352f3e01f044ed",
+    "hash": "07616c2caad4ca5be8176aa11547b1b9",
     "packages": [
         {
             "name": "anggiaj/eselect2",
@@ -136,16 +136,16 @@
         },
         {
             "name": "phundament/p3admin",
-            "version": "0.10.0",
+            "version": "0.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3admin.git",
-                "reference": "0.10.0"
+                "reference": "0.11.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3admin/zipball/0.10.0",
-                "reference": "0.10.0",
+                "url": "https://api.github.com/repos/schmunk42/p3admin/zipball/0.11.0",
+                "reference": "0.11.0",
                 "shasum": ""
             },
             "require": {
@@ -175,10 +175,10 @@
                 "yii"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3admin/tree/master",
+                "source": "https://github.com/schmunk42/p3admin/tree/0.11.0",
                 "issues": "https://github.com/schmunk42/p3admin/issues"
             },
-            "time": "2013-02-27 00:36:00"
+            "time": "2013-03-21 13:18:12"
         },
         {
             "name": "phundament/p3extensions",
