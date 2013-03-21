@@ -1,8 +1,8 @@
 paths:
-    tests: tests
-    log: tests/_log
-    data: tests/_data
-    helpers: tests/_helpers
+    tests: app/tests/codeception/tests
+    log: app/tests/codeception/tests/_log
+    data: app/tests/codeception/tests/_data
+    helpers: app/tests/codeception/tests/_helpers
 settings:
     bootstrap: _bootstrap.php
     suite_class: \PHPUnit_Framework_TestSuite
