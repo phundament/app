@@ -1,7 +1,7 @@
 <?php
 $I = new WebGuy($scenario);
 $I->wantTo('create and remove a widget');
-$I->amOnPage('index.php/en/site/login');
+$I->amOnPage('index.php?r=user/login');
 $I->fillField('UserLogin[username]', 'admin');
 $I->fillField('UserLogin[password]','admin');
 $I->click('.form INPUT[type=submit]');
