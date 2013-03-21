@@ -1,5 +1,5 @@
 {
-    "hash": "d7eaba2188f5a2332435ef98fbf87543",
+    "hash": "f9b7b42bce9ee29184352f3e01f044ed",
     "packages": [
         {
             "name": "anggiaj/eselect2",
@@ -640,12 +640,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Behat/Mink.git",
-                "reference": "fb92a89923068cb21811a8830063602e90d83dab"
+                "reference": "b78871c371dc14a0b9c95ef0d5cd1be1f3ed637f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Behat/Mink/zipball/fb92a89923068cb21811a8830063602e90d83dab",
-                "reference": "fb92a89923068cb21811a8830063602e90d83dab",
+                "url": "https://api.github.com/repos/Behat/Mink/zipball/b78871c371dc14a0b9c95ef0d5cd1be1f3ed637f",
+                "reference": "b78871c371dc14a0b9c95ef0d5cd1be1f3ed637f",
                 "shasum": ""
             },
             "require": {
@@ -687,7 +687,7 @@
                 "testing",
                 "web"
             ],
-            "time": "2013-03-11 19:39:00"
+            "time": "2013-03-20 21:21:35"
         },
         {
             "name": "behat/mink-browserkit-driver",
@@ -1059,12 +1059,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "20f4ff381689ec61936f2bb3edcb5cb7c1e6439f"
+                "reference": "f582f74f0789ddee11edcd7d3a87b68f32a06047"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/20f4ff381689ec61936f2bb3edcb5cb7c1e6439f",
-                "reference": "20f4ff381689ec61936f2bb3edcb5cb7c1e6439f",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/f582f74f0789ddee11edcd7d3a87b68f32a06047",
+                "reference": "f582f74f0789ddee11edcd7d3a87b68f32a06047",
                 "shasum": ""
             },
             "require": {
@@ -1100,6 +1100,7 @@
                 "doctrine/cache": "*",
                 "monolog/monolog": "1.*",
                 "phpunit/phpunit": "3.7.*",
+                "psr/log": "1.0.*",
                 "symfony/class-loader": "*",
                 "zend/zend-cache1": "1.12",
                 "zend/zend-log1": "1.12",
@@ -1144,7 +1145,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2013-03-19 18:28:11"
+            "time": "2013-03-21 00:13:21"
         },
         {
             "name": "instaclick/php-webdriver",

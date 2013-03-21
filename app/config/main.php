@@ -23,14 +23,15 @@ $mainConfig = array(
     ),
     'aliases' => array(
         // composer
-        'vendor' => 'application.vendor',
-        'bootstrap' => 'application.vendor.crisu83.yii-bootstrap',
+        'root' => $applicationDirectory.'/..',
+        'vendor' => $applicationDirectory.'/../vendor',
+        'bootstrap' => 'vendor.crisu83.yii-bootstrap',
         // p3widgets
-        'jsonEditorView' => 'application.vendor.phundament.p3extensions.widgets.jsonEditorView',
-        'ckeditor' => 'application.vendor.phundament.p3extensions.widgets.ckeditor',
+        'jsonEditorView' => 'vendor.phundament.p3extensions.widgets.jsonEditorView',
+        'ckeditor' => 'vendor.phundament.p3extensions.widgets.ckeditor',
         // p3media
         'jquery-file-upload' => 'vendor.phundament.jquery-file-upload',
-        'jquery-file-upload-widget' => 'application.vendor.phundament.p3extensions.widgets.jquery-file-upload',
+        'jquery-file-upload-widget' => 'vendor.phundament.p3extensions.widgets.jquery-file-upload',
 
         // fixing 'hardcoded aliases' from extension (note: you have to use the full path)
         'application.modules.user.views.asset' => 'vendor.mishamx.yii-user.views.asset',
@@ -180,7 +181,7 @@ $mainConfig = array(
             ),
         ),
         'rights' => array(
-            'class' => 'application.vendor.crisu83.yii-rights.RightsModule',
+            'class' => 'vendor.crisu83.yii-rights.RightsModule',
             'appLayout' => '//layouts/main',
             'userIdColumn' => 'id',
             'userClass' => 'User',
@@ -189,7 +190,7 @@ $mainConfig = array(
             #'superuserName' => 'admin'
         ),
         'user' => array(
-            'class' => 'application.vendor.mishamx.yii-user.UserModule',
+            'class' => 'vendor.mishamx.yii-user.UserModule',
             'activeAfterRegister' => false,
         ),
     ),
@@ -297,7 +298,7 @@ $mainConfig = array(
         'user' => array(
             // enable cookie-based authentication
             'class' => 'RWebUser', // mishamx/yii-rights: Allows super users access implicitly.
-            'behaviors' => array('application.vendor.schmunk42.web-user-behavior.WebUserBehavior'), // compatibility behavior for yii-user and yii-rights
+            'behaviors' => array('vendor.schmunk42.web-user-behavior.WebUserBehavior'), // compatibility behavior for yii-user and yii-rights
             'allowAutoLogin' => true,
             'loginUrl' => array('/user/login'),
         ),
