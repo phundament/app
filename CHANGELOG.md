@@ -6,6 +6,11 @@ Changelog
 
 ### phundament/app
 
+#### 0.14 (March 2013)
+
+ * [UPD] Moved files to app folder
+ * [EHN] Updated testing suite
+
 #### 0.13 (March 2013)
 
  * [UPD] Moved files from command into project root
