@@ -86,7 +86,7 @@ return array(
             'post-update'                           => array('yiic', 'migrate'),
             'post-install'                          => array('yiic', 'migrate'),
             'yiisoft/yii-install'                   => array('yiic', 'webapp', 'create',
-                                                             realpath(dirname(__FILE__) . '/..'),
+                                                             realpath(dirname(__FILE__) . '/../../'),
                                                              'git',
                                                              '--interactive=0'),
             'phundament/themes/p3bootstrap-install' => array('yiic', 'p3bootstrap'),

@@ -132,12 +132,14 @@ EOD;
 	{
 		@mkdir($targetDir.'/www/assets');
 		@chmod($targetDir.'/www/assets',0777);
-		@mkdir($targetDir.'/runtime');
-		@chmod($targetDir.'/runtime',0777);
-		@mkdir($targetDir.'/data');
-		@chmod($targetDir.'/data',0777);
-		@chmod($targetDir.'/data/default.db',0777);
-		@chmod($targetDir.'/yiic',0755);
+		@mkdir($targetDir.'/www/runtime');
+		@chmod($targetDir.'/www/runtime',0777);
+		@mkdir($targetDir.'/app/runtime');
+		@chmod($targetDir.'/app/runtime',0777);
+		@mkdir($targetDir.'/app/data');
+		@chmod($targetDir.'/app/data',0777);
+		@chmod($targetDir.'/app/data/default.db',0777);
+		@chmod($targetDir.'/app/yiic',0755);
 	}
 
 	/**
