@@ -4,6 +4,10 @@ Phundament 3 App
 Upgrade Guide
 -------------
 
+### Upgrading from v0.13.x
+
+Use only `vendor` alias, not `application.vendor` anymore.
+
 ### Upgrading from v0.12.x
 
 `composer.json`
