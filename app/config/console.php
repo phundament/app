@@ -9,7 +9,8 @@
 $mainConfig = require('main.php');
 return array(
     'aliases'    => array(
-        'vendor' => 'application.vendor',
+        'vendor' => dirname(__FILE__).'/../../vendor',
+        'webroot' => dirname(__FILE__).'/../../www',
     ),
     'basePath'   => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
     'name'       => 'Phundament Console Application',
@@ -54,6 +55,8 @@ return array(
         // composer callback
         'p3bootstrap' => array(
             'class' => 'vendor.phundament.themes.p3bootstrap.commands.P3BootstrapCommand',
+            'themePath' => 'application.themes',
+            'publicThemePath' => 'webroot.themes',
         ),
         // composer callback
         'p3media'     => array(

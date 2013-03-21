@@ -53,8 +53,14 @@ use Composer\Script\Event;
  * @since 0.7.1
  */
 
-defined('YII_PATH') or define('YII_PATH', dirname(__FILE__).'/../../vendor/yiisoft/yii/framework');
-defined('CONSOLE_CONFIG') or define('CONSOLE_CONFIG', dirname(__FILE__).'/../console.php');
+defined('YII_PATH') or define('YII_PATH', dirname(__FILE__).'/../vendor/yiisoft/yii/framework');
+defined('CONSOLE_CONFIG') or define('CONSOLE_CONFIG', dirname(__FILE__).'/../app/config/console.php');
+
+// we don't check YII_PATH, since it will be downloaded with composer
+
+if (!is_file(CONSOLE_CONFIG)) {
+    throw new \Exception("File '".CONSOLE_CONFIG."' from CONSOLE_CONFIG not found!");
+}
 
 class ComposerCallback
 {
