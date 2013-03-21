@@ -6,7 +6,9 @@ Changelog
 
 ### phundament/app
 
-#### 0.13 (pending)
+#### 0.13 (March 2013)
+
+ * [UPD] Moved files from command into project root
 
 #### 0.12 (February 2013)
 
