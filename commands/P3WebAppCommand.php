@@ -113,6 +113,16 @@ EOD;
 		}
 	}
 
+
+    public function confirm($message,$default=false)
+    {
+        if ($this->interactive == false) {
+            return $default;
+        }
+        return parent::confirm($message, $default);
+    }
+
+
 	/**
 	 * Adjusts created application file and directory permissions
 	 *
@@ -138,12 +148,14 @@ EOD;
 		return realpath(dirname(__FILE__).'/views/p3-webapp');
 	}
 
-
-    public function confirm($message,$default=false)
-    {
-        if ($this->interactive == false) {
-            return $default;
-        }
-        return parent::confirm($message, $default);
-    }
+	/**
+	 * Adds callbacks that will modify source files
+	 *
+	 * @param array $fileList
+	 */
+	protected function addFileModificationCallbacks(&$fileList)
+	{
+        //$fileList['www/index.php']['callback']=array($this,'generateIndex');
+	}
+	
 }
