@@ -81,7 +81,6 @@ $mainConfig = array(
             'params' => array(
                 'widgets' => array(
                     'CWidget' => 'Basic HTML Widget',
-                    'TbHeroUnit' => 'Bootstrap Hero',
                     'TbCarousel' => 'Bootstrap Carousel',
                     'EFancyboxWidget' => 'Fancy Box',
                     // use eg. $> php composer.phar require yiiext/swf-object-widget to get the
