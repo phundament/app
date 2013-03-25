@@ -60,7 +60,7 @@ sourceCode: Yes
 # Add a link to download documentation as a ZIP archive
 download: No
 # Save a checkstyle report of poorly documented elements into a file
-report:
+# report: poorly-documented.xml
 
 # Wipe out the destination directory first
 wipeout: Yes
