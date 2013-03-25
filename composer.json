@@ -35,7 +35,7 @@
         "schmunk42/web-user-behavior":"*",
         "phundament/p3admin":"0.11.*",
         "phundament/p3widgets":"0.10.*",
-        "phundament/p3pages":"0.9.*",
+        "phundament/p3pages":"0.10.*",
         "phundament/p3media":"0.11.*",
         "phundament/themes/p3bootstrap":"0.11.*",
         "phundament/gii-template-collection":"0.8.*",
