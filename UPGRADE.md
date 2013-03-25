@@ -15,6 +15,8 @@ Upgrade Guide
 `composer.json`
 
         "cloudhead/less.js": "1.3.*",
+        
+        "minimum-stability": "dev",
 
 ### Upgrading from v0.11.x
 
