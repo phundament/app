@@ -15,4 +15,4 @@ modules:
         - WebHelper
     config:
         PhpBrowser:
-            url: 'http://localhost/local/phundament/app/www/'
+            url: 'http://ENTER_YOUR_PHUNDAMENT_URL_HERE/'
