@@ -136,16 +136,16 @@
         },
         {
             "name": "phundament/p3admin",
-            "version": "0.11.0",
+            "version": "0.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3admin.git",
-                "reference": "0.11.0"
+                "reference": "0.11.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3admin/zipball/0.11.0",
-                "reference": "0.11.0",
+                "url": "https://api.github.com/repos/schmunk42/p3admin/zipball/0.11.1",
+                "reference": "0.11.1",
                 "shasum": ""
             },
             "require": {
@@ -175,10 +175,10 @@
                 "yii"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3admin/tree/0.11.0",
+                "source": "https://github.com/schmunk42/p3admin/tree/0.11.1",
                 "issues": "https://github.com/schmunk42/p3admin/issues"
             },
-            "time": "2013-03-21 13:18:12"
+            "time": "2013-03-23 00:23:30"
         },
         {
             "name": "phundament/p3extensions",
@@ -186,12 +186,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3extensions.git",
-                "reference": "0.8.3"
+                "reference": "0.9.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3extensions/zipball/0.8.3",
-                "reference": "0.8.3",
+                "url": "https://api.github.com/repos/schmunk42/p3extensions/zipball/0.9.0",
+                "reference": "0.9.0",
                 "shasum": ""
             },
             "require": {
@@ -217,23 +217,23 @@
                 "phundament"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3extensions/tree/0.8.3",
+                "source": "https://github.com/schmunk42/p3extensions/tree/0.9.0",
                 "issues": "https://github.com/schmunk42/p3extensions/issues"
             },
-            "time": "2013-02-28 21:00:27"
+            "time": "2013-03-25 21:42:18"
         },
         {
             "name": "phundament/p3media",
-            "version": "0.11.3",
+            "version": "0.11.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3media.git",
-                "reference": "0.11.3"
+                "reference": "0.11.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3media/zipball/0.11.3",
-                "reference": "0.11.3",
+                "url": "https://api.github.com/repos/schmunk42/p3media/zipball/0.11.4",
+                "reference": "0.11.4",
                 "shasum": ""
             },
             "require": {
@@ -265,23 +265,23 @@
                 "yii"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3media/tree/0.11.3",
+                "source": "https://github.com/schmunk42/p3media/tree/0.11.4",
                 "issues": "https://github.com/schmunk42/p3media/issues"
             },
-            "time": "2013-03-22 02:52:42"
+            "time": "2013-03-25 21:22:29"
         },
         {
             "name": "phundament/p3pages",
-            "version": "0.9.2",
+            "version": "0.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3pages.git",
-                "reference": "0.9.2"
+                "reference": "0.9.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/0.9.2",
-                "reference": "0.9.2",
+                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/0.9.3",
+                "reference": "0.9.3",
                 "shasum": ""
             },
             "require": {
@@ -310,23 +310,23 @@
                 "tree"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3pages/tree/master",
+                "source": "https://github.com/schmunk42/p3pages/tree/0.9.3",
                 "issues": "https://github.com/schmunk42/p3pages/issues"
             },
-            "time": "2013-02-04 01:23:23"
+            "time": "2013-03-23 00:30:27"
         },
         {
             "name": "phundament/p3widgets",
-            "version": "0.10.1",
+            "version": "0.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3widgets.git",
-                "reference": "0.10.1"
+                "reference": "0.10.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/0.10.1",
-                "reference": "0.10.1",
+                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/0.10.2",
+                "reference": "0.10.2",
                 "shasum": ""
             },
             "require": {
@@ -354,23 +354,23 @@
                 "widget"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3widgets/tree/0.10.1",
+                "source": "https://github.com/schmunk42/p3widgets/tree/0.10.2",
                 "issues": "https://github.com/schmunk42/p3widgets/issues"
             },
-            "time": "2013-03-22 03:09:17"
+            "time": "2013-03-23 00:32:31"
         },
         {
             "name": "phundament/themes/p3bootstrap",
-            "version": "0.11.1",
+            "version": "0.11.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3bootstrap.git",
-                "reference": "0.11.1"
+                "reference": "0.11.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3bootstrap/zipball/0.11.1",
-                "reference": "0.11.1",
+                "url": "https://api.github.com/repos/schmunk42/p3bootstrap/zipball/0.11.4",
+                "reference": "0.11.4",
                 "shasum": ""
             },
             "require": {
@@ -401,10 +401,10 @@
                 "theme"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3bootstrap/tree/0.11.1",
+                "source": "https://github.com/schmunk42/p3bootstrap/tree/0.11.4",
                 "issues": "https://github.com/schmunk42/p3bootstrap/issues"
             },
-            "time": "2013-03-22 03:15:03"
+            "time": "2013-03-25 21:46:25"
         },
         {
             "name": "schmunk42/web-user-behavior",
@@ -535,16 +535,16 @@
     "packages-dev": [
         {
             "name": "Codeception/Codeception",
-            "version": "1.5.6",
+            "version": "1.5.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Codeception/Codeception.git",
-                "reference": "1.5.6"
+                "reference": "1.5.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Codeception/Codeception/zipball/1.5.6",
-                "reference": "1.5.6",
+                "url": "https://api.github.com/repos/Codeception/Codeception/zipball/1.5.7",
+                "reference": "1.5.7",
                 "shasum": ""
             },
             "require": {
@@ -592,7 +592,7 @@
                 "functional testing",
                 "unit testing"
             ],
-            "time": "2013-03-11 01:48:28"
+            "time": "2013-03-25 14:10:13"
         },
         {
             "name": "alexandresalome/php-selenium",
@@ -640,12 +640,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Behat/Mink.git",
-                "reference": "b78871c371dc14a0b9c95ef0d5cd1be1f3ed637f"
+                "reference": "811418ed8254007bfd5a15bc2f6c5445980a789f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Behat/Mink/zipball/b78871c371dc14a0b9c95ef0d5cd1be1f3ed637f",
-                "reference": "b78871c371dc14a0b9c95ef0d5cd1be1f3ed637f",
+                "url": "https://api.github.com/repos/Behat/Mink/zipball/811418ed8254007bfd5a15bc2f6c5445980a789f",
+                "reference": "811418ed8254007bfd5a15bc2f6c5445980a789f",
                 "shasum": ""
             },
             "require": {
@@ -687,7 +687,7 @@
                 "testing",
                 "web"
             ],
-            "time": "2013-03-20 21:21:35"
+            "time": "2013-03-25 12:27:59"
         },
         {
             "name": "behat/mink-browserkit-driver",
@@ -1059,12 +1059,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "f582f74f0789ddee11edcd7d3a87b68f32a06047"
+                "reference": "6d0908cc56750cdde039f0e92f0f2e0e3a4cc45e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/f582f74f0789ddee11edcd7d3a87b68f32a06047",
-                "reference": "f582f74f0789ddee11edcd7d3a87b68f32a06047",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/6d0908cc56750cdde039f0e92f0f2e0e3a4cc45e",
+                "reference": "6d0908cc56750cdde039f0e92f0f2e0e3a4cc45e",
                 "shasum": ""
             },
             "require": {
@@ -1145,7 +1145,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2013-03-21 00:13:21"
+            "time": "2013-03-25 20:11:22"
         },
         {
             "name": "instaclick/php-webdriver",
@@ -1220,12 +1220,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "dd0b216e0229a24178c2f0782f8a7172c7ed1c96"
+                "reference": "d13bd6e1acb4b7e413320d0b8854d39b1b5d8979"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/dd0b216e0229a24178c2f0782f8a7172c7ed1c96",
-                "reference": "dd0b216e0229a24178c2f0782f8a7172c7ed1c96",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/d13bd6e1acb4b7e413320d0b8854d39b1b5d8979",
+                "reference": "d13bd6e1acb4b7e413320d0b8854d39b1b5d8979",
                 "shasum": ""
             },
             "require": {
@@ -1274,7 +1274,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2013-03-18 18:06:02"
+            "time": "2013-03-24 12:38:38"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -1513,12 +1513,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "a09a260b6b1a3fa31f24b59c03da8d137f4fbfb2"
+                "reference": "3.7.19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/a09a260b6b1a3fa31f24b59c03da8d137f4fbfb2",
-                "reference": "a09a260b6b1a3fa31f24b59c03da8d137f4fbfb2",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/3.7.19",
+                "reference": "3.7.19",
                 "shasum": ""
             },
             "require": {
@@ -1579,7 +1579,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2013-03-19 10:54:27"
+            "time": "2013-03-25 11:45:06"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -1810,16 +1810,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "4285104166a0741f85ba9aa176a12a9f2e4df7c3"
+                "reference": "adbc260c08000aaa75c5f0db8347a29c21d16692"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/4285104166a0741f85ba9aa176a12a9f2e4df7c3",
-                "reference": "4285104166a0741f85ba9aa176a12a9f2e4df7c3",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/adbc260c08000aaa75c5f0db8347a29c21d16692",
+                "reference": "adbc260c08000aaa75c5f0db8347a29c21d16692",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "symfony/event-dispatcher": ">=2.1,<3.0"
             },
             "type": "library",
             "extra": {
@@ -1848,7 +1851,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2013-03-20 14:03:03"
+            "time": "2013-03-25 20:03:44"
         },
         {
             "name": "symfony/css-selector",
@@ -1904,12 +1907,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/DomCrawler.git",
-                "reference": "35fe9f9c57421bf70ce9a43c614f41d295b4d984"
+                "reference": "c9698b3b5b93d18250f627a9001c88fe5bc87908"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/DomCrawler/zipball/35fe9f9c57421bf70ce9a43c614f41d295b4d984",
-                "reference": "35fe9f9c57421bf70ce9a43c614f41d295b4d984",
+                "url": "https://api.github.com/repos/symfony/DomCrawler/zipball/c9698b3b5b93d18250f627a9001c88fe5bc87908",
+                "reference": "c9698b3b5b93d18250f627a9001c88fe5bc87908",
                 "shasum": ""
             },
             "require": {
@@ -1948,7 +1951,7 @@
             ],
             "description": "Symfony DomCrawler Component",
             "homepage": "http://symfony.com",
-            "time": "2013-03-06 19:37:18"
+            "time": "2013-03-23 07:35:36"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -2011,12 +2014,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Finder.git",
-                "reference": "0b33214ce24e33b6d11fd7de8784ff34ba16711f"
+                "reference": "a066c83f57c82ce49b5abc6343a43c132f771c24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Finder/zipball/0b33214ce24e33b6d11fd7de8784ff34ba16711f",
-                "reference": "0b33214ce24e33b6d11fd7de8784ff34ba16711f",
+                "url": "https://api.github.com/repos/symfony/Finder/zipball/a066c83f57c82ce49b5abc6343a43c132f771c24",
+                "reference": "a066c83f57c82ce49b5abc6343a43c132f771c24",
                 "shasum": ""
             },
             "require": {
@@ -2049,7 +2052,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "http://symfony.com",
-            "time": "2013-03-01 06:43:27"
+            "time": "2013-03-23 07:42:25"
         },
         {
             "name": "symfony/process",
@@ -2058,12 +2061,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Process.git",
-                "reference": "6ebe4ba544cfc0dd25bfe49402da4d5267ee1b43"
+                "reference": "46b24c5905096914d467b769027e36433c7b5421"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Process/zipball/6ebe4ba544cfc0dd25bfe49402da4d5267ee1b43",
-                "reference": "6ebe4ba544cfc0dd25bfe49402da4d5267ee1b43",
+                "url": "https://api.github.com/repos/symfony/Process/zipball/46b24c5905096914d467b769027e36433c7b5421",
+                "reference": "46b24c5905096914d467b769027e36433c7b5421",
                 "shasum": ""
             },
             "require": {
@@ -2096,7 +2099,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "http://symfony.com",
-            "time": "2013-02-18 21:28:20"
+            "time": "2013-03-23 08:06:49"
         },
         {
             "name": "symfony/yaml",
@@ -2105,12 +2108,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "bf9bdaaa9b6e5e6aeda5f9e995c00ce4b9befcaf"
+                "reference": "3f6d4ab3fd8226ab4ba0be9fc8a238f4338b79ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/bf9bdaaa9b6e5e6aeda5f9e995c00ce4b9befcaf",
-                "reference": "bf9bdaaa9b6e5e6aeda5f9e995c00ce4b9befcaf",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/3f6d4ab3fd8226ab4ba0be9fc8a238f4338b79ab",
+                "reference": "3f6d4ab3fd8226ab4ba0be9fc8a238f4338b79ab",
                 "shasum": ""
             },
             "require": {
@@ -2143,7 +2146,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2013-03-06 17:38:49"
+            "time": "2013-03-23 07:49:54"
         },
         {
             "name": "twitter/bootstrap",
