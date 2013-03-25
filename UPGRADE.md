@@ -4,6 +4,12 @@ Phundament 3 App
 Upgrade Guide
 -------------
 
+### Upgrading from v0.14.x
+
+ * update your copy of `app/themes/frontend/layouts/_menu.php`
+   * see `vendor/phundament/themes/p3bootstrap/layouts/_menu.php`
+   * Note: running `app/yiic p3bootstrap` may overwrite your exiting changes
+
 ### Upgrading from v0.13.x
 
 `config/main.php`
