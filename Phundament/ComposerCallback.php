@@ -73,9 +73,8 @@ class ComposerCallback
     {
         $composer = $event->getComposer();
         // do stuff
-        echo "Phundament 3 Installer\n\n";
-        echo " * download packages specified in composer.json
- * trigger composer callbacks\n\n";
+        echo "Welcome to Phundament\n\n";
+        echo "Installing application...\n\n";
 
         self::runHook('pre-install');
     }
@@ -88,7 +87,7 @@ class ComposerCallback
     public static function postInstall(Event $event)
     {
         self::runHook('post-install');
-        echo "\n\nInstallation completed.\n\nThank you for choosing Phundament 3!\n\n";
+        echo "\n\nInstallation completed.\n\nThank you for choosing Phundament!\n\n";
     }
 
     /**
@@ -99,7 +98,7 @@ class ComposerCallback
      */
     public static function preUpdate(Event $event)
     {
-        echo "Welcome to Phundament Installation 3 via composer\n\nUpdating your application to the lastest available packages...\n";
+        echo "Welcome to Phundament\n\nUpdating packages...\n\n";
         self::runHook('pre-update');
     }
 
