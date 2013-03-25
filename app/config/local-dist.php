@@ -11,9 +11,9 @@ return array(
     ),
     // application components
     'components' => array(
-        'assetManager' => array(
+        /*'assetManager' => array(
             'linkAssets' => true
-        ),
+        ),*/
         /* 'db' => array(
           // MySQL
           'connectionString' => 'mysql:host=localhost;dbname=p3',
@@ -41,7 +41,7 @@ return array(
             'options' => array(
                 //'forceCompile' => true,
                 'nodePath'     => '/opt/local/bin/node',
-                'compilerPath' => $applicationDirectory . '/vendor/cloudhead/less.js/bin/lessc',
+                'compilerPath' => $applicationDirectory . '/../vendor/cloudhead/less.js/bin/lessc',
             ),
         ),*/
         'log'          => array(
