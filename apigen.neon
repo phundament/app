@@ -13,8 +13,10 @@ exclude:
  - */crisu83/yii-bootstrap/demo/*
  - */yiisoft/yii/demos/*
  - */yiisoft/yii/framework/yiilite.php
+ - */composer/*
 # Don't generate documentation for classes from file or directory with this mask
 skipDocPath:
+ - */yiisoft/yii/*
 # Don't generate documentation for classes with this name prefix
 skipDocPrefix:
 # Character set of source files
@@ -33,7 +35,7 @@ googleCseLabel:
 # Google Analytics tracking code
 googleAnalytics:
 # Template config file
-templateConfig: 'vendor/apigen/apigen/templates/bootstrap/config.neon'
+templateConfig: '/opt/apigen/templates/bootstrap/config.neon'
 # Grouping of classes
 groups: packages
 # List of allowed HTML tags in documentation
