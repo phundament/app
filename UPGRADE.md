@@ -10,7 +10,7 @@ Upgrade Guide
 
 ### Upgrading from v0.14.x
 
- * update your copy of `app/themes/frontend/layouts/_menu.php`
+ * update your copy of `app/themes/frontend/views/layouts/_menu.php`
    * see `vendor/phundament/themes/p3bootstrap/layouts/_menu.php`
    * Note: running `app/yiic p3bootstrap` may overwrite your exiting changes
 
