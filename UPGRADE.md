@@ -9,6 +9,8 @@ Upgrade Guide
  * update your copy of `app/themes/frontend/layouts/_menu.php`
    * see `vendor/phundament/themes/p3bootstrap/layouts/_menu.php`
    * Note: running `app/yiic p3bootstrap` may overwrite your exiting changes
+
+`composer.json`
  * for applications which should not be updated, edit the version constraint for `"phundament/p3extensions": "0.8.*"` 
 
 ### Upgrading from v0.13.x
