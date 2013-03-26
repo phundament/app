@@ -46,6 +46,7 @@ Resources
 
 ### Fundamentals
  *  [Documentation](https://github.com/phundament/app/wiki/)
+ *  [API Class Reference](http://docs.phundament.com/3.0)
  *  [FAQ / Troubleshooting](https://github.com/phundament/app/wiki/FAQ)
  *  [Support](https://github.com/phundament/app/wiki/Support)
  *  [Report a bug](https://github.com/phundament/app/issues)
