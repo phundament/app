@@ -1,5 +1,9 @@
-Phundament 3 App
-================
+Upgrading Phundament 
+====================
+
+If you want to upgrade your Phundament Application, adjust the version constraints in `composer.json` and follow this 
+document, if you're experiencing problems.
+
 
 Upgrade Guide
 -------------
@@ -16,7 +20,8 @@ Upgrade Guide
 ### Upgrading from v0.13.x
 
 `config/main.php`
- * Define a `vendor` and a `root` alias.
+ * Define a `vendor` and a `root` alias (see [here](https://github.com/phundament/app/blob/f589475f5a4d57c9c938b8130a6f0e154c2732be/app/config/main.php#L26) 
+   for a root alias example)
  * Use only `vendor` alias, not `application.vendor` anymore.
 
 ### Upgrading from v0.12.x
