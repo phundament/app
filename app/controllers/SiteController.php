@@ -43,7 +43,11 @@ class SiteController extends Controller
 				echo $error['message'];
 			else
 				$this->render('error', $error);
-		}
+		} else {
+            $error['message'] = "Precondition Failed";
+            $error['code'] = 412;
+            $this->render('error', $error);
+        }
 	}
 
 	/**
