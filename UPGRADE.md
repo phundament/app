@@ -43,7 +43,7 @@ Upgrade Guide
 
 `aliases`
 
-        // yii-user path fixes
+        // hardcoded path fixes for some extensions
         'application.modules.user.views.asset' => 'application.vendor.mishamx.yii-user.views.asset',
         'application.modules.user.components' => 'application.vendor.mishamx.yii-user.components',
         'ext.editable.assets.js.locales' => 'application.vendor.vitalets.yii-bootstrap-editable.assets.js.locales',
