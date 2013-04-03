@@ -1,5 +1,5 @@
 {
-    "hash": "51ff13508259fbd585c5830364ac76af",
+    "hash": "de71a0523f8545babd6ac333da6f6ba0",
     "packages": [
         {
             "name": "anggiaj/eselect2",
@@ -88,12 +88,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mishamx/yii-user.git",
-                "reference": "a59308da167831072e901deb6f5e592c115e13c0"
+                "reference": "b365cae7dab8689d6f7b8fb90d2519fa17a15b9b"
             },
             "type": "yii-extension",
             "description": "Yii PHP Framework extension for registration and management users accounts.",
             "homepage": "https://github.com/mishamx/yii-user",
-            "time": "2013-03-11 14:15:45"
+            "time": "2013-04-02 08:05:37"
         },
         {
             "name": "phundament/gii-template-collection",
@@ -290,16 +290,16 @@
         },
         {
             "name": "phundament/p3pages",
-            "version": "0.10.0",
+            "version": "0.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3pages.git",
-                "reference": "0.10.0"
+                "reference": "0.10.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/0.10.0",
-                "reference": "0.10.0",
+                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/0.10.1",
+                "reference": "0.10.1",
                 "shasum": ""
             },
             "require": {
@@ -328,23 +328,23 @@
                 "tree"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3pages/tree/0.10.0",
+                "source": "https://github.com/schmunk42/p3pages/tree/master",
                 "issues": "https://github.com/schmunk42/p3pages/issues"
             },
-            "time": "2013-03-25 21:39:50"
+            "time": "2013-04-02 20:01:09"
         },
         {
             "name": "phundament/p3widgets",
-            "version": "0.11.0",
+            "version": "0.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3widgets.git",
-                "reference": "0.11.0"
+                "reference": "0.11.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/0.11.0",
-                "reference": "0.11.0",
+                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/0.11.1",
+                "reference": "0.11.1",
                 "shasum": ""
             },
             "require": {
@@ -372,10 +372,10 @@
                 "widget"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3widgets/tree/0.11.0",
+                "source": "https://github.com/schmunk42/p3widgets/tree/0.11.1",
                 "issues": "https://github.com/schmunk42/p3widgets/issues"
             },
-            "time": "2013-04-01 22:40:35"
+            "time": "2013-04-01 23:13:47"
         },
         {
             "name": "phundament/themes/p3bootstrap",
