@@ -67,7 +67,7 @@ return array(
             'class'   => 'vendor.phundament.p3extensions.commands.P3RsyncCommand',
             'servers' => array(
                 'dev'  => realpath(dirname(__FILE__) . '/..'),
-                'prod' => 'user@exampl.com:/path/to/phundament/protected',
+                'prod' => 'user@example.com:/path/to/phundament/app',
             ),
             'aliases' => array(
                 'p3media' => 'application.data.p3media' # Note: This setting syncs P3Media Files
