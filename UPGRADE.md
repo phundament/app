@@ -1,5 +1,5 @@
-Upgrading Phundament 
-====================
+Phundament 
+==========
 
 If you want to upgrade your Phundament Application, adjust the version constraints in `composer.json` and follow this 
 document, if you're experiencing problems.
@@ -7,6 +7,14 @@ document, if you're experiencing problems.
 
 Upgrade Guide
 -------------
+
+### Upgrading from v0.16.x
+
+tbd
+
+### Upgrading from v0.15.x
+
+tbd
 
 ### Upgrading from v0.14.x
 

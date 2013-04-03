@@ -1,10 +1,28 @@
-Phundament 3 App
-================
+Phundament
+==========
+
+**Version 3**
 
 Changelog
 ---------
 
 ### phundament/app
+
+#### 0.17 (April 2013)
+
+ * [UPD] Directory refactorings
+ * [UPD] Updated dependencies 
+ * [EHN] Added messages
+
+#### 0.16 (March 2013)
+
+ * [UPD] Directory refactorings
+ * [UPD] Updated dependencies 
+
+#### 0.15 (March 2013)
+
+ * [UPD] Directory refactorings
+ * [UPD] Updated dependencies 
 
 #### 0.14 (March 2013)
 
