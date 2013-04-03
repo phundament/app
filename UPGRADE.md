@@ -43,11 +43,11 @@ Upgrade Guide
 
 `aliases`
 
-        // yii-user path fixes
-        'application.modules.user.views.asset' => 'application.vendor.mishamx.yii-user.views.asset',
-        'application.modules.user.components' => 'application.vendor.mishamx.yii-user.components',
-        'ext.editable.assets.js.locales' => 'application.vendor.vitalets.yii-bootstrap-editable.assets.js.locales',
-        'ext.editable.assets' => 'application.vendor.vitalets.yii-bootstrap-editable.assets',
+        // hardcoded path fixes for some extensions
+        'application.modules.user.views.asset' => 'vendor.mishamx.yii-user.views.asset',
+        'application.modules.user.components' => 'vendor.mishamx.yii-user.components',
+        'ext.editable.assets.js.locales' => 'vendor.vitalets.yii-bootstrap-editable.assets.js.locales',
+        'ext.editable.assets' => 'vendor.vitalets.yii-bootstrap-editable.assets',
         'echosen' => 'vendor.ifdattic.echosen',
         'echosen.EChosen' => 'vendor.ifdattic.echosen.EChosen',
         'ext.EChosen' => 'vendor.ifdattic.echosen',
