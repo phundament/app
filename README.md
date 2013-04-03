@@ -1,7 +1,7 @@
 Phundament
 ==========
 
-**Version 3-0.15.0**
+**Version 3-0.16.1**
 
 
 What is Phundament?
@@ -53,9 +53,9 @@ Resources
  *  Composer Repository [packages.phundament.com](http://packages.phundament.com)
 
 ### Information
- *  [CHANGELOG](https://github.com/phundament/app/blob/0.15.0/CHANGELOG.md)
- *  [Packages in Phundament 0.15.0](https://github.com/phundament/app/blob/0.15.0/composer.lock)
- *  [License](https://github.com/phundament/app/blob/0.15.0/LICENSE) BSD
+ *  [CHANGELOG](https://github.com/phundament/app/blob/0.16.1/CHANGELOG.md)
+ *  [Packages in Phundament 0.16.1](https://github.com/phundament/app/blob/0.16.1/composer.lock)
+ *  [License](https://github.com/phundament/app/blob/0.16.1/LICENSE) BSD
 
 ### Links
  *  [Phundament Website](http://phundament.com)
