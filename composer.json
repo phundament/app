@@ -55,7 +55,7 @@
     },
     "autoload":{
         "psr-0":{
-            "Phundament":"./"
+            "Phundament":"./src"
         }
     },
     "scripts":{
