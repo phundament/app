@@ -20,6 +20,8 @@ Quick-Start
 
 If you have composer already installed: `composer.phar create-project phundament/app`
 
+Otherwise follow these simple steps:
+
 1. [Download](https://github.com/phundament/app/tags) & extract
 2. Enter the app root folder and start the installation process
 ```
