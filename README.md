@@ -18,6 +18,8 @@ It's goal is the seamless integration of Yii extensions and libraries bundled in
 Quick-Start
 -----------
 
+If you have composer already installed: `composer.phar create-project phundament/app`
+
 1. [Download](https://github.com/phundament/app/tags) & extract
 2. Enter the app root folder and start the installation process
 ```
