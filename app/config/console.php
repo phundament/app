@@ -98,7 +98,7 @@ return array(
                                                              realpath(dirname(__FILE__) . '/../../'),
                                                              'git',
                                                              '--interactive=0'),
-            'phundament/themes/p3bootstrap-install' => array('yiic', 'p3bootstrap'),
+            'phundament/p3bootstrap-install'        => array('yiic', 'p3bootstrap'),
             'phundament/p3media-install'            => array('yiic', 'p3media'),
         ),
     )
