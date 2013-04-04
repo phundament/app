@@ -35,7 +35,7 @@
         "mishamx/yii-user":"@dev",
         "schmunk42/web-user-behavior":"0.1.*",
         "schmunk42/multi-theme":"0.1.*",
-        "phundament/p3admin":"0.11.*",
+        "phundament/p3admin":"0.12.*",
         "phundament/p3widgets":"0.11.*",
         "phundament/p3pages":"0.10.*",
         "phundament/p3media":"0.11.*",

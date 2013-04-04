@@ -1,5 +1,5 @@
 {
-    "hash": "ded41f84f13d87218706377c2f091be8",
+    "hash": "62f4b09ba9f096fdf26e4b56cdfe8165",
     "packages": [
         {
             "name": "anggiaj/eselect2",
@@ -149,22 +149,23 @@
         },
         {
             "name": "phundament/p3admin",
-            "version": "0.11.1",
+            "version": "0.12.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3admin.git",
-                "reference": "0.11.1"
+                "reference": "0.12.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3admin/zipball/0.11.1",
-                "reference": "0.11.1",
+                "url": "https://api.github.com/repos/schmunk42/p3admin/zipball/0.12.1",
+                "reference": "0.12.1",
                 "shasum": ""
             },
             "require": {
                 "crisu83/yii-bootstrap": ">=1.0,<3.0",
                 "php": ">=5.3.0",
                 "phundament/p3extensions": ">=0.7",
+                "phundament/p3widgets": "*",
                 "yiisoft/yii": ">=1.1.12"
             },
             "type": "yii-extension",
@@ -188,10 +189,10 @@
                 "yii"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3admin/tree/0.11.1",
+                "source": "https://github.com/schmunk42/p3admin/tree/0.12.1",
                 "issues": "https://github.com/schmunk42/p3admin/issues"
             },
-            "time": "2013-03-23 00:23:30"
+            "time": "2013-03-25 22:01:39"
         },
         {
             "name": "phundament/p3extensions",
