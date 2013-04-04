@@ -263,9 +263,20 @@ $mainConfig = array(
             ),
         ),
         'themeManager' => array(
-            'class' => 'CThemeManager',
+            'class' => 'vendor.schmunk42.multi-theme.EMultiThemeManager',
             'basePath' => $applicationDirectory . '/themes',
             'baseUrl' => $baseUrl.'/themes',
+            'rules' => array(
+                '^p3(.*)' => 'backend',
+                '^user/default/index' => 'frontend',
+                '^user/login/(.*)' => 'frontend',
+                '^user/profile/(.*)' => 'frontend',
+                '^user/registration/(.*)' => 'frontend',
+                '^user/recovery/(.*)' => 'frontend',
+                '^user/activation/(.*)' => 'frontend',
+                '^user/(.*)' => 'backend',
+                '^rights/(.*)' => 'backend',
+            )
         ),
         'urlManager' => array(
             'class' => 'vendor.phundament.p3extensions.components.P3LangUrlManager',
