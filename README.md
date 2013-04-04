@@ -18,17 +18,25 @@ It's goal is the seamless integration of Yii extensions and libraries bundled in
 Quick-Start
 -----------
 
-If you have composer already installed: `composer.phar create-project phundament/app`
-
-Otherwise follow these simple steps:
-
-1. [Download](https://github.com/phundament/app/tags) & extract
-2. Enter the app root folder and start the installation process
+### Step 1
+   A) If you have composer already installed
+   
+```
+composer.phar create-project phundament/app`
+```   
+   
+   B) [Download](https://github.com/phundament/app/tags), extract, enter the app root folder
+      and start the installation process with
 ```
 php composer.phar install
 ```
-3. Open `phundament-app/www/index.php` in your browser
-4. [Manage your application](https://github.com/phundament/app/wiki/Content-Management)
+### Step 2
+
+Open `phundament-app/www/index.php` in your browser
+
+### Step 3
+
+[Manage your application](https://github.com/phundament/app/wiki/Content-Management)
 
 *Note: if you want to install Phundament 3 with a MySQL database, you have to update your config first, see the [Setup](https://github.com/phundament/app/wiki/Setup) section in our wiki.*
 *You may add the `--dev` and `--prefer-source` options on development systems.*
