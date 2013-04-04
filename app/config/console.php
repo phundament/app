@@ -9,12 +9,21 @@
 $mainConfig = require('main.php');
 return array(
     'aliases'    => array(
-        'vendor' => dirname(__FILE__).'/../../vendor',
-        'webroot' => dirname(__FILE__).'/../../www',
+        'vendor'  => dirname(__FILE__) . '/../../vendor',
+        'webroot' => dirname(__FILE__) . '/../../www',
     ),
     'basePath'   => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
     'name'       => 'Phundament Console Application',
-    'components' => $mainConfig['components'],
+    'components' => CMap::mergeArray(
+        $mainConfig['components'],
+        array(
+             'db-test' => array(
+                 'class'            => 'CDbConnection',
+                 'tablePrefix'      => 'usr_',
+                 'connectionString' => 'sqlite:' . $applicationDirectory . '/data/test.db',
+             ),
+        )
+    ),
     'modules'    => $mainConfig['modules'],
     'commandMap' => array(
         // dev command
@@ -54,8 +63,8 @@ return array(
         ),
         // composer callback
         'p3bootstrap' => array(
-            'class' => 'vendor.phundament.themes.p3bootstrap.commands.P3BootstrapCommand',
-            'themePath' => 'application.themes',
+            'class'           => 'vendor.phundament.themes.p3bootstrap.commands.P3BootstrapCommand',
+            'themePath'       => 'application.themes',
             'publicThemePath' => 'webroot.themes',
         ),
         // composer callback
