@@ -22,7 +22,7 @@ Quick-Start
    A) If you have composer already installed
    
 ```
-composer.phar create-project phundament/app`
+composer.phar create-project phundament/app
 ```   
    
    B) [Download](https://github.com/phundament/app/tags), extract, enter the app root folder
