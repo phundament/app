@@ -1,5 +1,5 @@
 {
-    "hash": "de71a0523f8545babd6ac333da6f6ba0",
+    "hash": "ded41f84f13d87218706377c2f091be8",
     "packages": [
         {
             "name": "anggiaj/eselect2",
@@ -52,24 +52,6 @@
             "time": "2011-10-12 09:05:52"
         },
         {
-            "name": "fortawesome/font-awesome",
-            "version": "v3.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/FortAwesome/Font-Awesome.git",
-                "reference": "13d5dd373cbf3f2bddd8ac2ee8df3a1966a62d09"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/v3.0.2",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "library",
-            "description": "The iconic font designed for use with Twitter Bootstrap",
-            "homepage": "https://github.com/FortAwesome/Font-Awesome"
-        },
-        {
             "name": "ifdattic/echosen",
             "version": "dev-master",
             "source": {
@@ -81,6 +63,19 @@
             "description": "Yii extension which adds Chosen JavaScript plugin.",
             "homepage": "https://github.com/ifdattic/EChosen",
             "time": "2012-02-24 14:21:58"
+        },
+        {
+            "name": "malyshev/yii-debug-toolbar",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/malyshev/yii-debug-toolbar.git",
+                "reference": "8701438ae9298e7931b05a72fbc2b0784c1ad027"
+            },
+            "type": "yii-extension",
+            "description": "A configurable set of panels that display various debug information about the current request/response. ",
+            "homepage": "https://github.com/malyshev/yii-debug-toolbar",
+            "time": "2013-03-28 15:39:50"
         },
         {
             "name": "mishamx/yii-user",
@@ -379,16 +374,16 @@
         },
         {
             "name": "phundament/themes/p3bootstrap",
-            "version": "0.11.5",
+            "version": "0.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3bootstrap.git",
-                "reference": "0.11.5"
+                "reference": "0.12.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3bootstrap/zipball/0.11.5",
-                "reference": "0.11.5",
+                "url": "https://api.github.com/repos/schmunk42/p3bootstrap/zipball/0.12.0",
+                "reference": "0.12.0",
                 "shasum": ""
             },
             "require": {
@@ -419,14 +414,47 @@
                 "theme"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3bootstrap/tree/0.11.5",
+                "source": "https://github.com/schmunk42/p3bootstrap/tree/0.12.0",
                 "issues": "https://github.com/schmunk42/p3bootstrap/issues"
             },
-            "time": "2013-04-01 22:46:57"
+            "time": "2013-04-04 17:48:27"
+        },
+        {
+            "name": "schmunk42/multi-theme",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmunk42/multi-theme.git",
+                "reference": "0.1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schmunk42/multi-theme/zipball/0.1.0",
+                "reference": "0.1.0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "yiisoft/yii": "1.1.*"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Munk",
+                    "email": "schmunk@usrbin.de",
+                    "homepage": "http://www.phundament.com"
+                }
+            ],
+            "description": "Yii Framework ThemeManager class, switch themes by regular expressions for routes",
+            "time": "2013-04-04 17:44:50"
         },
         {
             "name": "schmunk42/web-user-behavior",
-            "version": "dev-master",
+            "version": "0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/web-user-behavior.git",
@@ -588,19 +616,6 @@
             "homepage": "https://github.com/Crisu83/yii-less"
         },
         {
-            "name": "malyshev/yii-debug-toolbar",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/malyshev/yii-debug-toolbar.git",
-                "reference": "8701438ae9298e7931b05a72fbc2b0784c1ad027"
-            },
-            "type": "yii-extension",
-            "description": "A configurable set of panels that display various debug information about the current request/response. ",
-            "homepage": "https://github.com/malyshev/yii-debug-toolbar",
-            "time": "2013-03-28 15:39:50"
-        },
-        {
             "name": "phundament/lessii",
             "version": "dev-master",
             "source": {
@@ -705,8 +720,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "crisu83/yii-rights": 20,
-        "mishamx/yii-user": 20,
         "malyshev/yii-debug-toolbar": 20,
+        "mishamx/yii-user": 20,
         "phundament/lessii": 20,
         "ifdattic/echosen": 20
     },
