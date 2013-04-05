@@ -63,7 +63,7 @@ return array(
         ),
         // composer callback
         'p3bootstrap' => array(
-            'class'           => 'vendor.phundament.themes.p3bootstrap.commands.P3BootstrapCommand',
+            'class'           => 'vendor.phundament.p3bootstrap.commands.P3BootstrapCommand',
             'themePath'       => 'application.themes',
             'publicThemePath' => 'webroot.themes',
         ),
