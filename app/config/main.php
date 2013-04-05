@@ -267,6 +267,7 @@ $mainConfig = array(
             'basePath' => $applicationDirectory . '/themes',
             'baseUrl' => $baseUrl.'/themes',
             'rules' => array(
+                '^p3pages/default/page' => 'frontend',
                 '^p3(.*)' => 'backend',
                 '^user/default/index' => 'frontend',
                 '^user/login/(.*)' => 'frontend',
