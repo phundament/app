@@ -377,7 +377,9 @@ if (is_file($localConfigFile)) {
 	$config = CMap::mergeArray($config, require($localConfigFile));
 }
 
-$browser_lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
-$config['language'] = (in_array($browser_lang, $config['components']['langHandler']['languages']))? $browser_lang : 'en';
+if ($_SERVER['HTTP_ACCEPT_LANGUAGE']) {
+	$browser_lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+	$config['language'] = (in_array($browser_lang, $config['components']['langHandler']['languages']))? $browser_lang : 'en';
+}
 
 return $config;
