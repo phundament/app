@@ -10,7 +10,7 @@
 $applicationDirectory = realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR);
 $baseUrl = (dirname($_SERVER['SCRIPT_NAME']) != '/') ? dirname($_SERVER['SCRIPT_NAME']) : '';
 
-$mainConfig = array(
+$config = array(
     'basePath' => $applicationDirectory,
     'name' => 'Phundament',
     'theme' => 'frontend', // theme is copied from extensions/phundament/p3bootstrap
@@ -374,7 +374,10 @@ $mainConfig = array(
 
 $localConfigFile = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'local.php';
 if (is_file($localConfigFile)) {
-    return CMap::mergeArray($mainConfig, require($localConfigFile));
-} else {
-    return $mainConfig;
+	$config = CMap::mergeArray($config, require($localConfigFile));
 }
+
+$browser_lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+$config['language'] = (in_array($browser_lang, $config['components']['langHandler']['languages']))? $browser_lang : 'en';
+
+return $config;
