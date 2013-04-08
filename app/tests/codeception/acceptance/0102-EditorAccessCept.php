@@ -2,7 +2,7 @@
 $I = new WebGuy($scenario);
 $I->wantTo('log in and check access rights for editors');
 
-$I->amOnPage('index.php?r=user/login');
+$I->amOnPage('?r=user/login');
 $I->fillField('UserLogin[username]', 'editor');
 $I->fillField('UserLogin[password]','editor');
 $I->click('.form INPUT[type=submit]');

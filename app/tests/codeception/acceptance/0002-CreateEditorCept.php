@@ -4,7 +4,7 @@ $I->wantTo('create an editor');
 
 // Login
 
-$I->amOnPage('index.php');
+$I->amOnPage('?r=/');
 $I->click('Login');
 $I->fillField('UserLogin[username]', 'admin');
 $I->fillField('UserLogin[password]','admin');

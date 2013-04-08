@@ -4,7 +4,7 @@ $I->wantTo('change password');
 
 // Login
 
-$I->amOnPage('index.php');
+$I->amOnPage('?r=/');
 $I->click('Login');
 $I->fillField('UserLogin[username]', 'editor');
 $I->fillField('UserLogin[password]','editor');

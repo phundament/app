@@ -4,7 +4,7 @@ $I->wantTo('sign in');
 
 // Login
 
-$I->amOnPage('index.php?r=user/login');
+$I->amOnPage('?r=user/login');
 $I->fillField('UserLogin[username]', 'admin');
 $I->fillField('UserLogin[password]','admin');
 $I->click('.form INPUT[type=submit]');

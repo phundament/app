@@ -4,7 +4,7 @@ $I->wantTo('switch language');
 
 // Login
 
-$I->amOnPage('index.php?r=user/login');
+$I->amOnPage('?r=user/login');
 $I->fillField('UserLogin[username]', 'editor');
 $I->fillField('UserLogin[password]','editor');
 $I->click('.form INPUT[type=submit]');
