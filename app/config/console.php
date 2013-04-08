@@ -45,16 +45,15 @@ return array(
                 'rights'         => 'vendor.phundament.p3admin.modules-install.rights.migrations',
                 'user'           => 'vendor.mishamx.yii-user.migrations',
                 'p3pages'        => 'vendor.phundament.p3pages.migrations',
-                'p3pages-demo'   => 'vendor.phundament.p3pages.migrations-demo',
                 'p3widgets'      => 'vendor.phundament.p3widgets.migrations',
-                'p3widgets-demo' => 'vendor.phundament.p3widgets.migrations-demo',
                 'p3media'        => 'vendor.phundament.p3media.migrations',
+                'app-demo-data'  => 'vendor.waalzer.app-demo-data.migrations'
             ),
             // you can customize the modules migrations subdirectory which is used when you are using yii module config
             'migrationSubPath'      => 'migrations',
             // here you can configure which modules should be active, you can disable a module by adding its name to this array
             'disabledModules'       => array(
-                'p3pages-demo', 'p3widgets-demo', // ...
+                'app-demo-data', // ...
             ),
             // the name of the application component that should be used to connect to the database
             'connectionID'          => 'db',
