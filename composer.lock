@@ -82,13 +82,13 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/mishamx/yii-user.git",
-                "reference": "b365cae7dab8689d6f7b8fb90d2519fa17a15b9b"
+                "url": "https://github.com/phundament/yii-user.git",
+                "reference": "00c8ca23c72adf1a07b3555b6274f6d6c911564d"
             },
             "type": "yii-extension",
             "description": "Yii PHP Framework extension for registration and management users accounts.",
-            "homepage": "https://github.com/mishamx/yii-user",
-            "time": "2013-04-02 08:05:37"
+            "homepage": "https://github.com/phundament/yii-user",
+            "time": "2013-04-08 21:52:47"
         },
         {
             "name": "phundament/gii-template-collection",
@@ -248,12 +248,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3extensions.git",
-                "reference": "0.9.1"
+                "reference": "0.9.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3extensions/zipball/0.9.1",
-                "reference": "0.9.1",
+                "url": "https://api.github.com/repos/schmunk42/p3extensions/zipball/0.9.2",
+                "reference": "0.9.2",
                 "shasum": ""
             },
             "require": {
@@ -279,10 +279,10 @@
                 "phundament"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3extensions/tree/0.9.1",
+                "source": "https://github.com/schmunk42/p3extensions/tree/0.9.2",
                 "issues": "https://github.com/schmunk42/p3extensions/issues"
             },
-            "time": "2013-03-28 09:28:29"
+            "time": "2013-04-08 00:34:20"
         },
         {
             "name": "phundament/p3media",
@@ -423,16 +423,16 @@
         },
         {
             "name": "schmunk42/multi-theme",
-            "version": "0.1.0",
+            "version": "0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/multi-theme.git",
-                "reference": "0.1.0"
+                "reference": "0.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/multi-theme/zipball/0.1.0",
-                "reference": "0.1.0",
+                "url": "https://api.github.com/repos/schmunk42/multi-theme/zipball/0.1.1",
+                "reference": "0.1.1",
                 "shasum": ""
             },
             "require": {
@@ -451,8 +451,15 @@
                     "homepage": "http://www.phundament.com"
                 }
             ],
-            "description": "Yii Framework ThemeManager class, switch themes by regular expressions for routes",
-            "time": "2013-04-04 17:44:50"
+            "description": "Yii Framework Theme-Manager class, switch themes by regular expressions on controller routes.",
+            "keywords": [
+                "manager",
+                "phundament",
+                "route",
+                "theme",
+                "yii"
+            ],
+            "time": "2013-04-05 10:36:47"
         },
         {
             "name": "schmunk42/web-user-behavior",
