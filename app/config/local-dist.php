@@ -16,6 +16,7 @@ return array(
         ),*/
         /* 'db' => array(
           // MySQL
+          'class' => 'CDbConnection',
           'connectionString' => 'mysql:host=localhost;dbname=p3',
           'emulatePrepare' => true,
           'username' => 'test',
@@ -23,13 +24,10 @@ return array(
           'charset' => 'utf8',
           'enableParamLogging' => true
           ), */
-        /* 'db2' => array(
+        /* 'dbTest' => array(
           // MySQL
-          'connectionString' => 'mysql:host=localhost;dbname=db2',
-          'emulatePrepare' => true,
-          'username' => 'test',
-          'password' => 'test',
-          'charset' => 'utf8',
+          'class' => 'CDbConnection',
+          'connectionString' => 'sqlite:' . $applicationDirectory . '/data/test.db',
           ), */
         /*'less'         => array(
             'class'   => 'vendor.crisu83.yii-less.components.Less',

@@ -16,13 +16,7 @@ return array(
     'name'       => 'Phundament Console Application',
     'components' => CMap::mergeArray(
         $mainConfig['components'],
-        array(
-             'db-test' => array(
-                 'class'            => 'CDbConnection',
-                 'tablePrefix'      => 'usr_',
-                 'connectionString' => 'sqlite:' . $applicationDirectory . '/data/test.db',
-             ),
-        )
+        array()
     ),
     'modules'    => $mainConfig['modules'],
     'commandMap' => array(
