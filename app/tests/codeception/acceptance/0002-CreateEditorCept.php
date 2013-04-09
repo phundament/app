@@ -3,12 +3,13 @@ $I = new WebGuy($scenario);
 $I->wantTo('create an editor');
 
 // Login
-
-$I->amOnPage('?r=/');
-$I->click('Login');
+$I->amOnPage('?r=user/login');
 $I->fillField('UserLogin[username]', 'admin');
 $I->fillField('UserLogin[password]','admin');
 $I->click('.form INPUT[type=submit]');
+$I->see('Admin');
+$I->see('Logout');
+$I->dontSee('Login');
 
 // Create Editor
 
