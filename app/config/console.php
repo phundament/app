@@ -64,6 +64,10 @@ return array(
         'p3media'     => array(
             'class' => 'vendor.phundament.p3media.commands.P3MediaCommand',
         ),
+        // composer callback
+        'less-setup'     => array(
+            'class' => 'vendor.crisu83.yii-less.commands.LessSetupCommand',
+        ),
         // media file sync
         'rsync'       => array(
             'class'   => 'vendor.phundament.p3extensions.commands.P3RsyncCommand',

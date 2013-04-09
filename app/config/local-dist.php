@@ -34,7 +34,7 @@ return array(
             'mode'    => 'server',
             'files'   => array(
                 // register files here or in your in the layout
-                #'themes/frontend/less/p3.less' => 'themes/frontend/css/p3.css',
+                'themes/frontend/less/p3.less' => 'themes/frontend/css/p3.css',
             ),
             'options' => array(
                 //'forceCompile' => true,
