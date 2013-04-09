@@ -4,8 +4,9 @@ php:
   - 5.3
 
 before_script:
-    - composer install --dev --prefer-dist
+    - composer install --prefer-dist
     - cp app/config/local-dist.php app/config/local.php
+    - composer install --dev --prefer-dist
     - app/yiic migrate --connectionID=dbTest --interactive=0
     - chmod 777 app/data/test.db
     - sed -i '.orig' 's|ENTER_YOUR_PHUNDAMENT_URL_HERE|dunno.yet|' "app/tests/codeception/acceptance.suite.yml"
