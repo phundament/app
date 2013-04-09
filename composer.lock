@@ -608,15 +608,15 @@
         },
         {
             "name": "crisu83/yii-less",
-            "version": "v1.0.0",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Crisu83/yii-less.git",
-                "reference": "fc46b4cc5ead3907494970eda39629d6fe4d314b"
+                "reference": "91d0bcc255d69f03674006d20b74840ad4514ac1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Crisu83/yii-less/zipball/v1.0.0",
+                "url": "https://api.github.com/repos/Crisu83/yii-less/zipball/v1.1.0",
                 "reference": null,
                 "shasum": null
             },
