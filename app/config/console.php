@@ -97,6 +97,7 @@ return array(
                                                              '--interactive=0'),
             'phundament/p3bootstrap-install'        => array('yiic', 'p3bootstrap'),
             'phundament/p3media-install'            => array('yiic', 'p3media'),
+            'crisu83/yii-less-install'              => array('yiic', 'less-setup'),
         ),
     )
 );
