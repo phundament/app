@@ -221,7 +221,7 @@ $mainConfig = array(
             'class' => 'CDummyCache',
         ),
         'db' => array(
-            'tablePrefix' => 'usr_',
+            'tablePrefix' => '',
             // SQLite
             'connectionString' => 'sqlite:' . $applicationDirectory . '/data/default.db',
         // MySQL

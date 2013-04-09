@@ -9,7 +9,7 @@ return CMap::mergeArray(
 			),
 			// provide test database connection
 			'db'=>array(
-                'tablePrefix' => 'usr_',
+                'tablePrefix' => '',
                 'connectionString' => 'sqlite:' . $applicationDirectory . '/data/test.db',
 			),
 

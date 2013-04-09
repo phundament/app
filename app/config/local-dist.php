@@ -5,8 +5,7 @@
 // DO NOT COMMIT THIS FILE !!!
 
 return array(
-    'import'     => array(
-        /*'sakila.components.*',
+    'import'     => array( /*'sakila.components.*',
         'sakila.models.*',*/
     ),
     // application components
@@ -24,11 +23,12 @@ return array(
           'charset' => 'utf8',
           'enableParamLogging' => true
           ), */
-        /* 'dbTest' => array(
-          // MySQL
-          'class' => 'CDbConnection',
-          'connectionString' => 'sqlite:' . $applicationDirectory . '/data/test.db',
-          ), */
+        'dbTest' => array(
+            // MySQL
+            'class'            => 'CDbConnection',
+            'tablePrefix'      => '',
+            'connectionString' => 'sqlite:' . $applicationDirectory . '/data/test.db',
+        ),
         /*'less'         => array(
             'class'   => 'vendor.crisu83.yii-less.components.Less',
             'mode'    => 'server',
@@ -42,35 +42,27 @@ return array(
                 'compilerPath' => $applicationDirectory . '/../vendor/cloudhead/less.js/bin/lessc',
             ),
         ),*/
-        'log'          => array(
+        'log'    => array(
             'class'  => 'CLogRouter',
             'routes' => array(
                 array(
-                    'class'=>'vendor.malyshev.yii-debug-toolbar.yii-debug-toolbar.YiiDebugToolbarRoute',
-                    'ipFilters'=>array('127.0.0.1','192.168.1.215'),
+                    'class'     => 'vendor.malyshev.yii-debug-toolbar.yii-debug-toolbar.YiiDebugToolbarRoute',
+                    'ipFilters' => array('127.0.0.1'),
                 ),
                 array(
                     'class'  => 'CFileLogRoute',
-                    #'categories' => 'application',
                     'levels' => 'error, warning',
+                    #'categories' => 'application',
                 ),
-                // uncomment the following to show log messages on web pages
-                /*
-                  array(
-                  'class'=>'CWebLogRoute',
-                  ),
-                 */
             ),
         ),
         /*'image' => array(
-          'class' => 'ext.phundament.p3extensions.components.image.CImageComponent',
-          // GD or ImageMagick
-          'driver' => 'ImageMagick',
-          'params' => array('directory' => '/opt/local/bin'),
-          ),*/
+            'class' => 'ext.phundament.p3extensions.components.image.CImageComponent',
+            'driver' => 'ImageMagick', // GD or ImageMagick
+            'params' => array('directory' => '/opt/local/bin'),
+         ),*/
     ),
-    'modules'    => array(
-        /*'sakila',*/
+    'modules'    => array( /*'sakila',*/
     ),
     'params'     => array( // this is used in contact page
         /*'adminEmail' => 'webmaster@h17n.de',*/
