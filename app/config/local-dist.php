@@ -29,19 +29,20 @@ return array(
             'tablePrefix'      => '',
             'connectionString' => 'sqlite:' . $applicationDirectory . '/data/test.db',
         ),
-        /*'less'         => array(
+        'less'         => array(
             'class'   => 'vendor.crisu83.yii-less.components.Less',
             'mode'    => 'server',
             'files'   => array(
                 // register files here or in your in the layout
                 'themes/frontend/less/p3.less' => 'themes/frontend/css/p3.css',
+                'themes/backend/less/p3.less' => 'themes/backend/css/p3.css',
             ),
             'options' => array(
                 //'forceCompile' => true,
                 'nodePath'     => '/opt/local/bin/node',
                 'compilerPath' => $applicationDirectory . '/../vendor/cloudhead/less.js/bin/lessc',
             ),
-        ),*/
+        ),
         'log'    => array(
             'class'  => 'CLogRouter',
             'routes' => array(
