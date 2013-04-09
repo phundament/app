@@ -1,12 +1,10 @@
 <?php
 $I = new WebGuy($scenario);
 $I->wantTo('create a widget');
-$I->amOnPage('?r=user/login');
-$I->fillField('UserLogin[username]', 'editor');
-$I->fillField('UserLogin[password]','editor');
-$I->click('.form INPUT[type=submit]');
-$I->see('Your Profile');
-$I->dontSee('Login');
+
+// Login
+Codeception\Module\WebHelper::login($I, 'admin', 'admin');
+
 
 $I->amOnPage('index.php');
 $I->click('Create Widget');

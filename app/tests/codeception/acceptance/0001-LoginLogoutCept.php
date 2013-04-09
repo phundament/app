@@ -3,13 +3,7 @@ $I = new WebGuy($scenario);
 $I->wantTo('sign in');
 
 // Login
-$I->amOnPage('?r=user/login');
-$I->fillField('UserLogin[username]', 'admin');
-$I->fillField('UserLogin[password]','admin');
-$I->click('.form INPUT[type=submit]');
-$I->see('Admin');
-$I->see('Logout');
-$I->dontSee('Login');
+Codeception\Module\WebHelper::login($I, 'admin', 'admin');
 
 // Logout
 $I->click('Logout');
