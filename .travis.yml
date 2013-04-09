@@ -15,3 +15,7 @@ script: ./vendor/bin/codecept.phar run -c`pwd`
 
 env:
     - PHUNDAMENT_TEST=true
+
+branches:
+  only:
+    - master
