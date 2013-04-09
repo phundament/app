@@ -12,3 +12,6 @@ before_script:
     - sed -i '.orig' 's|ENTER_YOUR_PHUNDAMENT_URL_HERE|dunno.yet|' "app/tests/codeception/acceptance.suite.yml"
 
 script: ./vendor/bin/codecept.phar run -c`pwd`
+
+env:
+    - PHUNDAMENT_TEST=true

@@ -6,7 +6,12 @@
  * Define composer hooks by the following name schema: <vendor>/<packageName>-<action>
 
  */
+
+// for testing purposes
+$migrateCommand = (getenv('PHUNDAMENT_TEST')?null:array('yiic', 'migrate', '--interactive=1'));
+
 $mainConfig = require('main.php');
+
 return array(
     'aliases'    => array(
         'vendor'  => dirname(__FILE__) . '/../../vendor',
@@ -89,8 +94,8 @@ return array(
     'params'     => array(
         'composer.callbacks' => array(
             // args for Yii command runner
-            'post-update'                           => array('yiic', 'migrate'),
-            'post-install'                          => array('yiic', 'migrate'),
+            'post-update'                           => $migrateCommand,
+            'post-install'                          => $migrateCommand,
             'yiisoft/yii-install'                   => array('yiic', 'webapp', 'create',
                                                              realpath(dirname(__FILE__) . '/../../'),
                                                              'git',
