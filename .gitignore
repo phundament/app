@@ -1,11 +1,6 @@
 /vendor/
 
 /app/config/local.php
-/app/data/
-/app/runtime/
-
-/www/runtime/
-/www/assets/
 
 /app/tests/codeception/_log
 
