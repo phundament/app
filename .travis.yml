@@ -7,12 +7,12 @@ before_script:
     - composer install --prefer-dist
     - cp app/config/local-dist.php app/config/local.php
     - composer install --dev --prefer-dist
-    - composer require --dev "codeception/codeception:@stable"
+    - composer require --dev --prefer-dist "codeception/codeception:@stable"
     - app/yiic migrate --connectionID=dbTest --interactive=0
     - chmod 777 app/data/test.db
     - sed -i 's|ENTER_YOUR_PHUNDAMENT_URL_HERE|localhost/www|' "app/tests/codeception/acceptance.suite.yml"
 
-script: ./vendor/bin/codecept.phar run -c`pwd`
+script: ./vendor/bin/codecept run -c`pwd`
 
 env:
     - PHUNDAMENT_TEST=true
