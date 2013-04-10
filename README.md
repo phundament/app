@@ -56,6 +56,10 @@ Demo
 Resources
 ---------
 
+### Continuous Integration
+
+[![Build Status](https://travis-ci.org/phundament/app.png?branch=master)](https://travis-ci.org/phundament/app)
+
 ### Fundamentals
  *  [Documentation](https://github.com/phundament/app/wiki/)
  *  [API Class Reference](http://docs.phundament.com/3.0)
