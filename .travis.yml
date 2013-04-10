@@ -10,7 +10,8 @@ before_script:
     - composer require --dev --prefer-dist "codeception/codeception:@stable"
     - app/yiic migrate --connectionID=dbTest --interactive=0
     - chmod 777 app/data/test.db
-    - sed -i 's|ENTER_YOUR_PHUNDAMENT_URL_HERE|localhost/www|' "app/tests/codeception/acceptance.suite.yml"
+    - sed -i 's|ENTER_YOUR_PHUNDAMENT_URL_HERE|localhost:8000|' "app/tests/codeception/acceptance.suite.yml"
+    - php -S localhost:8000 -t www/
 
 script: ./vendor/bin/codecept run -c`pwd`
 
