@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "=================";
+echo "Post-Merge Notice"
+echo "=================";
+echo "Remember to run 'php composer.phar install' to ensure vendor folder integrity.\n";
+echo "";
