@@ -10,7 +10,7 @@ before_script:
     - composer require --dev --prefer-dist "codeception/codeception:@stable"
     - app/yiic migrate --connectionID=dbTest --interactive=0
     - chmod 777 app/data/test.db
-    - php -S localhost:31415 -t www/
+    - php -S localhost:31415 -t www/ &
 
 script: ./vendor/bin/codecept run -c`pwd`
 
