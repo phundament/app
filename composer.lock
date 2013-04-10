@@ -655,21 +655,35 @@
         },
         {
             "name": "crisu83/yii-less",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Crisu83/yii-less.git",
-                "reference": "91d0bcc255d69f03674006d20b74840ad4514ac1"
+                "reference": "v1.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Crisu83/yii-less/zipball/v1.1.0",
-                "reference": null,
-                "shasum": null
+                "url": "https://api.github.com/repos/Crisu83/yii-less/zipball/v1.1.1",
+                "reference": "v1.1.1",
+                "shasum": ""
             },
             "type": "yii-extension",
-            "description": "Yii extension for compiling LESS files client and server-side.",
-            "homepage": "https://github.com/Crisu83/yii-less"
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Christoffer Niska",
+                    "email": "christoffer.niska@gmail.com",
+                    "homepage": "http://www.cniska.net/"
+                }
+            ],
+            "description": "LESS compilers for the Yii PHP framework.",
+            "keywords": [
+                "less"
+            ],
+            "time": "2013-04-09 22:06:09"
         },
         {
             "name": "phundament/lessii",
