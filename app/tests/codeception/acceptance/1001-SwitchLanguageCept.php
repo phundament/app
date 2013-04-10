@@ -4,13 +4,11 @@ $I->wantTo('switch language');
 
 // Login
 
-$I->amOnPage('?r=user/login');
-$I->fillField('UserLogin[username]', 'editor');
-$I->fillField('UserLogin[password]','editor');
-$I->click('.form INPUT[type=submit]');
+Codeception\Module\WebHelper::login($I, 'editor', 'editor');
 
 // Switch language to german
 
+$I->amOnPage('?r=user/profile&lang=en');
 $I->see('Your Profile');
 $I->click('Deutsch');
 $I->see('Ihr Profil');

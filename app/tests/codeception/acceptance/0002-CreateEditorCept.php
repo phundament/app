@@ -3,12 +3,12 @@ $I = new WebGuy($scenario);
 $I->wantTo('create an editor');
 
 // Login
+
 Codeception\Module\WebHelper::login($I, 'admin', 'admin');
-
-
 
 // Create Editor
 
+$I->amOnPage('?r=site/index&lang=en');
 $I->click('Users');
 $I->see('Manage Users');
 $I->click('Create User');
