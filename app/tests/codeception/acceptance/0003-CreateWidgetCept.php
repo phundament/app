@@ -2,12 +2,14 @@
 $I = new WebGuy($scenario);
 $I->wantTo('create a widget');
 
-// Login
 Codeception\Module\WebHelper::login($I, 'admin', 'admin');
 
+$I->amOnPage('?r=p3widgets/p3Widget/admin&lang=en');
 
-$I->amOnPage('index.php');
-$I->click('Create Widget');
+$I->click('Create');
+$I->selectOption('P3Widget[alias]','Basic HTML Widget');
+$I->fillField('P3Widget[containerId]','top');
 $I->see('P3 Widget Create');
 $I->click('Save');
-$I->see('Translation for');
+$I->see('P3 Widget');
+$I->see('Relations');

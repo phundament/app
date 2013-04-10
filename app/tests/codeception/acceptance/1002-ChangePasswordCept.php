@@ -4,15 +4,11 @@ $I->wantTo('change password');
 
 // Login
 
-$I->amOnPage('?r=/');
-$I->click('Login');
-$I->fillField('UserLogin[username]', 'editor');
-$I->fillField('UserLogin[password]','editor');
-$I->click('.form INPUT[type=submit]');
-$I->see('Your Profile');
+Codeception\Module\WebHelper::login($I, 'editor', 'editor');
 
 // Change Password
 
+$I->amOnPage('?r=user/profile&lang=en');
 $I->click('Change password');
 $I->see('Change password');
 $I->fillField('UserChangePassword[oldPassword]', 'editor');
