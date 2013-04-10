@@ -15,4 +15,4 @@ modules:
         - WebHelper
     config:
         PhpBrowser:
-            url: 'http://ENTER_YOUR_PHUNDAMENT_URL_HERE/index-test.php'
+            url: 'http://localhost:31415/index-test.php'
