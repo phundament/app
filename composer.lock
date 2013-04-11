@@ -1,4 +1,8 @@
 {
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
     "hash": "459ecc592b65b188b343dccc951da659",
     "packages": [
         {
@@ -57,12 +61,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ifdattic/EChosen.git",
-                "reference": "5342d91e76a0783a6ecc2619ec9e747c4edfb83b"
+                "reference": "97c235df2640342074bf5902190bc74720890ce7"
             },
             "type": "yii-extension",
             "description": "Yii extension which adds Chosen JavaScript plugin.",
             "homepage": "https://github.com/ifdattic/EChosen",
-            "time": "2012-02-24 14:21:58"
+            "time": "2013-04-11 00:01:58"
         },
         {
             "name": "malyshev/yii-debug-toolbar",
@@ -70,12 +74,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/malyshev/yii-debug-toolbar.git",
-                "reference": "8701438ae9298e7931b05a72fbc2b0784c1ad027"
+                "reference": "9102ebaaf5a00a0d2deba73f1f4de3f4198511be"
             },
             "type": "yii-extension",
             "description": "A configurable set of panels that display various debug information about the current request/response. ",
             "homepage": "https://github.com/malyshev/yii-debug-toolbar",
-            "time": "2013-03-28 15:39:50"
+            "time": "2013-04-10 15:53:54"
         },
         {
             "name": "mishamx/yii-user",
@@ -248,12 +252,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3extensions.git",
-                "reference": "0.9.2"
+                "reference": "1273df12532e8fac9cecd1ad3c24d781d7a31415"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3extensions/zipball/0.9.2",
-                "reference": "0.9.2",
+                "url": "https://api.github.com/repos/schmunk42/p3extensions/zipball/1273df12532e8fac9cecd1ad3c24d781d7a31415",
+                "reference": "1273df12532e8fac9cecd1ad3c24d781d7a31415",
                 "shasum": ""
             },
             "require": {
@@ -279,23 +283,23 @@
                 "phundament"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3extensions/tree/0.9.2",
+                "source": "https://github.com/schmunk42/p3extensions/tree/master",
                 "issues": "https://github.com/schmunk42/p3extensions/issues"
             },
-            "time": "2013-04-08 00:34:20"
+            "time": "2013-04-11 15:06:39"
         },
         {
             "name": "phundament/p3media",
-            "version": "0.11.5",
+            "version": "0.11.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3media.git",
-                "reference": "0.11.5"
+                "reference": "0.11.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3media/zipball/0.11.5",
-                "reference": "0.11.5",
+                "url": "https://api.github.com/repos/schmunk42/p3media/zipball/0.11.6",
+                "reference": "0.11.6",
                 "shasum": ""
             },
             "require": {
@@ -327,10 +331,10 @@
                 "yii"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3media/tree/0.11.5",
+                "source": "https://github.com/schmunk42/p3media/tree/master",
                 "issues": "https://github.com/schmunk42/p3media/issues"
             },
-            "time": "2013-03-28 18:56:53"
+            "time": "2013-04-11 14:34:16"
         },
         {
             "name": "phundament/p3pages",
@@ -520,12 +524,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/waalzer/app-demo-data.git",
-                "reference": "f9138128e313d9ef5ee15b08a80c1179de78ac34"
+                "reference": "c9f1d74fc26aae2277e836a11c13bdd32f858907"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/waalzer/app-demo-data/zipball/f9138128e313d9ef5ee15b08a80c1179de78ac34",
-                "reference": "f9138128e313d9ef5ee15b08a80c1179de78ac34",
+                "url": "https://api.github.com/repos/waalzer/app-demo-data/zipball/c9f1d74fc26aae2277e836a11c13bdd32f858907",
+                "reference": "c9f1d74fc26aae2277e836a11c13bdd32f858907",
                 "shasum": ""
             },
             "require": {
@@ -559,7 +563,7 @@
                 "source": "https://github.com/waalzer/app-demo-data/tree/master",
                 "issues": "https://github.com/waalzer/app-demo-data/issues"
             },
-            "time": "2013-04-08 14:02:29"
+            "time": "2013-04-11 10:01:16"
         },
         {
             "name": "yiiext/fancybox-widget",
@@ -732,16 +736,16 @@
         },
         {
             "name": "schmunk42/database-command",
-            "version": "0.8.8",
+            "version": "0.8.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/database-command.git",
-                "reference": "0.8.8"
+                "reference": "0.8.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/database-command/zipball/0.8.8",
-                "reference": "0.8.8",
+                "url": "https://api.github.com/repos/schmunk42/database-command/zipball/0.8.9",
+                "reference": "0.8.9",
                 "shasum": ""
             },
             "require": {
@@ -760,10 +764,10 @@
             ],
             "description": "Yii command to create database migrations from existing schema",
             "support": {
-                "source": "https://github.com/schmunk42/database-command/tree/0.8.8",
+                "source": "https://github.com/schmunk42/database-command/tree/0.8.9",
                 "issues": "https://github.com/schmunk42/database-command/issues"
             },
-            "time": "2013-03-28 18:55:09"
+            "time": "2013-04-10 15:23:42"
         },
         {
             "name": "twitter/bootstrap",
