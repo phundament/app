@@ -1,8 +1,4 @@
 {
-    "_readme": [
-        "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
-    ],
     "hash": "459ecc592b65b188b343dccc951da659",
     "packages": [
         {
@@ -96,16 +92,16 @@
         },
         {
             "name": "phundament/gii-template-collection",
-            "version": "0.8.6",
+            "version": "0.8.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/gii-template-collection.git",
-                "reference": "0.8.6"
+                "reference": "0.8.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/gii-template-collection/zipball/0.8.6",
-                "reference": "0.8.6",
+                "url": "https://api.github.com/repos/schmunk42/gii-template-collection/zipball/0.8.8",
+                "reference": "0.8.8",
                 "shasum": ""
             },
             "require": {
@@ -133,10 +129,10 @@
                 "package"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/gii-template-collection/tree/0.8.6",
+                "source": "https://github.com/schmunk42/gii-template-collection/tree/master",
                 "issues": "https://github.com/schmunk42/gii-template-collection/issues"
             },
-            "time": "2013-03-11 19:09:19"
+            "time": "2013-04-12 15:54:31"
         },
         {
             "name": "phundament/jquery-file-upload",
@@ -252,12 +248,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3extensions.git",
-                "reference": "1273df12532e8fac9cecd1ad3c24d781d7a31415"
+                "reference": "0.9.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3extensions/zipball/1273df12532e8fac9cecd1ad3c24d781d7a31415",
-                "reference": "1273df12532e8fac9cecd1ad3c24d781d7a31415",
+                "url": "https://api.github.com/repos/schmunk42/p3extensions/zipball/0.9.3",
+                "reference": "0.9.3",
                 "shasum": ""
             },
             "require": {
@@ -338,16 +334,16 @@
         },
         {
             "name": "phundament/p3pages",
-            "version": "0.10.2",
+            "version": "0.10.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3pages.git",
-                "reference": "0.10.2"
+                "reference": "0.10.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/0.10.2",
-                "reference": "0.10.2",
+                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/0.10.3",
+                "reference": "0.10.3",
                 "shasum": ""
             },
             "require": {
@@ -357,6 +353,7 @@
                 "yiisoft/yii": "1.1.*"
             },
             "type": "yii-extension",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -370,16 +367,12 @@
             "description": "Page Manager",
             "homepage": "https://github.com/schmunk42/p3pages",
             "keywords": [
+                "Sitemap",
                 "page",
-                "sitemap",
                 "structure",
                 "tree"
             ],
-            "support": {
-                "source": "https://github.com/schmunk42/p3pages/tree/0.10.2",
-                "issues": "https://github.com/schmunk42/p3pages/issues"
-            },
-            "time": "2013-04-10 09:33:58"
+            "time": "2013-04-12 23:52:24"
         },
         {
             "name": "phundament/p3widgets",
