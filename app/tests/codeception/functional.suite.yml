@@ -8,7 +8,8 @@
 
 class_name: TestGuy
 modules:
-    enabled: [TestHelper]
+    enabled: [Yii1,TestHelper]
     config:
       Yii1:
+            appPath: '/Users/tobias/Webserver/local/phundament/app/www/index-test.php'
             url: 'http://localhost:31415/index-test.php'

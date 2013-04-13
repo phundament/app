@@ -136,6 +136,43 @@ class WebGuy extends \Codeception\AbstractGuy
 
  
     /**
+     * Asserts that current page has 404 response status code.
+     * @see PhpBrowser::seePageNotFound()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function seePageNotFound() {
+        $this->scenario->assertion('seePageNotFound', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Checks that response code is equal to value provided.
+     *
+     * @param $code
+     * @return mixed
+     * @see PhpBrowser::seeResponseCodeIs()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function seeResponseCodeIs($code) {
+        $this->scenario->assertion('seeResponseCodeIs', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
      * Opens the page.
      *
      * @param $page
@@ -283,6 +320,8 @@ class WebGuy extends \Codeception\AbstractGuy
      * If button is image button is found by it's value
      * If link or button can't be found by name they are searched by CSS selector.
      *
+     * The second parameter is a context: CSS or XPath locator to narrow the search.
+     *
      * Examples:
      *
      * ``` php
@@ -295,16 +334,69 @@ class WebGuy extends \Codeception\AbstractGuy
      * $I->click('#form input[type=submit]');
      * // XPath
      * $I->click('//form/*[@type=submit]')
+     * // link in context
+     * $I->click('Logout', '#nav');
      * ?>
      * ```
      * @param $link
+     * @param $context
      * @see PhpBrowser::click()
      *
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
      */
-    public function click($link) {
+    public function click($link, $context = null) {
         $this->scenario->action('click', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Checks if element exists on a page, matching it by CSS or XPath
+     *
+     * ``` php
+     * <?php
+     * $I->seeElement('.error');
+     * $I->seeElement(//form/input[1]);
+     * ?>
+     * ```
+     * @param $selector
+     * @see PhpBrowser::seeElement()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function seeElement($selector) {
+        $this->scenario->assertion('seeElement', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Checks if element does not exist (or is visible) on a page, matching it by CSS or XPath
+     *
+     * ``` php
+     * <?php
+     * $I->dontSeeElement('.error');
+     * $I->dontSeeElement(//form/input[1]);
+     * ?>
+     * ```
+     * @param $selector
+     * @see PhpBrowser::dontSeeElement()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function dontSeeElement($selector) {
+        $this->scenario->action('dontSeeElement', func_get_args());
         if ($this->scenario->running()) {
             $result = $this->scenario->runStep();
             return new Maybe($result);
@@ -470,7 +562,16 @@ class WebGuy extends \Codeception\AbstractGuy
 
  
     /**
-     * Checks that current uri contains value
+     * Checks that current uri contains a value
+     *
+     * ``` php
+     * <?php
+     * // to match: /home/dashboard
+     * $I->seeInCurrentUrl('home');
+     * // to match: /users/1
+     * $I->seeInCurrentUrl('/users/');
+     * ?>
+     * ```
      *
      * @param $uri
      * @see PhpBrowser::seeInCurrentUrl()
@@ -480,6 +581,158 @@ class WebGuy extends \Codeception\AbstractGuy
      */
     public function seeInCurrentUrl($uri) {
         $this->scenario->assertion('seeInCurrentUrl', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Checks that current uri does not contain a value
+     *
+     * ``` php
+     * <?php
+     * $I->dontSeeInCurrentUrl('/users/');
+     * ?>
+     * ```
+     *
+     * @param $uri
+     * @see PhpBrowser::dontSeeInCurrentUrl()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function dontSeeInCurrentUrl($uri) {
+        $this->scenario->action('dontSeeInCurrentUrl', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Checks that current url is equal to value.
+     * Unlike `seeInCurrentUrl` performs a strict check.
+     *
+     * <?php
+     * // to match root url
+     * $I->seeCurrentUrlEquals('/');
+     * ?>
+     *
+     * @param $uri
+     * @see PhpBrowser::seeCurrentUrlEquals()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function seeCurrentUrlEquals($uri) {
+        $this->scenario->assertion('seeCurrentUrlEquals', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Checks that current url is not equal to value.
+     * Unlike `dontSeeInCurrentUrl` performs a strict check.
+     *
+     * <?php
+     * // current url is not root
+     * $I->dontSeeCurrentUrlEquals('/');
+     * ?>
+     *
+     * @param $uri
+     * @see PhpBrowser::dontSeeCurrentUrlEquals()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function dontSeeCurrentUrlEquals($uri) {
+        $this->scenario->action('dontSeeCurrentUrlEquals', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Checks that current url is matches a RegEx value
+     *
+     * <?php
+     * // to match root url
+     * $I->seeCurrentUrlMatches('~$/users/(\d+)~');
+     * ?>
+     *
+     * @param $uri
+     * @see PhpBrowser::seeCurrentUrlMatches()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function seeCurrentUrlMatches($uri) {
+        $this->scenario->assertion('seeCurrentUrlMatches', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Checks that current url does not match a RegEx value
+     *
+     * <?php
+     * // to match root url
+     * $I->dontSeeCurrentUrlMatches('~$/users/(\d+)~');
+     * ?>
+     *
+     * @param $uri
+     * @see PhpBrowser::dontSeeCurrentUrlMatches()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function dontSeeCurrentUrlMatches($uri) {
+        $this->scenario->action('dontSeeCurrentUrlMatches', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Takes a parameters from current URI by RegEx.
+     * If no url provided returns full URI.
+     *
+     * ``` php
+1     * <?php
+     * $user_id = $I->grabFromCurrentUrl('~$/user/(\d+)/~');
+     * $uri = $I->grabFromCurrentUrl();
+     * ?>
+     * ```
+     *
+     * @param null $uri
+     * @internal param $url
+     * @return mixed
+     * @see PhpBrowser::grabFromCurrentUrl()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function grabFromCurrentUrl($uri = null) {
+        $this->scenario->action('grabFromCurrentUrl', func_get_args());
         if ($this->scenario->running()) {
             $result = $this->scenario->runStep();
             return new Maybe($result);
@@ -712,6 +965,23 @@ class WebGuy extends \Codeception\AbstractGuy
      */
     public function grabAttribute() {
         $this->scenario->action('grabAttribute', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     *
+     * @see WebHelper::login()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function login($I, $username, $password) {
+        $this->scenario->action('login', func_get_args());
         if ($this->scenario->running()) {
             $result = $this->scenario->runStep();
             return new Maybe($result);
