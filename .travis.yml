@@ -8,11 +8,9 @@ before_script:
     - cp app/config/local-dist.php app/config/local.php
     - composer install --dev --prefer-dist
     - composer require --dev --prefer-dist "codeception/codeception:@stable"
-    - app/yiic migrate --connectionID=dbTest --interactive=0
-    - chmod 777 app/data/test.db
     - php -S localhost:31415 -t www/ &
 
-script: ./vendor/bin/codecept run -c`pwd`
+script: ./test.sh
 
 env:
     - PHUNDAMENT_TEST=true
