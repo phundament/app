@@ -25,6 +25,26 @@ class TestGuy extends \Codeception\AbstractGuy
 {
     
     /**
+     * Adds HTTP authentication via username/password.
+     *
+     * @param $username
+     * @param $password
+     * @see Yii1::amHttpAuthenticated()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function amHttpAuthenticated($username, $password) {
+        $this->scenario->condition('amHttpAuthenticated', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
      * Opens the page.
      * Requires relative uri as parameter
      *

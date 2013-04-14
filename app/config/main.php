@@ -24,6 +24,7 @@ $mainConfig = array(
     'aliases' => array(
         // composer
         'root' => $applicationDirectory.'/..',
+        'webroot' => $applicationDirectory.'/../www',
         'vendor' => $applicationDirectory.'/../vendor',
         'bootstrap' => 'vendor.crisu83.yii-bootstrap',
         // p3widgets

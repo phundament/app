@@ -19,12 +19,24 @@ class P3PagesTest extends \Codeception\TestCase\Test
     // tests
     public function testSaveNewPage()
     {
+        Yii::import('p3pages.*');
+
         $model = new P3Page();
         $model->route = '{route:""site/index}';
 
-        # TODO: fix include path for Yii
-        //$model->save();
-        //$this->codeGuy->seeInDatabase($model->tableSchema->name,array('id' => '1'));
+        $model->save();
+        $this->codeGuy->seeInDatabase($model->tableSchema->name,array('id' => '1'));
+        $this->codeGuy->seeInDatabase('p3_page_meta',array('id' => '1'));
     }
 
+    public function testDeletePage()
+    {
+        Yii::import('p3pages.*');
+
+        $model = P3Page::model()->findByPk(1);
+        $model->delete();
+
+        $this->codeGuy->dontSeeInDatabase($model->tableSchema->name,array('id' => '1'));
+        $this->codeGuy->dontSeeInDatabase('p3_page_meta',array('id' => '1'));
+    }
 }

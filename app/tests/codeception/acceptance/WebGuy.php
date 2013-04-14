@@ -173,6 +173,66 @@ class WebGuy extends \Codeception\AbstractGuy
 
  
     /**
+     * Adds HTTP authentication via username/password.
+     *
+     * @param $username
+     * @param $password
+     * @see PhpBrowser::amHttpAuthenticated()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function amHttpAuthenticated($username, $password) {
+        $this->scenario->condition('amHttpAuthenticated', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Low-level API method.
+     * If Codeception commands are not enough, use [Guzzle HTTP Client](http://guzzlephp.org/) methods directly
+     *
+     * Example:
+     *
+     * ``` php
+     * <?php
+     * // from the official Guzzle manual
+     * $I->amGoingTo('Sign all requests with OAuth');
+     * $I->executeInGuzzle(function (\Guzzle\Http\Client $client) {
+     *      $client->addSubscriber(new Guzzle\Plugin\Oauth\OauthPlugin(array(
+     *                  'consumer_key'    => '***',
+     *                  'consumer_secret' => '***',
+     *                  'token'           => '***',
+     *                  'token_secret'    => '***'
+     *      )));
+     * });
+     * ?>
+     * ```
+     *
+     * Not recommended this command too be used on regular basis.
+     * If Codeception lacks important Guzzle Client methods implement then and submit patches.
+     *
+     * @param callable $function
+     * @see PhpBrowser::executeInGuzzle()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function executeInGuzzle($function) {
+        $this->scenario->action('executeInGuzzle', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
      * Opens the page.
      *
      * @param $page
