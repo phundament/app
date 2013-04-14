@@ -11,5 +11,5 @@ modules:
     enabled: [Yii1,TestHelper]
     config:
       Yii1:
-            appPath: './app/www/index-test-functional.php'
+            appPath: './www/index-test-functional.php'
             url: 'http://localhost:31415/index-test-functional.php'
