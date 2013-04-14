@@ -10,7 +10,7 @@ before_script:
     - composer require --dev --prefer-dist "codeception/codeception:@stable"
     - php -S localhost:31415 -t www/ &
 
-script: ./test.sh
+script: sh test.sh
 
 env:
     - PHUNDAMENT_TEST=true
