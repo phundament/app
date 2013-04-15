@@ -4,7 +4,7 @@
 // @codingStandardsIgnoreFile
 
 use Codeception\Maybe;
-use Codeception\Module\Yii1;
+use Codeception\Module\PhpBrowser;
 use Codeception\Module\TestHelper;
 
 /**
@@ -24,525 +24,6 @@ use Codeception\Module\TestHelper;
 class TestGuy extends \Codeception\AbstractGuy
 {
     
-    /**
-     * Adds HTTP authentication via username/password.
-     *
-     * @param $username
-     * @param $password
-     * @see Yii1::amHttpAuthenticated()
-     *
-     * ! This method is generated. DO NOT EDIT. !
-     * ! Documentation taken from corresponding module !
-     */
-    public function amHttpAuthenticated($username, $password) {
-        $this->scenario->condition('amHttpAuthenticated', func_get_args());
-        if ($this->scenario->running()) {
-            $result = $this->scenario->runStep();
-            return new Maybe($result);
-        }
-        return new Maybe();
-    }
-
- 
-    /**
-     * Opens the page.
-     * Requires relative uri as parameter
-     *
-     * Example:
-     *
-     * ``` php
-     * <?php
-     * // opens front page
-     * $I->amOnPage('/');
-     * // opens /register page
-     * $I->amOnPage('/register');
-     * ?>
-     * ```
-     *
-     * @param $page
-     * @see Yii1::amOnPage()
-     *
-     * ! This method is generated. DO NOT EDIT. !
-     * ! Documentation taken from corresponding module !
-     */
-    public function amOnPage($page) {
-        $this->scenario->condition('amOnPage', func_get_args());
-        if ($this->scenario->running()) {
-            $result = $this->scenario->runStep();
-            return new Maybe($result);
-        }
-        return new Maybe();
-    }
-
- 
-    /**
-     * Perform a click on link or button.
-     * Link or button are found by their names or CSS selector.
-     * Submits a form if button is a submit type.
-     *
-     * If link is an image it's found by alt attribute value of image.
-     * If button is image button is found by it's value
-     * If link or button can't be found by name they are searched by CSS selector.
-     *
-     * The second parameter is a context: CSS or XPath locator to narrow the search.
-     *
-     * Examples:
-     *
-     * ``` php
-     * <?php
-     * // simple link
-     * $I->click('Logout');
-     * // button of form
-     * $I->click('Submit');
-     * // CSS button
-     * $I->click('#form input[type=submit]');
-     * // XPath
-     * $I->click('//form/*[@type=submit]')
-     * // link in context
-     * $I->click('Logout', '#nav');
-     * ?>
-     * ```
-     * @param $link
-     * @param $context
-     * @see Yii1::click()
-     *
-     * ! This method is generated. DO NOT EDIT. !
-     * ! Documentation taken from corresponding module !
-     */
-    public function click($link, $context = null) {
-        $this->scenario->action('click', func_get_args());
-        if ($this->scenario->running()) {
-            $result = $this->scenario->runStep();
-            return new Maybe($result);
-        }
-        return new Maybe();
-    }
-
- 
-    /**
-     * Check if current page contains the text specified.
-     * Specify the css selector to match only specific region.
-     *
-     * Examples:
-     *
-     * ``` php
-     * <?php
-     * $I->see('Logout'); // I can suppose user is logged in
-     * $I->see('Sign Up','h1'); // I can suppose it's a signup page
-     * $I->see('Sign Up','//body/h1'); // with XPath
-     *
-     * ```
-     *
-     * @param $text
-     * @param null $selector
-     * @see Yii1::see()
-     *
-     * ! This method is generated. DO NOT EDIT. !
-     * ! Documentation taken from corresponding module !
-     */
-    public function see($text, $selector = null) {
-        $this->scenario->assertion('see', func_get_args());
-        if ($this->scenario->running()) {
-            $result = $this->scenario->runStep();
-            return new Maybe($result);
-        }
-        return new Maybe();
-    }
-
- 
-    /**
-     * Check if current page doesn't contain the text specified.
-     * Specify the css selector to match only specific region.
-     *
-     * Examples:
-     *
-     * ```php
-     * <?php
-     * $I->dontSee('Login'); // I can suppose user is already logged in
-     * $I->dontSee('Sign Up','h1'); // I can suppose it's not a signup page
-     * $I->dontSee('Sign Up','//body/h1'); // with XPath
-     * ```
-     *
-     * @param $text
-     * @param null $selector
-     * @see Yii1::dontSee()
-     *
-     * ! This method is generated. DO NOT EDIT. !
-     * ! Documentation taken from corresponding module !
-     */
-    public function dontSee($text, $selector = null) {
-        $this->scenario->action('dontSee', func_get_args());
-        if ($this->scenario->running()) {
-            $result = $this->scenario->runStep();
-            return new Maybe($result);
-        }
-        return new Maybe();
-    }
-
- 
-    /**
-     * Checks if there is a link with text specified.
-     * Specify url to match link with exact this url.
-     *
-     * Examples:
-     *
-     * ``` php
-     * <?php
-     * $I->seeLink('Logout'); // matches <a href="#">Logout</a>
-     * $I->seeLink('Logout','/logout'); // matches <a href="/logout">Logout</a>
-     *
-     * ```
-     *
-     * @param $text
-     * @param null $url
-     * @see Yii1::seeLink()
-     *
-     * ! This method is generated. DO NOT EDIT. !
-     * ! Documentation taken from corresponding module !
-     */
-    public function seeLink($text, $url = null) {
-        $this->scenario->assertion('seeLink', func_get_args());
-        if ($this->scenario->running()) {
-            $result = $this->scenario->runStep();
-            return new Maybe($result);
-        }
-        return new Maybe();
-    }
-
- 
-    /**
-     * Checks if page doesn't contain the link with text specified.
-     * Specify url to narrow the results.
-     *
-     * Examples:
-     *
-     * ``` php
-     * <?php
-     * $I->dontSeeLink('Logout'); // I suppose user is not logged in
-     *
-     * ```
-     *
-     * @param $text
-     * @param null $url
-     * @see Yii1::dontSeeLink()
-     *
-     * ! This method is generated. DO NOT EDIT. !
-     * ! Documentation taken from corresponding module !
-     */
-    public function dontSeeLink($text, $url = null) {
-        $this->scenario->action('dontSeeLink', func_get_args());
-        if ($this->scenario->running()) {
-            $result = $this->scenario->runStep();
-            return new Maybe($result);
-        }
-        return new Maybe();
-    }
-
- 
-    /**
-     * Checks that current uri contains a value
-     *
-     * ``` php
-     * <?php
-     * // to match: /home/dashboard
-     * $I->seeInCurrentUrl('home');
-     * // to match: /users/1
-     * $I->seeInCurrentUrl('/users/');
-     * ?>
-     * ```
-     *
-     * @param $uri
-     * @see Yii1::seeInCurrentUrl()
-     *
-     * ! This method is generated. DO NOT EDIT. !
-     * ! Documentation taken from corresponding module !
-     */
-    public function seeInCurrentUrl($uri) {
-        $this->scenario->assertion('seeInCurrentUrl', func_get_args());
-        if ($this->scenario->running()) {
-            $result = $this->scenario->runStep();
-            return new Maybe($result);
-        }
-        return new Maybe();
-    }
-
- 
-    /**
-     * Checks that current uri does not contain a value
-     *
-     * ``` php
-     * <?php
-     * $I->dontSeeInCurrentUrl('/users/');
-     * ?>
-     * ```
-     *
-     * @param $uri
-     * @see Yii1::dontSeeInCurrentUrl()
-     *
-     * ! This method is generated. DO NOT EDIT. !
-     * ! Documentation taken from corresponding module !
-     */
-    public function dontSeeInCurrentUrl($uri) {
-        $this->scenario->action('dontSeeInCurrentUrl', func_get_args());
-        if ($this->scenario->running()) {
-            $result = $this->scenario->runStep();
-            return new Maybe($result);
-        }
-        return new Maybe();
-    }
-
- 
-    /**
-     * Checks that current url is equal to value.
-     * Unlike `seeInCurrentUrl` performs a strict check.
-     *
-     * <?php
-     * // to match root url
-     * $I->seeCurrentUrlEquals('/');
-     * ?>
-     *
-     * @param $uri
-     * @see Yii1::seeCurrentUrlEquals()
-     *
-     * ! This method is generated. DO NOT EDIT. !
-     * ! Documentation taken from corresponding module !
-     */
-    public function seeCurrentUrlEquals($uri) {
-        $this->scenario->assertion('seeCurrentUrlEquals', func_get_args());
-        if ($this->scenario->running()) {
-            $result = $this->scenario->runStep();
-            return new Maybe($result);
-        }
-        return new Maybe();
-    }
-
- 
-    /**
-     * Checks that current url is not equal to value.
-     * Unlike `dontSeeInCurrentUrl` performs a strict check.
-     *
-     * <?php
-     * // current url is not root
-     * $I->dontSeeCurrentUrlEquals('/');
-     * ?>
-     *
-     * @param $uri
-     * @see Yii1::dontSeeCurrentUrlEquals()
-     *
-     * ! This method is generated. DO NOT EDIT. !
-     * ! Documentation taken from corresponding module !
-     */
-    public function dontSeeCurrentUrlEquals($uri) {
-        $this->scenario->action('dontSeeCurrentUrlEquals', func_get_args());
-        if ($this->scenario->running()) {
-            $result = $this->scenario->runStep();
-            return new Maybe($result);
-        }
-        return new Maybe();
-    }
-
- 
-    /**
-     * Checks that current url is matches a RegEx value
-     *
-     * <?php
-     * // to match root url
-     * $I->seeCurrentUrlMatches('~$/users/(\d+)~');
-     * ?>
-     *
-     * @param $uri
-     * @see Yii1::seeCurrentUrlMatches()
-     *
-     * ! This method is generated. DO NOT EDIT. !
-     * ! Documentation taken from corresponding module !
-     */
-    public function seeCurrentUrlMatches($uri) {
-        $this->scenario->assertion('seeCurrentUrlMatches', func_get_args());
-        if ($this->scenario->running()) {
-            $result = $this->scenario->runStep();
-            return new Maybe($result);
-        }
-        return new Maybe();
-    }
-
- 
-    /**
-     * Checks that current url does not match a RegEx value
-     *
-     * <?php
-     * // to match root url
-     * $I->dontSeeCurrentUrlMatches('~$/users/(\d+)~');
-     * ?>
-     *
-     * @param $uri
-     * @see Yii1::dontSeeCurrentUrlMatches()
-     *
-     * ! This method is generated. DO NOT EDIT. !
-     * ! Documentation taken from corresponding module !
-     */
-    public function dontSeeCurrentUrlMatches($uri) {
-        $this->scenario->action('dontSeeCurrentUrlMatches', func_get_args());
-        if ($this->scenario->running()) {
-            $result = $this->scenario->runStep();
-            return new Maybe($result);
-        }
-        return new Maybe();
-    }
-
- 
-    /**
-     * Takes a parameters from current URI by RegEx.
-     * If no url provided returns full URI.
-     *
-     * ``` php
-1     * <?php
-     * $user_id = $I->grabFromCurrentUrl('~$/user/(\d+)/~');
-     * $uri = $I->grabFromCurrentUrl();
-     * ?>
-     * ```
-     *
-     * @param null $uri
-     * @internal param $url
-     * @return mixed
-     * @see Yii1::grabFromCurrentUrl()
-     *
-     * ! This method is generated. DO NOT EDIT. !
-     * ! Documentation taken from corresponding module !
-     */
-    public function grabFromCurrentUrl($uri = null) {
-        $this->scenario->action('grabFromCurrentUrl', func_get_args());
-        if ($this->scenario->running()) {
-            $result = $this->scenario->runStep();
-            return new Maybe($result);
-        }
-        return new Maybe();
-    }
-
- 
-    /**
-     * Assert if the specified checkbox is checked.
-     * Use css selector or xpath to match.
-     *
-     * Example:
-     *
-     * ``` php
-     * <?php
-     * $I->seeCheckboxIsChecked('#agree'); // I suppose user agreed to terms
-     * $I->seeCheckboxIsChecked('#signup_form input[type=checkbox]'); // I suppose user agreed to terms, If there is only one checkbox in form.
-     * $I->seeCheckboxIsChecked('//form/input[@type=checkbox and @name=agree]');
-     *
-     * ```
-     *
-     * @param $checkbox
-     * @see Yii1::seeCheckboxIsChecked()
-     *
-     * ! This method is generated. DO NOT EDIT. !
-     * ! Documentation taken from corresponding module !
-     */
-    public function seeCheckboxIsChecked($checkbox) {
-        $this->scenario->assertion('seeCheckboxIsChecked', func_get_args());
-        if ($this->scenario->running()) {
-            $result = $this->scenario->runStep();
-            return new Maybe($result);
-        }
-        return new Maybe();
-    }
-
- 
-    /**
-     * Assert if the specified checkbox is unchecked.
-     * Use css selector or xpath to match.
-     *
-     * Example:
-     *
-     * ``` php
-     * <?php
-     * $I->dontSeeCheckboxIsChecked('#agree'); // I suppose user didn't agree to terms
-     * $I->seeCheckboxIsChecked('#signup_form input[type=checkbox]'); // I suppose user didn't check the first checkbox in form.
-     *
-     * ```
-     *
-     * @param $checkbox
-     * @see Yii1::dontSeeCheckboxIsChecked()
-     *
-     * ! This method is generated. DO NOT EDIT. !
-     * ! Documentation taken from corresponding module !
-     */
-    public function dontSeeCheckboxIsChecked($checkbox) {
-        $this->scenario->action('dontSeeCheckboxIsChecked', func_get_args());
-        if ($this->scenario->running()) {
-            $result = $this->scenario->runStep();
-            return new Maybe($result);
-        }
-        return new Maybe();
-    }
-
- 
-    /**
-     * Checks that an input field or textarea contains value.
-     * Field is matched either by label or CSS or Xpath
-     *
-     * Example:
-     *
-     * ``` php
-     * <?php
-     * $I->seeInField('Body','Type your comment here');
-     * $I->seeInField('form textarea[name=body]','Type your comment here');
-     * $I->seeInField('form input[type=hidden]','hidden_value');
-     * $I->seeInField('#searchform input','Search');
-     * $I->seeInField('//form/*[@name=search]','Search');
-     * ?>
-     * ```
-     *
-     * @param $field
-     * @param $value
-     * @see Yii1::seeInField()
-     *
-     * ! This method is generated. DO NOT EDIT. !
-     * ! Documentation taken from corresponding module !
-     */
-    public function seeInField($field, $value) {
-        $this->scenario->assertion('seeInField', func_get_args());
-        if ($this->scenario->running()) {
-            $result = $this->scenario->runStep();
-            return new Maybe($result);
-        }
-        return new Maybe();
-    }
-
- 
-    /**
-     * Checks that an input field or textarea doesn't contain value.
-     * Field is matched either by label or CSS or Xpath
-     * Example:
-     *
-     * ``` php
-     * <?php
-     * $I->dontSeeInField('Body','Type your comment here');
-     * $I->dontSeeInField('form textarea[name=body]','Type your comment here');
-     * $I->dontSeeInField('form input[type=hidden]','hidden_value');
-     * $I->dontSeeInField('#searchform input','Search');
-     * $I->dontSeeInField('//form/*[@name=search]','Search');
-     * ?>
-     * ```
-     *
-     * @param $field
-     * @param $value
-     * @see Yii1::dontSeeInField()
-     *
-     * ! This method is generated. DO NOT EDIT. !
-     * ! Documentation taken from corresponding module !
-     */
-    public function dontSeeInField($field, $value) {
-        $this->scenario->action('dontSeeInField', func_get_args());
-        if ($this->scenario->running()) {
-            $result = $this->scenario->runStep();
-            return new Maybe($result);
-        }
-        return new Maybe();
-    }
-
- 
     /**
      * Submits a form located on page.
      * Specify the form by it's css or xpath selector.
@@ -582,7 +63,7 @@ class TestGuy extends \Codeception\AbstractGuy
      *
      * @param $selector
      * @param $params
-     * @see Yii1::submitForm()
+     * @see PhpBrowser::submitForm()
      *
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
@@ -598,11 +79,449 @@ class TestGuy extends \Codeception\AbstractGuy
 
  
     /**
+     * If your page triggers an ajax request, you can perform it manually.
+     * This action sends a POST ajax request with specified params.
+     * Additional params can be passed as array.
+     *
+     * Example:
+     *
+     * Imagine that by clicking checkbox you trigger ajax request which updates user settings.
+     * We emulate that click by running this ajax request manually.
+     *
+     * ``` php
+     * <?php
+     * $I->sendAjaxPostRequest('/updateSettings', array('notifications' => true); // POST
+     * $I->sendAjaxGetRequest('/updateSettings', array('notifications' => true); // GET
+     *
+     * ```
+     *
+     * @param $uri
+     * @param $params
+     * @see PhpBrowser::sendAjaxPostRequest()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function sendAjaxPostRequest($uri, $params = null) {
+        $this->scenario->action('sendAjaxPostRequest', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * If your page triggers an ajax request, you can perform it manually.
+     * This action sends a GET ajax request with specified params.
+     *
+     * See ->sendAjaxPostRequest for examples.
+     *
+     * @param $uri
+     * @param $params
+     * @see PhpBrowser::sendAjaxGetRequest()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function sendAjaxGetRequest($uri, $params = null) {
+        $this->scenario->action('sendAjaxGetRequest', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Asserts that current page has 404 response status code.
+     * @see PhpBrowser::seePageNotFound()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function seePageNotFound() {
+        $this->scenario->assertion('seePageNotFound', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Checks that response code is equal to value provided.
+     *
+     * @param $code
+     * @return mixed
+     * @see PhpBrowser::seeResponseCodeIs()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function seeResponseCodeIs($code) {
+        $this->scenario->assertion('seeResponseCodeIs', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Adds HTTP authentication via username/password.
+     *
+     * @param $username
+     * @param $password
+     * @see PhpBrowser::amHttpAuthenticated()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function amHttpAuthenticated($username, $password) {
+        $this->scenario->condition('amHttpAuthenticated', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Low-level API method.
+     * If Codeception commands are not enough, use [Guzzle HTTP Client](http://guzzlephp.org/) methods directly
+     *
+     * Example:
+     *
+     * ``` php
+     * <?php
+     * // from the official Guzzle manual
+     * $I->amGoingTo('Sign all requests with OAuth');
+     * $I->executeInGuzzle(function (\Guzzle\Http\Client $client) {
+     *      $client->addSubscriber(new Guzzle\Plugin\Oauth\OauthPlugin(array(
+     *                  'consumer_key'    => '***',
+     *                  'consumer_secret' => '***',
+     *                  'token'           => '***',
+     *                  'token_secret'    => '***'
+     *      )));
+     * });
+     * ?>
+     * ```
+     *
+     * Not recommended this command too be used on regular basis.
+     * If Codeception lacks important Guzzle Client methods implement then and submit patches.
+     *
+     * @param callable $function
+     * @see PhpBrowser::executeInGuzzle()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function executeInGuzzle($function) {
+        $this->scenario->action('executeInGuzzle', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Opens the page.
+     *
+     * @param $page
+     * @see PhpBrowser::amOnPage()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function amOnPage($page) {
+        $this->scenario->condition('amOnPage', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Check if current page doesn't contain the text specified.
+     * Specify the css selector to match only specific region.
+     *
+     * Examples:
+     *
+     * ```php
+     * <?php
+     * $I->dontSee('Login'); // I can suppose user is already logged in
+     * $I->dontSee('Sign Up','h1'); // I can suppose it's not a signup page
+     * $I->dontSee('Sign Up','//body/h1'); // with XPath
+     * ```
+     *
+     * @param $text
+     * @param null $selector
+     * @see PhpBrowser::dontSee()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function dontSee($text, $selector = null) {
+        $this->scenario->action('dontSee', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Check if current page contains the text specified.
+     * Specify the css selector to match only specific region.
+     *
+     * Examples:
+     *
+     * ``` php
+     * <?php
+     * $I->see('Logout'); // I can suppose user is logged in
+     * $I->see('Sign Up','h1'); // I can suppose it's a signup page
+     * $I->see('Sign Up','//body/h1'); // with XPath
+     *
+     * ```
+     *
+     * @param $text
+     * @param null $selector
+     * @see PhpBrowser::see()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function see($text, $selector = null) {
+        $this->scenario->assertion('see', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Checks if there is a link with text specified.
+     * Specify url to match link with exact this url.
+     *
+     * Examples:
+     *
+     * ``` php
+     * <?php
+     * $I->seeLink('Logout'); // matches <a href="#">Logout</a>
+     * $I->seeLink('Logout','/logout'); // matches <a href="/logout">Logout</a>
+     *
+     * ```
+     *
+     * @param $text
+     * @param null $url
+     * @see PhpBrowser::seeLink()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function seeLink($text, $url = null) {
+        $this->scenario->assertion('seeLink', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Checks if page doesn't contain the link with text specified.
+     * Specify url to narrow the results.
+     *
+     * Examples:
+     *
+     * ``` php
+     * <?php
+     * $I->dontSeeLink('Logout'); // I suppose user is not logged in
+     *
+     * ```
+     *
+     * @param $text
+     * @param null $url
+     * @see PhpBrowser::dontSeeLink()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function dontSeeLink($text, $url = null) {
+        $this->scenario->action('dontSeeLink', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Perform a click on link or button.
+     * Link or button are found by their names or CSS selector.
+     * Submits a form if button is a submit type.
+     *
+     * If link is an image it's found by alt attribute value of image.
+     * If button is image button is found by it's value
+     * If link or button can't be found by name they are searched by CSS selector.
+     *
+     * The second parameter is a context: CSS or XPath locator to narrow the search.
+     *
+     * Examples:
+     *
+     * ``` php
+     * <?php
+     * // simple link
+     * $I->click('Logout');
+     * // button of form
+     * $I->click('Submit');
+     * // CSS button
+     * $I->click('#form input[type=submit]');
+     * // XPath
+     * $I->click('//form/*[@type=submit]')
+     * // link in context
+     * $I->click('Logout', '#nav');
+     * ?>
+     * ```
+     * @param $link
+     * @param $context
+     * @see PhpBrowser::click()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function click($link, $context = null) {
+        $this->scenario->action('click', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Checks if element exists on a page, matching it by CSS or XPath
+     *
+     * ``` php
+     * <?php
+     * $I->seeElement('.error');
+     * $I->seeElement(//form/input[1]);
+     * ?>
+     * ```
+     * @param $selector
+     * @see PhpBrowser::seeElement()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function seeElement($selector) {
+        $this->scenario->assertion('seeElement', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Checks if element does not exist (or is visible) on a page, matching it by CSS or XPath
+     *
+     * ``` php
+     * <?php
+     * $I->dontSeeElement('.error');
+     * $I->dontSeeElement(//form/input[1]);
+     * ?>
+     * ```
+     * @param $selector
+     * @see PhpBrowser::dontSeeElement()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function dontSeeElement($selector) {
+        $this->scenario->action('dontSeeElement', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Reloads current page
+     * @see PhpBrowser::reloadPage()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function reloadPage() {
+        $this->scenario->action('reloadPage', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Moves back in history
+     * @see PhpBrowser::moveBack()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function moveBack() {
+        $this->scenario->action('moveBack', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Moves forward in history
+     * @see PhpBrowser::moveForward()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function moveForward() {
+        $this->scenario->action('moveForward', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
      * Fills a text field or textarea with value.
      *
      * @param $field
      * @param $value
-     * @see Yii1::fillField()
+     * @see PhpBrowser::fillField()
      *
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
@@ -632,7 +551,7 @@ class TestGuy extends \Codeception\AbstractGuy
      *
      * @param $select
      * @param $option
-     * @see Yii1::selectOption()
+     * @see PhpBrowser::selectOption()
      *
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
@@ -660,7 +579,7 @@ class TestGuy extends \Codeception\AbstractGuy
      * ```
      *
      * @param $option
-     * @see Yii1::checkOption()
+     * @see PhpBrowser::checkOption()
      *
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
@@ -687,13 +606,193 @@ class TestGuy extends \Codeception\AbstractGuy
      * ```
      *
      * @param $option
-     * @see Yii1::uncheckOption()
+     * @see PhpBrowser::uncheckOption()
      *
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
      */
     public function uncheckOption($option) {
         $this->scenario->action('uncheckOption', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Checks that current uri contains a value
+     *
+     * ``` php
+     * <?php
+     * // to match: /home/dashboard
+     * $I->seeInCurrentUrl('home');
+     * // to match: /users/1
+     * $I->seeInCurrentUrl('/users/');
+     * ?>
+     * ```
+     *
+     * @param $uri
+     * @see PhpBrowser::seeInCurrentUrl()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function seeInCurrentUrl($uri) {
+        $this->scenario->assertion('seeInCurrentUrl', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Checks that current uri does not contain a value
+     *
+     * ``` php
+     * <?php
+     * $I->dontSeeInCurrentUrl('/users/');
+     * ?>
+     * ```
+     *
+     * @param $uri
+     * @see PhpBrowser::dontSeeInCurrentUrl()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function dontSeeInCurrentUrl($uri) {
+        $this->scenario->action('dontSeeInCurrentUrl', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Checks that current url is equal to value.
+     * Unlike `seeInCurrentUrl` performs a strict check.
+     *
+     * <?php
+     * // to match root url
+     * $I->seeCurrentUrlEquals('/');
+     * ?>
+     *
+     * @param $uri
+     * @see PhpBrowser::seeCurrentUrlEquals()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function seeCurrentUrlEquals($uri) {
+        $this->scenario->assertion('seeCurrentUrlEquals', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Checks that current url is not equal to value.
+     * Unlike `dontSeeInCurrentUrl` performs a strict check.
+     *
+     * <?php
+     * // current url is not root
+     * $I->dontSeeCurrentUrlEquals('/');
+     * ?>
+     *
+     * @param $uri
+     * @see PhpBrowser::dontSeeCurrentUrlEquals()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function dontSeeCurrentUrlEquals($uri) {
+        $this->scenario->action('dontSeeCurrentUrlEquals', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Checks that current url is matches a RegEx value
+     *
+     * <?php
+     * // to match root url
+     * $I->seeCurrentUrlMatches('~$/users/(\d+)~');
+     * ?>
+     *
+     * @param $uri
+     * @see PhpBrowser::seeCurrentUrlMatches()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function seeCurrentUrlMatches($uri) {
+        $this->scenario->assertion('seeCurrentUrlMatches', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Checks that current url does not match a RegEx value
+     *
+     * <?php
+     * // to match root url
+     * $I->dontSeeCurrentUrlMatches('~$/users/(\d+)~');
+     * ?>
+     *
+     * @param $uri
+     * @see PhpBrowser::dontSeeCurrentUrlMatches()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function dontSeeCurrentUrlMatches($uri) {
+        $this->scenario->action('dontSeeCurrentUrlMatches', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Takes a parameters from current URI by RegEx.
+     * If no url provided returns full URI.
+     *
+     * ``` php
+1     * <?php
+     * $user_id = $I->grabFromCurrentUrl('~$/user/(\d+)/~');
+     * $uri = $I->grabFromCurrentUrl();
+     * ?>
+     * ```
+     *
+     * @param null $uri
+     * @internal param $url
+     * @return mixed
+     * @see PhpBrowser::grabFromCurrentUrl()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function grabFromCurrentUrl($uri = null) {
+        $this->scenario->action('grabFromCurrentUrl', func_get_args());
         if ($this->scenario->running()) {
             $result = $this->scenario->runStep();
             return new Maybe($result);
@@ -716,7 +815,7 @@ class TestGuy extends \Codeception\AbstractGuy
      *
      * @param $field
      * @param $filename
-     * @see Yii1::attachFile()
+     * @see PhpBrowser::attachFile()
      *
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
@@ -732,54 +831,27 @@ class TestGuy extends \Codeception\AbstractGuy
 
  
     /**
-     * If your page triggers an ajax request, you can perform it manually.
-     * This action sends a GET ajax request with specified params.
-     *
-     * See ->sendAjaxPostRequest for examples.
-     *
-     * @param $uri
-     * @param $params
-     * @see Yii1::sendAjaxGetRequest()
-     *
-     * ! This method is generated. DO NOT EDIT. !
-     * ! Documentation taken from corresponding module !
-     */
-    public function sendAjaxGetRequest($uri, $params = null) {
-        $this->scenario->action('sendAjaxGetRequest', func_get_args());
-        if ($this->scenario->running()) {
-            $result = $this->scenario->runStep();
-            return new Maybe($result);
-        }
-        return new Maybe();
-    }
-
- 
-    /**
-     * If your page triggers an ajax request, you can perform it manually.
-     * This action sends a POST ajax request with specified params.
-     * Additional params can be passed as array.
+     * Assert if the specified checkbox is checked.
+     * Use css selector or xpath to match.
      *
      * Example:
      *
-     * Imagine that by clicking checkbox you trigger ajax request which updates user settings.
-     * We emulate that click by running this ajax request manually.
-     *
      * ``` php
      * <?php
-     * $I->sendAjaxPostRequest('/updateSettings', array('notifications' => true); // POST
-     * $I->sendAjaxGetRequest('/updateSettings', array('notifications' => true); // GET
+     * $I->seeCheckboxIsChecked('#agree'); // I suppose user agreed to terms
+     * $I->seeCheckboxIsChecked('#signup_form input[type=checkbox]'); // I suppose user agreed to terms, If there is only one checkbox in form.
+     * $I->seeCheckboxIsChecked('//form/input[@type=checkbox and @name=agree]');
      *
      * ```
      *
-     * @param $uri
-     * @param $params
-     * @see Yii1::sendAjaxPostRequest()
+     * @param $checkbox
+     * @see PhpBrowser::seeCheckboxIsChecked()
      *
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
      */
-    public function sendAjaxPostRequest($uri, $params = null) {
-        $this->scenario->action('sendAjaxPostRequest', func_get_args());
+    public function seeCheckboxIsChecked($checkbox) {
+        $this->scenario->assertion('seeCheckboxIsChecked', func_get_args());
         if ($this->scenario->running()) {
             $result = $this->scenario->runStep();
             return new Maybe($result);
@@ -789,14 +861,91 @@ class TestGuy extends \Codeception\AbstractGuy
 
  
     /**
+     * Assert if the specified checkbox is unchecked.
+     * Use css selector or xpath to match.
      *
-     * @see Yii1::formatResponse()
+     * Example:
+     *
+     * ``` php
+     * <?php
+     * $I->dontSeeCheckboxIsChecked('#agree'); // I suppose user didn't agree to terms
+     * $I->seeCheckboxIsChecked('#signup_form input[type=checkbox]'); // I suppose user didn't check the first checkbox in form.
+     *
+     * ```
+     *
+     * @param $checkbox
+     * @see PhpBrowser::dontSeeCheckboxIsChecked()
      *
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
      */
-    public function formatResponse($response) {
-        $this->scenario->action('formatResponse', func_get_args());
+    public function dontSeeCheckboxIsChecked($checkbox) {
+        $this->scenario->action('dontSeeCheckboxIsChecked', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Checks that an input field or textarea contains value.
+     * Field is matched either by label or CSS or Xpath
+     *
+     * Example:
+     *
+     * ``` php
+     * <?php
+     * $I->seeInField('Body','Type your comment here');
+     * $I->seeInField('form textarea[name=body]','Type your comment here');
+     * $I->seeInField('form input[type=hidden]','hidden_value');
+     * $I->seeInField('#searchform input','Search');
+     * $I->seeInField('//form/*[@name=search]','Search');
+     * ?>
+     * ```
+     *
+     * @param $field
+     * @param $value
+     * @see PhpBrowser::seeInField()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function seeInField($field, $value) {
+        $this->scenario->assertion('seeInField', func_get_args());
+        if ($this->scenario->running()) {
+            $result = $this->scenario->runStep();
+            return new Maybe($result);
+        }
+        return new Maybe();
+    }
+
+ 
+    /**
+     * Checks that an input field or textarea doesn't contain value.
+     * Field is matched either by label or CSS or Xpath
+     * Example:
+     *
+     * ``` php
+     * <?php
+     * $I->dontSeeInField('Body','Type your comment here');
+     * $I->dontSeeInField('form textarea[name=body]','Type your comment here');
+     * $I->dontSeeInField('form input[type=hidden]','hidden_value');
+     * $I->dontSeeInField('#searchform input','Search');
+     * $I->dontSeeInField('//form/*[@name=search]','Search');
+     * ?>
+     * ```
+     *
+     * @param $field
+     * @param $value
+     * @see PhpBrowser::dontSeeInField()
+     *
+     * ! This method is generated. DO NOT EDIT. !
+     * ! Documentation taken from corresponding module !
+     */
+    public function dontSeeInField($field, $value) {
+        $this->scenario->action('dontSeeInField', func_get_args());
         if ($this->scenario->running()) {
             $result = $this->scenario->runStep();
             return new Maybe($result);
@@ -821,7 +970,7 @@ class TestGuy extends \Codeception\AbstractGuy
      *
      * @param $cssOrXPathOrRegex
      * @return mixed
-     * @see Yii1::grabTextFrom()
+     * @see PhpBrowser::grabTextFrom()
      *
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
@@ -852,7 +1001,7 @@ class TestGuy extends \Codeception\AbstractGuy
      *
      * @param $field
      * @return mixed
-     * @see Yii1::grabValueFrom()
+     * @see PhpBrowser::grabValueFrom()
      *
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
@@ -868,22 +1017,14 @@ class TestGuy extends \Codeception\AbstractGuy
 
  
     /**
-     * Checks if element exists on a page, matching it by CSS or XPath
      *
-     * ``` php
-     * <?php
-     * $I->seeElement('.error');
-     * $I->seeElement(//form/input[1]);
-     * ?>
-     * ```
-     * @param $selector
-     * @see Yii1::seeElement()
+     * @see PhpBrowser::grabAttribute()
      *
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
      */
-    public function seeElement($selector) {
-        $this->scenario->assertion('seeElement', func_get_args());
+    public function grabAttribute() {
+        $this->scenario->action('grabAttribute', func_get_args());
         if ($this->scenario->running()) {
             $result = $this->scenario->runStep();
             return new Maybe($result);
@@ -893,59 +1034,14 @@ class TestGuy extends \Codeception\AbstractGuy
 
  
     /**
-     * Checks if element does not exist (or is visible) on a page, matching it by CSS or XPath
      *
-     * ``` php
-     * <?php
-     * $I->dontSeeElement('.error');
-     * $I->dontSeeElement(//form/input[1]);
-     * ?>
-     * ```
-     * @param $selector
-     * @see Yii1::dontSeeElement()
+     * @see TestHelper::login()
      *
      * ! This method is generated. DO NOT EDIT. !
      * ! Documentation taken from corresponding module !
      */
-    public function dontSeeElement($selector) {
-        $this->scenario->action('dontSeeElement', func_get_args());
-        if ($this->scenario->running()) {
-            $result = $this->scenario->runStep();
-            return new Maybe($result);
-        }
-        return new Maybe();
-    }
-
- 
-    /**
-     * Asserts that current page has 404 response status code.
-     * @see Yii1::seePageNotFound()
-     *
-     * ! This method is generated. DO NOT EDIT. !
-     * ! Documentation taken from corresponding module !
-     */
-    public function seePageNotFound() {
-        $this->scenario->assertion('seePageNotFound', func_get_args());
-        if ($this->scenario->running()) {
-            $result = $this->scenario->runStep();
-            return new Maybe($result);
-        }
-        return new Maybe();
-    }
-
- 
-    /**
-     * Checks that response code is equal to value provided.
-     *
-     * @param $code
-     * @return mixed
-     * @see Yii1::seeResponseCodeIs()
-     *
-     * ! This method is generated. DO NOT EDIT. !
-     * ! Documentation taken from corresponding module !
-     */
-    public function seeResponseCodeIs($code) {
-        $this->scenario->assertion('seeResponseCodeIs', func_get_args());
+    public function login($I, $username, $password) {
+        $this->scenario->action('login', func_get_args());
         if ($this->scenario->running()) {
             $result = $this->scenario->runStep();
             return new Maybe($result);
