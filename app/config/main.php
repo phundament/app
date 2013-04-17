@@ -291,10 +291,9 @@ $mainConfig = array(
                 // convenience rules
                 'admin' => 'p3admin',
                 '<lang:[a-z]{2}>/pages/<view:\w+>' => 'site/page',
-                '<lang:[a-z]{2}>/wiki/<page:\w+>' => 'wiki',
                 // p3pages - SEO
                 '<lang:[a-z]{2}>/<pageName:[a-zA-Z0-9-._]*>-<pageId:\d+>.html' => 'p3pages/default/page',
-                // p3media
+                // p3media - SEO
                 '<lang:[a-z]{2}>/img/<preset:[a-zA-Z0-9-._]+>/<title:.+>_<id:\d+><extension:.[a-zA-Z0-9]{1,}+>' => 'p3media/file/image', // p3media images, TESTING: disable in case of problems
                 // Yii
                 '<controller:\w+>/<id:\d+>' => '<controller>/view',
