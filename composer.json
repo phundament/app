@@ -29,7 +29,7 @@
     "minimum-stability":"dev",
     "require":{
         "php":">=5.3.2",
-        "yiisoft/yii":"1.1.12",
+        "yiisoft/yii":"1.1.13",
         "crisu83/yii-rights":"@dev",
         "malyshev/yii-debug-toolbar":"@dev",
         "mishamx/yii-user":"@dev",

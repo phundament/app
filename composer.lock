@@ -1,5 +1,5 @@
 {
-    "hash": "459ecc592b65b188b343dccc951da659",
+    "hash": "d025a257c51644fbc8f312391dfdad19",
     "packages": [
         {
             "name": "anggiaj/eselect2",
@@ -617,15 +617,15 @@
         },
         {
             "name": "yiisoft/yii",
-            "version": "1.1.12",
+            "version": "1.1.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii.git",
-                "reference": "b600af63136a8913b192cbe651186f02632c0267"
+                "reference": "e9e4a0d5be901d8bd48e516a2d9afe33d6fd05a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii/zipball/1.1.12",
+                "url": "https://api.github.com/repos/yiisoft/yii/zipball/1.1.13",
                 "reference": null,
                 "shasum": null
             },
