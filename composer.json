@@ -44,8 +44,7 @@
         "yiiext/fancybox-widget":"0.*",
         "yiiext/lipsum-widget":"0.*",
         "yiiext/migrate-command":"0.7.*",
-        "waalzer/app-demo-data": "dev-master",
-        "codeception/codeception": "@stable"
+        "waalzer/app-demo-data": "dev-master"
     },
     "require-dev":{
         "schmunk42/database-command":"0.8.*",
