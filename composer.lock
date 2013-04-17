@@ -9,6 +9,12 @@
                 "url": "https://github.com/anggiaj/ESelect2.git",
                 "reference": "31411a81217a6e70d6d9af85a6f85a40edb8bf7f"
             },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/anggiaj/ESelect2/archive/31411a81217a6e70d6d9af85a6f85a40edb8bf7f.zip",
+                "reference": null,
+                "shasum": null
+            },
             "type": "yii-extension",
             "description": "ESelect2 is a widget extension for Yii framework. This extension is a wrapper for Select2 Jquery plugin (https://github.com/ivaynberg/select2). ",
             "homepage": "https://github.com/anggiaj/ESelect2",
@@ -59,6 +65,12 @@
                 "url": "https://github.com/ifdattic/EChosen.git",
                 "reference": "97c235df2640342074bf5902190bc74720890ce7"
             },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/ifdattic/EChosen/archive/97c235df2640342074bf5902190bc74720890ce7.zip",
+                "reference": null,
+                "shasum": null
+            },
             "type": "yii-extension",
             "description": "Yii extension which adds Chosen JavaScript plugin.",
             "homepage": "https://github.com/ifdattic/EChosen",
@@ -72,6 +84,12 @@
                 "url": "https://github.com/malyshev/yii-debug-toolbar.git",
                 "reference": "9102ebaaf5a00a0d2deba73f1f4de3f4198511be"
             },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/malyshev/yii-debug-toolbar/archive/9102ebaaf5a00a0d2deba73f1f4de3f4198511be.zip",
+                "reference": null,
+                "shasum": null
+            },
             "type": "yii-extension",
             "description": "A configurable set of panels that display various debug information about the current request/response. ",
             "homepage": "https://github.com/malyshev/yii-debug-toolbar",
@@ -84,6 +102,12 @@
                 "type": "git",
                 "url": "https://github.com/phundament/yii-user.git",
                 "reference": "00c8ca23c72adf1a07b3555b6274f6d6c911564d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/phundament/yii-user/archive/00c8ca23c72adf1a07b3555b6274f6d6c911564d.zip",
+                "reference": null,
+                "shasum": null
             },
             "type": "yii-extension",
             "description": "Yii PHP Framework extension for registration and management users accounts.",
@@ -141,6 +165,12 @@
                 "type": "git",
                 "url": "https://github.com/schmunk42/jQuery-File-Upload.git",
                 "reference": "5e08d974a080a931dda654086a1391e75cbda99f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/schmunk42/jQuery-File-Upload/archive/5e08d974a080a931dda654086a1391e75cbda99f.zip",
+                "reference": null,
+                "shasum": null
             },
             "type": "library",
             "description": "Multiple File Upload widget with Drag&Drop support for jQuery",
@@ -448,7 +478,7 @@
                 {
                     "name": "Tobias Munk",
                     "email": "schmunk@usrbin.de",
-                    "homepage": "http://www.phundament.com"
+                    "homepage": "http://www.usrbin.de"
                 }
             ],
             "description": "Yii Framework Theme-Manager class, switch themes by regular expressions on controller routes.",
@@ -508,6 +538,12 @@
                 "type": "git",
                 "url": "https://github.com/vitalets/yii-bootstrap-editable.git",
                 "reference": "24f8fbaa111f53a3325fc02351add4e20bcba6be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/vitalets/yii-bootstrap-editable/archive/24f8fbaa111f53a3325fc02351add4e20bcba6be.zip",
+                "reference": null,
+                "shasum": null
             },
             "type": "yii-extension",
             "description": "Yii extension for Bootstrap-editable plugin",
@@ -571,7 +607,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiiext/fancybox-widget/zipball/v0.3",
+                "url": "https://github.com/yiiext/fancybox-widget/archive/20ed3c25e54a6c990b81f56b6f24e5c34070e725.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -589,7 +625,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiiext/lipsum-widget/zipball/v0.1",
+                "url": "https://github.com/yiiext/lipsum-widget/archive/f70ab9c91db70775cd17618d4d5d00f07e72d8da.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -607,7 +643,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiiext/migrate-command/zipball/0.7.2",
+                "url": "https://github.com/yiiext/migrate-command/archive/79b578ed54cdf6ecaa65db0a496151f7528a7e40.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -625,7 +661,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii/zipball/1.1.13",
+                "url": "https://github.com/yiisoft/yii/archive/e9e4a0d5be901d8bd48e516a2d9afe33d6fd05a6.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -645,7 +681,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cloudhead/less.js/zipball/v1.3.3",
+                "url": "https://github.com/cloudhead/less.js/archive/a9775a34dad65482535e670a0c3dae925b824431.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -659,31 +695,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Crisu83/yii-less.git",
-                "reference": "v1.1.1"
+                "reference": "481e6ecdf172e6f0f3ce8dec24b5cd0a01b34b22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Crisu83/yii-less/zipball/v1.1.1",
-                "reference": "v1.1.1",
-                "shasum": ""
+                "url": "https://github.com/Crisu83/yii-less/archive/481e6ecdf172e6f0f3ce8dec24b5cd0a01b34b22.zip",
+                "reference": null,
+                "shasum": null
             },
             "type": "yii-extension",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Christoffer Niska",
-                    "email": "christoffer.niska@gmail.com",
-                    "homepage": "http://www.cniska.net/"
-                }
-            ],
-            "description": "LESS compilers for the Yii PHP framework.",
-            "keywords": [
-                "less"
-            ],
-            "time": "2013-04-09 22:06:09"
+            "description": "Yii extension for compiling LESS files client and server-side.",
+            "homepage": "https://github.com/Crisu83/yii-less"
         },
         {
             "name": "phundament/lessii",
@@ -775,7 +797,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twitter/bootstrap/zipball/v2.3.1",
+                "url": "https://github.com/twitter/bootstrap/archive/eb24718add4dd36fe92fdbdb79e6ff4ce5919300.zip",
                 "reference": null,
                 "shasum": null
             },
