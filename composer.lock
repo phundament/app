@@ -179,16 +179,16 @@
         },
         {
             "name": "phundament/p3admin",
-            "version": "0.12.1",
+            "version": "0.12.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3admin.git",
-                "reference": "0.12.1"
+                "reference": "0.12.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3admin/zipball/0.12.1",
-                "reference": "0.12.1",
+                "url": "https://api.github.com/repos/schmunk42/p3admin/zipball/0.12.2",
+                "reference": "0.12.2",
                 "shasum": ""
             },
             "require": {
@@ -219,10 +219,10 @@
                 "yii"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3admin/tree/0.12.1",
+                "source": "https://github.com/schmunk42/p3admin/tree/master",
                 "issues": "https://github.com/schmunk42/p3admin/issues"
             },
-            "time": "2013-03-25 22:01:39"
+            "time": "2013-04-17 10:07:52"
         },
         {
             "name": "phundament/p3bootstrap",
