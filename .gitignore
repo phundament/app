@@ -5,6 +5,7 @@
 /app/tests/codeception/_log
 
 
+composer.lock
 nbproject
 .DS_Store
 .idea
