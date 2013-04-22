@@ -70,6 +70,7 @@ $mainConfig = array(
             'ipFilters' => array('127.0.0.1', '::1'),
             'generatorPaths' => array(
                 'vendor.phundament.gii-template-collection', // giix generators
+                'bootstrap.gii', // bootstrap generator
             ),
         ),
         'p3admin' => array(
