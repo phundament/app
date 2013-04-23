@@ -30,6 +30,10 @@ composer.phar create-project --prefer-dist phundament/app
 ```
 php composer.phar install --prefer-dist
 ```
+
+When asked, enter your desired admin credentials and apply the database migrations.
+
+
 ### Step 2
 
 Open `phundament-app/www/index.php` in your browser
