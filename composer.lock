@@ -1,4 +1,8 @@
 {
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
     "hash": "d025a257c51644fbc8f312391dfdad19",
     "packages": [
         {
@@ -278,12 +282,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3extensions.git",
-                "reference": "0.10.0"
+                "reference": "0.10.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3extensions/zipball/0.10.0",
-                "reference": "0.10.0",
+                "url": "https://api.github.com/repos/schmunk42/p3extensions/zipball/0.10.1",
+                "reference": "0.10.1",
                 "shasum": ""
             },
             "require": {
@@ -309,23 +313,23 @@
                 "phundament"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3extensions/tree/0.10.0",
+                "source": "https://github.com/schmunk42/p3extensions/tree/0.10.1",
                 "issues": "https://github.com/schmunk42/p3extensions/issues"
             },
-            "time": "2013-04-17 10:11:07"
+            "time": "2013-04-25 15:29:12"
         },
         {
             "name": "phundament/p3media",
-            "version": "0.11.6",
+            "version": "0.11.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3media.git",
-                "reference": "0.11.6"
+                "reference": "0.11.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3media/zipball/0.11.6",
-                "reference": "0.11.6",
+                "url": "https://api.github.com/repos/schmunk42/p3media/zipball/0.11.9",
+                "reference": "0.11.9",
                 "shasum": ""
             },
             "require": {
@@ -357,10 +361,10 @@
                 "yii"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3media/tree/master",
+                "source": "https://github.com/schmunk42/p3media/tree/0.11.9",
                 "issues": "https://github.com/schmunk42/p3media/issues"
             },
-            "time": "2013-04-11 14:34:16"
+            "time": "2013-04-25 15:14:04"
         },
         {
             "name": "phundament/p3pages",
@@ -754,16 +758,16 @@
         },
         {
             "name": "schmunk42/database-command",
-            "version": "0.8.9",
+            "version": "0.8.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/database-command.git",
-                "reference": "0.8.9"
+                "reference": "0.8.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/database-command/zipball/0.8.9",
-                "reference": "0.8.9",
+                "url": "https://api.github.com/repos/schmunk42/database-command/zipball/0.8.10",
+                "reference": "0.8.10",
                 "shasum": ""
             },
             "require": {
@@ -781,11 +785,20 @@
                 }
             ],
             "description": "Yii command to create database migrations from existing schema",
+            "homepage": "https://github.com/schmunk42/database-command",
+            "keywords": [
+                "command",
+                "create",
+                "database",
+                "dump",
+                "migration",
+                "yii"
+            ],
             "support": {
-                "source": "https://github.com/schmunk42/database-command/tree/0.8.9",
+                "source": "https://github.com/schmunk42/database-command/tree/0.8.10",
                 "issues": "https://github.com/schmunk42/database-command/issues"
             },
-            "time": "2013-04-10 15:23:42"
+            "time": "2013-04-24 15:22:11"
         },
         {
             "name": "twitter/bootstrap",
