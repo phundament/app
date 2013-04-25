@@ -9,8 +9,6 @@ $I->see('Login','h1');
 $I->amOnPage('?r=p3admin/default/settings&lang=en');
 $I->see('Login','h1');
 
-$I->amOnPage('?r=site/index&lang=en');
-$I->see('Login','h1');
 $I->amOnPage('?r=user/login/login&lang=en');
 $I->see('Login','h1');
 $I->see('Register','a');
