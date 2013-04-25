@@ -10,8 +10,7 @@ class WebHelper extends \Codeception\Module
         $I->fillField('UserLogin[username]', $username);
         $I->fillField('UserLogin[password]', $password);
         $I->click('.form INPUT[type=submit]');
-        $I->see('Admin');
-        $I->see('Logout');
-        $I->dontSee('Login');
+        $I->see('Logout','.dropdown-menu li a');
+        $I->dontSee('Login','.nav li a');
     }
 }
