@@ -413,16 +413,16 @@
         },
         {
             "name": "phundament/p3widgets",
-            "version": "0.11.2",
+            "version": "0.11.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3widgets.git",
-                "reference": "0.11.2"
+                "reference": "0.11.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/0.11.2",
-                "reference": "0.11.2",
+                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/0.11.3",
+                "reference": "0.11.3",
                 "shasum": ""
             },
             "require": {
@@ -450,10 +450,10 @@
                 "widget"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3widgets/tree/0.11.2",
+                "source": "https://github.com/schmunk42/p3widgets/tree/0.11.3",
                 "issues": "https://github.com/schmunk42/p3widgets/issues"
             },
-            "time": "2013-04-15 18:09:23"
+            "time": "2013-04-25 22:16:24"
         },
         {
             "name": "schmunk42/multi-theme",
