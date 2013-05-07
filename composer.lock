@@ -320,16 +320,16 @@
         },
         {
             "name": "phundament/p3media",
-            "version": "0.11.9",
+            "version": "0.11.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3media.git",
-                "reference": "0.11.9"
+                "reference": "0.11.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3media/zipball/0.11.9",
-                "reference": "0.11.9",
+                "url": "https://api.github.com/repos/schmunk42/p3media/zipball/0.11.10",
+                "reference": "0.11.10",
                 "shasum": ""
             },
             "require": {
@@ -361,10 +361,10 @@
                 "yii"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3media/tree/0.11.9",
+                "source": "https://github.com/schmunk42/p3media/tree/0.11.10",
                 "issues": "https://github.com/schmunk42/p3media/issues"
             },
-            "time": "2013-04-25 15:14:04"
+            "time": "2013-05-07 10:19:22"
         },
         {
             "name": "phundament/p3pages",
