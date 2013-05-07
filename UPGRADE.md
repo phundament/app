@@ -74,7 +74,7 @@ Shell
 
 `./yiic p3bootstrap`
 
-`config/console.php`
+`config/main.php`
 
         'p3pages' => array(
             'class' => 'vendor.phundament.p3pages.P3PagesModule',
