@@ -25,7 +25,7 @@ $mainConfig = array(
         'root' => $applicationDirectory.'/..',
         'webroot' => $applicationDirectory.'/../www',
         'vendor' => $applicationDirectory.'/../vendor',
-        'bootstrap' => 'vendor.crisu83.yii-bootstrap',
+        'bootstrap' => 'vendor.clevertech.YiiBooster',
         // p3widgets
         'jsonEditorView' => 'vendor.phundament.p3extensions.widgets.jsonEditorView',
         'ckeditor' => 'vendor.phundament.p3extensions.widgets.ckeditor',
@@ -70,6 +70,7 @@ $mainConfig = array(
             'ipFilters' => array('127.0.0.1', '::1'),
             'generatorPaths' => array(
                 'vendor.phundament.gii-template-collection', // giix generators
+                'bootstrap.gii', // bootstrap generator
             ),
         ),
         'p3admin' => array(
@@ -200,7 +201,7 @@ $mainConfig = array(
             'defaultRoles' => array('Authenticated', 'Guest'), // see correspoing business rules, note: superusers always get checkAcess == true
         ),
         'bootstrap' => array(
-            'class' => 'vendor.crisu83.yii-bootstrap.components.Bootstrap', // assuming you extracted bootstrap under extensions
+            'class' => 'vendor.clevertech.YiiBooster.components.Bootstrap',
             'coreCss' => false, // whether to register the Bootstrap core CSS (bootstrap.min.css), defaults to true
             'responsiveCss' => false, // whether to register the Bootstrap responsive CSS (bootstrap-responsive.min.css), default to false
             'plugins' => array(

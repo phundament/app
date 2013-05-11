@@ -44,6 +44,7 @@
         "yiiext/fancybox-widget":"0.*",
         "yiiext/lipsum-widget":"0.*",
         "yiiext/migrate-command":"0.7.*",
+        "clevertech/YiiBooster": "dev-master",
         "waalzer/app-demo-data": "dev-master"
     },
     "require-dev":{
