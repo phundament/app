@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "d025a257c51644fbc8f312391dfdad19",
+    "hash": "360727361eb9fd1ef7db43c898be8ef8",
     "packages": [
         {
             "name": "anggiaj/eselect2",
@@ -120,16 +120,16 @@
         },
         {
             "name": "phundament/gii-template-collection",
-            "version": "0.8.8",
+            "version": "0.8.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/gii-template-collection.git",
-                "reference": "0.8.8"
+                "reference": "0.8.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/gii-template-collection/zipball/0.8.8",
-                "reference": "0.8.8",
+                "url": "https://api.github.com/repos/schmunk42/gii-template-collection/zipball/0.8.9",
+                "reference": "0.8.9",
                 "shasum": ""
             },
             "require": {
@@ -157,10 +157,10 @@
                 "package"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/gii-template-collection/tree/master",
+                "source": "https://github.com/schmunk42/gii-template-collection/tree/0.8.9",
                 "issues": "https://github.com/schmunk42/gii-template-collection/issues"
             },
-            "time": "2013-04-12 15:54:31"
+            "time": "2013-05-12 20:08:26"
         },
         {
             "name": "phundament/jquery-file-upload",
@@ -282,12 +282,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3extensions.git",
-                "reference": "0.10.1"
+                "reference": "0.12.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3extensions/zipball/0.10.1",
-                "reference": "0.10.1",
+                "url": "https://api.github.com/repos/schmunk42/p3extensions/zipball/0.12.0",
+                "reference": "0.12.0",
                 "shasum": ""
             },
             "require": {
@@ -313,10 +313,10 @@
                 "phundament"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3extensions/tree/0.10.1",
+                "source": "https://github.com/schmunk42/p3extensions/tree/0.12.0",
                 "issues": "https://github.com/schmunk42/p3extensions/issues"
             },
-            "time": "2013-04-25 15:29:12"
+            "time": "2013-05-12 20:22:38"
         },
         {
             "name": "phundament/p3media",
@@ -368,16 +368,16 @@
         },
         {
             "name": "phundament/p3pages",
-            "version": "0.10.6",
+            "version": "0.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3pages.git",
-                "reference": "0.10.6"
+                "reference": "0.11.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/0.10.6",
-                "reference": "0.10.6",
+                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/0.11.0",
+                "reference": "0.11.0",
                 "shasum": ""
             },
             "require": {
@@ -406,10 +406,10 @@
                 "tree"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3pages/tree/0.10.6",
+                "source": "https://github.com/schmunk42/p3pages/tree/0.11.0",
                 "issues": "https://github.com/schmunk42/p3pages/issues"
             },
-            "time": "2013-04-26 15:28:23"
+            "time": "2013-05-12 20:19:55"
         },
         {
             "name": "phundament/p3widgets",
