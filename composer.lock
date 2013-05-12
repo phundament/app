@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "360727361eb9fd1ef7db43c898be8ef8",
+    "hash": "f35fcb8e20accbe9452b2219d11f24ea",
     "packages": [
         {
             "name": "anggiaj/eselect2",
@@ -230,22 +230,23 @@
         },
         {
             "name": "phundament/p3bootstrap",
-            "version": "0.13.2",
+            "version": "0.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3bootstrap.git",
-                "reference": "0.13.2"
+                "reference": "0.14.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3bootstrap/zipball/0.13.2",
-                "reference": "0.13.2",
+                "url": "https://api.github.com/repos/schmunk42/p3bootstrap/zipball/0.14.0",
+                "reference": "0.14.0",
                 "shasum": ""
             },
             "require": {
                 "crisu83/yii-bootstrap": "1.*",
                 "php": ">=5.3.0",
                 "phundament/p3extensions": ">=0.7",
+                "phundament/p3pages": ">=0.11",
                 "yiisoft/yii": "1.1.*"
             },
             "suggest": {
@@ -271,10 +272,10 @@
                 "yii"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3bootstrap/tree/0.13.2",
+                "source": "https://github.com/schmunk42/p3bootstrap/tree/0.14.0",
                 "issues": "https://github.com/schmunk42/p3bootstrap/issues"
             },
-            "time": "2013-04-17 10:55:05"
+            "time": "2013-05-12 22:17:28"
         },
         {
             "name": "phundament/p3extensions",
@@ -368,16 +369,16 @@
         },
         {
             "name": "phundament/p3pages",
-            "version": "0.11.0",
+            "version": "0.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3pages.git",
-                "reference": "0.11.0"
+                "reference": "0.11.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/0.11.0",
-                "reference": "0.11.0",
+                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/0.11.1",
+                "reference": "0.11.1",
                 "shasum": ""
             },
             "require": {
@@ -406,10 +407,10 @@
                 "tree"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3pages/tree/0.11.0",
+                "source": "https://github.com/schmunk42/p3pages/tree/0.11.1",
                 "issues": "https://github.com/schmunk42/p3pages/issues"
             },
-            "time": "2013-05-12 20:19:55"
+            "time": "2013-05-12 22:04:10"
         },
         {
             "name": "phundament/p3widgets",
