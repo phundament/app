@@ -98,25 +98,33 @@ $mainConfig = array(
                 'protectedRuntimePath' => 'runtime/p3media',
                 'presets' => array(
                     'large' => array(
-                        'name' => 'Large 1400px',
+                        'name' => 'Large 1600px',
                         'commands' => array(
-                            'resize' => array(1400, 1400, 2), // Image::AUTO
+                            'resize' => array(1600, 1600, 2), // Image::AUTO
                             'quality' => '85',
                         ),
                         'type' => 'jpg',
                     ),
                     'medium' => array(
-                        'name' => 'Medium 500px',
+                        'name' => 'Medium 800px',
                         'commands' => array(
-                            'resize' => array(600, 600, 2), // Image::AUTO
+                            'resize' => array(800, 800, 2), // Image::AUTO
+                            'quality' => '85',
+                        ),
+                        'type' => 'jpg',
+                    ),
+                    'medium-crop' => array(
+                        'name' => 'Medium cropped 800x600px',
+                        'commands' => array(
+                            'resize' => array(800, 600, 7), // crop
                             'quality' => '85',
                         ),
                         'type' => 'jpg',
                     ),
                     'small' => array(
-                        'name' => 'Small 300px',
+                        'name' => 'Small 400px',
                         'commands' => array(
-                            'resize' => array(300, 300, 2), // Image::AUTO
+                            'resize' => array(400, 400, 2), // Image::AUTO
                             'quality' => '85',
                         ),
                         'type' => 'jpg',
@@ -171,7 +179,6 @@ $mainConfig = array(
             'params' => array(
                 'availableLayouts' => array(
                     '//layouts/main' => 'Main Layout',
-                    '_TbNavbar' => '_TbNavbar (Top-Menu Container)'
                 ),
                 'availableViews' => array(
                     '//p3pages/column1' => 'One Column',
@@ -373,7 +380,7 @@ $mainConfig = array(
 );
 
 
-
+// also includes environment config file, eg. 'development' or 'production'
 $localConfigFile = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'local.php';
 if (is_file($localConfigFile)) {
     return CMap::mergeArray($mainConfig, require($localConfigFile));
