@@ -3,9 +3,13 @@
  * This is the configuration for generating message translations
  * for the Yii framework. It is used by the 'yiic message' command.
  */
+
+$vendorPackageRelPath = "";
+//$vendorPackageRelPath = "../vendor/phundament/p3pages";
+
 return array(
-	'sourcePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'messagePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'messages',
+	'sourcePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.$vendorPackageRelPath,
+	'messagePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.$vendorPackageRelPath.DIRECTORY_SEPARATOR.'messages',
 	'languages'=>array('en','de'),
 	'fileTypes'=>array('php'),
 	'overwrite'=>true,
@@ -16,7 +20,7 @@ return array(
 		'yiit.php',
 		'/i18n/data',
 		'/messages',
-        '/vendor',
+        '/migrations',
 		'/web/js',
         '/extensions',
         '/tests',
