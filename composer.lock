@@ -120,16 +120,16 @@
         },
         {
             "name": "phundament/gii-template-collection",
-            "version": "0.8.9",
+            "version": "0.8.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/gii-template-collection.git",
-                "reference": "0.8.9"
+                "reference": "0.8.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/gii-template-collection/zipball/0.8.9",
-                "reference": "0.8.9",
+                "url": "https://api.github.com/repos/schmunk42/gii-template-collection/zipball/0.8.10",
+                "reference": "0.8.10",
                 "shasum": ""
             },
             "require": {
@@ -139,6 +139,7 @@
                 "vitalets/yii-bootstrap-editable": "@dev"
             },
             "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD"
             ],
@@ -156,11 +157,7 @@
                 "dependency",
                 "package"
             ],
-            "support": {
-                "source": "https://github.com/schmunk42/gii-template-collection/tree/0.8.9",
-                "issues": "https://github.com/schmunk42/gii-template-collection/issues"
-            },
-            "time": "2013-05-12 20:08:26"
+            "time": "2013-05-15 19:55:17"
         },
         {
             "name": "phundament/jquery-file-upload",
@@ -230,16 +227,16 @@
         },
         {
             "name": "phundament/p3bootstrap",
-            "version": "0.14.0",
+            "version": "0.14.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3bootstrap.git",
-                "reference": "0.14.0"
+                "reference": "0.14.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3bootstrap/zipball/0.14.0",
-                "reference": "0.14.0",
+                "url": "https://api.github.com/repos/schmunk42/p3bootstrap/zipball/0.14.1",
+                "reference": "0.14.1",
                 "shasum": ""
             },
             "require": {
@@ -254,6 +251,7 @@
                 "twitter/bootstrap": "Source files for LESS customization"
             },
             "type": "yii-theme",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -271,11 +269,7 @@
                 "theme",
                 "yii"
             ],
-            "support": {
-                "source": "https://github.com/schmunk42/p3bootstrap/tree/0.14.0",
-                "issues": "https://github.com/schmunk42/p3bootstrap/issues"
-            },
-            "time": "2013-05-12 22:17:28"
+            "time": "2013-05-15 19:04:22"
         },
         {
             "name": "phundament/p3extensions",
@@ -369,16 +363,16 @@
         },
         {
             "name": "phundament/p3pages",
-            "version": "0.11.4",
+            "version": "0.11.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3pages.git",
-                "reference": "0.11.4"
+                "reference": "0.11.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/0.11.4",
-                "reference": "0.11.4",
+                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/0.11.5",
+                "reference": "0.11.5",
                 "shasum": ""
             },
             "require": {
@@ -388,6 +382,7 @@
                 "yiisoft/yii": "1.1.*"
             },
             "type": "yii-extension",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -401,16 +396,12 @@
             "description": "Page Manager",
             "homepage": "https://github.com/schmunk42/p3pages",
             "keywords": [
+                "Sitemap",
                 "page",
-                "sitemap",
                 "structure",
                 "tree"
             ],
-            "support": {
-                "source": "https://github.com/schmunk42/p3pages/tree/0.11.4",
-                "issues": "https://github.com/schmunk42/p3pages/issues"
-            },
-            "time": "2013-05-14 13:26:06"
+            "time": "2013-05-15 00:31:10"
         },
         {
             "name": "phundament/p3widgets",
@@ -561,12 +552,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/waalzer/app-demo-data.git",
-                "reference": "c9f1d74fc26aae2277e836a11c13bdd32f858907"
+                "reference": "9d0f8f459d59c4eebace0f6ba7a8e2d3c2904147"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/waalzer/app-demo-data/zipball/c9f1d74fc26aae2277e836a11c13bdd32f858907",
-                "reference": "c9f1d74fc26aae2277e836a11c13bdd32f858907",
+                "url": "https://api.github.com/repos/waalzer/app-demo-data/zipball/9d0f8f459d59c4eebace0f6ba7a8e2d3c2904147",
+                "reference": "9d0f8f459d59c4eebace0f6ba7a8e2d3c2904147",
                 "shasum": ""
             },
             "require": {
@@ -600,7 +591,7 @@
                 "source": "https://github.com/waalzer/app-demo-data/tree/master",
                 "issues": "https://github.com/waalzer/app-demo-data/issues"
             },
-            "time": "2013-04-11 10:01:16"
+            "time": "2013-05-15 08:05:01"
         },
         {
             "name": "yiiext/fancybox-widget",
