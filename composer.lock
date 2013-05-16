@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "f35fcb8e20accbe9452b2219d11f24e9",
+    "hash": "f35fcb8e20accbe9452b2219d11f24ea",
     "packages": [
         {
             "name": "anggiaj/eselect2",
