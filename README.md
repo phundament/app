@@ -14,7 +14,6 @@ It's goal is the seamless integration of Yii extensions and libraries bundled in
 [Read on…](https://github.com/phundament/app/wiki/Phundament)
 
 
-
 Quick-Start
 -----------
 
