@@ -19,13 +19,13 @@ function msg() {
     echo "\n";
 }
 
-$json = json_decode(file_get_contents($lockFile));
+$currentHash = md5_file($lockFile);
 if (is_file($hashFile)) {
     $lastHash = file_get_contents($hashFile);
     echo "\nVerifying composer Installation";
     echo "\nLast Install Hash   : ".$lastHash;
-    echo "\nCurrent Install Hash: ".$json->hash;
-    if ($lastHash != $json->hash) {
+    echo "\nCurrent Install Hash: ".$currentHash;
+    if ($lastHash != $currentHash) {
         msg();
     }
 } else {
@@ -34,6 +34,6 @@ if (is_file($hashFile)) {
 
 echo "\n";
 
-file_put_contents($hashFile,$json->hash);
+file_put_contents($hashFile,$currentHash);
 
 exit(0);
