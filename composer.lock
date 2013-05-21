@@ -227,16 +227,16 @@
         },
         {
             "name": "phundament/p3bootstrap",
-            "version": "0.14.1",
+            "version": "0.14.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3bootstrap.git",
-                "reference": "0.14.1"
+                "reference": "0.14.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3bootstrap/zipball/0.14.1",
-                "reference": "0.14.1",
+                "url": "https://api.github.com/repos/schmunk42/p3bootstrap/zipball/0.14.2",
+                "reference": "0.14.2",
                 "shasum": ""
             },
             "require": {
@@ -269,7 +269,7 @@
                 "theme",
                 "yii"
             ],
-            "time": "2013-05-15 19:04:22"
+            "time": "2013-05-21 07:47:24"
         },
         {
             "name": "phundament/p3extensions",
@@ -408,16 +408,16 @@
         },
         {
             "name": "phundament/p3widgets",
-            "version": "0.11.4",
+            "version": "0.11.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3widgets.git",
-                "reference": "0.11.4"
+                "reference": "0.11.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/0.11.4",
-                "reference": "0.11.4",
+                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/0.11.5",
+                "reference": "0.11.5",
                 "shasum": ""
             },
             "require": {
@@ -427,6 +427,13 @@
                 "yiisoft/yii": "1.1.*"
             },
             "type": "yii-extension",
+            "autoload": {
+                "classmap": [
+                    "components/",
+                    "models/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -444,11 +451,7 @@
                 "p3media",
                 "widget"
             ],
-            "support": {
-                "source": "https://github.com/schmunk42/p3widgets/tree/0.11.4",
-                "issues": "https://github.com/schmunk42/p3widgets/issues"
-            },
-            "time": "2013-05-16 14:19:43"
+            "time": "2013-05-21 07:49:02"
         },
         {
             "name": "schmunk42/multi-theme",
