@@ -5,7 +5,7 @@ namespace Codeception\Module;
 
 class WebHelper extends \Codeception\Module
 {
-    function login($I, $username, $password){
+    public static function login($I, $username, $password){
         $I->amOnPage('?r=user/login');
         $I->fillField('UserLogin[username]', $username);
         $I->fillField('UserLogin[password]', $password);
