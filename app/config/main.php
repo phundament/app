@@ -83,6 +83,7 @@ $mainConfig = array(
                     'CWidget' => 'Basic HTML Widget',
                     'TbCarousel' => 'Bootstrap Carousel',
                     'EFancyboxWidget' => 'Fancy Box',
+                    'P3ReferenceWidget' => 'Widget Copy'
                     // use eg. $> php composer.phar require yiiext/swf-object-widget to get the
                     // widget source; import widget class or set an alias.
                     #'P3MarkdownWidget' => 'Markdown Widget'
