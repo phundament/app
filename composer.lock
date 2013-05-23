@@ -363,16 +363,16 @@
         },
         {
             "name": "phundament/p3pages",
-            "version": "0.11.6",
+            "version": "0.11.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3pages.git",
-                "reference": "0.11.6"
+                "reference": "0.11.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/0.11.6",
-                "reference": "0.11.6",
+                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/0.11.7",
+                "reference": "0.11.7",
                 "shasum": ""
             },
             "require": {
@@ -401,23 +401,23 @@
                 "tree"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3pages/tree/0.11.6",
+                "source": "https://github.com/schmunk42/p3pages/tree/master",
                 "issues": "https://github.com/schmunk42/p3pages/issues"
             },
-            "time": "2013-05-16 17:53:14"
+            "time": "2013-05-21 16:44:23"
         },
         {
             "name": "phundament/p3widgets",
-            "version": "0.11.5",
+            "version": "0.11.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3widgets.git",
-                "reference": "0.11.5"
+                "reference": "0.11.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/0.11.5",
-                "reference": "0.11.5",
+                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/0.11.7",
+                "reference": "0.11.7",
                 "shasum": ""
             },
             "require": {
@@ -451,7 +451,7 @@
                 "p3media",
                 "widget"
             ],
-            "time": "2013-05-21 07:49:02"
+            "time": "2013-05-23 12:46:50"
         },
         {
             "name": "schmunk42/multi-theme",
