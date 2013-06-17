@@ -8,7 +8,7 @@
  */
 
 $applicationDirectory = realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR);
-$baseUrl = (dirname($_SERVER['SCRIPT_NAME']) != '/') ? dirname($_SERVER['SCRIPT_NAME']) : '';
+$baseUrl = (dirname($_SERVER['SCRIPT_NAME']) == '/' || dirname($_SERVER['SCRIPT_NAME']) == '\\') ? '': dirname($_SERVER['SCRIPT_NAME']);
 
 $mainConfig = array(
     'basePath' => $applicationDirectory,
@@ -26,6 +26,7 @@ $mainConfig = array(
         'webroot' => $applicationDirectory.'/../www',
         'vendor' => $applicationDirectory.'/../vendor',
         'bootstrap' => 'vendor.clevertech.YiiBooster',
+
         // p3widgets
         'jsonEditorView' => 'vendor.phundament.p3extensions.widgets.jsonEditorView',
         'ckeditor' => 'vendor.phundament.p3extensions.widgets.ckeditor',
@@ -48,13 +49,15 @@ $mainConfig = array(
         'application.models.*',
         'application.components.*',
         'zii.widgets.*',
+        // TODO: should be handled by composer autoloader
         'vendor.phundament.gii-template-collection.components.*', // Relation Widget
-        'vendor.phundament.p3widgets.components.*', // P3WidgetContainer
+        'vendor.phundament.p3widgets.components.*', // P3WidgetContainer, P3Reference Widget
         'vendor.phundament.p3extensions.components.*', // shared classes
         'vendor.phundament.p3extensions.behaviors.*', // shared classes
         'vendor.phundament.p3extensions.widgets.*', // shared classes
         'vendor.phundament.p3extensions.helpers.*', // shared classes - P3StringHelper
         'vendor.phundament.p3pages.models.*', // Meta description and keywords (P3Media)
+        // manual autoloading for components from packages, which do not support composer autoloading
         'vendor.mishamx.yii-user.models.*', // User Model
         'vendor.crisu83.yii-rights.components.*', // RWebUser
         'vendor.crisu83.yii-bootstrap.widgets.*', // Bootstrap UI
@@ -84,6 +87,7 @@ $mainConfig = array(
                     'CWidget' => 'Basic HTML Widget',
                     'TbCarousel' => 'Bootstrap Carousel',
                     'EFancyboxWidget' => 'Fancy Box',
+                    'P3ReferenceWidget' => 'Widget Copy'
                     // use eg. $> php composer.phar require yiiext/swf-object-widget to get the
                     // widget source; import widget class or set an alias.
                     #'P3MarkdownWidget' => 'Markdown Widget'
@@ -99,25 +103,33 @@ $mainConfig = array(
                 'protectedRuntimePath' => 'runtime/p3media',
                 'presets' => array(
                     'large' => array(
-                        'name' => 'Large 1400px',
+                        'name' => 'Large 1600px',
                         'commands' => array(
-                            'resize' => array(1400, 1400, 2), // Image::AUTO
+                            'resize' => array(1600, 1600, 2), // Image::AUTO
                             'quality' => '85',
                         ),
                         'type' => 'jpg',
                     ),
                     'medium' => array(
-                        'name' => 'Medium 500px',
+                        'name' => 'Medium 800px',
                         'commands' => array(
-                            'resize' => array(600, 600, 2), // Image::AUTO
+                            'resize' => array(800, 800, 2), // Image::AUTO
+                            'quality' => '85',
+                        ),
+                        'type' => 'jpg',
+                    ),
+                    'medium-crop' => array(
+                        'name' => 'Medium cropped 800x600px',
+                        'commands' => array(
+                            'resize' => array(800, 600, 7), // crop
                             'quality' => '85',
                         ),
                         'type' => 'jpg',
                     ),
                     'small' => array(
-                        'name' => 'Small 300px',
+                        'name' => 'Small 400px',
                         'commands' => array(
-                            'resize' => array(300, 300, 2), // Image::AUTO
+                            'resize' => array(400, 400, 2), // Image::AUTO
                             'quality' => '85',
                         ),
                         'type' => 'jpg',
@@ -172,7 +184,6 @@ $mainConfig = array(
             'params' => array(
                 'availableLayouts' => array(
                     '//layouts/main' => 'Main Layout',
-                    '_TbNavbar' => '_TbNavbar (Top-Menu Container)'
                 ),
                 'availableViews' => array(
                     '//p3pages/column1' => 'One Column',
@@ -348,8 +359,11 @@ $mainConfig = array(
             'pasteFromWordKeepsStructure' => true,
             'templates_replaceContent' => false,
             'ignoreEmptyParagraph' => true,
-            'autoParagraph' => false,
+            'autoParagraph' => true,
             'forcePasteAsPlainText' => true,
+            'enterMode' => 3, // use <div>s per default, since they usually have no height or margin
+            'shiftEnterMode' => 2,
+            'fillEmptyBlocks' => false,  // do not insert &nbsp; into empty blocks
             'contentsCss' => $baseUrl . '/themes/frontend/ckeditor/ckeditor.css',
             'bodyId' => 'ckeditor',
             'bodyClass' => 'ckeditor',
@@ -371,7 +385,7 @@ $mainConfig = array(
 );
 
 
-
+// also includes environment config file, eg. 'development' or 'production'
 $localConfigFile = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'local.php';
 if (is_file($localConfigFile)) {
     return CMap::mergeArray($mainConfig, require($localConfigFile));

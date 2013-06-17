@@ -1,7 +1,7 @@
 Phundament
 ==========
 
-**Version 3-0.18.1+**
+**Version 3-0.20.2**
 
 
 What is Phundament?
@@ -14,7 +14,6 @@ It's goal is the seamless integration of Yii extensions and libraries bundled in
 [Read on…](https://github.com/phundament/app/wiki/Phundament)
 
 
-
 Quick-Start
 -----------
 
@@ -22,14 +21,18 @@ Quick-Start
    A) If you have composer already installed
    
 ```
-composer.phar create-project phundament/app
+composer.phar create-project --prefer-dist phundament/app
 ```   
    
    B) [Download](https://github.com/phundament/app/tags), extract, enter the app root folder
       and start the installation process with
 ```
-php composer.phar install
+php composer.phar install --prefer-dist
 ```
+
+When asked, enter your desired admin credentials and apply the database migrations.
+
+
 ### Step 2
 
 Open `phundament-app/www/index.php` in your browser
