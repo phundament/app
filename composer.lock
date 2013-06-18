@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "f35fcb8e20accbe9452b2219d11f24ea",
+    "hash": "352cd10937aafac78e9e0d35a558f838",
     "packages": [
         {
             "name": "anggiaj/eselect2",
@@ -23,6 +23,25 @@
             "description": "ESelect2 is a widget extension for Yii framework. This extension is a wrapper for Select2 Jquery plugin (https://github.com/ivaynberg/select2). ",
             "homepage": "https://github.com/anggiaj/ESelect2",
             "time": "2013-02-18 09:49:36"
+        },
+        {
+            "name": "clevertech/YiiBooster",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/clevertech/YiiBooster.git",
+                "reference": "af636b20fffb7198285c753ba35fe7fa8aae029c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/clevertech/YiiBooster/archive/af636b20fffb7198285c753ba35fe7fa8aae029c.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "yii-extension",
+            "description": "YiiBooster",
+            "homepage": "https://github.com/clevertech/YiiBooster",
+            "time": "2013-05-21 06:13:13"
         },
         {
             "name": "crisu83/yii-bootstrap",
@@ -834,6 +853,7 @@
         "crisu83/yii-rights": 20,
         "malyshev/yii-debug-toolbar": 20,
         "mishamx/yii-user": 20,
+        "clevertech/yiibooster": 20,
         "waalzer/app-demo-data": 20,
         "phundament/lessii": 20,
         "ifdattic/echosen": 20
