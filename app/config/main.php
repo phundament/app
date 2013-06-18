@@ -25,7 +25,7 @@ $mainConfig = array(
         'root' => $applicationDirectory.'/..',
         'webroot' => $applicationDirectory.'/../www',
         'vendor' => $applicationDirectory.'/../vendor',
-        'bootstrap' => 'vendor.clevertech.YiiBooster',
+        'bootstrap' => 'vendor.clevertech.YiiBooster.src',
 
         // p3widgets
         'jsonEditorView' => 'vendor.phundament.p3extensions.widgets.jsonEditorView',
@@ -212,8 +212,8 @@ $mainConfig = array(
             'defaultRoles' => array('Authenticated', 'Guest'), // see correspoing business rules, note: superusers always get checkAcess == true
         ),
         'bootstrap' => array(
-            'class' => 'vendor.clevertech.YiiBooster.components.Bootstrap',
-            'coreCss' => false, // whether to register the Bootstrap core CSS (bootstrap.min.css), defaults to true
+            'class' => 'vendor.clevertech.YiiBooster.src.components.Bootstrap',
+            'coreCss' => true, // whether to register the Bootstrap core CSS (bootstrap.min.css), defaults to true
             'responsiveCss' => false, // whether to register the Bootstrap responsive CSS (bootstrap-responsive.min.css), default to false
             'plugins' => array(
                 // Optionally you can configure the "global" plugins (button, popover, tooltip and transition)
