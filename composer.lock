@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "e567e39f56f9142b53114a3877f2923c",
+    "hash": "16809de3b7f3ed1675e49e0782722c4a",
     "packages": [
         {
             "name": "anggiaj/eselect2",
@@ -199,7 +199,7 @@
         },
         {
             "name": "phundament/p3admin",
-            "version": "0.12.3",
+            "version": "dev-yiibooster",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3admin.git",
@@ -246,16 +246,16 @@
         },
         {
             "name": "phundament/p3bootstrap",
-            "version": "0.14.2",
+            "version": "dev-yiibooster",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3bootstrap.git",
-                "reference": "0.14.2"
+                "reference": "473e55b14efb6ca628598222599f15d92c456362"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3bootstrap/zipball/0.14.2",
-                "reference": "0.14.2",
+                "url": "https://api.github.com/repos/schmunk42/p3bootstrap/zipball/473e55b14efb6ca628598222599f15d92c456362",
+                "reference": "473e55b14efb6ca628598222599f15d92c456362",
                 "shasum": ""
             },
             "require": {
@@ -288,7 +288,7 @@
                 "theme",
                 "yii"
             ],
-            "time": "2013-05-21 07:47:24"
+            "time": "2013-05-23 12:27:55"
         },
         {
             "name": "phundament/p3extensions",
@@ -334,16 +334,16 @@
         },
         {
             "name": "phundament/p3media",
-            "version": "0.11.10",
+            "version": "dev-yiibooster",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3media.git",
-                "reference": "0.11.10"
+                "reference": "92164e846c96557f43219be039b101f853971722"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3media/zipball/0.11.10",
-                "reference": "0.11.10",
+                "url": "https://api.github.com/repos/schmunk42/p3media/zipball/92164e846c96557f43219be039b101f853971722",
+                "reference": "92164e846c96557f43219be039b101f853971722",
                 "shasum": ""
             },
             "require": {
@@ -375,14 +375,14 @@
                 "yii"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3media/tree/0.11.10",
+                "source": "https://github.com/schmunk42/p3media/tree/master",
                 "issues": "https://github.com/schmunk42/p3media/issues"
             },
-            "time": "2013-05-07 10:19:22"
+            "time": "2013-05-31 09:07:45"
         },
         {
             "name": "phundament/p3pages",
-            "version": "0.11.9",
+            "version": "dev-yiibooster",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3pages.git",
@@ -427,16 +427,16 @@
         },
         {
             "name": "phundament/p3widgets",
-            "version": "0.11.8",
+            "version": "dev-yiibooster",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3widgets.git",
-                "reference": "0.11.8"
+                "reference": "d9bd3b84032e3df56bc9166af750e09c65bf2c3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/0.11.8",
-                "reference": "0.11.8",
+                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/d9bd3b84032e3df56bc9166af750e09c65bf2c3e",
+                "reference": "d9bd3b84032e3df56bc9166af750e09c65bf2c3e",
                 "shasum": ""
             },
             "require": {
@@ -470,10 +470,10 @@
                 "widget"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3widgets/tree/0.11.8",
+                "source": "https://github.com/schmunk42/p3widgets/tree/master",
                 "issues": "https://github.com/schmunk42/p3widgets/issues"
             },
-            "time": "2013-05-24 16:20:21"
+            "time": "2013-06-04 11:54:57"
         },
         {
             "name": "schmunk42/multi-theme",
@@ -867,13 +867,47 @@
         }
     ],
     "aliases": [
-
+        {
+            "alias": "0.12.x-dev",
+            "alias_normalized": "0.12.9999999.9999999-dev",
+            "version": "dev-yiibooster",
+            "package": "phundament/p3admin"
+        },
+        {
+            "alias": "0.11.x-dev",
+            "alias_normalized": "0.11.9999999.9999999-dev",
+            "version": "dev-yiibooster",
+            "package": "phundament/p3widgets"
+        },
+        {
+            "alias": "0.11.x-dev",
+            "alias_normalized": "0.11.9999999.9999999-dev",
+            "version": "dev-yiibooster",
+            "package": "phundament/p3pages"
+        },
+        {
+            "alias": "0.11.x-dev",
+            "alias_normalized": "0.11.9999999.9999999-dev",
+            "version": "dev-yiibooster",
+            "package": "phundament/p3media"
+        },
+        {
+            "alias": "0.14.x-dev",
+            "alias_normalized": "0.14.9999999.9999999-dev",
+            "version": "dev-yiibooster",
+            "package": "phundament/p3bootstrap"
+        }
     ],
     "minimum-stability": "dev",
     "stability-flags": {
         "crisu83/yii-rights": 20,
         "malyshev/yii-debug-toolbar": 20,
         "mishamx/yii-user": 20,
+        "phundament/p3admin": 20,
+        "phundament/p3widgets": 20,
+        "phundament/p3pages": 20,
+        "phundament/p3media": 20,
+        "phundament/p3bootstrap": 20,
         "clevertech/yiibooster": 20,
         "waalzer/app-demo-data": 20,
         "phundament/lessii": 20,
