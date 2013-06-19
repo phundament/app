@@ -41,11 +41,11 @@
         "phundament/p3media":"dev-yiibooster as 0.11.x-dev",
         "phundament/p3bootstrap":"dev-yiibooster as 0.14.x-dev",
         "phundament/gii-template-collection":"0.8.*",
-        "vitalets/x-editable-yii": "1.2.0",
         "yiiext/fancybox-widget":"0.*",
         "yiiext/lipsum-widget":"0.*",
         "yiiext/migrate-command":"0.7.*",
-        "clevertech/YiiBooster": "dev-master",
+        "clevertech/yiibooster": "dev-master",
+        "vitalets/x-editable-yii": "1.2.0",
         "waalzer/app-demo-data": "dev-master"
     },
     "require-dev":{
