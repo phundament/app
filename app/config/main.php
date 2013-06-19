@@ -297,23 +297,23 @@ $mainConfig = array(
             'urlFormat' => 'get', // use 'path', otherwise rules below won't work
             'rules' => array(
                 // disabling standard login page
-                '<lang:[a-z]{2}>/site/login' => 'user/login',
+                '<lang:[a-z]{2}(_[a-z]{2})?>/site/login' => 'user/login',
                 'site/login' => 'user/login',
                 // convenience rules
                 'admin' => 'p3admin',
-                '<lang:[a-z]{2}>/pages/<view:\w+>' => 'site/page',
+                '<lang:[a-z]{2}(_[a-z]{2})?>/pages/<view:\w+>' => 'site/page',
                 // p3pages - SEO
-                '<lang:[a-z]{2}>/<pageName:[a-zA-Z0-9-._]*>-<pageId:\d+>.html' => 'p3pages/default/page',
+                '<lang:[a-z]{2}(_[a-z]{2})?>/<pageName:[a-zA-Z0-9-._]*>-<pageId:\d+>.html' => 'p3pages/default/page',
                 // p3media - SEO
-                '<lang:[a-z]{2}>/img/<preset:[a-zA-Z0-9-._]+>/<title:.+>_<id:\d+><extension:.[a-zA-Z0-9]{1,}+>' => 'p3media/file/image', // p3media images, TESTING: disable in case of problems
+                '<lang:[a-z]{2}(_[a-z]{2})?>/img/<preset:[a-zA-Z0-9-._]+>/<title:.+>_<id:\d+><extension:.[a-zA-Z0-9]{1,}+>' => 'p3media/file/image', // p3media images, TESTING: disable in case of problems
                 // Yii
                 '<controller:\w+>/<id:\d+>' => '<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
                 // general language and route handling
-                '<lang:[a-z]{2}>' => '',
-                '<lang:[a-z]{2}>/<_c>' => '<_c>',
-                '<lang:[a-z]{2}>/<_c>/<_a>' => '<_c>/<_a>',
-                '<lang:[a-z]{2}>/<_m>/<_c>/<_a>' => '<_m>/<_c>/<_a>',
+                '<lang:[a-z]{2}(_[a-z]{2})?>' => '',
+                '<lang:[a-z]{2}(_[a-z]{2})?>/<_c>' => '<_c>',
+                '<lang:[a-z]{2}(_[a-z]{2})?>/<_c>/<_a>' => '<_c>/<_a>',
+                '<lang:[a-z]{2}(_[a-z]{2})?>/<_m>/<_c>/<_a>' => '<_m>/<_c>/<_a>',
             ),
         ),
         'user' => array(
