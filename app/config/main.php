@@ -61,6 +61,7 @@ $mainConfig = array(
         'vendor.crisu83.yii-rights.components.*', // RWebUser
         'vendor.crisu83.yii-bootstrap.widgets.*', // Bootstrap UI
         'vendor.yiiext.fancybox-widget.*', // Fancybox Widget
+        'vendor.clevertech.yiibooster.src.widgets.*', //
         'editable.*', // Include X-Editable for Yii classes
     ),
     'modules' => array(
