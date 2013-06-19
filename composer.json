@@ -44,7 +44,7 @@
         "yiiext/fancybox-widget":"0.*",
         "yiiext/lipsum-widget":"0.*",
         "yiiext/migrate-command":"0.7.*",
-        "clevertech/yiibooster": "dev-master",
+        "clevertech/yiibooster": "dev-master as 1.0.x-dev",
         "vitalets/x-editable-yii": "1.2.0",
         "waalzer/app-demo-data": "dev-master"
     },
