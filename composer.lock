@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "f35fcb8e20accbe9452b2219d11f24ea",
+    "hash": "d54cf3069e2d3bacbad01a8b5fd9ce76",
     "packages": [
         {
             "name": "anggiaj/eselect2",
@@ -534,6 +534,24 @@
             "time": "2013-03-10 23:22:14"
         },
         {
+            "name": "vitalets/x-editable-yii",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vitalets/x-editable-yii.git",
+                "reference": "064a871c486bd269880fca66642d614df9c6b232"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/vitalets/x-editable-yii/archive/064a871c486bd269880fca66642d614df9c6b232.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "yii-extension",
+            "description": "Yii extension for creating editable elements",
+            "homepage": "https://github.com/vitalets/x-editable-yii"
+        },
+        {
             "name": "vitalets/yii-bootstrap-editable",
             "version": "dev-master",
             "source": {
@@ -834,6 +852,7 @@
         "crisu83/yii-rights": 20,
         "malyshev/yii-debug-toolbar": 20,
         "mishamx/yii-user": 20,
+        "vitalets/x-editable-yii": 20,
         "waalzer/app-demo-data": 20,
         "phundament/lessii": 20,
         "ifdattic/echosen": 20

@@ -37,12 +37,11 @@ $mainConfig = array(
         // fixing 'hardcoded aliases' from extension (note: you have to use the full path)
         'application.modules.user.views.asset' => 'vendor.mishamx.yii-user.views.asset',
         'application.modules.user.components' => 'vendor.mishamx.yii-user.components',
-        'ext.editable.assets.js.locales' => 'vendor.vitalets.yii-bootstrap-editable.assets.js.locales',
-        'ext.editable.assets' => 'vendor.vitalets.yii-bootstrap-editable.assets',
         'gii-template-collection' => 'vendor.phundament.gii-template-collection',
         'echosen' => 'vendor.ifdattic.echosen',
         'echosen.EChosen' => 'vendor.ifdattic.echosen.EChosen',
         'ext.EChosen' => 'vendor.ifdattic.echosen',
+        'editable' => 'vendor.vitalets.x-editable-yii',
     ),
     // autoloading model and component classes
     'import' => array(
@@ -62,7 +61,7 @@ $mainConfig = array(
         'vendor.crisu83.yii-rights.components.*', // RWebUser
         'vendor.crisu83.yii-bootstrap.widgets.*', // Bootstrap UI
         'vendor.yiiext.fancybox-widget.*', // Fancybox Widget
-        'vendor.vitalets.yii-bootstrap-editable.*', // p3media
+        'editable.*', // Include X-Editable for Yii classes
     ),
     'modules' => array(
         // uncomment the following to enable the Gii tool
@@ -227,6 +226,16 @@ $mainConfig = array(
             // If you need help with configuring the plugins, please refer to Bootstrap's own documentation:
             // http://twitter.github.com/bootstrap/javascript.html
             ),
+        ),
+        //X-editable config
+        'editable' => array(
+            'class'     => 'editable.EditableConfig',
+            'form'      => 'bootstrap',
+            'mode'      => 'popup',
+            'defaults'  => array(
+               'emptytext' => 'Click to edit',
+               //'ajaxOptions' => array('dataType' => 'json') //useful for json exchange with server
+            )
         ),
         'cache' => array(
             'class' => 'CDummyCache',
