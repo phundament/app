@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "763e37a043fb95b56d8b43b99d3b9d07",
+    "hash": "91b4622c51e9c587bcde67a3b090c881",
     "packages": [
         {
             "name": "clevertech/YiiBooster",
@@ -23,24 +23,6 @@
             "description": "YiiBooster",
             "homepage": "https://github.com/clevertech/YiiBooster",
             "time": "2013-05-21 06:13:13"
-        },
-        {
-            "name": "crisu83/yii-bootstrap",
-            "version": "1.2.0",
-            "source": {
-                "type": "hg",
-                "url": "https://bitbucket.org/Crisu83/yii-bootstrap",
-                "reference": "524486d5ecedd42d8a0d5e3e8756a16ca4e2b3e3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://bitbucket.org/Crisu83/yii-bootstrap/get/524486d5ec.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "yii-extension",
-            "description": "Bootstrap is an extension for the Yii PHP framework that provides a wide range of server-side widgets that allow you to easily use Twitter's Bootstrap together with Yii.",
-            "homepage": "http://www.cniska.net/yii-bootstrap"
         },
         {
             "name": "crisu83/yii-rights",
@@ -120,23 +102,22 @@
         },
         {
             "name": "phundament/gii-template-collection",
-            "version": "0.8.10",
+            "version": "dev-yiibooster",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/gii-template-collection.git",
-                "reference": "0.8.10"
+                "reference": "c7f9faba45199c0956feed818d1721cf6fe3b1a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/gii-template-collection/zipball/0.8.10",
-                "reference": "0.8.10",
+                "url": "https://api.github.com/repos/schmunk42/gii-template-collection/zipball/c7f9faba45199c0956feed818d1721cf6fe3b1a8",
+                "reference": "c7f9faba45199c0956feed818d1721cf6fe3b1a8",
                 "shasum": ""
             },
             "require": {
-                "crisu83/yii-bootstrap": "1.*",
+                "clevertech/yiibooster": "1.*",
                 "ifdattic/echosen": "@dev",
-                "php": ">=5.3.0",
-                "vitalets/yii-bootstrap-editable": "@dev"
+                "php": ">=5.3.0"
             },
             "type": "library",
             "notification-url": "https://packagist.org/downloads/",
@@ -150,14 +131,14 @@
                     "homepage": "http://www.usrbin.de"
                 }
             ],
-            "description": "Gii Template Collection",
+            "description": "Gii Template Collection, Model and CRUD templates with Boostrap UI",
             "homepage": "http://phundament.com/",
             "keywords": [
                 "autoload",
                 "dependency",
                 "package"
             ],
-            "time": "2013-05-15 19:55:17"
+            "time": "2013-06-19 22:12:26"
         },
         {
             "name": "phundament/jquery-file-upload",
@@ -556,25 +537,6 @@
             "homepage": "https://github.com/vitalets/x-editable-yii"
         },
         {
-            "name": "vitalets/yii-bootstrap-editable",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/vitalets/yii-bootstrap-editable.git",
-                "reference": "24f8fbaa111f53a3325fc02351add4e20bcba6be"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/vitalets/yii-bootstrap-editable/archive/24f8fbaa111f53a3325fc02351add4e20bcba6be.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "yii-extension",
-            "description": "Yii extension for Bootstrap-editable plugin",
-            "homepage": "https://github.com/vitalets/yii-bootstrap-editable",
-            "time": "2013-03-14 06:44:35"
-        },
-        {
             "name": "waalzer/app-demo-data",
             "version": "dev-master",
             "source": {
@@ -850,34 +812,40 @@
     ],
     "aliases": [
         {
-            "alias": "0.12.x-dev",
-            "alias_normalized": "0.12.9999999.9999999-dev",
+            "alias": "0.13.x-dev",
+            "alias_normalized": "0.13.9999999.9999999-dev",
             "version": "dev-yiibooster",
             "package": "phundament/p3admin"
         },
         {
-            "alias": "0.11.x-dev",
-            "alias_normalized": "0.11.9999999.9999999-dev",
+            "alias": "0.12.x-dev",
+            "alias_normalized": "0.12.9999999.9999999-dev",
             "version": "dev-yiibooster",
             "package": "phundament/p3widgets"
         },
         {
-            "alias": "0.11.x-dev",
-            "alias_normalized": "0.11.9999999.9999999-dev",
+            "alias": "0.12.x-dev",
+            "alias_normalized": "0.12.9999999.9999999-dev",
             "version": "dev-yiibooster",
             "package": "phundament/p3pages"
         },
         {
-            "alias": "0.11.x-dev",
-            "alias_normalized": "0.11.9999999.9999999-dev",
+            "alias": "0.12.x-dev",
+            "alias_normalized": "0.12.9999999.9999999-dev",
             "version": "dev-yiibooster",
             "package": "phundament/p3media"
         },
         {
-            "alias": "0.14.x-dev",
-            "alias_normalized": "0.14.9999999.9999999-dev",
+            "alias": "0.15.x-dev",
+            "alias_normalized": "0.15.9999999.9999999-dev",
             "version": "dev-yiibooster",
             "package": "phundament/p3bootstrap"
+        },
+        {
+            "alias": "0.9.x-dev",
+            "alias_normalized": "0.9.9999999.9999999-dev",
+            "version": "dev-yiibooster",
+            "package": "phundament/gii-template-collection"
         },
         {
             "alias": "1.0.x-dev",
@@ -896,6 +864,7 @@
         "phundament/p3pages": 20,
         "phundament/p3media": 20,
         "phundament/p3bootstrap": 20,
+        "phundament/gii-template-collection": 20,
         "clevertech/yiibooster": 20,
         "waalzer/app-demo-data": 20,
         "phundament/lessii": 20,
