@@ -1,6 +1,6 @@
 {
     "name":"phundament/app",
-    "description":"Yii Application Boilerplate, with packages from composer repository http://packages.phundament.com",
+    "description":"Yii Framework Application Boilerplate, with packages from composer repository http://packages.phundament.com",
     "keywords":["yii", "web", "application", "boilerplate", "foundation", "template"],
     "homepage":"http://phundament.com/",
     "type":"yii-application",
