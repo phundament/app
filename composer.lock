@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "352cd10937aafac78e9e0d35a558f838",
+    "hash": "e567e39f56f9142b53114a3877f2923c",
     "packages": [
         {
             "name": "anggiaj/eselect2",
@@ -11,18 +11,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anggiaj/ESelect2.git",
-                "reference": "31411a81217a6e70d6d9af85a6f85a40edb8bf7f"
+                "reference": "2d3d524d4bdc6e4edd49f98c550d47dd90dfe344"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/anggiaj/ESelect2/archive/31411a81217a6e70d6d9af85a6f85a40edb8bf7f.zip",
+                "url": "https://github.com/anggiaj/ESelect2/archive/2d3d524d4bdc6e4edd49f98c550d47dd90dfe344.zip",
                 "reference": null,
                 "shasum": null
             },
             "type": "yii-extension",
             "description": "ESelect2 is a widget extension for Yii framework. This extension is a wrapper for Select2 Jquery plugin (https://github.com/ivaynberg/select2). ",
             "homepage": "https://github.com/anggiaj/ESelect2",
-            "time": "2013-02-18 09:49:36"
+            "time": "2013-05-20 13:36:03"
         },
         {
             "name": "clevertech/YiiBooster",
@@ -296,12 +296,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3extensions.git",
-                "reference": "0.12.0"
+                "reference": "317e9a585f7e4325c1fb7030376c07d05410bbb7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3extensions/zipball/0.12.0",
-                "reference": "0.12.0",
+                "url": "https://api.github.com/repos/schmunk42/p3extensions/zipball/317e9a585f7e4325c1fb7030376c07d05410bbb7",
+                "reference": "317e9a585f7e4325c1fb7030376c07d05410bbb7",
                 "shasum": ""
             },
             "require": {
@@ -327,10 +327,10 @@
                 "phundament"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3extensions/tree/0.12.0",
+                "source": "https://github.com/schmunk42/p3extensions/tree/master",
                 "issues": "https://github.com/schmunk42/p3extensions/issues"
             },
-            "time": "2013-05-12 20:22:38"
+            "time": "2013-06-11 15:55:36"
         },
         {
             "name": "phundament/p3media",
@@ -382,16 +382,16 @@
         },
         {
             "name": "phundament/p3pages",
-            "version": "0.11.7",
+            "version": "0.11.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3pages.git",
-                "reference": "0.11.7"
+                "reference": "0.11.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/0.11.7",
-                "reference": "0.11.7",
+                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/0.11.9",
+                "reference": "0.11.9",
                 "shasum": ""
             },
             "require": {
@@ -420,23 +420,23 @@
                 "tree"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3pages/tree/master",
+                "source": "https://github.com/schmunk42/p3pages/tree/0.11.9",
                 "issues": "https://github.com/schmunk42/p3pages/issues"
             },
-            "time": "2013-05-21 16:44:23"
+            "time": "2013-05-28 19:03:57"
         },
         {
             "name": "phundament/p3widgets",
-            "version": "0.11.7",
+            "version": "0.11.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3widgets.git",
-                "reference": "0.11.7"
+                "reference": "0.11.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/0.11.7",
-                "reference": "0.11.7",
+                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/0.11.8",
+                "reference": "0.11.8",
                 "shasum": ""
             },
             "require": {
@@ -452,7 +452,6 @@
                     "models/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -470,7 +469,11 @@
                 "p3media",
                 "widget"
             ],
-            "time": "2013-05-23 12:46:50"
+            "support": {
+                "source": "https://github.com/schmunk42/p3widgets/tree/0.11.8",
+                "issues": "https://github.com/schmunk42/p3widgets/issues"
+            },
+            "time": "2013-05-24 16:20:21"
         },
         {
             "name": "schmunk42/multi-theme",
@@ -551,6 +554,24 @@
                 "issues": "https://github.com/schmunk42/web-user-behavior/issues"
             },
             "time": "2013-03-10 23:22:14"
+        },
+        {
+            "name": "vitalets/x-editable-yii",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vitalets/x-editable-yii.git",
+                "reference": "064a871c486bd269880fca66642d614df9c6b232"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/vitalets/x-editable-yii/archive/064a871c486bd269880fca66642d614df9c6b232.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "yii-extension",
+            "description": "Yii extension for creating editable elements",
+            "homepage": "https://github.com/vitalets/x-editable-yii"
         },
         {
             "name": "vitalets/yii-bootstrap-editable",
