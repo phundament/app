@@ -41,6 +41,7 @@
         "phundament/p3media":"0.11.*",
         "phundament/p3bootstrap":"0.14.*",
         "phundament/gii-template-collection":"0.8.*",
+        "vitalets/x-editable-yii": "1.2.0",
         "yiiext/fancybox-widget":"0.*",
         "yiiext/lipsum-widget":"0.*",
         "yiiext/migrate-command":"0.7.*",
