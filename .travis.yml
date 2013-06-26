@@ -5,7 +5,7 @@ php:
 
 before_script:
     - composer install --prefer-dist
-    - cp app/config/local-dist.php app/config/local.php
+    - cp app/config/main-local.dist.php app/config/main-local.php
     - composer install --dev --prefer-dist
     - composer require --dev --prefer-dist "codeception/codeception:@stable"
     - php -S localhost:31415 -t www/ &
