@@ -385,7 +385,7 @@ $mainConfig = array(
 
 
 // also includes environment config file, eg. 'development' or 'production'
-$localConfigFile = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'local.php';
+$localConfigFile = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'main-local.php';
 if (is_file($localConfigFile)) {
     return CMap::mergeArray($mainConfig, require($localConfigFile));
 } else {

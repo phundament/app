@@ -1,5 +1,5 @@
 /vendor/
-/app/config/local.php
+/app/config/*-local.php
 /app/tests/codeception/_log
 
 nbproject
