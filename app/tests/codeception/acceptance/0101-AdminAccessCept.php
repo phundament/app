@@ -16,7 +16,7 @@ $I->see('Browser');
 $I->click('Sitemap');
 $I->see('Pages');
 $I->click('Manage');
-$I->see('P3 Pages');
+$I->see('Pages');
 $I->click('Manage');
 $I->see('Widgets');
 $I->click('Overview');

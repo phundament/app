@@ -8,7 +8,7 @@ $I->amOnPage('?r=site/index&lang=en');
 $I->click('Sitemap');
 $I->see('Pages');
 $I->click('Create');
-$I->see('P3 Page');
+$I->see('Page');
 $I->fillField('P3Page[layout]','//layouts/main');
 $I->fillField('P3Page[view]','//p3pages/column1');
 $I->click('Save');
