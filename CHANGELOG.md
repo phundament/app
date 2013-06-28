@@ -8,6 +8,10 @@ Changelog
 
 ### phundament/app
 
+#### 0.21 (June 2013)
+
+ * updated Bootstrap extension, switched from `crisu83/yii-bootstrap` to `clevertech/YiiBooster`
+
 #### 0.17 (April 2013)
 
  * [UPD] Directory refactorings

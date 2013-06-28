@@ -8,6 +8,18 @@ document, if you're experiencing problems.
 Upgrade Guide
 -------------
 
+### Upgrading from v0.20.x
+
+``
+p3widgets   0.12.0
+p3pages     0.12.0
+p3media     0.12.0
+p3bootstrap 0.15.0
+p3admin     0.13.0
+```
+
+See `config/main.php` in [DIFF from 0.20.6 to 0.21.0-dev](https://github.com/phundament/app/compare/933052f2c8d424aa388a0c4f7355e17d7e1d8ce7...a23288ba1860a262dcc880562c5bc4cb8d557032)
+
 ### Upgrading from v0.16.x
 
 tbd
