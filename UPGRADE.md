@@ -10,7 +10,7 @@ Upgrade Guide
 
 ### Upgrading from v0.20.x
 
-``
+```
 p3widgets   0.12.0
 p3pages     0.12.0
 p3media     0.12.0
