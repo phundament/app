@@ -35,16 +35,16 @@
         "mishamx/yii-user":"@dev",
         "schmunk42/web-user-behavior":"0.1.*",
         "schmunk42/multi-theme":"0.1.*",
-        "phundament/p3admin":"dev-yiibooster as 0.13.x-dev",
-        "phundament/p3widgets":"dev-yiibooster as 0.12.x-dev",
-        "phundament/p3pages":"dev-yiibooster as 0.12.x-dev",
-        "phundament/p3media":"dev-yiibooster as 0.12.x-dev",
-        "phundament/p3bootstrap":"dev-yiibooster as 0.15.x-dev",
-        "phundament/gii-template-collection":"dev-yiibooster as 0.9.x-dev",
+        "phundament/p3admin":"0.13.*",
+        "phundament/p3widgets":"0.12.*",
+        "phundament/p3pages":"0.12.*",
+        "phundament/p3media":"0.12.*",
+        "phundament/p3bootstrap":"0.15.*",
+        "phundament/gii-template-collection":"0.9.*",
         "yiiext/fancybox-widget":"0.*",
         "yiiext/lipsum-widget":"0.*",
         "yiiext/migrate-command":"0.7.*",
-        "clevertech/yiibooster": "dev-master as 1.0.x-dev",
+        "clevertech/yiibooster": "1.0.*",
         "vitalets/x-editable-yii": "1.2.0",
         "waalzer/app-demo-data": "dev-master"
     },
@@ -53,8 +53,7 @@
         "crisu83/yii-less":"1.*",
         "cloudhead/less.js":"1.3.*",
         "phundament/lessii":"@dev",
-        "twitter/bootstrap":"2.3.*",
-        "ifdattic/echosen":"@dev"
+        "twitter/bootstrap":"2.3.*"
     },
     "autoload":{
         "psr-0":{

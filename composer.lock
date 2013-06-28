@@ -3,26 +3,25 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "91b4622c51e9c587bcde67a3b090c881",
+    "hash": "513a11199c26c99dc3ff89cea0f94cdf",
     "packages": [
         {
-            "name": "clevertech/YiiBooster",
-            "version": "dev-master",
+            "name": "clevertech/yiibooster",
+            "version": "1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/clevertech/YiiBooster.git",
-                "reference": "af636b20fffb7198285c753ba35fe7fa8aae029c"
+                "reference": "f82a5a4ee2173504ef8e6f94b0419e6f10067aad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/clevertech/YiiBooster/archive/af636b20fffb7198285c753ba35fe7fa8aae029c.zip",
+                "url": "https://github.com/clevertech/YiiBooster/archive/f82a5a4ee2173504ef8e6f94b0419e6f10067aad.zip",
                 "reference": null,
                 "shasum": null
             },
             "type": "yii-extension",
             "description": "YiiBooster",
-            "homepage": "https://github.com/clevertech/YiiBooster",
-            "time": "2013-05-21 06:13:13"
+            "homepage": "https://github.com/clevertech/YiiBooster"
         },
         {
             "name": "crisu83/yii-rights",
@@ -42,25 +41,6 @@
             "description": "Rights is a module for the Yii PHP framework. This module utilizes Yii's built-in Database Authorization Manager (CDbAuthManager) to provide a web interface for advanced access control within Yii-applications.",
             "homepage": "http://www.yiiframework.com/extension/rights",
             "time": "2011-10-12 09:05:52"
-        },
-        {
-            "name": "ifdattic/echosen",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ifdattic/EChosen.git",
-                "reference": "97c235df2640342074bf5902190bc74720890ce7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/ifdattic/EChosen/archive/97c235df2640342074bf5902190bc74720890ce7.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "yii-extension",
-            "description": "Yii extension which adds Chosen JavaScript plugin.",
-            "homepage": "https://github.com/ifdattic/EChosen",
-            "time": "2013-04-11 00:01:58"
         },
         {
             "name": "malyshev/yii-debug-toolbar",
@@ -102,25 +82,22 @@
         },
         {
             "name": "phundament/gii-template-collection",
-            "version": "dev-yiibooster",
+            "version": "0.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/gii-template-collection.git",
-                "reference": "c7f9faba45199c0956feed818d1721cf6fe3b1a8"
+                "reference": "0.9.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/gii-template-collection/zipball/c7f9faba45199c0956feed818d1721cf6fe3b1a8",
-                "reference": "c7f9faba45199c0956feed818d1721cf6fe3b1a8",
+                "url": "https://api.github.com/repos/schmunk42/gii-template-collection/zipball/0.9.0",
+                "reference": "0.9.0",
                 "shasum": ""
             },
             "require": {
-                "clevertech/yiibooster": "1.*",
-                "ifdattic/echosen": "@dev",
                 "php": ">=5.3.0"
             },
             "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD"
             ],
@@ -138,7 +115,11 @@
                 "dependency",
                 "package"
             ],
-            "time": "2013-06-19 22:12:26"
+            "support": {
+                "source": "https://github.com/schmunk42/gii-template-collection/tree/yiibooster",
+                "issues": "https://github.com/schmunk42/gii-template-collection/issues"
+            },
+            "time": "2013-06-27 08:49:36"
         },
         {
             "name": "phundament/jquery-file-upload",
@@ -161,16 +142,16 @@
         },
         {
             "name": "phundament/p3admin",
-            "version": "dev-yiibooster",
+            "version": "0.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3admin.git",
-                "reference": "31a96166cab28ca74df6020c0d492df40268ee67"
+                "reference": "0.13.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3admin/zipball/31a96166cab28ca74df6020c0d492df40268ee67",
-                "reference": "31a96166cab28ca74df6020c0d492df40268ee67",
+                "url": "https://api.github.com/repos/schmunk42/p3admin/zipball/0.13.0",
+                "reference": "0.13.0",
                 "shasum": ""
             },
             "require": {
@@ -208,16 +189,16 @@
         },
         {
             "name": "phundament/p3bootstrap",
-            "version": "dev-yiibooster",
+            "version": "0.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3bootstrap.git",
-                "reference": "57cf5538e95540e9037174a1a8f2c51b41498029"
+                "reference": "0.15.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3bootstrap/zipball/57cf5538e95540e9037174a1a8f2c51b41498029",
-                "reference": "57cf5538e95540e9037174a1a8f2c51b41498029",
+                "url": "https://api.github.com/repos/schmunk42/p3bootstrap/zipball/0.15.0",
+                "reference": "0.15.0",
                 "shasum": ""
             },
             "require": {
@@ -299,16 +280,16 @@
         },
         {
             "name": "phundament/p3media",
-            "version": "dev-yiibooster",
+            "version": "0.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3media.git",
-                "reference": "95a0e8d0562b38e3c16301e72263033b0549f1fa"
+                "reference": "0.12.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3media/zipball/95a0e8d0562b38e3c16301e72263033b0549f1fa",
-                "reference": "95a0e8d0562b38e3c16301e72263033b0549f1fa",
+                "url": "https://api.github.com/repos/schmunk42/p3media/zipball/0.12.0",
+                "reference": "0.12.0",
                 "shasum": ""
             },
             "require": {
@@ -318,6 +299,7 @@
                 "yiisoft/yii": "1.1.*"
             },
             "type": "yii-extension",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -337,24 +319,20 @@
                 "module",
                 "yii"
             ],
-            "support": {
-                "source": "https://github.com/schmunk42/p3media/tree/yiibooster",
-                "issues": "https://github.com/schmunk42/p3media/issues"
-            },
-            "time": "2013-06-19 21:03:34"
+            "time": "2013-06-28 16:36:03"
         },
         {
             "name": "phundament/p3pages",
-            "version": "dev-yiibooster",
+            "version": "0.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3pages.git",
-                "reference": "b552f92608d858ffcbd11e757c9fc382fb2d4232"
+                "reference": "0.12.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/b552f92608d858ffcbd11e757c9fc382fb2d4232",
-                "reference": "b552f92608d858ffcbd11e757c9fc382fb2d4232",
+                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/0.12.0",
+                "reference": "0.12.0",
                 "shasum": ""
             },
             "require": {
@@ -383,23 +361,23 @@
                 "tree"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3pages/tree/yiibooster",
+                "source": "https://github.com/schmunk42/p3pages/tree/0.12.0",
                 "issues": "https://github.com/schmunk42/p3pages/issues"
             },
-            "time": "2013-06-19 20:59:36"
+            "time": "2013-06-28 16:35:20"
         },
         {
             "name": "phundament/p3widgets",
-            "version": "dev-yiibooster",
+            "version": "0.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3widgets.git",
-                "reference": "c08fae88c518994e23ae4b615b5e692a710d8df1"
+                "reference": "0.12.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/c08fae88c518994e23ae4b615b5e692a710d8df1",
-                "reference": "c08fae88c518994e23ae4b615b5e692a710d8df1",
+                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/0.12.0",
+                "reference": "0.12.0",
                 "shasum": ""
             },
             "require": {
@@ -433,10 +411,10 @@
                 "widget"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3widgets/tree/yiibooster",
+                "source": "https://github.com/schmunk42/p3widgets/tree/0.12.0",
                 "issues": "https://github.com/schmunk42/p3widgets/issues"
             },
-            "time": "2013-06-19 20:58:33"
+            "time": "2013-06-28 16:34:10"
         },
         {
             "name": "schmunk42/multi-theme",
@@ -811,64 +789,15 @@
         }
     ],
     "aliases": [
-        {
-            "alias": "0.13.x-dev",
-            "alias_normalized": "0.13.9999999.9999999-dev",
-            "version": "dev-yiibooster",
-            "package": "phundament/p3admin"
-        },
-        {
-            "alias": "0.12.x-dev",
-            "alias_normalized": "0.12.9999999.9999999-dev",
-            "version": "dev-yiibooster",
-            "package": "phundament/p3widgets"
-        },
-        {
-            "alias": "0.12.x-dev",
-            "alias_normalized": "0.12.9999999.9999999-dev",
-            "version": "dev-yiibooster",
-            "package": "phundament/p3pages"
-        },
-        {
-            "alias": "0.12.x-dev",
-            "alias_normalized": "0.12.9999999.9999999-dev",
-            "version": "dev-yiibooster",
-            "package": "phundament/p3media"
-        },
-        {
-            "alias": "0.15.x-dev",
-            "alias_normalized": "0.15.9999999.9999999-dev",
-            "version": "dev-yiibooster",
-            "package": "phundament/p3bootstrap"
-        },
-        {
-            "alias": "0.9.x-dev",
-            "alias_normalized": "0.9.9999999.9999999-dev",
-            "version": "dev-yiibooster",
-            "package": "phundament/gii-template-collection"
-        },
-        {
-            "alias": "1.0.x-dev",
-            "alias_normalized": "1.0.9999999.9999999-dev",
-            "version": "9999999-dev",
-            "package": "clevertech/yiibooster"
-        }
+
     ],
     "minimum-stability": "dev",
     "stability-flags": {
         "crisu83/yii-rights": 20,
         "malyshev/yii-debug-toolbar": 20,
         "mishamx/yii-user": 20,
-        "phundament/p3admin": 20,
-        "phundament/p3widgets": 20,
-        "phundament/p3pages": 20,
-        "phundament/p3media": 20,
-        "phundament/p3bootstrap": 20,
-        "phundament/gii-template-collection": 20,
-        "clevertech/yiibooster": 20,
         "waalzer/app-demo-data": 20,
-        "phundament/lessii": 20,
-        "ifdattic/echosen": 20
+        "phundament/lessii": 20
     },
     "platform": {
         "php": ">=5.3.2"
