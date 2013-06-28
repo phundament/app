@@ -1,7 +1,7 @@
 Phundament
 ==========
 
-**Version 3-0.20.2**
+**Version 3-0.21.0**
 
 
 What is Phundament?
@@ -18,7 +18,7 @@ Quick-Start
 -----------
 
 ### Step 1
-   A) If you have composer already installed
+   A) If you have [composer already installed](http://getcomposer.org/doc/00-intro.md#installation-nix)
    
 ```
 composer.phar create-project --prefer-dist phundament/app
@@ -27,7 +27,7 @@ composer.phar create-project --prefer-dist phundament/app
    B) [Download](https://github.com/phundament/app/tags), extract, enter the app root folder
       and start the installation process with
 ```
-php composer.phar install --prefer-dist
+php composer.phar create-project --prefer-dist
 ```
 
 When asked, enter your desired admin credentials and apply the database migrations.
@@ -41,8 +41,9 @@ Open `phundament-app/www/index.php` in your browser
 
 [Manage your application](https://github.com/phundament/app/wiki/Content-Management)
 
+*You may add the `--no-dev` option for production systems or use `--prefer-source` if you want to develop packages.*
+
 *Note: if you want to install Phundament 3 with a MySQL database, you have to update your config first, see the [Setup](https://github.com/phundament/app/wiki/Setup) section in our wiki.*
-*You may add the `--dev` and `--prefer-source` options on development systems.*
 
 Documentation
 -------------
