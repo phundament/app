@@ -4,7 +4,7 @@
 
 return array(
     'preload' => array(
-        'less',
+        #'less', //
     ),
     #'theme' => 'classic',
     'import'     => array( #'fullcrud.models.*',
