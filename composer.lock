@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "6cd89b41e2507055e6b3b79a8b6fd1cc",
+    "hash": "659404da2158bc3aa168e7519b416bba",
     "packages": [
         {
             "name": "clevertech/yiibooster",
@@ -189,16 +189,16 @@
         },
         {
             "name": "phundament/p3bootstrap",
-            "version": "0.15.0",
+            "version": "0.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3bootstrap.git",
-                "reference": "0.15.0"
+                "reference": "0.16.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3bootstrap/zipball/0.15.0",
-                "reference": "0.15.0",
+                "url": "https://api.github.com/repos/schmunk42/p3bootstrap/zipball/0.16.0",
+                "reference": "0.16.0",
                 "shasum": ""
             },
             "require": {
@@ -209,10 +209,12 @@
                 "yiisoft/yii": "1.1.*"
             },
             "suggest": {
+                "crisu83/yii-less:>=2.0": "LESS compiler",
                 "phundament/lessii": "Blueprint to Bootstrap LESS translation library, helpful for older Yii modules",
                 "twitter/bootstrap": "Source files for LESS customization"
             },
             "type": "yii-theme",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -230,11 +232,7 @@
                 "theme",
                 "yii"
             ],
-            "support": {
-                "source": "https://github.com/schmunk42/p3bootstrap/tree/yiibooster",
-                "issues": "https://github.com/schmunk42/p3bootstrap/issues"
-            },
-            "time": "2013-06-19 21:08:36"
+            "time": "2013-06-30 23:11:05"
         },
         {
             "name": "phundament/p3extensions",
