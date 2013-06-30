@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "513a11199c26c99dc3ff89cea0f94cdf",
+    "hash": "6cd89b41e2507055e6b3b79a8b6fd1cc",
     "packages": [
         {
             "name": "clevertech/yiibooster",
@@ -655,15 +655,15 @@
         },
         {
             "name": "crisu83/yii-less",
-            "version": "v1.1.1",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Crisu83/yii-less.git",
-                "reference": "481e6ecdf172e6f0f3ce8dec24b5cd0a01b34b22"
+                "reference": "86aa5fca84ecb05d29da6dc8837f5c32813958e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/Crisu83/yii-less/archive/481e6ecdf172e6f0f3ce8dec24b5cd0a01b34b22.zip",
+                "url": "https://github.com/Crisu83/yii-less/archive/86aa5fca84ecb05d29da6dc8837f5c32813958e9.zip",
                 "reference": null,
                 "shasum": null
             },

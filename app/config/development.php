@@ -3,6 +3,9 @@
 // Include this file in local.php on your development system
 
 return array(
+    'preload' => array(
+        'less',
+    ),
     #'theme' => 'classic',
     'import'     => array( #'fullcrud.models.*',
         #'sakila.components.*',
@@ -10,8 +13,7 @@ return array(
     ),
     // application components
     'components' => array(
-        'assetManager' => array(
-            #'linkAssets' => true
+        'assetManager' => array( #'linkAssets' => true
         ),
         /* 'dbProduction' => array(
           'class' => 'CDbConnection',
@@ -23,27 +25,24 @@ return array(
           'charset' => 'utf8',
           'enableParamLogging' => true
           ), */
-        'dbTest' => array(
+        'dbTest'       => array(
             // MySQL
             'class'            => 'CDbConnection',
             'tablePrefix'      => '',
             'connectionString' => 'sqlite:' . $applicationDirectory . '/data/test.db',
         ),
         'less'         => array(
-            'class'   => 'vendor.crisu83.yii-less.components.Less',
-            'mode'    => 'server',
-            'files'   => array(
+            'class'        => 'vendor.crisu83.yii-less.components.LessServerCompiler',
+            'files'        => array(
                 // register files here or in your in the layout
                 'themes/frontend/less/p3.less' => 'themes/frontend/css/p3.css',
-                'themes/backend/less/p3.less' => 'themes/backend/css/p3.css',
+                'themes/backend/less/p3.less'  => 'themes/backend/css/p3.css',
             ),
-            'options' => array(
-                //'forceCompile' => true,
-                'nodePath'     => '/opt/local/bin/node',
-                'compilerPath' => $applicationDirectory . '/../vendor/cloudhead/less.js/bin/lessc',
-            ),
+            //'forceCompile' => true,
+            'nodePath'     => '/opt/local/bin/node',
+            'compilerPath' => $applicationDirectory . '/../vendor/cloudhead/less.js/bin/lessc',
         ),
-        'log'    => array(
+        'log'          => array(
             'class'  => 'CLogRouter',
             'routes' => array(
                 array(
@@ -52,19 +51,20 @@ return array(
                     'enabled'   => true,
                 ),
                 array(
-                    'class'  => 'CFileLogRoute',
-                    'levels' => 'error, warning',
+                    'class' => 'CFileLogRoute',
+                    #'levels' => 'error, warning',
                     #'categories' => 'application',
                 ),
             ),
         ),
     ),
-    'modules'    => array( #'fullcrud',
+    'modules'    => array(
+        #'fullcrud',
         #'sakila',
         #'fullcrudWorld',
     ),
-    'params'     => array( // this is used in contact page
-        #'adminEmail' => 'webmaster@h17n.de',
+    'params'     => array(
+        #'adminEmail' => 'webmaster@h17n.de', // this is used in contact page
     ),
 );
 ?>
