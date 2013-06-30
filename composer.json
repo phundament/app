@@ -39,7 +39,7 @@
         "phundament/p3widgets":"0.12.*",
         "phundament/p3pages":"0.12.*",
         "phundament/p3media":"0.12.*",
-        "phundament/p3bootstrap":"0.15.*",
+        "phundament/p3bootstrap":"0.16.*",
         "phundament/gii-template-collection":"0.9.*",
         "yiiext/fancybox-widget":"0.*",
         "yiiext/lipsum-widget":"0.*",
