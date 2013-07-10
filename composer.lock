@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "659404da2158bc3aa168e7519b416bba",
+    "hash": "3338827f5c465e69cf2064fee50543d4",
     "packages": [
         {
             "name": "clevertech/yiibooster",
@@ -81,17 +81,63 @@
             "time": "2013-04-08 21:52:47"
         },
         {
-            "name": "phundament/gii-template-collection",
-            "version": "0.9.0",
+            "name": "phundament/backend-theme",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/schmunk42/gii-template-collection.git",
-                "reference": "0.9.0"
+                "url": "https://github.com/schmunk42/yii-backend-theme.git",
+                "reference": "3f4e14bd42b4bcd341db57dd3e949246a7a2d49d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/gii-template-collection/zipball/0.9.0",
-                "reference": "0.9.0",
+                "url": "https://api.github.com/repos/schmunk42/yii-backend-theme/zipball/3f4e14bd42b4bcd341db57dd3e949246a7a2d49d",
+                "reference": "3f4e14bd42b4bcd341db57dd3e949246a7a2d49d",
+                "shasum": ""
+            },
+            "require": {
+                "clevertech/yiibooster": "1.*",
+                "php": ">=5.3.0",
+                "yiisoft/yii": "1.1.*"
+            },
+            "suggest": {
+                "crisu83/yii-less": "LESS compiler",
+                "twitter/bootstrap": "Source files for LESS customization"
+            },
+            "type": "yii-theme",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Munk",
+                    "email": "schmunk@usrbin.de",
+                    "homepage": "http://www.usrbin.de"
+                }
+            ],
+            "description": "Backend Bootstrap Theme for Phundament",
+            "homepage": "https://github.com/schmunk42/yii-backend-theme",
+            "keywords": [
+                "admin",
+                "backend",
+                "bootstrap",
+                "theme",
+                "yii"
+            ],
+            "time": "2013-07-10 21:01:49"
+        },
+        {
+            "name": "phundament/gii-template-collection",
+            "version": "0.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmunk42/gii-template-collection.git",
+                "reference": "0.10.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schmunk42/gii-template-collection/zipball/0.10.0",
+                "reference": "0.10.0",
                 "shasum": ""
             },
             "require": {
@@ -116,10 +162,10 @@
                 "package"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/gii-template-collection/tree/yiibooster",
+                "source": "https://github.com/schmunk42/gii-template-collection/tree/master",
                 "issues": "https://github.com/schmunk42/gii-template-collection/issues"
             },
-            "time": "2013-06-27 08:49:36"
+            "time": "2013-07-10 16:12:02"
         },
         {
             "name": "phundament/jquery-file-upload",
@@ -142,16 +188,16 @@
         },
         {
             "name": "phundament/p3admin",
-            "version": "0.13.0",
+            "version": "0.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3admin.git",
-                "reference": "0.13.0"
+                "reference": "0.14.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3admin/zipball/0.13.0",
-                "reference": "0.13.0",
+                "url": "https://api.github.com/repos/schmunk42/p3admin/zipball/0.14.0",
+                "reference": "0.14.0",
                 "shasum": ""
             },
             "require": {
@@ -182,23 +228,23 @@
                 "yii"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3admin/tree/yiibooster",
+                "source": "https://github.com/schmunk42/p3admin/tree/master",
                 "issues": "https://github.com/schmunk42/p3admin/issues"
             },
-            "time": "2013-06-19 21:10:49"
+            "time": "2013-07-10 21:57:10"
         },
         {
             "name": "phundament/p3bootstrap",
-            "version": "0.16.0",
+            "version": "0.17.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3bootstrap.git",
-                "reference": "0.16.0"
+                "reference": "0.17.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3bootstrap/zipball/0.16.0",
-                "reference": "0.16.0",
+                "url": "https://api.github.com/repos/schmunk42/p3bootstrap/zipball/0.17.0",
+                "reference": "0.17.0",
                 "shasum": ""
             },
             "require": {
@@ -214,7 +260,6 @@
                 "twitter/bootstrap": "Source files for LESS customization"
             },
             "type": "yii-theme",
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -232,7 +277,11 @@
                 "theme",
                 "yii"
             ],
-            "time": "2013-06-30 23:11:05"
+            "support": {
+                "source": "https://github.com/schmunk42/p3bootstrap/tree/master",
+                "issues": "https://github.com/schmunk42/p3bootstrap/issues"
+            },
+            "time": "2013-07-10 22:15:33"
         },
         {
             "name": "phundament/p3extensions",
@@ -240,12 +289,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3extensions.git",
-                "reference": "317e9a585f7e4325c1fb7030376c07d05410bbb7"
+                "reference": "0.13.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3extensions/zipball/317e9a585f7e4325c1fb7030376c07d05410bbb7",
-                "reference": "317e9a585f7e4325c1fb7030376c07d05410bbb7",
+                "url": "https://api.github.com/repos/schmunk42/p3extensions/zipball/0.13.0",
+                "reference": "0.13.0",
                 "shasum": ""
             },
             "require": {
@@ -274,30 +323,29 @@
                 "source": "https://github.com/schmunk42/p3extensions/tree/master",
                 "issues": "https://github.com/schmunk42/p3extensions/issues"
             },
-            "time": "2013-06-11 15:55:36"
+            "time": "2013-07-09 17:42:15"
         },
         {
             "name": "phundament/p3media",
-            "version": "0.12.0",
+            "version": "0.13.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3media.git",
-                "reference": "0.12.0"
+                "reference": "0.13.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3media/zipball/0.12.0",
-                "reference": "0.12.0",
+                "url": "https://api.github.com/repos/schmunk42/p3media/zipball/0.13.2",
+                "reference": "0.13.2",
                 "shasum": ""
             },
             "require": {
                 "clevertech/yiibooster": "1.*",
                 "php": ">=5.3.0",
-                "phundament/p3extensions": ">=0.7",
+                "phundament/p3extensions": ">=0.13",
                 "yiisoft/yii": "1.1.*"
             },
             "type": "yii-extension",
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -317,26 +365,30 @@
                 "module",
                 "yii"
             ],
-            "time": "2013-06-28 16:36:03"
+            "support": {
+                "source": "https://github.com/schmunk42/p3media/tree/master",
+                "issues": "https://github.com/schmunk42/p3media/issues"
+            },
+            "time": "2013-07-10 22:13:51"
         },
         {
             "name": "phundament/p3pages",
-            "version": "0.12.0",
+            "version": "0.13.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3pages.git",
-                "reference": "0.12.0"
+                "reference": "0.13.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/0.12.0",
-                "reference": "0.12.0",
+                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/0.13.2",
+                "reference": "0.13.2",
                 "shasum": ""
             },
             "require": {
                 "clevertech/yiibooster": "1.*",
                 "php": ">=5.3.0",
-                "phundament/p3extensions": ">=0.7",
+                "phundament/p3extensions": ">=0.13",
                 "yiisoft/yii": "1.1.*"
             },
             "type": "yii-extension",
@@ -359,29 +411,29 @@
                 "tree"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3pages/tree/0.12.0",
+                "source": "https://github.com/schmunk42/p3pages/tree/0.13.2",
                 "issues": "https://github.com/schmunk42/p3pages/issues"
             },
-            "time": "2013-06-28 16:35:20"
+            "time": "2013-07-09 17:39:47"
         },
         {
             "name": "phundament/p3widgets",
-            "version": "0.12.0",
+            "version": "0.13.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3widgets.git",
-                "reference": "0.12.0"
+                "reference": "0.13.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/0.12.0",
-                "reference": "0.12.0",
+                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/0.13.1",
+                "reference": "0.13.1",
                 "shasum": ""
             },
             "require": {
                 "clevertech/yiibooster": "1.*",
                 "php": ">=5.3.0",
-                "phundament/p3extensions": ">=0.8.1",
+                "phundament/p3extensions": ">=0.13",
                 "yiisoft/yii": "1.1.*"
             },
             "type": "yii-extension",
@@ -409,10 +461,10 @@
                 "widget"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3widgets/tree/0.12.0",
+                "source": "https://github.com/schmunk42/p3widgets/tree/0.13.1",
                 "issues": "https://github.com/schmunk42/p3widgets/issues"
             },
-            "time": "2013-06-28 16:34:10"
+            "time": "2013-07-09 14:17:08"
         },
         {
             "name": "schmunk42/multi-theme",
@@ -653,21 +705,76 @@
         },
         {
             "name": "crisu83/yii-less",
-            "version": "v2.0.0",
+            "version": "v2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Crisu83/yii-less.git",
-                "reference": "86aa5fca84ecb05d29da6dc8837f5c32813958e9"
+                "reference": "91daf8744b95900571cf4d04e5218d3834d496cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/Crisu83/yii-less/archive/86aa5fca84ecb05d29da6dc8837f5c32813958e9.zip",
+                "url": "https://github.com/Crisu83/yii-less/archive/91daf8744b95900571cf4d04e5218d3834d496cd.zip",
                 "reference": null,
                 "shasum": null
             },
             "type": "yii-extension",
             "description": "Yii extension for compiling LESS files client and server-side.",
             "homepage": "https://github.com/Crisu83/yii-less"
+        },
+        {
+            "name": "pdepend/pdepend",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pdepend/pdepend.git",
+                "reference": "85b3d7f2d2c6105a76daea0f5a0aee7c7a140b25"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pdepend/pdepend/zipball/85b3d7f2d2c6105a76daea0f5a0aee7c7a140b25",
+                "reference": "85b3d7f2d2c6105a76daea0f5a0aee7c7a140b25",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.3"
+            },
+            "bin": [
+                "src/bin/pdepend"
+            ],
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Official version of pdepend to be handled with Composer",
+            "time": "2013-01-25 15:09:33"
+        },
+        {
+            "name": "phpmd/phpmd",
+            "version": "1.4.1",
+            "source": {
+                "type": "git",
+                "url": "git://github.com/phpmd/phpmd.git",
+                "reference": "1.4.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/phpmd/phpmd/archive/1.4.1.zip",
+                "reference": "1.4.1",
+                "shasum": ""
+            },
+            "require": {
+                "pdepend/pdepend": "*",
+                "php": ">=5.3.0"
+            },
+            "bin": [
+                "src/bin/phpmd"
+            ],
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "../../pdepend/pdepend/src/main/php",
+                "src/main/php"
+            ],
+            "description": "Official version of PHPMD handled with Composer.",
+            "time": "2012-12-14 12:25:09"
         },
         {
             "name": "phundament/lessii",
@@ -794,6 +901,7 @@
         "crisu83/yii-rights": 20,
         "malyshev/yii-debug-toolbar": 20,
         "mishamx/yii-user": 20,
+        "phundament/backend-theme": 20,
         "waalzer/app-demo-data": 20,
         "phundament/lessii": 20
     },

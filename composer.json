@@ -35,12 +35,13 @@
         "mishamx/yii-user":"@dev",
         "schmunk42/web-user-behavior":"0.1.*",
         "schmunk42/multi-theme":"0.1.*",
-        "phundament/p3admin":"0.13.*",
-        "phundament/p3widgets":"0.12.*",
-        "phundament/p3pages":"0.12.*",
-        "phundament/p3media":"0.12.*",
-        "phundament/p3bootstrap":"0.16.*",
-        "phundament/gii-template-collection":"0.9.*",
+        "phundament/p3admin":"0.14.*",
+        "phundament/p3widgets":"0.13.*",
+        "phundament/p3pages":"0.13.*",
+        "phundament/p3media":"0.13.*",
+        "phundament/p3bootstrap":"0.17.*",
+        "phundament/backend-theme":"@dev",
+        "phundament/gii-template-collection":"0.10.*",
         "yiiext/fancybox-widget":"0.*",
         "yiiext/lipsum-widget":"0.*",
         "yiiext/migrate-command":"0.7.*",
@@ -53,7 +54,8 @@
         "crisu83/yii-less":"2.*",
         "cloudhead/less.js":"1.3.*",
         "phundament/lessii":"@dev",
-        "twitter/bootstrap":"2.3.*"
+        "twitter/bootstrap":"2.3.*",
+        "phpmd/phpmd":"1.4.*"
     },
     "autoload":{
         "psr-0":{
