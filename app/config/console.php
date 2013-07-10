@@ -41,7 +41,7 @@ $consoleConfig = array(
             'applicationModuleName' => 'core',
             // define all available modules (if you do not set this, modules will be set from yii app config)
             'modulePaths'           => array(
-                'rights'         => 'vendor.phundament.p3admin.modules-install.rights.migrations',
+                'rights'         => 'application.migrations.rights',
                 'user'           => 'vendor.mishamx.yii-user.migrations',
                 'p3pages'        => 'vendor.phundament.p3pages.migrations',
                 'p3widgets'      => 'vendor.phundament.p3widgets.migrations',
@@ -106,7 +106,7 @@ $consoleConfig = array(
     )
 );
 
-// also includes environment config file, eg. 'development' or 'production'
+//
 $localConsoleConfigFile = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'console-local.php';
 if (is_file($localConsoleConfigFile)) {
     return CMap::mergeArray($consoleConfig, require($localConsoleConfigFile));
