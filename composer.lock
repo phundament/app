@@ -86,12 +86,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii-backend-theme.git",
-                "reference": "3f4e14bd42b4bcd341db57dd3e949246a7a2d49d"
+                "reference": "73d04e848969208954831b87c5d0e0e0b7de9538"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii-backend-theme/zipball/3f4e14bd42b4bcd341db57dd3e949246a7a2d49d",
-                "reference": "3f4e14bd42b4bcd341db57dd3e949246a7a2d49d",
+                "url": "https://api.github.com/repos/schmunk42/yii-backend-theme/zipball/73d04e848969208954831b87c5d0e0e0b7de9538",
+                "reference": "73d04e848969208954831b87c5d0e0e0b7de9538",
                 "shasum": ""
             },
             "require": {
@@ -124,7 +124,7 @@
                 "theme",
                 "yii"
             ],
-            "time": "2013-07-10 21:01:49"
+            "time": "2013-07-10 22:52:52"
         },
         {
             "name": "phundament/gii-template-collection",
