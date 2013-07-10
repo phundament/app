@@ -12,7 +12,7 @@ $baseUrl = (dirname($_SERVER['SCRIPT_NAME']) == '/' || dirname($_SERVER['SCRIPT_
 
 $mainConfig = array(
     'basePath' => $applicationDirectory,
-    'name' => 'Phundament',
+    'name' => 'Company Inc.',
     'theme' => 'frontend', // theme is copied from vendor/phundament/p3bootstrap
     'language' => 'en', // default language, see also components.langHandler
     'preload' => array(
@@ -290,15 +290,15 @@ $mainConfig = array(
             'baseUrl' => $baseUrl.'/themes',
             'rules' => array(
                 '^p3pages/default/page' => 'frontend',
-                '^p3(.*)' => 'backend',
+                '^p3(.*)' => 'backend2',
                 '^user/default/index' => 'frontend',
                 '^user/login/(.*)' => 'frontend',
                 '^user/profile/(.*)' => 'frontend',
                 '^user/registration/(.*)' => 'frontend',
                 '^user/recovery/(.*)' => 'frontend',
                 '^user/activation/(.*)' => 'frontend',
-                '^user/(.*)' => 'backend',
-                '^rights/(.*)' => 'backend',
+                '^user/(.*)' => 'backend2',
+                '^rights/(.*)' => 'backend2',
             )
         ),
         'urlManager' => array(
@@ -311,7 +311,7 @@ $mainConfig = array(
                 '<lang:[a-z]{2}(_[a-z]{2})?>/site/login' => 'user/login',
                 'site/login' => 'user/login',
                 // convenience rules
-                'admin' => 'p3admin',
+                'phundament' => 'p3admin/default/index',
                 '<lang:[a-z]{2}(_[a-z]{2})?>/pages/<view:\w+>' => 'site/page',
                 // p3pages - SEO
                 '<lang:[a-z]{2}(_[a-z]{2})?>/<pageName:[a-zA-Z0-9-._]*>-<pageId:\d+>.html' => 'p3pages/default/page',
@@ -345,7 +345,6 @@ $mainConfig = array(
         // this is used in contact page
         'adminEmail' => 'webmaster@example.com',
         // global Phundament 3 parameters
-        'p3.backendTheme' => 'backend', // defaults to 'backend'
         'p3.fallbackLanguage' => 'en', // defaults to 'en'
         'ext.ckeditor.options' => array(
             'type' => 'fckeditor',

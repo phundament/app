@@ -4,7 +4,7 @@
 
 return array(
     'preload' => array(
-        #'less', //
+        'less', // uncomment to enable LESS compiler, or setup in main-local.php
     ),
     #'theme' => 'classic',
     'import'     => array( #'fullcrud.models.*',
@@ -36,7 +36,7 @@ return array(
             'files'        => array(
                 // register files here or in your in the layout
                 'themes/frontend/less/p3.less' => 'themes/frontend/css/p3.css',
-                'themes/backend/less/p3.less'  => 'themes/backend/css/p3.css',
+                '../app/themes/backend2/less/backend.less'  => '../app/themes/backend2/css/backend.css',
             ),
             //'forceCompile' => true,
             'nodePath'     => '/opt/local/bin/node',

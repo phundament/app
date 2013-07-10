@@ -88,7 +88,12 @@ $consoleConfig = array(
         'webapp'      => array(
             'class' => 'application.commands.P3WebAppCommand',
         ),
-
+        // composer callback
+        'backend-theme' => array(
+            'class'           => 'vendor.phundament.backend-theme.commands.PhBackendThemeCommand',
+            'themePath'       => 'application.themes',
+            'themeName'       => 'backend2',
+        ),
     ),
     'params'     => array(
         'composer.callbacks' => array(
@@ -100,6 +105,7 @@ $consoleConfig = array(
                                                              'git',
                                                              '--interactive=0'),
             'phundament/p3bootstrap-install'        => array('yiic', 'p3bootstrap'),
+            'phundament/backend-theme-install'      => array('yiic', 'backend-theme'),
             'phundament/p3media-install'            => array('yiic', 'p3media'),
             'crisu83/yii-less-install'              => array('yiic', 'less-setup'),
         ),
