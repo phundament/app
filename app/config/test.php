@@ -1,5 +1,7 @@
 <?php
 
+$mainConfig = require('main.php');
+
 return CMap::mergeArray(
 	require(dirname(__FILE__).'/main.php'),
 	array(
@@ -11,11 +13,7 @@ return CMap::mergeArray(
 				'class'=>'system.test.CDbFixtureManager',
 			),
 			// provide test database connection
-			'db'=>array(
-                'tablePrefix' => '',
-                'connectionString' => 'sqlite:' . $applicationDirectory . '/data/test.db',
-			),
-
+			'db'=>$mainConfig['components']['dbTest'],
 		),
 	)
 );
