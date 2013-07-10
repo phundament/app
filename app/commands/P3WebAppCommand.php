@@ -18,7 +18,6 @@ class P3WebAppCommand extends CConsoleCommand
     public $defaultAction = 'create';
 
 	private $_rootPath;
-	private $_frameworkPath;
 
 	public function getHelp()
 	{
@@ -105,7 +104,6 @@ EOD;
 					break;
 			}
 			$list=$this->buildFileList($sourceDir,$path,'',$ignoreFiles,$renameMap);
-			$this->addFileModificationCallbacks($list);
 			$this->copyFiles($list);
 			echo "\nSetting permissions";
 			$this->setPermissions($path);
@@ -150,14 +148,4 @@ EOD;
 		return realpath(dirname(__FILE__).'/views/p3-webapp');
 	}
 
-	/**
-	 * Adds callbacks that will modify source files
-	 *
-	 * @param array $fileList
-	 */
-	protected function addFileModificationCallbacks(&$fileList)
-	{
-        //$fileList['www/index.php']['callback']=array($this,'generateIndex');
-	}
-	
 }
