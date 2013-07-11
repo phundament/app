@@ -26,22 +26,17 @@ $mainConfig = array(
         'webroot' => $applicationDirectory.'/../www',
         'vendor' => $applicationDirectory.'/../vendor',
         'bootstrap' => 'vendor.clevertech.yiibooster.src',
-
+        'editable' => 'vendor.vitalets.x-editable-yii',
         // p3widgets
         'jsonEditorView' => 'vendor.phundament.p3extensions.widgets.jsonEditorView',
         'ckeditor' => 'vendor.phundament.p3extensions.widgets.ckeditor',
         // p3media
         'jquery-file-upload' => 'vendor.phundament.jquery-file-upload',
         'jquery-file-upload-widget' => 'vendor.phundament.p3extensions.widgets.jquery-file-upload',
-
         // fixing 'hardcoded aliases' from extension (note: you have to use the full path)
         'application.modules.user.views.asset' => 'vendor.mishamx.yii-user.views.asset',
         'application.modules.user.components' => 'vendor.mishamx.yii-user.components',
         'gii-template-collection' => 'vendor.phundament.gii-template-collection',
-        'echosen' => 'vendor.ifdattic.echosen',
-        'echosen.EChosen' => 'vendor.ifdattic.echosen.EChosen',
-        'ext.EChosen' => 'vendor.ifdattic.echosen',
-        'editable' => 'vendor.vitalets.x-editable-yii',
     ),
     // autoloading model and component classes
     'import' => array(
