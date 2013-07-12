@@ -340,7 +340,8 @@ $mainConfig = array(
         // this is used in contact page
         'adminEmail' => 'webmaster@example.com',
         // global Phundament 3 parameters
-        'p3.fallbackLanguage' => 'en', // defaults to 'en'
+        'P3Page.fallbackLanguage' => 'en', // defaults to 'en'
+        'P3Widget.fallbackLanguage' => 'en', // defaults to 'en'
         'ext.ckeditor.options' => array(
             'type' => 'fckeditor',
             'height' => 400,
