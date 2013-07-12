@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "3338827f5c465e69cf2064fee50543d4",
+    "hash": "4551bff5ecbb5510731f4096056b776d",
     "packages": [
         {
             "name": "clevertech/yiibooster",
@@ -86,12 +86,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii-backend-theme.git",
-                "reference": "73d04e848969208954831b87c5d0e0e0b7de9538"
+                "reference": "5a8a03fba8241f6e8fdd5c98eed04bf1b04c421c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii-backend-theme/zipball/73d04e848969208954831b87c5d0e0e0b7de9538",
-                "reference": "73d04e848969208954831b87c5d0e0e0b7de9538",
+                "url": "https://api.github.com/repos/schmunk42/yii-backend-theme/zipball/5a8a03fba8241f6e8fdd5c98eed04bf1b04c421c",
+                "reference": "5a8a03fba8241f6e8fdd5c98eed04bf1b04c421c",
                 "shasum": ""
             },
             "require": {
@@ -124,7 +124,7 @@
                 "theme",
                 "yii"
             ],
-            "time": "2013-07-10 22:52:52"
+            "time": "2013-07-12 13:29:26"
         },
         {
             "name": "phundament/gii-template-collection",
@@ -235,16 +235,16 @@
         },
         {
             "name": "phundament/p3bootstrap",
-            "version": "0.17.0",
+            "version": "0.17.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3bootstrap.git",
-                "reference": "0.17.0"
+                "reference": "0.17.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3bootstrap/zipball/0.17.0",
-                "reference": "0.17.0",
+                "url": "https://api.github.com/repos/schmunk42/p3bootstrap/zipball/0.17.2",
+                "reference": "0.17.2",
                 "shasum": ""
             },
             "require": {
@@ -260,6 +260,7 @@
                 "twitter/bootstrap": "Source files for LESS customization"
             },
             "type": "yii-theme",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -277,11 +278,7 @@
                 "theme",
                 "yii"
             ],
-            "support": {
-                "source": "https://github.com/schmunk42/p3bootstrap/tree/master",
-                "issues": "https://github.com/schmunk42/p3bootstrap/issues"
-            },
-            "time": "2013-07-10 22:15:33"
+            "time": "2013-07-12 13:30:14"
         },
         {
             "name": "phundament/p3extensions",
@@ -289,12 +286,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3extensions.git",
-                "reference": "0.13.0"
+                "reference": "0.14.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3extensions/zipball/0.13.0",
-                "reference": "0.13.0",
+                "url": "https://api.github.com/repos/schmunk42/p3extensions/zipball/0.14.0",
+                "reference": "0.14.0",
                 "shasum": ""
             },
             "require": {
@@ -320,10 +317,10 @@
                 "phundament"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3extensions/tree/master",
+                "source": "https://github.com/schmunk42/p3extensions/tree/0.14.0",
                 "issues": "https://github.com/schmunk42/p3extensions/issues"
             },
-            "time": "2013-07-09 17:42:15"
+            "time": "2013-07-11 20:49:44"
         },
         {
             "name": "phundament/p3media",
@@ -418,16 +415,16 @@
         },
         {
             "name": "phundament/p3widgets",
-            "version": "0.13.1",
+            "version": "0.13.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3widgets.git",
-                "reference": "0.13.1"
+                "reference": "0.13.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/0.13.1",
-                "reference": "0.13.1",
+                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/0.13.3",
+                "reference": "0.13.3",
                 "shasum": ""
             },
             "require": {
@@ -461,10 +458,10 @@
                 "widget"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3widgets/tree/0.13.1",
+                "source": "https://github.com/schmunk42/p3widgets/tree/0.13.3",
                 "issues": "https://github.com/schmunk42/p3widgets/issues"
             },
-            "time": "2013-07-09 14:17:08"
+            "time": "2013-07-11 22:22:04"
         },
         {
             "name": "schmunk42/multi-theme",
@@ -722,61 +719,6 @@
             "homepage": "https://github.com/Crisu83/yii-less"
         },
         {
-            "name": "pdepend/pdepend",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/pdepend/pdepend.git",
-                "reference": "85b3d7f2d2c6105a76daea0f5a0aee7c7a140b25"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/pdepend/pdepend/zipball/85b3d7f2d2c6105a76daea0f5a0aee7c7a140b25",
-                "reference": "85b3d7f2d2c6105a76daea0f5a0aee7c7a140b25",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.2.3"
-            },
-            "bin": [
-                "src/bin/pdepend"
-            ],
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "description": "Official version of pdepend to be handled with Composer",
-            "time": "2013-01-25 15:09:33"
-        },
-        {
-            "name": "phpmd/phpmd",
-            "version": "1.4.1",
-            "source": {
-                "type": "git",
-                "url": "git://github.com/phpmd/phpmd.git",
-                "reference": "1.4.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/phpmd/phpmd/archive/1.4.1.zip",
-                "reference": "1.4.1",
-                "shasum": ""
-            },
-            "require": {
-                "pdepend/pdepend": "*",
-                "php": ">=5.3.0"
-            },
-            "bin": [
-                "src/bin/phpmd"
-            ],
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "include-path": [
-                "../../pdepend/pdepend/src/main/php",
-                "src/main/php"
-            ],
-            "description": "Official version of PHPMD handled with Composer.",
-            "time": "2012-12-14 12:25:09"
-        },
-        {
             "name": "phundament/lessii",
             "version": "dev-master",
             "source": {
@@ -864,6 +806,24 @@
                 "issues": "https://github.com/schmunk42/database-command/issues"
             },
             "time": "2013-04-24 15:22:11"
+        },
+        {
+            "name": "thomaspark/bootswatch",
+            "version": "v2.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thomaspark/bootswatch.git",
+                "reference": "a9aab510f11515c7dec294e7b24e838ff583e15a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/thomaspark/bootswatch/archive/a9aab510f11515c7dec294e7b24e838ff583e15a.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library",
+            "description": "Themes for Twitter Bootstrap",
+            "homepage": "https://github.com/thomaspark/bootswatch"
         },
         {
             "name": "twitter/bootstrap",
