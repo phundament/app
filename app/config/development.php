@@ -35,8 +35,8 @@ return array(
             'class'        => 'vendor.crisu83.yii-less.components.LessServerCompiler',
             'files'        => array(
                 // register files here or in your in the layout
-                'themes/frontend/less/p3.less' => 'themes/frontend/css/p3.css',
-                '../app/themes/backend2/less/backend.less'  => '../app/themes/backend2/css/backend.css',
+                '../app/themes/frontend/less/p3.less' => 'themes/frontend/css/p3.css',
+                '../app/themes/backend2/less/backend.less'  => '../app/themes/backend2/css/backend.css', // published via assets
             ),
             //'forceCompile' => true,
             'nodePath'     => '/opt/local/bin/node',
