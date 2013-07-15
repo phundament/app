@@ -1,6 +1,6 @@
 <?php
 
-// Include this file in local.php on your production system
+// merge this file in local.php on your production system
 
 return array(
     // application components

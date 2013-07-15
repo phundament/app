@@ -7,6 +7,9 @@
  * See also config.php, for composer installation and update "hooks"
  */
 
+// also includes environment config file, eg. 'development' or 'production', we merge the files (if available!) at the botton
+$localConfigFile = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'main-local.php';
+
 $applicationDirectory = realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR);
 $baseUrl = (dirname($_SERVER['SCRIPT_NAME']) == '/' || dirname($_SERVER['SCRIPT_NAME']) == '\\') ? '': dirname($_SERVER['SCRIPT_NAME']);
 
@@ -390,8 +393,6 @@ $mainConfig = array(
 );
 
 
-// also includes environment config file, eg. 'development' or 'production'
-$localConfigFile = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'main-local.php';
 if (is_file($localConfigFile)) {
     return CMap::mergeArray($mainConfig, require($localConfigFile));
 } else {

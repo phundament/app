@@ -1,6 +1,6 @@
 <?php
 
-// Include this file in local.php on your development system
+// merge this file in main-local.php on your development system
 
 return array(
     'preload' => array(
