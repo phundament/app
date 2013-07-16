@@ -47,7 +47,9 @@
         "yiiext/migrate-command":"0.7.*",
         "clevertech/yiibooster": "1.0.*",
         "vitalets/x-editable-yii": "1.2.0",
-        "waalzer/app-demo-data": "dev-master"
+        "waalzer/app-demo-data": "dev-master",
+        "schmunk42/yii-sakila-crud": "@dev",
+        "schmunk42/ckeditor-configurator": "@dev"
     },
     "require-dev":{
         "schmunk42/database-command":"0.8.*",

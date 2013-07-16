@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "19a7c76760d0402fa0d64b24a4c2fda7",
+    "hash": "1ea2d445285e9459706bfc3c49810bdd",
     "packages": [
         {
             "name": "clevertech/yiibooster",
@@ -86,12 +86,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii-backend-theme.git",
-                "reference": "5a8a03fba8241f6e8fdd5c98eed04bf1b04c421c"
+                "reference": "46eb39fa8ebaa911dd60db891c029b89563b6379"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii-backend-theme/zipball/5a8a03fba8241f6e8fdd5c98eed04bf1b04c421c",
-                "reference": "5a8a03fba8241f6e8fdd5c98eed04bf1b04c421c",
+                "url": "https://api.github.com/repos/schmunk42/yii-backend-theme/zipball/46eb39fa8ebaa911dd60db891c029b89563b6379",
+                "reference": "46eb39fa8ebaa911dd60db891c029b89563b6379",
                 "shasum": ""
             },
             "require": {
@@ -124,26 +124,27 @@
                 "theme",
                 "yii"
             ],
-            "time": "2013-07-12 13:29:26"
+            "time": "2013-07-16 08:01:41"
         },
         {
             "name": "phundament/gii-template-collection",
-            "version": "0.10.0",
+            "version": "0.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/gii-template-collection.git",
-                "reference": "0.10.0"
+                "reference": "0.10.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/gii-template-collection/zipball/0.10.0",
-                "reference": "0.10.0",
+                "url": "https://api.github.com/repos/schmunk42/gii-template-collection/zipball/0.10.1",
+                "reference": "0.10.1",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
             },
             "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD"
             ],
@@ -161,10 +162,6 @@
                 "dependency",
                 "package"
             ],
-            "support": {
-                "source": "https://github.com/schmunk42/gii-template-collection/tree/master",
-                "issues": "https://github.com/schmunk42/gii-template-collection/issues"
-            },
             "time": "2013-07-10 16:12:02"
         },
         {
@@ -286,12 +283,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3extensions.git",
-                "reference": "8bfcb0d8288800eca6b48a6b83c3fac05fa790b6"
+                "reference": "0.14.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3extensions/zipball/8bfcb0d8288800eca6b48a6b83c3fac05fa790b6",
-                "reference": "8bfcb0d8288800eca6b48a6b83c3fac05fa790b6",
+                "url": "https://api.github.com/repos/schmunk42/p3extensions/zipball/0.14.1",
+                "reference": "0.14.1",
                 "shasum": ""
             },
             "require": {
@@ -317,23 +314,23 @@
                 "phundament"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3extensions/tree/master",
+                "source": "https://github.com/schmunk42/p3extensions/tree/0.14.1",
                 "issues": "https://github.com/schmunk42/p3extensions/issues"
             },
-            "time": "2013-07-12 15:25:56"
+            "time": "2013-07-16 08:53:14"
         },
         {
             "name": "phundament/p3media",
-            "version": "0.13.3",
+            "version": "0.13.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3media.git",
-                "reference": "0.13.3"
+                "reference": "0.13.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3media/zipball/0.13.3",
-                "reference": "0.13.3",
+                "url": "https://api.github.com/repos/schmunk42/p3media/zipball/0.13.4",
+                "reference": "0.13.4",
                 "shasum": ""
             },
             "require": {
@@ -363,10 +360,10 @@
                 "yii"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3media/tree/013.3",
+                "source": "https://github.com/schmunk42/p3media/tree/0.13.4",
                 "issues": "https://github.com/schmunk42/p3media/issues"
             },
-            "time": "2013-07-11 20:48:39"
+            "time": "2013-07-16 08:04:24"
         },
         {
             "name": "phundament/p3pages",
@@ -415,16 +412,16 @@
         },
         {
             "name": "phundament/p3widgets",
-            "version": "0.13.3",
+            "version": "0.13.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3widgets.git",
-                "reference": "0.13.3"
+                "reference": "0.13.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/0.13.3",
-                "reference": "0.13.3",
+                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/0.13.5",
+                "reference": "0.13.5",
                 "shasum": ""
             },
             "require": {
@@ -458,10 +455,50 @@
                 "widget"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3widgets/tree/0.13.3",
+                "source": "https://github.com/schmunk42/p3widgets/tree/0.13.5",
                 "issues": "https://github.com/schmunk42/p3widgets/issues"
             },
-            "time": "2013-07-11 22:22:04"
+            "time": "2013-07-12 23:03:50"
+        },
+        {
+            "name": "schmunk42/ckeditor-configurator",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmunk42/yii-ckeditor-configurator.git",
+                "reference": "f1defedb658eb7dbf41c8d8b7481450e9e6e2ecd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schmunk42/yii-ckeditor-configurator/zipball/f1defedb658eb7dbf41c8d8b7481450e9e6e2ecd",
+                "reference": "f1defedb658eb7dbf41c8d8b7481450e9e6e2ecd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "yiisoft/yii": "1.1.*"
+            },
+            "suggest": {
+                "ckeditor": "Any ckeditor extension"
+            },
+            "type": "yii-extension",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Munk",
+                    "email": "schmunk@usrbin.de",
+                    "homepage": "http://www.usrbin.de"
+                }
+            ],
+            "homepage": "https://github.com/schmunk42/yii-ckeditor-configurator",
+            "keywords": [
+                "CKEditor",
+                "yii"
+            ],
+            "time": "2013-07-16 14:29:51"
         },
         {
             "name": "schmunk42/multi-theme",
@@ -542,6 +579,44 @@
                 "issues": "https://github.com/schmunk42/web-user-behavior/issues"
             },
             "time": "2013-03-10 23:22:14"
+        },
+        {
+            "name": "schmunk42/yii-sakila-crud",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmunk42/yii-sakila-crud.git",
+                "reference": "a1721ed4390e690bdf7263f3cb200b7ca874a287"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schmunk42/yii-sakila-crud/zipball/a1721ed4390e690bdf7263f3cb200b7ca874a287",
+                "reference": "a1721ed4390e690bdf7263f3cb200b7ca874a287",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Munk",
+                    "email": "schmunk@usrbin.de",
+                    "homepage": "http://www.usrbin.de"
+                }
+            ],
+            "description": "Yii Framework test-module with gtc slim templates on saklia MySQL demo database",
+            "homepage": "http://phundament.com/",
+            "keywords": [
+                "crud",
+                "gii-template-collection",
+                "yii"
+            ],
+            "time": "2013-07-13 10:41:32"
         },
         {
             "name": "vitalets/x-editable-yii",
@@ -863,6 +938,8 @@
         "mishamx/yii-user": 20,
         "phundament/backend-theme": 20,
         "waalzer/app-demo-data": 20,
+        "schmunk42/yii-sakila-crud": 20,
+        "schmunk42/ckeditor-configurator": 20,
         "phundament/lessii": 20
     },
     "platform": {

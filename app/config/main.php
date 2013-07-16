@@ -63,6 +63,9 @@ $mainConfig = array(
         'editable.*', // Include X-Editable for Yii classes
     ),
     'modules' => array(
+        'ckeditorConfigurator' => array(
+            'class' => 'vendor.schmunk42.ckeditor-configurator.CkeditorConfiguratorModule',
+        ),
         // uncomment the following to enable the Gii tool
         'gii' => array(
             'class' => 'system.gii.GiiModule',
@@ -289,6 +292,7 @@ $mainConfig = array(
             'rules' => array(
                 '^p3pages/default/page' => 'frontend',
                 '^p3(.*)' => 'backend2',
+                '^ckeditorConfigurator/(.*)' => 'backend2',
                 '^user/default/index' => 'frontend',
                 '^user/login/(.*)' => 'frontend',
                 '^user/profile/(.*)' => 'frontend',

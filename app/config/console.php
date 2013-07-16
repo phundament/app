@@ -40,13 +40,15 @@ $consoleConfig = array(
             // the application migrations are in a pseudo-module called "core" by default
             'applicationModuleName' => 'core',
             // define all available modules (if you do not set this, modules will be set from yii app config)
-            'modulePaths'           => array(
-                'rights'         => 'application.migrations.rights',
-                'user'           => 'vendor.mishamx.yii-user.migrations',
-                'p3pages'        => 'vendor.phundament.p3pages.migrations',
-                'p3widgets'      => 'vendor.phundament.p3widgets.migrations',
-                'p3media'        => 'vendor.phundament.p3media.migrations',
-                'app-demo-data'  => 'vendor.waalzer.app-demo-data.migrations' // data for eg. demo.phundament.com
+            'modulePaths' => array(
+                'rights'                => 'application.migrations.rights',
+                'user'                  => 'vendor.mishamx.yii-user.migrations',
+                'p3pages'               => 'vendor.phundament.p3pages.migrations',
+                'p3widgets'             => 'vendor.phundament.p3widgets.migrations',
+                'p3media'               => 'vendor.phundament.p3media.migrations',
+                'ckeditor-configurator' => 'vendor.schmunk42.ckeditor-configurator.migrations',
+                // data for eg. demo.phundament.com
+                'app-demo-data'         => 'vendor.waalzer.app-demo-data.migrations',
             ),
             // you can customize the modules migrations subdirectory which is used when you are using yii module config
             'migrationSubPath'      => 'migrations',
