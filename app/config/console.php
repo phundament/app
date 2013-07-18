@@ -10,6 +10,10 @@
 // for testing purposes
 $migrateCommand = (getenv('PHUNDAMENT_TEST') ? null : array('yiic', 'migrate', '--interactive=1'));
 
+// gets merged automatically if available
+$localConsoleConfigFile = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'console-local.php';
+
+// merge compnents and modules from main config
 $mainConfig = require('main.php');
 
 $consoleConfig = array(
@@ -115,8 +119,7 @@ $consoleConfig = array(
     )
 );
 
-//
-$localConsoleConfigFile = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'console-local.php';
+// return merged config, from highest to lowest precedence: console-local, console
 if (is_file($localConsoleConfigFile)) {
     return CMap::mergeArray($consoleConfig, require($localConsoleConfigFile));
 } else {

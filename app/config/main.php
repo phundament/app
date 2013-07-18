@@ -6,17 +6,21 @@
  * See also config.php, for composer installation and update "hooks"
  */
 
+// configuration files precedence: main-local, main-{env}, main
+
 // also includes environment config file, eg. 'development' or 'production', we merge the files (if available!) at the botton
 $localConfigFile = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'main-local.php';
 
+// convenience variables
 $applicationDirectory = realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR);
 $baseUrl              = (dirname($_SERVER['SCRIPT_NAME']) == '/' || dirname($_SERVER['SCRIPT_NAME']) == '\\') ? '' :
     dirname($_SERVER['SCRIPT_NAME']);
 
+// main application configuration
 $mainConfig = array(
     'basePath'   => $applicationDirectory,
     'name'       => 'Company Inc.',
-    'theme'      => 'frontend', // theme is copied from vendor/phundament/p3bootstrap
+    'theme'      => 'frontend', // theme is copied eg. from vendor/p3bootstrap
     'language'   => 'en', // default language, see also components.langHandler
     'preload'    => array(
         'log',
@@ -28,6 +32,7 @@ $mainConfig = array(
         'root'                                 => $applicationDirectory . '/..',
         'webroot'                              => $applicationDirectory . '/../www',
         'vendor'                               => $applicationDirectory . '/../vendor',
+        // componentns
         'bootstrap'                            => 'vendor.clevertech.yiibooster.src',
         'editable'                             => 'vendor.vitalets.x-editable-yii',
         // p3widgets
@@ -54,28 +59,17 @@ $mainConfig = array(
         'vendor.phundament.p3extensions.widgets.*', // shared classes
         'vendor.phundament.p3extensions.helpers.*', // shared classes - P3StringHelper
         'vendor.phundament.p3pages.models.*', // Meta description and keywords (P3Media)
-        // manual autoloading for components from packages, which do not support composer autoloading
+        // imports for components from packages, which do not support composer autoloading
         'vendor.mishamx.yii-user.models.*', // User Model
         'vendor.crisu83.yii-rights.components.*', // RWebUser
-        'vendor.crisu83.yii-bootstrap.widgets.*', // Bootstrap UI
         'vendor.yiiext.fancybox-widget.*', // Fancybox Widget
         'vendor.clevertech.yiibooster.src.widgets.*', //
         'editable.*', // Include X-Editable for Yii classes
     ),
     'modules'    => array(
+        // backend for ckeditor styles and templates
         'ckeditorConfigurator' => array(
             'class' => 'vendor.schmunk42.ckeditor-configurator.CkeditorConfiguratorModule',
-        ),
-        // uncomment the following to enable the Gii tool
-        'gii'                  => array(
-            'class'          => 'system.gii.GiiModule',
-            'password'       => 'p3',
-            // If removed, Gii defaults to localhost only. Edit carefully to taste.
-            'ipFilters'      => array('127.0.0.1', '::1'),
-            'generatorPaths' => array(
-                'vendor.phundament.gii-template-collection', // giix generators
-                'bootstrap.gii', // bootstrap generator
-            ),
         ),
         'p3admin'              => array(
             'class'  => 'vendor.phundament.p3admin.P3AdminModule',
@@ -91,7 +85,6 @@ $mainConfig = array(
                     'P3ReferenceWidget' => 'Widget Copy'
                     // use eg. $> php composer.phar require yiiext/swf-object-widget to get the
                     // widget source; import widget class or set an alias.
-                    #'P3MarkdownWidget' => 'Markdown Widget'
                     #'ESwfObjectWidget' => 'SWF Object',
                 ),
             ),
@@ -216,33 +209,10 @@ $mainConfig = array(
         ),
         'bootstrap'     => array(
             'class'         => 'vendor.clevertech.yiibooster.src.components.Bootstrap',
-            'coreCss'       => false,
-            // whether to register the Bootstrap core CSS (bootstrap.min.css), defaults to true
-            'responsiveCss' => false,
+            'coreCss'       => false, // use csutom css from theme
+            'responsiveCss' => false, // use csutom css from theme
             // whether to register the Bootstrap responsive CSS (bootstrap-responsive.min.css), default to false
-            'plugins'       => array(
-                // Optionally you can configure the "global" plugins (button, popover, tooltip and transition)
-                // To prevent a plugin from being loaded set it to false as demonstrated below
-                'transition' => false, // disable CSS transitions
-                'tooltip'    => array(
-                    'selector' => 'a.tooltip', // bind the plugin tooltip to anchor tags with the 'tooltip' class
-                    'options'  => array(
-                        'placement' => 'bottom', // place the tooltips below instead
-                    ),
-                ),
-                // If you need help with configuring the plugins, please refer to Bootstrap's own documentation:
-                // http://twitter.github.com/bootstrap/javascript.html
-            ),
-        ),
-        //X-editable config
-        'editable'      => array(
-            'class'    => 'editable.EditableConfig',
-            'form'     => 'bootstrap',
-            'mode'     => 'popup',
-            'defaults' => array(
-                'emptytext' => 'Click to edit',
-                //'ajaxOptions' => array('dataType' => 'json') //useful for json exchange with server
-            )
+            'plugins'       => array(),
         ),
         'cache'         => array(
             'class' => 'CDummyCache',
@@ -258,6 +228,16 @@ $mainConfig = array(
             #'password' => 'test',
             #'charset' => 'utf8',
         ),
+        //X-editable config
+        'editable'      => array(
+            'class'    => 'editable.EditableConfig',
+            'form'     => 'bootstrap',
+            'mode'     => 'popup',
+            'defaults' => array(
+                'emptytext' => 'Click to edit',
+                //'ajaxOptions' => array('dataType' => 'json') //useful for json exchange with server
+            )
+        ),
         'errorHandler'  => array(
             // use 'site/error' action to display errors
             'errorAction' => 'site/error',
@@ -268,7 +248,7 @@ $mainConfig = array(
             'driver' => 'GD',
         ),
         'returnUrl'     => array(
-            'class' => 'vendor.phundament.p3extensions.components.P3ReturnUrl',
+            'class' => 'vendor.phundament.p3extensions.components.P3ReturnUrl', // TODO: can this be removed?
         ),
         'langHandler'   => array(
             'class'     => 'vendor.phundament.p3extensions.components.P3LangHandler',
@@ -281,12 +261,6 @@ $mainConfig = array(
                     'class'  => 'CFileLogRoute',
                     'levels' => 'error, warning',
                 ),
-                // uncomment the following to show log messages on web pages
-                /*
-                  array(
-                  'class'=>'CWebLogRoute',
-                  ),
-                 */
             ),
         ),
         'themeManager'  => array(
@@ -312,24 +286,23 @@ $mainConfig = array(
         ),
         'urlManager'    => array(
             'class'          => 'vendor.phundament.p3extensions.components.P3LangUrlManager',
-            'showScriptName' => true,
+            'showScriptName' => true, // enable mod_rewrite in .htaccess if this is set to false
             'appendParams'   => false, // in general more error resistant
             'urlFormat'      => 'get', // use 'path', otherwise rules below won't work
             'rules'          => array(
-                // disabling standard login page
-                '<lang:[a-z]{2}(_[a-z]{2})?>/site/login'       => 'user/login',
-                'site/login'                                   => 'user/login',
-                // convenience rules
-                'phundament'                                   => 'p3admin/default/index',
-                '<lang:[a-z]{2}(_[a-z]{2})?>/pages/<view:\w+>' => 'site/page',
+                // backend
+                'phundament'                             => 'p3admin/default/index',
+                // standard login page URL
+                '<lang:[a-z]{2}(_[a-z]{2})?>/site/login' => 'user/login',
+                'site/login'                             => 'user/login',
                 // p3pages - SEO
                 '<lang:[a-z]{2}(_[a-z]{2})?>/<pageName:[a-zA-Z0-9-._]*>-<pageId:\d+>.html'
-                                                               => 'p3pages/default/page',
+                                                         => 'p3pages/default/page',
                 // p3media - SEO
                 '<lang:[a-z]{2}(_[a-z]{2})?>/img/<preset:[a-zA-Z0-9-._]+>/<title:.+>_<id:\d+><extension:.[a-zA-Z0-9]{1,}+>'
                                                                => 'p3media/file/image',
-                // p3media images, TESTING: disable in case of problems
                 // Yii
+                '<lang:[a-z]{2}(_[a-z]{2})?>/pages/<view:\w+>' => 'site/page',
                 '<controller:\w+>/<id:\d+>'                    => '<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:\d+>'       => '<controller>/<action>',
                 // general language and route handling
