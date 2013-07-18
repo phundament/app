@@ -86,7 +86,7 @@ class ComposerCallback
     public static function postInstall(Event $event)
     {
         self::runHook('post-install');
-        echo "\n\nInstallation completed.\n\nThank you for choosing Phundament!\n\n";
+        echo "\nThank you for choosing Phundament!\n\n";
     }
 
     /**
@@ -111,7 +111,7 @@ class ComposerCallback
     public static function postUpdate(Event $event)
     {
         self::runHook('post-update');
-        echo "\n\nUpdate completed.\n\n";
+        echo "\n";
     }
 
     /**
