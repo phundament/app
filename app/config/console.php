@@ -120,12 +120,12 @@ $consoleConfig = array(
             'post-install'                     => array(
                 'yiic',
                 'p3echo',
-                "To complete the installation process, please run:\n\n  app/yiic migrate"
+                "To complete the installation process, please run\n\n    app/yiic migrate\n\nfrom your project directory."
             ),
             'post-update'                      => array(
                 'yiic',
                 'p3echo',
-                "To complete the update process, please run:\n\n  app/yiic migrate"
+                "To complete the update process, please run:\n\n    app/yiic migrate\n\nfrom your project directory."
             ),
             #'post-install'                     => array('yiic', 'migrate', '--interactive=1'),
             #'post-update'                      => array('yiic', 'migrate', '--interactive=1'),
