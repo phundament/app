@@ -85,7 +85,7 @@ EOD;
             $this->_rootPath = $path = $dir . DIRECTORY_SEPARATOR . basename($path);
         }
 
-        if ($this->confirm("Create a Phundament application under '$path'?", true)) {
+        if ($this->confirm("Create a Web application under '$path'?", !$this->interactive)) {
             $sourceDir = $this->getSourceDir();
             if ($sourceDir === false) {
                 die("\nUnable to locate the source directory.\n");
@@ -120,7 +120,7 @@ EOD;
             $list = $this->buildFileList($sourceDir, $path, '', $ignoreFiles, $renameMap);
             $this->copyFiles($list);
 
-            if ($this->confirm("\nCreate local configuration files?", true)) {
+            if ($this->confirm("\nCreate local configuration files? (yes|no)", true)) {
 
                 $fileList['config/main-local.php']['source']    = $this->configDir . DIRECTORY_SEPARATOR . 'main-local.dist.php';
                 $fileList['config/main-local.php']['target']    = $this->configDir . DIRECTORY_SEPARATOR . 'main-local.php';
@@ -130,11 +130,7 @@ EOD;
                 echo "\nNote: Your environment configuration will be defined in `main-local.php.";
                 if ($this->prompt("\nChoose your environment: 1 development | 2 production", '1') == 2) {
                     $fileList['config/main-local.php']['callback'] = array($this, 'callbackProductionEnvironment');
-                } else if ($this->confirm("\nSetup application with demo data?", false)) {
-                    $fileList['config/console-local.php']['callback'] = array($this, 'callbackEnableDemoData');
-                    echo "\nNote: Demo data migration module enabled in `console-local.php`.";
                 }
-
                 echo "\n";
                 $this->copyFiles($fileList);
             }
@@ -142,10 +138,10 @@ EOD;
             echo "\nSetting permissions";
             $this->setPermissions($path);
 
-            echo "\nYour application has been created successfully under {$path}.\n";
+            echo "\nYour application has been created successfully under {$path}.";
         } else {
-            echo "\nInstallation aborted.";
-            echo "\nTo restart, remove `vendor/yiisoft/yii` and run again.\n\n";
+            echo "\nInstallation aborted.\n";
+            echo "\n\nInstallation aborted.\n";
             exit(); // do not continue composer process
         }
         echo "\n";

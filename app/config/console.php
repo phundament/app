@@ -8,14 +8,13 @@
  */
 
 // for testing purposes
-$migrateCommand = (getenv('PHUNDAMENT_TEST') ? null : array('yiic', 'migrate', '--interactive=1'));
 $webappCommand = array(
     'yiic',
     'webapp',
     'create',
     realpath(dirname(__FILE__) . '/../../'),
     'git',
-    '--interactive='.(getenv('PHUNDAMENT_TEST')?'0':'1')
+    '--interactive=' . (getenv('PHUNDAMENT_TEST') ? '0' : '1')
 );
 
 // gets merged automatically if available
@@ -76,6 +75,10 @@ $consoleConfig = array(
             'publicThemePath' => 'webroot.themes',
         ),
         // composer callback
+        'p3echo'        => array(
+            'class' => 'application.commands.P3EchoCommand',
+        ),
+        // composer callback
         'p3media'       => array(
             'class' => 'vendor.phundament.p3media.commands.P3MediaCommand',
         ),
@@ -108,14 +111,24 @@ $consoleConfig = array(
     ),
     'params'     => array(
         'composer.callbacks' => array(
-            // args for Yii command runner
-            'post-update'                      => $migrateCommand,
-            'post-install'                     => $migrateCommand,
+            // command and args for Yii command runner
             'yiisoft/yii-install'              => $webappCommand,
             'phundament/p3bootstrap-install'   => array('yiic', 'p3bootstrap'),
             'phundament/backend-theme-install' => array('yiic', 'backend-theme'),
             'phundament/p3media-install'       => array('yiic', 'p3media'),
             'crisu83/yii-less-install'         => array('yiic', 'less-setup'),
+            'post-install'                     => array(
+                'yiic',
+                'p3echo',
+                "To complete the installation process, please run:\n\n  app/yiic migrate"
+            ),
+            'post-update'                      => array(
+                'yiic',
+                'p3echo',
+                "To complete the update process, please run:\n\n  app/yiic migrate"
+            ),
+            #'post-install'                     => array('yiic', 'migrate', '--interactive=1'),
+            #'post-update'                      => array('yiic', 'migrate', '--interactive=1'),
         ),
     )
 );
