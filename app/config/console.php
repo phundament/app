@@ -75,8 +75,8 @@ $consoleConfig = array(
         'rsync'         => array(
             'class'   => 'vendor.phundament.p3extensions.commands.P3RsyncCommand',
             'servers' => array(
-                'dev'  => realpath(dirname(__FILE__) . '/..'),
-                'prod' => 'user@example.com:/path/to/phundament/app',
+                'local'      => realpath(dirname(__FILE__) . '/..'),
+                'production' => 'user@example.com:/path/to/phundament/app',
             ),
             'aliases' => array(
                 'p3media' => 'application.data.p3media' # Note: This setting syncs P3Media Files
