@@ -72,8 +72,7 @@ class ComposerCallback
     public static function preInstall(Event $event)
     {
         $composer = $event->getComposer();
-        // do stuff
-        echo "Welcome to Phundament\n\n";
+        echo self::phundamentAscii();
         echo "Installing application...\n\n";
 
         self::runHook('pre-install');
@@ -98,7 +97,8 @@ class ComposerCallback
      */
     public static function preUpdate(Event $event)
     {
-        echo "Welcome to Phundament\n\nUpdating packages...\n\n";
+        echo self::phundamentAscii();
+        echo "Updating packages...\n\n";
         self::runHook('pre-update');
     }
 
@@ -192,6 +192,19 @@ class ComposerCallback
             $app = \Yii::app();
         }
         return $app;
+    }
+
+    private static function phundamentAscii(){
+        $return = <<<TXT
+ ____  _                     _                            _
+|  _ \| |__  _   _ _ __   __| | __ _ _ __ ___   ___ _ __ | |_
+| |_) | '_ \| | | | '_ \ / _` |/ _` | '_ ` _ \ / _ \ '_ \| __|
+|  __/| | | | |_| | | | | (_| | (_| | | | | | |  __/ | | | |_
+|_|   |_| |_|\__,_|_| |_|\__,_|\__,_|_| |_| |_|\___|_| |_|\__|
+
+TXT;
+        $return .= "\n";
+        return $return;
     }
 
 }
