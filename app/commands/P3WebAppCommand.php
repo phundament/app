@@ -85,7 +85,7 @@ EOD;
             $this->_rootPath = $path = $dir . DIRECTORY_SEPARATOR . basename($path);
         }
 
-        if ($this->confirm("Create a Web application under '$path'?", !$this->interactive)) {
+        if ($this->confirm("Create a Web application under '$path'?", true)) {
             $sourceDir = $this->getSourceDir();
             if ($sourceDir === false) {
                 die("\nUnable to locate the source directory.\n");
