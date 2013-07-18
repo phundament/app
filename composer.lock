@@ -466,12 +466,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii-ckeditor-configurator.git",
-                "reference": "f1defedb658eb7dbf41c8d8b7481450e9e6e2ecd"
+                "reference": "48cc7bb3b79ebc1fe98fd5412de3e620c5b9de2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii-ckeditor-configurator/zipball/f1defedb658eb7dbf41c8d8b7481450e9e6e2ecd",
-                "reference": "f1defedb658eb7dbf41c8d8b7481450e9e6e2ecd",
+                "url": "https://api.github.com/repos/schmunk42/yii-ckeditor-configurator/zipball/48cc7bb3b79ebc1fe98fd5412de3e620c5b9de2d",
+                "reference": "48cc7bb3b79ebc1fe98fd5412de3e620c5b9de2d",
                 "shasum": ""
             },
             "require": {
@@ -498,7 +498,7 @@
                 "CKEditor",
                 "yii"
             ],
-            "time": "2013-07-16 14:29:51"
+            "time": "2013-07-17 11:24:45"
         },
         {
             "name": "schmunk42/multi-theme",
