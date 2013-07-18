@@ -10,9 +10,10 @@
 return array(
     'commandMap' => array(
         'migrate' => array(
-            // define all available modules (if you do not set this, modules will be set from yii app config)
+            // enable eg. data migrations for your local machine
             'modulePaths' => array(
-                'data' => 'application.migrations.data',
+                #'app-demo-data'        => 'vendor.waalzer.app-demo-data.migrations',
+                #'data'                 => 'application.migrations.data',
             ),
         ),
     ),
