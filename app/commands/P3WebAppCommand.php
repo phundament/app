@@ -85,7 +85,7 @@ EOD;
             $this->_rootPath = $path = $dir . DIRECTORY_SEPARATOR . basename($path);
         }
 
-        if ($this->confirm("Create a Web application under '$path'?", !$this->interactive)) {
+        if ($this->confirm("Create a Phundament application under '$path'?", true)) {
             $sourceDir = $this->getSourceDir();
             if ($sourceDir === false) {
                 die("\nUnable to locate the source directory.\n");
@@ -120,7 +120,7 @@ EOD;
             $list = $this->buildFileList($sourceDir, $path, '', $ignoreFiles, $renameMap);
             $this->copyFiles($list);
 
-            if ($this->confirm("\nCreate local configuration files? (yes|no)", true)) {
+            if ($this->confirm("\nCreate local configuration files?", true)) {
 
                 $fileList['config/main-local.php']['source']    = $this->configDir . DIRECTORY_SEPARATOR . 'main-local.dist.php';
                 $fileList['config/main-local.php']['target']    = $this->configDir . DIRECTORY_SEPARATOR . 'main-local.php';
@@ -142,9 +142,11 @@ EOD;
             echo "\nSetting permissions";
             $this->setPermissions($path);
 
-            echo "\nYour application has been created successfully under {$path}.";
+            echo "\nYour application has been created successfully under {$path}.\n";
         } else {
             echo "\nInstallation aborted.";
+            echo "\nTo restart, remove `vendor/yiisoft/yii` and run again.\n\n";
+            exit(); // do not continue composer process
         }
         echo "\n";
     }

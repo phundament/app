@@ -9,6 +9,14 @@
 
 // for testing purposes
 $migrateCommand = (getenv('PHUNDAMENT_TEST') ? null : array('yiic', 'migrate', '--interactive=1'));
+$webappCommand = array(
+    'yiic',
+    'webapp',
+    'create',
+    realpath(dirname(__FILE__) . '/../../'),
+    'git',
+    '--interactive='.(getenv('PHUNDAMENT_TEST')?'0':'1')
+);
 
 // gets merged automatically if available
 $localConsoleConfigFile = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'console-local.php';
@@ -103,14 +111,7 @@ $consoleConfig = array(
             // args for Yii command runner
             'post-update'                      => $migrateCommand,
             'post-install'                     => $migrateCommand,
-            'yiisoft/yii-install'              => array(
-                'yiic',
-                'webapp',
-                'create',
-                realpath(dirname(__FILE__) . '/../../'),
-                'git',
-                '--interactive=0'
-            ),
+            'yiisoft/yii-install'              => $webappCommand,
             'phundament/p3bootstrap-install'   => array('yiic', 'p3bootstrap'),
             'phundament/backend-theme-install' => array('yiic', 'backend-theme'),
             'phundament/p3media-install'       => array('yiic', 'p3media'),
