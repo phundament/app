@@ -30,7 +30,7 @@ composer.phar create-project --prefer-dist phundament/app my-app
 php composer.phar create-project --prefer-dist
 ```
 
-When asked, create local configuration files and choose your environment
+When asked, create local configuration files and choose your environment.
 
 ### Step 2
 
