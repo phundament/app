@@ -14,13 +14,9 @@ $localConfig = array(
     )
 );
 
-
+// merge configs in the following order (most to least important) local, {env}, main
 if (is_file($environmentConfigFile)) {
     return CMap::mergeArray(require($environmentConfigFile), $localConfig);
-}
-else {
+} else {
     return $localConfig;
 }
-?>
-
-?>

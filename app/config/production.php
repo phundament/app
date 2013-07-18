@@ -5,17 +5,7 @@
 return array(
     // application components
     'components' => array(
-/*        'db' => array(
-          'class' => 'CDbConnection',
-          // MySQL
-          'connectionString' => 'mysql:host=localhost;dbname=p3',
-          'emulatePrepare' => true,
-          'username' => 'test',
-          'password' => 'test',
-          'charset' => 'utf8',
-          'enableParamLogging' => true
-          ),
-  */      'log'          => array(
+        'log' => array(
             'class'  => 'CLogRouter',
             'routes' => array(
                 array(
@@ -26,8 +16,6 @@ return array(
             ),
         ),
     ),
-    'params'     => array( // this is used in contact page
-        #'adminEmail' => 'webmaster@h17n.de',
+    'params'     => array(#'adminEmail' => 'webmaster@h17n.de', // this is used in contact page
     ),
 );
-?>
