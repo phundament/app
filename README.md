@@ -1,7 +1,7 @@
 Phundament
 ==========
 
-**Version 3-0.21.0**
+**Version 3-0.21.0-dev**
 
 
 What is Phundament?
@@ -21,8 +21,8 @@ Quick-Start
    A) If you have [composer already installed](http://getcomposer.org/doc/00-intro.md#installation-nix)
    
 ```
-composer.phar create-project --prefer-dist phundament/app
-```   
+composer.phar create-project --prefer-dist phundament/app my-app
+```
    
    B) [Download](https://github.com/phundament/app/tags), extract, enter the app root folder
       and start the installation process with
@@ -30,14 +30,20 @@ composer.phar create-project --prefer-dist phundament/app
 php composer.phar create-project --prefer-dist
 ```
 
-When asked, enter your desired admin credentials and apply the database migrations.
-
+When asked, create local configuration files and choose your environment
 
 ### Step 2
 
-Open `phundament-app/www/index.php` in your browser
+Apply the database migrations and enter your desired admin credentials.
+
+```
+cd my-app
+app/yiic migrate
+```
 
 ### Step 3
+
+Open `http://localhost/my-app/www/index.php` in your browser
 
 [Manage your application](https://github.com/phundament/app/wiki/Content-Management)
 
