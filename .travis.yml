@@ -5,7 +5,7 @@ php:
 
 before_script:
     - composer install --prefer-dist
-    - composer require --dev --prefer-dist "codeception/codeception:@1.6.2"
+    - composer require --dev --prefer-dist "codeception/codeception:1.6.2"
     - app/yiic migrate --interactive=0
     - php -S localhost:31415 -t www/ &
 
