@@ -17,25 +17,24 @@ $I->click('Sitemap');
 $I->see('Pages');
 $I->click('Manage');
 $I->see('Pages');
-$I->click('Manage');
+$I->click('Registry');
 $I->see('Widgets');
 $I->click('Overview');
+$I->see('Application');
+$I->click('Dashboard');
 $I->see('Application');
 
 // Links Application Menu
 
-$I->click('Users');
+$I->click('Accounts');
 $I->see('Manage Users');
-$I->click('Rights');
+$I->click('Assignments');
 $I->see('Assignments');
-$I->click('Settings');
+$I->click('Overview');
 $I->see('Application');
 
 // Links User Menu
-
 $I->click('Profile');
 $I->see('Your profile');
 $I->click('List');
 $I->see('List User');
-$I->click('Settings');
-$I->see('Application');

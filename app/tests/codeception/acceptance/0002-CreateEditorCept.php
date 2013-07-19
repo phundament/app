@@ -9,7 +9,7 @@ Codeception\Module\WebHelper::login($I, 'admin', 'admin');
 // Create Editor
 
 $I->amOnPage('?r=site/index&lang=en');
-$I->click('Users');
+$I->click('Accounts');
 $I->see('Manage Users');
 $I->click('Create User');
 $I->see('Create User');
@@ -25,7 +25,7 @@ $I->see('View User "editor"');
 
 // Assign editor rights
 
-$I->click('Rights');
+$I->click('Assignments');
 $I->see('Assignments');
 $I->click('editor');
 $I->selectOption('AssignmentForm[itemname]','Content Editor (Widgets, Media Files)');

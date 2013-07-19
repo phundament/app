@@ -8,7 +8,7 @@ $I->amOnPage('?r=user/admin/admin&lang=en');
 $I->see('403','h2');
 $I->amOnPage('?r=rights&lang=en');
 $I->see('403','h2');
-$I->amOnPage('?r=p3admin/default/settings&lang=en');
+$I->amOnPage('?r=p3admin/default/overview&lang=en');
 $I->see('403','h2');
 
 // Links Content Menu
@@ -24,9 +24,9 @@ $I->see('Pages','h1');
 //$I->click('Manage','#content .btn');
 //$I->see('Manage', 'h1 small');
 
-$I->click(' Manage','.dropdown-menu li a');
+$I->click(' Registry','.dropdown-menu li a');
 $I->see('Widgets','h1');
-$I->click(' Overview','.dropdown-menu li a');
+$I->click(' Dashboard','.dropdown-menu li a');
 $I->see('Application','h1');
 
 // Links User Menu
