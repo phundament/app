@@ -391,7 +391,7 @@ $mainConfig = array(
             'bodyClass'                       => 'ckeditor',
             /* Assets will be published with publishAsset() */
             'templates_files'                 => array($baseUrl . '/index.php?r=ckeditorConfigurator/default/cktemplates'),
-            'stylesCombo_stylesSet'           => 'my_styles:' . $baseUrl . '/themes/frontend/ckeditor/ckstyles.js',
+            'stylesCombo_stylesSet'           => 'my_styles:' . $baseUrl . '/index.php?r=ckeditorConfigurator/default/ckstyles',
             /* Standard-way to specify URLs - deprecated */
             /*'filebrowserBrowseUrl' => '/p3media/ckeditor',
               'filebrowserImageBrowseUrl' => '/p3media/ckeditor/image',
