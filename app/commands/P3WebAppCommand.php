@@ -130,7 +130,7 @@ EOD;
                 echo "\nNote: Your environment configuration will be defined in `main-local.php.";
                 if ($this->prompt("\nChoose your environment: 1 development | 2 production", '1') == 2) {
                     $fileList['config/main-local.php']['callback'] = array($this, 'callbackProductionEnvironment');
-                } else if ($this->confirm("\nActive demo data migration?", false)) {
+                } else if ($this->confirm("\nActivate `demo-data` migration?", false)) {
                     $fileList['config/console-local.php']['callback'] = array($this, 'callbackEnableDemoData');
                     echo "\nNote: Demo data migration module enabled in `console-local.php`.";
                 }
