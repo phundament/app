@@ -86,12 +86,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii-backend-theme.git",
-                "reference": "46eb39fa8ebaa911dd60db891c029b89563b6379"
+                "reference": "18d4382a3d7feeaf9089d238767f5bed3b9f6af8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii-backend-theme/zipball/46eb39fa8ebaa911dd60db891c029b89563b6379",
-                "reference": "46eb39fa8ebaa911dd60db891c029b89563b6379",
+                "url": "https://api.github.com/repos/schmunk42/yii-backend-theme/zipball/18d4382a3d7feeaf9089d238767f5bed3b9f6af8",
+                "reference": "18d4382a3d7feeaf9089d238767f5bed3b9f6af8",
                 "shasum": ""
             },
             "require": {
@@ -124,7 +124,7 @@
                 "theme",
                 "yii"
             ],
-            "time": "2013-07-16 08:01:41"
+            "time": "2013-07-19 07:54:52"
         },
         {
             "name": "phundament/gii-template-collection",
@@ -185,16 +185,16 @@
         },
         {
             "name": "phundament/p3admin",
-            "version": "0.14.0",
+            "version": "0.14.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3admin.git",
-                "reference": "0.14.0"
+                "reference": "0.14.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3admin/zipball/0.14.0",
-                "reference": "0.14.0",
+                "url": "https://api.github.com/repos/schmunk42/p3admin/zipball/0.14.1",
+                "reference": "0.14.1",
                 "shasum": ""
             },
             "require": {
@@ -205,6 +205,7 @@
                 "yiisoft/yii": ">=1.1.12"
             },
             "type": "yii-extension",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -218,17 +219,13 @@
             "description": "Yii application info and skeleton",
             "homepage": "http://phundament.com/",
             "keywords": [
+                "Skeleton",
                 "application",
                 "information",
-                "skeleton",
                 "webapp",
                 "yii"
             ],
-            "support": {
-                "source": "https://github.com/schmunk42/p3admin/tree/master",
-                "issues": "https://github.com/schmunk42/p3admin/issues"
-            },
-            "time": "2013-07-10 21:57:10"
+            "time": "2013-07-19 07:43:39"
         },
         {
             "name": "phundament/p3bootstrap",
