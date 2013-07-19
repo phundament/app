@@ -66,9 +66,10 @@ Demo
 Resources
 ---------
 
-### Continuous Integration
-
-[![Build Status](https://travis-ci.org/phundament/app.png?branch=master)](https://travis-ci.org/phundament/app)
+[![Latest Stable Version](https://poser.pugx.org/phundament/app/v/stable.png)](https://packagist.org/packages/phundament/app)
+[![Total Downloads](https://poser.pugx.org/phundament/app/downloads.png)](https://packagist.org/packages/phundament/app)
+[![Latest Unstable Version](https://poser.pugx.org/phundament/app/v/unstable.png)](https://packagist.org/packages/phundament/app)
+[![Build Status](https://travis-ci.org/phundament/app.png?branch=master)](https://travis-ci.org/phundament/app) 
 
 ### Fundamentals
  *  [Documentation](https://github.com/phundament/app/wiki/)
@@ -88,6 +89,7 @@ Resources
  *  [View at packagist.org](https://packagist.org/packages/phundament/app)
  *  [Fork on github](https://github.com/phundament/app)
  *  [Downloads](https://github.com/phundament/app/tags)
+ *  [Continuous Integration](https://travis-ci.org/phundament/app.png?branch=master)](https://travis-ci.org/phundament/app) *  
  *  [Company Website](http://herzogkommunikation.de)
  *  [Demo Website](http://demo.phundament.com/3.0-dev/)
 
