@@ -118,25 +118,17 @@ EOD;
                     break;
             }
             $list = $this->buildFileList($sourceDir, $path, '', $ignoreFiles, $renameMap);
-            $this->copyFiles($list);
 
-            if ($this->confirm("\nCreate local configuration files? (yes|no)", true)) {
-
-                $fileList['config/main-local.php']['source']    = $this->configDir . DIRECTORY_SEPARATOR . 'main-local.dist.php';
-                $fileList['config/main-local.php']['target']    = $this->configDir . DIRECTORY_SEPARATOR . 'main-local.php';
-                $fileList['config/console-local.php']['source'] = $this->configDir . DIRECTORY_SEPARATOR . 'console-local.dist.php';
-                $fileList['config/console-local.php']['target'] = $this->configDir . DIRECTORY_SEPARATOR . 'console-local.php';
-
-                echo "\nNote: Your environment configuration will be defined in `main-local.php.";
-                if ($this->prompt("\nChoose your environment: 1 development | 2 production", '1') == 2) {
-                    $fileList['config/main-local.php']['callback'] = array($this, 'callbackProductionEnvironment');
-                } else if ($this->confirm("\nActivate `demo-data` migration?", false)) {
-                    $fileList['config/console-local.php']['callback'] = array($this, 'callbackEnableDemoData');
-                    echo "\nNote: Demo data migration module enabled in `console-local.php`.";
-                }
-                echo "\n";
-                $this->copyFiles($fileList);
+            echo "\nNote: Your environment configuration will be defined in `main-local.php`";
+            if ($this->prompt("\nChoose your environment: 1 development | 2 production", '1') == 2) {
+                $list['app/config/main-local.php']['callback'] = array($this, 'callbackReplaceEnvironment');
+            } else if ($this->confirm("\nActivate `demo-data` migration?", false)) {
+                $list['app/config/console-local.php']['callback'] = array($this, 'callbackEnableDemoData');
+                echo "\nNote: Demo data migration module enabled in `console-local.php`.";
             }
+            echo "\n";
+
+            $this->copyFiles($list);
 
             echo "\nSetting permissions";
             $this->setPermissions($path);
