@@ -386,7 +386,7 @@ $mainConfig = array(
             'shiftEnterMode'                  => 2,
             'fillEmptyBlocks'                 => false,
             // do not insert &nbsp; into empty blocks
-            'contentsCss'                     => $baseUrl . '/themes/frontend/ckeditor/ckeditor.css',
+            'contentsCss'                     => $baseUrl . '/assets/e3ecaab1/ckeditor/ckeditor.css', // path is hashed by name
             'bodyId'                          => 'ckeditor',
             'bodyClass'                       => 'ckeditor',
             /* Assets will be published with publishAsset() */

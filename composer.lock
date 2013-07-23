@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "1ea2d445285e9459706bfc3c49810bdd",
+    "hash": "4f6f954058b2bf52909e511702037810",
     "packages": [
         {
             "name": "clevertech/yiibooster",
@@ -86,12 +86,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii-backend-theme.git",
-                "reference": "18d4382a3d7feeaf9089d238767f5bed3b9f6af8"
+                "reference": "5f229bfc5cd23ef0b3edb5bb37f67bd9f68fd078"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii-backend-theme/zipball/18d4382a3d7feeaf9089d238767f5bed3b9f6af8",
-                "reference": "18d4382a3d7feeaf9089d238767f5bed3b9f6af8",
+                "url": "https://api.github.com/repos/schmunk42/yii-backend-theme/zipball/5f229bfc5cd23ef0b3edb5bb37f67bd9f68fd078",
+                "reference": "5f229bfc5cd23ef0b3edb5bb37f67bd9f68fd078",
                 "shasum": ""
             },
             "require": {
@@ -124,7 +124,7 @@
                 "theme",
                 "yii"
             ],
-            "time": "2013-07-19 07:54:52"
+            "time": "2013-07-23 01:19:42"
         },
         {
             "name": "phundament/gii-template-collection",
@@ -229,16 +229,16 @@
         },
         {
             "name": "phundament/p3bootstrap",
-            "version": "0.18.0",
+            "version": "0.19.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3bootstrap.git",
-                "reference": "0.18.0"
+                "reference": "0.19.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3bootstrap/zipball/0.18.0",
-                "reference": "0.18.0",
+                "url": "https://api.github.com/repos/schmunk42/p3bootstrap/zipball/0.19.0",
+                "reference": "0.19.0",
                 "shasum": ""
             },
             "require": {
@@ -272,7 +272,7 @@
                 "theme",
                 "yii"
             ],
-            "time": "2013-07-12 17:45:53"
+            "time": "2013-07-23 01:13:54"
         },
         {
             "name": "phundament/p3extensions",

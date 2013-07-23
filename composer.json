@@ -39,7 +39,7 @@
         "phundament/p3widgets":"0.13.*",
         "phundament/p3pages":"0.13.*",
         "phundament/p3media":"0.13.*",
-        "phundament/p3bootstrap":"0.18.*",
+        "phundament/p3bootstrap":"0.19.*",
         "phundament/backend-theme":"@dev",
         "phundament/gii-template-collection":"0.10.*",
         "yiiext/fancybox-widget":"0.*",

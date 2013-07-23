@@ -72,7 +72,6 @@ $consoleConfig = array(
         'p3bootstrap'   => array(
             'class'           => 'vendor.phundament.p3bootstrap.commands.P3BootstrapCommand',
             'themePath'       => 'application.themes',
-            'publicThemePath' => 'webroot.themes',
         ),
         // composer callback
         'p3echo'        => array(
