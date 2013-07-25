@@ -126,7 +126,10 @@ $consoleConfig = array(
                 'p3echo',
                 "To complete the update process, please run:\n\n    app/yiic migrate\n\nfrom your project directory."
             ),
-            #'post-install'                     => array('yiic', 'migrate', '--interactive=1'),
+            #'post-install'                     => array(
+            #                                          array('yiic', 'migrate', '--interactive=1'),
+            #                                          array('yiic', 'foo', '--bar=1'),
+            #                                      ),
             #'post-update'                      => array('yiic', 'migrate', '--interactive=1'),
         ),
     )
