@@ -86,12 +86,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii-backend-theme.git",
-                "reference": "5f229bfc5cd23ef0b3edb5bb37f67bd9f68fd078"
+                "reference": "2c9a96fd3633ae528503a413b0915bd2671d4e33"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii-backend-theme/zipball/5f229bfc5cd23ef0b3edb5bb37f67bd9f68fd078",
-                "reference": "5f229bfc5cd23ef0b3edb5bb37f67bd9f68fd078",
+                "url": "https://api.github.com/repos/schmunk42/yii-backend-theme/zipball/2c9a96fd3633ae528503a413b0915bd2671d4e33",
+                "reference": "2c9a96fd3633ae528503a413b0915bd2671d4e33",
                 "shasum": ""
             },
             "require": {
@@ -124,7 +124,7 @@
                 "theme",
                 "yii"
             ],
-            "time": "2013-07-23 01:19:42"
+            "time": "2013-07-25 11:34:08"
         },
         {
             "name": "phundament/gii-template-collection",
@@ -283,12 +283,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3extensions.git",
-                "reference": "0.14.1"
+                "reference": "0.15.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3extensions/zipball/0.14.1",
-                "reference": "0.14.1",
+                "url": "https://api.github.com/repos/schmunk42/p3extensions/zipball/0.15.0",
+                "reference": "0.15.0",
                 "shasum": ""
             },
             "require": {
@@ -314,23 +314,23 @@
                 "phundament"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3extensions/tree/0.14.1",
+                "source": "https://github.com/schmunk42/p3extensions/tree/0.15.0",
                 "issues": "https://github.com/schmunk42/p3extensions/issues"
             },
-            "time": "2013-07-16 08:53:14"
+            "time": "2013-07-25 17:53:56"
         },
         {
             "name": "phundament/p3media",
-            "version": "0.13.5",
+            "version": "0.13.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3media.git",
-                "reference": "0.13.5"
+                "reference": "0.13.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3media/zipball/0.13.5",
-                "reference": "0.13.5",
+                "url": "https://api.github.com/repos/schmunk42/p3media/zipball/0.13.6",
+                "reference": "0.13.6",
                 "shasum": ""
             },
             "require": {
@@ -360,10 +360,10 @@
                 "yii"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3media/tree/master",
+                "source": "https://github.com/schmunk42/p3media/tree/0.13.6",
                 "issues": "https://github.com/schmunk42/p3media/issues"
             },
-            "time": "2013-07-17 12:38:06"
+            "time": "2013-07-25 20:12:36"
         },
         {
             "name": "phundament/p3pages",
@@ -466,12 +466,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii-ckeditor-configurator.git",
-                "reference": "222e478fc149e3d124d2b74c34634cf33465a38d"
+                "reference": "a21ecf5d4817e68fd7592a52dd2d2753bdabaeb6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii-ckeditor-configurator/zipball/222e478fc149e3d124d2b74c34634cf33465a38d",
-                "reference": "222e478fc149e3d124d2b74c34634cf33465a38d",
+                "url": "https://api.github.com/repos/schmunk42/yii-ckeditor-configurator/zipball/a21ecf5d4817e68fd7592a52dd2d2753bdabaeb6",
+                "reference": "a21ecf5d4817e68fd7592a52dd2d2753bdabaeb6",
                 "shasum": ""
             },
             "require": {
@@ -498,7 +498,7 @@
                 "CKEditor",
                 "yii"
             ],
-            "time": "2013-07-18 09:31:05"
+            "time": "2013-07-25 12:45:15"
         },
         {
             "name": "schmunk42/multi-theme",
