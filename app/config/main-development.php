@@ -47,7 +47,8 @@ return array(
             'class'        => 'vendor.crisu83.yii-less.components.LessServerCompiler',
             'files'        => array(
                 // publish output css file via assets
-                '../app/themes/frontend/less/p3.less'      => 'themes/frontend/css/p3.css',
+                '../app/themes/frontend/less/p3.less'      => '../app/themes/frontend/assets/p3.css',
+                '../app/themes/frontend/less/backend.less' => '../app/themes/frontend/assets/backend.css',
                 '../app/themes/backend2/less/backend.less' => '../app/themes/backend2/css/backend.css',
             ),
             'nodePath'     => '/opt/local/bin/node',
