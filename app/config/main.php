@@ -403,6 +403,12 @@ $mainConfig = array(
             'filebrowserFlashBrowseCreateUrl' => array('/p3media/ckeditor/flash'),
             'filebrowserUploadCreateUrl'      => array('/p3media/import/ckeditorUpload'),
         ),
+        'ext.ckeditor.dtd' => array(
+            '$removeEmpty' => array(
+                'span' => 0,
+                'i' => 0
+            ),
+        ),
     ),
 );
 
