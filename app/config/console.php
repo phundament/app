@@ -27,6 +27,7 @@ $consoleConfig = array(
     'aliases'    => array(
         'vendor'  => dirname(__FILE__) . '/../../vendor',
         'webroot' => dirname(__FILE__) . '/../../www',
+        'gii-template-collection'              => 'vendor.phundament.gii-template-collection', // TODO
     ),
     'basePath'   => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
     'name'       => 'Phundament Console Application',
