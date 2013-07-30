@@ -209,7 +209,9 @@ $mainConfig = array(
         ),
         'bootstrap'     => array(
             'class'         => 'vendor.clevertech.yiibooster.src.components.Bootstrap',
-            'coreCss'       => false, // use csutom css from theme
+            'coreCss'       => true, // whether to register any CSS at all, defaults to true
+            'bootstrapCss'  => false, // use csutom css from theme
+            'jqueryCss'     => false, // use csutom css from theme
             'responsiveCss' => false, // use csutom css from theme
             // whether to register the Bootstrap responsive CSS (bootstrap-responsive.min.css), default to false
             'plugins'       => array(),
