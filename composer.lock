@@ -3,25 +3,26 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "b938c28beff2061c3d73256adbbd9c82",
+    "hash": "333dcc171037ce0ac8574d694ff4bdb8",
     "packages": [
         {
             "name": "clevertech/yiibooster",
-            "version": "1.0.7",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/clevertech/YiiBooster.git",
-                "reference": "f82a5a4ee2173504ef8e6f94b0419e6f10067aad"
+                "reference": "3b3f02ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/clevertech/YiiBooster/archive/f82a5a4ee2173504ef8e6f94b0419e6f10067aad.zip",
-                "reference": null,
+                "url": "https://github.com/clevertech/YiiBooster/archive/3b3f02cae1d6617ef2a29f62e9a20a0ff5eea5a8.zip",
+                "reference": "3b3f02ca",
                 "shasum": null
             },
             "type": "yii-extension",
             "description": "YiiBooster",
-            "homepage": "https://github.com/clevertech/YiiBooster"
+            "homepage": "https://github.com/clevertech/YiiBooster",
+            "time": "2013-07-29 18:56:00"
         },
         {
             "name": "crisu83/yii-rights",
@@ -128,16 +129,16 @@
         },
         {
             "name": "phundament/gii-template-collection",
-            "version": "dev-master",
+            "version": "dev-development",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/gii-template-collection.git",
-                "reference": "b440f386b271dbbcf79c0fbf02b79b66c98c3c48"
+                "reference": "989f6659aee07873f60da82870eeec58a4e5810d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/gii-template-collection/zipball/b440f386b271dbbcf79c0fbf02b79b66c98c3c48",
-                "reference": "b440f386b271dbbcf79c0fbf02b79b66c98c3c48",
+                "url": "https://api.github.com/repos/schmunk42/gii-template-collection/zipball/989f6659aee07873f60da82870eeec58a4e5810d",
+                "reference": "989f6659aee07873f60da82870eeec58a4e5810d",
                 "shasum": ""
             },
             "require": {
@@ -162,10 +163,10 @@
                 "package"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/gii-template-collection/tree/master",
+                "source": "https://github.com/schmunk42/gii-template-collection/tree/development",
                 "issues": "https://github.com/schmunk42/gii-template-collection/issues"
             },
-            "time": "2013-07-29 20:33:24"
+            "time": "2013-08-01 13:00:01"
         },
         {
             "name": "phundament/jquery-file-upload",
@@ -686,21 +687,22 @@
         },
         {
             "name": "yiiext/migrate-command",
-            "version": "0.7.2",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiiext/migrate-command.git",
-                "reference": "79b578ed54cdf6ecaa65db0a496151f7528a7e40"
+                "reference": "35f315b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/yiiext/migrate-command/archive/79b578ed54cdf6ecaa65db0a496151f7528a7e40.zip",
-                "reference": null,
+                "url": "https://github.com/yiiext/migrate-command/archive/35f315b1fedc40bc9f551758bdb2b7f969d48005.zip",
+                "reference": "35f315b",
                 "shasum": null
             },
             "type": "yii-extension",
             "description": "This is an enhanced version of the Yii Database Migration Tool that adds module support and many more usefull features.",
-            "homepage": "https://github.com/yiiext/migrate-command"
+            "homepage": "https://github.com/yiiext/migrate-command",
+            "time": "2013-05-09 15:14:47"
         },
         {
             "name": "yiisoft/yii",
@@ -853,12 +855,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/giic.git",
-                "reference": "9c3d8d79041cb7c233a8a8620caf1852f29dc760"
+                "reference": "2b2030ad00b85d5965e5cbf4af80d8b63c928f64"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/giic/zipball/9c3d8d79041cb7c233a8a8620caf1852f29dc760",
-                "reference": "9c3d8d79041cb7c233a8a8620caf1852f29dc760",
+                "url": "https://api.github.com/repos/schmunk42/giic/zipball/2b2030ad00b85d5965e5cbf4af80d8b63c928f64",
+                "reference": "2b2030ad00b85d5965e5cbf4af80d8b63c928f64",
                 "shasum": ""
             },
             "require": {
@@ -884,7 +886,7 @@
                 "components",
                 "phundament"
             ],
-            "time": "2013-08-01 15:24:01"
+            "time": "2013-08-01 21:16:04"
         },
         {
             "name": "thomaspark/bootswatch",
@@ -924,17 +926,24 @@
         }
     ],
     "aliases": [
-
+        {
+            "alias": "1.1.1",
+            "alias_normalized": "1.1.1.0",
+            "version": "9999999-dev",
+            "package": "clevertech/yiibooster"
+        }
     ],
     "minimum-stability": "dev",
     "stability-flags": {
         "crisu83/yii-rights": 20,
+        "clevertech/yiibooster": 20,
         "malyshev/yii-debug-toolbar": 20,
         "mishamx/yii-user": 20,
         "schmunk42/ckeditor-configurator": 20,
         "phundament/backend-theme": 20,
         "phundament/gii-template-collection": 20,
         "waalzer/app-demo-data": 20,
+        "yiiext/migrate-command": 20,
         "phundament/lessii": 20,
         "schmunk42/giic": 20
     },

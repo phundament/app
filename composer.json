@@ -30,13 +30,14 @@
     "require":{
         "php":">=5.3.2",
         "crisu83/yii-rights":"@dev",
+        "clevertech/yiibooster":"dev-master#3b3f02ca as 1.1.1",
         "malyshev/yii-debug-toolbar":"@dev",
         "mishamx/yii-user":"@dev",
         "schmunk42/ckeditor-configurator": "@dev",
         "schmunk42/multi-theme":"0.1.*",
         "schmunk42/web-user-behavior":"0.1.*",
         "phundament/backend-theme":"@dev",
-        "phundament/gii-template-collection":"@dev",
+        "phundament/gii-template-collection":"dev-development",
         "phundament/p3admin":"0.14.*",
         "phundament/p3bootstrap":"0.19.*",
         "phundament/p3pages":"0.13.*",
@@ -46,7 +47,7 @@
         "waalzer/app-demo-data": "dev-master",
         "yiiext/fancybox-widget":"0.*",
         "yiiext/lipsum-widget":"0.*",
-        "yiiext/migrate-command":"0.7.*",
+        "yiiext/migrate-command":"dev-master#35f315b",
         "yiisoft/yii":"1.1.13"
     },
     "require-dev":{
