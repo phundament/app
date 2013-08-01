@@ -86,12 +86,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii-backend-theme.git",
-                "reference": "2c9a96fd3633ae528503a413b0915bd2671d4e33"
+                "reference": "c27a0bdb4febb08489c1eadee0df8b37fab8cf0c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii-backend-theme/zipball/2c9a96fd3633ae528503a413b0915bd2671d4e33",
-                "reference": "2c9a96fd3633ae528503a413b0915bd2671d4e33",
+                "url": "https://api.github.com/repos/schmunk42/yii-backend-theme/zipball/c27a0bdb4febb08489c1eadee0df8b37fab8cf0c",
+                "reference": "c27a0bdb4febb08489c1eadee0df8b37fab8cf0c",
                 "shasum": ""
             },
             "require": {
@@ -124,7 +124,7 @@
                 "theme",
                 "yii"
             ],
-            "time": "2013-07-25 11:34:08"
+            "time": "2013-07-29 18:58:37"
         },
         {
             "name": "phundament/gii-template-collection",
@@ -132,12 +132,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/gii-template-collection.git",
-                "reference": "9928b73fefb843c8585dca892fab5d148e23bdba"
+                "reference": "b440f386b271dbbcf79c0fbf02b79b66c98c3c48"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/gii-template-collection/zipball/9928b73fefb843c8585dca892fab5d148e23bdba",
-                "reference": "9928b73fefb843c8585dca892fab5d148e23bdba",
+                "url": "https://api.github.com/repos/schmunk42/gii-template-collection/zipball/b440f386b271dbbcf79c0fbf02b79b66c98c3c48",
+                "reference": "b440f386b271dbbcf79c0fbf02b79b66c98c3c48",
                 "shasum": ""
             },
             "require": {
@@ -165,7 +165,7 @@
                 "source": "https://github.com/schmunk42/gii-template-collection/tree/master",
                 "issues": "https://github.com/schmunk42/gii-template-collection/issues"
             },
-            "time": "2013-07-29 11:44:46"
+            "time": "2013-07-29 20:33:24"
         },
         {
             "name": "phundament/jquery-file-upload",
@@ -853,15 +853,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/giic.git",
-                "reference": "fd6d3945a3944b350d66f730199d4425a255d711"
+                "reference": "93470c2a97f523156c62c849716a47efbea5b165"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/giic/zipball/fd6d3945a3944b350d66f730199d4425a255d711",
-                "reference": "fd6d3945a3944b350d66f730199d4425a255d711",
+                "url": "https://api.github.com/repos/schmunk42/giic/zipball/93470c2a97f523156c62c849716a47efbea5b165",
+                "reference": "93470c2a97f523156c62c849716a47efbea5b165",
                 "shasum": ""
             },
             "require": {
+                "ext-xsl": "*",
                 "php": ">=5.3.0",
                 "yiisoft/yii": ">=1.1.12,<2.0"
             },
@@ -883,7 +884,7 @@
                 "components",
                 "phundament"
             ],
-            "time": "2013-07-29 11:10:26"
+            "time": "2013-07-31 22:25:27"
         },
         {
             "name": "schmunk42/yii-sakila-crud",
@@ -891,12 +892,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii-sakila-crud.git",
-                "reference": "a1721ed4390e690bdf7263f3cb200b7ca874a287"
+                "reference": "51db85ca762751321e2c96ca7c9630fda22a66b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii-sakila-crud/zipball/a1721ed4390e690bdf7263f3cb200b7ca874a287",
-                "reference": "a1721ed4390e690bdf7263f3cb200b7ca874a287",
+                "url": "https://api.github.com/repos/schmunk42/yii-sakila-crud/zipball/51db85ca762751321e2c96ca7c9630fda22a66b1",
+                "reference": "51db85ca762751321e2c96ca7c9630fda22a66b1",
                 "shasum": ""
             },
             "require": {
@@ -921,7 +922,7 @@
                 "gii-template-collection",
                 "yii"
             ],
-            "time": "2013-07-13 10:41:32"
+            "time": "2013-07-31 22:27:12"
         },
         {
             "name": "thomaspark/bootswatch",
@@ -946,27 +947,18 @@
             "version": "v2.3.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/twitter/bootstrap.git",
-                "reference": "v2.3.2"
+                "url": "https://github.com/twbs/bootstrap.git",
+                "reference": "b4c4072679943773a7582daa63f545ba818fa627"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twitter/bootstrap/zipball/v2.3.2",
-                "reference": "v2.3.2",
-                "shasum": ""
+                "url": "https://github.com/twbs/bootstrap/archive/b4c4072679943773a7582daa63f545ba818fa627.zip",
+                "reference": null,
+                "shasum": null
             },
             "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
             "description": "Sleek, intuitive, and powerful front-end framework for faster and easier web development.",
-            "homepage": "http://twitter.github.com/bootstrap/",
-            "keywords": [
-                "bootstrap",
-                "css"
-            ],
-            "time": "2013-05-17 17:26:09"
+            "homepage": "https://github.com/twbs/bootstrap"
         }
     ],
     "aliases": [
