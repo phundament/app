@@ -89,7 +89,7 @@ Resources
  *  [View at packagist.org](https://packagist.org/packages/phundament/app)
  *  [Fork on github](https://github.com/phundament/app)
  *  [Downloads](https://github.com/phundament/app/tags)
- *  [Continuous Integration](https://travis-ci.org/phundament/app.png?branch=master)](https://travis-ci.org/phundament/app) *  
+ *  [Continuous Integration](https://travis-ci.org/phundament/app.png?branch=master)  
  *  [Company Website](http://herzogkommunikation.de)
  *  [Demo Website](http://demo.phundament.com/3.0-dev/)
 
