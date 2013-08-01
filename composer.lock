@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "f16a5f7cbd0d1d918fc0bd9267f4f626",
+    "hash": "b938c28beff2061c3d73256adbbd9c82",
     "packages": [
         {
             "name": "clevertech/yiibooster",
@@ -853,12 +853,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/giic.git",
-                "reference": "93470c2a97f523156c62c849716a47efbea5b165"
+                "reference": "9c3d8d79041cb7c233a8a8620caf1852f29dc760"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/giic/zipball/93470c2a97f523156c62c849716a47efbea5b165",
-                "reference": "93470c2a97f523156c62c849716a47efbea5b165",
+                "url": "https://api.github.com/repos/schmunk42/giic/zipball/9c3d8d79041cb7c233a8a8620caf1852f29dc760",
+                "reference": "9c3d8d79041cb7c233a8a8620caf1852f29dc760",
                 "shasum": ""
             },
             "require": {
@@ -884,45 +884,7 @@
                 "components",
                 "phundament"
             ],
-            "time": "2013-07-31 22:25:27"
-        },
-        {
-            "name": "schmunk42/yii-sakila-crud",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/schmunk42/yii-sakila-crud.git",
-                "reference": "51db85ca762751321e2c96ca7c9630fda22a66b1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii-sakila-crud/zipball/51db85ca762751321e2c96ca7c9630fda22a66b1",
-                "reference": "51db85ca762751321e2c96ca7c9630fda22a66b1",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD"
-            ],
-            "authors": [
-                {
-                    "name": "Tobias Munk",
-                    "email": "schmunk@usrbin.de",
-                    "homepage": "http://www.usrbin.de"
-                }
-            ],
-            "description": "Yii Framework test-module with gtc slim templates on saklia MySQL demo database",
-            "homepage": "http://phundament.com/",
-            "keywords": [
-                "crud",
-                "gii-template-collection",
-                "yii"
-            ],
-            "time": "2013-07-31 22:27:12"
+            "time": "2013-08-01 15:24:01"
         },
         {
             "name": "thomaspark/bootswatch",
@@ -969,13 +931,12 @@
         "crisu83/yii-rights": 20,
         "malyshev/yii-debug-toolbar": 20,
         "mishamx/yii-user": 20,
+        "schmunk42/ckeditor-configurator": 20,
         "phundament/backend-theme": 20,
         "phundament/gii-template-collection": 20,
         "waalzer/app-demo-data": 20,
-        "schmunk42/ckeditor-configurator": 20,
         "phundament/lessii": 20,
-        "schmunk42/giic": 20,
-        "schmunk42/yii-sakila-crud": 20
+        "schmunk42/giic": 20
     },
     "platform": {
         "php": ">=5.3.2"
