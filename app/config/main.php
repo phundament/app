@@ -52,12 +52,12 @@ $mainConfig = array(
         'application.components.*',
         'zii.widgets.*',
         // TODO: should be handled by composer autoloader
-        'vendor.phundament.gii-template-collection.components.*', // Relation Widget
         'vendor.phundament.p3widgets.components.*', // P3WidgetContainer, P3Reference Widget
         'vendor.phundament.p3extensions.components.*', // shared classes
         'vendor.phundament.p3extensions.behaviors.*', // shared classes
         'vendor.phundament.p3extensions.widgets.*', // shared classes
         'vendor.phundament.p3extensions.helpers.*', // shared classes - P3StringHelper
+        'vendor.phundament.p3extensions.validators.*', // shared classes - P3StringHelper
         'vendor.phundament.p3pages.models.*', // Meta description and keywords (P3Media)
         // imports for components from packages, which do not support composer autoloading
         'vendor.mishamx.yii-user.models.*', // User Model

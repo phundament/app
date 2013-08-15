@@ -7,4 +7,7 @@ $config=dirname(__FILE__).'/../../../../app/config/test.php';
 require_once($yiit);
 //require_once(dirname(__FILE__).'/WebTestCase.php');
 
+// require composer autoloader
+require_once(dirname(__FILE__).'/../../../../vendor/autoload.php');
+
 if (!Yii::app()) Yii::createWebApplication($config);

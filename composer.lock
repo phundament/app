@@ -242,16 +242,16 @@
         },
         {
             "name": "phundament/p3extensions",
-            "version": "0.15.0",
+            "version": "0.15.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3extensions.git",
-                "reference": "0.15.0"
+                "reference": "0.15.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3extensions/zipball/0.15.0",
-                "reference": "0.15.0",
+                "url": "https://api.github.com/repos/schmunk42/p3extensions/zipball/0.15.1",
+                "reference": "0.15.1",
                 "shasum": ""
             },
             "require": {
@@ -277,29 +277,29 @@
                 "phundament"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3extensions/tree/0.15.0",
+                "source": "https://github.com/schmunk42/p3extensions/tree/0.15.1",
                 "issues": "https://github.com/schmunk42/p3extensions/issues"
             },
-            "time": "2013-07-25 17:53:56"
+            "time": "2013-08-15 18:50:35"
         },
         {
             "name": "phundament/p3media",
-            "version": "0.15.0",
+            "version": "0.15.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3media.git",
-                "reference": "0.15.0"
+                "reference": "0.15.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3media/zipball/0.15.0",
-                "reference": "0.15.0",
+                "url": "https://api.github.com/repos/schmunk42/p3media/zipball/0.15.1",
+                "reference": "0.15.1",
                 "shasum": ""
             },
             "require": {
                 "clevertech/yiibooster": "1.*",
                 "php": ">=5.3.0",
-                "phundament/p3extensions": ">=0.14",
+                "phundament/p3extensions": ">=0.15.1",
                 "yiisoft/yii": "1.1.*"
             },
             "type": "yii-extension",
@@ -323,10 +323,10 @@
                 "yii"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3media/tree/0.15.0",
+                "source": "https://github.com/schmunk42/p3media/tree/0.15.1",
                 "issues": "https://github.com/schmunk42/p3media/issues"
             },
-            "time": "2013-08-15 14:30:06"
+            "time": "2013-08-15 18:53:35"
         },
         {
             "name": "phundament/p3pages",

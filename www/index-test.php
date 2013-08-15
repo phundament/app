@@ -11,6 +11,9 @@ $config = dirname(__FILE__) . '/../app/config/test.php';
 // remove the following line when in production mode
 defined('YII_DEBUG') or define('YII_DEBUG', true);
 
+// register composer autoloader
+require_once(dirname(__FILE__).'/../vendor/autoload.php');
+
 require_once($yii);
 
 Yii::createWebApplication($config)->run();
