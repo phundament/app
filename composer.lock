@@ -49,7 +49,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Quexer69/yii.translate.git",
-                "reference": "332c6b6798e728858123ffdf19bc70a4b41bc872"
+                "reference": "d0afd14f0b91d8c1f1250409f50a214aebeea188"
             },
             "suggest": {
                 "Translate": "Any yii translate extension"
@@ -78,7 +78,7 @@
                 "web",
                 "yii"
             ],
-            "time": "2013-09-28 02:18:54"
+            "time": "2013-09-28 19:06:03"
         },
         {
             "name": "malyshev/yii-debug-toolbar",
@@ -610,12 +610,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii-ckeditor-configurator.git",
-                "reference": "a7fd3746928d4aa5e4c96c73a59dcb033eeaee2f"
+                "reference": "15e3ad391dac512caa284f30fbb00b1983c8075a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii-ckeditor-configurator/zipball/a7fd3746928d4aa5e4c96c73a59dcb033eeaee2f",
-                "reference": "a7fd3746928d4aa5e4c96c73a59dcb033eeaee2f",
+                "url": "https://api.github.com/repos/schmunk42/yii-ckeditor-configurator/zipball/15e3ad391dac512caa284f30fbb00b1983c8075a",
+                "reference": "15e3ad391dac512caa284f30fbb00b1983c8075a",
                 "shasum": ""
             },
             "require": {
@@ -643,7 +643,7 @@
                 "CKEditor",
                 "yii"
             ],
-            "time": "2013-09-27 15:31:05"
+            "time": "2013-09-28 19:09:28"
         },
         {
             "name": "schmunk42/multi-theme",
@@ -1055,16 +1055,16 @@
         },
         {
             "name": "schmunk42/database-command",
-            "version": "0.8.10",
+            "version": "0.8.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/database-command.git",
-                "reference": "0.8.10"
+                "reference": "66b6f16491bac9dedea743ebb0c6847c7f78e456"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/database-command/zipball/0.8.10",
-                "reference": "0.8.10",
+                "url": "https://api.github.com/repos/schmunk42/database-command/zipball/66b6f16491bac9dedea743ebb0c6847c7f78e456",
+                "reference": "66b6f16491bac9dedea743ebb0c6847c7f78e456",
                 "shasum": ""
             },
             "require": {
@@ -1072,13 +1072,15 @@
                 "yiisoft/yii": "1.1.*"
             },
             "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
             "authors": [
                 {
                     "name": "Tobias Munk",
-                    "email": "schmunk@usrbin.de"
+                    "email": "schmunk@usrbin.de",
+                    "homepage": "http://www.usrbin.de"
                 }
             ],
             "description": "Yii command to create database migrations from existing schema",
@@ -1091,11 +1093,7 @@
                 "migration",
                 "yii"
             ],
-            "support": {
-                "source": "https://github.com/schmunk42/database-command/tree/0.8.10",
-                "issues": "https://github.com/schmunk42/database-command/issues"
-            },
-            "time": "2013-04-24 15:22:11"
+            "time": "2013-09-28 19:08:25"
         },
         {
             "name": "schmunk42/giic",
