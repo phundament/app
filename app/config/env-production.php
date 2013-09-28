@@ -10,12 +10,12 @@ return array(
             'routes' => array(
                 array(
                     'class'  => 'CFileLogRoute',
-                    #'categories' => 'application',
-                    'levels' => 'alert,error',
+                    'levels' => 'error,warning',
                 ),
             ),
         ),
     ),
-    'params'     => array(#'adminEmail' => 'webmaster@h17n.de', // this is used in contact page
+    'params'     => array(
+        #'adminEmail' => 'webmaster@h17n.de', // this is used in contact page
     ),
 );

@@ -1,10 +1,10 @@
 <?php
 
 // merge this file in main-local.php on your development system
+define('YII_DEBUG', true);
 
 return array(
-    'preload'    => array(
-        #'less', // LESS compiler, only preload on dev systems, config see below
+    'preload'    => array( #'less', // LESS compiler, only preload on dev systems, config see below
     ),
     'modules'    => array(
         // code generator
@@ -18,32 +18,11 @@ return array(
                 'bootstrap.gii', // bootstrap generator
             ),
         ),
-        #'sakila' => array(
-        #    'class' => 'vendor.schmunk42.yii-sakila-crud.SakilaModule'
-        #)
     ),
-    'import'     => array(
-        #'vendor.schmunk42.yii-sakila-crud.models.*',
-    ),
+    'import'     => array(),
     // application components
     'components' => array(
-        'dbTest'   => array(
-            // MySQL
-            'class'            => 'CDbConnection',
-            'tablePrefix'      => '',
-            'connectionString' => 'sqlite:' . $applicationDirectory . '/data/test.db',
-        ),
-        'dbSakila' => array(
-            'class'              => 'CDbConnection',
-            // MySQL
-            'connectionString'   => 'mysql:host=localhost;dbname=sakila',
-            'emulatePrepare'     => true,
-            'username'           => 'test',
-            'password'           => 'test',
-            'charset'            => 'utf8',
-            'enableParamLogging' => true
-        ),
-        'less'     => array(
+        'less'   => array(
             'class'        => 'vendor.crisu83.yii-less.components.LessServerCompiler',
             'files'        => array(
                 // publish output css file via assets
@@ -54,7 +33,7 @@ return array(
             'nodePath'     => '/opt/local/bin/node',
             'compilerPath' => $applicationDirectory . '/../vendor/cloudhead/less.js/bin/lessc',
         ),
-        'log'      => array(
+        'log'    => array(
             'class'  => 'CLogRouter',
             'routes' => array(
                 // Yii debug toolbar
@@ -65,9 +44,20 @@ return array(
                 ),
                 // file logging
                 array(
-                    'class' => 'CFileLogRoute',
-                    #'levels' => 'error, warning',
-                    #'categories' => 'application',
+                    'class'   => 'CFileLogRoute',
+                    'levels'  => 'error, warning, info',
+                    'enabled' => true,
+                ),
+                array(
+                    'class'      => 'CWebLogRoute',
+                    'levels'     => 'error, warning, profile, info, trace',
+                    'enabled'    => false,
+                    'categories' => 'application',
+                ),
+                array(
+                    'class'   => 'CProfileLogRoute',
+                    'report'  => 'callstack',
+                    'enabled' => false
                 ),
             ),
         ),

@@ -1,22 +1,20 @@
 <?php
 
-// Use this file as local.php to override settings only on your local machine
-//
-// DO NOT COMMIT THIS FILE !!!
+// Use this file as main-local.php to override settings only on your local machine
 
-// include 'development' or 'production'
-$environmentConfigFile = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'main-development.php';
-
-
-$localConfig = array(
+return array(
     'params' => array(
-        'foo' => 'bar'
+        'env' => 'development'
+    ),
+    'components' => array(
+        // MySQL
+        /*'db'            => array(
+            'tablePrefix'      => '',
+            'connectionString' => 'mysql:host=localhost;dbname=p3',
+            'emulatePrepare' => true,
+            'username' => 'test',
+            'password' => 'test',
+            'charset' => 'utf8',
+        ),*/
     )
 );
-
-// merge configs in the following order (most to least important) local, {env}, main
-if (is_file($environmentConfigFile)) {
-    return CMap::mergeArray(require($environmentConfigFile), $localConfig);
-} else {
-    return $localConfig;
-}

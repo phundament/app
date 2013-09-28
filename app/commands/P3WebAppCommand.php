@@ -216,7 +216,7 @@ EOD;
     public function callbackReplaceEnvironment($source, $params)
     {
         $content = file_get_contents($source);
-        $content = str_replace('main-development.php', 'main-production.php', $content);
+        $content = str_replace("'env' => 'development'","'env' => 'production'", $content);
         return $content;
     }
 

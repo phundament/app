@@ -16,8 +16,14 @@ $applicationDirectory = realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '..' 
 $baseUrl              = (dirname($_SERVER['SCRIPT_NAME']) == '/' || dirname($_SERVER['SCRIPT_NAME']) == '\\') ? '' :
     dirname($_SERVER['SCRIPT_NAME']);
 
+$languages = array(
+    'en' => 'English',
+    'de' => 'Deutsch',
+    'lv' => 'Latviešu',
+);
+
 // main application configuration
-$mainConfig = array(
+return array(
     'basePath'   => $applicationDirectory,
     'name'       => 'Company Inc.',
     'theme'      => 'frontend', // theme is copied eg. from vendor/p3bootstrap
@@ -135,19 +141,19 @@ $mainConfig = array(
                         ),
                         'type'     => 'png'
                     ),
-                    'original'         => array(
-                        'name'         => 'Original File',
-                        'originalFile' => true,
-                    ),
-                    'original-public'  => array(
-                        'name'         => 'Original File Public',
-                        'originalFile' => true,
-                        'savePublic'   => true,
-                    ),
                     'download'         => array(
                         'name'         => 'Download File',
                         'originalFile' => true,
                         'attachment'   => true,
+                    ),
+                    'original'         => array(
+                        //'name'         => 'Original File', // uncomment name to enable preset in dropdowns
+                        'originalFile' => true,
+                    ),
+                    'original-public'  => array(
+                        //'name'         => 'Original File Public',
+                        'originalFile' => true,
+                        'savePublic'   => true,
                     ),
                     'p3media-ckbrowse' => array(
                         'commands' => array(
@@ -198,6 +204,9 @@ $mainConfig = array(
             'class'               => 'vendor.mishamx.yii-user.UserModule',
             'activeAfterRegister' => false,
         ),
+        'translate'            => array(
+            'class' => 'vendor.gusnips.yii-translate.TranslateModule',
+        ),
     ),
     // application components
     'components' => array(
@@ -208,13 +217,14 @@ $mainConfig = array(
             // see correspoing business rules, note: superusers always get checkAcess == true
         ),
         'bootstrap'     => array(
-            'class'         => 'vendor.clevertech.yiibooster.src.components.Bootstrap',
-            'coreCss'       => true, // whether to register any CSS at all, defaults to true
-            'bootstrapCss'  => false, // use csutom css from theme
-            'jqueryCss'     => false, // use csutom css from theme
-            'responsiveCss' => false, // use csutom css from theme
+            'class'          => 'vendor.clevertech.yiibooster.src.components.Bootstrap',
+            'coreCss'        => true, // whether to register any CSS at all, defaults to true
+            'bootstrapCss'   => false, // use csutom css from theme
+            'jqueryCss'      => false, // use csutom css from theme
+            'responsiveCss'  => false, // use csutom css from theme
+            'fontAwesomeCss' => true,
             // whether to register the Bootstrap responsive CSS (bootstrap-responsive.min.css), default to false
-            'plugins'       => array(),
+            'plugins'        => array(),
         ),
         'cache'         => array(
             'class' => 'CDummyCache',
@@ -223,12 +233,19 @@ $mainConfig = array(
             'tablePrefix'      => '',
             // SQLite
             'connectionString' => 'sqlite:' . $applicationDirectory . '/data/default.db',
+            #'initSQLs'=>array('PRAGMA foreign_keys = ON'),
             // MySQL
             #'connectionString' => 'mysql:host=localhost;dbname=p3',
             #'emulatePrepare' => true,
             #'username' => 'test',
             #'password' => 'test',
             #'charset' => 'utf8',
+        ),
+        'dbTest'        => array(
+            // MySQL
+            'class'            => 'CDbConnection',
+            'tablePrefix'      => '',
+            'connectionString' => 'sqlite:' . $applicationDirectory . '/data/test.db',
         ),
         //X-editable config
         'editable'      => array(
@@ -254,7 +271,7 @@ $mainConfig = array(
         ),
         'langHandler'   => array(
             'class'     => 'vendor.phundament.p3extensions.components.P3LangHandler',
-            'languages' => array('en', 'de') // available languages 'ru', 'fr'
+            'languages' => array_keys($languages), // available languages, eg. 'lv', 'ru', 'fr'
         ),
         'log'           => array(
             'class'  => 'CLogRouter',
@@ -264,6 +281,18 @@ $mainConfig = array(
                     'levels' => 'error, warning',
                 ),
             ),
+        ),
+        'messages'      => array(
+            'class'                => 'CDbMessageSource',
+            'onMissingTranslation' => array('TranslationConverter', 'findInPhpMessageSource'),
+            //'onMissingTranslation'  => array('TranslateModule', 'missingTranslation'),
+        ),
+        'translate'     => array(
+            'class'                  => 'vendor.gusnips.yii-translate.components.MPTranslate',
+            //any avaliable options here
+            'autoSetLanguage'        => false,
+            'useApplicationLanguage' => true,
+            'acceptedLanguages'      => $languages,
         ),
         'themeManager'  => array(
             'class'    => 'vendor.schmunk42.multi-theme.EMultiThemeManager',
@@ -284,6 +313,7 @@ $mainConfig = array(
                 '^sakila/(.*)'               => 'backend2',
                 '^p3(.*)'                    => 'backend2',
                 '^ckeditorConfigurator/(.*)' => 'backend2',
+                '^translate/(.*)'            => 'backend2',
             )
         ),
         'urlManager'    => array(
@@ -293,13 +323,10 @@ $mainConfig = array(
             'urlFormat'      => 'get', // use 'path', otherwise rules below won't work
             'rules'          => array(
                 // backend
-                'phundament'                             => 'p3admin/default/index',
-                // standard login page URL
-                '<lang:[a-z]{2}(_[a-z]{2})?>/site/login' => 'user/login',
-                'site/login'                             => 'user/login',
+                'phundament' => 'p3admin/default/index',
                 // p3pages - SEO
                 '<lang:[a-z]{2}(_[a-z]{2})?>/<pageName:[a-zA-Z0-9-._]*>-<pageId:\d+>.html'
-                                                         => 'p3pages/default/page',
+                             => 'p3pages/default/page',
                 // p3media - SEO
                 '<lang:[a-z]{2}(_[a-z]{2})?>/img/<preset:[a-zA-Z0-9-._]+>/<title:.+>_<id:\d+><extension:.[a-zA-Z0-9]{1,}+>'
                                                                => 'p3media/file/image',
@@ -332,11 +359,9 @@ $mainConfig = array(
     // using Yii::app()->params['paramName']
     'params'     => array(
         // this is used in contact page
-        'adminEmail'                => 'webmaster@example.com',
-        // global Phundament 3 parameters
-        'P3Page.fallbackLanguage'   => 'en', // defaults to 'en'
-        'P3Widget.fallbackLanguage' => 'en', // defaults to 'en'
-        'ext.ckeditor.options'      => array(
+        'adminEmail'           => 'webmaster@example.com',
+        'languages'            => $languages,
+        'ext.ckeditor.options' => array(
             'type'                            => 'fckeditor',
             'height'                          => 400,
             'filebrowserWindowWidth'          => '990',
@@ -388,35 +413,24 @@ $mainConfig = array(
             'shiftEnterMode'                  => 2,
             'fillEmptyBlocks'                 => false,
             // do not insert &nbsp; into empty blocks
-            'contentsCss'                     => $baseUrl . '/assets/e3ecaab1/ckeditor/ckeditor.css', // path is hashed by name
+            'contentsCss'                     => $baseUrl . '/assets/e3ecaab1/ckeditor/ckeditor.css',
+            // path is hashed by name
             'bodyId'                          => 'ckeditor',
             'bodyClass'                       => 'ckeditor',
             /* Assets will be published with publishAsset() */
             'templates_files'                 => array($baseUrl . '/index.php?r=ckeditorConfigurator/default/cktemplates'),
             'stylesCombo_stylesSet'           => 'my_styles:' . $baseUrl . '/index.php?r=ckeditorConfigurator/default/ckstyles',
-            /* Standard-way to specify URLs - deprecated */
-            /*'filebrowserBrowseUrl' => '/p3media/ckeditor',
-              'filebrowserImageBrowseUrl' => '/p3media/ckeditor/image',
-              'filebrowserFlashBrowseUrl' => '/p3media/ckeditor/flash',
-              'filebrowserUploadUrl' => $baseUrl . '/p3media/import/ckeditorUpload',*/
             /* URLs will be parsed with createUrl() */
             'filebrowserBrowseCreateUrl'      => array('/p3media/ckeditor'),
             'filebrowserImageBrowseCreateUrl' => array('/p3media/ckeditor/image'),
             'filebrowserFlashBrowseCreateUrl' => array('/p3media/ckeditor/flash'),
             'filebrowserUploadCreateUrl'      => array('/p3media/import/ckeditorUpload'),
         ),
-        'ext.ckeditor.dtd' => array(
+        'ext.ckeditor.dtd'     => array(
             '$removeEmpty' => array(
                 'span' => 0,
-                'i' => 0
+                'i'    => 0
             ),
         ),
     ),
 );
-
-
-if (is_file($localConfigFile)) {
-    return CMap::mergeArray($mainConfig, require($localConfigFile));
-} else {
-    return $mainConfig;
-}
