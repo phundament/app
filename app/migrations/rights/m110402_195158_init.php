@@ -4,7 +4,7 @@ class m110402_195158_init extends CDbMigration {
 
 	public function up() {
 
-		if (Yii::app()->db->schema instanceof CMysqlSchema)
+		if ($this->dbConnection->schema instanceof CMysqlSchema)
 			$options = 'ENGINE=InnoDB DEFAULT CHARSET=utf8';
 		else
 			$options = '';
@@ -57,7 +57,7 @@ class m110402_195158_init extends CDbMigration {
 		
 // Foreign Keys for table 'AuthItemChild'
 
-		if ((Yii::app()->db->schema instanceof CSqliteSchema) == false):
+		if (($this->dbConnection->schema instanceof CSqliteSchema) == false):
 			$this->addForeignKey('fk_authitem_parent', 'AuthItemChild', 'parent', 'AuthItem', 'name', null, null); // update 'null' for ON DELTE and ON UPDATE
 			$this->addForeignKey('fk_authitem_child', 'AuthItemChild', 'child', 'AuthItem', 'name', null, null); // update 'null' for ON DELTE and ON UPDATE
 		endif;
@@ -65,7 +65,7 @@ class m110402_195158_init extends CDbMigration {
 
 		// Foreign Keys for table 'AuthAssignment'
 
-		if ((Yii::app()->db->schema instanceof CSqliteSchema) == false):
+		if (($this->dbConnection->schema instanceof CSqliteSchema) == false):
 
 			$this->addForeignKey('fk_authitem_itemname', 'AuthAssignment', 'itemname', 'AuthItem', 'name', null, null); // update 'null' for ON DELTE and ON UPDATE
 
@@ -74,14 +74,14 @@ class m110402_195158_init extends CDbMigration {
 
 // Foreign Keys for table 'AuthItem'
 
-		if ((Yii::app()->db->schema instanceof CSqliteSchema) == false):
+		if (($this->dbConnection->schema instanceof CSqliteSchema) == false):
 
 		endif;
 
 
 // Foreign Keys for table 'Rights'
 
-		if ((Yii::app()->db->schema instanceof CSqliteSchema) == false):
+		if (($this->dbConnection->schema instanceof CSqliteSchema) == false):
 
 			$this->addForeignKey('fk_rights_authitem_itemname', 'Rights', 'itemname', 'AuthItem', 'name', null, null); // update 'null' for ON DELTE and ON UPDATE
 
