@@ -408,12 +408,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3pages.git",
-                "reference": "a1dbe97f3a04fc68a334e39ca6539bd100c23ee5"
+                "reference": "e5157d8e49e10b481d185c3d8fd0d6fac5867906"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/a1dbe97f3a04fc68a334e39ca6539bd100c23ee5",
-                "reference": "a1dbe97f3a04fc68a334e39ca6539bd100c23ee5",
+                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/e5157d8e49e10b481d185c3d8fd0d6fac5867906",
+                "reference": "e5157d8e49e10b481d185c3d8fd0d6fac5867906",
                 "shasum": ""
             },
             "require": {
@@ -455,7 +455,7 @@
                 "source": "https://github.com/schmunk42/p3pages/tree/release/0.17.0",
                 "issues": "https://github.com/schmunk42/p3pages/issues"
             },
-            "time": "2013-09-28 19:26:47"
+            "time": "2013-09-28 19:54:49"
         },
         {
             "name": "phundament/p3widgets",
