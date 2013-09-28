@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "c3568af05795e74b07a1afef37e735be",
+    "hash": "6790f1448d3c410e674349ce4d8980b4",
     "packages": [
         {
             "name": "clevertech/yiibooster",
@@ -408,12 +408,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3pages.git",
-                "reference": "83b596b5b732f661cd0e34abb55cdc9f4d71d1ff"
+                "reference": "59618dc1d250abfbb76f8ef719daf13442a995b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/83b596b5b732f661cd0e34abb55cdc9f4d71d1ff",
-                "reference": "83b596b5b732f661cd0e34abb55cdc9f4d71d1ff",
+                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/59618dc1d250abfbb76f8ef719daf13442a995b0",
+                "reference": "59618dc1d250abfbb76f8ef719daf13442a995b0",
                 "shasum": ""
             },
             "require": {
@@ -455,26 +455,26 @@
                 "source": "https://github.com/schmunk42/p3pages/tree/release/0.17.0",
                 "issues": "https://github.com/schmunk42/p3pages/issues"
             },
-            "time": "2013-09-28 00:57:46"
+            "time": "2013-09-28 03:45:45"
         },
         {
             "name": "phundament/p3widgets",
-            "version": "0.14.0",
+            "version": "0.15.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3widgets.git",
-                "reference": "0.14.0"
+                "reference": "0.15.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/0.14.0",
-                "reference": "0.14.0",
+                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/0.15.2",
+                "reference": "0.15.2",
                 "shasum": ""
             },
             "require": {
                 "clevertech/yiibooster": "1.*",
                 "php": ">=5.3.0",
-                "phundament/p3extensions": ">=0.13",
+                "phundament/p3extensions": ">=0.15.3",
                 "schmunk42/relation": "1.*",
                 "yiisoft/yii": "1.1.*"
             },
@@ -503,10 +503,10 @@
                 "widget"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3widgets/tree/0.14.0",
+                "source": "https://github.com/schmunk42/p3widgets/tree/0.15.2",
                 "issues": "https://github.com/schmunk42/p3widgets/issues"
             },
-            "time": "2013-08-15 15:58:07"
+            "time": "2013-09-28 03:46:59"
         },
         {
             "name": "sammaye/auditrail2",
@@ -970,12 +970,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/gii-template-collection.git",
-                "reference": "98cf23527e582644a25898b52054f496c8b97b4b"
+                "reference": "d7d0e03317423cd91b993b3a6bd317bb0eaaee59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/gii-template-collection/zipball/98cf23527e582644a25898b52054f496c8b97b4b",
-                "reference": "98cf23527e582644a25898b52054f496c8b97b4b",
+                "url": "https://api.github.com/repos/schmunk42/gii-template-collection/zipball/d7d0e03317423cd91b993b3a6bd317bb0eaaee59",
+                "reference": "d7d0e03317423cd91b993b3a6bd317bb0eaaee59",
                 "shasum": ""
             },
             "require": {
@@ -1006,7 +1006,7 @@
                 "source": "https://github.com/schmunk42/gii-template-collection/tree/master",
                 "issues": "https://github.com/schmunk42/gii-template-collection/issues"
             },
-            "time": "2013-09-27 16:48:05"
+            "time": "2013-09-28 10:58:17"
         },
         {
             "name": "phundament/lessii",

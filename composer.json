@@ -44,7 +44,7 @@
         "phundament/p3bootstrap":"0.19.*",
         "phundament/p3pages":"dev-release/0.17.0 as 0.17.0",
         "phundament/p3media":"0.15.*",
-        "phundament/p3widgets":"0.14.*",
+        "phundament/p3widgets":"0.15.*",
         "schmunk42/ckeditor-configurator":"@dev",
         "schmunk42/multi-theme":"0.1.*",
         "schmunk42/web-user-behavior":"0.1.*",
