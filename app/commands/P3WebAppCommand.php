@@ -119,6 +119,7 @@ EOD;
             }
             $list = $this->buildFileList($sourceDir, $path, '', $ignoreFiles, $renameMap);
 
+            // ask to user about some setings
             echo "\nNote: Your environment configuration will be defined in `main-local.php`";
             if ($this->prompt("\nChoose your environment: 1 development | 2 production", '1') == 2) {
                 $list['app/config/main-local.php']['callback'] = array($this, 'callbackReplaceEnvironment');
@@ -126,10 +127,24 @@ EOD;
                 $list['app/config/console-local.php']['callback'] = array($this, 'callbackEnableDemoData');
                 echo "\nNote: Demo data migration module enabled in `console-local.php`.";
             }
+
+            $trans = array(
+                "'urlFormat'      => 'get'"=>"'urlFormat'      => 'path'",
+                "'showScriptName' => true" => "'showScriptName' => false",
+            );
+            if ($this->confirm("\nEnable friendly URLs?", false)) {
+                // use trans
+            } else {
+                $trans = array_flip($trans);
+            }
+            $htacces = $this->getWebrootDir().DIRECTORY_SEPARATOR.'.htaccess';
+            file_put_contents($htacces,str_replace('RewriteEngine off','RewriteEngine on', file_get_contents($htacces)));
+            $config = $this->getConfigDir().DIRECTORY_SEPARATOR.'main.php';
+            file_put_contents($config,strtr(file_get_contents($config),$trans));
             echo "\n";
 
+            // file operations
             $this->copyFiles($list);
-
             echo "\nSetting permissions";
             $this->setPermissions($path);
 
@@ -191,6 +206,11 @@ EOD;
     protected function getConfigDir()
     {
         return realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'config');
+    }
+
+    protected function getWebrootDir()
+    {
+        return realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'www');
     }
 
     public function callbackReplaceEnvironment($source, $params)
