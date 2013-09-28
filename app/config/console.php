@@ -17,9 +17,14 @@ $webappCommand = array(
     '--interactive=' . (getenv('PHUNDAMENT_TEST') ? '0' : '1')
 );
 
+$applicationDirectory = realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR);
+
 return array(
     'basePath'   => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
     'name'       => 'Phundament Console Application',
+    'aliases' => array(
+        'vendor' => $applicationDirectory . '/../vendor',
+    ),
     'commandMap' => array(
         // dev command
         'database'      => array(
