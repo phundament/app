@@ -25,4 +25,15 @@ class Controller extends CController
         parent::init();
         Yii::app()->homeUrl = $this->createUrl('/');
     }
+
+    public function getLanguageMenuItems(){
+        $languages = array();
+        foreach(Yii::app()->params['languages'] AS $code => $name) {
+            $languages[] = array(
+                'label' => $name,
+                'url'   => array_merge(array(''), $_GET, array('lang' => $code))
+            );
+        }
+        return $languages;
+    }
 }
