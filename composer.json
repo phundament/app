@@ -41,7 +41,7 @@
         "phundament/backend-theme":"@dev",
         "phundament/jquery-file-upload": "@dev",
         "phundament/p3admin":"0.14.*",
-        "phundament/p3bootstrap":"0.19.*",
+        "phundament/p3bootstrap":"0.20.*",
         "phundament/p3pages":"dev-release/0.17.0 as 0.17.0",
         "phundament/p3media":"0.15.*",
         "phundament/p3widgets":"0.15.*",

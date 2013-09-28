@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "6790f1448d3c410e674349ce4d8980b4",
+    "hash": "4ae74c4bb2f02a111e809f50bc18540a",
     "packages": [
         {
             "name": "clevertech/yiibooster",
@@ -266,22 +266,22 @@
         },
         {
             "name": "phundament/p3bootstrap",
-            "version": "0.19.1",
+            "version": "0.20.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3bootstrap.git",
-                "reference": "0.19.1"
+                "reference": "0.20.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3bootstrap/zipball/0.19.1",
-                "reference": "0.19.1",
+                "url": "https://api.github.com/repos/schmunk42/p3bootstrap/zipball/0.20.0",
+                "reference": "0.20.0",
                 "shasum": ""
             },
             "require": {
                 "clevertech/yiibooster": "1.*",
                 "php": ">=5.3.0",
-                "phundament/p3pages": ">=0.11",
+                "phundament/p3pages": ">=0.17",
                 "phundament/p3widgets": ">=0.11",
                 "yiisoft/yii": "1.1.*"
             },
@@ -309,10 +309,10 @@
                 "yii"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3bootstrap/tree/0.19.1",
+                "source": "https://github.com/schmunk42/p3bootstrap/tree/0.20.0",
                 "issues": "https://github.com/schmunk42/p3bootstrap/issues"
             },
-            "time": "2013-07-23 01:57:21"
+            "time": "2013-09-28 02:51:24"
         },
         {
             "name": "phundament/p3extensions",
