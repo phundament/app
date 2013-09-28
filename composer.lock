@@ -408,12 +408,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3pages.git",
-                "reference": "59618dc1d250abfbb76f8ef719daf13442a995b0"
+                "reference": "a1dbe97f3a04fc68a334e39ca6539bd100c23ee5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/59618dc1d250abfbb76f8ef719daf13442a995b0",
-                "reference": "59618dc1d250abfbb76f8ef719daf13442a995b0",
+                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/a1dbe97f3a04fc68a334e39ca6539bd100c23ee5",
+                "reference": "a1dbe97f3a04fc68a334e39ca6539bd100c23ee5",
                 "shasum": ""
             },
             "require": {
@@ -455,20 +455,20 @@
                 "source": "https://github.com/schmunk42/p3pages/tree/release/0.17.0",
                 "issues": "https://github.com/schmunk42/p3pages/issues"
             },
-            "time": "2013-09-28 03:45:45"
+            "time": "2013-09-28 19:26:47"
         },
         {
             "name": "phundament/p3widgets",
-            "version": "0.15.2",
+            "version": "0.15.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3widgets.git",
-                "reference": "0.15.2"
+                "reference": "e13dedb553a85eeda7d38909a32dc1b9500c6e1a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/0.15.2",
-                "reference": "0.15.2",
+                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/e13dedb553a85eeda7d38909a32dc1b9500c6e1a",
+                "reference": "e13dedb553a85eeda7d38909a32dc1b9500c6e1a",
                 "shasum": ""
             },
             "require": {
@@ -485,6 +485,7 @@
                     "models/"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -502,11 +503,7 @@
                 "p3media",
                 "widget"
             ],
-            "support": {
-                "source": "https://github.com/schmunk42/p3widgets/tree/0.15.2",
-                "issues": "https://github.com/schmunk42/p3widgets/issues"
-            },
-            "time": "2013-09-28 03:46:59"
+            "time": "2013-09-28 19:23:01"
         },
         {
             "name": "sammaye/auditrail2",
