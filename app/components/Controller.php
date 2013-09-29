@@ -26,7 +26,7 @@ class Controller extends CController
         Yii::app()->homeUrl = $this->createUrl('/');
     }
 
-    public function getLanguageMenuItems(){
+    static public function getLanguageMenuItems(){
         $languages = array();
         foreach(Yii::app()->params['languages'] AS $code => $name) {
             $languages[] = array(
