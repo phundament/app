@@ -1,7 +1,7 @@
 <?php
 
 // merge this file in main-local.php on your development system
-define('YII_DEBUG', true);
+defined('YII_DEBUG') or define('YII_DEBUG', true);
 
 return array(
     'preload'    => array( #'less', // LESS compiler, only preload on dev systems, config see below
