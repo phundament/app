@@ -12,5 +12,6 @@ require_once($yiit);
 require_once(dirname(__FILE__).'/../../../../vendor/autoload.php');
 
 $config = CMap::mergeArray($main, $env);
+$config['components']['db'] = $config['components']['dbTest'];
 
 if (!Yii::app()) Yii::createWebApplication($config);
