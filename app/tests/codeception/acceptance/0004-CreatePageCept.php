@@ -9,9 +9,13 @@ $I->click('Sitemap');
 $I->see('Pages');
 $I->click('Create');
 $I->see('Page');
+$I->fillField('P3Page[default_menu_name]','First');
+$I->fillField('P3Page[status]',30);
 $I->fillField('P3Page[layout]','//layouts/main');
 $I->fillField('P3Page[view]','//p3pages/column1');
 $I->click('Save');
-$I->see('Data');
-$I->see('Properties');
-$I->see('Relations');
+
+$I->see('View','#content');
+$I->see('Data','#content');
+$I->see('Relations','#content');
+$I->see('First','#content table');

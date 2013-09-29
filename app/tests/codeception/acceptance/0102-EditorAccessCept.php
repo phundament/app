@@ -12,7 +12,6 @@ $I->amOnPage('?r=p3admin/default/overview&lang=en');
 $I->see('403','h2');
 
 // Links Content Menu
-
 $I->click(' Upload','.dropdown-menu li a');
 $I->see('Upload Session','h1');
 $I->click(' Browse','.dropdown-menu li a');
@@ -20,9 +19,8 @@ $I->see('Browser','h1');
 $I->click(' Sitemap','.dropdown-menu li a');
 $I->see('Pages','h1');
 
-// TODO: fix me
-//$I->click('Manage','#content .btn');
-//$I->see('Manage', 'h1 small');
+$I->click('Manage','#content .btn');
+$I->see('Manage', 'h1 small');
 
 $I->click(' Registry','.dropdown-menu li a');
 $I->see('Widgets','h1');
