@@ -103,7 +103,7 @@ return array(
                 'protectedRuntimePath' => 'runtime/p3media',
                 'presets'              => array(
                     'large'            => array(
-                        'name'     => 'Large 1600px',
+                        'name'     => 'Large JPG 1600px',
                         'commands' => array(
                             'resize'  => array(1600, 1600, 2), // Image::AUTO
                             'quality' => '85',
@@ -111,31 +111,31 @@ return array(
                         'type'     => 'jpg',
                     ),
                     'medium'           => array(
-                        'name'     => 'Medium 800px',
+                        'name'     => 'Medium PNG 800px',
                         'commands' => array(
                             'resize'  => array(800, 800, 2), // Image::AUTO
                             'quality' => '85',
                         ),
-                        'type'     => 'jpg',
+                        'type'     => 'png',
                     ),
                     'medium-crop'      => array(
-                        'name'     => 'Medium cropped 800x600px',
+                        'name'     => 'Medium PNG cropped 800x600px',
                         'commands' => array(
                             'resize'  => array(800, 600, 7), // crop
                             'quality' => '85',
                         ),
-                        'type'     => 'jpg',
+                        'type'     => 'png',
                     ),
                     'small'            => array(
-                        'name'     => 'Small 400px',
+                        'name'     => 'Small PNG 400px',
                         'commands' => array(
                             'resize'  => array(400, 400, 2), // Image::AUTO
                             'quality' => '85',
                         ),
-                        'type'     => 'jpg',
+                        'type'     => 'png',
                     ),
                     'icon-32'          => array(
-                        'name'     => 'Icon 32x32',
+                        'name'     => 'Icon PNG 32x32',
                         'commands' => array(
                             'resize' => array(32, 32),
                         ),
