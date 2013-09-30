@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "0c12729f18088ec93afbfbc2d4707d21",
+    "hash": "0e2e9ad444cc78f387b7c2f91aeebba3",
     "packages": [
         {
             "name": "clevertech/yiibooster",
@@ -161,12 +161,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii-backend-theme.git",
-                "reference": "465e8131e9d047ec0170d79df3bae41b2061fc6e"
+                "reference": "10bfe6c6067fc1a6fd80e0892d595b0bb478d275"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii-backend-theme/zipball/465e8131e9d047ec0170d79df3bae41b2061fc6e",
-                "reference": "465e8131e9d047ec0170d79df3bae41b2061fc6e",
+                "url": "https://api.github.com/repos/schmunk42/yii-backend-theme/zipball/10bfe6c6067fc1a6fd80e0892d595b0bb478d275",
+                "reference": "10bfe6c6067fc1a6fd80e0892d595b0bb478d275",
                 "shasum": ""
             },
             "require": {
@@ -199,7 +199,7 @@
                 "theme",
                 "yii"
             ],
-            "time": "2013-09-30 13:39:48"
+            "time": "2013-09-30 14:50:50"
         },
         {
             "name": "phundament/jquery-file-upload",
@@ -459,16 +459,16 @@
         },
         {
             "name": "phundament/p3widgets",
-            "version": "0.15.3",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3widgets.git",
-                "reference": "e13dedb553a85eeda7d38909a32dc1b9500c6e1a"
+                "reference": "4a861e1683229dc82993a8f9c64b7d6bfba80992"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/e13dedb553a85eeda7d38909a32dc1b9500c6e1a",
-                "reference": "e13dedb553a85eeda7d38909a32dc1b9500c6e1a",
+                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/4a861e1683229dc82993a8f9c64b7d6bfba80992",
+                "reference": "4a861e1683229dc82993a8f9c64b7d6bfba80992",
                 "shasum": ""
             },
             "require": {
@@ -503,7 +503,7 @@
                 "p3media",
                 "widget"
             ],
-            "time": "2013-09-28 19:23:01"
+            "time": "2013-09-30 14:49:27"
         },
         {
             "name": "sammaye/auditrail2",
@@ -1183,6 +1183,12 @@
             "package": "phundament/p3pages"
         },
         {
+            "alias": "0.16.0",
+            "alias_normalized": "0.16.0.0",
+            "version": "dev-develop",
+            "package": "phundament/p3widgets"
+        },
+        {
             "alias": "0.7.2.1",
             "alias_normalized": "0.7.2.1",
             "version": "9999999-dev",
@@ -1199,6 +1205,7 @@
         "phundament/backend-theme": 20,
         "phundament/jquery-file-upload": 20,
         "phundament/p3pages": 20,
+        "phundament/p3widgets": 20,
         "schmunk42/ckeditor-configurator": 20,
         "waalzer/app-demo-data": 20,
         "yiiext/migrate-command": 20,
