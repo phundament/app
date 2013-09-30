@@ -11,4 +11,4 @@ modules:
     enabled: [PhpBrowser, TestHelper]
     config:
       PhpBrowser:
-            url: 'http://localhost/index-test.php'
+            url: 'http://localhost:31415/index-test.php'
