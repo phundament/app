@@ -14,8 +14,8 @@ $I->see('Login','h1');
 $I->amOnPage('?r=user/login/login&lang=en');
 $I->see('Login','h1');
 $I->see('Register','a');
-$I->see('Lost Password?','a');
-$I->click('Lost Password?','a');
+$I->see('Lost Password?','#content');
+$I->click('Lost Password?','#content');
 $I->see('Restore');
 
 $I->amOnPage('?r=user/login/login&lang=en');

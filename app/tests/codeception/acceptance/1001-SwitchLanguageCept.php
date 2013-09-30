@@ -6,5 +6,5 @@ $I->wantTo('switch language');
 
 $I->amOnPage('?r=site/index&lang=en');
 $I->see('en','.dropdown-toggle');
-$I->click('Deutsch','.dropdown-menu li a');
+$I->click('Deutsch','#frontend-navbar');
 $I->see('de','.dropdown-toggle');
