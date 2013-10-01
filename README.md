@@ -68,8 +68,9 @@ Resources
 
 [![Latest Stable Version](https://poser.pugx.org/phundament/app/v/stable.png)](https://packagist.org/packages/phundament/app)
 [![Total Downloads](https://poser.pugx.org/phundament/app/downloads.png)](https://packagist.org/packages/phundament/app)
+
 [![Latest Unstable Version](https://poser.pugx.org/phundament/app/v/unstable.png)](https://packagist.org/packages/phundament/app)
-[![Build Status](https://travis-ci.org/phundament/app.png?branch=master)](https://travis-ci.org/phundament/app) 
+[![Build Status](https://travis-ci.org/phundament/app.png?branch=develop)](https://travis-ci.org/phundament/app)
 
 ### Fundamentals
  *  [Documentation](https://github.com/phundament/app/wiki/)
