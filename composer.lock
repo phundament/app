@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "5e429e3b8f0edad500a9a1f5636abfaa",
+    "hash": "1999cf5d8e904da7b28f1debd857eb74",
     "packages": [
         {
             "name": "clevertech/yiibooster",
@@ -222,12 +222,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii-backend-theme.git",
-                "reference": "26862d1b0726fdfee5c665607e1f8efdd7443e4a"
+                "reference": "66821f6f4b22b50041a6f5ef71f2afbb9c5f7b59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii-backend-theme/zipball/26862d1b0726fdfee5c665607e1f8efdd7443e4a",
-                "reference": "26862d1b0726fdfee5c665607e1f8efdd7443e4a",
+                "url": "https://api.github.com/repos/schmunk42/yii-backend-theme/zipball/66821f6f4b22b50041a6f5ef71f2afbb9c5f7b59",
+                "reference": "66821f6f4b22b50041a6f5ef71f2afbb9c5f7b59",
                 "shasum": ""
             },
             "require": {
@@ -260,7 +260,7 @@
                 "theme",
                 "yii"
             ],
-            "time": "2013-10-01 10:34:30"
+            "time": "2013-10-01 20:15:48"
         },
         {
             "name": "phundament/jquery-file-upload",
@@ -283,16 +283,16 @@
         },
         {
             "name": "phundament/p3admin",
-            "version": "0.14.1",
+            "version": "0.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3admin.git",
-                "reference": "0.14.1"
+                "reference": "0.15.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3admin/zipball/0.14.1",
-                "reference": "0.14.1",
+                "url": "https://api.github.com/repos/schmunk42/p3admin/zipball/0.15.0",
+                "reference": "0.15.0",
                 "shasum": ""
             },
             "require": {
@@ -300,10 +300,10 @@
                 "php": ">=5.3.0",
                 "phundament/p3extensions": ">=0.7",
                 "phundament/p3widgets": "*",
+                "sammaye/auditrail2": "1.*",
                 "yiisoft/yii": ">=1.1.12"
             },
             "type": "yii-extension",
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -317,26 +317,30 @@
             "description": "Yii application info and skeleton",
             "homepage": "http://phundament.com/",
             "keywords": [
-                "Skeleton",
                 "application",
                 "information",
+                "skeleton",
                 "webapp",
                 "yii"
             ],
-            "time": "2013-07-19 07:43:39"
+            "support": {
+                "source": "https://github.com/schmunk42/p3admin/tree/0.15.0",
+                "issues": "https://github.com/schmunk42/p3admin/issues"
+            },
+            "time": "2013-10-01 18:57:47"
         },
         {
             "name": "phundament/p3bootstrap",
-            "version": "0.21.1",
+            "version": "0.21.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3bootstrap.git",
-                "reference": "0.21.1"
+                "reference": "0.21.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3bootstrap/zipball/0.21.1",
-                "reference": "0.21.1",
+                "url": "https://api.github.com/repos/schmunk42/p3bootstrap/zipball/0.21.2",
+                "reference": "0.21.2",
                 "shasum": ""
             },
             "require": {
@@ -370,10 +374,10 @@
                 "yii"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3bootstrap/tree/0.21.1",
+                "source": "https://github.com/schmunk42/p3bootstrap/tree/0.21.2",
                 "issues": "https://github.com/schmunk42/p3bootstrap/issues"
             },
-            "time": "2013-09-30 13:38:12"
+            "time": "2013-10-01 20:15:00"
         },
         {
             "name": "phundament/p3extensions",
@@ -469,12 +473,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3pages.git",
-                "reference": "5ed8850dbeccd825987bf28ddaa7a5586a6cfd87"
+                "reference": "c05c446858b40f790590389fd7d2394b462ea2ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/5ed8850dbeccd825987bf28ddaa7a5586a6cfd87",
-                "reference": "5ed8850dbeccd825987bf28ddaa7a5586a6cfd87",
+                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/c05c446858b40f790590389fd7d2394b462ea2ed",
+                "reference": "c05c446858b40f790590389fd7d2394b462ea2ed",
                 "shasum": ""
             },
             "require": {
@@ -485,7 +489,7 @@
                 "schmunk42/access": "@dev",
                 "schmunk42/adjacency-list-behavior": "@dev",
                 "schmunk42/relation": "1.*",
-                "yiiext/status-behavior": "0.6",
+                "yiiext/status-behavior": "0.6.*",
                 "yiisoft/yii": "1.1.*"
             },
             "type": "yii-extension",
@@ -516,7 +520,7 @@
                 "source": "https://github.com/schmunk42/p3pages/tree/release/0.17.0",
                 "issues": "https://github.com/schmunk42/p3pages/issues"
             },
-            "time": "2013-10-01 10:41:19"
+            "time": "2013-10-01 20:16:52"
         },
         {
             "name": "phundament/p3widgets",
@@ -606,12 +610,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii-access.git",
-                "reference": "5043e560c531868525c92ef09702d226a3008f5f"
+                "reference": "3a547930e2926da00613a784c6676fbdaaf05e07"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii-access/zipball/5043e560c531868525c92ef09702d226a3008f5f",
-                "reference": "5043e560c531868525c92ef09702d226a3008f5f",
+                "url": "https://api.github.com/repos/schmunk42/yii-access/zipball/3a547930e2926da00613a784c6676fbdaaf05e07",
+                "reference": "3a547930e2926da00613a784c6676fbdaaf05e07",
                 "shasum": ""
             },
             "type": "library",
@@ -629,7 +633,7 @@
                 }
             ],
             "description": "Yii Framework Active Record access check implementation",
-            "time": "2013-09-29 22:32:18"
+            "time": "2013-10-01 19:14:56"
         },
         {
             "name": "schmunk42/adjacency-list-behavior",
@@ -1077,12 +1081,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/gii-template-collection.git",
-                "reference": "2662cd1292c4505a31151bfb82e82b0c3a6ac8c6"
+                "reference": "2e2c0266ab92e6145ea649cb62353cdf1644fdc8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/gii-template-collection/zipball/2662cd1292c4505a31151bfb82e82b0c3a6ac8c6",
-                "reference": "2662cd1292c4505a31151bfb82e82b0c3a6ac8c6",
+                "url": "https://api.github.com/repos/schmunk42/gii-template-collection/zipball/2e2c0266ab92e6145ea649cb62353cdf1644fdc8",
+                "reference": "2e2c0266ab92e6145ea649cb62353cdf1644fdc8",
                 "shasum": ""
             },
             "require": {
@@ -1110,10 +1114,10 @@
                 "package"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/gii-template-collection/tree/master",
+                "source": "https://github.com/schmunk42/gii-template-collection/tree/develop",
                 "issues": "https://github.com/schmunk42/gii-template-collection/issues"
             },
-            "time": "2013-09-29 22:28:43"
+            "time": "2013-10-01 10:50:32"
         },
         {
             "name": "phundament/lessii",
@@ -1208,12 +1212,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/giic.git",
-                "reference": "8c30996582aa7645d3fa6e7002091cca7e62df9e"
+                "reference": "ba9d0f8c0fb7ba0156c68099a0f21d1de373d48c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/giic/zipball/8c30996582aa7645d3fa6e7002091cca7e62df9e",
-                "reference": "8c30996582aa7645d3fa6e7002091cca7e62df9e",
+                "url": "https://api.github.com/repos/schmunk42/giic/zipball/ba9d0f8c0fb7ba0156c68099a0f21d1de373d48c",
+                "reference": "ba9d0f8c0fb7ba0156c68099a0f21d1de373d48c",
                 "shasum": ""
             },
             "require": {
@@ -1240,7 +1244,7 @@
                 "gii",
                 "yii"
             ],
-            "time": "2013-09-20 21:32:07"
+            "time": "2013-10-01 19:16:50"
         },
         {
             "name": "thomaspark/bootswatch",

@@ -23,6 +23,10 @@
     "repositories":[
         {
             "type":"git",
+            "url":"https://github.com/schmunk42/status-behavior.git"
+        },
+        {
+            "type":"git",
             "url":"https://github.com/Quexer69/yii.translate.git"
         },
         {
@@ -41,7 +45,7 @@
         "nordsoftware/yii-emailer": "1.*",
         "phundament/backend-theme":"@dev",
         "phundament/jquery-file-upload": "@dev",
-        "phundament/p3admin":"0.14.*",
+        "phundament/p3admin":"0.15.*",
         "phundament/p3bootstrap":"0.21.*",
         "phundament/p3pages":"dev-release/0.17.0 as 0.17.0",
         "phundament/p3media":"0.15.*",
