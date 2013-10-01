@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "0e2e9ad444cc78f387b7c2f91aeebba3",
+    "hash": "5e429e3b8f0edad500a9a1f5636abfaa",
     "packages": [
         {
             "name": "clevertech/yiibooster",
@@ -49,7 +49,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Quexer69/yii.translate.git",
-                "reference": "d0afd14f0b91d8c1f1250409f50a214aebeea188"
+                "reference": "fad55337c3a4d610c592d8a31a62fdbd61addc69"
             },
             "suggest": {
                 "Translate": "Any yii translate extension"
@@ -78,7 +78,7 @@
                 "web",
                 "yii"
             ],
-            "time": "2013-09-28 19:06:03"
+            "time": "2013-10-01 10:27:27"
         },
         {
             "name": "malyshev/yii-debug-toolbar",
@@ -142,18 +142,79 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phundament/yii-user.git",
-                "reference": "00c8ca23c72adf1a07b3555b6274f6d6c911564d"
+                "reference": "740915a5054ee3de5fb57727db8c8753e03133cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/phundament/yii-user/archive/00c8ca23c72adf1a07b3555b6274f6d6c911564d.zip",
+                "url": "https://github.com/phundament/yii-user/archive/740915a5054ee3de5fb57727db8c8753e03133cb.zip",
                 "reference": null,
                 "shasum": null
             },
             "type": "yii-extension",
             "description": "Yii PHP Framework extension for registration and management users accounts.",
             "homepage": "https://github.com/phundament/yii-user",
-            "time": "2013-04-08 21:52:47"
+            "time": "2013-10-01 10:19:48"
+        },
+        {
+            "name": "nordsoftware/yii-emailer",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nordsoftware/yii-emailer.git",
+                "reference": "639323136d4d2b5cf2338040bf49d500e29d2fd2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nordsoftware/yii-emailer/zipball/639323136d4d2b5cf2338040bf49d500e29d2fd2",
+                "reference": "639323136d4d2b5cf2338040bf49d500e29d2fd2",
+                "shasum": ""
+            },
+            "require": {
+                "nordsoftware/yii-utils": "dev-master",
+                "swiftmailer/swiftmailer": "4.3.0"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Christoffer Niska",
+                    "email": "christoffer.niska@nordsoftware.com"
+                },
+                {
+                    "name": "Kenneth Söderlund",
+                    "email": "kenneth.soderlund@nordsoftware.com"
+                }
+            ],
+            "description": "Extension for creating and sending emails for the Yii PHP framework.",
+            "time": "2013-05-14 17:03:27"
+        },
+        {
+            "name": "nordsoftware/yii-utils",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nordsoftware/yii-utils.git",
+                "reference": "c9eb69f53d2f3ba0acab169ab5bb9e7a2881cc13"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nordsoftware/yii-utils/zipball/c9eb69f53d2f3ba0acab169ab5bb9e7a2881cc13",
+                "reference": "c9eb69f53d2f3ba0acab169ab5bb9e7a2881cc13",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Christoffer Niska",
+                    "email": "christoffer.niska@nordsoftware.com"
+                }
+            ],
+            "description": "Utility classes for the Yii PHP framework.",
+            "time": "2013-06-18 14:27:35"
         },
         {
             "name": "phundament/backend-theme",
@@ -161,12 +222,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii-backend-theme.git",
-                "reference": "10bfe6c6067fc1a6fd80e0892d595b0bb478d275"
+                "reference": "26862d1b0726fdfee5c665607e1f8efdd7443e4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii-backend-theme/zipball/10bfe6c6067fc1a6fd80e0892d595b0bb478d275",
-                "reference": "10bfe6c6067fc1a6fd80e0892d595b0bb478d275",
+                "url": "https://api.github.com/repos/schmunk42/yii-backend-theme/zipball/26862d1b0726fdfee5c665607e1f8efdd7443e4a",
+                "reference": "26862d1b0726fdfee5c665607e1f8efdd7443e4a",
                 "shasum": ""
             },
             "require": {
@@ -199,7 +260,7 @@
                 "theme",
                 "yii"
             ],
-            "time": "2013-09-30 14:50:50"
+            "time": "2013-10-01 10:34:30"
         },
         {
             "name": "phundament/jquery-file-upload",
@@ -408,12 +469,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3pages.git",
-                "reference": "88aa2429f8f26d3acabc67c89572227303e699d1"
+                "reference": "5ed8850dbeccd825987bf28ddaa7a5586a6cfd87"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/88aa2429f8f26d3acabc67c89572227303e699d1",
-                "reference": "88aa2429f8f26d3acabc67c89572227303e699d1",
+                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/5ed8850dbeccd825987bf28ddaa7a5586a6cfd87",
+                "reference": "5ed8850dbeccd825987bf28ddaa7a5586a6cfd87",
                 "shasum": ""
             },
             "require": {
@@ -455,7 +516,7 @@
                 "source": "https://github.com/schmunk42/p3pages/tree/release/0.17.0",
                 "issues": "https://github.com/schmunk42/p3pages/issues"
             },
-            "time": "2013-09-29 22:35:23"
+            "time": "2013-10-01 10:41:19"
         },
         {
             "name": "phundament/p3widgets",
@@ -766,6 +827,55 @@
                 "issues": "https://github.com/schmunk42/web-user-behavior/issues"
             },
             "time": "2013-03-10 23:22:14"
+        },
+        {
+            "name": "swiftmailer/swiftmailer",
+            "version": "v4.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/swiftmailer/swiftmailer.git",
+                "reference": "a73b60218b75352d8474b52d0a0aa94c0286fa67"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/a73b60218b75352d8474b52d0a0aa94c0286fa67",
+                "reference": "a73b60218b75352d8474b52d0a0aa94c0286fa67",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.3-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "lib/swift_required.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Chris Corbyn"
+                }
+            ],
+            "description": "Swiftmailer, free feature-rich PHP mailer",
+            "homepage": "http://swiftmailer.org",
+            "keywords": [
+                "mail",
+                "mailer"
+            ],
+            "time": "2013-01-08 15:50:34"
         },
         {
             "name": "vitalets/x-editable-yii",

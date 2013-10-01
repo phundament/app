@@ -38,6 +38,7 @@
         "gusnips/yii-translate" : "dev-master",
         "malyshev/yii-debug-toolbar":"@dev",
         "mishamx/yii-user":"@dev",
+        "nordsoftware/yii-emailer": "1.*",
         "phundament/backend-theme":"@dev",
         "phundament/jquery-file-upload": "@dev",
         "phundament/p3admin":"0.14.*",
