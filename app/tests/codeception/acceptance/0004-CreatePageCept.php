@@ -10,7 +10,7 @@ $I->see('Pages');
 $I->click('Create');
 $I->see('Page');
 $I->fillField('P3Page[default_menu_name]','First');
-$I->fillField('P3Page[status]',30);
+$I->fillField('P3Page[status]','published');
 $I->fillField('P3Page[layout]','//layouts/main');
 $I->fillField('P3Page[view]','//p3pages/column1');
 $I->click('Save');

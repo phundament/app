@@ -10,4 +10,4 @@ $I->click("//div[@id='widget-1']//a[contains(@href,'p3widgets/p3WidgetTranslatio
 $I->see('Widgets','h1');
 #$I->fillField('P3WidgetTranslation_content','Hello World!');
 $I->click('Save');
-$I->dontSee('Translation for widget #1 CWidget not found');// TODO: temporarily removed, codeception bug?: ,'.alert');
+$I->dontSee('Translation for widget #1 CWidget not found');

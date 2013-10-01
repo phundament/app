@@ -23,7 +23,9 @@ class P3PagesTest extends \Codeception\TestCase\Test
 
         $model                    = new P3Page();
         $model->default_menu_name = 'Test';
-        $model->status            = 30;
+        $model->status            = 'published';
+        $model->access_owner      = 1;
+        $model->access_domain     = '*';
         $model->save();
         $this->codeGuy->seeInDatabase('p3_page', array('default_menu_name' => 'Test'));
     }
@@ -43,12 +45,17 @@ class P3PagesTest extends \Codeception\TestCase\Test
     {
         Yii::import('p3pages.*');
 
-        $model                              = new P3Page();
-        $model->default_menu_name           = 'Test2';
-        $model->status                      = 30;
-        $model->translationModel->menu_name = 'Test2';
-        $model->translationModel->status    = 30;
+        $model                                 = new P3Page();
+        $model->default_menu_name              = 'Test2';
+        $model->status                         = 'published';
+        $model->access_owner                   = 1;
+        $model->access_domain                  = '*';
+        $model->translationModel->menu_name    = 'Test2';
+        $model->translationModel->status       = 'published';
+        $model->translationModel->language     = 'en';
+        $model->translationModel->access_owner = 1;
         $model->save();
+        #$model->translationModel->save();
         $this->codeGuy->seeInDatabase('p3_page', array('default_menu_name' => 'Test2'));
         $this->codeGuy->seeInDatabase('p3_page_translation', array('menu_name' => 'Test2'));
     }
@@ -56,7 +63,7 @@ class P3PagesTest extends \Codeception\TestCase\Test
     public function testDeletePageWithTranslation()
     {
         $model = P3Page::model()->findByAttributes(array('default_menu_name' => 'Test2'));
-        $model->delete();
+        $model->delete(); // TODO check if delete return true
 
         $this->codeGuy->dontSeeInDatabase($model->tableSchema->name, array('default_menu_name' => 'Test2'));
         $this->codeGuy->dontSeeInDatabase('p3_page_translation', array('menu_name' => 'Test2'));
