@@ -6,6 +6,10 @@
  * Define composer hooks by the following name schema: <vendor>/<packageName>-<action>
  */
 
+$main = require(dirname(__FILE__).'/main.php');
+$local = require(dirname(__FILE__).'/main-local.php');
+$webConfig  = CMap::mergeArray($main, $local);
+
 // for testing purposes
 return array(
     'commandMap' => array(
@@ -17,4 +21,8 @@ return array(
             ),
         ),
     ),
+    'components' => array(
+        'db' => $webConfig['components']['db']
+    ),
+    'modules' => $webConfig['modules']
 );
