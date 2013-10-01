@@ -71,6 +71,7 @@ return array(
         'vendor.crisu83.yii-rights.components.*', // RWebUser
         'vendor.yiiext.fancybox-widget.*', // Fancybox Widget
         'vendor.clevertech.yiibooster.src.widgets.*', //
+        'vendor.sammaye.auditrail2.models.AuditTrail', //
         'editable.*', // Include X-Editable for Yii classes
     ),
     'modules'    => array(
