@@ -20,6 +20,7 @@ $languages = array(
     'en' => 'English',
     'de' => 'Deutsch',
     'lv' => 'Latviešu',
+    'ru' => 'Русский',
 );
 
 // main application configuration
