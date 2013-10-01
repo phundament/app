@@ -31,7 +31,8 @@ class Controller extends CController
         foreach(Yii::app()->params['languages'] AS $code => $name) {
             $languages[] = array(
                 'label' => $name,
-                'url'   => array_merge(array(''), $_GET, array('lang' => $code))
+                'url'   => array_merge(array(''), $_GET, array('lang' => $code)),
+                'active' => ($code == Yii::app()->language)
             );
         }
         return $languages;
