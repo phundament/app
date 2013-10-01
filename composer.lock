@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "1999cf5d8e904da7b28f1debd857eb74",
+    "hash": "d58c3ac754c3dc14a0a7cdea3e3314b7",
     "packages": [
         {
             "name": "clevertech/yiibooster",
@@ -222,12 +222,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii-backend-theme.git",
-                "reference": "66821f6f4b22b50041a6f5ef71f2afbb9c5f7b59"
+                "reference": "244dfc58f77a27d162f86306e5c5889bf03667c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii-backend-theme/zipball/66821f6f4b22b50041a6f5ef71f2afbb9c5f7b59",
-                "reference": "66821f6f4b22b50041a6f5ef71f2afbb9c5f7b59",
+                "url": "https://api.github.com/repos/schmunk42/yii-backend-theme/zipball/244dfc58f77a27d162f86306e5c5889bf03667c1",
+                "reference": "244dfc58f77a27d162f86306e5c5889bf03667c1",
                 "shasum": ""
             },
             "require": {
@@ -260,7 +260,7 @@
                 "theme",
                 "yii"
             ],
-            "time": "2013-10-01 20:15:48"
+            "time": "2013-10-01 23:03:17"
         },
         {
             "name": "phundament/jquery-file-upload",
@@ -473,12 +473,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3pages.git",
-                "reference": "c05c446858b40f790590389fd7d2394b462ea2ed"
+                "reference": "776034e662cb650fd0e63c1b86107ea0f0ff7bf1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/c05c446858b40f790590389fd7d2394b462ea2ed",
-                "reference": "c05c446858b40f790590389fd7d2394b462ea2ed",
+                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/776034e662cb650fd0e63c1b86107ea0f0ff7bf1",
+                "reference": "776034e662cb650fd0e63c1b86107ea0f0ff7bf1",
                 "shasum": ""
             },
             "require": {
@@ -520,7 +520,7 @@
                 "source": "https://github.com/schmunk42/p3pages/tree/release/0.17.0",
                 "issues": "https://github.com/schmunk42/p3pages/issues"
             },
-            "time": "2013-10-01 20:16:52"
+            "time": "2013-10-01 23:15:26"
         },
         {
             "name": "phundament/p3widgets",
@@ -1003,21 +1003,20 @@
         },
         {
             "name": "yiiext/status-behavior",
-            "version": "v0.6",
+            "version": "v0.6.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/yiiext/status-behavior.git",
-                "reference": "4eeddd35d620c5fab1fd5e0ba1db25c108acc7d9"
+                "url": "https://github.com/schmunk42/status-behavior.git",
+                "reference": "10fd92110e878e5d92c1a94c62ee87a8619806bd"
             },
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/yiiext/status-behavior/archive/4eeddd35d620c5fab1fd5e0ba1db25c108acc7d9.zip",
-                "reference": null,
-                "shasum": null
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "/"
+                ]
             },
-            "type": "yii-extension",
-            "description": "Provides methods and named scopes to work with model statuses.",
-            "homepage": "https://github.com/yiiext/status-behavior"
+            "description": "Yii Framework Active Record Status behavior for models",
+            "time": "2013-10-01 19:22:33"
         },
         {
             "name": "yiisoft/yii",
@@ -1077,16 +1076,16 @@
         },
         {
             "name": "phundament/gii-template-collection",
-            "version": "dev-master",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/gii-template-collection.git",
-                "reference": "2e2c0266ab92e6145ea649cb62353cdf1644fdc8"
+                "reference": "fe3cd510ff407dbadb66bc93711327715b6887ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/gii-template-collection/zipball/2e2c0266ab92e6145ea649cb62353cdf1644fdc8",
-                "reference": "2e2c0266ab92e6145ea649cb62353cdf1644fdc8",
+                "url": "https://api.github.com/repos/schmunk42/gii-template-collection/zipball/fe3cd510ff407dbadb66bc93711327715b6887ff",
+                "reference": "fe3cd510ff407dbadb66bc93711327715b6887ff",
                 "shasum": ""
             },
             "require": {
@@ -1117,7 +1116,7 @@
                 "source": "https://github.com/schmunk42/gii-template-collection/tree/develop",
                 "issues": "https://github.com/schmunk42/gii-template-collection/issues"
             },
-            "time": "2013-10-01 10:50:32"
+            "time": "2013-10-01 20:17:32"
         },
         {
             "name": "phundament/lessii",
@@ -1307,6 +1306,12 @@
             "alias_normalized": "0.7.2.1",
             "version": "9999999-dev",
             "package": "yiiext/migrate-command"
+        },
+        {
+            "alias": "0.13.0",
+            "alias_normalized": "0.13.0.0",
+            "version": "dev-develop",
+            "package": "phundament/gii-template-collection"
         }
     ],
     "minimum-stability": "dev",
