@@ -23,7 +23,11 @@ return array(
     'import'     => array(),
     // application components
     'components' => array(
-        'less'   => array(
+        'messages' => array(
+            'class'                => 'CDbMessageSource',
+            'onMissingTranslation' => array('TranslationConverter', 'findInPhpMessageSource'),
+        ),
+        'less'     => array(
             'class'        => 'vendor.crisu83.yii-less.components.LessServerCompiler',
             'files'        => array(
                 // publish output css file via assets

@@ -287,8 +287,7 @@ return array(
         ),
         'messages'      => array(
             'class'                => 'CDbMessageSource',
-            'onMissingTranslation' => array('TranslationConverter', 'findInPhpMessageSource'),
-            //'onMissingTranslation'  => array('TranslateModule', 'missingTranslation'),
+            //'onMissingTranslation'  => configured in env-development.php,
         ),
         'translate'     => array(
             'class'                  => 'vendor.gusnips.yii-translate.components.MPTranslate',
