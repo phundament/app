@@ -38,7 +38,7 @@ return array(
             'nodePath'     => '/opt/local/bin/node',
             'compilerPath' => $applicationDirectory . '/../vendor/cloudhead/less.js/bin/lessc',
         ),
-        'log'    => array(
+        'log'      => array(
             'class'  => 'CLogRouter',
             'routes' => array(
                 // Yii debug toolbar
@@ -54,10 +54,10 @@ return array(
                     'enabled' => true,
                 ),
                 array(
-                    'class'      => 'CWebLogRoute',
-                    'levels'     => 'error, warning, profile, info, trace',
+                    'class'   => 'CWebLogRoute',
+                    'levels'  => 'error, warning, profile, info, trace',
                     #'categories' => 'application',
-                    'enabled'    => false,
+                    'enabled' => false,
                 ),
                 array(
                     'class'   => 'CProfileLogRoute',
