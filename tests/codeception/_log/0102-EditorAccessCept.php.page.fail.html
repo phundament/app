@@ -1,0 +1,948 @@
+<!DOCTYPE html PUBLIC
+	"-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>PHP warning</title>
+
+<style type="text/css">
+/*<![CDATA[*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0;}
+body{line-height:1;}
+ol,ul{list-style:none;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:none;}
+:focus{outline:0;}
+ins{text-decoration:none;}
+del{text-decoration:line-through;}
+table{border-collapse:collapse;border-spacing:0;}
+
+body {
+	font: normal 9pt "Verdana";
+	color: #000;
+	background: #fff;
+}
+
+h1 {
+	font: normal 18pt "Verdana";
+	color: #f00;
+	margin-bottom: .5em;
+}
+
+h2 {
+	font: normal 14pt "Verdana";
+	color: #800000;
+	margin-bottom: .5em;
+}
+
+h3 {
+	font: bold 11pt "Verdana";
+}
+
+pre {
+	font: normal 11pt Menlo, Consolas, "Lucida Console", Monospace;
+}
+
+pre span.error {
+	display: block;
+	background: #fce3e3;
+}
+
+pre span.ln {
+	color: #999;
+	padding-right: 0.5em;
+	border-right: 1px solid #ccc;
+}
+
+pre span.error-ln {
+	font-weight: bold;
+}
+
+.container {
+	margin: 1em 4em;
+}
+
+.version {
+	color: gray;
+	font-size: 8pt;
+	border-top: 1px solid #aaa;
+	padding-top: 1em;
+	margin-bottom: 1em;
+}
+
+.message {
+	color: #000;
+	padding: 1em;
+	font-size: 11pt;
+	background: #f3f3f3;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin-bottom: 1em;
+	line-height: 160%;
+}
+
+.source {
+	margin-bottom: 1em;
+}
+
+.code pre {
+	background-color: #ffe;
+	margin: 0.5em 0;
+	padding: 0.5em;
+	line-height: 125%;
+	border: 1px solid #eee;
+}
+
+.source .file {
+	margin-bottom: 1em;
+	font-weight: bold;
+}
+
+.traces {
+	margin: 2em 0;
+}
+
+.trace {
+	margin: 0.5em 0;
+	padding: 0.5em;
+}
+
+.trace.app {
+	border: 1px dashed #c00;
+}
+
+.trace .number {
+	text-align: right;
+	width: 2em;
+	padding: 0.5em;
+}
+
+.trace .content {
+	padding: 0.5em;
+}
+
+.trace .plus,
+.trace .minus {
+	display:inline;
+	vertical-align:middle;
+	text-align:center;
+	border:1px solid #000;
+	color:#000;
+	font-size:10px;
+	line-height:10px;
+	margin:0;
+	padding:0 1px;
+	width:10px;
+	height:10px;
+}
+
+.trace.collapsed .minus,
+.trace.expanded .plus,
+.trace.collapsed pre {
+	display: none;
+}
+
+.trace-file {
+	cursor: pointer;
+	padding: 0.2em;
+}
+
+.trace-file:hover {
+	background: #f0ffff;
+}
+/*]]>*/
+</style>
+</head>
+
+<body>
+<div class="container">
+	<h1>PHP warning</h1>
+
+	<p class="message">
+		include(EditableField.php): failed to open stream: No such file or directory	</p>
+
+	<div class="source">
+		<p class="file">/Users/tobias/Webserver/local/phundament/app/vendor/yiisoft/yii/framework/YiiBase.php(427)</p>
+		<div class="code"><pre><span class="ln">415</span>                         {
+<span class="ln">416</span>                             include($classFile);
+<span class="ln">417</span>                             if(YII_DEBUG &amp;&amp; basename(realpath($classFile))!==$className.&#039;.php&#039;)
+<span class="ln">418</span>                                 throw new CException(Yii::t(&#039;yii&#039;,&#039;Class name &quot;{class}&quot; does not match class file &quot;{file}&quot;.&#039;, array(
+<span class="ln">419</span>                                     &#039;{class}&#039;=&gt;$className,
+<span class="ln">420</span>                                     &#039;{file}&#039;=&gt;$classFile,
+<span class="ln">421</span>                                 )));
+<span class="ln">422</span>                             break;
+<span class="ln">423</span>                         }
+<span class="ln">424</span>                     }
+<span class="ln">425</span>                 }
+<span class="ln">426</span>                 else
+<span class="error"><span class="ln error-ln">427</span>                     include($className.&#039;.php&#039;);
+</span><span class="ln">428</span>             }
+<span class="ln">429</span>             else  // class name with namespace in PHP 5.3
+<span class="ln">430</span>             {
+<span class="ln">431</span>                 $namespace=str_replace(&#039;\\&#039;,&#039;.&#039;,ltrim($className,&#039;\\&#039;));
+<span class="ln">432</span>                 if(($path=self::getPathOfAlias($namespace))!==false)
+<span class="ln">433</span>                     include($path.&#039;.php&#039;);
+<span class="ln">434</span>                 else
+<span class="ln">435</span>                     return false;
+<span class="ln">436</span>             }
+<span class="ln">437</span>             return class_exists($className,false) || interface_exists($className,false);
+<span class="ln">438</span>         }
+<span class="ln">439</span>         return true;
+</pre></div>	</div>
+
+	<div class="traces">
+		<h2>Stack Trace</h2>
+				<table style="width:100%;">
+						<tr class="trace core collapsed">
+			<td class="number">
+				#0			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Users/tobias/Webserver/local/phundament/app/vendor/yiisoft/yii/framework/YiiBase.php(427): <strong>YiiBase</strong>::<strong>autoload</strong>()				</div>
+
+				<div class="code"><pre><span class="ln">422</span>                             break;
+<span class="ln">423</span>                         }
+<span class="ln">424</span>                     }
+<span class="ln">425</span>                 }
+<span class="ln">426</span>                 else
+<span class="error"><span class="ln error-ln">427</span>                     include($className.&#039;.php&#039;);
+</span><span class="ln">428</span>             }
+<span class="ln">429</span>             else  // class name with namespace in PHP 5.3
+<span class="ln">430</span>             {
+<span class="ln">431</span>                 $namespace=str_replace(&#039;\\&#039;,&#039;.&#039;,ltrim($className,&#039;\\&#039;));
+<span class="ln">432</span>                 if(($path=self::getPathOfAlias($namespace))!==false)
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#1			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Users/tobias/Webserver/local/phundament/app/vendor/yiisoft/yii/framework/YiiBase.php(302): <strong>YiiBase</strong>::<strong>autoload</strong>(&quot;EditableField&quot;)				</div>
+
+				<div class="code"><pre><span class="ln">297</span>             }
+<span class="ln">298</span>         }
+<span class="ln">299</span> 
+<span class="ln">300</span>         if(($pos=strrpos($alias,&#039;.&#039;))===false)  // a simple class name
+<span class="ln">301</span>         {
+<span class="error"><span class="ln error-ln">302</span>             if($forceInclude &amp;&amp; self::autoload($alias))
+</span><span class="ln">303</span>                 self::$_imports[$alias]=$alias;
+<span class="ln">304</span>             return $alias;
+<span class="ln">305</span>         }
+<span class="ln">306</span> 
+<span class="ln">307</span>         $className=(string)substr($alias,$pos+1);
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#2			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Users/tobias/Webserver/local/phundament/app/vendor/yiisoft/yii/framework/web/CWidgetFactory.php(146): <strong>YiiBase</strong>::<strong>import</strong>(&quot;EditableField&quot;, true)				</div>
+
+				<div class="code"><pre><span class="ln">141</span>      * @param array $properties the initial property values (name=&gt;value) of the widget.
+<span class="ln">142</span>      * @return CWidget the newly created widget whose properties have been initialized with the given values.
+<span class="ln">143</span>      */
+<span class="ln">144</span>     public function createWidget($owner,$className,$properties=array())
+<span class="ln">145</span>     {
+<span class="error"><span class="ln error-ln">146</span>         $className=Yii::import($className,true);
+</span><span class="ln">147</span>         $widget=new $className($owner);
+<span class="ln">148</span> 
+<span class="ln">149</span>         if(isset($this-&gt;widgets[$className]))
+<span class="ln">150</span>             $properties=$properties===array() ? $this-&gt;widgets[$className] : CMap::mergeArray($this-&gt;widgets[$className],$properties);
+<span class="ln">151</span>         if($this-&gt;enableSkin)
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#3			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Users/tobias/Webserver/local/phundament/app/vendor/yiisoft/yii/framework/web/CBaseController.php(146): <strong>CWidgetFactory</strong>-><strong>createWidget</strong>(DefaultController, &quot;EditableField&quot;, array(&quot;type&quot; =&gt; &quot;text&quot;, &quot;model&quot; =&gt; P3Media, &quot;attribute&quot; =&gt; &quot;title&quot;, &quot;url&quot; =&gt; &quot;/index-test.php?r=p3media/p3Media/ajaxUpdate&amp;lang=en&quot;))				</div>
+
+				<div class="code"><pre><span class="ln">141</span>      * @param array $properties initial property values
+<span class="ln">142</span>      * @return CWidget the fully initialized widget instance.
+<span class="ln">143</span>      */
+<span class="ln">144</span>     public function createWidget($className,$properties=array())
+<span class="ln">145</span>     {
+<span class="error"><span class="ln error-ln">146</span>         $widget=Yii::app()-&gt;getWidgetFactory()-&gt;createWidget($this,$className,$properties);
+</span><span class="ln">147</span>         $widget-&gt;init();
+<span class="ln">148</span>         return $widget;
+<span class="ln">149</span>     }
+<span class="ln">150</span> 
+<span class="ln">151</span>     /**
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#4			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Users/tobias/Webserver/local/phundament/app/vendor/yiisoft/yii/framework/web/CBaseController.php(172): <strong>CBaseController</strong>-><strong>createWidget</strong>(&quot;EditableField&quot;, array(&quot;type&quot; =&gt; &quot;text&quot;, &quot;model&quot; =&gt; P3Media, &quot;attribute&quot; =&gt; &quot;title&quot;, &quot;url&quot; =&gt; &quot;/index-test.php?r=p3media/p3Media/ajaxUpdate&amp;lang=en&quot;))				</div>
+
+				<div class="code"><pre><span class="ln">167</span>             $widget-&gt;run();
+<span class="ln">168</span>             return ob_get_clean();
+<span class="ln">169</span>         }
+<span class="ln">170</span>         else
+<span class="ln">171</span>         {
+<span class="error"><span class="ln error-ln">172</span>             $widget=$this-&gt;createWidget($className,$properties);
+</span><span class="ln">173</span>             $widget-&gt;run();
+<span class="ln">174</span>             return $widget;
+<span class="ln">175</span>         }
+<span class="ln">176</span>     }
+<span class="ln">177</span> 
+</pre></div>			</td>
+		</tr>
+						<tr class="trace app expanded">
+			<td class="number">
+				#5			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Users/tobias/Webserver/local/phundament/app/vendor/phundament/p3media/views/default/_thumb.php(82): <strong>CBaseController</strong>-><strong>widget</strong>(&quot;EditableField&quot;, array(&quot;type&quot; =&gt; &quot;text&quot;, &quot;model&quot; =&gt; P3Media, &quot;attribute&quot; =&gt; &quot;title&quot;, &quot;url&quot; =&gt; &quot;/index-test.php?r=p3media/p3Media/ajaxUpdate&amp;lang=en&quot;))				</div>
+
+				<div class="code"><pre><span class="ln">77</span>                  &#039;type&#039;      =&gt; &#039;text&#039;,
+<span class="ln">78</span>                  &#039;model&#039;     =&gt; $data,
+<span class="ln">79</span>                  &#039;attribute&#039; =&gt; &#039;title&#039;,
+<span class="ln">80</span>                  &#039;url&#039;       =&gt; $this-&gt;createUrl(&#039;/p3media/p3Media/ajaxUpdate&#039;),
+<span class="ln">81</span>             )
+<span class="error"><span class="ln error-ln">82</span>         );
+</span><span class="ln">83</span> 
+<span class="ln">84</span>         ?&gt;
+<span class="ln">85</span>     &lt;/h5&gt;
+<span class="ln">86</span> &lt;p&gt;
+<span class="ln">87</span>     &lt;i class=&quot;icon-folder-close&quot;&gt;&lt;/i&gt;
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#6			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Users/tobias/Webserver/local/phundament/app/vendor/yiisoft/yii/framework/web/CBaseController.php(126): <strong>require</strong>(&quot;/Users/tobias/Webserver/local/phundament/app/vendor/phundament/p...&quot;)				</div>
+
+				<div class="code"><pre><span class="ln">121</span>             $data=$_data_;
+<span class="ln">122</span>         if($_return_)
+<span class="ln">123</span>         {
+<span class="ln">124</span>             ob_start();
+<span class="ln">125</span>             ob_implicit_flush(false);
+<span class="error"><span class="ln error-ln">126</span>             require($_viewFile_);
+</span><span class="ln">127</span>             return ob_get_clean();
+<span class="ln">128</span>         }
+<span class="ln">129</span>         else
+<span class="ln">130</span>             require($_viewFile_);
+<span class="ln">131</span>     }
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#7			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Users/tobias/Webserver/local/phundament/app/vendor/yiisoft/yii/framework/web/CBaseController.php(95): <strong>CBaseController</strong>-><strong>renderInternal</strong>(&quot;/Users/tobias/Webserver/local/phundament/app/vendor/phundament/p...&quot;, array(&quot;index&quot; =&gt; 0, &quot;data&quot; =&gt; P3Media, &quot;widget&quot; =&gt; TbThumbnails), true)				</div>
+
+				<div class="code"><pre><span class="ln">090</span>     {
+<span class="ln">091</span>         $widgetCount=count($this-&gt;_widgetStack);
+<span class="ln">092</span>         if(($renderer=Yii::app()-&gt;getViewRenderer())!==null &amp;&amp; $renderer-&gt;fileExtension===&#039;.&#039;.CFileHelper::getExtension($viewFile))
+<span class="ln">093</span>             $content=$renderer-&gt;renderFile($this,$viewFile,$data,$return);
+<span class="ln">094</span>         else
+<span class="error"><span class="ln error-ln">095</span>             $content=$this-&gt;renderInternal($viewFile,$data,$return);
+</span><span class="ln">096</span>         if(count($this-&gt;_widgetStack)===$widgetCount)
+<span class="ln">097</span>             return $content;
+<span class="ln">098</span>         else
+<span class="ln">099</span>         {
+<span class="ln">100</span>             $widget=end($this-&gt;_widgetStack);
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#8			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Users/tobias/Webserver/local/phundament/app/vendor/yiisoft/yii/framework/web/CController.php(869): <strong>CBaseController</strong>-><strong>renderFile</strong>(&quot;/Users/tobias/Webserver/local/phundament/app/vendor/phundament/p...&quot;, array(&quot;index&quot; =&gt; 0, &quot;data&quot; =&gt; P3Media, &quot;widget&quot; =&gt; TbThumbnails), true)				</div>
+
+				<div class="code"><pre><span class="ln">864</span>      */
+<span class="ln">865</span>     public function renderPartial($view,$data=null,$return=false,$processOutput=false)
+<span class="ln">866</span>     {
+<span class="ln">867</span>         if(($viewFile=$this-&gt;getViewFile($view))!==false)
+<span class="ln">868</span>         {
+<span class="error"><span class="ln error-ln">869</span>             $output=$this-&gt;renderFile($viewFile,$data,true);
+</span><span class="ln">870</span>             if($processOutput)
+<span class="ln">871</span>                 $output=$this-&gt;processOutput($output);
+<span class="ln">872</span>             if($return)
+<span class="ln">873</span>                 return $output;
+<span class="ln">874</span>             else
+</pre></div>			</td>
+		</tr>
+						<tr class="trace app expanded">
+			<td class="number">
+				#9			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Users/tobias/Webserver/local/phundament/app/vendor/clevertech/yiibooster/src/widgets/TbThumbnails.php(41): <strong>CController</strong>-><strong>renderPartial</strong>(&quot;_thumb&quot;, array(&quot;index&quot; =&gt; 0, &quot;data&quot; =&gt; P3Media, &quot;widget&quot; =&gt; TbThumbnails))				</div>
+
+				<div class="code"><pre><span class="ln">36</span>             foreach ($data as $i =&gt; $item) {
+<span class="ln">37</span>                 $data = $this-&gt;viewData;
+<span class="ln">38</span>                 $data[&#039;index&#039;] = $i;
+<span class="ln">39</span>                 $data[&#039;data&#039;] = $item;
+<span class="ln">40</span>                 $data[&#039;widget&#039;] = $this;
+<span class="error"><span class="ln error-ln">41</span>                 $owner-&gt;$render($this-&gt;itemView, $data);
+</span><span class="ln">42</span>             }
+<span class="ln">43</span> 
+<span class="ln">44</span>             echo &#039;&lt;/ul&gt;&#039;;
+<span class="ln">45</span>         } else {
+<span class="ln">46</span>             $this-&gt;renderEmptyText();
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#10			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Users/tobias/Webserver/local/phundament/app/vendor/yiisoft/yii/framework/zii/widgets/CBaseListView.php(167): <strong>TbThumbnails</strong>-><strong>renderItems</strong>()				</div>
+
+				<div class="code"><pre><span class="ln">162</span>     protected function renderSection($matches)
+<span class="ln">163</span>     {
+<span class="ln">164</span>         $method=&#039;render&#039;.$matches[1];
+<span class="ln">165</span>         if(method_exists($this,$method))
+<span class="ln">166</span>         {
+<span class="error"><span class="ln error-ln">167</span>             $this-&gt;$method();
+</span><span class="ln">168</span>             $html=ob_get_contents();
+<span class="ln">169</span>             ob_clean();
+<span class="ln">170</span>             return $html;
+<span class="ln">171</span>         }
+<span class="ln">172</span>         else
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#11			</td>
+			<td class="content">
+				<div class="trace-file">
+										&nbsp;unknown(0): <strong>CBaseListView</strong>-><strong>renderSection</strong>(array(&quot;{items}&quot;, &quot;items&quot;))				</div>
+
+							</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#12			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Users/tobias/Webserver/local/phundament/app/vendor/yiisoft/yii/framework/zii/widgets/CBaseListView.php(150): <strong>preg_replace_callback</strong>(&quot;/{(\w+)}/&quot;, array(TbThumbnails, &quot;renderSection&quot;), &quot;{sorter}{pager}
+{items}
+{pager}
+{summary}&quot;)				</div>
+
+				<div class="code"><pre><span class="ln">145</span>      * The rendering results will replace the corresponding placeholders in {@link template}.
+<span class="ln">146</span>      */
+<span class="ln">147</span>     public function renderContent()
+<span class="ln">148</span>     {
+<span class="ln">149</span>         ob_start();
+<span class="error"><span class="ln error-ln">150</span>         echo preg_replace_callback(&quot;/{(\w+)}/&quot;,array($this,&#039;renderSection&#039;),$this-&gt;template);
+</span><span class="ln">151</span>         ob_end_flush();
+<span class="ln">152</span>     }
+<span class="ln">153</span> 
+<span class="ln">154</span>     /**
+<span class="ln">155</span>      * Renders a section.
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#13			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Users/tobias/Webserver/local/phundament/app/vendor/yiisoft/yii/framework/zii/widgets/CBaseListView.php(135): <strong>CBaseListView</strong>-><strong>renderContent</strong>()				</div>
+
+				<div class="code"><pre><span class="ln">130</span>     {
+<span class="ln">131</span>         $this-&gt;registerClientScript();
+<span class="ln">132</span> 
+<span class="ln">133</span>         echo CHtml::openTag($this-&gt;tagName,$this-&gt;htmlOptions).&quot;\n&quot;;
+<span class="ln">134</span> 
+<span class="error"><span class="ln error-ln">135</span>         $this-&gt;renderContent();
+</span><span class="ln">136</span>         $this-&gt;renderKeys();
+<span class="ln">137</span> 
+<span class="ln">138</span>         echo CHtml::closeTag($this-&gt;tagName);
+<span class="ln">139</span>     }
+<span class="ln">140</span> 
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#14			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Users/tobias/Webserver/local/phundament/app/vendor/yiisoft/yii/framework/web/CBaseController.php(173): <strong>CBaseListView</strong>-><strong>run</strong>()				</div>
+
+				<div class="code"><pre><span class="ln">168</span>             return ob_get_clean();
+<span class="ln">169</span>         }
+<span class="ln">170</span>         else
+<span class="ln">171</span>         {
+<span class="ln">172</span>             $widget=$this-&gt;createWidget($className,$properties);
+<span class="error"><span class="ln error-ln">173</span>             $widget-&gt;run();
+</span><span class="ln">174</span>             return $widget;
+<span class="ln">175</span>         }
+<span class="ln">176</span>     }
+<span class="ln">177</span> 
+<span class="ln">178</span>     /**
+</pre></div>			</td>
+		</tr>
+						<tr class="trace app expanded">
+			<td class="number">
+				#15			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Users/tobias/Webserver/local/phundament/app/vendor/phundament/p3media/views/default/browser.php(176): <strong>CBaseController</strong>-><strong>widget</strong>(&quot;bootstrap.widgets.TbThumbnails&quot;, array(&quot;ajaxUpdate&quot; =&gt; false, &quot;dataProvider&quot; =&gt; CActiveDataProvider, &quot;template&quot; =&gt; &quot;{sorter}{pager}
+{items}
+{pager}
+{summary}&quot;, &quot;sortableAttributes&quot; =&gt; array(&quot;title&quot; =&gt; &quot;Title&quot;, &quot;id&quot; =&gt; &quot;ID&quot;), ...))				</div>
+
+				<div class="code"><pre><span class="ln">171</span>                              &#039;displayFirstAndLast&#039; =&gt; true,
+<span class="ln">172</span>                          ),
+<span class="ln">173</span>                          &#039;itemView&#039;           =&gt; &#039;_thumb&#039;,
+<span class="ln">174</span>                          // Remove the existing tooltips and rebind the plugin after each ajax-call.
+<span class="ln">175</span>                     )
+<span class="error"><span class="ln error-ln">176</span>                 );
+</span><span class="ln">177</span>                 ?&gt;
+<span class="ln">178</span> 
+<span class="ln">179</span>             &lt;/div&gt;
+<span class="ln">180</span>         &lt;/div&gt;
+<span class="ln">181</span>     &lt;/div&gt;
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#16			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Users/tobias/Webserver/local/phundament/app/vendor/yiisoft/yii/framework/web/CBaseController.php(126): <strong>require</strong>(&quot;/Users/tobias/Webserver/local/phundament/app/vendor/phundament/p...&quot;)				</div>
+
+				<div class="code"><pre><span class="ln">121</span>             $data=$_data_;
+<span class="ln">122</span>         if($_return_)
+<span class="ln">123</span>         {
+<span class="ln">124</span>             ob_start();
+<span class="ln">125</span>             ob_implicit_flush(false);
+<span class="error"><span class="ln error-ln">126</span>             require($_viewFile_);
+</span><span class="ln">127</span>             return ob_get_clean();
+<span class="ln">128</span>         }
+<span class="ln">129</span>         else
+<span class="ln">130</span>             require($_viewFile_);
+<span class="ln">131</span>     }
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#17			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Users/tobias/Webserver/local/phundament/app/vendor/yiisoft/yii/framework/web/CBaseController.php(95): <strong>CBaseController</strong>-><strong>renderInternal</strong>(&quot;/Users/tobias/Webserver/local/phundament/app/vendor/phundament/p...&quot;, array(&quot;files&quot; =&gt; P3Media, &quot;directories&quot; =&gt; array()), true)				</div>
+
+				<div class="code"><pre><span class="ln">090</span>     {
+<span class="ln">091</span>         $widgetCount=count($this-&gt;_widgetStack);
+<span class="ln">092</span>         if(($renderer=Yii::app()-&gt;getViewRenderer())!==null &amp;&amp; $renderer-&gt;fileExtension===&#039;.&#039;.CFileHelper::getExtension($viewFile))
+<span class="ln">093</span>             $content=$renderer-&gt;renderFile($this,$viewFile,$data,$return);
+<span class="ln">094</span>         else
+<span class="error"><span class="ln error-ln">095</span>             $content=$this-&gt;renderInternal($viewFile,$data,$return);
+</span><span class="ln">096</span>         if(count($this-&gt;_widgetStack)===$widgetCount)
+<span class="ln">097</span>             return $content;
+<span class="ln">098</span>         else
+<span class="ln">099</span>         {
+<span class="ln">100</span>             $widget=end($this-&gt;_widgetStack);
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#18			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Users/tobias/Webserver/local/phundament/app/vendor/yiisoft/yii/framework/web/CController.php(869): <strong>CBaseController</strong>-><strong>renderFile</strong>(&quot;/Users/tobias/Webserver/local/phundament/app/vendor/phundament/p...&quot;, array(&quot;files&quot; =&gt; P3Media, &quot;directories&quot; =&gt; array()), true)				</div>
+
+				<div class="code"><pre><span class="ln">864</span>      */
+<span class="ln">865</span>     public function renderPartial($view,$data=null,$return=false,$processOutput=false)
+<span class="ln">866</span>     {
+<span class="ln">867</span>         if(($viewFile=$this-&gt;getViewFile($view))!==false)
+<span class="ln">868</span>         {
+<span class="error"><span class="ln error-ln">869</span>             $output=$this-&gt;renderFile($viewFile,$data,true);
+</span><span class="ln">870</span>             if($processOutput)
+<span class="ln">871</span>                 $output=$this-&gt;processOutput($output);
+<span class="ln">872</span>             if($return)
+<span class="ln">873</span>                 return $output;
+<span class="ln">874</span>             else
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#19			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Users/tobias/Webserver/local/phundament/app/vendor/yiisoft/yii/framework/web/CController.php(782): <strong>CController</strong>-><strong>renderPartial</strong>(&quot;browser&quot;, array(&quot;files&quot; =&gt; P3Media, &quot;directories&quot; =&gt; array()), true)				</div>
+
+				<div class="code"><pre><span class="ln">777</span>      */
+<span class="ln">778</span>     public function render($view,$data=null,$return=false)
+<span class="ln">779</span>     {
+<span class="ln">780</span>         if($this-&gt;beforeRender($view))
+<span class="ln">781</span>         {
+<span class="error"><span class="ln error-ln">782</span>             $output=$this-&gt;renderPartial($view,$data,true);
+</span><span class="ln">783</span>             if(($layoutFile=$this-&gt;getLayoutFile($this-&gt;layout))!==false)
+<span class="ln">784</span>                 $output=$this-&gt;renderFile($layoutFile,array(&#039;content&#039;=&gt;$output),true);
+<span class="ln">785</span> 
+<span class="ln">786</span>             $this-&gt;afterRender($view,$output);
+<span class="ln">787</span> 
+</pre></div>			</td>
+		</tr>
+						<tr class="trace app collapsed">
+			<td class="number">
+				#20			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Users/tobias/Webserver/local/phundament/app/vendor/phundament/p3media/controllers/DefaultController.php(79): <strong>CController</strong>-><strong>render</strong>(&quot;browser&quot;, array(&quot;files&quot; =&gt; P3Media, &quot;directories&quot; =&gt; array()))				</div>
+
+				<div class="code"><pre><span class="ln">74</span>         $criteria = new CDbCriteria();
+<span class="ln">75</span>         $criteria-&gt;condition = &quot;t.type = &quot;.P3Media::TYPE_FOLDER;
+<span class="ln">76</span> 
+<span class="ln">77</span>         $this-&gt;directoriesList = CHtml::listData(P3Media::model()-&gt;findAll($criteria), &#039;id&#039;, &#039;title&#039;);
+<span class="ln">78</span> 
+<span class="error"><span class="ln error-ln">79</span>         $this-&gt;render(&#039;browser&#039;, array(&#039;files&#039; =&gt; $files, &#039;directories&#039; =&gt; $directories));
+</span><span class="ln">80</span>     }
+<span class="ln">81</span> }</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#21			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Users/tobias/Webserver/local/phundament/app/vendor/yiisoft/yii/framework/web/actions/CInlineAction.php(49): <strong>DefaultController</strong>-><strong>actionBrowser</strong>()				</div>
+
+				<div class="code"><pre><span class="ln">44</span>         $controller=$this-&gt;getController();
+<span class="ln">45</span>         $method=new ReflectionMethod($controller, $methodName);
+<span class="ln">46</span>         if($method-&gt;getNumberOfParameters()&gt;0)
+<span class="ln">47</span>             return $this-&gt;runWithParamsInternal($controller, $method, $params);
+<span class="ln">48</span>         else
+<span class="error"><span class="ln error-ln">49</span>             return $controller-&gt;$methodName();
+</span><span class="ln">50</span>     }
+<span class="ln">51</span> 
+<span class="ln">52</span> }
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#22			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Users/tobias/Webserver/local/phundament/app/vendor/yiisoft/yii/framework/web/CController.php(308): <strong>CInlineAction</strong>-><strong>runWithParams</strong>(array(&quot;r&quot; =&gt; &quot;p3media&quot;, &quot;lang&quot; =&gt; &quot;en&quot;))				</div>
+
+				<div class="code"><pre><span class="ln">303</span>     {
+<span class="ln">304</span>         $priorAction=$this-&gt;_action;
+<span class="ln">305</span>         $this-&gt;_action=$action;
+<span class="ln">306</span>         if($this-&gt;beforeAction($action))
+<span class="ln">307</span>         {
+<span class="error"><span class="ln error-ln">308</span>             if($action-&gt;runWithParams($this-&gt;getActionParams())===false)
+</span><span class="ln">309</span>                 $this-&gt;invalidActionParams($action);
+<span class="ln">310</span>             else
+<span class="ln">311</span>                 $this-&gt;afterAction($action);
+<span class="ln">312</span>         }
+<span class="ln">313</span>         $this-&gt;_action=$priorAction;
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#23			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Users/tobias/Webserver/local/phundament/app/vendor/yiisoft/yii/framework/web/filters/CFilterChain.php(133): <strong>CController</strong>-><strong>runAction</strong>(CInlineAction)				</div>
+
+				<div class="code"><pre><span class="ln">128</span>             $filter=$this-&gt;itemAt($this-&gt;filterIndex++);
+<span class="ln">129</span>             Yii::trace(&#039;Running filter &#039;.($filter instanceof CInlineFilter ? get_class($this-&gt;controller).&#039;.filter&#039;.$filter-&gt;name.&#039;()&#039;:get_class($filter).&#039;.filter()&#039;),&#039;system.web.filters.CFilterChain&#039;);
+<span class="ln">130</span>             $filter-&gt;filter($this);
+<span class="ln">131</span>         }
+<span class="ln">132</span>         else
+<span class="error"><span class="ln error-ln">133</span>             $this-&gt;controller-&gt;runAction($this-&gt;action);
+</span><span class="ln">134</span>     }
+<span class="ln">135</span> }</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#24			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Users/tobias/Webserver/local/phundament/app/vendor/yiisoft/yii/framework/web/filters/CFilter.php(40): <strong>CFilterChain</strong>-><strong>run</strong>()				</div>
+
+				<div class="code"><pre><span class="ln">35</span>      */
+<span class="ln">36</span>     public function filter($filterChain)
+<span class="ln">37</span>     {
+<span class="ln">38</span>         if($this-&gt;preFilter($filterChain))
+<span class="ln">39</span>         {
+<span class="error"><span class="ln error-ln">40</span>             $filterChain-&gt;run();
+</span><span class="ln">41</span>             $this-&gt;postFilter($filterChain);
+<span class="ln">42</span>         }
+<span class="ln">43</span>     }
+<span class="ln">44</span> 
+<span class="ln">45</span>     /**
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#25			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Users/tobias/Webserver/local/phundament/app/vendor/yiisoft/yii/framework/web/CController.php(1145): <strong>CFilter</strong>-><strong>filter</strong>(CFilterChain)				</div>
+
+				<div class="code"><pre><span class="ln">1140</span>      */
+<span class="ln">1141</span>     public function filterAccessControl($filterChain)
+<span class="ln">1142</span>     {
+<span class="ln">1143</span>         $filter=new CAccessControlFilter;
+<span class="ln">1144</span>         $filter-&gt;setRules($this-&gt;accessRules());
+<span class="error"><span class="ln error-ln">1145</span>         $filter-&gt;filter($filterChain);
+</span><span class="ln">1146</span>     }
+<span class="ln">1147</span> 
+<span class="ln">1148</span>     /**
+<span class="ln">1149</span>      * Returns a persistent page state value.
+<span class="ln">1150</span>      * A page state is a variable that is persistent across POST requests of the same page.
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#26			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Users/tobias/Webserver/local/phundament/app/vendor/yiisoft/yii/framework/web/filters/CInlineFilter.php(58): <strong>CController</strong>-><strong>filterAccessControl</strong>(CFilterChain)				</div>
+
+				<div class="code"><pre><span class="ln">53</span>      * @param CFilterChain $filterChain the filter chain that the filter is on.
+<span class="ln">54</span>      */
+<span class="ln">55</span>     public function filter($filterChain)
+<span class="ln">56</span>     {
+<span class="ln">57</span>         $method=&#039;filter&#039;.$this-&gt;name;
+<span class="error"><span class="ln error-ln">58</span>         $filterChain-&gt;controller-&gt;$method($filterChain);
+</span><span class="ln">59</span>     }
+<span class="ln">60</span> }
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#27			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Users/tobias/Webserver/local/phundament/app/vendor/yiisoft/yii/framework/web/filters/CFilterChain.php(130): <strong>CInlineFilter</strong>-><strong>filter</strong>(CFilterChain)				</div>
+
+				<div class="code"><pre><span class="ln">125</span>     {
+<span class="ln">126</span>         if($this-&gt;offsetExists($this-&gt;filterIndex))
+<span class="ln">127</span>         {
+<span class="ln">128</span>             $filter=$this-&gt;itemAt($this-&gt;filterIndex++);
+<span class="ln">129</span>             Yii::trace(&#039;Running filter &#039;.($filter instanceof CInlineFilter ? get_class($this-&gt;controller).&#039;.filter&#039;.$filter-&gt;name.&#039;()&#039;:get_class($filter).&#039;.filter()&#039;),&#039;system.web.filters.CFilterChain&#039;);
+<span class="error"><span class="ln error-ln">130</span>             $filter-&gt;filter($this);
+</span><span class="ln">131</span>         }
+<span class="ln">132</span>         else
+<span class="ln">133</span>             $this-&gt;controller-&gt;runAction($this-&gt;action);
+<span class="ln">134</span>     }
+<span class="ln">135</span> }</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#28			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Users/tobias/Webserver/local/phundament/app/vendor/yiisoft/yii/framework/web/CController.php(291): <strong>CFilterChain</strong>-><strong>run</strong>()				</div>
+
+				<div class="code"><pre><span class="ln">286</span>             $this-&gt;runAction($action);
+<span class="ln">287</span>         else
+<span class="ln">288</span>         {
+<span class="ln">289</span>             $priorAction=$this-&gt;_action;
+<span class="ln">290</span>             $this-&gt;_action=$action;
+<span class="error"><span class="ln error-ln">291</span>             CFilterChain::create($this,$action,$filters)-&gt;run();
+</span><span class="ln">292</span>             $this-&gt;_action=$priorAction;
+<span class="ln">293</span>         }
+<span class="ln">294</span>     }
+<span class="ln">295</span> 
+<span class="ln">296</span>     /**
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#29			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Users/tobias/Webserver/local/phundament/app/vendor/yiisoft/yii/framework/web/CController.php(265): <strong>CController</strong>-><strong>runActionWithFilters</strong>(CInlineAction, array(&quot;accessControl&quot;))				</div>
+
+				<div class="code"><pre><span class="ln">260</span>         {
+<span class="ln">261</span>             if(($parent=$this-&gt;getModule())===null)
+<span class="ln">262</span>                 $parent=Yii::app();
+<span class="ln">263</span>             if($parent-&gt;beforeControllerAction($this,$action))
+<span class="ln">264</span>             {
+<span class="error"><span class="ln error-ln">265</span>                 $this-&gt;runActionWithFilters($action,$this-&gt;filters());
+</span><span class="ln">266</span>                 $parent-&gt;afterControllerAction($this,$action);
+<span class="ln">267</span>             }
+<span class="ln">268</span>         }
+<span class="ln">269</span>         else
+<span class="ln">270</span>             $this-&gt;missingAction($actionID);
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#30			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Users/tobias/Webserver/local/phundament/app/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): <strong>CController</strong>-><strong>run</strong>(&quot;&quot;)				</div>
+
+				<div class="code"><pre><span class="ln">277</span>         {
+<span class="ln">278</span>             list($controller,$actionID)=$ca;
+<span class="ln">279</span>             $oldController=$this-&gt;_controller;
+<span class="ln">280</span>             $this-&gt;_controller=$controller;
+<span class="ln">281</span>             $controller-&gt;init();
+<span class="error"><span class="ln error-ln">282</span>             $controller-&gt;run($actionID);
+</span><span class="ln">283</span>             $this-&gt;_controller=$oldController;
+<span class="ln">284</span>         }
+<span class="ln">285</span>         else
+<span class="ln">286</span>             throw new CHttpException(404,Yii::t(&#039;yii&#039;,&#039;Unable to resolve the request &quot;{route}&quot;.&#039;,
+<span class="ln">287</span>                 array(&#039;{route}&#039;=&gt;$route===&#039;&#039;?$this-&gt;defaultController:$route)));
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#31			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Users/tobias/Webserver/local/phundament/app/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): <strong>CWebApplication</strong>-><strong>runController</strong>(&quot;p3media&quot;)				</div>
+
+				<div class="code"><pre><span class="ln">136</span>             foreach(array_splice($this-&gt;catchAllRequest,1) as $name=&gt;$value)
+<span class="ln">137</span>                 $_GET[$name]=$value;
+<span class="ln">138</span>         }
+<span class="ln">139</span>         else
+<span class="ln">140</span>             $route=$this-&gt;getUrlManager()-&gt;parseUrl($this-&gt;getRequest());
+<span class="error"><span class="ln error-ln">141</span>         $this-&gt;runController($route);
+</span><span class="ln">142</span>     }
+<span class="ln">143</span> 
+<span class="ln">144</span>     /**
+<span class="ln">145</span>      * Registers the core application components.
+<span class="ln">146</span>      * This method overrides the parent implementation by registering additional core components.
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#32			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Users/tobias/Webserver/local/phundament/app/vendor/yiisoft/yii/framework/base/CApplication.php(180): <strong>CWebApplication</strong>-><strong>processRequest</strong>()				</div>
+
+				<div class="code"><pre><span class="ln">175</span>     public function run()
+<span class="ln">176</span>     {
+<span class="ln">177</span>         if($this-&gt;hasEventHandler(&#039;onBeginRequest&#039;))
+<span class="ln">178</span>             $this-&gt;onBeginRequest(new CEvent($this));
+<span class="ln">179</span>         register_shutdown_function(array($this,&#039;end&#039;),0,false);
+<span class="error"><span class="ln error-ln">180</span>         $this-&gt;processRequest();
+</span><span class="ln">181</span>         if($this-&gt;hasEventHandler(&#039;onEndRequest&#039;))
+<span class="ln">182</span>             $this-&gt;onEndRequest(new CEvent($this));
+<span class="ln">183</span>     }
+<span class="ln">184</span> 
+<span class="ln">185</span>     /**
+</pre></div>			</td>
+		</tr>
+						<tr class="trace app collapsed">
+			<td class="number">
+				#33			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Users/tobias/Webserver/local/phundament/app/www/index-test.php(30): <strong>CApplication</strong>-><strong>run</strong>()				</div>
+
+				<div class="code"><pre><span class="ln">25</span> } else {
+<span class="ln">26</span>     $config[&#039;components&#039;][&#039;db&#039;] = $config[&#039;components&#039;][&#039;dbTest&#039;];
+<span class="ln">27</span> }
+<span class="ln">28</span> 
+<span class="ln">29</span> // start web application
+<span class="error"><span class="ln error-ln">30</span> Yii::createWebApplication($config)-&gt;run();
+</span></pre></div>			</td>
+		</tr>
+				</table>
+	</div>
+
+	<div class="version">
+		2013-10-06 18:04:03 PHP 5.4.20 Development Server <a href="http://www.yiiframework.com/">Yii Framework</a>/1.1.14	</div>
+</div>
+
+<script type="text/javascript">
+/*<![CDATA[*/
+var traceReg = new RegExp("(^|\\s)trace-file(\\s|$)");
+var collapsedReg = new RegExp("(^|\\s)collapsed(\\s|$)");
+
+var e = document.getElementsByTagName("div");
+for(var j=0,len=e.length;j<len;j++){
+	if(traceReg.test(e[j].className)){
+		e[j].onclick = function(){
+			var trace = this.parentNode.parentNode;
+			if(collapsedReg.test(trace.className))
+				trace.className = trace.className.replace("collapsed", "expanded");
+			else
+				trace.className = trace.className.replace("expanded", "collapsed");
+		}
+	}
+}
+/*]]>*/
+</script>
+
+</body>
+</html>
