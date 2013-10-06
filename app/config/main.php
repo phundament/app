@@ -41,7 +41,6 @@ return array(
         'vendor'                               => $applicationDirectory . '/../vendor',
         // componentns
         'bootstrap'                            => 'vendor.clevertech.yiibooster.src',
-        'editable'                             => 'vendor.vitalets.x-editable-yii',
         // p3widgets
         'jsonEditorView'                       => 'vendor.phundament.p3extensions.widgets.jsonEditorView',
         'ckeditor'                             => 'vendor.phundament.p3extensions.widgets.ckeditor',
@@ -66,13 +65,13 @@ return array(
         'vendor.phundament.p3extensions.helpers.*', // shared classes - P3StringHelper
         'vendor.phundament.p3extensions.validators.*', // shared classes - P3StringHelper
         'vendor.phundament.p3pages.models.*', // Meta description and keywords (P3Media)
+        'vendor.phundament.p3extensions.widgets.ckeditor.*', // shared classes
         // imports for components from packages, which do not support composer autoloading
         'vendor.mishamx.yii-user.models.*', // User Model
         'vendor.crisu83.yii-rights.components.*', // RWebUser
         'vendor.yiiext.fancybox-widget.*', // Fancybox Widget
         'vendor.clevertech.yiibooster.src.widgets.*', //
         'vendor.sammaye.auditrail2.models.AuditTrail', //
-        'editable.*', // Include X-Editable for Yii classes
     ),
     'modules'    => array(
         // backend for ckeditor styles and templates
@@ -249,16 +248,6 @@ return array(
             'class'            => 'CDbConnection',
             'tablePrefix'      => '',
             'connectionString' => 'sqlite:' . $applicationDirectory . '/data/test.db',
-        ),
-        //X-editable config
-        'editable'      => array(
-            'class'    => 'editable.EditableConfig',
-            'form'     => 'bootstrap',
-            'mode'     => 'popup',
-            'defaults' => array(
-                'emptytext' => 'Click to edit',
-                //'ajaxOptions' => array('dataType' => 'json') //useful for json exchange with server
-            )
         ),
         'errorHandler'  => array(
             // use 'site/error' action to display errors
