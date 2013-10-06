@@ -222,8 +222,8 @@ return array(
             'class'          => 'vendor.clevertech.yiibooster.src.components.Bootstrap',
             'coreCss'        => true, // whether to register any CSS at all, defaults to true
             'bootstrapCss'   => false, // use csutom css from theme
-            'jqueryCss'      => false, // use csutom css from theme
             'responsiveCss'  => false, // use csutom css from theme
+            'jqueryCss'      => true, // use csutom css from theme
             'fontAwesomeCss' => true,
             // whether to register the Bootstrap responsive CSS (bootstrap-responsive.min.css), default to false
             'plugins'        => array(),
