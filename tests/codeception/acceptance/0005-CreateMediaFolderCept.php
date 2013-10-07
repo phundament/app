@@ -8,6 +8,6 @@ $I->amOnPage('?r=p3media&lang=en');
 
 $I->click(' Create Folder');
 $I->see('Media Create');
-$I->fillField('P3Media[title]','folder');
+$I->fillField('P3Media[default_title]','folder');
 $I->click('Save');
 $I->see('folder','div ul li');

@@ -10,19 +10,19 @@ $I->amOnPage('?r=site/index&lang=en');
 // Links Content Menu
 
 $I->click('Upload');
-$I->see('Upload Session');
+$I->see('Upload Session', 'H1');
 $I->click('Browse');
-$I->see('Browser');
+$I->see('Browser', 'H1');
 $I->click('Sitemap');
-$I->see('Pages');
+$I->see('Pages', 'H1');
 $I->click('Manage');
-$I->see('Pages');
+$I->see('Pages', 'H1');
 $I->click('Registry');
-$I->see('Widgets');
+$I->see('Widgets', 'H1');
 $I->click('Overview');
-$I->see('Application');
+$I->see('Application', 'H1');
 $I->click('Dashboard');
-$I->see('Application');
+$I->see('Application', 'H1');
 
 // Links Application Menu
 
