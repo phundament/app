@@ -34,6 +34,11 @@ class PhFieldProvider extends GtcCodeProvider
             case 'created_at':
             case 'updated_at':
             case 'access_owner':
+            case 'original_name':
+            case 'path':
+            case 'hash':
+            case 'mime_type':
+            case 'size':
                 return "echo \$form->textField(\$model,'{$column->name}',array('disabled'=>'disabled'))";
                 break;
             // media select widget
@@ -41,6 +46,11 @@ class PhFieldProvider extends GtcCodeProvider
             case 'p3media_id':
                 return "\$this->widget('P3MediaSelect', array('model'=>\$model,'attribute'=>'{$column->name}'))";
                 break;
+            case 'info_php_json':
+            case 'info_image_magick_json':
+                return "echo \$model->{$column->name}";
+                break;
+
         }
         if (strstr($column->name, '_json')) {
             return "\$this->widget(
