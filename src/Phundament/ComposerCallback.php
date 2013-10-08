@@ -73,7 +73,7 @@ class ComposerCallback
     {
         $composer = $event->getComposer();
         echo self::phundamentAscii();
-        echo "Installing application...\n\n";
+        echo "Syncing packages with lock-file...\n\n";
 
         self::runHook('pre-install');
     }
@@ -98,7 +98,7 @@ class ComposerCallback
     public static function preUpdate(Event $event)
     {
         echo self::phundamentAscii();
-        echo "Updating packages...\n\n";
+        echo "Upgrading packages...\n\n";
         self::runHook('pre-update');
     }
 
