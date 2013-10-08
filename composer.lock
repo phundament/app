@@ -424,16 +424,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3media.git",
-                "reference": "0131a6e341f5f8b0843632958f4c64cd2e222d33"
+                "reference": "bcf4c37f60f679b50bd299ca2066046dddaf3127"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3media/zipball/0131a6e341f5f8b0843632958f4c64cd2e222d33",
-                "reference": "0131a6e341f5f8b0843632958f4c64cd2e222d33",
+                "url": "https://api.github.com/repos/schmunk42/p3media/zipball/bcf4c37f60f679b50bd299ca2066046dddaf3127",
+                "reference": "bcf4c37f60f679b50bd299ca2066046dddaf3127",
                 "shasum": ""
             },
             "require": {
-                "clevertech/yiibooster": ">=1.0,<=3.0",
+                "clevertech/yiibooster": ">=1.0,<3.0",
                 "php": ">=5.3.0",
                 "phundament/p3extensions": ">=0.17.0",
                 "yiisoft/yii": "1.1.*"
@@ -462,7 +462,7 @@
                 "source": "https://github.com/schmunk42/p3media/tree/develop",
                 "issues": "https://github.com/schmunk42/p3media/issues"
             },
-            "time": "2013-10-07 09:42:10"
+            "time": "2013-10-08 09:56:20"
         },
         {
             "name": "phundament/p3pages",
@@ -470,12 +470,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3pages.git",
-                "reference": "586f93f2938b0d3dbe46abb1ef7d04a1e7957278"
+                "reference": "def74e205ffe6d7410ecf9ed57f0b700e6e9ed52"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/586f93f2938b0d3dbe46abb1ef7d04a1e7957278",
-                "reference": "586f93f2938b0d3dbe46abb1ef7d04a1e7957278",
+                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/def74e205ffe6d7410ecf9ed57f0b700e6e9ed52",
+                "reference": "def74e205ffe6d7410ecf9ed57f0b700e6e9ed52",
                 "shasum": ""
             },
             "require": {
@@ -496,7 +496,6 @@
                     "models/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -510,12 +509,16 @@
             "description": "Page Manager",
             "homepage": "https://github.com/schmunk42/p3pages",
             "keywords": [
-                "Sitemap",
                 "page",
+                "sitemap",
                 "structure",
                 "tree"
             ],
-            "time": "2013-10-07 09:48:37"
+            "support": {
+                "source": "https://github.com/schmunk42/p3pages/tree/release/0.17.0",
+                "issues": "https://github.com/schmunk42/p3pages/issues"
+            },
+            "time": "2013-10-08 09:48:03"
         },
         {
             "name": "phundament/p3widgets",
@@ -523,12 +526,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3widgets.git",
-                "reference": "c10224d3dfddc30ba16f535abf812e2a6f99be73"
+                "reference": "589ea57207512ebbe15d7009bee3d4dca381d963"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/c10224d3dfddc30ba16f535abf812e2a6f99be73",
-                "reference": "c10224d3dfddc30ba16f535abf812e2a6f99be73",
+                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/589ea57207512ebbe15d7009bee3d4dca381d963",
+                "reference": "589ea57207512ebbe15d7009bee3d4dca381d963",
                 "shasum": ""
             },
             "require": {
@@ -549,7 +552,6 @@
                     "models/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -567,7 +569,11 @@
                 "p3media",
                 "widget"
             ],
-            "time": "2013-10-07 09:48:13"
+            "support": {
+                "source": "https://github.com/schmunk42/p3widgets/tree/develop",
+                "issues": "https://github.com/schmunk42/p3widgets/issues"
+            },
+            "time": "2013-10-08 09:46:15"
         },
         {
             "name": "sammaye/auditrail2",
@@ -609,12 +615,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii-access.git",
-                "reference": "51af4717cf0914486a138f3690c6daf27554a30e"
+                "reference": "b6b95759eeb7a8f8d92eb4657962004fd6532eb1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii-access/zipball/51af4717cf0914486a138f3690c6daf27554a30e",
-                "reference": "51af4717cf0914486a138f3690c6daf27554a30e",
+                "url": "https://api.github.com/repos/schmunk42/yii-access/zipball/b6b95759eeb7a8f8d92eb4657962004fd6532eb1",
+                "reference": "b6b95759eeb7a8f8d92eb4657962004fd6532eb1",
                 "shasum": ""
             },
             "type": "library",
@@ -632,7 +638,7 @@
                 }
             ],
             "description": "Yii Framework Active Record access check implementation",
-            "time": "2013-10-06 02:59:36"
+            "time": "2013-10-07 14:24:00"
         },
         {
             "name": "schmunk42/adjacency-list-behavior",
@@ -1061,12 +1067,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/gii-template-collection.git",
-                "reference": "fafb3a4da20b79010c86a6634a56f9c9f812ccd4"
+                "reference": "ea353d8d903101c8e52ad68996be0e4257d06be6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/gii-template-collection/zipball/fafb3a4da20b79010c86a6634a56f9c9f812ccd4",
-                "reference": "fafb3a4da20b79010c86a6634a56f9c9f812ccd4",
+                "url": "https://api.github.com/repos/schmunk42/gii-template-collection/zipball/ea353d8d903101c8e52ad68996be0e4257d06be6",
+                "reference": "ea353d8d903101c8e52ad68996be0e4257d06be6",
                 "shasum": ""
             },
             "require": {
@@ -1097,7 +1103,7 @@
                 "source": "https://github.com/schmunk42/gii-template-collection/tree/develop",
                 "issues": "https://github.com/schmunk42/gii-template-collection/issues"
             },
-            "time": "2013-10-07 09:03:40"
+            "time": "2013-10-08 09:58:30"
         },
         {
             "name": "phundament/lessii",
