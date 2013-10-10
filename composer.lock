@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "ef4586d757593a2ddf07cd451f7bbb9c",
+    "hash": "2b0577c65d8a8332f6500b962bad2489",
     "packages": [
         {
             "name": "clevertech/yiibooster",
@@ -47,7 +47,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Quexer69/yii.translate.git",
-                "reference": "fad55337c3a4d610c592d8a31a62fdbd61addc69"
+                "reference": "be21c3820cc5669e3af0fe173c8f1a99a0835a31"
             },
             "suggest": {
                 "Translate": "Any yii translate extension"
@@ -76,7 +76,7 @@
                 "web",
                 "yii"
             ],
-            "time": "2013-10-01 10:27:27"
+            "time": "2013-10-10 23:10:19"
         },
         {
             "name": "malyshev/yii-debug-toolbar",
@@ -96,6 +96,38 @@
             "description": "A configurable set of panels that display various debug information about the current request/response. ",
             "homepage": "https://github.com/malyshev/yii-debug-toolbar",
             "time": "2013-04-10 15:53:54"
+        },
+        {
+            "name": "mikehaertl/packagecompressor",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmunk42/packagecompressor.git",
+                "reference": "512a2ea1938868dc9177666e0f2a467d70de9094"
+            },
+            "require": {
+                "php": ">=5.0.0"
+            },
+            "type": "yii-extension",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Haertl",
+                    "email": "haertl.mike@gmail.com"
+                }
+            ],
+            "description": "packagecompressor is a Yii extension that can compress Javascript/CSS and is based on Yii's package system",
+            "homepage": "https://github.com/mikehaertl/packagecompressor",
+            "keywords": [
+                "compress",
+                "css",
+                "javascript",
+                "minify",
+                "yii"
+            ],
+            "time": "2013-10-10 03:42:47"
         },
         {
             "name": "mikehaertl/translatable",
@@ -220,12 +252,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii-backend-theme.git",
-                "reference": "6c0a599de9e97df5ef40c46516b6199f6b9eef4f"
+                "reference": "227b3dd9d1bb1c291f47738e4adca51a27bb1bba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii-backend-theme/zipball/6c0a599de9e97df5ef40c46516b6199f6b9eef4f",
-                "reference": "6c0a599de9e97df5ef40c46516b6199f6b9eef4f",
+                "url": "https://api.github.com/repos/schmunk42/yii-backend-theme/zipball/227b3dd9d1bb1c291f47738e4adca51a27bb1bba",
+                "reference": "227b3dd9d1bb1c291f47738e4adca51a27bb1bba",
                 "shasum": ""
             },
             "require": {
@@ -258,7 +290,7 @@
                 "theme",
                 "yii"
             ],
-            "time": "2013-10-07 09:47:07"
+            "time": "2013-10-10 03:52:52"
         },
         {
             "name": "phundament/jquery-file-upload",
@@ -382,12 +414,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3extensions.git",
-                "reference": "aa990c986fabd4ab5932ee504b593b230238ccac"
+                "reference": "2cf92a8999953eabb467289b2729ea338447d0d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3extensions/zipball/aa990c986fabd4ab5932ee504b593b230238ccac",
-                "reference": "aa990c986fabd4ab5932ee504b593b230238ccac",
+                "url": "https://api.github.com/repos/schmunk42/p3extensions/zipball/2cf92a8999953eabb467289b2729ea338447d0d7",
+                "reference": "2cf92a8999953eabb467289b2729ea338447d0d7",
                 "shasum": ""
             },
             "require": {
@@ -416,7 +448,7 @@
                 "source": "https://github.com/schmunk42/p3extensions/tree/develop",
                 "issues": "https://github.com/schmunk42/p3extensions/issues"
             },
-            "time": "2013-10-07 09:11:59"
+            "time": "2013-10-10 04:12:53"
         },
         {
             "name": "phundament/p3media",
@@ -424,12 +456,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3media.git",
-                "reference": "bcf4c37f60f679b50bd299ca2066046dddaf3127"
+                "reference": "83b04644177087382a02108292f14c782ab5d26e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3media/zipball/bcf4c37f60f679b50bd299ca2066046dddaf3127",
-                "reference": "bcf4c37f60f679b50bd299ca2066046dddaf3127",
+                "url": "https://api.github.com/repos/schmunk42/p3media/zipball/83b04644177087382a02108292f14c782ab5d26e",
+                "reference": "83b04644177087382a02108292f14c782ab5d26e",
                 "shasum": ""
             },
             "require": {
@@ -462,7 +494,7 @@
                 "source": "https://github.com/schmunk42/p3media/tree/develop",
                 "issues": "https://github.com/schmunk42/p3media/issues"
             },
-            "time": "2013-10-08 09:56:20"
+            "time": "2013-10-10 15:11:18"
         },
         {
             "name": "phundament/p3pages",
@@ -470,12 +502,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3pages.git",
-                "reference": "def74e205ffe6d7410ecf9ed57f0b700e6e9ed52"
+                "reference": "30782525e035e6afc0f6d957c72fb76ff486c90c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/def74e205ffe6d7410ecf9ed57f0b700e6e9ed52",
-                "reference": "def74e205ffe6d7410ecf9ed57f0b700e6e9ed52",
+                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/30782525e035e6afc0f6d957c72fb76ff486c90c",
+                "reference": "30782525e035e6afc0f6d957c72fb76ff486c90c",
                 "shasum": ""
             },
             "require": {
@@ -518,7 +550,7 @@
                 "source": "https://github.com/schmunk42/p3pages/tree/release/0.17.0",
                 "issues": "https://github.com/schmunk42/p3pages/issues"
             },
-            "time": "2013-10-08 09:48:03"
+            "time": "2013-10-10 04:09:42"
         },
         {
             "name": "phundament/p3widgets",
@@ -526,12 +558,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3widgets.git",
-                "reference": "589ea57207512ebbe15d7009bee3d4dca381d963"
+                "reference": "48ca75b9edb7e5aa8263647fcf518bee73abf0f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/589ea57207512ebbe15d7009bee3d4dca381d963",
-                "reference": "589ea57207512ebbe15d7009bee3d4dca381d963",
+                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/48ca75b9edb7e5aa8263647fcf518bee73abf0f7",
+                "reference": "48ca75b9edb7e5aa8263647fcf518bee73abf0f7",
                 "shasum": ""
             },
             "require": {
@@ -573,7 +605,7 @@
                 "source": "https://github.com/schmunk42/p3widgets/tree/develop",
                 "issues": "https://github.com/schmunk42/p3widgets/issues"
             },
-            "time": "2013-10-08 09:46:15"
+            "time": "2013-10-10 04:07:21"
         },
         {
             "name": "sammaye/auditrail2",
@@ -994,7 +1026,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/status-behavior.git",
-                "reference": "7d2737be13038d54a8b8c1e226edcc4a01494ead"
+                "reference": "565bb1832b2fab054c1632b769c613385587ff35"
             },
             "type": "library",
             "autoload": {
@@ -1003,7 +1035,7 @@
                 ]
             },
             "description": "Yii Framework Active Record Status behavior for models",
-            "time": "2013-10-06 03:05:22"
+            "time": "2013-10-08 14:00:22"
         },
         {
             "name": "yiisoft/yii",
@@ -1307,16 +1339,16 @@
             "package": "phundament/p3widgets"
         },
         {
-            "alias": "0.6-dev",
-            "alias_normalized": "0.6.0.0-dev",
-            "version": "9999999-dev",
-            "package": "yiiext/status-behavior"
-        },
-        {
             "alias": "0.7.2.1",
             "alias_normalized": "0.7.2.1",
             "version": "9999999-dev",
             "package": "yiiext/migrate-command"
+        },
+        {
+            "alias": "0.6-dev",
+            "alias_normalized": "0.6.0.0-dev",
+            "version": "9999999-dev",
+            "package": "yiiext/status-behavior"
         },
         {
             "alias": "0.13.0",
@@ -1325,11 +1357,12 @@
             "package": "phundament/gii-template-collection"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "stability-flags": {
         "crisu83/yii-rights": 20,
         "gusnips/yii-translate": 20,
         "malyshev/yii-debug-toolbar": 20,
+        "mikehaertl/packagecompressor": 20,
         "mishamx/yii-user": 20,
         "phundament/backend-theme": 20,
         "phundament/jquery-file-upload": 20,
@@ -1341,8 +1374,11 @@
         "phundament/p3widgets": 20,
         "schmunk42/ckeditor-configurator": 20,
         "waalzer/app-demo-data": 20,
-        "yiiext/status-behavior": 20,
         "yiiext/migrate-command": 20,
+        "yiiext/status-behavior": 20,
+        "schmunk42/access": 20,
+        "schmunk42/adjacency-list-behavior": 20,
+        "nordsoftware/yii-utils": 20,
         "phundament/gii-template-collection": 20,
         "phundament/lessii": 20,
         "schmunk42/giic": 20

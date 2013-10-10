@@ -22,6 +22,10 @@
     },
     "repositories":[
         {
+            "type": "git",
+            "url": "https://github.com/schmunk42/packagecompressor.git"
+        },
+        {
             "type":"git",
             "url":"https://github.com/schmunk42/yii-rights.git"
         },
@@ -38,13 +42,14 @@
             "url":"http://packages.phundament.com"
         }
     ],
-    "minimum-stability":"dev",
+    "minimum-stability":"stable",
     "require":{
         "php":">=5.3.2",
         "clevertech/yiibooster":"2.*",
         "crisu83/yii-rights":"@dev",
         "gusnips/yii-translate" : "dev-master",
         "malyshev/yii-debug-toolbar":"@dev",
+        "mikehaertl/packagecompressor": "dev-master",
         "mishamx/yii-user":"@dev",
         "nordsoftware/yii-emailer": "1.*",
         "phundament/backend-theme":"@dev",
@@ -61,9 +66,12 @@
         "waalzer/app-demo-data": "@dev",
         "yiiext/fancybox-widget":"0.*",
         "yiiext/lipsum-widget":"0.*",
-        "yiiext/status-behavior":"dev-master as 0.6-dev",
         "yiiext/migrate-command":"dev-master#35f315b as 0.7.2.1",
-        "yiisoft/yii":"1.1.14"
+        "yiisoft/yii":"1.1.14",
+        "yiiext/status-behavior":"dev-master as 0.6-dev",
+        "schmunk42/access":"@dev",
+        "schmunk42/adjacency-list-behavior":"@dev",
+        "nordsoftware/yii-utils": "@dev"
     },
     "require-dev":{
         "cloudhead/less.js":"1.3.*",
