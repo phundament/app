@@ -23,6 +23,10 @@ $I->click('Overview');
 $I->see('Application', 'H1');
 $I->click('Dashboard');
 $I->see('Application', 'H1');
+$I->click('Dictionaries');
+$I->see('Manage');
+$I->click('Translate Missing');
+$I->see('Missing Translations');
 
 // Links Application Menu
 
@@ -34,7 +38,10 @@ $I->click('Overview');
 $I->see('Application');
 
 // Links User Menu
+
 $I->click('Profile');
 $I->see('Your profile');
 $I->click('List');
 $I->see('List User');
+
+
