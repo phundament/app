@@ -25,11 +25,24 @@ Upgrade Guide
         "phundament/p3widgets":"dev-develop as 0.16.0",
 
 
+#### `console.php`
+
+##### migration modules
+
+        'auditrail' => 'vendor.sammaye.auditrail2.migrations',
+
+##### composer callbacks
+
+        'backend-theme' => array(
+            'class'           => 'vendor.phundament.backend-theme.commands.PhBackendThemeCommand',
+            'themePath'       => 'application.themes',
+        ),
+
+
 #### `main.php`
 
 ##### aliases
 
-        'auditrail' => 'vendor.sammaye.auditrail2.migrations',
         'bootstrap' => 'vendor.clevertech.yiibooster.src',
 
 ##### imports        
