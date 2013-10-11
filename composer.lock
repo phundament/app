@@ -29,7 +29,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii-rights.git",
-                "reference": "2488ca66299611a7db051ea0457e1b89902f5593"
+                "reference": "4f2ccb66378e1e5bf37deae34635fe68bf057faa"
             },
             "type": "library",
             "authors": [
@@ -39,7 +39,7 @@
                 }
             ],
             "description": "Yii Rights module",
-            "time": "2013-10-06 16:08:30"
+            "time": "2013-10-11 09:20:14"
         },
         {
             "name": "gusnips/yii-translate",
@@ -558,12 +558,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3widgets.git",
-                "reference": "48ca75b9edb7e5aa8263647fcf518bee73abf0f7"
+                "reference": "19b707f7f6a84577252eec1a31b43eb3047b8a06"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/48ca75b9edb7e5aa8263647fcf518bee73abf0f7",
-                "reference": "48ca75b9edb7e5aa8263647fcf518bee73abf0f7",
+                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/19b707f7f6a84577252eec1a31b43eb3047b8a06",
+                "reference": "19b707f7f6a84577252eec1a31b43eb3047b8a06",
                 "shasum": ""
             },
             "require": {
@@ -605,7 +605,7 @@
                 "source": "https://github.com/schmunk42/p3widgets/tree/develop",
                 "issues": "https://github.com/schmunk42/p3widgets/issues"
             },
-            "time": "2013-10-10 04:07:21"
+            "time": "2013-10-11 00:40:55"
         },
         {
             "name": "sammaye/auditrail2",
