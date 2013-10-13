@@ -231,6 +231,54 @@ return array(
         'cache'         => array(
             'class' => 'CDummyCache',
         ),
+        'clientScript'  => array(
+            'class'              => 'vendor.mikehaertl.packagecompressor.PackageCompressor',
+            'coreScriptPosition' => 0, // HEAD
+            'enableCompression'  => false, // enable to activate component
+            'combineOnly'        => true, // set to false on production systems
+            'rewriteCssUris'     => true,
+            'blockedScripts'     => array(
+                'jquery.fancybox-1.3.4.js',
+                'jquery.fancybox-1.3.4.css',
+            ),
+            'packages'           => array(
+                'fancybox' => array(
+                    'basePath' => 'vendor.yiiext.fancybox-widget.assets',
+                    'depends'  => array(
+                        'jquery',
+                    ),
+                    'js'       => array(
+                        'jquery.fancybox-1.3.4.js',
+                    ),
+                    'css'      => array(
+                        'jquery.fancybox-1.3.4.css',
+                    )
+                ),
+                'frontend' => array(
+                    'basePath' => 'application.themes.frontend.assets',
+                    'depends'  => array(
+                        'jquery',
+                        'jquery.ui',
+                        'bbq',
+                        'bootstrap.js',
+                        'bootbox',
+                        'notify',
+                        'jquery-css',
+                        'bootstrap-yii',
+                        'font-awesome',
+                        'cookie',
+                        'jquery',
+                        'fancybox',
+                    ),
+                    /*'js'      => array(
+                        'js/app.js',
+                    ),*/
+                    'css'      => array(
+                        'p3.css',
+                    )
+                ),
+            )
+        ),
         'db'            => array(
             'tablePrefix'      => '',
             // SQLite
