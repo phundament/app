@@ -1,4 +1,5 @@
 /vendor/
+/docs/
 /app/config/*-local.php
 /tests/codeception/_log
 
