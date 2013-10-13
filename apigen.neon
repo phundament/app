@@ -1,5 +1,6 @@
 # Source file or directory to parse
 source:
+ - app
  - vendor
 # Directory where to save the generated documentation
 destination: docs
@@ -9,11 +10,16 @@ extensions: [php]
 exclude:
  - */migrations/*
  - */migrations-demo/*
- - */tests/*
  - */crisu83/yii-bootstrap/demo/*
  - */yiisoft/yii/demos/*
+ - */yiisoft/yii/framework/cli/views/webapp/*
  - */yiisoft/yii/framework/yiilite.php
+ - */swiftmailer/swiftmailer/* 
  - */composer/*
+ - */tests/*
+ - */test/*
+ - */test-suite/*
+ 
 # Don't generate documentation for classes from file or directory with this mask
 skipDocPath:
  - */yiisoft/yii/*
@@ -25,7 +31,7 @@ charset: auto
 main:
 
 # Title of generated documentation
-title: Phundament App Class Reference
+title: phundament/app API Class Reference
 # Documentation base URL
 baseUrl:
 # Google Custom Search ID
