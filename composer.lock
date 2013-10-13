@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "2b0577c65d8a8332f6500b962bad2489",
+    "hash": "055d5a57c76e4496b25ef05c250d21e4",
     "packages": [
         {
             "name": "clevertech/yiibooster",
@@ -99,13 +99,14 @@
         },
         {
             "name": "mikehaertl/packagecompressor",
-            "version": "dev-master",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/packagecompressor.git",
-                "reference": "512a2ea1938868dc9177666e0f2a467d70de9094"
+                "reference": "cf53e842e561737df67f7ac4233184ebafc1d792"
             },
             "require": {
+                "mrclay/minify": "2.1.*",
                 "php": ">=5.0.0"
             },
             "type": "yii-extension",
@@ -127,7 +128,7 @@
                 "minify",
                 "yii"
             ],
-            "time": "2013-10-10 03:42:47"
+            "time": "2013-10-13 21:24:07"
         },
         {
             "name": "mikehaertl/translatable",
@@ -184,6 +185,46 @@
             "description": "Yii PHP Framework extension for registration and management users accounts.",
             "homepage": "https://github.com/phundament/yii-user",
             "time": "2013-10-01 10:19:48"
+        },
+        {
+            "name": "mrclay/minify",
+            "version": "2.1.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mrclay/minify.git",
+                "reference": "db7fe244932ea77cf1438965693672ea12b33da8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mrclay/minify/zipball/db7fe244932ea77cf1438965693672ea12b33da8",
+                "reference": "db7fe244932ea77cf1438965693672ea12b33da8",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pcre": "*",
+                "php": ">=5.2.1"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "min/lib/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Stephen Clay",
+                    "email": "steve@mrclay.org",
+                    "homepage": "http://www.mrclay.org/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Minify is a PHP5 app that helps you follow several rules for client-side performance. It combines multiple CSS or Javascript files, removes unnecessary whitespace and comments, and serves them with gzip encoding and optimal client-side cache headers",
+            "homepage": "http://code.google.com/p/minify/",
+            "time": "2013-07-23 19:58:28"
         },
         {
             "name": "nordsoftware/yii-emailer",
@@ -252,12 +293,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii-backend-theme.git",
-                "reference": "227b3dd9d1bb1c291f47738e4adca51a27bb1bba"
+                "reference": "96a9ae4067b3fe5b39c0a4685fc7a9af1857b6c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii-backend-theme/zipball/227b3dd9d1bb1c291f47738e4adca51a27bb1bba",
-                "reference": "227b3dd9d1bb1c291f47738e4adca51a27bb1bba",
+                "url": "https://api.github.com/repos/schmunk42/yii-backend-theme/zipball/96a9ae4067b3fe5b39c0a4685fc7a9af1857b6c5",
+                "reference": "96a9ae4067b3fe5b39c0a4685fc7a9af1857b6c5",
                 "shasum": ""
             },
             "require": {
@@ -290,7 +331,7 @@
                 "theme",
                 "yii"
             ],
-            "time": "2013-10-10 03:52:52"
+            "time": "2013-10-13 21:54:15"
         },
         {
             "name": "phundament/jquery-file-upload",
@@ -317,12 +358,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3admin.git",
-                "reference": "2195c9cbf37124276e5f1b920bca7ff976a4edfa"
+                "reference": "eaeb27aaaf477a8a6671e0f64c86afe424c2b43a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3admin/zipball/2195c9cbf37124276e5f1b920bca7ff976a4edfa",
-                "reference": "2195c9cbf37124276e5f1b920bca7ff976a4edfa",
+                "url": "https://api.github.com/repos/schmunk42/p3admin/zipball/eaeb27aaaf477a8a6671e0f64c86afe424c2b43a",
+                "reference": "eaeb27aaaf477a8a6671e0f64c86afe424c2b43a",
                 "shasum": ""
             },
             "require": {
@@ -356,7 +397,7 @@
                 "source": "https://github.com/schmunk42/p3admin/tree/master",
                 "issues": "https://github.com/schmunk42/p3admin/issues"
             },
-            "time": "2013-10-07 09:49:34"
+            "time": "2013-10-13 21:50:45"
         },
         {
             "name": "phundament/p3bootstrap",
@@ -364,12 +405,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3bootstrap.git",
-                "reference": "4cf413afb423d0387b92db172b029676b2e2e9ac"
+                "reference": "884baea7a3b8d13c1d0090f73086573ac9ab9c9e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3bootstrap/zipball/4cf413afb423d0387b92db172b029676b2e2e9ac",
-                "reference": "4cf413afb423d0387b92db172b029676b2e2e9ac",
+                "url": "https://api.github.com/repos/schmunk42/p3bootstrap/zipball/884baea7a3b8d13c1d0090f73086573ac9ab9c9e",
+                "reference": "884baea7a3b8d13c1d0090f73086573ac9ab9c9e",
                 "shasum": ""
             },
             "require": {
@@ -406,7 +447,7 @@
                 "source": "https://github.com/schmunk42/p3bootstrap/tree/develop",
                 "issues": "https://github.com/schmunk42/p3bootstrap/issues"
             },
-            "time": "2013-10-07 09:49:04"
+            "time": "2013-10-13 21:53:10"
         },
         {
             "name": "phundament/p3extensions",
@@ -414,12 +455,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3extensions.git",
-                "reference": "2cf92a8999953eabb467289b2729ea338447d0d7"
+                "reference": "157b90492eb04e913d32f52f05b371b319494c1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3extensions/zipball/2cf92a8999953eabb467289b2729ea338447d0d7",
-                "reference": "2cf92a8999953eabb467289b2729ea338447d0d7",
+                "url": "https://api.github.com/repos/schmunk42/p3extensions/zipball/157b90492eb04e913d32f52f05b371b319494c1b",
+                "reference": "157b90492eb04e913d32f52f05b371b319494c1b",
                 "shasum": ""
             },
             "require": {
@@ -448,7 +489,7 @@
                 "source": "https://github.com/schmunk42/p3extensions/tree/develop",
                 "issues": "https://github.com/schmunk42/p3extensions/issues"
             },
-            "time": "2013-10-10 04:12:53"
+            "time": "2013-10-11 23:22:53"
         },
         {
             "name": "phundament/p3media",
@@ -456,12 +497,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3media.git",
-                "reference": "83b04644177087382a02108292f14c782ab5d26e"
+                "reference": "575d3412b589ace30007005bf6b0a12d62c89890"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3media/zipball/83b04644177087382a02108292f14c782ab5d26e",
-                "reference": "83b04644177087382a02108292f14c782ab5d26e",
+                "url": "https://api.github.com/repos/schmunk42/p3media/zipball/575d3412b589ace30007005bf6b0a12d62c89890",
+                "reference": "575d3412b589ace30007005bf6b0a12d62c89890",
                 "shasum": ""
             },
             "require": {
@@ -494,7 +535,7 @@
                 "source": "https://github.com/schmunk42/p3media/tree/develop",
                 "issues": "https://github.com/schmunk42/p3media/issues"
             },
-            "time": "2013-10-10 15:11:18"
+            "time": "2013-10-13 21:51:33"
         },
         {
             "name": "phundament/p3pages",

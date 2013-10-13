@@ -49,7 +49,7 @@
         "crisu83/yii-rights":"@dev",
         "gusnips/yii-translate" : "dev-master",
         "malyshev/yii-debug-toolbar":"@dev",
-        "mikehaertl/packagecompressor": "dev-master",
+        "mikehaertl/packagecompressor": "dev-develop",
         "mishamx/yii-user":"@dev",
         "nordsoftware/yii-emailer": "1.*",
         "phundament/backend-theme":"@dev",
@@ -71,7 +71,8 @@
         "yiiext/status-behavior":"dev-master as 0.6-dev",
         "schmunk42/access":"@dev",
         "schmunk42/adjacency-list-behavior":"@dev",
-        "nordsoftware/yii-utils": "@dev"
+        "nordsoftware/yii-utils": "@dev",
+        "mrclay/minify": "2.1.*"
     },
     "require-dev":{
         "cloudhead/less.js":"1.3.*",
