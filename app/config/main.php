@@ -65,6 +65,7 @@ return array(
         'vendor.phundament.p3extensions.helpers.*', // shared classes - P3StringHelper
         'vendor.phundament.p3extensions.validators.*', // shared classes - P3StringHelper
         'vendor.phundament.p3pages.models.*', // Meta description and keywords (P3Media)
+        'vendor.phundament.p3media.models.*', // Meta description and keywords (P3Media)
         'vendor.phundament.p3extensions.widgets.ckeditor.*', // shared classes
         // imports for components from packages, which do not support composer autoloading
         'vendor.mishamx.yii-user.models.*', // User Model
@@ -72,6 +73,15 @@ return array(
         'vendor.yiiext.fancybox-widget.*', // Fancybox Widget
         'vendor.clevertech.yiibooster.src.widgets.*', //
         'vendor.sammaye.auditrail2.models.AuditTrail', //
+        'vendor.bwoester.yii-static-events-component.*',
+        'vendor.bwoester.yii-event-interceptor.*',
+    ),
+    'behaviors' => array(
+        // attach EventBridgeBehavior to application, so we can attach to
+        // application events on a per class base.
+        'eventBridge' => array(
+            'class'  => 'EventBridgeBehavior',
+        ),
     ),
     'modules'    => array(
         // backend for ckeditor styles and templates
@@ -300,6 +310,33 @@ return array(
         'errorHandler'  => array(
             // use 'site/error' action to display errors
             'errorAction' => 'site/error',
+        ),
+        'events' => array(
+            'class'  => 'EventRegistry',
+            'attach' => array(
+                // eg. set default access fields in models with event-bridge behavior
+                'P3Widget' => array(
+                    'onAfterConstruct' => array(
+                        function( $event ) {
+                            //$event->sender->access_delete = 'Editor';
+                        },
+                    ),
+                ),
+                'P3Page' => array(
+                    'onAfterConstruct' => array(
+                        function( $event ) {
+                            
+                        },
+                    ),
+                ),
+                'P3Media' => array(
+                    'onAfterConstruct' => array(
+                        function( $event ) {
+
+                        },
+                    ),
+                ),
+            ),
         ),
         'image'         => array(
             'class'  => 'vendor.phundament.p3extensions.components.image.CImageComponent',

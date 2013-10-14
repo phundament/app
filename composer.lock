@@ -6,6 +6,42 @@
     "hash": "055d5a57c76e4496b25ef05c250d21e4",
     "packages": [
         {
+            "name": "bwoester/yii-event-interceptor",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bwoester/yii-event-interceptor.git",
+                "reference": "28d9305a17f966c4e06e99092cc50de047a22445"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/bwoester/yii-event-interceptor/archive/28d9305a17f966c4e06e99092cc50de047a22445.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "yii-extension",
+            "description": "A component, that allows to intercept events raised by observed components.",
+            "homepage": "https://github.com/bwoester/yii-event-interceptor"
+        },
+        {
+            "name": "bwoester/yii-static-events-component",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bwoester/yii-static-events-component.git",
+                "reference": "71e3a74a28ab8307b87947a3db483226d5b90982"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/bwoester/yii-static-events-component/archive/71e3a74a28ab8307b87947a3db483226d5b90982.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "yii-extension",
+            "description": "Allows you to register event handlers on class base.",
+            "homepage": "https://github.com/bwoester/yii-static-events-component"
+        },
+        {
             "name": "clevertech/yiibooster",
             "version": "v2.0.0",
             "source": {
@@ -358,12 +394,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3admin.git",
-                "reference": "eaeb27aaaf477a8a6671e0f64c86afe424c2b43a"
+                "reference": "bf884189df7e699b512f18755b4c1fcc33abb565"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3admin/zipball/eaeb27aaaf477a8a6671e0f64c86afe424c2b43a",
-                "reference": "eaeb27aaaf477a8a6671e0f64c86afe424c2b43a",
+                "url": "https://api.github.com/repos/schmunk42/p3admin/zipball/bf884189df7e699b512f18755b4c1fcc33abb565",
+                "reference": "bf884189df7e699b512f18755b4c1fcc33abb565",
                 "shasum": ""
             },
             "require": {
@@ -397,7 +433,7 @@
                 "source": "https://github.com/schmunk42/p3admin/tree/master",
                 "issues": "https://github.com/schmunk42/p3admin/issues"
             },
-            "time": "2013-10-13 21:50:45"
+            "time": "2013-10-13 22:21:12"
         },
         {
             "name": "phundament/p3bootstrap",
@@ -497,21 +533,34 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3media.git",
-                "reference": "575d3412b589ace30007005bf6b0a12d62c89890"
+                "reference": "0cdd2ae495e1111a057c2ad936d7cba5b5d49063"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3media/zipball/575d3412b589ace30007005bf6b0a12d62c89890",
-                "reference": "575d3412b589ace30007005bf6b0a12d62c89890",
+                "url": "https://api.github.com/repos/schmunk42/p3media/zipball/0cdd2ae495e1111a057c2ad936d7cba5b5d49063",
+                "reference": "0cdd2ae495e1111a057c2ad936d7cba5b5d49063",
                 "shasum": ""
             },
             "require": {
+                "bwoester/yii-event-interceptor": "1.*",
+                "bwoester/yii-static-events-component": "1.*",
                 "clevertech/yiibooster": ">=1.0,<3.0",
+                "mikehaertl/translatable": "1.*",
                 "php": ">=5.3.0",
                 "phundament/p3extensions": ">=0.17.0",
+                "sammaye/auditrail2": "1.*",
+                "schmunk42/access": "@dev",
+                "schmunk42/adjacency-list-behavior": "@dev",
+                "schmunk42/relation": "1.*",
+                "yiiext/status-behavior": "0.6.*",
                 "yiisoft/yii": "1.1.*"
             },
             "type": "yii-extension",
+            "autoload": {
+                "classmap": [
+                    "models/"
+                ]
+            },
             "license": [
                 "BSD-3-Clause"
             ],
@@ -535,7 +584,7 @@
                 "source": "https://github.com/schmunk42/p3media/tree/develop",
                 "issues": "https://github.com/schmunk42/p3media/issues"
             },
-            "time": "2013-10-13 21:51:33"
+            "time": "2013-10-14 01:30:46"
         },
         {
             "name": "phundament/p3pages",
@@ -543,15 +592,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3pages.git",
-                "reference": "30782525e035e6afc0f6d957c72fb76ff486c90c"
+                "reference": "63be9eb1d3082b0310e91422177f3610c5ebc418"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/30782525e035e6afc0f6d957c72fb76ff486c90c",
-                "reference": "30782525e035e6afc0f6d957c72fb76ff486c90c",
+                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/63be9eb1d3082b0310e91422177f3610c5ebc418",
+                "reference": "63be9eb1d3082b0310e91422177f3610c5ebc418",
                 "shasum": ""
             },
             "require": {
+                "bwoester/yii-event-interceptor": "1.*",
+                "bwoester/yii-static-events-component": "1.*",
                 "clevertech/yiibooster": ">=1.0,<3.0",
                 "mikehaertl/translatable": "1.*",
                 "php": ">=5.3.0",
@@ -591,7 +642,7 @@
                 "source": "https://github.com/schmunk42/p3pages/tree/release/0.17.0",
                 "issues": "https://github.com/schmunk42/p3pages/issues"
             },
-            "time": "2013-10-10 04:09:42"
+            "time": "2013-10-14 01:30:06"
         },
         {
             "name": "phundament/p3widgets",
@@ -599,15 +650,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3widgets.git",
-                "reference": "19b707f7f6a84577252eec1a31b43eb3047b8a06"
+                "reference": "9f7b05b238aa2f8a94dc841bafdf6830531b4e85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/19b707f7f6a84577252eec1a31b43eb3047b8a06",
-                "reference": "19b707f7f6a84577252eec1a31b43eb3047b8a06",
+                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/9f7b05b238aa2f8a94dc841bafdf6830531b4e85",
+                "reference": "9f7b05b238aa2f8a94dc841bafdf6830531b4e85",
                 "shasum": ""
             },
             "require": {
+                "bwoester/yii-event-interceptor": "1.*",
+                "bwoester/yii-static-events-component": "1.*",
                 "clevertech/yiibooster": ">=1.0,<3.0",
                 "mikehaertl/translatable": "1.*",
                 "php": ">=5.3.0",
@@ -646,7 +699,7 @@
                 "source": "https://github.com/schmunk42/p3widgets/tree/develop",
                 "issues": "https://github.com/schmunk42/p3widgets/issues"
             },
-            "time": "2013-10-11 00:40:55"
+            "time": "2013-10-14 01:29:13"
         },
         {
             "name": "sammaye/auditrail2",
