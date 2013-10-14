@@ -76,11 +76,11 @@ return array(
         'vendor.bwoester.yii-static-events-component.*',
         'vendor.bwoester.yii-event-interceptor.*',
     ),
-    'behaviors' => array(
+    'behaviors'  => array(
         // attach EventBridgeBehavior to application, so we can attach to
         // application events on a per class base.
         'eventBridge' => array(
-            'class'  => 'EventBridgeBehavior',
+            'class' => 'EventBridgeBehavior',
         ),
     ),
     'modules'    => array(
@@ -311,27 +311,27 @@ return array(
             // use 'site/error' action to display errors
             'errorAction' => 'site/error',
         ),
-        'events' => array(
+        'events'        => array(
             'class'  => 'EventRegistry',
             'attach' => array(
                 // eg. set default access fields in models with event-bridge behavior
                 'P3Widget' => array(
                     'onAfterConstruct' => array(
-                        function( $event ) {
+                        function ($event) {
                             //$event->sender->access_delete = 'Editor';
                         },
                     ),
                 ),
-                'P3Page' => array(
+                'P3Page'   => array(
                     'onAfterConstruct' => array(
-                        function( $event ) {
-                            
+                        function ($event) {
+
                         },
                     ),
                 ),
-                'P3Media' => array(
+                'P3Media'  => array(
                     'onAfterConstruct' => array(
-                        function( $event ) {
+                        function ($event) {
 
                         },
                     ),
@@ -360,7 +360,7 @@ return array(
             ),
         ),
         'messages'      => array(
-            'class'                => 'CDbMessageSource',
+            'class' => 'CDbMessageSource',
             //'onMissingTranslation'  => configured in env-development.php,
         ),
         'translate'     => array(
