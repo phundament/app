@@ -65,6 +65,7 @@ $mainConfig = array(
         'vendor.yiiext.fancybox-widget.*', // Fancybox Widget
         'vendor.clevertech.yiibooster.src.widgets.*', //
         'editable.*', // Include X-Editable for Yii classes
+        'vendor.schmunk42.relation.widgets.*', //Include For p3media for media meta update.
     ),
     'modules'    => array(
         // backend for ckeditor styles and templates
