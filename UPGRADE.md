@@ -12,7 +12,7 @@ Upgrade Guide
 
 #### `main-local.php`
 
-This file has to be created, either by the webapp command or by renaming your current `local.php`.
+This file has to be created, either by the webapp command or by renaming your current `local.php`. [Issue 93](https://github.com/phundament/app/issues/93)
 
 ### Upgrading from 0.15.x-0.20.x
 
