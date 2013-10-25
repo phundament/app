@@ -8,6 +8,12 @@ document, if you're experiencing problems.
 Upgrade Guide
 -------------
 
+### Upgrading from 0.21.x
+
+#### `main-local.php`
+
+This file has to be created, either by the webapp command or by renaming your current `local.php`.
+
 ### Upgrading from 0.15.x-0.20.x
 
 
