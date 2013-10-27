@@ -45,12 +45,14 @@ This file has to be created, either by the webapp command or by renaming your cu
 
     app/yiic migrate
 
-#### Model attributes
+#### API and model attributes updates
 
 * nameId => name_id
 * t('seoUrl') => url_param
 * parent => getParent    
-
+* P3MetaDataBehavior::SUPERUSER_ROLE => PhAccessBehavior::SUPERUSER_ROLE
+* P3Page::getActivePage()->t('description') => P3Page::getActivePage()->description
+* P3Page::getActivePage()->p3PageMeta->checkAccessCreate => P3Page::getActivePage()->access_append
 
 
 ### Upgrading from 0.15.x-0.20.x
