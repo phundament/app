@@ -10,9 +10,48 @@ Upgrade Guide
 
 ### Upgrading from 0.21.x
 
+> Note: Version 0.22 introduced major changes
+
 #### `main-local.php`
 
 This file has to be created, either by the webapp command or by renaming your current `local.php`. [Issue 93](https://github.com/phundament/app/issues/93)
+
+#### `main.php`
+
+##### aliases
+
+        'bootstrap' => 'vendor.clevertech.yiibooster.src',
+        'vendor.phundament.p3extensions.widgets.ckeditor.*', // shared classes
+        'vendor.sammaye.auditrail2.models.*',
+        'vendor.clevertech.yiibooster.src.widgets.*', // Bootstrap UI
+
+##### aliases
+
+         'bootstrap' => array(
+            'class' => 'vendor.clevertech.yiibooster.src.components.Bootstrap', // assuming you extracted bootstrap under extensions
+            'coreCss' => true, // whether to register the Bootstrap core CSS (bootstrap.min.css), defaults to true
+            'responsiveCss' => false, // whether to register the Bootstrap responsive CSS (bootstrap-responsive.min.css), default to false
+            'fontAwesomeCss' => true, // whether to register the Bootstrap responsive CSS (bootstrap-responsive.min.css), default to false
+
+#### `console.php`
+
+        'auditrail'      => 'vendor.sammaye.auditrail2.migrations',
+
+#### `index.php`
+
+    require_once(dirname(__FILE__).'/../vendor/autoload.php');
+    
+#### Database
+
+    app/yiic migrate
+
+#### Model attributes
+
+* nameId => name_id
+* t('seoUrl') => url_param
+* parent => getParent    
+
+
 
 ### Upgrading from 0.15.x-0.20.x
 
