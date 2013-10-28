@@ -53,6 +53,7 @@ This file has to be created, either by the webapp command or by renaming your cu
 * P3MetaDataBehavior::SUPERUSER_ROLE => PhAccessBehavior::SUPERUSER_ROLE
 * P3Page::getActivePage()->t('description') => P3Page::getActivePage()->description
 * P3Page::getActivePage()->p3PageMeta->checkAccessCreate => P3Page::getActivePage()->access_append
+* P3Media.mimeType => P3Media.mime_type
 
 
 ### Upgrading from 0.15.x-0.20.x
