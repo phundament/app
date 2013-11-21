@@ -1,7 +1,7 @@
 Phundament
 ==========
 
-**Version 3-0.21.0-dev**
+**Version 3-0.22.0**
 
 
 What is Phundament?
