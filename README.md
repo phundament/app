@@ -72,7 +72,7 @@ Resources
 [![Latest Unstable Version](https://poser.pugx.org/phundament/app/v/unstable.png)](https://packagist.org/packages/phundament/app)
 [![Build Status](https://travis-ci.org/phundament/app.png?branch=develop)](https://travis-ci.org/phundament/app)
 
-[scrutinizer](https://scrutinizer-ci.com/g/phundament/app/)
+[![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/phundament/app/badges/quality-score.png?s=4d1ce01151a4e82df75b563e7ccf0001cc227bd1)](https://scrutinizer-ci.com/g/phundament/app/)
 
 ### Fundamentals
  *  [Documentation](https://github.com/phundament/app/wiki/)
