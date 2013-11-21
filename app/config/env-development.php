@@ -25,7 +25,7 @@ return array(
     'components' => array(
         'messages' => array(
             'class'                => 'CDbMessageSource',
-            'onMissingTranslation' => array('TranslationConverter', 'findInPhpMessageSource'),
+            'onMissingTranslation' => array('TranslationConverter', 'findInPhpMessageSource'), // Notice: degrades performance only enable on development systems
         ),
         'less'     => array(
             'class'        => 'vendor.crisu83.yii-less.components.LessServerCompiler',
