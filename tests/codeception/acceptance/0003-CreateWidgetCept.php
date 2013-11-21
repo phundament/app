@@ -13,5 +13,4 @@ $I->fillField('P3Widget[controller_id]','site');
 $I->fillField('P3Widget[container_id]','top');
 $I->fillField('P3Widget[action_name]','index');
 $I->click('Save', '.form-actions');
-$I->see('View','h1');
 $I->see('Data','h2');
