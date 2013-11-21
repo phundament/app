@@ -68,6 +68,7 @@ return array(
         'vendor.phundament.p3pages.models.*', // Meta description and keywords (P3Media)
         'vendor.phundament.p3media.models.*', // Meta description and keywords (P3Media)
         'vendor.phundament.p3extensions.widgets.ckeditor.*', // shared classes
+        'vendor.schmunk42.relation.widgets.*', //Include For p3media for media meta update.
         // imports for components from packages, which do not support composer autoloading
         'vendor.mishamx.yii-user.models.*', // User Model
         'vendor.crisu83.yii-rights.components.*', // RWebUser
