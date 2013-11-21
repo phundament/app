@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "db26c9e21da461d546757d0b0d382e0e",
+    "hash": "b08cc0e73b326d93027a0dad229f4900",
     "packages": [
         {
             "name": "bwoester/yii-event-interceptor",
@@ -389,12 +389,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii-backend-theme.git",
-                "reference": "763279b60ee3dcc62ff54e29fe20e4695b11a554"
+                "reference": "8631a672ec0c2a050805f6d1795705ed8cbddc79"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii-backend-theme/zipball/763279b60ee3dcc62ff54e29fe20e4695b11a554",
-                "reference": "763279b60ee3dcc62ff54e29fe20e4695b11a554",
+                "url": "https://api.github.com/repos/schmunk42/yii-backend-theme/zipball/8631a672ec0c2a050805f6d1795705ed8cbddc79",
+                "reference": "8631a672ec0c2a050805f6d1795705ed8cbddc79",
                 "shasum": ""
             },
             "require": {
@@ -427,7 +427,7 @@
                 "theme",
                 "yii"
             ],
-            "time": "2013-10-25 17:29:47"
+            "time": "2013-11-21 02:07:14"
         },
         {
             "name": "phundament/jquery-file-upload",
@@ -450,7 +450,7 @@
         },
         {
             "name": "phundament/p3admin",
-            "version": "dev-master",
+            "version": "0.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3admin.git",
@@ -470,6 +470,7 @@
                 "yiisoft/yii": ">=1.1.12"
             },
             "type": "yii-extension",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -483,30 +484,26 @@
             "description": "Yii application info and skeleton",
             "homepage": "http://phundament.com/",
             "keywords": [
+                "Skeleton",
                 "application",
                 "information",
-                "skeleton",
                 "webapp",
                 "yii"
             ],
-            "support": {
-                "source": "https://github.com/schmunk42/p3admin/tree/master",
-                "issues": "https://github.com/schmunk42/p3admin/issues"
-            },
             "time": "2013-10-24 11:35:12"
         },
         {
             "name": "phundament/p3bootstrap",
-            "version": "dev-develop",
+            "version": "0.22.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3bootstrap.git",
-                "reference": "884baea7a3b8d13c1d0090f73086573ac9ab9c9e"
+                "reference": "0.22.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3bootstrap/zipball/884baea7a3b8d13c1d0090f73086573ac9ab9c9e",
-                "reference": "884baea7a3b8d13c1d0090f73086573ac9ab9c9e",
+                "url": "https://api.github.com/repos/schmunk42/p3bootstrap/zipball/0.22.0",
+                "reference": "0.22.0",
                 "shasum": ""
             },
             "require": {
@@ -547,16 +544,16 @@
         },
         {
             "name": "phundament/p3extensions",
-            "version": "dev-develop",
+            "version": "0.17.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3extensions.git",
-                "reference": "157b90492eb04e913d32f52f05b371b319494c1b"
+                "reference": "0902e60732d00329349bb2aea853ebcc6df94459"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3extensions/zipball/157b90492eb04e913d32f52f05b371b319494c1b",
-                "reference": "157b90492eb04e913d32f52f05b371b319494c1b",
+                "url": "https://api.github.com/repos/schmunk42/p3extensions/zipball/0902e60732d00329349bb2aea853ebcc6df94459",
+                "reference": "0902e60732d00329349bb2aea853ebcc6df94459",
                 "shasum": ""
             },
             "require": {
@@ -565,6 +562,7 @@
                 "yiisoft/yii": ">=1.1.12,<2.0"
             },
             "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -581,24 +579,20 @@
                 "components",
                 "phundament"
             ],
-            "support": {
-                "source": "https://github.com/schmunk42/p3extensions/tree/develop",
-                "issues": "https://github.com/schmunk42/p3extensions/issues"
-            },
-            "time": "2013-10-11 23:22:53"
+            "time": "2013-11-21 02:12:08"
         },
         {
             "name": "phundament/p3media",
-            "version": "dev-develop",
+            "version": "0.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3media.git",
-                "reference": "27813cc97d35bd1e28d7d4edb4dcf879b77808ea"
+                "reference": "0.16.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3media/zipball/27813cc97d35bd1e28d7d4edb4dcf879b77808ea",
-                "reference": "27813cc97d35bd1e28d7d4edb4dcf879b77808ea",
+                "url": "https://api.github.com/repos/schmunk42/p3media/zipball/0.16.0",
+                "reference": "0.16.0",
                 "shasum": ""
             },
             "require": {
@@ -643,20 +637,20 @@
                 "source": "https://github.com/schmunk42/p3media/tree/develop",
                 "issues": "https://github.com/schmunk42/p3media/issues"
             },
-            "time": "2013-11-21 01:02:38"
+            "time": "2013-11-21 02:00:49"
         },
         {
             "name": "phundament/p3pages",
-            "version": "dev-release/0.17.0",
+            "version": "0.17.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3pages.git",
-                "reference": "b667e4b83ba7182560cbb2267ee5ff634d66b4a4"
+                "reference": "ec52ff3e471168902eefef8f92b59583ecc33fed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/b667e4b83ba7182560cbb2267ee5ff634d66b4a4",
-                "reference": "b667e4b83ba7182560cbb2267ee5ff634d66b4a4",
+                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/ec52ff3e471168902eefef8f92b59583ecc33fed",
+                "reference": "ec52ff3e471168902eefef8f92b59583ecc33fed",
                 "shasum": ""
             },
             "require": {
@@ -678,6 +672,7 @@
                     "models/"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -691,29 +686,25 @@
             "description": "Page Manager",
             "homepage": "https://github.com/schmunk42/p3pages",
             "keywords": [
+                "Sitemap",
                 "page",
-                "sitemap",
                 "structure",
                 "tree"
             ],
-            "support": {
-                "source": "https://github.com/schmunk42/p3pages/tree/release/0.17.0",
-                "issues": "https://github.com/schmunk42/p3pages/issues"
-            },
-            "time": "2013-11-21 01:03:15"
+            "time": "2013-11-21 01:39:59"
         },
         {
             "name": "phundament/p3widgets",
-            "version": "dev-develop",
+            "version": "0.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3widgets.git",
-                "reference": "c7bc599717397480df704e47ef974c4fdbae2df2"
+                "reference": "0.16.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/c7bc599717397480df704e47ef974c4fdbae2df2",
-                "reference": "c7bc599717397480df704e47ef974c4fdbae2df2",
+                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/0.16.0",
+                "reference": "0.16.0",
                 "shasum": ""
             },
             "require": {
@@ -1455,42 +1446,6 @@
     ],
     "aliases": [
         {
-            "alias": "0.16.0",
-            "alias_normalized": "0.16.0.0",
-            "version": "9999999-dev",
-            "package": "phundament/p3admin"
-        },
-        {
-            "alias": "0.17.0",
-            "alias_normalized": "0.17.0.0",
-            "version": "dev-develop",
-            "package": "phundament/p3extensions"
-        },
-        {
-            "alias": "0.22.0",
-            "alias_normalized": "0.22.0.0",
-            "version": "dev-develop",
-            "package": "phundament/p3bootstrap"
-        },
-        {
-            "alias": "0.17.0",
-            "alias_normalized": "0.17.0.0",
-            "version": "dev-release/0.17.0",
-            "package": "phundament/p3pages"
-        },
-        {
-            "alias": "0.16.0",
-            "alias_normalized": "0.16.0.0",
-            "version": "dev-develop",
-            "package": "phundament/p3media"
-        },
-        {
-            "alias": "0.16.0",
-            "alias_normalized": "0.16.0.0",
-            "version": "dev-develop",
-            "package": "phundament/p3widgets"
-        },
-        {
             "alias": "0.7.2.1",
             "alias_normalized": "0.7.2.1",
             "version": "9999999-dev",
@@ -1513,12 +1468,6 @@
         "moein7tl/yii-introjs": 20,
         "phundament/backend-theme": 20,
         "phundament/jquery-file-upload": 20,
-        "phundament/p3admin": 20,
-        "phundament/p3extensions": 20,
-        "phundament/p3bootstrap": 20,
-        "phundament/p3pages": 20,
-        "phundament/p3media": 20,
-        "phundament/p3widgets": 20,
         "schmunk42/ckeditor-configurator": 20,
         "waalzer/app-demo-data": 20,
         "yiiext/migrate-command": 20,
