@@ -31,10 +31,6 @@
         },
         {
             "type":"git",
-            "url":"https://github.com/schmunk42/status-behavior.git"
-        },
-        {
-            "type":"git",
             "url":"https://github.com/Quexer69/yii.translate.git"
         },
         {
@@ -51,6 +47,7 @@
         "malyshev/yii-debug-toolbar":"@dev",
         "mikehaertl/packagecompressor": "dev-develop",
         "mishamx/yii-user":"@dev",
+        "moein7tl/yii-introjs":"@dev",
         "nordsoftware/yii-emailer": "1.*",
         "phundament/backend-theme":"@dev",
         "phundament/jquery-file-upload": "@dev",
@@ -68,11 +65,8 @@
         "yiiext/lipsum-widget":"0.*",
         "yiiext/migrate-command":"dev-master#35f315b as 0.7.2.1",
         "yiisoft/yii":"1.1.14",
-        "yiiext/status-behavior":"dev-master as 0.6-dev",
-        "schmunk42/access":"@dev",
-        "schmunk42/adjacency-list-behavior":"@dev",
         "nordsoftware/yii-utils": "@dev",
-        "mrclay/minify": "2.1.*"
+        "mikehaertl/translatable": "~1.1.0"
     },
     "require-dev":{
         "cloudhead/less.js":"1.3.*",
