@@ -10,7 +10,8 @@ Upgrade Guide
 
 ### Upgrading from 0.21.x
 
-> Note: Version 0.22 introduced major changes
+> Note: Version 0.22 introduced major database schema changes for p3media/widgets/pages.
+But you can revert these changes and migrate down if you want to. The affected tables will only be renamed.
 
 #### `main-local.php`
 
