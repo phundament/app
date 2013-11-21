@@ -60,7 +60,7 @@ Demo
 ----
 
  * Try a test-drive at the [Demo Page](http://demo.phundament.com/3.0-dev)
-   * Login with `admin` / `admin`. ** The demo website will be resetted every 6 hours. **
+   * Login with `admin` / `admin`. **The demo website will be resetted every 6 hours.**
 
 
 Resources
