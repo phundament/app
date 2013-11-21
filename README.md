@@ -72,6 +72,8 @@ Resources
 [![Latest Unstable Version](https://poser.pugx.org/phundament/app/v/unstable.png)](https://packagist.org/packages/phundament/app)
 [![Build Status](https://travis-ci.org/phundament/app.png?branch=develop)](https://travis-ci.org/phundament/app)
 
+[scrutinizer](https://scrutinizer-ci.com/g/phundament/app/)
+
 ### Fundamentals
  *  [Documentation](https://github.com/phundament/app/wiki/)
  *  [API Class Reference](http://docs.phundament.com/3.0)
