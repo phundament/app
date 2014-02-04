@@ -32,6 +32,11 @@ $config = [
         ],
         'db'           => $db,
     ],
+    'modules'    => [
+        'usr' => [
+            'class' => 'nineinchnick\usr\Module',
+        ],
+    ],
     'params'     => $params,
 ];
 
