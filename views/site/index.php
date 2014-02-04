@@ -7,11 +7,12 @@ $this->title = 'My Yii Application';
 <div class="site-index">
 
     <div class="jumbotron">
-        <h1>Congratulations!</h1>
+        <h1>Hello!</h1>
 
-        <p class="lead">You have successfully created your Yii-powered application.</p>
+        <p class="lead">You have successfully created your Phundament Application.</p>
+        <h4><span class="label label-warning">Please Note that this is an early development version!</span></h4>
 
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
+        <!--<p><a class="btn btn-lg btn-success" href="http://www.phundament.com">Get started with Phundament</a></p>-->
     </div>
 
     <div class="body-content">
