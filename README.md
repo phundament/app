@@ -1,106 +1,75 @@
-Phundament
-==========
+Phundament 4 Application
+========================
 
-**Version 3-0.22.0**
+*Version 4.0-dev*
+-----------------
+
+Phundament 4 is a foundation based on Yii 2 framework best for rapidly developing web 
+applications.
 
 
-What is Phundament?
+DIRECTORY STRUCTURE
 -------------------
 
-Phundament is a solid, highly customizable universal application foundation built with [composer](http://getcomposer.org) 
-upon [Yii Framework](http://yiiframework.com). 
+      assets/             contains assets definition
+      commands/           contains console commands (controllers)
+      config/             contains application configurations
+      controllers/        contains Web controller classes
+      mails/              contains view files for e-mails
+      models/             contains model classes
+      runtime/            contains files generated during runtime
+      tests/              contains various tests for the basic application
+      vendor/             contains dependent 3rd-party packages
+      views/              contains view files for the Web application
+      web/                contains the entry script and Web resources
 
-It's goal is the seamless integration of Yii extensions and libraries bundled in composer packages packages. 
-[Read on…](https://github.com/phundament/app/wiki/Phundament)
 
 
-Quick-Start
------------
+REQUIREMENTS
+------------
 
-### Step 1
-   Option A) If you have [composer already installed](http://getcomposer.org/doc/00-intro.md#installation-nix)
-   
-```
-composer.phar create-project --prefer-dist phundament/app my-app
-```
-   
-   Option B) [Download](https://github.com/phundament/app/tags), extract, enter the app root folder
-      and start the installation process with
-```
-php composer.phar create-project --prefer-dist
-```
+The minimum requirement by this application template that your Web server supports PHP 5.4.0.
 
-When asked, create local configuration files and choose your environment.
 
-### Step 2
+INSTALLATION
+------------
 
-Apply the database migrations and enter your desired admin credentials.
+### Install via Composer
 
-```
-cd my-app
-app/yiic migrate
-```
+If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
+at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
 
-### Step 3
+You can then install this application template using the following command:
 
-Open `http://localhost/my-app/www/index.php` in your browser
+~~~
+php composer.phar create-project --prefer-dist --stability=dev yiisoft/yii2-app-basic basic
+~~~
 
-[Manage your application](https://github.com/phundament/app/wiki/Content-Management)
+Now you should be able to access the application through the following URL, assuming `basic` is the directory
+directly under the Web root.
 
-*You may add the `--no-dev` option for production systems or use `--prefer-source` if you want to develop packages.*
+~~~
+http://localhost/basic/web/
+~~~
 
-*Note: if you want to install Phundament 3 with a MySQL database, you have to update your config first, see the [Setup](https://github.com/phundament/app/wiki/Setup) section in our wiki.*
 
-Documentation
+CONFIGURATION
 -------------
 
- * [The Definitive Guide to Phundament](https://github.com/phundament/app/wiki)
+### Database
 
-Demo
-----
+Edit the file `config/db.php` with real data, for example:
 
- * Try a test-drive at the [Demo Page](http://demo.phundament.com/3.0-dev)
-   * Login with `admin` / `admin`. **The demo website will be resetted every 6 hours.**
+```php
+return [
+	'class' => 'yii\db\Connection',
+	'dsn' => 'mysql:host=localhost;dbname=yii2basic',
+	'username' => 'root',
+	'password' => '1234',
+	'charset' => 'utf8',
+];
+```
 
+**NOTE:** Yii won't create the database for you, this has to be done manually before you can access it.
 
-Resources
----------
-
-[![Latest Stable Version](https://poser.pugx.org/phundament/app/v/stable.png)](https://packagist.org/packages/phundament/app)
-[![Total Downloads](https://poser.pugx.org/phundament/app/downloads.png)](https://packagist.org/packages/phundament/app)
-
-[![Latest Unstable Version](https://poser.pugx.org/phundament/app/v/unstable.png)](https://packagist.org/packages/phundament/app)
-[![Build Status](https://travis-ci.org/phundament/app.png?branch=develop)](https://travis-ci.org/phundament/app)
-
-[![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/phundament/app/badges/quality-score.png?s=4d1ce01151a4e82df75b563e7ccf0001cc227bd1)](https://scrutinizer-ci.com/g/phundament/app/)
-[![Dependencies Status](https://depending.in/phundament/app.png)](http://depending.in/phundament/app)
-
-### Fundamentals
- *  [Documentation](https://github.com/phundament/app/wiki/)
- *  [API Class Reference](http://docs.phundament.com/3.0)
- *  [FAQ / Troubleshooting](https://github.com/phundament/app/wiki/FAQ)
- *  [Support](https://github.com/phundament/app/wiki/Support)
- *  [Report a bug](https://github.com/phundament/app/issues)
- *  Composer Repository [packages.phundament.com](http://packages.phundament.com)
-
-### Information
- *  [CHANGELOG](https://github.com/phundament/app/blob/master/CHANGELOG.md)
- *  [License](https://github.com/phundament/app/blob/master/LICENSE) BSD
-
-### Links
- *  [Phundament Website](http://phundament.com)
- *  [View at Yii Extensions](http://www.yiiframework.com/extension/phundament/)
- *  [View at packagist.org](https://packagist.org/packages/phundament/app)
- *  [Fork on github](https://github.com/phundament/app)
- *  [Downloads](https://github.com/phundament/app/tags)
- *  [Continuous Integration](https://travis-ci.org/phundament/app.png?branch=master)  
- *  [Company Website](http://herzogkommunikation.de)
- *  [Demo Website](http://demo.phundament.com/3.0-dev/)
-
-### Social Networks
- *  [Twitter](http://twitter.com/#!/phundament)
- *  [Facebook](http://www.facebook.com/phundament)
- *  [Google+](https://plus.google.com/114873431066202526630)
-
-### Contact
- *  phundament@usrbin.de
+Also check and edit the other files in the `config/` directory to customize your application.
