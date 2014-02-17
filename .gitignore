@@ -2,6 +2,7 @@
 /docs/
 /app/config/*-local.php
 /tests/codeception/_log
+/tmp
 
 nbproject
 .DS_Store
