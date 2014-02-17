@@ -88,3 +88,13 @@ DOCUMENTATION
 
 **Since Phundament is a template for your custom application, please update this document with your project
 specific documentation and setup process.**
+
+
+YII2 DEVELOPMENT PACKAGES
+-------------------------
+
+Rename `composer.json.dev` and update `web/index.php`
+
+```
+require(__DIR__ . '/../vendor/yiisoft/yii2-dev/framework/Yii.php');
+```
