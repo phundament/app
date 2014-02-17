@@ -55,6 +55,12 @@ AppAsset::register($this);
     ?>
 
     <div class="container">
+        <?php
+        foreach (Yii::$app->session->getAllFlashes() AS $flash) {
+            echo "<div class='alert alert-warning'>{$flash}</div>";
+        }
+        ?>
+
         <?=
         Breadcrumbs::widget(
                    [
