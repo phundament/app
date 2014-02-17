@@ -13,12 +13,19 @@
 		"source": "https://github.com/yiisoft/yii2"
 	},
 	"minimum-stability": "dev",
+    "repositories":[
+        {
+            "type": "git",
+            "url": "https://github.com/schmunk42/yii2-package-browser.git"
+        }
+    ],
 	"require": {
 		"php": ">=5.4.0",
-		"yiisoft/yii2": "*",
+		"yiisoft/yii2-dev": "*",
 		"yiisoft/yii2-bootstrap": "*",
 		"yiisoft/yii2-swiftmailer": "*",
-		"nineinchnick/yii2-usr": "*"
+		"nineinchnick/yii2-usr": "*",
+		"schmunk42/yii2-packaii": "dev-master"
 	},
 	"require-dev": {
 		"yiisoft/yii2-codeception": "*",
@@ -26,7 +33,10 @@
 		"codeception/specify": "*",
 		"codeception/verify": "*",
 		"yiisoft/yii2-debug": "*",
-		"yiisoft/yii2-gii": "*"
+		"yiisoft/yii2-gii": "*",
+        "yiisoft/yii2-coding-standards": "*",
+        "schmunk42/yii2-giiant": "dev-develop",
+        "twbs/bootstrap": "3.*"
 	},
 	"scripts": {
 		"post-create-project-cmd": [
