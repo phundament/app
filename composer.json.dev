@@ -19,7 +19,7 @@
 		"irc": "irc://irc.freenode.net/yii",
 		"source": "https://github.com/yiisoft/yii2"
 	},
-	"minimum-stability": "stable",
+	"minimum-stability": "dev",
     "repositories":[
         {
             "type": "git",
@@ -28,20 +28,24 @@
     ],
 	"require": {
 		"php": ">=5.4.0",
-		"yiisoft/yii2": "dev-master",
-        "yiisoft/yii2-composer": "dev-master",
-        "yiisoft/yii2-debug": "dev-master",
-		"yiisoft/yii2-bootstrap": "dev-master",
-		"yiisoft/yii2-swiftmailer": "dev-master",
-		"nineinchnick/yii2-usr": "dev-master",
-        "nineinchnick/diceware": "dev-master",
-		"schmunk42/yii2-packaii": "dev-master"
+		"yiisoft/yii2-dev": "*",
+		"yiisoft/yii2-bootstrap": "*",
+		"yiisoft/yii2-swiftmailer": "*",
+		"nineinchnick/yii2-usr": "*",
+		"schmunk42/yii2-packaii": "dev-master",
+        "twbs/bootstrap": "3.*",
+        "swiftmailer/swiftmailer": "*"
     },
 	"require-dev": {
-		"yiisoft/yii2-codeception": "dev-master",
-		"yiisoft/yii2-gii": "dev-master",
-        "yiisoft/yii2-coding-standards": "dev-master",
-        "schmunk42/yii2-giiant": "dev-develop"
+		"yiisoft/yii2-codeception": "*",
+		"codeception/codeception": "*",
+		"codeception/specify": "*",
+		"codeception/verify": "*",
+		"yiisoft/yii2-debug": "*",
+		"yiisoft/yii2-gii": "*",
+        "yiisoft/yii2-coding-standards": "*",
+        "schmunk42/yii2-giiant": "dev-develop",
+        "phpunit/phpunit-mock-objects": "1.2.3"
 	},
 	"scripts": {
 		"post-create-project-cmd": [
