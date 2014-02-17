@@ -4,6 +4,8 @@ Phundament 4 Application
 *Version 4.0-dev*
 -----------------
 
+** THIS IS A VERY EARLY DEVELOPMENT VERSION - DO NOT USE FOR PRODUCTION!**
+
 Phundament 4 is a foundation based on Yii 2 framework best for rapidly developing web 
 applications.
 
@@ -51,6 +53,32 @@ directly under the Web root.
 ~~~
 http://localhost/basic/web/
 ~~~
+
+### Install via Vagrant
+
+Download Vagrant and Virtualbox.
+
+Clone the project:
+
+~~~
+git clone -b 4.0 https://github.com/phundament/app
+~~~
+
+
+Bring up the virtual machine:
+
+~~~
+vagrant up
+~~~
+
+Update your `/etc/hosts` file:
+
+~~~
+192.168.33.101    phundament.vagrant
+~~~ 
+
+Open [phundament.vagrant](http://192.168.33.101/phundament.vagrant) in your browser.
+
 
 
 CONFIGURATION
