@@ -61,13 +61,14 @@ Download Vagrant and Virtualbox.
 Clone the project:
 
 ~~~
-git clone -b 4.0 https://github.com/phundament/app
+git clone -b4.0 https://github.com/phundament/app
 ~~~
 
 
 Bring up the virtual machine:
 
 ~~~
+cd app
 vagrant up
 ~~~
 
