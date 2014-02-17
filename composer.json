@@ -1,10 +1,17 @@
 {
-	"name": "yiisoft/yii2-app-basic",
-	"description": "Yii 2 Basic Application Template",
-	"keywords": ["yii", "framework", "basic", "application template"],
-	"homepage": "http://www.yiiframework.com/",
-	"type": "project",
+	"name": "phundament/app",
+	"description": "Yii 2 Application Template",
+	"keywords": ["phundament", "yii2", "framework", "application template", "vagrant"],
+	"homepage": "http://www.phundament.com/",
+	"type": "yii2-application",
 	"license": "BSD-3-Clause",
+    "authors":[
+        {
+            "name":"Tobias Munk",
+            "email":"schmunk@usrbin.de",
+            "homepage":"http://www.phundament.com"
+        }
+    ],
 	"support": {
 		"issues": "https://github.com/yiisoft/yii2/issues?state=open",
 		"forum": "http://www.yiiframework.com/forum/",
