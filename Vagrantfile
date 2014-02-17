@@ -26,7 +26,8 @@ Vagrant.configure("2") do |config|
   data['vm']['synced_folder'].each do |i, folder|
     if folder['source'] != '' && folder['target'] != '' && folder['id'] != ''
       nfs = (folder['nfs'] == "true") ? "nfs" : nil
-      config.vm.synced_folder "#{folder['source']}", "#{folder['target']}", id: "#{folder['id']}", type: nfs
+      # TODO: make fmode configurable in config.yaml
+      config.vm.synced_folder "#{folder['source']}", "#{folder['target']}", id: "#{folder['id']}", type: nfs, group: "www-data", mount_options: ["dmode=775,fmode=664"]
     end
   end
 

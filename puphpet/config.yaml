@@ -27,10 +27,11 @@ vagrantfile-local:
                     - '--parser future'
         synced_folder:
             Mrgp6xPR893x:
+                # TODO: implement params dmode and fmode for usage in Vagrantfile
                 id: vagrant-root
                 source: ./
                 target: /var/www/phundament.vagrant
-                nfs: 'true'
+                nfs: 'false'
         usable_port_range: 2200..2250
     ssh:
         host: null
