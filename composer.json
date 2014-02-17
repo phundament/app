@@ -25,8 +25,10 @@
 		"yiisoft/yii2-bootstrap": "*",
 		"yiisoft/yii2-swiftmailer": "*",
 		"nineinchnick/yii2-usr": "*",
-		"schmunk42/yii2-packaii": "dev-master"
-	},
+		"schmunk42/yii2-packaii": "dev-master",
+        "twbs/bootstrap": "3.*",
+        "swiftmailer/swiftmailer": "*"
+    },
 	"require-dev": {
 		"yiisoft/yii2-codeception": "*",
 		"codeception/codeception": "*",
@@ -36,7 +38,7 @@
 		"yiisoft/yii2-gii": "*",
         "yiisoft/yii2-coding-standards": "*",
         "schmunk42/yii2-giiant": "dev-develop",
-        "twbs/bootstrap": "3.*"
+        "phpunit/phpunit-mock-objects": "1.2.3"
 	},
 	"scripts": {
 		"post-create-project-cmd": [
