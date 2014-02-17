@@ -80,10 +80,11 @@ apache:
     mod_pagespeed: 0
     mod_spdy: 0
 php:
-    version: '55'
+    version: '54'
     composer: '1'
     modules:
         php:
+            - apc
             - cli
             - intl
             - mcrypt
