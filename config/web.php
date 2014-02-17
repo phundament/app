@@ -41,7 +41,7 @@ $config = [
     'modules'        => [
         'packaii' => ['class' => 'schmunk42\packaii\Module'],
         'usr'     => [
-            'class'               => 'nineinchnick\usr\Module',
+            'class' => 'nineinchnick\usr\Module',
         ],
     ],
     'params'         => $params,
@@ -49,11 +49,11 @@ $config = [
 
 if (YII_ENV_DEV) {
     // configuration adjustments for 'dev' environment
-    $config['preload'][]                    = 'debug';
-    $config['modules']['debug']             = [
-        'class'  => 'yii\debug\Module',
+    $config['preload'][]        = 'debug';
+    $config['modules']['debug'] = [
+        'class'      => 'yii\debug\Module',
         'allowedIPs' => ['127.0.0.1', '::1', '192.168.33.1'],
-        'panels' => [
+        'panels'     => [
             'app'       => ['class' => 'app\panels\AppPanel',],
             'config'    => ['class' => 'yii\debug\panels\ConfigPanel'],
             'request'   => ['class' => 'yii\debug\panels\RequestPanel'],
@@ -63,9 +63,13 @@ if (YII_ENV_DEV) {
         ]
     ];
 
-    $config['modules']['gii']               = [];
-    $config['modules']['gii']['class']      = 'yii\gii\Module';
-    $config['modules']['gii']['generators'] = ['giiant' => ['class' => 'schmunk42\giiant\crud\Generator']];
+    $config['modules']['gii'] = [
+        'class'      => 'yii\gii\Module',
+        'allowedIPs' => ['127.0.0.1', '::1', '192.168.33.1'],
+        'generators' => [
+            'giiant' => ['class' => 'schmunk42\giiant\crud\Generator']
+        ]
+    ];
 
     // alias for gii
     $config['aliases']['schmunk42/packaii'] = '@vendor/schmunk42/yii2-packaii';
