@@ -8,7 +8,11 @@ $config = [
     'sourceLanguage' => 'en',
     'language'       => 'en',
     'basePath'       => dirname(__DIR__),
-    'extensions'     => require(__DIR__ . '/../vendor/yiisoft/extensions.php'),
+    'extensions'     => require(__DIR__ . '/../../vendor/yiisoft/extensions.php'),
+    'aliases'        => [
+        '@app' => __DIR__.'/..',
+        '@vendor' => __DIR__.'/../../vendor'
+    ],
     'components'     => [
         'cache'        => [
             'class' => 'yii\caching\FileCache',
