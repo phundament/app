@@ -56,7 +56,7 @@
 	},
 	"extra": {
 		"writable": [
-			"runtime",
+			"app/runtime",
 			"web/assets"
 		],
 		"executable": [
