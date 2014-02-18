@@ -18,7 +18,7 @@ modules:
 #        - WebDriver
     config:
         PhpBrowser:
-            url: 'http://localhost:8080'
+            url: 'http://phundament.vagrant/'
 #        WebDriver:
 #            url: 'http://localhost'
 #            browser: firefox

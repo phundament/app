@@ -39,6 +39,9 @@
     },
 	"require-dev": {
 		"yiisoft/yii2-codeception": "dev-master",
+        "codeception/codeception": "1.8.*",
+        "codeception/specify": "*",
+        "codeception/verify": "*",
 		"yiisoft/yii2-gii": "dev-master",
         "yiisoft/yii2-coding-standards": "dev-master",
         "schmunk42/yii2-giiant": "dev-develop"
