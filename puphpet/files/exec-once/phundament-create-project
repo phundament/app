@@ -1,2 +1,2 @@
 cd /var/www/phundament.vagrant
-composer create-project --prefer-dist
+composer create-project

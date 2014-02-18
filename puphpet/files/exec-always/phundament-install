@@ -1,2 +1,2 @@
 cd /var/www/phundament.vagrant
-composer install --prefer-dist
+composer install
