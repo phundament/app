@@ -146,3 +146,34 @@ rabbitmq:
     install: 0
     port: '5672'
 
+
+
+vagrantfile-aws:
+    vm:
+        box: aws
+        hostname: master
+        network:
+            private_network: 192.168.56.101
+            forwarded_port: {  }
+        provider:
+            aws:
+                access_key_id: ''
+                secret_access_key: ''
+                keypair_name: ''
+                ami: ami-e34dae94
+                region: eu-west-1
+                instance_type: m1.small
+                security_groups: {  }
+        provision:
+            puppet:
+                manifests_path: puphpet/puppet
+                manifest_file: manifest.pp
+                options:
+                    - '--verbose'
+                    - '--hiera_config /vagrant/puphpet/puppet/hiera.yaml'
+                    - '--parser future'
+        synced_folder:
+            R24eSpY3MZ1o:
+                id: webroot
+                source: ./
+                target: /var/www
