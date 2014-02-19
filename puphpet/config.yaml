@@ -1,6 +1,7 @@
 ---
 vagrantfile-local:
     vm:
+        # TODO: check box Linux Distribution
         box: debian-wheezy72-x64-vbox43
         box_url: 'http://box.puphpet.com/debian-wheezy72-x64-vbox43.box'
         hostname: null
