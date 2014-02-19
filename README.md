@@ -56,7 +56,7 @@ http://localhost/basic/web/
 
 ### Install via Vagrant
 
-Download Vagrant and Virtualbox.
+Download and install [Vagrant](http://www.vagrantup.com/downloads.html) and [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
 
 Clone the project:
 
@@ -72,7 +72,7 @@ cd app
 vagrant up
 ~~~
 
-Update your `/etc/hosts` file:
+In the meantime, update your `/etc/hosts` file:
 
 ~~~
 192.168.33.101    phundament.vagrant
