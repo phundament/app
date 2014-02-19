@@ -157,13 +157,14 @@ vagrantfile-aws:
             forwarded_port: {  }
         provider:
             aws:
-                access_key_id: ''
-                secret_access_key: ''
-                keypair_name: ''
-                ami: ami-e34dae94
-                region: eu-west-1
-                instance_type: m1.small
-                security_groups: {  }
+                # NOTICE: add your keys here ...
+                access_key_id: '********************'
+                secret_access_key: '*************************************'
+                keypair_name: '*****'
+                ami: ami-6aad335a
+                region: us-west-2
+                instance_type: t1.micro
+                security_groups: { launch-wizard-1 }
         provision:
             puppet:
                 manifests_path: puphpet/puppet
@@ -173,7 +174,24 @@ vagrantfile-aws:
                     - '--hiera_config /vagrant/puphpet/puppet/hiera.yaml'
                     - '--parser future'
         synced_folder:
+            # TODO: disable /vagrant sync config.vm.synced_folder ".", "/vagrant", :disabled => true
             R24eSpY3MZ1o:
                 id: webroot
-                source: ./
-                target: /var/www
+                source: ./app
+                target: /var/www/app
+            R24eSpY3MZ1p:
+                id: webroot
+                source: ./web
+                target: /var/www/web
+    ssh:
+        host: null
+        port: null
+        private_key_path: ~/.ssh/First.pem
+        username: ubuntu
+        guest_port: null
+        keep_alive: true
+        forward_agent: false
+        forward_x11: false
+        shell: 'bash -l'
+    vagrant:
+        host: detect

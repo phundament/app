@@ -4,7 +4,7 @@ Phundament 4.0-dev Todo List
 Bugs
 ----
 
- * ~~cleanup dependencies after fixing https://github.com/yiisoft/yii2/issues/2465~~
+ * ~~cleanup dependencies after fixing https://github.com/yiisoft/yii2/issues/2465~
 
 Features
 --------
@@ -13,3 +13,13 @@ Features
  * add user-management extension (yii2-usr?)
  * add rights-management extension
  * add image/file manager extension
+
+Docs
+----
+
+ * Describe Amazon Deployment
+  * Check connection settings in EC2 management console
+  * Testing instance only available from "region: us-west-2"? US West (Oregon)
+  * Test SSH, instance needs Sec. Group `launch-wizard-1`
+  * Puppet config
+  * Install puppet 3

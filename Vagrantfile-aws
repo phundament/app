@@ -10,6 +10,8 @@ data = configValues['vagrantfile-aws']
 Vagrant.configure("2") do |config|
   config.vm.box = "dummy"
   config.vm.hostname = "#{data['vm']['hostname']}"
+  #TODO: Should be configurable, depending on your Linux Distribution
+  #config.ssh.pty = true
 
   config.vm.provider :aws do |aws, override|
     aws.access_key_id = "#{data['vm']['provider']['aws']['access_key_id']}"
