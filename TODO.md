@@ -19,7 +19,6 @@ Docs
 
  * Describe Amazon Deployment
   * Check connection settings in EC2 management console
-  * Testing instance only available from "region: us-west-2"? US West (Oregon)
-  * Test SSH, instance needs Sec. Group `launch-wizard-1`
-  * Puppet config
-  * Install puppet 3
+  * Testing (free) instance only available from `region: us-west-2`(?) US West (Oregon)
+  * Test SSH, instance needs Security Group `launch-wizard-1`
+  * Update `puphpet/config.yaml`
