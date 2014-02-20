@@ -67,6 +67,7 @@ apache:
         - rewrite
     vhosts:
         SuaWo9TvBE9J:
+            priority: 1
             servername: phundament.vagrant
             docroot: /var/www/phundament.vagrant/web
             port: '80'
@@ -127,7 +128,7 @@ mysql:
             password: phundament
             sql_file: ''
 mongodb:
-    install: '1'
+    install: '0'
     auth: 1
     port: '27017'
     databases: {  }
@@ -159,13 +160,14 @@ vagrantfile-aws:
         provider:
             aws:
                 # NOTICE: add your keys here ...
-                access_key_id: '********************'
-                secret_access_key: '*************************************'
-                keypair_name: '*****'
-                ami: ami-6aad335a
+                access_key_id: 
+                secret_access_key: 
+                keypair_name: First
+                ami: ami-a850c898
                 region: us-west-2
                 instance_type: t1.micro
-                security_groups: { launch-wizard-1 }
+                security_groups:
+                    - launch-wizard-1
         provision:
             puppet:
                 manifests_path: puphpet/puppet
@@ -177,18 +179,14 @@ vagrantfile-aws:
         synced_folder:
             # TODO: disable /vagrant sync config.vm.synced_folder ".", "/vagrant", :disabled => true
             R24eSpY3MZ1o:
-                id: webroot
-                source: ./app
-                target: /var/www/app
-            R24eSpY3MZ1p:
-                id: webroot
-                source: ./web
-                target: /var/www/web
+                id: approot
+                source: ./
+                target: /var/www/phundament.vagrant
     ssh:
         host: null
         port: null
         private_key_path: ~/.ssh/First.pem
-        username: ubuntu
+        username: admin
         guest_port: null
         keep_alive: true
         forward_agent: false
