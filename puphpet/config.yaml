@@ -179,7 +179,7 @@ vagrantfile-aws:
         synced_folder:
             # TODO: disable /vagrant sync config.vm.synced_folder ".", "/vagrant", :disabled => true
             R24eSpY3MZ1o:
-                id: approot
+                id: webroot
                 source: ./
                 target: /var/www/phundament.vagrant
     ssh:
