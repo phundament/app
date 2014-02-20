@@ -55,6 +55,8 @@ Vagrant.configure("2") do |config|
       puppet.options = data['vm']['provision']['puppet']['options']
     end
   end
+  
+  config.vm.provision :shell, :path => "puphpet/shell/execute-files.sh"
 
   if !data['ssh']['host'].nil?
     config.ssh.host = data['ssh']['host']
