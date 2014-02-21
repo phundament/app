@@ -10,6 +10,7 @@ $config = [
     'basePath'       => dirname(__DIR__),
     'extensions'     => require(__DIR__ . '/../../vendor/yiisoft/extensions.php'),
     'aliases'        => [
+        '@root' => __DIR__.'/../..',
         '@app' => __DIR__.'/..',
         '@vendor' => __DIR__.'/../../vendor'
     ],

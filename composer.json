@@ -35,7 +35,8 @@
 		"yiisoft/yii2-swiftmailer": "dev-master",
 		"nineinchnick/yii2-usr": "dev-master",
         "nineinchnick/diceware": "dev-master",
-		"schmunk42/yii2-packaii": "dev-master"
+		"schmunk42/yii2-packaii": "dev-master",
+        "twbs/bootstrap": "3.*"
     },
 	"require-dev": {
 		"yiisoft/yii2-codeception": "dev-master",
