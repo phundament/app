@@ -1,4 +1,61 @@
 ---
+vagrantfile:
+    vm:
+        # TODO: check box Linux Distribution, Values are changed for AWS in Vagrantfile(!)
+        box: debian-wheezy72-x64-vbox43
+        box_url: 'http://box.puphpet.com/debian-wheezy72-x64-vbox43.box'
+        hostname: null
+        network:
+            private_network: 192.168.33.101
+            forwarded_port:
+                XQ8lS2HbWblh:
+                    host: '10122'
+                    guest: '22'
+        provider:
+            virtualbox:
+                modifyvm:
+                    natdnshostresolver1: on
+                    memory: '1024'
+                setextradata:
+                    VBoxInternal2/SharedFoldersEnableSymlinksCreate/v-root: 1
+            aws:
+                # NOTICE: usage of ENV vars in Vagrantfile
+                access_key_id: #AWSAccessKeyId
+                secret_access_key: #AWSSecretKey
+                keypair_name: #AWSKeypairName
+                ami: ami-a850c898
+                region: us-west-2
+                instance_type: t1.micro
+                security_groups:
+                    - launch-wizard-1
+
+        provision:
+            puppet:
+                manifests_path: puphpet/puppet
+                manifest_file: manifest.pp
+                options:
+                    - '--verbose'
+                    - '--hiera_config /vagrant/puphpet/puppet/hiera.yaml'
+                    - '--parser future'
+        synced_folder:
+            Mrgp6xPR893x:
+                # TODO: implement params dmode and fmode for usage in Vagrantfile
+                id: vagrant-root
+                source: ./
+                target: /var/www/phundament.vagrant
+        usable_port_range: 2200..2250
+    ssh:
+        host: null
+        port: null
+        private_key_path: null
+        username: vagrant
+        guest_port: null
+        keep_alive: true
+        forward_agent: false
+        forward_x11: false
+        shell: 'bash -l'
+    vagrant:
+        host: detect
 server:
     packages: {  }
     dot_files:
@@ -100,62 +157,3 @@ beanstalkd:
 rabbitmq:
     install: 0
     port: '5672'
-
-
-vagrantfile:
-    vm:
-        # TODO: check box Linux Distribution, Values are changed for AWS in Vagrantfile(!)
-        box: debian-wheezy72-x64-vbox43
-        box_url: 'http://box.puphpet.com/debian-wheezy72-x64-vbox43.box'
-        hostname: null
-        network:
-            private_network: 192.168.33.101
-            forwarded_port:
-                XQ8lS2HbWblh:
-                    host: '10122'
-                    guest: '22'
-        provider:
-            virtualbox:
-                modifyvm:
-                    natdnshostresolver1: on
-                    memory: '1024'
-                setextradata:
-                    VBoxInternal2/SharedFoldersEnableSymlinksCreate/v-root: 1
-            aws:
-                # NOTICE: usage of ENV vars in Vagrantfile
-                access_key_id: #AWSAccessKeyId
-                secret_access_key: #AWSSecretKey
-                keypair_name: #AWSKeypairName
-                ami: ami-a850c898
-                region: us-west-2
-                instance_type: t1.micro
-                security_groups:
-                    - launch-wizard-1
-
-        provision:
-            puppet:
-                manifests_path: puphpet/puppet
-                manifest_file: manifest.pp
-                options:
-                    - '--verbose'
-                    - '--hiera_config /vagrant/puphpet/puppet/hiera.yaml'
-                    - '--parser future'
-        synced_folder:
-            Mrgp6xPR893x:
-                # TODO: implement params dmode and fmode for usage in Vagrantfile
-                id: vagrant-root
-                source: ./
-                target: /var/www/phundament.vagrant
-        usable_port_range: 2200..2250
-    ssh:
-        host: null
-        port: null
-        private_key_path: null
-        username: vagrant
-        guest_port: null
-        keep_alive: true
-        forward_agent: false
-        forward_x11: false
-        shell: 'bash -l'
-    vagrant:
-        host: detect
