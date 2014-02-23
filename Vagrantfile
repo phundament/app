@@ -29,6 +29,7 @@ Vagrant.configure("2") do |config|
     override.vm.box = 'dummy'
     override.vm.box_url = nil
     override.vm.hostname = 'master'
+    override.vm.synced_folder ".", "/vagrant", :disabled => true
 
     aws.access_key_id = ENV['AWSAccessKeyId']
     aws.secret_access_key = ENV['AWSSecretKey']
@@ -54,7 +55,7 @@ Vagrant.configure("2") do |config|
     if folder['source'] != '' && folder['target'] != '' && folder['id'] != ''
       nfs = (folder['nfs'] == "true") ? "nfs" : nil
       # TODO: make fmode configurable in config.yaml
-      config.vm.synced_folder "#{folder['source']}", "#{folder['target']}", id: "#{folder['id']}", type: nfs, group: "www-data", mount_options: ["dmode=775,fmode=664"], :rsync_excludes => ['vendor', 'app/runtime', 'app/mails', 'web/assets']
+      config.vm.synced_folder "#{folder['source']}", "#{folder['target']}", id: "#{folder['id']}", type: nfs, group: "www-data", mount_options: ["dmode=775,fmode=664"], :rsync_excludes => ['vendor', 'app/runtime/*', 'app/mails/*', 'web/assets/*']
     end
   end
 
