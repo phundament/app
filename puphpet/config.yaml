@@ -28,7 +28,12 @@ vagrantfile:
                 instance_type: t1.micro
                 security_groups:
                     - launch-wizard-1
-
+            digital_ocean:
+                image: 'Debian 7.0 x64'
+                region: 'Amsterdam 1'
+                size: 1GB
+                client_id: #DIGITAL_OCEAN_CLIENT_ID
+                api_key: #DIGITAL_OCEAN_API_KEY
         provision:
             puppet:
                 manifests_path: puphpet/puppet

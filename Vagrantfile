@@ -41,6 +41,15 @@ Vagrant.configure("2") do |config|
     end
   end
 
+  config.vm.provider :digital_ocean do |digital_ocean, override|
+    digital_ocean.client_id = ENV['DIGITAL_OCEAN_CLIENT_ID']
+    digital_ocean.api_key = ENV['DIGITAL_OCEAN_API_KEY']
+    override.ssh.private_key_path = "~/.ssh/id_rsa"
+    override.vm.box = "digital_ocean"
+    override.vm.box_url = "https://github.com/smdahlen/vagrant-digitalocean/raw/master/box/digital_ocean.box"
+    override.vm.hostname = "master"
+  end
+
   if data['vm']['network']['private_network'].to_s != ''
     config.vm.network "private_network", ip: "#{data['vm']['network']['private_network']}"
   end
