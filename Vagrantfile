@@ -29,7 +29,7 @@ Vagrant.configure("2") do |config|
     override.vm.box = 'dummy'
     override.vm.box_url = nil
     override.vm.hostname = 'master'
-    override.vm.synced_folder ".", "/vagrant", :disabled => true
+    override.vm.synced_folder ".", "/vagrant",  :rsync_excludes => ['app', 'web', 'vendor']
 
     aws.access_key_id = ENV['AWSAccessKeyId']
     aws.secret_access_key = ENV['AWSSecretKey']
