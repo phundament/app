@@ -3,14 +3,51 @@ require 'yaml'
 dir = File.dirname(File.expand_path(__FILE__))
 
 configValues = YAML.load_file("#{dir}/puphpet/config.yaml")
-data = configValues['vagrantfile-local']
+data = configValues['vagrantfile']
 
 Vagrant.configure("2") do |config|
+
   config.vm.box = "#{data['vm']['box']}"
   config.vm.box_url = "#{data['vm']['box_url']}"
 
   if data['vm']['hostname'].to_s != ''
     config.vm.hostname = "#{data['vm']['hostname']}"
+  end
+
+  config.vm.provider :aws do |aws, override|
+    aws.ami = "#{data['vm']['provider']['aws']['ami']}"
+    if !data['vm']['provider']['aws']['region'].nil?
+      aws.region = "#{data['vm']['provider']['aws']['region']}"
+     end
+    aws.instance_type = "#{data['vm']['provider']['aws']['instance_type']}"
+
+    # TODO: move to config.yaml
+    aws.tags = {
+      'Name' => 'Phundament 4',
+    }
+    override.ssh.username = 'admin'
+    override.vm.box = 'dummy'
+    override.vm.box_url = nil
+    override.vm.hostname = 'master'
+    override.vm.synced_folder ".", "/vagrant",  :rsync_excludes => ['app', 'web', 'vendor']
+
+    aws.access_key_id = ENV['AWSAccessKeyId']
+    aws.secret_access_key = ENV['AWSSecretKey']
+    aws.keypair_name = ENV['AWSKeypairName']
+    override.ssh.private_key_path = ENV['AWSPrivateKeyPath']
+
+    if !data['vm']['provider']['aws']['security_groups'].nil? && !data['vm']['provider']['aws']['security_groups'].empty?
+      aws.security_groups = data['vm']['provider']['aws']['security_groups']
+    end
+  end
+
+  config.vm.provider :digital_ocean do |digital_ocean, override|
+    digital_ocean.client_id = ENV['DIGITAL_OCEAN_CLIENT_ID']
+    digital_ocean.api_key = ENV['DIGITAL_OCEAN_API_KEY']
+    override.ssh.private_key_path = "~/.ssh/id_rsa"
+    override.vm.box = "digital_ocean"
+    override.vm.box_url = "https://github.com/smdahlen/vagrant-digitalocean/raw/master/box/digital_ocean.box"
+    override.vm.hostname = "master"
   end
 
   if data['vm']['network']['private_network'].to_s != ''
@@ -27,7 +64,7 @@ Vagrant.configure("2") do |config|
     if folder['source'] != '' && folder['target'] != '' && folder['id'] != ''
       nfs = (folder['nfs'] == "true") ? "nfs" : nil
       # TODO: make fmode configurable in config.yaml
-      config.vm.synced_folder "#{folder['source']}", "#{folder['target']}", id: "#{folder['id']}", type: nfs, group: "www-data", mount_options: ["dmode=775,fmode=664"]
+      config.vm.synced_folder "#{folder['source']}", "#{folder['target']}", id: "#{folder['id']}", type: nfs, group: "www-data", mount_options: ["dmode=775,fmode=664"], :rsync_excludes => ['vendor', 'app/runtime/*', 'app/mails/*', 'web/assets/*']
     end
   end
 

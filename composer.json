@@ -28,22 +28,18 @@
     ],
 	"require": {
 		"php": ">=5.4.0",
-		"yiisoft/yii2": "dev-master",
         "yiisoft/yii2-composer": "dev-master",
-        "yiisoft/yii2-debug": "dev-master",
-		"yiisoft/yii2-bootstrap": "dev-master",
-		"yiisoft/yii2-swiftmailer": "dev-master",
+		"yiisoft/yii2-dev": "dev-master",
+        "swiftmailer/swiftmailer": "5.*",
 		"nineinchnick/yii2-usr": "dev-master",
         "nineinchnick/diceware": "dev-master",
 		"schmunk42/yii2-packaii": "dev-schmunk",
         "twbs/bootstrap": "3.*"
     },
 	"require-dev": {
-		"yiisoft/yii2-codeception": "dev-master",
         "codeception/codeception": "1.8.*",
         "codeception/specify": "*",
         "codeception/verify": "*",
-		"yiisoft/yii2-gii": "dev-master",
         "yiisoft/yii2-coding-standards": "dev-master",
         "schmunk42/yii2-giiant": "dev-develop"
 	},

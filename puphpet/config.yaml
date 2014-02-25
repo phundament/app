@@ -1,7 +1,7 @@
 ---
-vagrantfile-local:
+vagrantfile:
     vm:
-        # TODO: check box Linux Distribution
+        # TODO: check box Linux Distribution, Values are changed for AWS in Vagrantfile(!)
         box: debian-wheezy72-x64-vbox43
         box_url: 'http://box.puphpet.com/debian-wheezy72-x64-vbox43.box'
         hostname: null
@@ -18,6 +18,22 @@ vagrantfile-local:
                     memory: '1024'
                 setextradata:
                     VBoxInternal2/SharedFoldersEnableSymlinksCreate/v-root: 1
+            aws:
+                # NOTICE: usage of ENV vars in Vagrantfile
+                access_key_id: #AWSAccessKeyId
+                secret_access_key: #AWSSecretKey
+                keypair_name: #AWSKeypairName
+                ami: ami-a850c898
+                region: us-west-2
+                instance_type: t1.micro
+                security_groups:
+                    - launch-wizard-1
+            digital_ocean:
+                image: 'Debian 7.0 x64'
+                region: 'Amsterdam 1'
+                size: 1GB
+                client_id: #DIGITAL_OCEAN_CLIENT_ID
+                api_key: #DIGITAL_OCEAN_API_KEY
         provision:
             puppet:
                 manifests_path: puphpet/puppet
@@ -32,7 +48,6 @@ vagrantfile-local:
                 id: vagrant-root
                 source: ./
                 target: /var/www/phundament.vagrant
-                nfs: 'false'
         usable_port_range: 2200..2250
     ssh:
         host: null
@@ -147,50 +162,3 @@ beanstalkd:
 rabbitmq:
     install: 0
     port: '5672'
-
-
-
-vagrantfile-aws:
-    vm:
-        box: aws
-        hostname: master
-        network:
-            private_network: 192.168.56.101
-            forwarded_port: {  }
-        provider:
-            aws:
-                # NOTICE: add your keys here ...
-                access_key_id: 
-                secret_access_key: 
-                keypair_name: First
-                ami: ami-a850c898
-                region: us-west-2
-                instance_type: t1.micro
-                security_groups:
-                    - launch-wizard-1
-        provision:
-            puppet:
-                manifests_path: puphpet/puppet
-                manifest_file: manifest.pp
-                options:
-                    - '--verbose'
-                    - '--hiera_config /vagrant/puphpet/puppet/hiera.yaml'
-                    - '--parser future'
-        synced_folder:
-            # TODO: disable /vagrant sync config.vm.synced_folder ".", "/vagrant", :disabled => true
-            R24eSpY3MZ1o:
-                id: webroot
-                source: ./
-                target: /var/www/phundament.vagrant
-    ssh:
-        host: null
-        port: null
-        private_key_path: ~/.ssh/First.pem
-        username: admin
-        guest_port: null
-        keep_alive: true
-        forward_agent: false
-        forward_x11: false
-        shell: 'bash -l'
-    vagrant:
-        host: detect
