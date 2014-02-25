@@ -4,15 +4,15 @@ $params = require(__DIR__ . '/params.php');
 $db     = require(__DIR__ . '/db.php');
 
 $config = [
-    'id'             => 'basic',
+    'id'             => 'phundament-4',
+    'name'           => 'Phundament 4',
     'sourceLanguage' => 'en',
     'language'       => 'en',
     'basePath'       => dirname(__DIR__),
     'extensions'     => require(__DIR__ . '/../../vendor/yiisoft/extensions.php'),
     'aliases'        => [
-        '@root' => __DIR__.'/../..',
-        '@app' => __DIR__.'/..',
-        '@vendor' => __DIR__.'/../../vendor'
+        '@root'   => __DIR__ . '/../..',
+        '@vendor' => __DIR__ . '/../../vendor'
     ],
     'components'     => [
         'cache'        => [
@@ -41,6 +41,15 @@ $config = [
                 ],
             ],
         ],
+        # TODO: enable themeing
+        /*'view'         => [
+            'theme' => [
+                'pathMap' => [
+                    '@app/views' => '@app/themes/businesscasual'
+                ],
+                'baseUrl' => '@web/themes/businesscasual',
+            ],
+        ],*/
         'db'           => $db,
     ],
     'modules'        => [
