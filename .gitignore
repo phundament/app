@@ -1,8 +1,10 @@
-/vendor/
-/docs/
 /app/config/*-local.php
-/tests/codeception/_log
+/app/data
+/app/tests/codeception/_log
+/vendor/
+
 /tmp
+/docs/
 
 nbproject
 .DS_Store
