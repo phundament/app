@@ -12,23 +12,24 @@ use app\themes\businesscasual\AppAsset;
 AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-    <title>Business Casual Template for Bootstrap</title>
-    <?php $this->head() ?>
-</head>
+        <title>Business Casual Template for Bootstrap</title>
+        <?php $this->head() ?>
+    </head>
 
-<body>
-<?php $this->beginBody() ?>
+    <body>
+    <?php $this->beginBody() ?>
     <div class="brand"><?= \Yii::$app->name ?></div>
-    <div class="address-bar">The Plaza | 5483 Start Bootstrap Ave. | Beverly Hills, California 26892 | 555.519.2013</div>
+    <div class="address-bar">The Plaza | 5483 Start Bootstrap Ave. | Beverly Hills, California 26892 | 555.519.2013
+    </div>
 
     <nav class="navbar navbar-default" role="navigation">
         <div class="container">
@@ -81,13 +82,13 @@ AppAsset::register($this);
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.js"></script>
     <script>
-    // Activates the Carousel
-    $('.carousel').carousel({
-        interval: 5000
-    })
+        // Activates the Carousel
+        $('.carousel').carousel({
+            interval: 5000
+        })
     </script>
-<?php $this->endBody() ?>
-</body>
+    <?php $this->endBody() ?>
+    </body>
 
-</html>
+    </html>
 <?php $this->endPage() ?>

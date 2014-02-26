@@ -65,7 +65,7 @@ class SiteController extends Controller
             return $this->render(
                         'login',
                             [
-                            'model' => $model,
+                                'model' => $model,
                             ]
             );
         }
@@ -87,7 +87,7 @@ class SiteController extends Controller
             return $this->render(
                         'contact',
                             [
-                            'model' => $model,
+                                'model' => $model,
                             ]
             );
         }

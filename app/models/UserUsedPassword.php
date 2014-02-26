@@ -2,6 +2,7 @@
 
 namespace app\models;
 
-class UserUsedPassword extends \nineinchnick\usr\models\ExampleUserUsedPassword {
+class UserUsedPassword extends \nineinchnick\usr\models\ExampleUserUsedPassword
+{
 
 }

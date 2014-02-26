@@ -11,14 +11,14 @@ class AppAsset extends AssetBundle
 {
     public $sourcePath = __DIR__;
     #public $basePath = '@webroot';
-	#public $baseUrl = '@web';
-	public $css = [
-		'src/css/business-casual.css',
-	];
-	public $js = [
-	];
-	public $depends = [
-		'yii\web\YiiAsset',
-		'yii\bootstrap\BootstrapAsset',
-	];
+    #public $baseUrl = '@web';
+    public $css = [
+        'src/css/business-casual.css',
+    ];
+    public $js = [
+    ];
+    public $depends = [
+        'yii\web\YiiAsset',
+        'yii\bootstrap\BootstrapAsset',
+    ];
 }

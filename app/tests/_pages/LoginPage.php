@@ -17,8 +17,8 @@ class LoginPage extends BasePage
         $this->guy->submitForm(
                   '#login-form',
                       [
-                      'LoginForm[username]' => $username,
-                      'LoginForm[password]' => $password,
+                          'LoginForm[username]' => $username,
+                          'LoginForm[password]' => $password,
                       ]
         );
     }

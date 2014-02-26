@@ -53,7 +53,9 @@ $config = [
         'db'           => $db,
     ],
     'modules'        => [
-        'packaii' => ['class' => 'schmunk42\packaii\Module'],
+        'packaii' => [
+            'class' => 'schmunk42\packaii\Module'
+        ],
         'usr'     => [
             'class' => 'nineinchnick\usr\Module',
         ],

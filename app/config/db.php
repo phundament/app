@@ -2,8 +2,8 @@
 
 
 return [
-    'class'    => 'yii\db\Connection',
-    'dsn'      => 'sqlite:'.__DIR__.'/../data/app.db',
+    'class' => 'yii\db\Connection',
+    'dsn'   => 'sqlite:' . __DIR__ . '/../data/app.db',
 ];
 
 /*
