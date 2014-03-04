@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "1df0c26a34a9b5e54cb44fefb5c06696",
+    "hash": "4c516cf1584292aaab3b6587c9d794c9",
     "packages": [
         {
             "name": "2amigos/yii2-arrayquery-component",
@@ -92,6 +92,50 @@
                 "yii"
             ],
             "time": "2014-02-24 12:42:39"
+        },
+        {
+            "name": "2amigos/yii2-pjax-filter-behavior",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/2amigos/yii2-pjax-filter-behavior.git",
+                "reference": "c87fba16063316ff71582a0333a79a2550c3ca89"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/2amigos/yii2-pjax-filter-behavior/zipball/c87fba16063316ff71582a0333a79a2550c3ca89",
+                "reference": "c87fba16063316ff71582a0333a79a2550c3ca89",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "dosamigos\\pjaxfilter\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Antonio Ramirez",
+                    "email": "ramirez.cobos@gmail.com",
+                    "homepage": "http://2amigos.us"
+                }
+            ],
+            "description": "Yii2 filters that filters HTTP requests to ensure pjax calls.",
+            "keywords": [
+                "Behavior",
+                "extension",
+                "filter",
+                "pjaxfilter",
+                "yii"
+            ],
+            "time": "2014-02-26 17:37:17"
         },
         {
             "name": "cebe/markdown",
@@ -327,106 +371,26 @@
             "time": "2014-01-28 22:29:15"
         },
         {
-            "name": "nineinchnick/diceware",
-            "version": "dev-master",
-            "target-dir": "nineinchnick/diceware",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nineinchnick/diceware.git",
-                "reference": "eb9e8c5f6fd903f0246f2447244eca6dd112edfd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nineinchnick/diceware/zipball/eb9e8c5f6fd903f0246f2447244eca6dd112edfd",
-                "reference": "eb9e8c5f6fd903f0246f2447244eca6dd112edfd",
-                "shasum": ""
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "nineinchnick\\diceware\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "authors": [
-                {
-                    "name": "Jan Waś",
-                    "email": "janek.jan@gmail.com",
-                    "homepage": "http://niix.pl/"
-                },
-                {
-                    "name": "Joe Martin",
-                    "email": "jmartin@desertflood.com"
-                }
-            ],
-            "description": "Diceware passphrase generator",
-            "keywords": [
-                "diceware",
-                "passphrase",
-                "password generator"
-            ],
-            "time": "2013-12-07 15:16:20"
-        },
-        {
-            "name": "nineinchnick/yii2-usr",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nineinchnick/yii2-usr.git",
-                "reference": "1243d51f5b94fe6caaa3708206608950b02c823a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nineinchnick/yii2-usr/zipball/1243d51f5b94fe6caaa3708206608950b02c823a",
-                "reference": "1243d51f5b94fe6caaa3708206608950b02c823a",
-                "shasum": ""
-            },
-            "require": {
-                "nineinchnick/diceware": "*",
-                "yiisoft/yii2": "*",
-                "yiisoft/yii2-bootstrap": "*",
-                "yiisoft/yii2-swiftmailer": "*"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "3.8.*"
-            },
-            "suggest": {
-                "hybridauth/hybridauth": "Support for Hybridauth for logging using social site identities.",
-                "sonata-project/google-authenticator": "Support for Google Authenticator for two step authentication using one time passwords."
-            },
-            "type": "yii2-module",
-            "autoload": {
-                "psr-4": {
-                    "nineinchnick\\usr\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jan Waś",
-                    "email": "janek.jan@gmail.com",
-                    "homepage": "http://niix.pl/"
-                }
-            ],
-            "description": "Yii 2.0 framework module for user authentication, password reset, registration and profile updating.",
-            "time": "2014-02-05 20:52:14"
-        },
-        {
             "name": "schmunk42/yii2-packaii",
-            "version": "dev-schmunk",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/schmunk42/yii2-package-browser.git",
-                "reference": "0524bb1bee62e4e436b91c25c69814163507cbaa"
+                "url": "https://github.com/schmunk42/yii2-packaii.git",
+                "reference": "ea77a92eb9555f5003dcac9b80276e88791371e6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schmunk42/yii2-packaii/zipball/ea77a92eb9555f5003dcac9b80276e88791371e6",
+                "reference": "ea77a92eb9555f5003dcac9b80276e88791371e6",
+                "shasum": ""
             },
             "require": {
                 "2amigos/yii2-arrayquery-component": "0.1.*",
                 "2amigos/yii2-packagist-component": "0.1.*",
+                "2amigos/yii2-pjax-filter-behavior": "0.1.*",
                 "cebe/markdown": "0.9.*",
-                "cebe/yii2-gravatar": "1.*"
+                "cebe/yii2-gravatar": "1.*",
+                "yiisoft/yii2-debug": "dev-master"
             },
             "type": "library",
             "autoload": {
@@ -434,22 +398,65 @@
                     "schmunk42\\packaii\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Antonio Ramirez",
+                    "email": "ramirez.cobos@gmail.com",
+                    "homepage": "http://2amigos.us"
+                },
+                {
+                    "name": "Tobias Munk",
+                    "email": "schmunk@usrbin.de",
+                    "homepage": "http://www.phundament.com"
+                }
+            ],
+            "description": "Yii2 Framework Web-UI for browsing composer packages",
+            "time": "2014-03-04 11:34:52"
+        },
+        {
+            "name": "schmunk42/yii2-templay",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmunk42/yii2-templay.git",
+                "reference": "0996ec8ce0e35373eeae280e69566d9557e993bb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schmunk42/yii2-templay/zipball/0996ec8ce0e35373eeae280e69566d9557e993bb",
+                "reference": "0996ec8ce0e35373eeae280e69566d9557e993bb",
+                "shasum": ""
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "schmunk42\\templay\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
             "authors": [
                 {
                     "name": "Tobias Munk",
-                    "email": "schmunk@usrbin.de"
-                },
-                {
-                    "name": "Antonio Ramirez",
-                    "email": "ramirez.cobos@gmail.com",
-                    "homepage": "http://2amigos.us"
+                    "email": "schmunk@usrbin.de",
+                    "homepage": "http://www.phundament.com"
                 }
             ],
-            "description": "Yii2 Framework Web-UI for browsing composer packages",
-            "time": "2014-02-24 20:39:04"
+            "description": "Template toolkit for Yii Framework 2",
+            "keywords": [
+                "extension",
+                "prado",
+                "renderer",
+                "view",
+                "yii2"
+            ],
+            "time": "2014-03-04 13:22:02"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -629,12 +636,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-composer.git",
-                "reference": "ced9e6a1680b2e240f12c04c96443fd8ad65c515"
+                "reference": "dfad39e5aa0802154cd35f0f5c84ef63bb541ed1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/ced9e6a1680b2e240f12c04c96443fd8ad65c515",
-                "reference": "ced9e6a1680b2e240f12c04c96443fd8ad65c515",
+                "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/dfad39e5aa0802154cd35f0f5c84ef63bb541ed1",
+                "reference": "dfad39e5aa0802154cd35f0f5c84ef63bb541ed1",
                 "shasum": ""
             },
             "require": {
@@ -665,9 +672,9 @@
             "keywords": [
                 "composer",
                 "extension installer",
-                "yii"
+                "yii2"
             ],
-            "time": "2014-01-12 18:16:31"
+            "time": "2014-02-27 16:37:08"
         },
         {
             "name": "yiisoft/yii2-dev",
@@ -675,12 +682,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2.git",
-                "reference": "149acbf008348338d53f684438af3d4f48661490"
+                "reference": "2ecb79dc07e16eb81f9e0e486342639211aed83a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2/zipball/149acbf008348338d53f684438af3d4f48661490",
-                "reference": "149acbf008348338d53f684438af3d4f48661490",
+                "url": "https://api.github.com/repos/yiisoft/yii2/zipball/2ecb79dc07e16eb81f9e0e486342639211aed83a",
+                "reference": "2ecb79dc07e16eb81f9e0e486342639211aed83a",
                 "shasum": ""
             },
             "require": {
@@ -798,9 +805,9 @@
             "homepage": "http://www.yiiframework.com/",
             "keywords": [
                 "framework",
-                "yii"
+                "yii2"
             ],
-            "time": "2014-02-25 12:44:11"
+            "time": "2014-03-04 13:08:58"
         }
     ],
     "packages-dev": [
@@ -1623,16 +1630,16 @@
         },
         {
             "name": "phpunit/php-token-stream",
-            "version": "1.2.1",
+            "version": "1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-token-stream.git",
-                "reference": "5220af2a7929aa35cf663d97c89ad3d50cf5fa3e"
+                "reference": "ad4e1e23ae01b483c16f600ff1bebec184588e32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/5220af2a7929aa35cf663d97c89ad3d50cf5fa3e",
-                "reference": "5220af2a7929aa35cf663d97c89ad3d50cf5fa3e",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/ad4e1e23ae01b483c16f600ff1bebec184588e32",
+                "reference": "ad4e1e23ae01b483c16f600ff1bebec184588e32",
                 "shasum": ""
             },
             "require": {
@@ -1669,7 +1676,7 @@
             "keywords": [
                 "tokenizer"
             ],
-            "time": "2013-09-13 04:58:23"
+            "time": "2014-03-03 05:10:30"
         },
         {
             "name": "phpunit/phpunit",
@@ -2388,9 +2395,8 @@
     "stability-flags": {
         "yiisoft/yii2-composer": 20,
         "yiisoft/yii2-dev": 20,
-        "nineinchnick/yii2-usr": 20,
-        "nineinchnick/diceware": 20,
         "schmunk42/yii2-packaii": 20,
+        "schmunk42/yii2-templay": 20,
         "yiisoft/yii2-coding-standards": 20,
         "schmunk42/yii2-giiant": 20
     },

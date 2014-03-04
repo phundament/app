@@ -20,20 +20,13 @@
 		"source": "https://github.com/yiisoft/yii2"
 	},
 	"minimum-stability": "stable",
-    "repositories":[
-        {
-            "type": "git",
-            "url": "https://github.com/schmunk42/yii2-package-browser.git"
-        }
-    ],
 	"require": {
 		"php": ">=5.4.0",
         "yiisoft/yii2-composer": "dev-master",
 		"yiisoft/yii2-dev": "dev-master",
         "swiftmailer/swiftmailer": "5.*",
-		"nineinchnick/yii2-usr": "dev-master",
-        "nineinchnick/diceware": "dev-master",
-		"schmunk42/yii2-packaii": "dev-schmunk",
+		"schmunk42/yii2-packaii": "dev-master",
+		"schmunk42/yii2-templay": "dev-develop",
         "twbs/bootstrap": "3.*"
     },
 	"require-dev": {
