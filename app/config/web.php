@@ -71,6 +71,7 @@ if (YII_ENV_DEV) {
         'allowedIPs' => ['127.0.0.1', '::1', '192.168.33.1'],
         'panels'     => [
             'app'       => ['class' => 'app\panels\AppPanel',],
+            'packaii'   => ['class' => 'schmunk42\packaii\panels\PackaiiPanel',],
             'config'    => ['class' => 'yii\debug\panels\ConfigPanel'],
             'request'   => ['class' => 'yii\debug\panels\RequestPanel'],
             'log'       => ['class' => 'yii\debug\panels\LogPanel'],
