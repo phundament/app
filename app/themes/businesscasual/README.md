@@ -1,1 +1,0 @@
-This is a test for themeing in Yii2.
