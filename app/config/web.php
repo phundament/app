@@ -11,8 +11,9 @@ $config = [
     'basePath'       => dirname(__DIR__),
     'extensions'     => require(__DIR__ . '/../../vendor/yiisoft/extensions.php'),
     'aliases'        => [
-        '@root'   => __DIR__ . '/../..',
-        '@vendor' => __DIR__ . '/../../vendor'
+        '@root'   => realpath(__DIR__ . '/../..'),
+        '@app'    => realpath(__DIR__ . '/..'),
+        '@vendor' => realpath(__DIR__ . '/../../vendor')
     ],
     'components'     => [
         'cache'        => [
