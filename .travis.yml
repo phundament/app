@@ -31,8 +31,6 @@ before_script:
   - echo 'elasticsearch version ' && curl http://localhost:9200/
   - mysql -e 'CREATE DATABASE yiitest;';
   - psql -U postgres -c 'CREATE DATABASE yiitest;';
-  - tests/unit/data/travis/sphinx-setup.sh
-  - mongo yii2test --eval 'db.addUser("travis", "test");'
 
 script:
   - vendor/bin/phpunit --verbose --coverage-clover=coverage.clover --exclude-group mssql,oci,wincache,xcache,zenddata
