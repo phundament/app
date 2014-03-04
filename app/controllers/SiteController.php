@@ -97,4 +97,9 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+
+    public function actionStatic($view)
+    {
+        return $this->render($view);
+    }
 }
