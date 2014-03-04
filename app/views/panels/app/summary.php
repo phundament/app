@@ -10,13 +10,6 @@ use \yii\helpers\Html;
 </div>
 
 <div class="yii-debug-toolbar-block">
-    <a href="<?= Html::url(['/packaii']) ?>" class="label label-important">
-        <span class="glyphicon glyphicon-gift"></span>
-        Packaii
-    </a>
-</div>
-
-<div class="yii-debug-toolbar-block">
     <a href="<?= Html::url(['/gii']) ?>" class="label label-important">
         <span class="glyphicon glyphicon-wrench"></span>
         Gii
