@@ -45,7 +45,7 @@ at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
 You can then install this application template using the following command:
 
 ~~~
-composer.phar --no-dev --stability=dev create-project phundament/app:4.0.x-dev app-v4
+composer.phar create-project phundament/app:4.0.x-dev app-v4
 ~~~
 
 Now you should be able to access the application through the following URL, assuming `basic` is the directory
@@ -59,12 +59,11 @@ http://localhost/basic/web/
 
 Download and install [Vagrant](http://www.vagrantup.com/downloads.html) and [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
 
-Clone the project:
+Get the project without installing it, vagrant will do that later.
 
 ~~~
-git clone -b4.0 https://github.com/phundament/app
+composer.phar create-project --no-install phundament/app:4.0.x-dev app-v4
 ~~~
-
 
 Bring up the virtual machine:
 
@@ -79,7 +78,7 @@ In the meantime, update your `/etc/hosts` file:
 192.168.33.101    phundament.vagrant
 ~~~ 
 
-Open [phundament.vagrant](http://192.168.33.101/phundament.vagrant) in your browser.
+Open [phundament.vagrant](http://192.168.33.101/phundament.vagrant) or [http://192.168.33.101](http://192.168.33.101) in your browser.
 
 
 DOCUMENTATION
