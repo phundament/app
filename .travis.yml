@@ -2,17 +2,42 @@ language: php
 
 php:
   - 5.4
+  - 5.5
+  - 5.6
+  - hhvm
+
+# run build against PHP 5.6 and hhvm but allow them to fail
+# http://docs.travis-ci.com/user/build-configuration/#Rows-That-are-Allowed-To-Fail
+matrix:
+  allow_failures:
+    - php: hhvm
+    - php: 5.6
+
+services:
+  - redis-server
+  - memcached
+  - elasticsearch
+  - mongodb
+
+install:
+  - composer self-update && composer --version
+# basic application:
+  - composer create-project --dev --prefer-dist
+  - composer require --dev codeception/codeception:1.8.*@dev codeception/specify:* codeception/verify:*
+  - php vendor/bin/codecept build
+  - php -S localhost:8080 &
 
 before_script:
-    - composer require --dev "codeception/codeception:1.6.7"
-    - php -S localhost:31415 -t www/ &
+  - echo 'elasticsearch version ' && curl http://localhost:9200/
+  - mysql -e 'CREATE DATABASE yiitest;';
+  - psql -U postgres -c 'CREATE DATABASE yiitest;';
+  - tests/unit/data/travis/sphinx-setup.sh
+  - mongo yii2test --eval 'db.addUser("travis", "test");'
 
-script: sh test.sh
+script:
+  - vendor/bin/phpunit --verbose --coverage-clover=coverage.clover --exclude-group mssql,oci,wincache,xcache,zenddata
+  - php vendor/bin/codecept run
 
-env:
-    - PHUNDAMENT_TEST=true
-
-branches:
-  only:
-    - master
-    - develop
+after_script:
+  - wget https://scrutinizer-ci.com/ocular.phar
+  - php ocular.phar code-coverage:upload --format=php-clover coverage.clover
