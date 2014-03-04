@@ -78,7 +78,7 @@ In the meantime, update your `/etc/hosts` file:
 192.168.33.101    phundament.vagrant
 ~~~ 
 
-Open [phundament.vagrant](http://192.168.33.101/phundament.vagrant) in your browser.
+Open [phundament.vagrant](http://192.168.33.101/phundament.vagrant) or [http://192.168.33.101](http://192.168.33.101) in your browser.
 
 
 DOCUMENTATION
