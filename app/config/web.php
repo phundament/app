@@ -42,15 +42,14 @@ $config = [
                 ],
             ],
         ],
-        # TODO: enable themeing
-        /*'view'         => [
-            'theme' => [
-                'pathMap' => [
-                    '@app/views' => '@app/themes/businesscasual'
+        'view'         => [
+            'renderers' => [
+                'html' => [
+                    'class' => 'schmunk42\templay\ViewRenderer',
                 ],
-                'baseUrl' => '@web/themes/businesscasual',
             ],
-        ],*/
+            #'theme' => $params['themes']['your_theme']
+        ],
         'db'           => $db,
     ],
     'modules'        => [
