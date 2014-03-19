@@ -22,11 +22,14 @@ This file has to be created, either by the webapp command or by renaming your cu
 ##### aliases
 
         'bootstrap' => 'vendor.clevertech.yiibooster.src',
+        
+##### imports
+
         'vendor.phundament.p3extensions.widgets.ckeditor.*', // shared classes
         'vendor.sammaye.auditrail2.models.*',
         'vendor.clevertech.yiibooster.src.widgets.*', // Bootstrap UI
 
-##### aliases
+##### copmponents
 
          'bootstrap' => array(
             'class' => 'vendor.clevertech.yiibooster.src.components.Bootstrap', // assuming you extracted bootstrap under extensions
