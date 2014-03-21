@@ -56,9 +56,10 @@ $config = [
         'packaii' => [
             'class' => 'schmunk42\packaii\Module'
         ],
-        'usr'     => [
-            'class' => 'nineinchnick\usr\Module',
+        'templay' => [
+            'class' => 'schmunk42\templay\Module'
         ],
+        'sakila' => 'schmunk42\sakila\Module'
     ],
     'params'         => $params,
 ];
@@ -84,12 +85,19 @@ if (YII_ENV_DEV) {
         'class'      => 'yii\gii\Module',
         'allowedIPs' => ['127.0.0.1', '::1', '192.168.33.1'],
         'generators' => [
-            'giiant' => ['class' => 'schmunk42\giiant\crud\Generator']
+            'giiant' => ['class' => 'schmunk42\giiant\crud\Generator'],
+            'crud'   => [
+                'class'     => 'yii\gii\generators\crud\Generator',
+                'templates' => ['mycrud' => '@app/templates/mycrud']
+            ]
         ]
     ];
 
     // alias for gii
     $config['aliases']['schmunk42/packaii'] = '@vendor/schmunk42/yii2-packaii';
+    $config['aliases']['schmunk42/sakila'] = '@vendor/schmunk42/yii2-sakila-module';
+
+    \Yii::$objectConfig = $params['objectConfig'];
 }
 
 return $config;
