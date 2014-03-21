@@ -11,7 +11,7 @@ applications.
 
 > Please note: This is a `dev` version. Do **NOT** use it for production yet.
 
-If you're looking for the Yii 1.1 version of Phundament please visit our [master branch](https://github.com/phundament/app).
+If you're looking for the Yii 1.1 version of Phundament please visit our [`master` branch](https://github.com/phundament/app).
 
 Get started!
 ------------
