@@ -494,7 +494,8 @@ return array(
             'shiftEnterMode'                  => 2,
             'fillEmptyBlocks'                 => false,
             // do not insert &nbsp; into empty blocks
-            'contentsCss'                     => $baseUrl . '/assets/e3ecaab1/ckeditor/ckeditor.css',
+            'contentsCss'                     => 'ckeditor/ckeditor.css',
+            'contentsCssAssets'               => 'application.themes.frontend.assets',
             // path is hashed by name
             'bodyId'                          => 'ckeditor',
             'bodyClass'                       => 'ckeditor',
