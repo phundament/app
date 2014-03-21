@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "4c516cf1584292aaab3b6587c9d794c9",
+    "hash": "91b1275968f69278368c2a03a356f8f6",
     "packages": [
         {
             "name": "2amigos/yii2-arrayquery-component",
@@ -48,6 +48,50 @@
                 "yii"
             ],
             "time": "2014-02-24 16:03:38"
+        },
+        {
+            "name": "2amigos/yii2-ckeditor-widget",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/2amigos/yii2-ckeditor-widget.git",
+                "reference": "8390df61370fd7549d4a068f398bed720af9fe98"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/2amigos/yii2-ckeditor-widget/zipball/8390df61370fd7549d4a068f398bed720af9fe98",
+                "reference": "8390df61370fd7549d4a068f398bed720af9fe98",
+                "shasum": ""
+            },
+            "require": {
+                "ckeditor/ckeditor": "dev-full/stable",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "dosamigos\\ckeditor\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Antonio Ramirez",
+                    "email": "ramirez.cobos@gmail.com",
+                    "homepage": "http://2amigos.us"
+                }
+            ],
+            "description": "CKEditor widget for Yii2.",
+            "keywords": [
+                "CKEditor",
+                "extension",
+                "widget",
+                "yii"
+            ],
+            "time": "2014-03-11 23:43:45"
         },
         {
             "name": "2amigos/yii2-packagist-component",
@@ -136,6 +180,83 @@
                 "yii"
             ],
             "time": "2014-02-26 17:37:17"
+        },
+        {
+            "name": "2amigos/yii2-selectize-widget",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/2amigos/yii2-selectize-widget.git",
+                "reference": "027ba27fa5674ac882462e54124beb7cfc4c2c49"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/2amigos/yii2-selectize-widget/zipball/027ba27fa5674ac882462e54124beb7cfc4c2c49",
+                "reference": "027ba27fa5674ac882462e54124beb7cfc4c2c49",
+                "shasum": ""
+            },
+            "require": {
+                "brianreavis/selectize.js": "*",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "dosamigos\\selectize\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Antonio Ramirez",
+                    "email": "ramirez.cobos@gmail.com",
+                    "homepage": "http://2amigos.us/"
+                }
+            ],
+            "description": "Selectize.js widget for Yii2.",
+            "homepage": "https://github.com/2amigos/yii2-selectize-widget",
+            "keywords": [
+                "extension",
+                "selectize",
+                "widget",
+                "yii"
+            ],
+            "time": "2014-03-13 12:48:33"
+        },
+        {
+            "name": "brianreavis/selectize.js",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/2amigos/selectize.js.git",
+                "reference": "ce8bcae3c269fd1600d5452f3915e2a41905bfa9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/2amigos/selectize.js/zipball/ce8bcae3c269fd1600d5452f3915e2a41905bfa9",
+                "reference": "ce8bcae3c269fd1600d5452f3915e2a41905bfa9",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Brian Reavis",
+                    "homepage": "http://brianreavis.github.io/selectize.js/"
+                }
+            ],
+            "description": "Selectize is the hybrid of a textbox and <select> box. It's jQuery based and it has autocomplete and native-feeling keyboard navigation; useful for tagging, contact lists, etc.",
+            "homepage": "http://brianreavis.github.io/selectize.js/",
+            "keywords": [
+                "autocomplete",
+                "hybrid",
+                "jquery",
+                "plugin"
+            ],
+            "time": "2014-01-14 12:30:50"
         },
         {
             "name": "cebe/markdown",
@@ -232,6 +353,47 @@
                 "yii"
             ],
             "time": "2013-12-10 17:49:58"
+        },
+        {
+            "name": "ckeditor/ckeditor",
+            "version": "dev-full/stable",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ckeditor/ckeditor-releases.git",
+                "reference": "0b7c3f1f5c0a9d14657cedf56a3735a2c57a38ac"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ckeditor/ckeditor-releases/zipball/0b7c3f1f5c0a9d14657cedf56a3735a2c57a38ac",
+                "reference": "0b7c3f1f5c0a9d14657cedf56a3735a2c57a38ac",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+",
+                "LGPL-2.1+",
+                "MPL-1.1+"
+            ],
+            "authors": [
+                {
+                    "name": "CKSource - Frederico Knabben",
+                    "homepage": "http://cksource.com"
+                }
+            ],
+            "description": "JavaScript WYSIWYG web text editor.",
+            "homepage": "http://ckeditor.com",
+            "keywords": [
+                "CKEditor",
+                "editor",
+                "fckeditor",
+                "html",
+                "javascript",
+                "richtext",
+                "text",
+                "wysiwyg"
+            ],
+            "time": "2014-02-26 15:43:10"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -371,6 +533,171 @@
             "time": "2014-01-28 22:29:15"
         },
         {
+            "name": "kartik-v/bootstrap-fileinput",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/bootstrap-fileinput.git",
+                "reference": "5ff40e7189e12b9b6e2c6505eb228d8dbe8ea391"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/5ff40e7189e12b9b6e2c6505eb228d8dbe8ea391",
+                "reference": "5ff40e7189e12b9b6e2c6505eb228d8dbe8ea391",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "kartik\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD 3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "An enhanced HTML 5 file input for Bootstrap 3.x with file preview, multiple selection, and more features.",
+            "homepage": "https://github.com/kartik-v/bootstrap-fileinput",
+            "keywords": [
+                "bootstrap",
+                "file",
+                "image",
+                "input",
+                "jquery",
+                "preview",
+                "upload"
+            ],
+            "time": "2014-03-20 09:23:55"
+        },
+        {
+            "name": "kartik-v/bootstrap-star-rating",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/bootstrap-star-rating.git",
+                "reference": "16f9bbd682b0842ccf9e7dce5b2ae0ee924fa40d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/bootstrap-star-rating/zipball/16f9bbd682b0842ccf9e7dce5b2ae0ee924fa40d",
+                "reference": "16f9bbd682b0842ccf9e7dce5b2ae0ee924fa40d",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "kartik\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD 3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "A simple yet powerful JQuery star rating plugin for Bootstrap.",
+            "homepage": "https://github.com/kartik-v/bootstrap-star-rating",
+            "keywords": [
+                "Rating",
+                "bootstrap",
+                "jquery",
+                "star"
+            ],
+            "time": "2014-03-19 11:06:17"
+        },
+        {
+            "name": "kartik-v/yii2-widgets",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-widgets.git",
+                "reference": "91490709254b549a78fbf880707b70974f0f2de7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widgets/zipball/91490709254b549a78fbf880707b70974f0f2de7",
+                "reference": "91490709254b549a78fbf880707b70974f0f2de7",
+                "shasum": ""
+            },
+            "require": {
+                "kartik-v/bootstrap-fileinput": "dev-master",
+                "kartik-v/bootstrap-star-rating": "dev-master",
+                "yiisoft/yii2": "dev-master",
+                "yiisoft/yii2-bootstrap": "dev-master"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "kartik\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD 3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "Collection of useful widgets for Yii Framework 2.0 extending functionalities for Bootstrap",
+            "homepage": "https://github.com/kartik-v/yii2-widgets",
+            "keywords": [
+                "extension",
+                "form",
+                "widget",
+                "yii2"
+            ],
+            "time": "2014-03-20 08:10:49"
+        },
+        {
+            "name": "phpspec/php-diff",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpspec/php-diff.git",
+                "reference": "30e103d19519fe678ae64a60d77884ef3d71b28a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpspec/php-diff/zipball/30e103d19519fe678ae64a60d77884ef3d71b28a",
+                "reference": "30e103d19519fe678ae64a60d77884ef3d71b28a",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Diff": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Boulton",
+                    "homepage": "http://github.com/chrisboulton"
+                }
+            ],
+            "description": "A comprehensive library for generating differences between two hashable objects (strings or arrays).",
+            "time": "2013-11-01 13:02:21"
+        },
+        {
             "name": "schmunk42/yii2-packaii",
             "version": "dev-master",
             "source": {
@@ -418,17 +745,60 @@
             "time": "2014-03-04 11:34:52"
         },
         {
+            "name": "schmunk42/yii2-sakila-module",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmunk42/yii2-sakila-module.git",
+                "reference": "dac90f15346d4c33c0f23f7f561115f99f1703ea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schmunk42/yii2-sakila-module/zipball/dac90f15346d4c33c0f23f7f561115f99f1703ea",
+                "reference": "dac90f15346d4c33c0f23f7f561115f99f1703ea",
+                "shasum": ""
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "schmunk42\\sakila\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Munk",
+                    "email": "schmunk@usrbin.de",
+                    "homepage": "http://www.usrbin.de"
+                }
+            ],
+            "description": "Giiant CRUD Demo Project",
+            "keywords": [
+                "crud",
+                "demo",
+                "extension",
+                "gii",
+                "giiant",
+                "sakila",
+                "yii2"
+            ],
+            "time": "2014-03-20 15:12:38"
+        },
+        {
             "name": "schmunk42/yii2-templay",
             "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii2-templay.git",
-                "reference": "0996ec8ce0e35373eeae280e69566d9557e993bb"
+                "reference": "e6e200b1f986b7fb3a84636125cafbfc1b520138"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii2-templay/zipball/0996ec8ce0e35373eeae280e69566d9557e993bb",
-                "reference": "0996ec8ce0e35373eeae280e69566d9557e993bb",
+                "url": "https://api.github.com/repos/schmunk42/yii2-templay/zipball/e6e200b1f986b7fb3a84636125cafbfc1b520138",
+                "reference": "e6e200b1f986b7fb3a84636125cafbfc1b520138",
                 "shasum": ""
             },
             "type": "yii2-extension",
@@ -445,7 +815,7 @@
                 {
                     "name": "Tobias Munk",
                     "email": "schmunk@usrbin.de",
-                    "homepage": "http://www.phundament.com"
+                    "homepage": "http://www.usrbin.de"
                 }
             ],
             "description": "Template toolkit for Yii Framework 2",
@@ -456,20 +826,20 @@
                 "view",
                 "yii2"
             ],
-            "time": "2014-03-04 13:22:02"
+            "time": "2014-03-14 00:30:08"
         },
         {
             "name": "swiftmailer/swiftmailer",
-            "version": "v5.0.3",
+            "version": "v5.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "32edc3b0de0fdc1b10f5c4912e8677b3f411a230"
+                "reference": "748c01c1144713ac0118396935d10b6ceec91b68"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/32edc3b0de0fdc1b10f5c4912e8677b3f411a230",
-                "reference": "32edc3b0de0fdc1b10f5c4912e8677b3f411a230",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/748c01c1144713ac0118396935d10b6ceec91b68",
+                "reference": "748c01c1144713ac0118396935d10b6ceec91b68",
                 "shasum": ""
             },
             "require": {
@@ -507,7 +877,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2013-12-03 13:33:24"
+            "time": "2014-03-18 09:03:27"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -631,17 +1001,43 @@
             "time": "2014-01-24 06:00:08"
         },
         {
+            "name": "yiisoft/jquery-pjax",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiisoft/jquery-pjax.git",
+                "reference": "520f8c12b5a417e21d2cd0df499fa2a4e4e9a9d6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiisoft/jquery-pjax/zipball/520f8c12b5a417e21d2cd0df499fa2a4e4e9a9d6",
+                "reference": "520f8c12b5a417e21d2cd0df499fa2a4e4e9a9d6",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/jquery": ">=1.8"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "pushState + ajax = pjax, a forked maintainted by the Yii Framework core developers",
+            "homepage": "https://github.com/yiisoft/jquery-pjax#readme",
+            "time": "2014-03-20 17:20:33"
+        },
+        {
             "name": "yiisoft/yii2-composer",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-composer.git",
-                "reference": "dfad39e5aa0802154cd35f0f5c84ef63bb541ed1"
+                "reference": "90547559cbf45b1836c370c0b4d1b2c70f778dd5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/dfad39e5aa0802154cd35f0f5c84ef63bb541ed1",
-                "reference": "dfad39e5aa0802154cd35f0f5c84ef63bb541ed1",
+                "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/90547559cbf45b1836c370c0b4d1b2c70f778dd5",
+                "reference": "90547559cbf45b1836c370c0b4d1b2c70f778dd5",
                 "shasum": ""
             },
             "require": {
@@ -674,7 +1070,7 @@
                 "extension installer",
                 "yii2"
             ],
-            "time": "2014-02-27 16:37:08"
+            "time": "2014-03-16 04:46:21"
         },
         {
             "name": "yiisoft/yii2-dev",
@@ -682,12 +1078,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2.git",
-                "reference": "2ecb79dc07e16eb81f9e0e486342639211aed83a"
+                "reference": "ba5bfc09cb7bcd2b1312d3754d14bd88b867c292"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2/zipball/2ecb79dc07e16eb81f9e0e486342639211aed83a",
-                "reference": "2ecb79dc07e16eb81f9e0e486342639211aed83a",
+                "url": "https://api.github.com/repos/yiisoft/yii2/zipball/ba5bfc09cb7bcd2b1312d3754d14bd88b867c292",
+                "reference": "ba5bfc09cb7bcd2b1312d3754d14bd88b867c292",
                 "shasum": ""
             },
             "require": {
@@ -697,6 +1093,7 @@
                 "lib-pcre": "*",
                 "php": ">=5.4.0",
                 "yiisoft/jquery": "~2.0 | ~1.10",
+                "yiisoft/jquery-pjax": "*",
                 "yiisoft/yii2-composer": "*"
             },
             "replace": {
@@ -807,7 +1204,52 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2014-03-04 13:08:58"
+            "time": "2014-03-20 17:32:50"
+        },
+        {
+            "name": "zhuravljov/yii2-datetime-widgets",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zhuravljov/yii2-datetime-widgets.git",
+                "reference": "b52693572eff7f9e326317b93a65766fd6145815"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zhuravljov/yii2-datetime-widgets/zipball/b52693572eff7f9e326317b93a65766fd6145815",
+                "reference": "b52693572eff7f9e326317b93a65766fd6145815",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "zhuravljov\\widgets\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Zhuravlev",
+                    "email": "zhuravljov@gmail.com"
+                }
+            ],
+            "description": "Datetime widgets for Yii2.",
+            "homepage": "https://github.com/zhuravljov/yii2-datetime-widgets",
+            "keywords": [
+                "DateTimePicker",
+                "datepicker",
+                "daterangepicker",
+                "extension",
+                "widget",
+                "yii"
+            ],
+            "time": "2014-02-01 14:44:50"
         }
     ],
     "packages-dev": [
@@ -1435,6 +1877,148 @@
             "time": "2014-02-14 08:59:38"
         },
         {
+            "name": "nikic/php-parser",
+            "version": "v0.9.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nikic/PHP-Parser.git",
+                "reference": "1e5e280ae88a27effa2ae4aa2bd088494ed8594f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/1e5e280ae88a27effa2ae4aa2bd088494ed8594f",
+                "reference": "1e5e280ae88a27effa2ae4aa2bd088494ed8594f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.9-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "PHPParser": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Nikita Popov"
+                }
+            ],
+            "description": "A PHP parser written in PHP",
+            "keywords": [
+                "parser",
+                "php"
+            ],
+            "time": "2013-08-25 17:11:40"
+        },
+        {
+            "name": "phpdocumentor/reflection",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpDocumentor/Reflection.git",
+                "reference": "ec0eeb2a3a1433c80fcf44271c478169ae6255dd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpDocumentor/Reflection/zipball/ec0eeb2a3a1433c80fcf44271c478169ae6255dd",
+                "reference": "ec0eeb2a3a1433c80fcf44271c478169ae6255dd",
+                "shasum": ""
+            },
+            "require": {
+                "nikic/php-parser": "0.9.4",
+                "php": ">=5.3.3",
+                "phpdocumentor/reflection-docblock": "2.*@dev",
+                "psr/log": "~1.0"
+            },
+            "require-dev": {
+                "behat/behat": "~2.4",
+                "mockery/mockery": ">=0.7.0",
+                "phpunit/phpunit": "~3.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "phpDocumentor": [
+                        "src/",
+                        "tests/unit/",
+                        "tests/mocks/"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Reflection library to do Static Analysis for PHP Projects",
+            "homepage": "http://www.phpdoc.org",
+            "keywords": [
+                "phpDocumentor",
+                "phpdoc",
+                "reflection",
+                "static analysis"
+            ],
+            "time": "2014-03-08 09:30:00"
+        },
+        {
+            "name": "phpdocumentor/reflection-docblock",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
+                "reference": "66a7d3bf3165856b0635f9c2ea7590f00c4f017e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/66a7d3bf3165856b0635f9c2ea7590f00c4f017e",
+                "reference": "66a7d3bf3165856b0635f9c2ea7590f00c4f017e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*@stable"
+            },
+            "suggest": {
+                "dflydev/markdown": "1.0.*",
+                "erusev/parsedown": "~0.7"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "phpDocumentor": [
+                        "src/"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mike van Riel",
+                    "email": "mike.vanriel@naenius.com"
+                }
+            ],
+            "time": "2014-03-16 12:31:01"
+        },
+        {
             "name": "phpunit/php-code-coverage",
             "version": "1.2.16",
             "source": {
@@ -1845,12 +2429,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii2-giiant.git",
-                "reference": "cd6312d54f15a545c3cace4ecddde6e3fb93745f"
+                "reference": "8d0da574859ef08d6432aa8aafe0addcc12b92d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii2-giiant/zipball/cd6312d54f15a545c3cace4ecddde6e3fb93745f",
-                "reference": "cd6312d54f15a545c3cace4ecddde6e3fb93745f",
+                "url": "https://api.github.com/repos/schmunk42/yii2-giiant/zipball/8d0da574859ef08d6432aa8aafe0addcc12b92d4",
+                "reference": "8d0da574859ef08d6432aa8aafe0addcc12b92d4",
                 "shasum": ""
             },
             "require": {
@@ -1880,7 +2464,7 @@
                 "gii",
                 "yii2"
             ],
-            "time": "2014-02-07 13:23:44"
+            "time": "2014-03-19 14:58:03"
         },
         {
             "name": "squizlabs/php_codesniffer",
@@ -2325,12 +2909,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-coding-standards.git",
-                "reference": "cbf0bbf62dcd691073b820c8544070e7a2103e03"
+                "reference": "3521f9816325654ff30498ebe2399c8f61b2a749"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-coding-standards/zipball/cbf0bbf62dcd691073b820c8544070e7a2103e03",
-                "reference": "cbf0bbf62dcd691073b820c8544070e7a2103e03",
+                "url": "https://api.github.com/repos/yiisoft/yii2-coding-standards/zipball/3521f9816325654ff30498ebe2399c8f61b2a749",
+                "reference": "3521f9816325654ff30498ebe2399c8f61b2a749",
                 "shasum": ""
             },
             "require": {
@@ -2385,7 +2969,7 @@
                 "framework",
                 "yii"
             ],
-            "time": "2014-02-10 10:00:23"
+            "time": "2014-03-17 10:55:45"
         }
     ],
     "aliases": [
@@ -2395,8 +2979,19 @@
     "stability-flags": {
         "yiisoft/yii2-composer": 20,
         "yiisoft/yii2-dev": 20,
+        "yiisoft/jquery-pjax": 20,
         "schmunk42/yii2-packaii": 20,
         "schmunk42/yii2-templay": 20,
+        "2amigos/yii2-ckeditor-widget": 20,
+        "2amigos/yii2-selectize-widget": 20,
+        "ckeditor/ckeditor": 20,
+        "brianreavis/selectize.js": 20,
+        "kartik-v/yii2-widgets": 20,
+        "kartik-v/bootstrap-fileinput": 20,
+        "kartik-v/bootstrap-star-rating": 20,
+        "zhuravljov/yii2-datetime-widgets": 20,
+        "schmunk42/yii2-sakila-module": 20,
+        "phpdocumentor/reflection-docblock": 20,
         "yiisoft/yii2-coding-standards": 20,
         "schmunk42/yii2-giiant": 20
     },
