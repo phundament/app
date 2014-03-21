@@ -38,9 +38,9 @@ Installation via Vagrant can be found in the [installation docs](docs/install.md
 Read on...
 ----------
 
-- [Website](http://phundament.com)
 - Documentation [Markdown](docs/index.md) [HTML*](http://docs.phundament.com/4.0/guide-index.html)
 - API Class reference [HTML*](http://docs.phundament.com/4.0)
+- [Website](http://phundament.com)
 
 \* Work in progress
 
