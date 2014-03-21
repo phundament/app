@@ -32,6 +32,8 @@ directly under the Web root.
 http://localhost/app-v4/web/
 ~~~
 
+Installation via Vagrant can be found in the [installation docs](docs/install.md).
+
 
 Read on...
 ----------
