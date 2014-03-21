@@ -35,7 +35,7 @@ Read on...
 ----------
 
 - [Website](http://phundament.com)
-- Documentation [Markdown](docs/index.md) [HTML*](http://docs.phundament.com/4.0/index-guide.html)
+- Documentation [Markdown](docs/index.md) [HTML*](http://docs.phundament.com/4.0/guide-index.html)
 - API Class reference [HTML*](http://docs.phundament.com/4.0)
 
 \* tbd
