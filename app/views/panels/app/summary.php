@@ -1,5 +1,5 @@
 <?php
-use \yii\helpers\Html;
+use \yii\helpers\Url;
 
 ?>
 
@@ -10,14 +10,14 @@ use \yii\helpers\Html;
 </div>
 
 <div class="yii-debug-toolbar-block">
-    <a href="<?= Html::url(['/gii']) ?>" class="label label-important">
+    <a href="<?= Url::to(['/gii']) ?>" class="label label-important">
         <span class="glyphicon glyphicon-wrench"></span>
         Gii
     </a>
 </div>
 
 <div class="yii-debug-toolbar-block">
-    <a href="<?= Html::url(['/debug/default/view', 'panel' => 'app']) ?>" class="label label-inverse">
+    <a href="<?= Url::to(['/debug/default/view', 'panel' => 'app']) ?>" class="label label-inverse">
         <span class="glyphicon glyphicon-cog"></span>
         Backend
     </a>
