@@ -703,12 +703,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii2-packaii.git",
-                "reference": "76e5ed891a9519586bcb6a09c195bfefaae16afe"
+                "reference": "d98c372ee747a2e744e01923f8fda6d905761a2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii2-packaii/zipball/76e5ed891a9519586bcb6a09c195bfefaae16afe",
-                "reference": "76e5ed891a9519586bcb6a09c195bfefaae16afe",
+                "url": "https://api.github.com/repos/schmunk42/yii2-packaii/zipball/d98c372ee747a2e744e01923f8fda6d905761a2e",
+                "reference": "d98c372ee747a2e744e01923f8fda6d905761a2e",
                 "shasum": ""
             },
             "require": {
@@ -742,7 +742,7 @@
                 }
             ],
             "description": "Yii2 Framework Web-UI for browsing composer packages",
-            "time": "2014-03-21 18:08:33"
+            "time": "2014-03-21 18:59:05"
         },
         {
             "name": "schmunk42/yii2-sakila-module",
@@ -1078,12 +1078,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2.git",
-                "reference": "7c91af531fee938f5a54612ab7700178d9addd6e"
+                "reference": "a9546a990673f900835589f960a153b24e322b35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2/zipball/7c91af531fee938f5a54612ab7700178d9addd6e",
-                "reference": "7c91af531fee938f5a54612ab7700178d9addd6e",
+                "url": "https://api.github.com/repos/yiisoft/yii2/zipball/a9546a990673f900835589f960a153b24e322b35",
+                "reference": "a9546a990673f900835589f960a153b24e322b35",
                 "shasum": ""
             },
             "require": {
@@ -1204,7 +1204,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2014-03-21 18:24:36"
+            "time": "2014-03-21 20:30:36"
         },
         {
             "name": "zhuravljov/yii2-datetime-widgets",
