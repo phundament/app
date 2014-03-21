@@ -4,7 +4,7 @@ Phundament
 **Version 3.0.24**
 
 
-What is Phundament?
+What is it?
 -------------------
 
 Phundament is a solid, highly customizable universal application foundation built with [composer](http://getcomposer.org) 
