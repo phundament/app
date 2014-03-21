@@ -171,8 +171,7 @@
             },
             "type": "yii-extension",
             "description": "A configurable set of panels that display various debug information about the current request/response. ",
-            "homepage": "https://github.com/malyshev/yii-debug-toolbar",
-            "time": "2013-12-11 15:02:26"
+            "homepage": "https://github.com/malyshev/yii-debug-toolbar"
         },
         {
             "name": "mikehaertl/packagecompressor",
