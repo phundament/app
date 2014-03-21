@@ -1078,12 +1078,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2.git",
-                "reference": "ba5bfc09cb7bcd2b1312d3754d14bd88b867c292"
+                "reference": "36ed709e31b39b2274bc22be19fd9738fa26aa1d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2/zipball/ba5bfc09cb7bcd2b1312d3754d14bd88b867c292",
-                "reference": "ba5bfc09cb7bcd2b1312d3754d14bd88b867c292",
+                "url": "https://api.github.com/repos/yiisoft/yii2/zipball/36ed709e31b39b2274bc22be19fd9738fa26aa1d",
+                "reference": "36ed709e31b39b2274bc22be19fd9738fa26aa1d",
                 "shasum": ""
             },
             "require": {
@@ -1204,7 +1204,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2014-03-20 17:32:50"
+            "time": "2014-03-21 14:39:43"
         },
         {
             "name": "zhuravljov/yii2-datetime-widgets",
@@ -1836,16 +1836,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.0.1",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "1ee53258c4076953dc512e78db00adbd7e5b21cd"
+                "reference": "804c17d20d938a1d3c425307189e65f49b53231e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/1ee53258c4076953dc512e78db00adbd7e5b21cd",
-                "reference": "1ee53258c4076953dc512e78db00adbd7e5b21cd",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/804c17d20d938a1d3c425307189e65f49b53231e",
+                "reference": "804c17d20d938a1d3c425307189e65f49b53231e",
                 "shasum": ""
             },
             "require": {
@@ -1874,7 +1874,7 @@
                 "object",
                 "object graph"
             ],
-            "time": "2014-02-14 08:59:38"
+            "time": "2014-03-21 12:53:08"
         },
         {
             "name": "nikic/php-parser",

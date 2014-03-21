@@ -17,19 +17,4 @@ return [
             'baseUrl' => '@web/themes/origami',
         ],
     ],
-    'objectConfig' => [
-        // giiant provider configuration
-        'schmunk42\giiant\crud\providers\EditorProvider'   => [
-            'columnNames' => ['description']
-        ],
-        'schmunk42\giiant\crud\providers\SelectProvider'   => [
-            'columnNames' => ['amount','rating']
-        ],
-        'schmunk42\giiant\crud\providers\DateTimeProvider' => [
-            'columnNames' => ['last_update']
-        ],
-        'schmunk42\giiant\crud\providers\RangeProvider' => [
-            'columnNames' => ['rental_duration']
-        ]
-    ]
 ];

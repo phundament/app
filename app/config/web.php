@@ -59,7 +59,7 @@ $config = [
         'templay' => [
             'class' => 'schmunk42\templay\Module'
         ],
-        'sakila' => 'schmunk42\sakila\Module'
+        'sakila'  => 'schmunk42\sakila\Module'
     ],
     'params'         => $params,
 ];
@@ -95,9 +95,34 @@ if (YII_ENV_DEV) {
 
     // alias for gii
     $config['aliases']['schmunk42/packaii'] = '@vendor/schmunk42/yii2-packaii';
-    $config['aliases']['schmunk42/sakila'] = '@vendor/schmunk42/yii2-sakila-module';
+    $config['aliases']['schmunk42/sakila']  = '@vendor/schmunk42/yii2-sakila-module';
 
-    \Yii::$objectConfig = $params['objectConfig'];
+    // class-based config
+    \Yii::$container->set(
+                    'schmunk42\giiant\crud\providers\EditorProvider',
+                        [
+                            'columnNames' => ['description']
+                        ]
+    );
+    \Yii::$container->set(
+                    'schmunk42\giiant\crud\providers\SelectProvider',
+                        [
+                            'columnNames' => ['amount', 'rating']
+                        ]
+    );
+    \Yii::$container->set(
+                    'schmunk42\giiant\crud\providers\DateTimeProvider',
+                        [
+                            'columnNames' => ['last_update']
+                        ]
+    );
+    \Yii::$container->set(
+                    'schmunk42\giiant\crud\providers\RangeProvider',
+                        [
+                            'columnNames' => ['rental_duration']
+                        ]
+    );
+
 }
 
 return $config;
