@@ -1,14 +1,17 @@
-Phundament PHP Application Framework
-====================================
+Phundament
+==========
 
-*Version 4.0-dev*
------------------
+**Version 4.0.x-dev**
 
-** THIS IS A VERY EARLY DEVELOPMENT VERSION - DO NOT USE FOR PRODUCTION!**
+What is it?
+-----------
 
-Phundament is a foundation based on Yii Framework 2.0 best for rapidly developing web
+Phundament is a PHP Application Foundation based on Yii Framework 2.0 best for rapidly developing web
 applications.
 
+> Please note: This is a `dev` version. Do **NOT** use it for production yet.
+
+If you're looking for the Yii 1.1 version of Phundament please visit our [`master` branch](https://github.com/phundament/app).
 
 Get started!
 ------------
@@ -31,12 +34,15 @@ directly under the Web root.
 http://localhost/app-v4/web/
 ~~~
 
+Installation via Vagrant can be found in the [installation docs](docs/install.md).
+
+
 Read on...
 ----------
 
-- [Website](http://phundament.com)
-- Documentation [Markdown](docs/index.md) [HTML*](http://docs.phundament.com/4.0/index-guide.html)
+- Documentation [Markdown](docs/index.md) [HTML*](http://docs.phundament.com/4.0/guide-index.html)
 - API Class reference [HTML*](http://docs.phundament.com/4.0)
+- [Website](http://phundament.com)
 
-\* tbd
+\* Work in progress
 
