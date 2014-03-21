@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "43aefb97e729c34a2736c4ee65aa55e1",
+    "hash": "5689337b6016092b6bb7b3113d1717d9",
     "packages": [
         {
             "name": "bwoester/yii-event-interceptor",
@@ -388,12 +388,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii-backend-theme.git",
-                "reference": "8631a672ec0c2a050805f6d1795705ed8cbddc79"
+                "reference": "86a9633aaf04b2c10e8080cdb8cf64e8d87e3b05"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii-backend-theme/zipball/8631a672ec0c2a050805f6d1795705ed8cbddc79",
-                "reference": "8631a672ec0c2a050805f6d1795705ed8cbddc79",
+                "url": "https://api.github.com/repos/schmunk42/yii-backend-theme/zipball/86a9633aaf04b2c10e8080cdb8cf64e8d87e3b05",
+                "reference": "86a9633aaf04b2c10e8080cdb8cf64e8d87e3b05",
                 "shasum": ""
             },
             "require": {
@@ -426,7 +426,7 @@
                 "theme",
                 "yii"
             ],
-            "time": "2013-11-21 02:07:14"
+            "time": "2014-03-21 17:02:50"
         },
         {
             "name": "phundament/jquery-file-upload",
@@ -493,16 +493,16 @@
         },
         {
             "name": "phundament/p3bootstrap",
-            "version": "0.22.0",
+            "version": "0.23.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3bootstrap.git",
-                "reference": "0.22.0"
+                "reference": "0943aef82dd72e5b7a0fbc98d9d4237c23ee5a5c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3bootstrap/zipball/0.22.0",
-                "reference": "0.22.0",
+                "url": "https://api.github.com/repos/schmunk42/p3bootstrap/zipball/0943aef82dd72e5b7a0fbc98d9d4237c23ee5a5c",
+                "reference": "0943aef82dd72e5b7a0fbc98d9d4237c23ee5a5c",
                 "shasum": ""
             },
             "require": {
@@ -518,6 +518,7 @@
                 "twitter/bootstrap": "Source files for LESS customization"
             },
             "type": "yii-theme",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -535,11 +536,7 @@
                 "theme",
                 "yii"
             ],
-            "support": {
-                "source": "https://github.com/schmunk42/p3bootstrap/tree/develop",
-                "issues": "https://github.com/schmunk42/p3bootstrap/issues"
-            },
-            "time": "2013-10-13 21:53:10"
+            "time": "2014-03-21 17:01:11"
         },
         {
             "name": "phundament/p3extensions",

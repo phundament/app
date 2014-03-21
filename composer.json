@@ -53,7 +53,7 @@
         "phundament/jquery-file-upload": "@dev",
         "phundament/p3admin":"0.16.*",
         "phundament/p3extensions":"0.17.1",
-        "phundament/p3bootstrap":"0.22.*",
+        "phundament/p3bootstrap":"0.23.*",
         "phundament/p3pages":"~0.17.1",
         "phundament/p3media":"0.16.*",
         "phundament/p3widgets":"0.16.*",
