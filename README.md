@@ -1,10 +1,10 @@
 Phundament
 ==========
 
-*Version 4.0-dev*
-
 PHP Application Framework
 -------------------------
+
+*Version 4.0-dev*
 
 **THIS IS AN EARLY DEVELOPMENT VERSION - DO NOT USE FOR PRODUCTION!**
 
