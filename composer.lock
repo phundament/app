@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "91b1275968f69278368c2a03a356f8f6",
+    "hash": "2befb5e559812e882bf665a885df208f",
     "packages": [
         {
             "name": "2amigos/yii2-arrayquery-component",
@@ -360,12 +360,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ckeditor/ckeditor-releases.git",
-                "reference": "0b7c3f1f5c0a9d14657cedf56a3735a2c57a38ac"
+                "reference": "54d58cf10656fc9c62af09f458c4a39fffb5a100"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ckeditor/ckeditor-releases/zipball/0b7c3f1f5c0a9d14657cedf56a3735a2c57a38ac",
-                "reference": "0b7c3f1f5c0a9d14657cedf56a3735a2c57a38ac",
+                "url": "https://api.github.com/repos/ckeditor/ckeditor-releases/zipball/54d58cf10656fc9c62af09f458c4a39fffb5a100",
+                "reference": "54d58cf10656fc9c62af09f458c4a39fffb5a100",
                 "shasum": ""
             },
             "type": "library",
@@ -393,7 +393,7 @@
                 "text",
                 "wysiwyg"
             ],
-            "time": "2014-02-26 15:43:10"
+            "time": "2014-03-25 14:32:01"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -538,12 +538,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/bootstrap-fileinput.git",
-                "reference": "5ff40e7189e12b9b6e2c6505eb228d8dbe8ea391"
+                "reference": "e6369e391e98a834b93e97b519eb4776b60b6e3d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/5ff40e7189e12b9b6e2c6505eb228d8dbe8ea391",
-                "reference": "5ff40e7189e12b9b6e2c6505eb228d8dbe8ea391",
+                "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/e6369e391e98a834b93e97b519eb4776b60b6e3d",
+                "reference": "e6369e391e98a834b93e97b519eb4776b60b6e3d",
                 "shasum": ""
             },
             "type": "library",
@@ -574,7 +574,7 @@
                 "preview",
                 "upload"
             ],
-            "time": "2014-03-20 09:23:55"
+            "time": "2014-03-22 11:21:09"
         },
         {
             "name": "kartik-v/bootstrap-star-rating",
@@ -582,12 +582,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/bootstrap-star-rating.git",
-                "reference": "16f9bbd682b0842ccf9e7dce5b2ae0ee924fa40d"
+                "reference": "607f0851f22e4a1fc3c41e1e5502b827f44d07a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/bootstrap-star-rating/zipball/16f9bbd682b0842ccf9e7dce5b2ae0ee924fa40d",
-                "reference": "16f9bbd682b0842ccf9e7dce5b2ae0ee924fa40d",
+                "url": "https://api.github.com/repos/kartik-v/bootstrap-star-rating/zipball/607f0851f22e4a1fc3c41e1e5502b827f44d07a0",
+                "reference": "607f0851f22e4a1fc3c41e1e5502b827f44d07a0",
                 "shasum": ""
             },
             "type": "library",
@@ -615,7 +615,7 @@
                 "jquery",
                 "star"
             ],
-            "time": "2014-03-19 11:06:17"
+            "time": "2014-03-25 05:30:54"
         },
         {
             "name": "kartik-v/yii2-widgets",
@@ -623,12 +623,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widgets.git",
-                "reference": "91490709254b549a78fbf880707b70974f0f2de7"
+                "reference": "f702cac6696e5a43b214dcf91ed98202c420eaf6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widgets/zipball/91490709254b549a78fbf880707b70974f0f2de7",
-                "reference": "91490709254b549a78fbf880707b70974f0f2de7",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widgets/zipball/f702cac6696e5a43b214dcf91ed98202c420eaf6",
+                "reference": "f702cac6696e5a43b214dcf91ed98202c420eaf6",
                 "shasum": ""
             },
             "require": {
@@ -662,7 +662,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2014-03-20 08:10:49"
+            "time": "2014-03-25 14:33:37"
         },
         {
             "name": "phpspec/php-diff",
@@ -703,12 +703,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii2-packaii.git",
-                "reference": "d98c372ee747a2e744e01923f8fda6d905761a2e"
+                "reference": "00b19bbddbba9bd1112049864c1d94364e20ca51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii2-packaii/zipball/d98c372ee747a2e744e01923f8fda6d905761a2e",
-                "reference": "d98c372ee747a2e744e01923f8fda6d905761a2e",
+                "url": "https://api.github.com/repos/schmunk42/yii2-packaii/zipball/00b19bbddbba9bd1112049864c1d94364e20ca51",
+                "reference": "00b19bbddbba9bd1112049864c1d94364e20ca51",
                 "shasum": ""
             },
             "require": {
@@ -742,7 +742,7 @@
                 }
             ],
             "description": "Yii2 Framework Web-UI for browsing composer packages",
-            "time": "2014-03-21 18:59:05"
+            "time": "2014-03-25 23:05:45"
         },
         {
             "name": "schmunk42/yii2-sakila-module",
@@ -1078,12 +1078,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2.git",
-                "reference": "a9546a990673f900835589f960a153b24e322b35"
+                "reference": "f9befd58fc71a5be69c1502a6f5d0fe65b7ba414"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2/zipball/a9546a990673f900835589f960a153b24e322b35",
-                "reference": "a9546a990673f900835589f960a153b24e322b35",
+                "url": "https://api.github.com/repos/yiisoft/yii2/zipball/f9befd58fc71a5be69c1502a6f5d0fe65b7ba414",
+                "reference": "f9befd58fc71a5be69c1502a6f5d0fe65b7ba414",
                 "shasum": ""
             },
             "require": {
@@ -1130,6 +1130,7 @@
                 "fzaninotto/faker": "required by yii2-faker extension",
                 "imagine/imagine": "required by yii2-imagine extension",
                 "phpdocumentor/reflection": "required by yii2-apidoc extension",
+                "phpspec/php-diff": "required by yii2-gii extension",
                 "smarty/smarty": "required by yii2-smarty extension",
                 "swiftmailer/swiftmailer": "required by yii2-swiftmailer extension",
                 "twbs/bootstrap": "required by yii2-bootstrap, yii2-debug, yii2-gii extension",
@@ -1204,7 +1205,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2014-03-21 20:30:36"
+            "time": "2014-03-26 03:34:30"
         },
         {
             "name": "zhuravljov/yii2-datetime-widgets",
@@ -1474,16 +1475,16 @@
         },
         {
             "name": "codeception/codeception",
-            "version": "1.8.3",
+            "version": "1.8.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Codeception/Codeception.git",
-                "reference": "e6ced5134ab2487eda4355a71e6a453e95854bdd"
+                "reference": "e84a4f31915696c3f348bc90f06175bc02854607"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Codeception/Codeception/zipball/e6ced5134ab2487eda4355a71e6a453e95854bdd",
-                "reference": "e6ced5134ab2487eda4355a71e6a453e95854bdd",
+                "url": "https://api.github.com/repos/Codeception/Codeception/zipball/e84a4f31915696c3f348bc90f06175bc02854607",
+                "reference": "e84a4f31915696c3f348bc90f06175bc02854607",
                 "shasum": ""
             },
             "require": {
@@ -1492,7 +1493,7 @@
                 "behat/mink-selenium2-driver": "1.1.*",
                 "facebook/webdriver": "~0.3",
                 "monolog/monolog": "*",
-                "php": ">=5.3.3",
+                "php": ">=5.3.19",
                 "phpunit/phpunit": "3.7.*",
                 "symfony/console": "~2.3",
                 "symfony/event-dispatcher": "~2.3",
@@ -1537,20 +1538,20 @@
                 "functional testing",
                 "unit testing"
             ],
-            "time": "2014-02-13 04:34:58"
+            "time": "2014-03-21 22:55:52"
         },
         {
             "name": "codeception/specify",
-            "version": "0.3.4",
+            "version": "0.3.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Codeception/Specify.git",
-                "reference": "3513c14a184b98d2fd17f859c6ebef3de7edd8ff"
+                "reference": "0cabe95241bec511917e9804b211a3a91645d026"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Codeception/Specify/zipball/3513c14a184b98d2fd17f859c6ebef3de7edd8ff",
-                "reference": "3513c14a184b98d2fd17f859c6ebef3de7edd8ff",
+                "url": "https://api.github.com/repos/Codeception/Specify/zipball/0cabe95241bec511917e9804b211a3a91645d026",
+                "reference": "0cabe95241bec511917e9804b211a3a91645d026",
                 "shasum": ""
             },
             "require": {
@@ -1575,7 +1576,7 @@
                 }
             ],
             "description": "BDD code blocks for PHPUnit and Codeception",
-            "time": "2014-02-22 23:28:35"
+            "time": "2014-03-22 00:46:25"
         },
         {
             "name": "codeception/verify",
@@ -1769,16 +1770,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.7.0",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "6225b22de9dcf36546be3a0b2fa8e3d986153f57"
+                "reference": "392ef35fd470638e08d0160d6b1cbab63cb23174"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/6225b22de9dcf36546be3a0b2fa8e3d986153f57",
-                "reference": "6225b22de9dcf36546be3a0b2fa8e3d986153f57",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/392ef35fd470638e08d0160d6b1cbab63cb23174",
+                "reference": "392ef35fd470638e08d0160d6b1cbab63cb23174",
                 "shasum": ""
             },
             "require": {
@@ -1786,11 +1787,11 @@
                 "psr/log": "~1.0"
             },
             "require-dev": {
-                "aws/aws-sdk-php": "~2.4.8",
-                "doctrine/couchdb": "dev-master",
-                "mlehner/gelf-php": "1.0.*",
+                "aws/aws-sdk-php": "~2.4, >2.4.8",
+                "doctrine/couchdb": "~1.0@dev",
+                "graylog2/gelf-php": "~1.0",
                 "phpunit/phpunit": "~3.7.0",
-                "raven/raven": "0.5.*",
+                "raven/raven": "~0.5",
                 "ruflin/elastica": "0.90.*"
             },
             "suggest": {
@@ -1798,19 +1799,20 @@
                 "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
                 "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
                 "ext-mongo": "Allow sending log messages to a MongoDB server",
-                "mlehner/gelf-php": "Allow sending log messages to a GrayLog2 server",
+                "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
                 "raven/raven": "Allow sending log messages to a Sentry server",
+                "rollbar/rollbar": "Allow sending log messages to Rollbar",
                 "ruflin/elastica": "Allow sending log messages to an Elastic Search server"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.7.x-dev"
+                    "dev-master": "1.8.x-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Monolog": "src/"
+                "psr-4": {
+                    "Monolog\\": "src/Monolog"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1832,7 +1834,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2013-11-14 19:48:31"
+            "time": "2014-03-23 19:50:26"
         },
         {
             "name": "myclabs/deep-copy",
@@ -2429,12 +2431,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii2-giiant.git",
-                "reference": "8d0da574859ef08d6432aa8aafe0addcc12b92d4"
+                "reference": "05ebbf46c24da08bb76eb26f023ad698d85d1f43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii2-giiant/zipball/8d0da574859ef08d6432aa8aafe0addcc12b92d4",
-                "reference": "8d0da574859ef08d6432aa8aafe0addcc12b92d4",
+                "url": "https://api.github.com/repos/schmunk42/yii2-giiant/zipball/05ebbf46c24da08bb76eb26f023ad698d85d1f43",
+                "reference": "05ebbf46c24da08bb76eb26f023ad698d85d1f43",
                 "shasum": ""
             },
             "require": {
@@ -2464,7 +2466,7 @@
                 "gii",
                 "yii2"
             ],
-            "time": "2014-03-19 14:58:03"
+            "time": "2014-03-25 09:34:53"
         },
         {
             "name": "squizlabs/php_codesniffer",
