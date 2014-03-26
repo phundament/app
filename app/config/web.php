@@ -11,7 +11,7 @@ $config = [
     'basePath'       => dirname(__DIR__),
     'extensions'     => require(__DIR__ . '/../../vendor/yiisoft/extensions.php'),
     'aliases'        => [
-        '@root'   => realpath(__DIR__ . '/../..'),
+        '@root'   => realpath(__DIR__ . '/../../'),
         '@app'    => realpath(__DIR__ . '/..'),
         '@vendor' => realpath(__DIR__ . '/../../vendor')
     ],
@@ -85,11 +85,12 @@ if (YII_ENV_DEV) {
         'class'      => 'yii\gii\Module',
         'allowedIPs' => ['127.0.0.1', '::1', '192.168.33.1'],
         'generators' => [
-            'giiant' => ['class' => 'schmunk42\giiant\crud\Generator'],
-            'crud'   => [
-                'class'     => 'yii\gii\generators\crud\Generator',
-                'templates' => ['mycrud' => '@app/templates/mycrud']
-            ]
+            'giiant-crud' => [
+                'class' => 'schmunk42\giiant\crud\Generator'
+            ],
+            'giiant-model' => [
+                'class' => 'schmunk42\giiant\model\Generator'
+            ],
         ]
     ];
 
