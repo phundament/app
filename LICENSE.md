@@ -1,4 +1,4 @@
-Phundament 3 is free software. It is released under the terms of
+Phundament is free software. It is released under the terms of
 the following BSD License.
 
 Copyright © 2008-2011 by diemeisterei GmbH
