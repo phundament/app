@@ -13,10 +13,12 @@ Install via composer bare-metal on your local machine
 If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
 at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
 
+> For easy access to composer, we recommend to you linking the `composer.phar` file to `composer`.
+
 You can then install this application template using the following command:
 
 ~~~
-composer.phar create-project phundament/app:4.0.x-dev app-v4
+composer create-project phundament/app:4.0.x-dev app-v4
 ~~~
 
 Now you should be able to access the application through the following URL, assuming `basic` is the directory
@@ -35,7 +37,7 @@ Download and install [Vagrant](http://www.vagrantup.com/downloads.html) and [Vir
 Get the project without installing it, vagrant will do that later.
 
 ~~~
-composer.phar create-project --no-install phundament/app:4.0.x-dev app-v4
+composer create-project --no-install phundament/app:4.0.x-dev app-v4
 ~~~
 
 Bring up the virtual machine:
