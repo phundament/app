@@ -1,3 +1,4 @@
+/app/config/local.php
 /app/config/*-local.php
 /app/data
 /app/tests/codeception/_log
