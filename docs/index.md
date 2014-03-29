@@ -5,13 +5,12 @@ Overview
 --------
 
 - [Installation](install.md)
-- [Development](development.md)
+- [Configuration](configuration.md)
+- [Directory Structure](directories.md)
+- [Testing](testing.md)
+- [Generating Documentation](apidoc.md)
 
 ---
 
-The HTML version of this documentation can be created with
-
-```
-php -dmemory_limit=1G vendor/yiisoft/yii2-dev/extensions/apidoc/apidoc \
-  guide docs/ _html
-```
+- [Online HTML version](http://docs.phundament.com/4.0/guide-index.html) of this documentation.
+- [API Class Reference  HTML version](http://docs.phundament.com/4.0/)
