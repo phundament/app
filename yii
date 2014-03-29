@@ -19,6 +19,10 @@ require(__DIR__ . '/vendor/autoload.php');
 require(__DIR__ . '/vendor/yiisoft/yii2/Yii.php');
 
 $config = require(__DIR__ . '/app/config/console.php');
+// use local config file if available
+if (is_file(__DIR__ . '/app/config/local.php')) {
+    $config = \yii\helpers\ArrayHelper::merge($config, require(__DIR__ . '/app/config/local.php'));
+}
 
 $application = new yii\console\Application($config);
 $exitCode = $application->run();

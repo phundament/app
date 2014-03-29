@@ -17,8 +17,8 @@ if (is_file(__DIR__ . '/../vendor/yiisoft/yii2-dev/framework/Yii.php')) {
 $config = require(__DIR__ . '/../app/config/web.php');
 
 // use local config file if available
-if (is_file(__DIR__ . '/../app/config/web-local.php')) {
-    $config = \yii\helpers\ArrayHelper::merge($config,require(__DIR__ . '/../app/config/web-local.php'));
+if (is_file(__DIR__ . '/../app/config/local.php')) {
+    $config = \yii\helpers\ArrayHelper::merge($config, require(__DIR__ . '/../app/config/local.php'));
 }
 
 (new yii\web\Application($config))->run();

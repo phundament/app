@@ -30,9 +30,5 @@ return [
         ],
         'db'    => $db,
     ],
-    'modules'             => [
-        'console-gii' => $web['modules']['gii'],
-        'console-sakila'      => $web['modules']['sakila'],
-    ],
     'params'              => $params,
 ];
