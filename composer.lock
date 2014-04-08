@@ -187,12 +187,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/2amigos/yii2-selectize-widget.git",
-                "reference": "027ba27fa5674ac882462e54124beb7cfc4c2c49"
+                "reference": "303e7a0b12d1d8dca3147737c0449a5d6b9a3e88"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/2amigos/yii2-selectize-widget/zipball/027ba27fa5674ac882462e54124beb7cfc4c2c49",
-                "reference": "027ba27fa5674ac882462e54124beb7cfc4c2c49",
+                "url": "https://api.github.com/repos/2amigos/yii2-selectize-widget/zipball/303e7a0b12d1d8dca3147737c0449a5d6b9a3e88",
+                "reference": "303e7a0b12d1d8dca3147737c0449a5d6b9a3e88",
                 "shasum": ""
             },
             "require": {
@@ -224,7 +224,7 @@
                 "widget",
                 "yii"
             ],
-            "time": "2014-03-13 12:48:33"
+            "time": "2014-04-03 17:13:45"
         },
         {
             "name": "brianreavis/selectize.js",
@@ -538,12 +538,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/bootstrap-fileinput.git",
-                "reference": "e6369e391e98a834b93e97b519eb4776b60b6e3d"
+                "reference": "5db03b87c380b99cc2381d8ad872ca1bbbf505f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/e6369e391e98a834b93e97b519eb4776b60b6e3d",
-                "reference": "e6369e391e98a834b93e97b519eb4776b60b6e3d",
+                "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/5db03b87c380b99cc2381d8ad872ca1bbbf505f8",
+                "reference": "5db03b87c380b99cc2381d8ad872ca1bbbf505f8",
                 "shasum": ""
             },
             "type": "library",
@@ -574,7 +574,7 @@
                 "preview",
                 "upload"
             ],
-            "time": "2014-03-22 11:21:09"
+            "time": "2014-04-05 10:53:57"
         },
         {
             "name": "kartik-v/bootstrap-star-rating",
@@ -582,12 +582,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/bootstrap-star-rating.git",
-                "reference": "607f0851f22e4a1fc3c41e1e5502b827f44d07a0"
+                "reference": "228e505029c4e85298a0b17c5ab5f08dc502b64a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/bootstrap-star-rating/zipball/607f0851f22e4a1fc3c41e1e5502b827f44d07a0",
-                "reference": "607f0851f22e4a1fc3c41e1e5502b827f44d07a0",
+                "url": "https://api.github.com/repos/kartik-v/bootstrap-star-rating/zipball/228e505029c4e85298a0b17c5ab5f08dc502b64a",
+                "reference": "228e505029c4e85298a0b17c5ab5f08dc502b64a",
                 "shasum": ""
             },
             "type": "library",
@@ -615,7 +615,7 @@
                 "jquery",
                 "star"
             ],
-            "time": "2014-03-25 05:30:54"
+            "time": "2014-04-05 10:50:03"
         },
         {
             "name": "kartik-v/yii2-widgets",
@@ -623,12 +623,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widgets.git",
-                "reference": "f702cac6696e5a43b214dcf91ed98202c420eaf6"
+                "reference": "0035491322b02eddb86739762137c2886f3d3906"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widgets/zipball/f702cac6696e5a43b214dcf91ed98202c420eaf6",
-                "reference": "f702cac6696e5a43b214dcf91ed98202c420eaf6",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widgets/zipball/0035491322b02eddb86739762137c2886f3d3906",
+                "reference": "0035491322b02eddb86739762137c2886f3d3906",
                 "shasum": ""
             },
             "require": {
@@ -662,7 +662,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2014-03-25 14:33:37"
+            "time": "2014-04-05 11:17:03"
         },
         {
             "name": "phpspec/php-diff",
@@ -881,7 +881,7 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v2.4.2",
+            "version": "v2.4.3",
             "target-dir": "Symfony/Component/EventDispatcher",
             "source": {
                 "type": "git",
@@ -1032,12 +1032,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-composer.git",
-                "reference": "90547559cbf45b1836c370c0b4d1b2c70f778dd5"
+                "reference": "49e3e2ce1e8a99f46a387bdebd130f630c4d1034"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/90547559cbf45b1836c370c0b4d1b2c70f778dd5",
-                "reference": "90547559cbf45b1836c370c0b4d1b2c70f778dd5",
+                "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/49e3e2ce1e8a99f46a387bdebd130f630c4d1034",
+                "reference": "49e3e2ce1e8a99f46a387bdebd130f630c4d1034",
                 "shasum": ""
             },
             "require": {
@@ -1070,7 +1070,7 @@
                 "extension installer",
                 "yii2"
             ],
-            "time": "2014-03-16 04:46:21"
+            "time": "2014-04-03 18:28:08"
         },
         {
             "name": "yiisoft/yii2-dev",
@@ -1078,12 +1078,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2.git",
-                "reference": "48383f9a1918555c2f101a9366628142f9eee2e4"
+                "reference": "9cf3e141b0bb76d26b852741cb62beb167fe4d6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2/zipball/48383f9a1918555c2f101a9366628142f9eee2e4",
-                "reference": "48383f9a1918555c2f101a9366628142f9eee2e4",
+                "url": "https://api.github.com/repos/yiisoft/yii2/zipball/9cf3e141b0bb76d26b852741cb62beb167fe4d6e",
+                "reference": "9cf3e141b0bb76d26b852741cb62beb167fe4d6e",
                 "shasum": ""
             },
             "require": {
@@ -1205,7 +1205,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2014-03-28 22:05:43"
+            "time": "2014-04-06 14:14:42"
         },
         {
             "name": "zhuravljov/yii2-datetime-widgets",
@@ -1475,23 +1475,23 @@
         },
         {
             "name": "codeception/codeception",
-            "version": "1.8.4",
+            "version": "1.8.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Codeception/Codeception.git",
-                "reference": "e84a4f31915696c3f348bc90f06175bc02854607"
+                "reference": "83ec480b24374fa627fb34fda23580949000a5bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Codeception/Codeception/zipball/e84a4f31915696c3f348bc90f06175bc02854607",
-                "reference": "e84a4f31915696c3f348bc90f06175bc02854607",
+                "url": "https://api.github.com/repos/Codeception/Codeception/zipball/83ec480b24374fa627fb34fda23580949000a5bc",
+                "reference": "83ec480b24374fa627fb34fda23580949000a5bc",
                 "shasum": ""
             },
             "require": {
                 "behat/mink": "1.5.*",
                 "behat/mink-goutte-driver": "1.0.*",
                 "behat/mink-selenium2-driver": "1.1.*",
-                "facebook/webdriver": "~0.3",
+                "facebook/webdriver": "0.3",
                 "monolog/monolog": "*",
                 "php": ">=5.3.19",
                 "phpunit/phpunit": "3.7.*",
@@ -1538,7 +1538,7 @@
                 "functional testing",
                 "unit testing"
             ],
-            "time": "2014-03-21 22:55:52"
+            "time": "2014-04-04 21:22:42"
         },
         {
             "name": "codeception/specify",
@@ -1672,22 +1672,20 @@
         },
         {
             "name": "facebook/webdriver",
-            "version": "v0.4",
+            "version": "v0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/facebook/php-webdriver.git",
-                "reference": "342df507312ea5ae5337be47e16e4268d7ed661f"
+                "reference": "1b0facc33133f0ff990df8cebe7f2e19b2603da3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facebook/php-webdriver/zipball/342df507312ea5ae5337be47e16e4268d7ed661f",
-                "reference": "342df507312ea5ae5337be47e16e4268d7ed661f",
+                "url": "https://api.github.com/repos/facebook/php-webdriver/zipball/1b0facc33133f0ff990df8cebe7f2e19b2603da3",
+                "reference": "1b0facc33133f0ff990df8cebe7f2e19b2603da3",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.19"
-            },
-            "require-dev": {
+                "php": ">=5.3.19",
                 "phpunit/phpunit": "3.7.*"
             },
             "type": "library",
@@ -1708,7 +1706,7 @@
                 "selenium",
                 "webdriver"
             ],
-            "time": "2014-02-21 18:22:11"
+            "time": "2013-11-26 23:16:02"
         },
         {
             "name": "instaclick/php-webdriver",
@@ -2540,17 +2538,17 @@
         },
         {
             "name": "symfony/browser-kit",
-            "version": "v2.4.2",
+            "version": "v2.4.3",
             "target-dir": "Symfony/Component/BrowserKit",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/BrowserKit.git",
-                "reference": "3898f9f9aafc853124c90a9d1a4f98c1034e627e"
+                "reference": "1f5e42db799e05e85d03fe8504c5b1c92c46968d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/BrowserKit/zipball/3898f9f9aafc853124c90a9d1a4f98c1034e627e",
-                "reference": "3898f9f9aafc853124c90a9d1a4f98c1034e627e",
+                "url": "https://api.github.com/repos/symfony/BrowserKit/zipball/1f5e42db799e05e85d03fe8504c5b1c92c46968d",
+                "reference": "1f5e42db799e05e85d03fe8504c5b1c92c46968d",
                 "shasum": ""
             },
             "require": {
@@ -2593,21 +2591,21 @@
             ],
             "description": "Symfony BrowserKit Component",
             "homepage": "http://symfony.com",
-            "time": "2014-01-24 14:36:08"
+            "time": "2014-03-27 14:53:17"
         },
         {
             "name": "symfony/console",
-            "version": "v2.4.2",
+            "version": "v2.4.3",
             "target-dir": "Symfony/Component/Console",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "940f217cbc3c8a33e5403e7c595495c4884400fe"
+                "reference": "ef20f1f58d7f693ee888353962bd2db336e3bbcb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/940f217cbc3c8a33e5403e7c595495c4884400fe",
-                "reference": "940f217cbc3c8a33e5403e7c595495c4884400fe",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/ef20f1f58d7f693ee888353962bd2db336e3bbcb",
+                "reference": "ef20f1f58d7f693ee888353962bd2db336e3bbcb",
                 "shasum": ""
             },
             "require": {
@@ -2648,21 +2646,21 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2014-02-11 13:52:09"
+            "time": "2014-03-01 17:35:04"
         },
         {
             "name": "symfony/css-selector",
-            "version": "v2.4.2",
+            "version": "v2.4.3",
             "target-dir": "Symfony/Component/CssSelector",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/CssSelector.git",
-                "reference": "ed1d61b2e23a0fd5dba0b20651258c4633d3e3a7"
+                "reference": "c0ca90adac5b581dbd346df23c3e3355ac823238"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/CssSelector/zipball/ed1d61b2e23a0fd5dba0b20651258c4633d3e3a7",
-                "reference": "ed1d61b2e23a0fd5dba0b20651258c4633d3e3a7",
+                "url": "https://api.github.com/repos/symfony/CssSelector/zipball/c0ca90adac5b581dbd346df23c3e3355ac823238",
+                "reference": "c0ca90adac5b581dbd346df23c3e3355ac823238",
                 "shasum": ""
             },
             "require": {
@@ -2701,21 +2699,21 @@
             ],
             "description": "Symfony CssSelector Component",
             "homepage": "http://symfony.com",
-            "time": "2014-02-11 13:52:09"
+            "time": "2014-03-26 11:35:33"
         },
         {
             "name": "symfony/dom-crawler",
-            "version": "v2.4.2",
+            "version": "v2.4.3",
             "target-dir": "Symfony/Component/DomCrawler",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/DomCrawler.git",
-                "reference": "5962504de9b36d955d88b08c1434d420627c8c01"
+                "reference": "53667cc8b0334db049e388a2855a1a4732ab891c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/DomCrawler/zipball/5962504de9b36d955d88b08c1434d420627c8c01",
-                "reference": "5962504de9b36d955d88b08c1434d420627c8c01",
+                "url": "https://api.github.com/repos/symfony/DomCrawler/zipball/53667cc8b0334db049e388a2855a1a4732ab891c",
+                "reference": "53667cc8b0334db049e388a2855a1a4732ab891c",
                 "shasum": ""
             },
             "require": {
@@ -2756,21 +2754,21 @@
             ],
             "description": "Symfony DomCrawler Component",
             "homepage": "http://symfony.com",
-            "time": "2014-02-11 13:52:09"
+            "time": "2014-03-26 12:00:53"
         },
         {
             "name": "symfony/finder",
-            "version": "v2.4.2",
+            "version": "v2.4.3",
             "target-dir": "Symfony/Component/Finder",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Finder.git",
-                "reference": "b6735d1fc16da13c4c7dddfe78366a4a098cf011"
+                "reference": "ab301c7d21f536c34ab6c2c79dba8d465104c518"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Finder/zipball/b6735d1fc16da13c4c7dddfe78366a4a098cf011",
-                "reference": "b6735d1fc16da13c4c7dddfe78366a4a098cf011",
+                "url": "https://api.github.com/repos/symfony/Finder/zipball/ab301c7d21f536c34ab6c2c79dba8d465104c518",
+                "reference": "ab301c7d21f536c34ab6c2c79dba8d465104c518",
                 "shasum": ""
             },
             "require": {
@@ -2805,21 +2803,21 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "http://symfony.com",
-            "time": "2014-01-07 13:28:54"
+            "time": "2014-03-01 17:35:04"
         },
         {
             "name": "symfony/process",
-            "version": "v2.4.2",
+            "version": "v2.4.3",
             "target-dir": "Symfony/Component/Process",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Process.git",
-                "reference": "c175448bac997556f8ab972908a4e14c7291fb03"
+                "reference": "c09c3b08455c35688eee3e481fdfc85518ef01d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Process/zipball/c175448bac997556f8ab972908a4e14c7291fb03",
-                "reference": "c175448bac997556f8ab972908a4e14c7291fb03",
+                "url": "https://api.github.com/repos/symfony/Process/zipball/c09c3b08455c35688eee3e481fdfc85518ef01d7",
+                "reference": "c09c3b08455c35688eee3e481fdfc85518ef01d7",
                 "shasum": ""
             },
             "require": {
@@ -2854,21 +2852,21 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "http://symfony.com",
-            "time": "2014-02-11 13:52:09"
+            "time": "2014-03-26 11:35:33"
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.4.2",
+            "version": "v2.4.3",
             "target-dir": "Symfony/Component/Yaml",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "bb6ddaf8956139d1b8c360b4b713ed0138e876b3"
+                "reference": "77a41c2835ab7cfe8bf6d15e25d3af8f3eb3bacd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/bb6ddaf8956139d1b8c360b4b713ed0138e876b3",
-                "reference": "bb6ddaf8956139d1b8c360b4b713ed0138e876b3",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/77a41c2835ab7cfe8bf6d15e25d3af8f3eb3bacd",
+                "reference": "77a41c2835ab7cfe8bf6d15e25d3af8f3eb3bacd",
                 "shasum": ""
             },
             "require": {
@@ -2903,7 +2901,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2014-01-07 13:28:54"
+            "time": "2014-03-12 18:29:58"
         },
         {
             "name": "yiisoft/yii2-coding-standards",
