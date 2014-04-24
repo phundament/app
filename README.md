@@ -22,7 +22,7 @@ Quick-Start
    Option A) If you have [composer already installed](http://getcomposer.org/doc/00-intro.md#installation-nix)
    
 ```
-composer.phar create-project phundament/app app-v3
+composer.phar create-project phundament/app:3.* app-v3
 ```
    
    Option B) [Download](https://github.com/phundament/app/tags), extract, enter the app root folder
