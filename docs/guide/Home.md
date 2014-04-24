@@ -18,14 +18,14 @@ Getting Started
 ### Basics
 
 * What is [[Phundament]]?
-* [[Requirements]]
-* [[Setup]] your web application (Virtual Host, Database connection)
-* [[Installation]]
-* [[Features]] listed by package
-* [[Cheat Sheet]]
+* [Requirements](Requirements.md)
+* [Setup](Setup.md) your web application (Virtual Host, Database connection)
+* [Installation](Installation.md)
+* [Features](Features.md) listed by package
+* [Cheat Sheet](Cheat Sheet.md)
 
 Need help?
 ----------
 
-* [[FAQ]] Frequently asked questions
-* Get [[Support]]
+* [FAQ](FAQ.md) Frequently asked questions
+* Get [Support](Support.md)
