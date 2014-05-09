@@ -16,7 +16,7 @@
 
 $params = getParams();
 $root = str_replace('\\', '/', __DIR__);
-$envs = require("$root/environments/index.php");
+$envs = require("$root/init-env/index.php");
 $envNames = array_keys($envs);
 
 echo "Yii Application Initialization Tool v1.0\n\n";
@@ -60,10 +60,10 @@ if (empty($params['env'])) {
 }
 
 echo "\n  Start initialization ...\n\n";
-$files = getFileList("$root/environments/{$env['path']}");
+$files = getFileList("$root/init-env/{$env['path']}");
 $all = false;
 foreach ($files as $file) {
-	if (!copyFile($root, "environments/{$env['path']}/$file", $file, $all, $params)) {
+	if (!copyFile($root, "init-env/{$env['path']}/$file", $file, $all, $params)) {
 		break;
 	}
 }
