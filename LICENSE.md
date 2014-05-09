@@ -1,7 +1,7 @@
 Phundament is free software. It is released under the terms of
 the following BSD License.
 
-Copyright © 2008-2011 by diemeisterei GmbH
+Copyright © 2008-2014 by diemeisterei GmbH
 (http://www.diemeisterei.de)
 All rights reserved.
 
