@@ -1,19 +1,20 @@
-Phundament 4.0-dev Todo List
-============================
+Phundament 4.0 Roadmap
+======================
 
-Bugs
-----
+Tasks
+-----
 
- * ~~cleanup dependencies after fixing https://github.com/yiisoft/yii2/issues/2465~~
+ * stable dependencies
 
 Features
 --------
 
  * add login with github, Google, Facebook, Twitter
- * add user-management extension (yii2-usr?)
+ * add user-management extension
  * add rights-management extension
  * add image/file manager extension
- * theme examples
+ * ~~theme~~ asset bundle examples (eg. Zurb frontend)
+ * backend admin theme
 
 Docs
 ----
