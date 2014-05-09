@@ -4,6 +4,7 @@
 /app/tests/codeception/_log
 /vendor/
 
+/_html
 /tmp
 
 nbproject
