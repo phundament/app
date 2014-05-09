@@ -15,6 +15,16 @@ Features
  * add image/file manager extension
  * ~~theme~~ asset bundle examples (eg. Zurb frontend)
  * backend admin theme
+ * rsync command
+ * data dump (migrations)
+
+Init
+----
+
+ * enhanced database setup & check
+ * run migration hint
+ * nice URL setup
+ * prefab hint?
 
 Docs
 ----
