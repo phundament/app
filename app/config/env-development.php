@@ -43,7 +43,7 @@ return array(
             'routes' => array(
                 // Yii debug toolbar
                 array(
-                    'class'     => 'vendor.malyshev.yii-debug-toolbar.YiiDebugToolbarRoute',
+                    'class'     => 'vendor.malyshev.yii-debug-toolbar.yii-debug-toolbar.YiiDebugToolbarRoute',
                     'ipFilters' => array('127.0.0.1'),
                     'enabled'   => true,
                 ),

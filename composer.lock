@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "5689337b6016092b6bb7b3113d1717d9",
+    "hash": "5535e255a9b9cca5be963fc3d8203613",
     "packages": [
         {
             "name": "bwoester/yii-event-interceptor",
@@ -124,7 +124,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Quexer69/yii.translate.git",
-                "reference": "724e7d4ea3b7a3b8bb06dc896b73c678acb1c116"
+                "reference": "a401c67fe4d2bdf664211cbfa193c0645234d794"
             },
             "suggest": {
                 "Translate": "Any yii translate extension"
@@ -153,7 +153,7 @@
                 "web",
                 "yii"
             ],
-            "time": "2014-03-20 09:16:00"
+            "time": "2014-03-23 22:33:27"
         },
         {
             "name": "malyshev/yii-debug-toolbar",
@@ -161,17 +161,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/malyshev/yii-debug-toolbar.git",
-                "reference": "3cb6ba29487e51c661eef098a29fa8c1195706da"
+                "reference": "85d5955bfe3cc5d874825bd6f9e3e56830927890"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://github.com/malyshev/yii-debug-toolbar/archive/3cb6ba29487e51c661eef098a29fa8c1195706da.zip",
-                "reference": null,
+                "reference": "85d5955bfe3cc5d874825bd6f9e3e56830927890",
                 "shasum": null
             },
             "type": "yii-extension",
             "description": "A configurable set of panels that display various debug information about the current request/response. ",
-            "homepage": "https://github.com/malyshev/yii-debug-toolbar"
+            "homepage": "https://github.com/malyshev/yii-debug-toolbar",
+            "time": "2013-10-10 03:14:40"
         },
         {
             "name": "mikehaertl/packagecompressor",
@@ -388,12 +389,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii-backend-theme.git",
-                "reference": "86a9633aaf04b2c10e8080cdb8cf64e8d87e3b05"
+                "reference": "dc23fa5fad12a44cec697ecfcc18d235a0c7ad08"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii-backend-theme/zipball/86a9633aaf04b2c10e8080cdb8cf64e8d87e3b05",
-                "reference": "86a9633aaf04b2c10e8080cdb8cf64e8d87e3b05",
+                "url": "https://api.github.com/repos/schmunk42/yii-backend-theme/zipball/dc23fa5fad12a44cec697ecfcc18d235a0c7ad08",
+                "reference": "dc23fa5fad12a44cec697ecfcc18d235a0c7ad08",
                 "shasum": ""
             },
             "require": {
@@ -426,7 +427,7 @@
                 "theme",
                 "yii"
             ],
-            "time": "2014-03-21 17:02:50"
+            "time": "2014-05-08 14:59:47"
         },
         {
             "name": "phundament/jquery-file-upload",
@@ -453,12 +454,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3admin.git",
-                "reference": "e0991e41a36c3a43dc6f7dc468731339fdade4b6"
+                "reference": "0.16.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3admin/zipball/e0991e41a36c3a43dc6f7dc468731339fdade4b6",
-                "reference": "e0991e41a36c3a43dc6f7dc468731339fdade4b6",
+                "url": "https://api.github.com/repos/schmunk42/p3admin/zipball/0.16.0",
+                "reference": "0.16.0",
                 "shasum": ""
             },
             "require": {
@@ -469,7 +470,6 @@
                 "yiisoft/yii": ">=1.1.12"
             },
             "type": "yii-extension",
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -483,26 +483,30 @@
             "description": "Yii application info and skeleton",
             "homepage": "http://phundament.com/",
             "keywords": [
-                "Skeleton",
                 "application",
                 "information",
+                "skeleton",
                 "webapp",
                 "yii"
             ],
+            "support": {
+                "source": "https://github.com/schmunk42/p3admin/tree/master",
+                "issues": "https://github.com/schmunk42/p3admin/issues"
+            },
             "time": "2013-10-24 11:35:12"
         },
         {
             "name": "phundament/p3bootstrap",
-            "version": "0.23.0",
+            "version": "0.23.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3bootstrap.git",
-                "reference": "0943aef82dd72e5b7a0fbc98d9d4237c23ee5a5c"
+                "reference": "0.23.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3bootstrap/zipball/0943aef82dd72e5b7a0fbc98d9d4237c23ee5a5c",
-                "reference": "0943aef82dd72e5b7a0fbc98d9d4237c23ee5a5c",
+                "url": "https://api.github.com/repos/schmunk42/p3bootstrap/zipball/0.23.1",
+                "reference": "0.23.1",
                 "shasum": ""
             },
             "require": {
@@ -518,7 +522,6 @@
                 "twitter/bootstrap": "Source files for LESS customization"
             },
             "type": "yii-theme",
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -536,20 +539,24 @@
                 "theme",
                 "yii"
             ],
-            "time": "2014-03-21 17:01:11"
+            "support": {
+                "source": "https://github.com/schmunk42/p3bootstrap/tree/0.23.1",
+                "issues": "https://github.com/schmunk42/p3bootstrap/issues"
+            },
+            "time": "2014-04-25 10:35:42"
         },
         {
             "name": "phundament/p3extensions",
-            "version": "0.17.1",
+            "version": "0.18.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3extensions.git",
-                "reference": "0.17.1"
+                "reference": "0.18.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3extensions/zipball/0.17.1",
-                "reference": "0.17.1",
+                "url": "https://api.github.com/repos/schmunk42/p3extensions/zipball/0.18.0",
+                "reference": "0.18.0",
                 "shasum": ""
             },
             "require": {
@@ -575,23 +582,23 @@
                 "phundament"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3extensions/tree/0.17.1",
+                "source": "https://github.com/schmunk42/p3extensions/tree/0.18.0",
                 "issues": "https://github.com/schmunk42/p3extensions/issues"
             },
-            "time": "2014-03-21 15:02:11"
+            "time": "2014-04-30 12:29:01"
         },
         {
             "name": "phundament/p3media",
-            "version": "0.16.2",
+            "version": "0.17.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3media.git",
-                "reference": "0.16.2"
+                "reference": "0.17.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3media/zipball/0.16.2",
-                "reference": "0.16.2",
+                "url": "https://api.github.com/repos/schmunk42/p3media/zipball/0.17.3",
+                "reference": "0.17.3",
                 "shasum": ""
             },
             "require": {
@@ -603,6 +610,7 @@
                 "sammaye/auditrail2": "1.*",
                 "schmunk42/access": "@stable",
                 "schmunk42/adjacency-list-behavior": "@stable",
+                "schmunk42/php-inflector": ">=0.1.0",
                 "schmunk42/relation": "1.*",
                 "yiiext/status-behavior": "0.7.*",
                 "yiisoft/yii": "1.1.*"
@@ -610,7 +618,8 @@
             "type": "yii-extension",
             "autoload": {
                 "classmap": [
-                    "models/"
+                    "models/",
+                    "components/"
                 ]
             },
             "license": [
@@ -633,23 +642,23 @@
                 "yii"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3media/tree/0.16.2",
+                "source": "https://github.com/schmunk42/p3media/tree/0.17.3",
                 "issues": "https://github.com/schmunk42/p3media/issues"
             },
-            "time": "2014-02-04 19:17:49"
+            "time": "2014-04-25 10:54:59"
         },
         {
             "name": "phundament/p3pages",
-            "version": "0.17.3",
+            "version": "0.17.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3pages.git",
-                "reference": "0.17.3"
+                "reference": "0.17.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/0.17.3",
-                "reference": "0.17.3",
+                "url": "https://api.github.com/repos/schmunk42/p3pages/zipball/0.17.4",
+                "reference": "0.17.4",
                 "shasum": ""
             },
             "require": {
@@ -690,23 +699,23 @@
                 "tree"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3pages/tree/0.17.3",
+                "source": "https://github.com/schmunk42/p3pages/tree/0.17.4",
                 "issues": "https://github.com/schmunk42/p3pages/issues"
             },
-            "time": "2014-03-16 16:21:24"
+            "time": "2014-03-28 13:26:34"
         },
         {
             "name": "phundament/p3widgets",
-            "version": "0.16.1",
+            "version": "0.17.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/p3widgets.git",
-                "reference": "0.16.1"
+                "reference": "0.17.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/0.16.1",
-                "reference": "0.16.1",
+                "url": "https://api.github.com/repos/schmunk42/p3widgets/zipball/0.17.2",
+                "reference": "0.17.2",
                 "shasum": ""
             },
             "require": {
@@ -746,10 +755,10 @@
                 "widget"
             ],
             "support": {
-                "source": "https://github.com/schmunk42/p3widgets/tree/0.16.1",
+                "source": "https://github.com/schmunk42/p3widgets/tree/0.17.2",
                 "issues": "https://github.com/schmunk42/p3widgets/issues"
             },
-            "time": "2014-02-04 19:11:29"
+            "time": "2014-03-20 15:36:04"
         },
         {
             "name": "sammaye/auditrail2",
@@ -787,16 +796,16 @@
         },
         {
             "name": "schmunk42/access",
-            "version": "0.1",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii-access.git",
-                "reference": "1b06dce3c57ebe317add2798d6c761d75d91fc2f"
+                "reference": "6011a5a42db19d73ee6967874e33c5620a4218fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii-access/zipball/1b06dce3c57ebe317add2798d6c761d75d91fc2f",
-                "reference": "1b06dce3c57ebe317add2798d6c761d75d91fc2f",
+                "url": "https://api.github.com/repos/schmunk42/yii-access/zipball/6011a5a42db19d73ee6967874e33c5620a4218fc",
+                "reference": "6011a5a42db19d73ee6967874e33c5620a4218fc",
                 "shasum": ""
             },
             "type": "library",
@@ -814,7 +823,7 @@
                 }
             ],
             "description": "Yii Framework Active Record access check implementation",
-            "time": "2013-10-23 23:30:01"
+            "time": "2014-04-17 09:20:23"
         },
         {
             "name": "schmunk42/adjacency-list-behavior",
@@ -894,12 +903,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/multi-theme.git",
-                "reference": "0.1.1"
+                "reference": "f9fcd89e8620be03340cd1d6125ae2522b71719a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/multi-theme/zipball/0.1.1",
-                "reference": "0.1.1",
+                "url": "https://api.github.com/repos/schmunk42/multi-theme/zipball/f9fcd89e8620be03340cd1d6125ae2522b71719a",
+                "reference": "f9fcd89e8620be03340cd1d6125ae2522b71719a",
                 "shasum": ""
             },
             "require": {
@@ -927,6 +936,48 @@
                 "yii"
             ],
             "time": "2013-04-05 10:36:47"
+        },
+        {
+            "name": "schmunk42/php-inflector",
+            "version": "0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmunk42/php-inflector.git",
+                "reference": "43f5383ee754e6fb2509f32611e9340ecf179eb6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schmunk42/php-inflector/zipball/43f5383ee754e6fb2509f32611e9340ecf179eb6",
+                "reference": "43f5383ee754e6fb2509f32611e9340ecf179eb6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "PhInflector.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Munk",
+                    "email": "schmunk@usrbin.de",
+                    "homepage": "http://www.usrbin.de"
+                }
+            ],
+            "description": "Standalone PHP 5.2 Inflector backport from Yii 2.0",
+            "homepage": "https://github.com/schmunk42/php-inflector",
+            "keywords": [
+                "inflector",
+                "yii"
+            ],
+            "time": "2014-04-28 18:43:49"
         },
         {
             "name": "schmunk42/relation",
@@ -1048,7 +1099,9 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
                 },
                 {
                     "name": "Chris Corbyn"
@@ -1207,18 +1260,18 @@
             "version": "v1.3.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/cloudhead/less.js.git",
+                "url": "https://github.com/less/less.js.git",
                 "reference": "a9775a34dad65482535e670a0c3dae925b824431"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/cloudhead/less.js/archive/a9775a34dad65482535e670a0c3dae925b824431.zip",
+                "url": "https://github.com/less/less.js/archive/a9775a34dad65482535e670a0c3dae925b824431.zip",
                 "reference": null,
                 "shasum": null
             },
             "type": "library",
             "description": "Leaner CSS",
-            "homepage": "https://github.com/cloudhead/less.js"
+            "homepage": "https://github.com/less/less.js"
         },
         {
             "name": "crisu83/yii-less",
@@ -1244,12 +1297,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/gii-template-collection.git",
-                "reference": "8eac214dbc57784db52f1ece8fde01277502ff5c"
+                "reference": "5055a068f7ec7b8eb4565c40a6527a9c430330e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/gii-template-collection/zipball/8eac214dbc57784db52f1ece8fde01277502ff5c",
-                "reference": "8eac214dbc57784db52f1ece8fde01277502ff5c",
+                "url": "https://api.github.com/repos/schmunk42/gii-template-collection/zipball/5055a068f7ec7b8eb4565c40a6527a9c430330e0",
+                "reference": "5055a068f7ec7b8eb4565c40a6527a9c430330e0",
                 "shasum": ""
             },
             "require": {
@@ -1280,7 +1333,7 @@
                 "source": "https://github.com/schmunk42/gii-template-collection/tree/develop",
                 "issues": "https://github.com/schmunk42/gii-template-collection/issues"
             },
-            "time": "2014-03-15 17:47:11"
+            "time": "2014-05-09 11:22:53"
         },
         {
             "name": "phundament/lessii",
@@ -1329,32 +1382,30 @@
         },
         {
             "name": "schmunk42/database-command",
-            "version": "0.8.11",
+            "version": "0.8.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/database-command.git",
-                "reference": "66b6f16491bac9dedea743ebb0c6847c7f78e456"
+                "reference": "0.8.12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/database-command/zipball/66b6f16491bac9dedea743ebb0c6847c7f78e456",
-                "reference": "66b6f16491bac9dedea743ebb0c6847c7f78e456",
+                "url": "https://api.github.com/repos/schmunk42/database-command/zipball/0.8.12",
+                "reference": "0.8.12",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2",
-                "yiisoft/yii": "1.1.*"
+                "yiisoft/yii": ">=1.1.0"
             },
             "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
             "authors": [
                 {
                     "name": "Tobias Munk",
-                    "email": "schmunk@usrbin.de",
-                    "homepage": "http://www.usrbin.de"
+                    "email": "schmunk@usrbin.de"
                 }
             ],
             "description": "Yii command to create database migrations from existing schema",
@@ -1367,7 +1418,11 @@
                 "migration",
                 "yii"
             ],
-            "time": "2013-09-28 19:08:25"
+            "support": {
+                "source": "https://github.com/schmunk42/database-command/tree/0.8.12",
+                "issues": "https://github.com/schmunk42/database-command/issues"
+            },
+            "time": "2014-04-11 13:37:22"
         },
         {
             "name": "schmunk42/giic",
@@ -1375,12 +1430,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/giic.git",
-                "reference": "29f3bc567b4ce2c1a550bf99d65dc5ae36046051"
+                "reference": "9fb37bf2e26f329e1d212237711831f8d4e0f79d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/giic/zipball/29f3bc567b4ce2c1a550bf99d65dc5ae36046051",
-                "reference": "29f3bc567b4ce2c1a550bf99d65dc5ae36046051",
+                "url": "https://api.github.com/repos/schmunk42/giic/zipball/9fb37bf2e26f329e1d212237711831f8d4e0f79d",
+                "reference": "9fb37bf2e26f329e1d212237711831f8d4e0f79d",
                 "shasum": ""
             },
             "require": {
@@ -1407,7 +1462,7 @@
                 "gii",
                 "yii"
             ],
-            "time": "2014-02-14 16:15:49"
+            "time": "2014-05-09 12:49:59"
         },
         {
             "name": "thomaspark/bootswatch",
@@ -1424,7 +1479,7 @@
                 "shasum": null
             },
             "type": "library",
-            "description": "Themes for Twitter Bootstrap",
+            "description": "Themes for Bootstrap",
             "homepage": "https://github.com/thomaspark/bootswatch"
         },
         {
@@ -1442,7 +1497,7 @@
                 "shasum": null
             },
             "type": "library",
-            "description": "Sleek, intuitive, and powerful front-end framework for faster and easier web development.",
+            "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
             "homepage": "https://github.com/twbs/bootstrap"
         }
     ],
@@ -1481,7 +1536,5 @@
     "platform": {
         "php": ">=5.3.2"
     },
-    "platform-dev": [
-
-    ]
+    "platform-dev": []
 }
