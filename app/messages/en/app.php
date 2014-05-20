@@ -65,8 +65,4 @@ return array (
   'Verification Code' => '',
   'Widgets' => '',
   'are required' => '',
-  'Append Child Page' => '@@@@',
-  'Append Sibling Page' => '@@@@',
-  'Template' => '@@@@',
-  'Translation' => '@@@@',
 );

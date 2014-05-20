@@ -49,7 +49,6 @@ return array (
   'Choose Language' => '@@Izvēlaties valodu@@',
   'Manage' => '@@Uzturēt@@',
   'Settings' => '@@Uzstādijumi@@',
-  'Template' => '@@@@',
   'Translation' => '@@Tulkošana@@',
   'About' => 'Par',
   'Application' => 'Aplikācija',

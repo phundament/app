@@ -1,10 +1,10 @@
 Phundament
 ==========
 
-**Version 3-0.22.0**
+**Version 3.0.24**
 
 
-What is Phundament?
+What is it?
 -------------------
 
 Phundament is a solid, highly customizable universal application foundation built with [composer](http://getcomposer.org) 
@@ -13,6 +13,7 @@ upon [Yii Framework](http://yiiframework.com).
 It's goal is the seamless integration of Yii extensions and libraries bundled in composer packages packages. 
 [Read on…](https://github.com/phundament/app/wiki/Phundament)
 
+If you're looking for the Yii 2 version of Phundament please visit our [`4.0.x-dev` branch](https://github.com/phundament/app/tree/4.0).
 
 Quick-Start
 -----------
@@ -21,13 +22,13 @@ Quick-Start
    Option A) If you have [composer already installed](http://getcomposer.org/doc/00-intro.md#installation-nix)
    
 ```
-composer.phar create-project --prefer-dist phundament/app my-app
+composer.phar create-project phundament/app:3.* app-v3
 ```
    
    Option B) [Download](https://github.com/phundament/app/tags), extract, enter the app root folder
       and start the installation process with
 ```
-php composer.phar create-project --prefer-dist
+php composer.phar create-project
 ```
 
 When asked, create local configuration files and choose your environment.
@@ -37,7 +38,7 @@ When asked, create local configuration files and choose your environment.
 Apply the database migrations and enter your desired admin credentials.
 
 ```
-cd my-app
+cd app-v3
 app/yiic migrate
 ```
 
