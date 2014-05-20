@@ -31,6 +31,7 @@ Console
 | `app/yiic less-setup` | set permissions on css output folders
 | `git pull` | update source-code (application)
 | `php /opt/apigen/apigen.php` | generate API documentation (class reference)
+| `php vendor/schmunk42/giic/giic.php giic generate application.config` | generate CRUDs with [giic](https://github.com/schmunk42/giic)
 
 
 File Structure
