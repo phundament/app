@@ -28,6 +28,18 @@ This file has to be created, either by the webapp command or by renaming your cu
         'vendor.phundament.p3extensions.widgets.ckeditor.*', // shared classes
         'vendor.sammaye.auditrail2.models.*',
         'vendor.clevertech.yiibooster.src.widgets.*', // Bootstrap UI
+        'vendor.bwoester.yii-static-events-component.*',
+        'vendor.bwoester.yii-event-interceptor.*',
+        
+##### behaviors
+
+        'behaviors' => array(
+                // attach EventBridgeBehavior to application, so we can attach to
+                // application events on a per class base.
+                'eventBridge' => array(
+                    'class' => 'EventBridgeBehavior',
+                ),
+         ),
 
 ##### copmponents
 
@@ -36,6 +48,35 @@ This file has to be created, either by the webapp command or by renaming your cu
             'coreCss' => true, // whether to register the Bootstrap core CSS (bootstrap.min.css), defaults to true
             'responsiveCss' => false, // whether to register the Bootstrap responsive CSS (bootstrap-responsive.min.css), default to false
             'fontAwesomeCss' => true, // whether to register the Bootstrap responsive CSS (bootstrap-responsive.min.css), default to false
+            
+        ---
+         'events' => array(
+            'class' => 'EventRegistry',
+            'attach' => array(
+                // eg. set default access fields in models with event-bridge behavior
+                'P3Widget' => array(
+                    'onAfterConstruct' => array(
+                        function ($event) {
+                            //$event->sender->access_delete = 'Editor';
+                        },
+                    ),
+                ),
+                'P3Page' => array(
+                    'onAfterConstruct' => array(
+                        function ($event) {
+
+                        },
+                    ),
+                ),
+                'P3Media' => array(
+                    'onAfterConstruct' => array(
+                        function ($event) {
+
+                        },
+                    ),
+                ),
+            ),
+        ),
 
 #### `console.php`
 
@@ -43,11 +84,11 @@ This file has to be created, either by the webapp command or by renaming your cu
 
 #### `index.php`
 
-    require_once(dirname(__FILE__).'/../vendor/autoload.php');
+        require_once(dirname(__FILE__).'/../vendor/autoload.php');
     
 #### Database
 
-    app/yiic migrate
+        app/yiic migrate
 
 #### API and model attributes updates
 
