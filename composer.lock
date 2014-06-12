@@ -1,9 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
     ],
-    "hash": "4609f68e8b8033149e39d483dc85c167",
+    "hash": "66f5d74e0ccaccdd1597831ffc895599",
     "packages": [
         {
             "name": "2amigos/yii2-arrayquery-component",
@@ -290,12 +291,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle3.git",
-                "reference": "92d9934f2fca1da15178c91239576ae26e505e60"
+                "reference": "49104c619b663038e636a819718adce3b27ba6f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/92d9934f2fca1da15178c91239576ae26e505e60",
-                "reference": "92d9934f2fca1da15178c91239576ae26e505e60",
+                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/49104c619b663038e636a819718adce3b27ba6f2",
+                "reference": "49104c619b663038e636a819718adce3b27ba6f2",
                 "shasum": ""
             },
             "require": {
@@ -374,7 +375,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-05-07 17:04:22"
+            "time": "2014-06-04 19:49:37"
         },
         {
             "name": "schmunk42/yii2-packaii",
@@ -382,7 +383,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii2-package-browser.git",
-                "reference": "dd652502dd66d397fc5d755de1b24e07eaa90a79"
+                "reference": "2b2e62356bc0d8de7847322aa9f0616fc9935659"
             },
             "require": {
                 "2amigos/yii2-arrayquery-component": "0.1.*",
@@ -390,7 +391,7 @@
                 "2amigos/yii2-pjax-filter-behavior": "0.1.*",
                 "cebe/markdown": "0.9.*",
                 "cebe/yii2-gravatar": "1.*",
-                "yiisoft/yii2-debug": "dev-master"
+                "yiisoft/yii2-debug": "*"
             },
             "type": "library",
             "autoload": {
@@ -414,7 +415,7 @@
                 }
             ],
             "description": "Yii2 Framework Web-UI for browsing composer packages",
-            "time": "2014-04-27 15:03:18"
+            "time": "2014-06-11 12:55:50"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -422,12 +423,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "46d55baab96f943061de6712b38011db354eed78"
+                "reference": "0beeac88365c580ae617d8fe8f37e4fb3a1caf22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/46d55baab96f943061de6712b38011db354eed78",
-                "reference": "46d55baab96f943061de6712b38011db354eed78",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/0beeac88365c580ae617d8fe8f37e4fb3a1caf22",
+                "reference": "0beeac88365c580ae617d8fe8f37e4fb3a1caf22",
                 "shasum": ""
             },
             "require": {
@@ -468,7 +469,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2014-05-08 08:35:11"
+            "time": "2014-06-12 08:08:15"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -477,12 +478,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/EventDispatcher.git",
-                "reference": "cb62ec8dd05893fc8e4f0e6e21e326e1fc731fe8"
+                "reference": "7a4f4b42886f8c2e35acb1071f157a0b8eb1bd39"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/cb62ec8dd05893fc8e4f0e6e21e326e1fc731fe8",
-                "reference": "cb62ec8dd05893fc8e4f0e6e21e326e1fc731fe8",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/7a4f4b42886f8c2e35acb1071f157a0b8eb1bd39",
+                "reference": "7a4f4b42886f8c2e35acb1071f157a0b8eb1bd39",
                 "shasum": ""
             },
             "require": {
@@ -501,7 +502,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.5-dev"
+                    "dev-master": "2.6-dev"
                 }
             },
             "autoload": {
@@ -527,7 +528,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "http://symfony.com",
-            "time": "2014-04-29 10:13:57"
+            "time": "2014-05-23 14:36:49"
         },
         {
             "name": "twbs/bootstrap",
@@ -535,13 +536,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "48fd9e29a24ae7fd8d8061e62a099c6097c41f18"
+                "reference": "4aca4cf8661ab6e17ffd58820679a081db80ceaa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/48fd9e29a24ae7fd8d8061e62a099c6097c41f18",
-                "reference": "48fd9e29a24ae7fd8d8061e62a099c6097c41f18",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/4aca4cf8661ab6e17ffd58820679a081db80ceaa",
+                "reference": "4aca4cf8661ab6e17ffd58820679a081db80ceaa",
                 "shasum": ""
+            },
+            "replace": {
+                "twitter/bootstrap": "self.version"
             },
             "type": "library",
             "extra": {
@@ -575,7 +579,7 @@
                 "responsive",
                 "web"
             ],
-            "time": "2014-05-09 00:20:36"
+            "time": "2014-06-10 07:26:20"
         },
         {
             "name": "yiisoft/jquery",
@@ -632,12 +636,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "195ddb68ee4741fde8e353ffd09d37a9011bb28c"
+                "reference": "2901eba49a5d7a0ccb402b3ab1b9ad455b1e3b12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/195ddb68ee4741fde8e353ffd09d37a9011bb28c",
-                "reference": "195ddb68ee4741fde8e353ffd09d37a9011bb28c",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/2901eba49a5d7a0ccb402b3ab1b9ad455b1e3b12",
+                "reference": "2901eba49a5d7a0ccb402b3ab1b9ad455b1e3b12",
                 "shasum": ""
             },
             "require": {
@@ -702,7 +706,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2014-05-09 14:28:11"
+            "time": "2014-06-12 13:32:05"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -710,12 +714,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-bootstrap.git",
-                "reference": "86e22d908151de4fb93f898562afc3cc36ec96c1"
+                "reference": "ca75ceaea9443ca4a2a92d54e9c84380a41ae118"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/86e22d908151de4fb93f898562afc3cc36ec96c1",
-                "reference": "86e22d908151de4fb93f898562afc3cc36ec96c1",
+                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/ca75ceaea9443ca4a2a92d54e9c84380a41ae118",
+                "reference": "ca75ceaea9443ca4a2a92d54e9c84380a41ae118",
                 "shasum": ""
             },
             "require": {
@@ -745,7 +749,7 @@
                 "bootstrap",
                 "yii2"
             ],
-            "time": "2014-05-05 12:12:21"
+            "time": "2014-06-11 07:26:58"
         },
         {
             "name": "yiisoft/yii2-composer",
@@ -753,12 +757,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-composer.git",
-                "reference": "10e617fde96144cf9be45b4a96ff5e4c1a141e16"
+                "reference": "22f31f51ef33096bc846a9a19b4ba17a7cd6346e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/10e617fde96144cf9be45b4a96ff5e4c1a141e16",
-                "reference": "10e617fde96144cf9be45b4a96ff5e4c1a141e16",
+                "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/22f31f51ef33096bc846a9a19b4ba17a7cd6346e",
+                "reference": "22f31f51ef33096bc846a9a19b4ba17a7cd6346e",
                 "shasum": ""
             },
             "require": {
@@ -791,7 +795,7 @@
                 "extension installer",
                 "yii2"
             ],
-            "time": "2014-04-23 01:25:11"
+            "time": "2014-05-23 14:58:21"
         },
         {
             "name": "yiisoft/yii2-debug",
@@ -799,12 +803,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-debug.git",
-                "reference": "1d0d2a02d9651978285013a9449cb54fc5842fa1"
+                "reference": "4bfa006772e01bf53be2970e37b836ec2a37d6bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/1d0d2a02d9651978285013a9449cb54fc5842fa1",
-                "reference": "1d0d2a02d9651978285013a9449cb54fc5842fa1",
+                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/4bfa006772e01bf53be2970e37b836ec2a37d6bf",
+                "reference": "4bfa006772e01bf53be2970e37b836ec2a37d6bf",
                 "shasum": ""
             },
             "require": {
@@ -835,7 +839,7 @@
                 "debugger",
                 "yii2"
             ],
-            "time": "2014-04-25 19:04:39"
+            "time": "2014-06-11 20:10:33"
         },
         {
             "name": "yiisoft/yii2-swiftmailer",
@@ -843,12 +847,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-swiftmailer.git",
-                "reference": "ca6cfbd4c51f81269b97b6bf068bf35c22f2a6de"
+                "reference": "81fc8edb5110a1c833dd1d56e219c81c7330d0da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-swiftmailer/zipball/ca6cfbd4c51f81269b97b6bf068bf35c22f2a6de",
-                "reference": "ca6cfbd4c51f81269b97b6bf068bf35c22f2a6de",
+                "url": "https://api.github.com/repos/yiisoft/yii2-swiftmailer/zipball/81fc8edb5110a1c833dd1d56e219c81c7330d0da",
+                "reference": "81fc8edb5110a1c833dd1d56e219c81c7330d0da",
                 "shasum": ""
             },
             "require": {
@@ -881,10 +885,157 @@
                 "swiftmailer",
                 "yii2"
             ],
-            "time": "2014-04-23 01:25:11"
+            "time": "2014-05-23 14:58:21"
         }
     ],
     "packages-dev": [
+        {
+            "name": "nikic/php-parser",
+            "version": "v0.9.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nikic/PHP-Parser.git",
+                "reference": "1e5e280ae88a27effa2ae4aa2bd088494ed8594f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/1e5e280ae88a27effa2ae4aa2bd088494ed8594f",
+                "reference": "1e5e280ae88a27effa2ae4aa2bd088494ed8594f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.9-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "PHPParser": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Nikita Popov"
+                }
+            ],
+            "description": "A PHP parser written in PHP",
+            "keywords": [
+                "parser",
+                "php"
+            ],
+            "time": "2013-08-25 17:11:40"
+        },
+        {
+            "name": "phpdocumentor/reflection",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpDocumentor/Reflection.git",
+                "reference": "b7d8c7abbe5f3f5fe0cb438fcc4bf9349609109a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpDocumentor/Reflection/zipball/b7d8c7abbe5f3f5fe0cb438fcc4bf9349609109a",
+                "reference": "b7d8c7abbe5f3f5fe0cb438fcc4bf9349609109a",
+                "shasum": ""
+            },
+            "require": {
+                "nikic/php-parser": "0.9.4",
+                "php": ">=5.3.3",
+                "phpdocumentor/reflection-docblock": "2.*",
+                "psr/log": "~1.0"
+            },
+            "require-dev": {
+                "behat/behat": "~2.4",
+                "mockery/mockery": ">=0.7.0",
+                "phpunit/phpunit": "~3.7"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "phpDocumentor": [
+                        "src/",
+                        "tests/unit/",
+                        "tests/mocks/"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Reflection library to do Static Analysis for PHP Projects",
+            "homepage": "http://www.phpdoc.org",
+            "keywords": [
+                "phpDocumentor",
+                "phpdoc",
+                "reflection",
+                "static analysis"
+            ],
+            "time": "2014-06-06 20:42:11"
+        },
+        {
+            "name": "phpdocumentor/reflection-docblock",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
+                "reference": "07b195e1eee19ee99cd9432983e1fb39adacdde1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/07b195e1eee19ee99cd9432983e1fb39adacdde1",
+                "reference": "07b195e1eee19ee99cd9432983e1fb39adacdde1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*@stable"
+            },
+            "suggest": {
+                "dflydev/markdown": "1.0.*",
+                "erusev/parsedown": "~0.7"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "phpDocumentor": [
+                        "src/"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mike van Riel",
+                    "email": "mike.vanriel@naenius.com"
+                }
+            ],
+            "time": "2014-04-26 10:10:44"
+        },
         {
             "name": "phpspec/php-diff",
             "version": "dev-master",
@@ -912,11 +1063,55 @@
             "authors": [
                 {
                     "name": "Chris Boulton",
-                    "homepage": "http://github.com/chrisboulton"
+                    "homepage": "http://github.com/chrisboulton",
+                    "role": "Original developer"
                 }
             ],
             "description": "A comprehensive library for generating differences between two hashable objects (strings or arrays).",
             "time": "2013-11-01 13:02:21"
+        },
+        {
+            "name": "psr/log",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "a78d6504ff5d4367497785ab2ade91db3a9fbe11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/a78d6504ff5d4367497785ab2ade91db3a9fbe11",
+                "reference": "a78d6504ff5d4367497785ab2ade91db3a9fbe11",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Psr\\Log\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "time": "2014-01-18 15:33:09"
         },
         {
             "name": "schmunk42/yii2-giiant",
@@ -924,12 +1119,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii2-giiant.git",
-                "reference": "a8e698776312f2280d672e91be5dfd7f38457cc3"
+                "reference": "09174af14e1fe4280da91df6c4ba9c6b3a459ebd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii2-giiant/zipball/a8e698776312f2280d672e91be5dfd7f38457cc3",
-                "reference": "a8e698776312f2280d672e91be5dfd7f38457cc3",
+                "url": "https://api.github.com/repos/schmunk42/yii2-giiant/zipball/09174af14e1fe4280da91df6c4ba9c6b3a459ebd",
+                "reference": "09174af14e1fe4280da91df6c4ba9c6b3a459ebd",
                 "shasum": ""
             },
             "require": {
@@ -959,7 +1154,7 @@
                 "gii",
                 "yii2"
             ],
-            "time": "2014-04-26 22:44:27"
+            "time": "2014-06-12 08:59:26"
         },
         {
             "name": "squizlabs/php_codesniffer",
@@ -1037,17 +1232,69 @@
             "time": "2014-05-01 03:07:07"
         },
         {
+            "name": "yiisoft/yii2-apidoc",
+            "version": "2.0.0-beta",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiisoft/yii2-apidoc.git",
+                "reference": "bb8cc0543f3d624d4e3d5985a72453dcebe67070"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-apidoc/zipball/bb8cc0543f3d624d4e3d5985a72453dcebe67070",
+                "reference": "bb8cc0543f3d624d4e3d5985a72453dcebe67070",
+                "shasum": ""
+            },
+            "require": {
+                "nikic/php-parser": "0.9.*",
+                "phpdocumentor/reflection": ">=1.0.3",
+                "phpdocumentor/reflection-docblock": ">2.0.1",
+                "yiisoft/yii2": "*",
+                "yiisoft/yii2-bootstrap": "*"
+            },
+            "bin": [
+                "apidoc"
+            ],
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "yii\\apidoc\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Carsten Brandt",
+                    "email": "mail@cebe.cc",
+                    "homepage": "http://cebe.cc/",
+                    "role": "Core framework development"
+                }
+            ],
+            "description": "API Documentation generator for the Yii framework 2.0",
+            "keywords": [
+                "api",
+                "apidoc",
+                "documentation",
+                "phpdoc",
+                "yii2"
+            ],
+            "time": "2014-04-13 21:58:59"
+        },
+        {
             "name": "yiisoft/yii2-codeception",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-codeception.git",
-                "reference": "979101cf3d1e5446e7a4f09eb0d813d24eb0e860"
+                "reference": "a77f30b7a8655eada1e3a94a568800202ca1d9bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-codeception/zipball/979101cf3d1e5446e7a4f09eb0d813d24eb0e860",
-                "reference": "979101cf3d1e5446e7a4f09eb0d813d24eb0e860",
+                "url": "https://api.github.com/repos/yiisoft/yii2-codeception/zipball/a77f30b7a8655eada1e3a94a568800202ca1d9bf",
+                "reference": "a77f30b7a8655eada1e3a94a568800202ca1d9bf",
                 "shasum": ""
             },
             "require": {
@@ -1074,7 +1321,7 @@
                 "codeception",
                 "yii2"
             ],
-            "time": "2014-04-23 01:25:11"
+            "time": "2014-05-23 14:58:21"
         },
         {
             "name": "yiisoft/yii2-coding-standards",
@@ -1150,12 +1397,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-gii.git",
-                "reference": "0f3ae3f283d2418cfcfab1b75e5c1967a4a4b7a2"
+                "reference": "03a84f89918d564fc5c3a4bc0ecb0435d228d729"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/0f3ae3f283d2418cfcfab1b75e5c1967a4a4b7a2",
-                "reference": "0f3ae3f283d2418cfcfab1b75e5c1967a4a4b7a2",
+                "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/03a84f89918d564fc5c3a4bc0ecb0435d228d729",
+                "reference": "03a84f89918d564fc5c3a4bc0ecb0435d228d729",
                 "shasum": ""
             },
             "require": {
@@ -1187,12 +1434,10 @@
                 "gii",
                 "yii2"
             ],
-            "time": "2014-05-06 07:20:26"
+            "time": "2014-06-10 20:22:15"
         }
     ],
-    "aliases": [
-
-    ],
+    "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
         "schmunk42/yii2-packaii": 20,
@@ -1202,7 +1447,5 @@
     "platform": {
         "php": ">=5.4.0"
     },
-    "platform-dev": [
-
-    ]
+    "platform-dev": []
 }
