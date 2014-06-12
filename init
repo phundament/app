@@ -84,6 +84,8 @@ if (isset($env['executable'])) {
 
 echo "\n  ... initialization completed.\n\n";
 
+echo "\nRun\n\n  composer create-project\n  ./yii migrate\n\nto setup application extensions and database.\n\n";
+
 function getFileList($root, $basePath = '')
 {
 	$files = [];
