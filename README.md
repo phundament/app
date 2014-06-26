@@ -1,10 +1,10 @@
 Phundament 4.0.x-dev
 ====================
 
+> Please note: This is a `dev` version. Do **NOT** use it for production yet.
+
 Phundament is a PHP Application Foundation based on Yii Framework 2.0 best for rapidly developing web
 applications.
-
-> Please note: This is a `dev` version. Do **NOT** use it for production yet.
 
 If you're looking for the Yii 1.1 version of Phundament please visit our [`master` branch](https://github.com/phundament/app).
 
