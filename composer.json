@@ -56,9 +56,6 @@
             "backend/web/assets",
             "frontend/runtime",
             "frontend/web/assets"
-        ],
-        "executable": [
-            "yii"
         ]
     }
 }
