@@ -65,3 +65,20 @@ In the meantime, update your `/etc/hosts` file:
 
 Open [phundament.vagrant](http://192.168.33.101/phundament.vagrant) or [http://192.168.33.101](http://192.168.33.101) in your browser.
 
+
+Additional Setup
+----------------
+
+### Configure Command
+
+tbd
+
+### Virtual Host Setup (frontend, backend)
+
+tbd
+
+### Git Hook
+```
+ * cd .git/hooks/
+ * ln -s ../../git-hooks/post-merge .
+ ```
