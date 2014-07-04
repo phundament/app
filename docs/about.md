@@ -9,6 +9,7 @@ applications.
 If you're looking for the Yii 1.1 version of Phundament please visit our [`master` branch](https://github.com/phundament/app).
 
 
+
 Based upon Yii 2 Advanced Application Template
 ----------------------------------------------
 
