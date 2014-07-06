@@ -38,14 +38,7 @@
     "require-dev": {
         "yiisoft/yii2-debug": "*",
         "yiisoft/yii2-gii": "*",
-        "schmunk42/yii2-giiant": "dev-develop",
-        "yiisoft/yii2-codeception": " *",
-        "yiisoft/yii2-apidoc": " *",
-        "codeception/codeception": " 2.0.*",
-        "codeception/specify": " *",
-        "codeception/verify": " *",
-        "yiisoft/yii2-faker": " *",
-        "yiisoft/yii2-coding-standards": " *"
+        "schmunk42/yii2-giiant": "dev-develop"
     },
     "autoload": {
         "psr-4": {
