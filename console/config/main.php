@@ -11,6 +11,10 @@ return [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'console\controllers',
+    'controllerMap' => [
+        'docs-api' => 'yii\\apidoc\\commands\\ApiController',
+        'docs-guide' => 'yii\\apidoc\\commands\\GuideController'
+    ],
     'modules' => [],
     'components' => [
         'log' => [

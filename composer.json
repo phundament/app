@@ -5,11 +5,11 @@
     "homepage": "http://www.phundament.com/",
     "type": "project",
     "license": "BSD-3-Clause",
-    "authors":[
+    "authors": [
         {
-            "name":"Tobias Munk",
-            "email":"schmunk@usrbin.de",
-            "homepage":"http://www.phundament.com"
+            "name": "Tobias Munk",
+            "email": "schmunk@usrbin.de",
+            "homepage": "http://www.phundament.com"
         }
     ],
     "support": {
@@ -18,7 +18,7 @@
         "source": "https://github.com/phundament/app"
     },
     "minimum-stability": "dev",
-    "repositories":[
+    "repositories": [
         {
             "type": "git",
             "url": "https://github.com/schmunk42/yii2-package-browser.git"
@@ -31,20 +31,31 @@
         "yiisoft/yii2": "*",
         "yiisoft/yii2-bootstrap": "*",
         "yiisoft/yii2-swiftmailer": "*",
-        "schmunk42/yii2-packaii": "dev-master"
+        "dmstr/yii2-migrate-command": "*",
+        "dektrium/yii2-user": "*",
+        "schmunk42/yii2-packaii": "*"
     },
     "require-dev": {
-        "yiisoft/yii2-codeception": "*",
-        "yiisoft/yii2-coding-standards": "dev-master",
         "yiisoft/yii2-debug": "*",
         "yiisoft/yii2-gii": "*",
-        "yiisoft/yii2-apidoc": "*",
-        "schmunk42/yii2-giiant": "dev-develop"
+        "schmunk42/yii2-giiant": "dev-develop",
+        "yiisoft/yii2-codeception": " *",
+        "yiisoft/yii2-apidoc": " *",
+        "codeception/codeception": " 2.0.*",
+        "codeception/specify": " *",
+        "codeception/verify": " *",
+        "yiisoft/yii2-faker": " *",
+        "yiisoft/yii2-coding-standards": " *"
     },
-
+    "autoload": {
+        "psr-4": {
+            "console\\": "./console"
+        }
+    },
     "scripts": {
         "post-create-project-cmd": [
-            "yii\\composer\\Installer::setPermission"
+            "yii\\composer\\Installer::setPermission",
+            "console\\helpers\\ComposerCommand::init"
         ]
     },
     "config": {

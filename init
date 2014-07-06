@@ -84,8 +84,6 @@ if (isset($env['executable'])) {
 
 echo "\n  ... initialization completed.\n\n";
 
-echo "\nRun\n\n  ./yii migrate\n\nto complete application setup.\n\n";
-
 function getFileList($root, $basePath = '')
 {
 	$files = [];
