@@ -27,6 +27,9 @@ composer.phar
 # Mac DS_Store Files
 .DS_Store
 
+# apidoc generated documentation
+docs-html
+
 # phpunit itself is not needed
 phpunit.phar
 
@@ -39,3 +42,4 @@ nbproject
 .idea
 *.swp
 .vagrant
+logs
