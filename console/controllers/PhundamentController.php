@@ -202,7 +202,12 @@ class PhundamentController extends Controller
         $subject = file_get_contents($file);
         $regex   = "/(\s*'[^']*'\s*=>\s*')([^']*)(',\s*" . $marker . ")/";
         preg_match($regex, $subject, $matches);
-        return $matches[2];
+        if(!isset($matches[2])) {
+            echo "Marker '{$marker}' not found in config file.";
+            return null;
+        } else {
+            return $matches[2];
+        }
     }
 
     private function promptUpdateConfigurationValue($file, $id, $prompt)
