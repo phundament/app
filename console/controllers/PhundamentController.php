@@ -202,8 +202,8 @@ class PhundamentController extends Controller
         $subject = file_get_contents($file);
         $regex   = "/(\s*'[^']*'\s*=>\s*')([^']*)(',\s*" . $marker . ")/";
         preg_match($regex, $subject, $matches);
-        if(!isset($matches[2])) {
-            echo "Marker '{$marker}' not found in config file.";
+        if (!isset($matches[2])) {
+            echo "Marker '{$marker}' not found in config file '{$file}'.\n";
             return null;
         } else {
             return $matches[2];
@@ -212,8 +212,11 @@ class PhundamentController extends Controller
 
     private function promptUpdateConfigurationValue($file, $id, $prompt)
     {
-        $value = $this->prompt($prompt, ['default' => $this->readConfigurationValue($file, $id)]);
-        $this->updateConfigurationValue($file, $id, $value);
+        $originalValue = $this->readConfigurationValue($file, $id);
+        if ($originalValue !== null) {
+            $value = $this->prompt($prompt, ['default' => $this->readConfigurationValue($file, $id)]);
+            $this->updateConfigurationValue($file, $id, $value);
+        }
     }
 
     private function updateConfigurationValue($file, $id, $value)
