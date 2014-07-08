@@ -32,7 +32,7 @@
         "yiisoft/yii2-bootstrap": "*",
         "yiisoft/yii2-swiftmailer": "*",
         "dmstr/yii2-migrate-command": "*",
-        "dektrium/yii2-user": "*",
+        "dmstr/yii2-app-command": "dev-develop",
         "schmunk42/yii2-packaii": "*"
     },
     "require-dev": {
@@ -42,13 +42,13 @@
     },
     "autoload": {
         "psr-4": {
-            "console\\": "./console"
+            "dmstr\\console\\helpers\\": "./vendor/dmstr/yii2-app-command/helpers"
         }
     },
     "scripts": {
         "post-create-project-cmd": [
             "yii\\composer\\Installer::setPermission",
-            "console\\helpers\\ComposerCommand::init"
+            "dmstr\\console\\helpers\\ComposerCallback::init"
         ]
     },
     "config": {

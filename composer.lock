@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7e38daf4c7402c5cb12160402e6cda35",
+    "hash": "f22424dfa3de1224910a4c9ab9557d62",
     "packages": [
         {
             "name": "2amigos/yii2-arrayquery-component",
@@ -241,59 +241,44 @@
             "time": "2013-12-10 17:49:58"
         },
         {
-            "name": "dektrium/yii2-user",
-            "version": "dev-master",
+            "name": "dmstr/yii2-app-command",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
-                "url": "https://github.com/dektrium/yii2-user.git",
-                "reference": "f05783ea11160d3cd2900dbc1c79e39424aac9c7"
+                "url": "https://github.com/dmstr/yii2-app-command.git",
+                "reference": "102b69fc64ed070f9b1a8336342bdfd8daece401"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dektrium/yii2-user/zipball/f05783ea11160d3cd2900dbc1c79e39424aac9c7",
-                "reference": "f05783ea11160d3cd2900dbc1c79e39424aac9c7",
+                "url": "https://api.github.com/repos/dmstr/yii2-app-command/zipball/102b69fc64ed070f9b1a8336342bdfd8daece401",
+                "reference": "102b69fc64ed070f9b1a8336342bdfd8daece401",
                 "shasum": ""
             },
-            "require": {
-                "yiisoft/yii2": "*",
-                "yiisoft/yii2-authclient": "*",
-                "yiisoft/yii2-swiftmailer": "*"
-            },
-            "require-dev": {
-                "codeception/specify": "*",
-                "codeception/verify": "*",
-                "guzzlehttp/guzzle": "~4.0",
-                "yiisoft/yii2-codeception": "*"
-            },
             "type": "yii2-extension",
-            "extra": {
-                "bootstrap": "dektrium\\user\\Bootstrap"
-            },
             "autoload": {
                 "psr-4": {
-                    "dektrium\\user\\": ""
+                    "dmstr\\console\\controllers\\": "controllers"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "MIT"
+                "BSD-3-Clause"
             ],
             "authors": [
                 {
-                    "name": "Dmitry Erofeev",
-                    "email": "dmeroff@gmail.com",
-                    "homepage": "http://dmeroff.ru",
-                    "role": "Developer"
+                    "name": "Tobias Munk",
+                    "email": "tobias@diemeisterei.de"
                 }
             ],
-            "description": "Flexible user registration and authentication module for Yii2",
+            "description": "Console command for Yii 2 Framework to manage your application source code and configuration settings",
             "keywords": [
-                "User management",
-                "dektrium",
-                "yii2",
-                "yii2-user"
+                "application",
+                "command",
+                "configuration",
+                "management",
+                "yii2"
             ],
-            "time": "2014-07-01 11:14:57"
+            "time": "2014-07-08 07:55:48"
         },
         {
             "name": "dmstr/yii2-migrate-command",
@@ -731,12 +716,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "b978ac1ff96745063e0ab08a48ce429dbc51477e"
+                "reference": "642a0afd8638fcc59ca540af8a88326ec47a558c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/b978ac1ff96745063e0ab08a48ce429dbc51477e",
-                "reference": "b978ac1ff96745063e0ab08a48ce429dbc51477e",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/642a0afd8638fcc59ca540af8a88326ec47a558c",
+                "reference": "642a0afd8638fcc59ca540af8a88326ec47a558c",
                 "shasum": ""
             },
             "require": {
@@ -804,51 +789,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2014-07-05 16:07:46"
-        },
-        {
-            "name": "yiisoft/yii2-authclient",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yiisoft/yii2-authclient.git",
-                "reference": "bc8f8fb441f911d1df05d51fb4c86dad600fccf1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-authclient/zipball/bc8f8fb441f911d1df05d51fb4c86dad600fccf1",
-                "reference": "bc8f8fb441f911d1df05d51fb4c86dad600fccf1",
-                "shasum": ""
-            },
-            "require": {
-                "ext-curl": "*",
-                "yiisoft/yii2": "*"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "yii\\authclient\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Paul Klimov",
-                    "email": "klimov.paul@gmail.com",
-                    "role": "Core framework development"
-                }
-            ],
-            "description": "External authentication via OAuth and OpenID for the Yii framework",
-            "keywords": [
-                "OpenId",
-                "auth",
-                "oauth",
-                "yii2"
-            ],
-            "time": "2014-07-02 12:30:26"
+            "time": "2014-07-07 15:24:21"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -1157,6 +1098,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "dmstr/yii2-app-command": 20,
         "schmunk42/yii2-giiant": 20
     },
     "platform": {
