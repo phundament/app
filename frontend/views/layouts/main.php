@@ -37,15 +37,17 @@ AppAsset::register($this);
                 ['label' => 'About', 'url' => ['/site/about']],
                 ['label' => 'Contact', 'url' => ['/site/contact']],
             ];
-            if (Yii::$app->user->isGuest) {
-                $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
-                $menuItems[] = ['label' => 'Login', 'url' => ['/user/security/login']];
-            } else {
-                $menuItems[] = [
-                    'label' => 'Logout (' . Yii::$app->user->identity->username . ')',
-                    'url' => ['/site/logout'],
-                    'linkOptions' => ['data-method' => 'post']
-                ];
+            if (Yii::$app->hasModule('user')) {
+                if (Yii::$app->user->isGuest) {
+                    $menuItems[] = ['label' => 'Signup', 'url' => ['/user/registration/register']];
+                    $menuItems[] = ['label' => 'Login', 'url' => ['/user/security/login']];
+                } else {
+                    $menuItems[] = [
+                        'label'       => 'Logout (' . Yii::$app->user->identity->username . ')',
+                        'url'         => ['/site/logout'],
+                        'linkOptions' => ['data-method' => 'post']
+                    ];
+                }
             }
             echo Nav::widget([
                 'options' => ['class' => 'navbar-nav navbar-right'],
