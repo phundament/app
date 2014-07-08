@@ -1,2 +1,0 @@
-cd /var/www/phundament.vagrant
-composer create-project
