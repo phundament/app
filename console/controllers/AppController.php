@@ -9,8 +9,7 @@
 
 namespace console\controllers;
 
-use yii\base\Exception;
-use yii\console\Controller;
+use dmstr\console\controllers\BaseAppController;
 
 
 /**
@@ -18,35 +17,15 @@ use yii\console\Controller;
  * @package console\controllers
  * @author Tobias Munk <tobias@diemeisterei.de>
  */
-class PhundamentController extends Controller
+class AppController extends BaseAppController
 {
-    public $composerExecutables = ['composer.phar', 'composer'];
-    private $_composerExecutable = null;
-
-    public function init()
-    {
-        parent::init();
-        foreach ($this->composerExecutables AS $cmd) {
-            exec($cmd, $output, $return);
-            if ($return == 0) {
-                $this->_composerExecutable = $cmd;
-                return;
-            }
-        }
-        throw new Exception('Composer executable not found.');
-    }
-
-    public function beforeAction($action)
-    {
-        return parent::beforeAction($action);
-    }
-
     /**
-     * Show help
+     * Display help command
      */
     public function actionIndex()
     {
-        $this->action('help phundament');
+        // TODO:
+        echo "Use ./yii help app to show help.\n";
     }
 
     /**
@@ -54,7 +33,8 @@ class PhundamentController extends Controller
      */
     public function actionInit()
     {
-        $this->action('phundament/configure');
+        // TODO: get Phundament version from `git describe` and store it in $app->params
+        $this->action('app/configure');
         $this->action('migrate');
     }
 
@@ -87,13 +67,16 @@ class PhundamentController extends Controller
             'components.db.dsn'
         );
         if (substr($dsn, 0, 7) == 'sqlite:') {
-            $file = substr($dsn, 7);
+            $isSqlite = true;
+            $file     = substr($dsn, 7);
             if (!is_file($file)) {
                 touch($file);
                 echo "SQLite database file '($file)' created.\n";
             }
-
+        } else {
+            $isSqlite = false;
         }
+
         $this->promptUpdateConfigurationValue(
             'common/config/main-local.php',
             'components.db.username',
@@ -116,14 +99,23 @@ class PhundamentController extends Controller
             'Support e-mail address'
         );
 
-        if ($this->confirm("Enable user module extension (dektrium/yii2-user)?", true)) {
-            $userModuleid = $this->prompt("User module ID", ['default' => 'user']);
-            $this->composer("require dektrium/yii2-user '*'");
-            $this->addToConfigurationArray(
-                'common/config/main.php',
-                'modules',
-                ['user' => ['class' => 'dektrium\\user\\Module']]
-            );
+        if (!$isSqlite) {
+            if ($this->confirm("Enable user module extension (dektrium/yii2-user)?", true)) {
+                $userModuleid = $this->prompt("User module ID", ['default' => 'user']);
+                $this->composer("require dektrium/yii2-user '*'");
+                $this->addToConfigurationArray(
+                    'common/config/main.php',
+                    'modules',
+                    ['user' => ['class' => 'dektrium\\user\\Module']]
+                );
+                $this->addToConfigurationArray(
+                    'console/config/params.php',
+                    'params/yii.migrations',
+                    ['@dektrium/user/migrations']
+                );
+            }
+        } else {
+            echo "User module installation skipped, due to SQLite database, use MySQL or PostgreSQL.\n";
         }
 
         if ($this->confirm("Enable Testing & QA (installation of build and test tools via composer)")) {
@@ -172,90 +164,4 @@ class PhundamentController extends Controller
         $this->execute('vendor/bin/codecept run --config common unit');
         $this->execute('vendor/bin/codecept run --config console unit');
     }
-
-    private function composer($command)
-    {
-        $this->execute($this->_composerExecutable . ' ' . $command);
-    }
-
-    private function execute($command)
-    {
-        echo "\n\nExecuting '$command'...\n";
-        if (($fp = popen($command, "r"))) {
-            while (!feof($fp)) {
-                echo fread($fp, 1024);
-                flush(); // you have to flush buffer
-            }
-            fclose($fp);
-        }
-    }
-
-    private function action($command, $params = [])
-    {
-        echo "\n\nRunning action '$command'...\n";
-        \Yii::$app->runAction($command, $params);
-    }
-
-    private function readConfigurationValue($file, $id)
-    {
-        $marker  = "#value:{$id}";
-        $subject = file_get_contents($file);
-        $regex   = "/(\s*'[^']*'\s*=>\s*')([^']*)(',\s*" . $marker . ")/";
-        preg_match($regex, $subject, $matches);
-        if (!isset($matches[2])) {
-            echo "Marker '{$marker}' not found in config file '{$file}'.\n";
-            return null;
-        } else {
-            return $matches[2];
-        }
-    }
-
-    private function promptUpdateConfigurationValue($file, $id, $prompt)
-    {
-        $originalValue = $this->readConfigurationValue($file, $id);
-        if ($originalValue !== null) {
-            $value = $this->prompt($prompt, ['default' => $this->readConfigurationValue($file, $id)]);
-            $this->updateConfigurationValue($file, $id, $value);
-        }
-    }
-
-    private function updateConfigurationValue($file, $id, $value)
-    {
-        $marker  = "#value:{$id}";
-        $subject = file_get_contents($file);
-        $regex   = "/(\s*'[^']*'\s*=>\s*')[^']*(',\s*" . $marker . ")/";
-        $content = preg_replace($regex, "$1" . $value . "$2", $subject);
-        file_put_contents($file, $content);
-    }
-
-    private function addToConfigurationArray($file, $id, $item)
-    {
-        $marker      = "#array:{$id}>end#";
-        $valueString = substr(\yii\helpers\VarDumper::export($item), 2, -2); // use value without enclosing brackets
-        $subject     = file_get_contents($file);
-        if (!$this->validateConfigurationChange($subject, $marker, $item)) {
-            echo "Not updated configuration array '{$id}'.\n";
-            return false;
-        } else {
-            preg_match("/(\s*)('[^']*'\s*=>\s*'[^']*'),/", $subject, $matches);
-            $replacement = $valueString . "\n" . $marker;
-            $content     = str_replace($marker, $replacement, $subject);
-            file_put_contents($file, $content);
-            echo "Updated configuration array '{$id}'.\n";
-            return true;
-        }
-    }
-
-    private function validateConfigurationChange($configurationString, $marker, $item)
-    {
-        if (!strstr($configurationString, $marker)) {
-            // marker does not exist
-            return false;
-        } elseif (strstr($configurationString, key($item))) {
-            // marker does not exist
-            return false;
-        } else {
-            return true;
-        }
-    }
-}
+} 

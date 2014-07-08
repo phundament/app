@@ -13,6 +13,8 @@ return [
     'controllerNamespace' => 'console\controllers',
     'controllerMap'       => [
         #array:controllerMap>begin#
+        'app'     => 'console\\controllers\\AppController',
+        'migrate' => 'dmstr\\console\\controllers\\MigrateController',
         #array:controllerMap>end#
     ],
     'modules'             => [],
