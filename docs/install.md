@@ -3,7 +3,6 @@ Get started!
 
 > The minimum requirement by this application template that your Web server supports PHP 5.4.0.
 
-
 ### Install via Composer
 
 If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
@@ -37,33 +36,9 @@ the installed application. You only need to do these once for all.
 To login into the application, you need to first sign up, with any of your email address, username and password.
 Then, you can login into the application with same email address and password at any time.
 
+---
 
-
-Install via Vagrant on a virtual-, cloud- or remote-server
-----------------------------------------------------------
-
-Download and install [Vagrant](http://www.vagrantup.com/downloads.html) and [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
-
-Get the project without installing it, vagrant will do that later.
-
-~~~
-composer create-project --no-install phundament/app:4.0.x-dev app-v4
-~~~
-
-Bring up the virtual machine:
-
-~~~
-cd app
-vagrant up
-~~~
-
-In the meantime, update your `/etc/hosts` file:
-
-~~~
-192.168.33.101    phundament.vagrant
-~~~
-
-Open [phundament.vagrant](http://192.168.33.101/phundament.vagrant) or [http://192.168.33.101](http://192.168.33.101) in your browser.
+[Install via Vagrant on a virtual-, cloud- or remote-server](vagrant.md)
 
 
 Additional Setup
@@ -76,9 +51,3 @@ tbd
 ### Virtual Host Setup (frontend, backend)
 
 tbd
-
-### Git Hook
-```
- * cd .git/hooks/
- * ln -s ../../git-hooks/post-merge .
- ```

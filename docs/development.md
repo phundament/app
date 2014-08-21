@@ -1,5 +1,10 @@
-Development Packages
-====================
+Development
+===========
+
+Conventions
+-----------
+
+- composer is available via `composer`
 
 Yii Framework 2.0
 -----------------
@@ -9,4 +14,6 @@ Yii Framework 2.0
 3. Update `index.php`
    ```
    require(__DIR__ . '/../../vendor/yiisoft/yii2-dev/framework/Yii.php');
-   ``
+   ```
+
+

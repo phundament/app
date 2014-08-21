@@ -1,6 +1,13 @@
 Generating Documentation
 ========================
 
+Requirements
+------------
+
+```
+composer require yiisoft/yii2-apidoc:"*"
+```
+
 Guide
 -----
 
