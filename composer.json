@@ -33,7 +33,9 @@
         "yiisoft/yii2-swiftmailer": "*",
         "dmstr/yii2-migrate-command": "*",
         "dmstr/yii2-app-command": "dev-develop",
-        "schmunk42/yii2-packaii": "*"
+        "schmunk42/yii2-packaii": "*",
+        "yiisoft/yii2-apidoc": "*",
+        "dektrium/yii2-user": "*"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "*",

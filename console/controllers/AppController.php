@@ -33,6 +33,10 @@ class AppController extends BaseAppController
      */
     public function actionInit()
     {
+        echo "Basic initialization completed.\n\nPlease add a MySQL database to your config and run\n\n  ./yii migrate\n\n";
+
+        // TODO: fix app/configure
+        return;
         // TODO: get Phundament version from `git describe` and store it in $app->params
         $this->action('app/configure');
         $this->action('migrate');
@@ -56,6 +60,7 @@ class AppController extends BaseAppController
     {
         echo "\nPhundament Application Configuration\n";
         echo "------------------------------------\n";
+        echo "Note: This feature is currently in DEVELOPMENT, make a backup of your data first!\n";
 
         $this->promptUpdateConfigurationValue(
             'common/config/main-local.php',
