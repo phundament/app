@@ -29,7 +29,7 @@ ln -s ../../backend/web backend
 
 ### Virtualized Setup
 
-[Install via Vagrant on a virtual-, cloud- or remote-server](vagrant.md)
+[Install via Vagrant on a virtual-, cloud- or remote-server](virtualization.md)
 
 
 ### Configure Application
