@@ -29,7 +29,7 @@ ln -s ../../backend/web backend
 
 ### Virtualized Setup
 
-[Install via Vagrant on a virtual-, cloud- or remote-server](vagrant.md)
+[Install via Vagrant on a virtual-, cloud- or remote-server](virtualization.md)
 
 
 ### Configure Application
@@ -40,7 +40,8 @@ ln -s ../../backend/web backend
 
 ### Admin User
 
-./yii user/create admin@h17n.de admin
-./yii user/password admin admin
+```
+./yii user/create admin@example.com admin
+```
 
-Phundament all $config return from variable
+In development mode, you can either look into `console/runtime/mails` to obtain the password or use `./yii user/password` to set a password right away.
