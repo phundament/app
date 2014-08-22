@@ -40,7 +40,9 @@ ln -s ../../backend/web backend
 
 ### Admin User
 
-./yii user/create admin@h17n.de admin
+```
+./yii user/create admin@example.com admin
 ./yii user/password admin admin
+```
 
 Phundament all $config return from variable
