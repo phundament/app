@@ -4,10 +4,17 @@ Application Documentation
 Overview
 --------
 
+- [About](about.md)
+- [Requirements](requirements.md)
+
+- [Development](development.md)
 - [Installation](install.md)
 - [Configuration](configuration.md)
-- [Directory Structure](directories.md)
+- [Directory Structure](structure.md)
+- [Virtualization](virtualization.md)
+
 - [Testing](testing.md)
+- [Replication](replication.md)
 - [Generating Documentation](apidoc.md)
 
 ---

@@ -4,10 +4,10 @@ Development
 Conventions
 -----------
 
-- composer is available via `composer`
+- composer.phar is available via `composer`
 
-Yii Framework 2.0
------------------
+Use Yii Framework 2.0 Development Repo
+--------------------------------------
 
 1. Change `yii2` to `yii2-dev` in `composer.json`.
 2. `composer require twbs/bootstrap`
