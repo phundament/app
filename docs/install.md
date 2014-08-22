@@ -42,7 +42,6 @@ ln -s ../../backend/web backend
 
 ```
 ./yii user/create admin@example.com admin
-./yii user/password admin admin
 ```
 
-Phundament all $config return from variable
+In development mode, you can either look into `console/runtime/mails` to obtain the password or use `./yii user/password` to set a password right away.
