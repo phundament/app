@@ -33,7 +33,7 @@ class AppController extends BaseAppController
      */
     public function actionInit()
     {
-        echo "Basic initialization completed.\n\nPlease add a MySQL database to your config and run\n\n  ./yii migrate\n\n";
+        echo "\nPlease add cookieValidationKey (frontend,backend) and a MySQL database (common) to your config and run\n\n  ./yii migrate\n\n";
 
         // TODO: fix app/configure
         return;
