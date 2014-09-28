@@ -24,17 +24,16 @@
         "yiisoft/yii2": "*",
         "yiisoft/yii2-bootstrap": "*",
         "yiisoft/yii2-swiftmailer": "*",
-        "dmstr/yii2-migrate-command": "*",
-        "dmstr/yii2-app-command": "dev-develop",
-        "schmunk42/yii2-packaii": "*",
-        "yiisoft/yii2-apidoc": "*",
-        "dektrium/yii2-user": "*"
+        "dektrium/yii2-user": "dev-master",
+        "dmstr/yii2-migrate-command": "dev-master",
+        "schmunk42/yii2-packaii": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "*",
         "yiisoft/yii2-gii": "*",
         "yiisoft/yii2-faker": "*",
-        "schmunk42/yii2-giiant": "dev-develop"
+        "dmstr/yii2-app-command": "dev-master",
+        "schmunk42/yii2-giiant": "dev-master"
     },
     "autoload": {
         "psr-4": {
@@ -43,7 +42,6 @@
     },
     "scripts": {
         "post-create-project-cmd": [
-            "yii\\composer\\Installer::setPermission",
             "dmstr\\console\\helpers\\ComposerCallback::init"
         ]
     },

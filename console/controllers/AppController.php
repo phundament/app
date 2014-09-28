@@ -24,8 +24,8 @@ class AppController extends BaseAppController
      */
     public function actionIndex()
     {
-        // TODO:
-        echo "Use ./yii help app to show help.\n";
+        echo "Phundament application version: ";
+        $this->execute('git describe');
     }
 
     /**
@@ -33,11 +33,6 @@ class AppController extends BaseAppController
      */
     public function actionInit()
     {
-        echo "\nPlease add cookieValidationKey (frontend,backend) and a MySQL database (common) to your config and run\n\n  ./yii migrate\n\n";
-
-        // TODO: fix app/configure
-        return;
-        // TODO: get Phundament version from `git describe` and store it in $app->params
         $this->action('app/configure');
         $this->action('migrate');
     }
@@ -60,27 +55,15 @@ class AppController extends BaseAppController
     {
         echo "\nPhundament Application Configuration\n";
         echo "------------------------------------\n";
+
         echo "Note: This feature is currently in DEVELOPMENT, make a backup of your data first!\n";
 
+        echo "Note: SQLite is currently not supported.\n";
         $this->promptUpdateConfigurationValue(
             'common/config/main-local.php',
             'components.db.dsn',
             'Database DSN (use eg. mysql:host=localhost;dbname=myapp)'
         );
-        $dsn = $this->readConfigurationValue(
-            'common/config/main-local.php',
-            'components.db.dsn'
-        );
-        if (substr($dsn, 0, 7) == 'sqlite:') {
-            $isSqlite = true;
-            $file     = substr($dsn, 7);
-            if (!is_file($file)) {
-                touch($file);
-                echo "SQLite database file '($file)' created.\n";
-            }
-        } else {
-            $isSqlite = false;
-        }
 
         $this->promptUpdateConfigurationValue(
             'common/config/main-local.php',
@@ -104,26 +87,7 @@ class AppController extends BaseAppController
             'Support e-mail address'
         );
 
-        if (!$isSqlite) {
-            if ($this->confirm("Enable user module extension (dektrium/yii2-user)?", true)) {
-                $userModuleid = $this->prompt("User module ID", ['default' => 'user']);
-                $this->composer("require dektrium/yii2-user '*'");
-                $this->addToConfigurationArray(
-                    'common/config/main.php',
-                    'modules',
-                    ['user' => ['class' => 'dektrium\\user\\Module']]
-                );
-                $this->addToConfigurationArray(
-                    'console/config/params.php',
-                    'params/yii.migrations',
-                    ['@dektrium/user/migrations']
-                );
-            }
-        } else {
-            echo "User module installation skipped, due to SQLite database, use MySQL or PostgreSQL.\n";
-        }
-
-        if ($this->confirm("Enable Testing & QA (installation of build and test tools via composer)")) {
+        /*if ($this->confirm("Enable Testing & QA (installation of build and test tools via composer)")) {
             $this->composer(
                 'require --dev "yiisoft/yii2-apidoc: *" "yiisoft/yii2-coding-standards: *" "yiisoft/yii2-codeception: *" "codeception/codeception: 2.0.*" "codeception/specify: *" "codeception/verify: *" "yiisoft/yii2-faker: *"'
             );
@@ -143,22 +107,22 @@ class AppController extends BaseAppController
             $this->execute('vendor/bin/codecept build -c frontend');
             $this->execute('vendor/bin/codecept build -c common');
             $this->execute('vendor/bin/codecept build -c console');
-        }
+        }*/
     }
 
     /**
      * Generate application and required vendor documentation
      */
-    public function actionDocs()
+    /*public function actionDocs()
     {
         $this->action('docs-api', ['frontend,backend,console,common,vendor/dmstr', 'docs-html', 'interactive' => 0]);
         $this->action('docs-guide', ['docs', 'docs-html', 'interactive' => 0]);
-    }
+    }*/
 
     /**
      * Source code checks and tests
      */
-    public function actionQa()
+    /*public function actionQa()
     {
         $this->composer('validate');
         $this->execute(
@@ -168,5 +132,5 @@ class AppController extends BaseAppController
         $this->execute('vendor/bin/codecept run --config frontend unit');
         $this->execute('vendor/bin/codecept run --config common unit');
         $this->execute('vendor/bin/codecept run --config console unit');
-    }
+    }*/
 } 
