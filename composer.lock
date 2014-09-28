@@ -765,17 +765,17 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v2.5.4",
+            "version": "v2.5.5",
             "target-dir": "Symfony/Component/EventDispatcher",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/EventDispatcher.git",
-                "reference": "8faf5cc7e80fde74a650a36e60d32ce3c3e0457b"
+                "reference": "f6281337bf5f985f585d1db6a83adb05ce531f46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/8faf5cc7e80fde74a650a36e60d32ce3c3e0457b",
-                "reference": "8faf5cc7e80fde74a650a36e60d32ce3c3e0457b",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/f6281337bf5f985f585d1db6a83adb05ce531f46",
+                "reference": "f6281337bf5f985f585d1db6a83adb05ce531f46",
                 "shasum": ""
             },
             "require": {
@@ -784,7 +784,7 @@
             "require-dev": {
                 "psr/log": "~1.0",
                 "symfony/config": "~2.0",
-                "symfony/dependency-injection": "~2.0",
+                "symfony/dependency-injection": "~2.0,<2.6.0",
                 "symfony/stopwatch": "~2.2"
             },
             "suggest": {
@@ -818,7 +818,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "http://symfony.com",
-            "time": "2014-07-28 13:20:46"
+            "time": "2014-09-28 15:56:11"
         },
         {
             "name": "yiisoft/yii2",
@@ -1181,12 +1181,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-app-command.git",
-                "reference": "102b69fc64ed070f9b1a8336342bdfd8daece401"
+                "reference": "dab87e67a559808e70aeb9b480e0ba9981f01691"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-app-command/zipball/102b69fc64ed070f9b1a8336342bdfd8daece401",
-                "reference": "102b69fc64ed070f9b1a8336342bdfd8daece401",
+                "url": "https://api.github.com/repos/dmstr/yii2-app-command/zipball/dab87e67a559808e70aeb9b480e0ba9981f01691",
+                "reference": "dab87e67a559808e70aeb9b480e0ba9981f01691",
                 "shasum": ""
             },
             "type": "yii2-extension",
@@ -1213,7 +1213,7 @@
                 "management",
                 "yii2"
             ],
-            "time": "2014-07-08 07:55:48"
+            "time": "2014-09-28 19:01:54"
         },
         {
             "name": "fzaninotto/faker",
