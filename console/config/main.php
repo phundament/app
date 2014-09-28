@@ -7,18 +7,18 @@ $params = \yii\helpers\ArrayHelper::merge(
 );
 
 return [
-    'id'                  => 'app-console',
-    'basePath'            => dirname(__DIR__),
-    'bootstrap'           => ['log'],
+    'id' => 'app-console',
+    'basePath' => dirname(__DIR__),
+    'bootstrap' => ['log', 'gii'],
     'controllerNamespace' => 'console\controllers',
     'controllerMap'       => [
-        #array:controllerMap>begin#
         'app'     => 'console\\controllers\\AppController',
         'migrate' => 'dmstr\\console\\controllers\\MigrateController',
-        #array:controllerMap>end#
     ],
-    'modules'             => [],
-    'components'          => [
+    'modules' => [
+        'gii' => 'yii\gii\Module',
+    ],
+    'components' => [
         'log' => [
             'targets' => [
                 [

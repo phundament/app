@@ -14,7 +14,8 @@ Quick-Start
 You can install the _Phundament 4_ application template using the following command:
 
 ~~~
-composer.phar create-project phundament/app:4.0.x-dev app-v4
+composer global require "fxp/composer-asset-plugin:1.0.0-beta2"
+composer create-project --stability=dev phundament/app:4.0.x-dev app-v4
 ~~~
 
 The project creation process will trigger the `Yii Application Initialization Tool` command to setup your application.

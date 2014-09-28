@@ -7,20 +7,13 @@ $params = \yii\helpers\ArrayHelper::merge(
 );
 
 return [
-    'id' => 'app-backend', #value:id#
+    'id' => 'app-backend',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
     'modules' => [
-        #array:modules>begin#
-        #array:modules>end#
     ],
     'components' => [
-        #array:components>begin#
-        'request' => [
-            // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-            'cookieValidationKey' => '',
-        ],
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
@@ -28,18 +21,15 @@ return [
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [
-                #array:components.log.targets>begin#
                 [
                     'class' => 'yii\log\FileTarget',
                     'levels' => ['error', 'warning'],
                 ],
-                #array:components.log.targets>end#
             ],
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        #array:components>end#
     ],
     'params' => $params,
 ];

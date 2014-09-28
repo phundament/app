@@ -17,14 +17,7 @@
         "forum": "https://groups.google.com/forum/#!forum/phundament-dev",
         "source": "https://github.com/phundament/app"
     },
-    "minimum-stability": "dev",
-    "repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/schmunk42/yii2-package-browser.git"
-        }
-    ],
-
+    "minimum-stability": "RC",
     "require": {
         "php": ">=5.4.0",
         "yiisoft/yii2-composer": "*",
@@ -40,6 +33,7 @@
     "require-dev": {
         "yiisoft/yii2-debug": "*",
         "yiisoft/yii2-gii": "*",
+        "yiisoft/yii2-faker": "*",
         "schmunk42/yii2-giiant": "dev-develop"
     },
     "autoload": {
@@ -57,11 +51,9 @@
         "process-timeout": 1800
     },
     "extra": {
-        "writable": [
-            "backend/runtime",
-            "backend/web/assets",
-            "frontend/runtime",
-            "frontend/web/assets"
-        ]
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
     }
 }
