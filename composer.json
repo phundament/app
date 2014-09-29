@@ -37,12 +37,12 @@
     },
     "autoload": {
         "psr-4": {
-            "dmstr\\console\\helpers\\": "./vendor/dmstr/yii2-app-command/helpers"
+            "console\\helpers\\": "./console/helpers"
         }
     },
     "scripts": {
         "post-create-project-cmd": [
-            "dmstr\\console\\helpers\\ComposerCallback::init"
+            "console\\helpers\\ComposerCallback::createProject"
         ]
     },
     "config": {

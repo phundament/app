@@ -29,31 +29,6 @@ class AppController extends BaseAppController
     }
 
     /**
-     * Setup admin user (create, update password, confirm)
-     */
-    public function actionAdminUser()
-    {
-        $email    = $this->prompt('E-Mail for application admin user', ['required' => true]);
-        $password = $this->prompt('Password for application admin user (leave empty if you do not want to change it)');
-        $this->action('user/create', [$email, 'admin']);
-        if ($password) {
-            $this->action('user/password', ['admin', $password]);
-        }
-        $this->action('user/confirm', ['admin']);
-    }
-
-    /**
-     * Update application and vendor source code, run database migrations, clear cache
-     */
-    public function actionUpdate()
-    {
-        $this->execute("git pull");
-        $this->composer("install");
-        $this->action('migrate');
-        $this->action('cache/flush');
-    }
-
-    /**
      * Manage application extensions
      */
     public function actionConfigure()
@@ -118,6 +93,31 @@ class AppController extends BaseAppController
             $this->execute('vendor/bin/codecept build -c common');
             $this->execute('vendor/bin/codecept build -c console');
         }*/
+    }
+
+    /**
+     * Setup admin user (create, update password, confirm)
+     */
+    public function actionAdminUser()
+    {
+        $email    = $this->prompt('E-Mail for application admin user', ['required' => true]);
+        $password = $this->prompt('Password for application admin user (leave empty if you do not want to change it)');
+        $this->action('user/create', [$email, 'admin']);
+        if ($password) {
+            $this->action('user/password', ['admin', $password]);
+        }
+        $this->action('user/confirm', ['admin']);
+    }
+
+    /**
+     * Update application and vendor source code, run database migrations, clear cache
+     */
+    public function actionUpdate()
+    {
+        $this->execute("git pull");
+        $this->composer("install");
+        $this->action('migrate');
+        $this->action('cache/flush');
     }
 
     /**
