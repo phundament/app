@@ -34,8 +34,8 @@ Open `http://path/to/frontend/web` in your browser.
 
 Continue with the [installation](docs/install.md) to configure your desired setup.
 
-Documentation Overview
-----------------------
+Documentation
+-------------
 
 - Phundament 4 Guide [Markdown](docs/index.md) (latest version)
 - Phundament 4 Guide [HTML version](http://docs.phundament.com/4.0/guide-index.html)
