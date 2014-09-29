@@ -139,7 +139,7 @@ nginx:
             ssl_key: ''
 php:
     install: '1'
-    version: '56'
+    version: '55'
     composer: '1'
     composer_home: ''
     modules:
@@ -147,6 +147,8 @@ php:
             - cli
             - intl
             - mcrypt
+            - curl
+            - gd
         pear: {  }
         pecl:
             - pecl_http
@@ -154,7 +156,7 @@ php:
         display_errors: On
         error_reporting: '-1'
         session.save_path: /var/lib/php/session
-    timezone: America/Chicago
+    timezone: Europe/Berlin
     mod_php: 0
 hhvm:
     install: '0'
