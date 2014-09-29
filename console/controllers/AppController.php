@@ -20,16 +20,17 @@ use dmstr\console\controllers\BaseAppController;
 class AppController extends BaseAppController
 {
     /**
-     * Display help command
+     * Displays application version from git describe
      */
     public function actionIndex()
     {
-        echo "Phundament application version: ";
+        echo "Application Version\n";
         $this->execute('git describe');
+        echo "\n";
     }
 
     /**
-     * Manage application extensions
+     * Manage application configuration
      */
     public function actionConfigure()
     {
@@ -42,34 +43,33 @@ class AppController extends BaseAppController
         $this->promptUpdateConfigurationValue(
             'common/config/main-local.php',
             'components.db.dsn',
-            'Database DSN (use eg. mysql:host=localhost;dbname=myapp)'
+            'Database DSN (use eg. mysql:host=localhost;dbname=myapp):'
         );
-
         $this->promptUpdateConfigurationValue(
             'common/config/main-local.php',
             'components.db.username',
-            'Database user'
+            'Database user:'
         );
         $this->promptUpdateConfigurationValue(
             'common/config/main-local.php',
             'components.db.password',
-            'Database password'
+            'Database password:'
         );
 
         $this->promptUpdateConfigurationValue(
             'common/config/params.php',
             'params.appName',
-            'Name of your application (shown in navigation)'
+            'Name of your application (shown in navigation):'
         );
         $this->promptUpdateConfigurationValue(
             'common/config/params.php',
             'params.adminEmail',
-            'Admin e-mail address (frontend and backend)'
+            'Admin (webmaster) e-mail address:'
         );
         $this->promptUpdateConfigurationValue(
             'common/config/params.php',
             'params.supportEmail',
-            'Support e-mail address'
+            'Support e-mail address:'
         );
 
         /*if ($this->confirm("Enable Testing & QA (installation of build and test tools via composer)")) {
@@ -100,13 +100,26 @@ class AppController extends BaseAppController
      */
     public function actionAdminUser()
     {
-        $email    = $this->prompt('E-Mail for application admin user', ['required' => true]);
-        $password = $this->prompt('Password for application admin user (leave empty if you do not want to change it)');
+        $email = $this->prompt('E-Mail for application admin user:', ['required' => true]);
+        $password = $this->prompt(
+            'Password for application admin user (leave empty if you want to use the auto-generated value):'
+        );
         $this->action('user/create', [$email, 'admin']);
         if ($password) {
             $this->action('user/password', ['admin', $password]);
         }
         $this->action('user/confirm', ['admin']);
+    }
+
+    /**
+     * Setup vhost with virtualhost.sh script
+     */
+    public function actionVirtualHost()
+    {
+        $name = $this->prompt('Domain-name for virtualhost.sh (leave empty to skip):');
+        if ($name) {
+            $this->execute('virtualhost.sh ' . $name);
+        }
     }
 
     /**

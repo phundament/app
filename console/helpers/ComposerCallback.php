@@ -35,7 +35,8 @@ class ComposerCallback
         self::configureYii();
         self::yii(['migrate']);
         self::yii(['app/admin-user']);
-        echo "\nScript-hook 'init' completed.\n\n";
+        self::yii(['app/virtual-host']);
+        echo "\nScript-hook 'create-project' completed.\n\n";
     }
 
     /**
