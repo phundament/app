@@ -29,12 +29,17 @@ class AppController extends BaseAppController
     }
 
     /**
-     * Basic application setup
+     * Setup admin user (create, update password, confirm)
      */
-    public function actionInit()
+    public function actionAdminUser()
     {
-        $this->action('app/configure');
-        $this->action('migrate');
+        $email    = $this->prompt('E-Mail for application admin user', ['required' => true]);
+        $password = $this->prompt('Password for application admin user (leave empty if you do not want to change it)');
+        $this->action('user/create', [$email, 'admin']);
+        if ($password) {
+            $this->action('user/password', ['admin', $password]);
+        }
+        $this->action('user/confirm', ['admin']);
     }
 
     /**
@@ -76,6 +81,11 @@ class AppController extends BaseAppController
             'Database password'
         );
 
+        $this->promptUpdateConfigurationValue(
+            'common/config/params.php',
+            'params.appName',
+            'Name of your application (shown in navigation)'
+        );
         $this->promptUpdateConfigurationValue(
             'common/config/params.php',
             'params.adminEmail',

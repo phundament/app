@@ -1,6 +1,7 @@
 <?php
 return [
-    'adminEmail' => 'admin@extample.com', #value:params.adminEmail#
-    'supportEmail' => 'support@example.com', #value:params.supportEmail#
+    'appName' => 'Phundament 4', #value:params.appName#
+    'adminEmail' => 'admin@h17n.de', #value:params.adminEmail#
+    'supportEmail' => 'support@h17n.de', #value:params.supportEmail#
     'user.passwordResetTokenExpire' => 3600,
 ];

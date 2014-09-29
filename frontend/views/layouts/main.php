@@ -27,7 +27,7 @@ AppAsset::register($this);
     <?php
     NavBar::begin(
         [
-            'brandLabel' => 'Company Inc.',
+            'brandLabel' => Yii::$app->params['appName'],
             'brandUrl'   => Yii::$app->homeUrl,
             'options'    => [
                 'class' => 'navbar navbar-default navbar-fixed-top',
@@ -46,7 +46,7 @@ AppAsset::register($this);
         } else {
             $menuItems[] = [
                 'label'       => 'Logout (' . Yii::$app->user->identity->username . ')',
-                'url'         => ['/site/logout'],
+                'url'         => ['/user/security/logout'],
                 'linkOptions' => ['data-method' => 'post']
             ];
         }

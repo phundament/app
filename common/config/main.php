@@ -7,6 +7,10 @@ return [
         ],
     ],
     'modules'    => [
+        'user' => [
+            'class' => 'dektrium\user\Module',
+            'admins' => ['admin']
+        ]
         #array:modules>begin#
         #array:modules>end#
     ]
