@@ -5,8 +5,16 @@ Phundament 4.0.x-dev
 
 _Phundament_ is a _PHP_ application foundation based on _Yii Framework 2.0_.
 
-If you're looking for the Yii 1.1 version of Phundament please visit our [`master` branch](https://github.com/phundament/app).
+Features
+--------
 
+- *advanced-app* directory structure
+- guided CLI setup process
+- application backend dashboard (wip)
+- user management module
+- package browser module (wip)
+- extended database migration support
+- extended model & crud code generators
 
 Quick-Start
 -----------
@@ -26,13 +34,15 @@ Open `http://path/to/frontend/web` in your browser.
 
 Continue with the [installation](docs/install.md) to configure your desired setup.
 
-Documentation Overview
-----------------------
+Documentation
+-------------
 
 - Phundament 4 Guide [Markdown](docs/index.md) (latest version)
 - Phundament 4 Guide [HTML version](http://docs.phundament.com/4.0/guide-index.html)
 - Phundament 4 API [HTML version](http://docs.phundament.com/4.0/)
 - Yii2 Guide [HTML Version](http://www.yiiframework.com/doc-2.0/guide-index.html)
+
+If you're looking for the Yii 1.1 version of Phundament please visit our [`master` branch](https://github.com/phundament/app).
 
 ---
 
