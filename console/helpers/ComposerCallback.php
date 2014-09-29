@@ -39,6 +39,21 @@ class ComposerCallback
         echo "\nScript-hook 'create-project' completed.\n\n";
     }
 
+    private static function yii($argv)
+    {
+        if (!self::$isYiiInitialized) {
+            self::initializeYii();
+        }
+        $_SERVER['argv'] = array_merge(['./yii'], $argv);
+        $application     = new \yii\console\Application(self::$config);
+        $exitCode        = $application->run();
+        if ($exitCode !== 0) {
+            exit($exitCode);
+        } else {
+            // continue ... eg. for usage in composer scripts
+        }
+    }
+
     /**
      * Yii console bootstrap
      */
@@ -60,6 +75,9 @@ class ComposerCallback
         self::$isYiiInitialized = true;
     }
 
+    /**
+     * Yii application configuration
+     */
     private static function configureYii()
     {
         $basePath     = __DIR__ . '/../../';
@@ -72,18 +90,4 @@ class ComposerCallback
         );
     }
 
-    private static function yii($argv)
-    {
-        if (!self::$isYiiInitialized) {
-            self::initializeYii();
-        }
-        $_SERVER['argv'] = array_merge(['./yii'], $argv);
-        $application     = new \yii\console\Application(self::$config);
-        $exitCode        = $application->run();
-        if ($exitCode !== 0) {
-            exit($exitCode);
-        } else {
-            // continue ... eg. for usage in composer scripts
-        }
-    }
 }
