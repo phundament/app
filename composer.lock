@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "66a78117f6faaafb869cdb36d64d8997",
+    "hash": "972a1fa9368ba058666181b63a6cb0d6",
     "packages": [
         {
             "name": "2amigos/yii2-arrayquery-component",
@@ -1181,12 +1181,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-app-command.git",
-                "reference": "dab87e67a559808e70aeb9b480e0ba9981f01691"
+                "reference": "51fdb0dfea0747c34ed291a76bebd5aa1c050e4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-app-command/zipball/dab87e67a559808e70aeb9b480e0ba9981f01691",
-                "reference": "dab87e67a559808e70aeb9b480e0ba9981f01691",
+                "url": "https://api.github.com/repos/dmstr/yii2-app-command/zipball/51fdb0dfea0747c34ed291a76bebd5aa1c050e4c",
+                "reference": "51fdb0dfea0747c34ed291a76bebd5aa1c050e4c",
                 "shasum": ""
             },
             "type": "yii2-extension",
@@ -1213,7 +1213,7 @@
                 "management",
                 "yii2"
             ],
-            "time": "2014-09-28 19:01:54"
+            "time": "2014-09-29 14:38:14"
         },
         {
             "name": "fzaninotto/faker",
@@ -1303,12 +1303,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii2-giiant.git",
-                "reference": "f0336c5116f4256d3cefc4d8db7d3d46b0ea5e63"
+                "reference": "f60274950dab1368ce82e653464426acf1f7978f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii2-giiant/zipball/f0336c5116f4256d3cefc4d8db7d3d46b0ea5e63",
-                "reference": "f0336c5116f4256d3cefc4d8db7d3d46b0ea5e63",
+                "url": "https://api.github.com/repos/schmunk42/yii2-giiant/zipball/f60274950dab1368ce82e653464426acf1f7978f",
+                "reference": "f60274950dab1368ce82e653464426acf1f7978f",
                 "shasum": ""
             },
             "require": {
@@ -1341,7 +1341,7 @@
                 "gii",
                 "yii2"
             ],
-            "time": "2014-09-28 15:48:54"
+            "time": "2014-09-29 14:31:30"
         },
         {
             "name": "yiisoft/yii2-faker",
