@@ -8,6 +8,7 @@ _Phundament_ is a _PHP_ application foundation based on _Yii Framework 2.0_.
 Features
 --------
 
+- *advanced-app* directory structure
 - guided CLI setup process
 - application backend dashboard (wip)
 - user management module
