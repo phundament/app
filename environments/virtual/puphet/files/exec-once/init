@@ -1,0 +1,4 @@
+cd /var/www
+composer install
+./init --env=Development --overwrite=n
+./yii migrate
