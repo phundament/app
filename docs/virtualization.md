@@ -1,52 +1,43 @@
 Virtualization
 ==============
 
-Install via Vagrant on a virtual-, cloud- or remote-server
-----------------------------------------------------------
+Phundament uses [Vagrant](https://www.vagrantup.com), [VirtualBox](https://www.virtualbox.org) and [PuPHPet](https://puphpet.com) on a Debian Wheezy installation for its default virtualization configuration.
 
-Use an exsting Phundament 4 project or create-project a new one.
+But thanks to the flexibility of the above tools you should be able to choose from a wide variety of available components, including VMWare, Parallels, HyperV, RedHat, Amazon AWS, DigitalOcean, Rackspace and many more.
 
-Go to [PuPHPet](https://puphpet.com/)
 
-- Adjust Apache Virtual Host
+Local virtualization
+--------------------
 
-  ```
-  app.com.vagrant
-  /var/www/frontend/web
-  ```
-- Click Install Xdebug
-- Click Create
-- Download VM Image Configuration
+- Use an exsting Phundament 4 project or `git clone` a new one.
+- Create a virtual machine on [PuPHPet](https://puphpet.com/).
+- Upload the configuration from `environments/puphpet/config.yaml` via drag&drop and ajdust it if needed.
+  - Make sure to install curl, gd
+- Click **Create** and download VM configuration package
 - Extract
-- Copy files to Phundament project-root
+- Copy contents to Phundament project root folder
+- Go to project folder and copy initialization script
 
-###
+    ~~~
+    cd app
+    cp environments/virtual/puphet/files/exec-once/init.sh puphet/files/exec-once/init.sh
+    ~~~
+- Update your `/etc/hosts` file:
 
-Add `puphpet/files/exec-once`
+    ~~~
+    192.168.42.42    phundament.vagrant admin.phundament.vagrant
+    ~~~
+- Bring up the virtual machine:
 
-    composer create-project
-
-Update your `/etc/hosts` file:
-
-~~~
-192.168.33.101    app.com.vagrant
-~~~
-
-
-Bring up the virtual machine:
-
-~~~
-cd app
-vagrant up
-~~~
+    ~~~
+    vagrant up
+    ~~~
+- Open [phundament.vagrant](http://phundament.vagrant) or [admin.phundament.vagrant](http://admin.phundament.vagrant) in your browser.
+- Login with `admin` / `admin1234`
 
 
-Open [phundament.vagrant](http://192.168.33.101/phundament.vagrant) or [http://192.168.33.101](http://192.168.33.101) in your browser.
-
-```
-http://192.168.77.102/frontend/web/
-```
-
+Cloud installations
+-------------------
 
 ### AWS EC2 deployment
 
@@ -57,7 +48,9 @@ Install the following Vagrant plugins
     vagrant plugin install vagrant-aws
     vagrant plugin install vagrant-awsinfo
 
-Check connection settings in EC2 management console and update `ENV` variables or `puphpet/config.yaml` with your data
+Check connection settings in EC2 management console and update the puphpet config variables with your data.
+You may use the base configuration from `environments/virtual` and switch to AWS in the **Deploy Target** section
+
   * [EC2 Access Key ID](https://console.aws.amazon.com/iam/home?#security_credential)
   * [EC2 Secrect Access Key](https://portal.aws.amazon.com/gp/aws/securityCredentials?)
   * [EC2 Key Pair Name](https://console.aws.amazon.com/ec2/v2/home?#KeyPairs:)
