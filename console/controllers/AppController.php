@@ -13,7 +13,7 @@ use dmstr\console\controllers\BaseAppController;
 
 
 /**
- * Manages application update and configuration.
+ * Helper command for the application
  * @package console\controllers
  * @author Tobias Munk <tobias@diemeisterei.de>
  */
@@ -146,7 +146,7 @@ class AppController extends BaseAppController
     {
         // TODO: remove dev packages
         $this->composer(
-            'require --dev "cebe/markdown:dev-master as 0.9.3", "cebe/markdown-latex:dev-master" "yiisoft/yii2-apidoc:*"'
+            'require --dev "cebe/markdown:dev-master as 0.9.3" "cebe/markdown-latex:dev-master" "yiisoft/yii2-apidoc:*"'
         );
     }
 

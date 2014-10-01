@@ -14,7 +14,8 @@ use yii\filters\VerbFilter;
 class SiteController extends Controller
 {
     /**
-     * @return array Behaviors, eg. access control
+     * Behaviors, eg. access control
+     * @return array
      */
     public function behaviors()
     {
@@ -33,7 +34,8 @@ class SiteController extends Controller
     }
 
     /**
-     * @return array Actions defined in classes, eg. error page
+     * Actions defined in classes, eg. error page
+     * @return array
      */
     public function actions()
     {
@@ -45,7 +47,8 @@ class SiteController extends Controller
     }
 
     /**
-     * @return string Application dashboard
+     * Application dashboard
+     * @return string
      */
     public function actionIndex()
     {
