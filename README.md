@@ -38,7 +38,7 @@ Continue with the [documentation](docs/README.md) to configure your desired setu
 
 ---
 
-If you're looking for the Yii 1.1 version of Phundament please visit our [`master` branch](https://github.com/phundament/app).
+If you're looking for the Yii 1.1 version of Phundament please visit our [`3.0` branch](https://github.com/phundament/app/tree/3.0).
 
 ---
 
