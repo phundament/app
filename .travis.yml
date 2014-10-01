@@ -22,7 +22,7 @@ install:
 
 before_script:
   - mysql -e 'create database p4_test;'
-  - php yii app/setup-tests
+  - php yii app/setup-tests --interactive=0
 
 script:
   - php vendor/bin/codecept run -c tests/
