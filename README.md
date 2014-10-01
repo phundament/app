@@ -39,7 +39,7 @@ Continue with the [installation](docs/install.md) to configure your desired setu
 Documentation
 -------------
 
-- Phundament 4 Guide [Markdown](docs/index.md) (latest version)
+- Phundament 4 Guide [Markdown](docs/README.md) (latest version)
 - Phundament 4 Guide [HTML version](http://docs.phundament.com/4.0/guide-index.html)
 - Phundament 4 API [HTML version](http://docs.phundament.com/4.0/)
 - Yii2 Guide [HTML Version](http://www.yiiframework.com/doc-2.0/guide-index.html)
