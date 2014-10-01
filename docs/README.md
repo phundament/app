@@ -10,7 +10,7 @@ Overview
 - [Development](40-develop.md)
   - [Virtualization](41-virtualization.md)
   - [Replication](42-replication.md)
-  - [Upgrading](42-upgrading.md)
+  - [Upgrading](43-upgrading.md)
 
 ---
 
