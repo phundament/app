@@ -20,7 +20,7 @@ Local virtualization
 
     ~~~
     cd app
-    cp environments/virtual/puphet/files/exec-once/init.sh puphet/files/exec-once/init.sh
+    cp environments/virtual/puphpet/files/exec-once/init.sh puphpet/files/exec-once/init.sh
     ~~~
 - Update your `/etc/hosts` file:
 
