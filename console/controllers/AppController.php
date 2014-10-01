@@ -156,7 +156,7 @@ class AppController extends BaseAppController
     public function actionGenerateDocs()
     {
         $this->execute('vendor/bin/apidoc guide docs docs-html');
-        $this->execute('vendor/bin/apidoc api backend,common,console,frontend docs-html');
+        $this->execute('vendor/bin/apidoc api backend,common,console,frontend,vendor/schmunk42,vendor/dmstr docs-html');
     }
 
     /**
