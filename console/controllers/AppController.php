@@ -30,6 +30,17 @@ class AppController extends BaseAppController
     }
 
     /**
+     * Update application and vendor source code, run database migrations, clear cache
+     */
+    public function actionUpdate()
+    {
+        $this->execute("git pull");
+        $this->composer("install");
+        $this->action('migrate');
+        $this->action('cache/flush');
+    }
+
+    /**
      * Manage application configuration
      */
     public function actionConfigure()
@@ -94,18 +105,17 @@ class AppController extends BaseAppController
     }
 
     /**
-     *
+     * Install packages for application testing
      */
-    public function actionDevSetup()
+    public function actionSetupTests()
     {
         $this->action('migrate', ['db' => 'db_test']);
 
         $this->composer(
             'global require "codeception/codeception:2.0.*" "codeception/specify:*" "codeception/verify:*"'
         );
-        // TODO: remove dev packages
         $this->composer(
-            'require --dev "cebe/markdown:dev-master as 0.9.3", "cebe/markdown-latex:dev-master" "yiisoft/yii2-apidoc:*" "yiisoft/yii2-coding-standards:@dev" "yiisoft/yii2-codeception:*" "yiisoft/yii2-faker:*"'
+            'require --dev "yiisoft/yii2-coding-standards:*" "yiisoft/yii2-codeception:*" "yiisoft/yii2-faker:*"'
         );
 
         $this->execute('codecept bootstrap');
@@ -116,14 +126,38 @@ class AppController extends BaseAppController
     }
 
     /**
-     *
+     * Run all test suites with web-server from PHP executable
      */
     public function actionRunTests()
     {
-        $this->execute('codecept run -c tests/codeception/backend');
-        $this->execute('codecept run -c tests/codeception/frontend');
-        $this->execute('codecept run -c tests/codeception/common');
-        $this->execute('codecept run -c tests/codeception/console');
+        echo "Note! You can tear down the test-server with `killall php`\n";
+        if ($this->confirm("Start testing?", true)) {
+            $this->execute('php -S localhost:8042 > /dev/null 2>&1 &');
+            $this->execute('codecept run -c tests/codeception/backend');
+            $this->execute('codecept run -c tests/codeception/frontend');
+            $this->execute('codecept run -c tests/codeception/common');
+            $this->execute('codecept run -c tests/codeception/console');
+        }
+    }
+
+    /**
+     * Install packages for documentation rendering
+     */
+    public function actionSetupDocs()
+    {
+        // TODO: remove dev packages
+        $this->composer(
+            'require --dev "cebe/markdown:dev-master as 0.9.3", "cebe/markdown-latex:dev-master" "yiisoft/yii2-apidoc:*"'
+        );
+    }
+
+    /**
+     * Generate application and required vendor documentation
+     */
+    public function actionGenerateDocs()
+    {
+        $this->execute('vendor/bin/apidoc guide docs docs-html');
+        $this->execute('vendor/bin/apidoc api backend,common,console,frontend docs-html');
     }
 
     /**
@@ -153,23 +187,4 @@ class AppController extends BaseAppController
         }
     }
 
-    /**
-     * Update application and vendor source code, run database migrations, clear cache
-     */
-    public function actionUpdate()
-    {
-        $this->execute("git pull");
-        $this->composer("install");
-        $this->action('migrate');
-        $this->action('cache/flush');
-    }
-
-    /**
-     * Generate application and required vendor documentation
-     */
-    public function actionGenerateDocs()
-    {
-        $this->execute('vendor/bin/apidoc guide docs docs-html');
-        $this->execute('vendor/bin/apidoc api backend,common,console,frontend docs-html');
-    }
 } 
