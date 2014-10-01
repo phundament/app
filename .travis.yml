@@ -26,4 +26,4 @@ before_script:
   - php yii app/setup-tests --interactive=0
 
 script:
-  - php vendor/bin/codecept run -c tests/
+  - php ~/.composer/vendor/bin/codecept run -c tests/
