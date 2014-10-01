@@ -17,6 +17,7 @@ install:
   - composer self-update && composer --version
 # basic application:
   - composer global require "fxp/composer-asset-plugin:1.0.0-beta2"
+  - export PATH=~/.composer/vendor/bin:$PATH
   - composer install --dev --prefer-dist
   - ./init --env=Development --overwrite=n
 
