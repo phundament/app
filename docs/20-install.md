@@ -47,4 +47,4 @@ In development mode, you can either look into `console/runtime/mails` to obtain 
 Virtualized Setup
 -----------------
 
-[Install via Vagrant on a virtual-, cloud- or remote-server](virtualization.md)
+[Install via Vagrant on a virtual-, cloud- or remote-server](41-virtualization.md)
