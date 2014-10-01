@@ -24,7 +24,7 @@ install:
 before_script:
   - mysql -e 'create database p4_test;'
   - mysql -e "CREATE USER 'dev'@'localhost' IDENTIFIED BY 'dev123';"
-  - mysql -e "GRANT ALL PRIVILEGES ON * . * TO 'dev'@'localhost';"
+  - mysql -uroot -e "GRANT ALL PRIVILEGES ON * . * TO 'dev'@'localhost';"
   - php yii app/setup-tests --interactive=0
 
 script:
