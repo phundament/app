@@ -34,7 +34,7 @@ The project creation process will trigger the `Yii Application Initialization To
 
 Open `http://path/to/frontend/web` in your browser.
 
-Continue with the [installation](docs/install.md) to configure your desired setup.
+Continue with the [installation](docs/20-install.md) to configure your desired setup.
 
 Documentation
 -------------
