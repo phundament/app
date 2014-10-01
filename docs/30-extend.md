@@ -1,5 +1,7 @@
-Extending Phundament
-====================
+Extensions
+==========
+
+You can integrate any Yii2 extension or PHP library into Phundament.
 
 Find existing extensions
 ------------------------
@@ -21,5 +23,5 @@ Building an extension
 Building backend CRUDs
 ----------------------
 
-- Use `giiant` and `giic` to build CRUDs
+- Use `giiant` and `giiant-batch` to build CRUDs
 - Provider finetuning

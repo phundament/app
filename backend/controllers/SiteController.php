@@ -7,12 +7,14 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 
 /**
- * Site controller
+ * Default backend controller
+ *
+ * Usually renders a customized dashboard for logged in users
  */
 class SiteController extends Controller
 {
     /**
-     * @inheritdoc
+     * @return array Behaviors, eg. access control
      */
     public function behaviors()
     {
@@ -27,17 +29,11 @@ class SiteController extends Controller
                     ],
                 ],
             ],
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'logout' => ['post'],
-                ],
-            ],
         ];
     }
 
     /**
-     * @inheritdoc
+     * @return array Actions defined in classes, eg. error page
      */
     public function actions()
     {
@@ -48,6 +44,9 @@ class SiteController extends Controller
         ];
     }
 
+    /**
+     * @return string Application dashboard
+     */
     public function actionIndex()
     {
         return $this->render('index');

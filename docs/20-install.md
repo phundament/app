@@ -27,21 +27,24 @@ cd frontend/web
 ln -s ../../backend/web backend
 ```
 
-### Virtualized Setup
-
-[Install via Vagrant on a virtual-, cloud- or remote-server](virtualization.md)
-
 
 ### Configure Application
 
-- Run `yii app/configure`
-  - Make sure to install the `user` module
+```
+yii app/configure
+```
 
 
 ### Admin User
 
 ```
-./yii user/create admin@example.com admin
+./yii app/admin-user
 ```
 
 In development mode, you can either look into `console/runtime/mails` to obtain the password or use `./yii user/password` to set a password right away.
+
+
+Virtualized Setup
+-----------------
+
+[Install via Vagrant on a virtual-, cloud- or remote-server](virtualization.md)
