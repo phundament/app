@@ -43,56 +43,87 @@ class AppController extends BaseAppController
         $this->promptUpdateConfigurationValue(
             'common/config/main-local.php',
             'components.db.dsn',
-            'Database DSN (use eg. mysql:host=localhost;dbname=myapp):'
+            'Database DSN'
         );
         $this->promptUpdateConfigurationValue(
             'common/config/main-local.php',
             'components.db.username',
-            'Database user:'
+            'Database user'
         );
         $this->promptUpdateConfigurationValue(
             'common/config/main-local.php',
             'components.db.password',
-            'Database password:'
+            'Database password'
         );
 
         $this->promptUpdateConfigurationValue(
             'common/config/params.php',
             'params.appName',
-            'Name of your application (shown in navigation):'
+            'Application name'
         );
         $this->promptUpdateConfigurationValue(
             'common/config/params.php',
             'params.adminEmail',
-            'Admin (webmaster) e-mail address:'
+            'Webmaster e-mail address'
         );
         $this->promptUpdateConfigurationValue(
             'common/config/params.php',
             'params.supportEmail',
-            'Support e-mail address:'
+            'Support e-mail address'
         );
 
-        /*if ($this->confirm("Enable Testing & QA (installation of build and test tools via composer)")) {
-            $this->composer(
-                'require --dev "yiisoft/yii2-apidoc: *" "yiisoft/yii2-coding-standards: *" "yiisoft/yii2-codeception: *" "codeception/codeception: 2.0.*" "codeception/specify: *" "codeception/verify: *" "yiisoft/yii2-faker: *"'
+        if ($this->confirm("Setup test-database")) {
+
+            $this->promptUpdateConfigurationValue(
+                'common/config/main-local.php',
+                'components.db_test.dsn',
+                'Test-Database DSN'
+            );
+            $this->promptUpdateConfigurationValue(
+                'common/config/main-local.php',
+                'components.db_test.username',
+                'Test-Database user:'
+            );
+            $this->promptUpdateConfigurationValue(
+                'common/config/main-local.php',
+                'components.db_test.password',
+                'Test-Database password:'
             );
 
-            $this->addToConfigurationArray(
-                'console/config/main.php',
-                'controllerMap',
-                ["docs-api" => "yii\\apidoc\\commands\\ApiController"]
-            );
-            $this->addToConfigurationArray(
-                'console/config/main.php',
-                'controllerMap',
-                ["docs-guide" => "yii\\apidoc\\commands\\GuideController"]
-            );
+        }
+    }
 
-            $this->execute('vendor/bin/codecept build -c backend');
-            $this->execute('vendor/bin/codecept build -c frontend');
-            $this->execute('vendor/bin/codecept build -c common');
-            $this->execute('vendor/bin/codecept build -c console');
-        }*/
+    /**
+     *
+     */
+    public function actionDevSetup()
+    {
+        $this->action('migrate', ['db' => 'db_test']);
+
+        $this->composer(
+            'global require "codeception/codeception:2.0.*" "codeception/specify:*" "codeception/verify:*"'
+        );
+        // TODO: remove dev packages
+        $this->composer(
+            'require --dev "cebe/markdown:dev-master as 0.9.3", "cebe/markdown-latex:dev-master" "yiisoft/yii2-apidoc:*" "yiisoft/yii2-coding-standards:@dev" "yiisoft/yii2-codeception:*" "yiisoft/yii2-faker:*"'
+        );
+
+        $this->execute('codecept bootstrap');
+        $this->execute('codecept build -c tests/codeception/backend');
+        $this->execute('codecept build -c tests/codeception/frontend');
+        $this->execute('codecept build -c tests/codeception/common');
+        $this->execute('codecept build -c tests/codeception/console');
+    }
+
+    /**
+     *
+     */
+    public function actionRunTests()
+    {
+        $this->execute('codecept run -c tests/codeception/backend');
+        $this->execute('codecept run -c tests/codeception/frontend');
+        $this->execute('codecept run -c tests/codeception/common');
+        $this->execute('codecept run -c tests/codeception/console');
     }
 
     /**
@@ -100,7 +131,7 @@ class AppController extends BaseAppController
      */
     public function actionAdminUser()
     {
-        $email = $this->prompt('E-Mail for application admin user:', ['required' => true]);
+        $email    = $this->prompt('E-Mail for application admin user:', ['required' => true]);
         $password = $this->prompt(
             'Password for application admin user (leave empty if you want to use the auto-generated value):'
         );
@@ -116,7 +147,7 @@ class AppController extends BaseAppController
      */
     public function actionVirtualHost()
     {
-        $name = $this->prompt('Domain-name for virtualhost.sh (leave empty to skip):');
+        $name = $this->prompt('Domain-name for virtualhost.sh (leave empty to skip)');
         if ($name) {
             $this->execute('virtualhost.sh ' . $name);
         }
@@ -136,24 +167,9 @@ class AppController extends BaseAppController
     /**
      * Generate application and required vendor documentation
      */
-    /*public function actionDocs()
+    public function actionGenerateDocs()
     {
-        $this->action('docs-api', ['frontend,backend,console,common,vendor/dmstr', 'docs-html', 'interactive' => 0]);
-        $this->action('docs-guide', ['docs', 'docs-html', 'interactive' => 0]);
-    }*/
-
-    /**
-     * Source code checks and tests
-     */
-    /*public function actionQa()
-    {
-        $this->composer('validate');
-        $this->execute(
-            'vendor/bin/phpcs --extensions=php --standard=vendor/yiisoft/yii2-coding-standards/Yii2 --ignore=web,views,tests backend/ frontend/'
-        );
-        $this->execute('vendor/bin/codecept run --config backend unit');
-        $this->execute('vendor/bin/codecept run --config frontend unit');
-        $this->execute('vendor/bin/codecept run --config common unit');
-        $this->execute('vendor/bin/codecept run --config console unit');
-    }*/
+        $this->execute('vendor/bin/apidoc guide docs docs-html');
+        $this->execute('vendor/bin/apidoc api backend,common,console,frontend docs-html');
+    }
 } 
