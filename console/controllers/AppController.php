@@ -118,7 +118,6 @@ class AppController extends BaseAppController
             'require --dev "yiisoft/yii2-coding-standards:*" "yiisoft/yii2-codeception:*" "yiisoft/yii2-faker:*"'
         );
 
-        $this->execute('codecept bootstrap');
         $this->execute('codecept build -c tests/codeception/backend');
         $this->execute('codecept build -c tests/codeception/frontend');
         $this->execute('codecept build -c tests/codeception/common');
