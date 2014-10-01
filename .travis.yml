@@ -19,6 +19,9 @@ install:
   - composer global require "fxp/composer-asset-plugin:1.0.0-beta2"
   - composer install --dev --prefer-dist
   - ./init --env=Development --overwrite=n
+
+before_script:
+  - mysql -e 'create database p4_test;'
   - php yii app/setup-tests
 
 script:
