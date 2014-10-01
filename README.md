@@ -34,15 +34,9 @@ The project creation process will trigger the `Yii Application Initialization To
 
 Open `http://path/to/frontend/web` in your browser.
 
-Continue with the [installation](docs/20-install.md) to configure your desired setup.
+Continue with the [documentation](docs/README.md) to configure your desired setup.
 
-Documentation
--------------
-
-- Phundament 4 Guide [Markdown](docs/README.md) (latest version)
-- Phundament 4 Guide [HTML version](http://docs.phundament.com/4.0/guide-index.html)
-- Phundament 4 API [HTML version](http://docs.phundament.com/4.0/)
-- Yii2 Guide [HTML Version](http://www.yiiframework.com/doc-2.0/guide-index.html)
+---
 
 If you're looking for the Yii 1.1 version of Phundament please visit our [`master` branch](https://github.com/phundament/app).
 
