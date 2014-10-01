@@ -3,7 +3,7 @@
 namespace tests\codeception\frontend\functional;
 
 use tests\codeception\frontend\_pages\SignupPage;
-use common\models\User;
+use dektrium\user\models\User;
 
 class SignupCest
 {
@@ -47,8 +47,8 @@ class SignupCest
         $I->wantTo('ensure that signup works');
 
         $signupPage = SignupPage::openBy($I);
-        $I->see('Signup', 'h1');
-        $I->see('Please fill out the following fields to signup:');
+        $I->see('Sign up', 'h3');
+        //$I->see('Please fill out the following fields to signup:');
 
         $I->amGoingTo('submit signup form with no data');
 
@@ -79,7 +79,7 @@ class SignupCest
         ]);
 
         $I->expectTo('see that user is created');
-        $I->seeRecord('common\models\User', [
+        $I->seeRecord('dektrium\user\models\User', [
             'username' => 'tester',
             'email' => 'tester.email@example.com',
         ]);

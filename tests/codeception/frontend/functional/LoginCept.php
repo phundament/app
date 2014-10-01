@@ -9,7 +9,7 @@ $loginPage = LoginPage::openBy($I);
 
 $I->amGoingTo('submit login form with no data');
 $loginPage->login('', '');
-$I->expectTo('see validations errorsxxx');
+$I->expectTo('see validations errors');
 $I->see('Login cannot be blank.', '.help-block');
 $I->see('Password cannot be blank.', '.help-block');
 
@@ -17,7 +17,7 @@ $I->amGoingTo('try to login with wrong credentials');
 $I->expectTo('see validations errors');
 $loginPage->login('admin', 'wrong');
 $I->expectTo('see validations errors');
-$I->see('Incorrect username or password.', '.help-block');
+$I->see('Invalid login or password', '.help-block');
 
 $I->amGoingTo('try to login with correct credentials');
 $loginPage->login('erau', 'password_0');
