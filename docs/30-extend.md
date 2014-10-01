@@ -1,7 +1,7 @@
 Extensions
 ==========
 
-You can integrate any Yii2 extension or PHP library into Phundament.
+You can integrate any Yii2 extension or PHP library into Phundament 4.
 
 Find existing extensions
 ------------------------
