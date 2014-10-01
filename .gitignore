@@ -43,3 +43,5 @@ nbproject
 *.swp
 .vagrant
 logs
+
+tests/_output/*
