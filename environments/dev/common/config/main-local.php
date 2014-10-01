@@ -11,8 +11,8 @@ return [
         'db_test' => [
             'class' => 'yii\db\Connection',
             'dsn' => 'mysql:host=localhost;dbname=p4_test', #value:components.db_test.dsn#
-            'username' => 'travis', #value:components.db_test.username#
-            'password' => '', #value:components.db_test.password#
+            'username' => 'dev', #value:components.db_test.username#
+            'password' => 'dev123', #value:components.db_test.password#
             'charset' => 'utf8',
         ],
         'mailer' => [
