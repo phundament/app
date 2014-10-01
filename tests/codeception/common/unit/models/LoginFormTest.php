@@ -5,7 +5,7 @@ namespace tests\codeception\common\unit\models;
 use Yii;
 use tests\codeception\common\unit\DbTestCase;
 use Codeception\Specify;
-use common\models\LoginForm;
+use dektrium\user\models\LoginForm;
 use tests\codeception\common\fixtures\UserFixture;
 
 /**
@@ -39,7 +39,7 @@ class LoginFormTest extends DbTestCase
     public function testLoginNoUser()
     {
         $model = new LoginForm([
-            'username' => 'not_existing_username',
+            'login' => 'not_existing_username',
             'password' => 'not_existing_password',
         ]);
 
@@ -52,7 +52,7 @@ class LoginFormTest extends DbTestCase
     public function testLoginWrongPassword()
     {
         $model = new LoginForm([
-            'username' => 'bayer.hudson',
+            'login' => 'bayer.hudson',
             'password' => 'wrong_password',
         ]);
 
@@ -67,7 +67,7 @@ class LoginFormTest extends DbTestCase
     {
 
         $model = new LoginForm([
-            'username' => 'bayer.hudson',
+            'login' => 'bayer.hudson',
             'password' => 'password_0',
         ]);
 

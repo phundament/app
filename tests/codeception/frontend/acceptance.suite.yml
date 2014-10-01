@@ -20,7 +20,7 @@ modules:
 #        - WebDriver
     config:
         PhpBrowser:
-            url: 'http://localhost:8080'
+            url: 'http://localhost:8042'
 #        WebDriver:
 #            url: 'http://localhost'
 #            browser: firefox

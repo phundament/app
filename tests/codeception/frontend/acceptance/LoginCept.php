@@ -9,8 +9,8 @@ $loginPage = LoginPage::openBy($I);
 
 $I->amGoingTo('submit login form with no data');
 $loginPage->login('', '');
-$I->expectTo('see validations errors');
-$I->see('Username cannot be blank.', '.help-block');
+$I->expectTo('see validations errorsxx');
+$I->see('Login cannot be blank.', '.help-block');
 $I->see('Password cannot be blank.', '.help-block');
 
 $I->amGoingTo('try to login with wrong credentials');

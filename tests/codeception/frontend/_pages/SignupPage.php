@@ -11,7 +11,7 @@ use \yii\codeception\BasePage;
 class SignupPage extends BasePage
 {
 
-    public $route = 'site/signup';
+    public $route = 'user/registration/register';
 
     /**
      * @param array $signupData
@@ -20,8 +20,8 @@ class SignupPage extends BasePage
     {
         foreach ($signupData as $field => $value) {
             $inputType = $field === 'body' ? 'textarea' : 'input';
-            $this->actor->fillField($inputType . '[name="SignupForm[' . $field . ']"]', $value);
+            $this->actor->fillField($inputType . '[name="register-form[' . $field . ']"]', $value);
         }
-        $this->actor->click('signup-button');
+        $this->actor->click('Sign up');
     }
 }
