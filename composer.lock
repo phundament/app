@@ -440,12 +440,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dektrium/yii2-user.git",
-                "reference": "65e73609602fbeeebb69bf994f5e611272536c21"
+                "reference": "ec42b377c235502843a8d6930ce9d93b11d51bc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dektrium/yii2-user/zipball/65e73609602fbeeebb69bf994f5e611272536c21",
-                "reference": "65e73609602fbeeebb69bf994f5e611272536c21",
+                "url": "https://api.github.com/repos/dektrium/yii2-user/zipball/ec42b377c235502843a8d6930ce9d93b11d51bc1",
+                "reference": "ec42b377c235502843a8d6930ce9d93b11d51bc1",
                 "shasum": ""
             },
             "require": {
@@ -485,7 +485,7 @@
                 "yii2",
                 "yii2-user"
             ],
-            "time": "2014-09-26 16:28:41"
+            "time": "2014-09-30 19:14:21"
         },
         {
             "name": "dmstr/yii2-migrate-command",
@@ -1303,12 +1303,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii2-giiant.git",
-                "reference": "f60274950dab1368ce82e653464426acf1f7978f"
+                "reference": "cbe9ebfc78dbe18bdf728daa2b4f51eb67eb56f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii2-giiant/zipball/f60274950dab1368ce82e653464426acf1f7978f",
-                "reference": "f60274950dab1368ce82e653464426acf1f7978f",
+                "url": "https://api.github.com/repos/schmunk42/yii2-giiant/zipball/cbe9ebfc78dbe18bdf728daa2b4f51eb67eb56f2",
+                "reference": "cbe9ebfc78dbe18bdf728daa2b4f51eb67eb56f2",
                 "shasum": ""
             },
             "require": {
@@ -1341,7 +1341,7 @@
                 "gii",
                 "yii2"
             ],
-            "time": "2014-09-29 14:31:30"
+            "time": "2014-09-30 21:26:29"
         },
         {
             "name": "yiisoft/yii2-faker",
