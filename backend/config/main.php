@@ -16,6 +16,14 @@ return [
     'components' => [
         'user' => [
             'identityClass' => 'common\models\User',
+        'view'         => [
+            'theme' => [
+                'pathMap' => [
+                    '@app/views'     => '@vendor/dmstr/yii2-adminlte-asset/phundament4',
+                    '@yii/gii/views' => '@vendor/dmstr/yii2-adminlte-asset/phundament4',
+                ],
+            ],
+        ],
             'enableAutoLogin' => true,
         ],
         'log' => [
