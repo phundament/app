@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "972a1fa9368ba058666181b63a6cb0d6",
+    "hash": "e61a43c9fe0147a1411bd5f2a73ca248",
     "packages": [
         {
             "name": "2amigos/yii2-arrayquery-component",
@@ -440,12 +440,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dektrium/yii2-user.git",
-                "reference": "ec42b377c235502843a8d6930ce9d93b11d51bc1"
+                "reference": "285ea91c44408bc9ed509b549212acdb0541b0a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dektrium/yii2-user/zipball/ec42b377c235502843a8d6930ce9d93b11d51bc1",
-                "reference": "ec42b377c235502843a8d6930ce9d93b11d51bc1",
+                "url": "https://api.github.com/repos/dektrium/yii2-user/zipball/285ea91c44408bc9ed509b549212acdb0541b0a7",
+                "reference": "285ea91c44408bc9ed509b549212acdb0541b0a7",
                 "shasum": ""
             },
             "require": {
@@ -485,7 +485,47 @@
                 "yii2",
                 "yii2-user"
             ],
-            "time": "2014-09-30 19:14:21"
+            "time": "2014-10-01 19:33:35"
+        },
+        {
+            "name": "dmstr/yii2-adminlte-asset",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dmstr/yii2-adminlte-asset.git",
+                "reference": "879800d440b005f8d1fdbe16a84bb54c1e5f4755"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dmstr/yii2-adminlte-asset/zipball/879800d440b005f8d1fdbe16a84bb54c1e5f4755",
+                "reference": "879800d440b005f8d1fdbe16a84bb54c1e5f4755",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "dmstr\\web\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Munk",
+                    "email": "tobias@diemeisterei.de"
+                }
+            ],
+            "description": "Backend theme for Yii2 Framework",
+            "keywords": [
+                "extension",
+                "yii2"
+            ],
+            "time": "2014-10-02 00:01:14"
         },
         {
             "name": "dmstr/yii2-migrate-command",
@@ -493,12 +533,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-migrate-command.git",
-                "reference": "5526ab2108315dff231febfdeacd105cd2ae4b53"
+                "reference": "f8f15e590726accff47d4c90935194f9a0d9c549"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-migrate-command/zipball/5526ab2108315dff231febfdeacd105cd2ae4b53",
-                "reference": "5526ab2108315dff231febfdeacd105cd2ae4b53",
+                "url": "https://api.github.com/repos/dmstr/yii2-migrate-command/zipball/f8f15e590726accff47d4c90935194f9a0d9c549",
+                "reference": "f8f15e590726accff47d4c90935194f9a0d9c549",
                 "shasum": ""
             },
             "type": "yii2-extension",
@@ -525,7 +565,7 @@
                 "migration",
                 "yii2"
             ],
-            "time": "2014-07-04 08:25:17"
+            "time": "2014-10-01 02:30:45"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -670,12 +710,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii2-packaii.git",
-                "reference": "2b2e62356bc0d8de7847322aa9f0616fc9935659"
+                "reference": "2122a1d38523d3449a2d669adceca3986ae262c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii2-packaii/zipball/2b2e62356bc0d8de7847322aa9f0616fc9935659",
-                "reference": "2b2e62356bc0d8de7847322aa9f0616fc9935659",
+                "url": "https://api.github.com/repos/schmunk42/yii2-packaii/zipball/2122a1d38523d3449a2d669adceca3986ae262c7",
+                "reference": "2122a1d38523d3449a2d669adceca3986ae262c7",
                 "shasum": ""
             },
             "require": {
@@ -686,7 +726,10 @@
                 "cebe/yii2-gravatar": "1.*",
                 "yiisoft/yii2-debug": "*"
             },
-            "type": "library",
+            "type": "yii2-extension",
+            "extra": {
+                "bootstrap": "schmunk42\\packaii\\Bootstrap"
+            },
             "autoload": {
                 "psr-4": {
                     "schmunk42\\packaii\\": ""
@@ -700,16 +743,16 @@
                 {
                     "name": "Antonio Ramirez",
                     "email": "ramirez.cobos@gmail.com",
-                    "homepage": "http://www.ramirezcobos.com"
+                    "homepage": "http://2amigos.us"
                 },
                 {
                     "name": "Tobias Munk",
                     "email": "schmunk@usrbin.de",
-                    "homepage": "http://www.usrbin.de"
+                    "homepage": "http://www.phundament.com"
                 }
             ],
             "description": "Yii2 Framework Web-UI for browsing composer packages",
-            "time": "2014-06-11 12:55:50"
+            "time": "2014-10-01 22:30:40"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -1181,12 +1224,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-app-command.git",
-                "reference": "51fdb0dfea0747c34ed291a76bebd5aa1c050e4c"
+                "reference": "6c4317fb5e099218ebba24803d9869fb7352ba89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-app-command/zipball/51fdb0dfea0747c34ed291a76bebd5aa1c050e4c",
-                "reference": "51fdb0dfea0747c34ed291a76bebd5aa1c050e4c",
+                "url": "https://api.github.com/repos/dmstr/yii2-app-command/zipball/6c4317fb5e099218ebba24803d9869fb7352ba89",
+                "reference": "6c4317fb5e099218ebba24803d9869fb7352ba89",
                 "shasum": ""
             },
             "type": "yii2-extension",
@@ -1213,7 +1256,7 @@
                 "management",
                 "yii2"
             ],
-            "time": "2014-09-29 14:38:14"
+            "time": "2014-10-01 02:30:16"
         },
         {
             "name": "fzaninotto/faker",
@@ -1303,12 +1346,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii2-giiant.git",
-                "reference": "cbe9ebfc78dbe18bdf728daa2b4f51eb67eb56f2"
+                "reference": "b60a2cca35a23bb455c526c6e7cf914ddfd48362"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii2-giiant/zipball/cbe9ebfc78dbe18bdf728daa2b4f51eb67eb56f2",
-                "reference": "cbe9ebfc78dbe18bdf728daa2b4f51eb67eb56f2",
+                "url": "https://api.github.com/repos/schmunk42/yii2-giiant/zipball/b60a2cca35a23bb455c526c6e7cf914ddfd48362",
+                "reference": "b60a2cca35a23bb455c526c6e7cf914ddfd48362",
                 "shasum": ""
             },
             "require": {
@@ -1341,7 +1384,7 @@
                 "gii",
                 "yii2"
             ],
-            "time": "2014-09-30 21:26:29"
+            "time": "2014-10-01 18:24:19"
         },
         {
             "name": "yiisoft/yii2-faker",
@@ -1446,6 +1489,7 @@
         "dektrium/yii2-user": 20,
         "dmstr/yii2-migrate-command": 20,
         "schmunk42/yii2-packaii": 20,
+        "dmstr/yii2-adminlte-asset": 20,
         "dmstr/yii2-app-command": 20,
         "schmunk42/yii2-giiant": 20
     },

@@ -26,7 +26,8 @@
         "yiisoft/yii2-swiftmailer": "*",
         "dektrium/yii2-user": "dev-master",
         "dmstr/yii2-migrate-command": "dev-master",
-        "schmunk42/yii2-packaii": "dev-master"
+        "schmunk42/yii2-packaii": "dev-master",
+        "dmstr/yii2-adminlte-asset": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "*",

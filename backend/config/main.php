@@ -14,16 +14,16 @@ return [
     'modules' => [
     ],
     'components' => [
-        'user' => [
-            'identityClass' => 'common\models\User',
-        'view'         => [
+        'view' => [
             'theme' => [
                 'pathMap' => [
-                    '@app/views'     => '@vendor/dmstr/yii2-adminlte-asset/phundament4',
+                    '@app/views' => '@vendor/dmstr/yii2-adminlte-asset/phundament4',
                     '@yii/gii/views' => '@vendor/dmstr/yii2-adminlte-asset/phundament4',
                 ],
             ],
         ],
+        'user' => [
+            'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
         ],
         'log' => [

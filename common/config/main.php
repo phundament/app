@@ -8,8 +8,9 @@ return [
     ],
     'modules'    => [
         'user' => [
-            'class' => 'dektrium\user\Module',
-            'admins' => ['admin']
+            'class'        => 'dektrium\user\Module',
+            'defaultRoute' => 'profile',
+            'admins'       => ['admin']
         ]
         #array:modules>begin#
         #array:modules>end#
