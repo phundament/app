@@ -13,7 +13,11 @@ upon [Yii Framework](http://yiiframework.com).
 It's goal is the seamless integration of Yii extensions and libraries bundled in composer packages packages. 
 [Read on…](https://github.com/phundament/app/wiki/Phundament)
 
-If you're looking for the Yii 2 version of Phundament please visit our [`4.0.x-dev` branch](https://github.com/phundament/app/tree/4.0).
+---
+
+**If you're looking for the Yii 2 version of Phundament please visit our [`4.0.x-dev` branch](https://github.com/phundament/app/tree/4.0).**
+
+---
 
 Quick-Start
 -----------
