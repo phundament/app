@@ -3,16 +3,16 @@ return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=p4', #value:components.db.dsn#
-            'username' => 'dev', #value:components.db.username#
-            'password' => 'dev123', #value:components.db.password#
+            'dsn' => 'mysql:host=' . DATABASE_HOST . (defined('DATABASE_PORT') && DATABASE_PORT != '' ? ';port=' . DATABASE_PORT : '') . ';dbname=' . DATABASE_NAME,
+            'username' => DATABASE_USER,
+            'password' => DATABASE_PASSWORD,
             'charset' => 'utf8',
         ],
         'db_test' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=p4_test', #value:components.db_test.dsn#
-            'username' => 'dev', #value:components.db_test.username#
-            'password' => 'dev123', #value:components.db_test.password#
+            'dsn' => 'mysql:host=' . TEST_DB_HOST . (defined('TEST_DB_PORT') && TEST_DB_PORT != '' ? ';port=' . TEST_DB_PORT : '') . ';dbname=' . TEST_DB_NAME,
+            'username' => TEST_DB_USER,
+            'password' => TEST_DB_PASSWORD,
             'charset' => 'utf8',
         ],
         'mailer' => [
