@@ -180,9 +180,15 @@ class AppController extends BaseAppController
      */
     public function actionVirtualHost()
     {
-        $name = $this->prompt('Domain-name for virtualhost.sh (leave empty to skip)');
-        if ($name) {
-            $this->execute('virtualhost.sh ' . $name);
+        echo "\n";
+        $frontendName = $this->prompt('"Frontend" Domain-name (example: myproject.com.local, leave empty to skip)');
+        if ($frontendName) {
+            $this->execute('virtualhost.sh ' . $frontendName . ' ' . \Yii::getAlias('@frontend') . DIRECTORY_SEPARATOR . "web");
+            echo "\n";
+            $backendName = $this->prompt('"Backend" Domain-name (example: admin.' . $frontendName . ', leave empty to skip)');
+            if ($backendName) {
+                $this->execute('virtualhost.sh ' . $backendName . ' ' . \Yii::getAlias('@backend') . DIRECTORY_SEPARATOR . "web");
+            }
         }
     }
 
