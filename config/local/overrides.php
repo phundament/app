@@ -30,3 +30,4 @@ Config::expect("TEST_DB_PORT", $default = null, $required = Config::read("YII_EN
 Config::expect("TEST_DB_USER", $default = null, $required = Config::read("YII_ENV") == 'test');
 Config::expect("TEST_DB_PASSWORD", $default = null, $required = Config::read("YII_ENV") == 'test');
 Config::expect("TEST_DB_NAME", $default = null, $required = Config::read("YII_ENV") == 'test');
+Config::expect("TEST_DB_TABLE_PREFIX", $default = null, $required = Config::read("YII_ENV") == 'test');

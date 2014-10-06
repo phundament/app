@@ -7,6 +7,7 @@ return [
             'username' => DATABASE_USER,
             'password' => DATABASE_PASSWORD,
             'charset' => 'utf8',
+            'tablePrefix' => DATABASE_TABLE_PREFIX,
         ],
         'db_test' => [
             'class' => 'yii\db\Connection',
@@ -14,6 +15,7 @@ return [
             'username' => TEST_DB_USER,
             'password' => TEST_DB_PASSWORD,
             'charset' => 'utf8',
+            'tablePrefix' => TEST_DB_TABLE_PREFIX,
         ],
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',

@@ -23,3 +23,6 @@ $_ENV["EXPAND_CONFIG_URLS"] = "1";
 
 // Support setting main db constants based on DATABASE_URL environment variable
 Config::expect("DATABASE_URL", $default = null, $required = false);
+
+// Database table prefix
+Config::expect("DATABASE_TABLE_PREFIX", $default = null, $required = false);
