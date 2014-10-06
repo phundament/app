@@ -21,13 +21,3 @@ Config::expect("SUPPORT_EMAIL", $default = 'support+local@h17n.de', $required = 
 // Don't require the _URL constant locally
 
 Config::expect("DATABASE_URL", $default = null, $required = false);
-
-// Test database configuration is only used when running tests, thus is only expected then
-
-Config::expect("TEST_DB_SCHEME", $default = null, $required = Config::read("YII_ENV") == 'test');
-Config::expect("TEST_DB_HOST", $default = null, $required = Config::read("YII_ENV") == 'test');
-Config::expect("TEST_DB_PORT", $default = null, $required = Config::read("YII_ENV") == 'test');
-Config::expect("TEST_DB_USER", $default = null, $required = Config::read("YII_ENV") == 'test');
-Config::expect("TEST_DB_PASSWORD", $default = null, $required = Config::read("YII_ENV") == 'test');
-Config::expect("TEST_DB_NAME", $default = null, $required = Config::read("YII_ENV") == 'test');
-Config::expect("TEST_DB_TABLE_PREFIX", $default = null, $required = Config::read("YII_ENV") == 'test');

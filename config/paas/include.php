@@ -26,3 +26,15 @@ Config::expect("DATABASE_URL", $default = null, $required = false);
 
 // Database table prefix
 Config::expect("DATABASE_TABLE_PREFIX", $default = null, $required = false);
+
+// Test database configuration is only used when running tests, thus is only required then
+Config::expect("TEST_DB_SCHEME", $default = null, $required = Config::read("YII_ENV") == 'test');
+Config::expect("TEST_DB_HOST", $default = null, $required = Config::read("YII_ENV") == 'test');
+Config::expect("TEST_DB_PORT", $default = null, $required = Config::read("YII_ENV") == 'test');
+Config::expect("TEST_DB_USER", $default = null, $required = Config::read("YII_ENV") == 'test');
+Config::expect("TEST_DB_PASSWORD", $default = null, $required = Config::read("YII_ENV") == 'test');
+Config::expect("TEST_DB_NAME", $default = null, $required = Config::read("YII_ENV") == 'test');
+Config::expect("TEST_DB_TABLE_PREFIX", $default = null, $required = Config::read("YII_ENV") == 'test');
+
+// Require setting smtp constants based on SMTP_URL environment variable
+Config::expect("SMTP_URL", $default = null, $required = true); // smtp://username:password@host:587?encryption=tls
