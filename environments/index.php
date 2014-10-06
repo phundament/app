@@ -58,4 +58,20 @@ return [
             'frontend/config/main-local.php',
         ],
     ],
+    'Environment configuration based on environment variables' => [
+        'path' => 'env-vars',
+        'setWritable' => [
+            'backend/runtime',
+            'backend/web/assets',
+            'frontend/runtime',
+            'frontend/web/assets',
+        ],
+        'setExecutable' => [
+            'yii',
+        ],
+        'setCookieValidationKey' => [
+            'backend/config/main-local.php',
+            'frontend/config/main-local.php',
+        ],
+    ],
 ];
