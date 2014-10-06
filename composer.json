@@ -25,6 +25,7 @@
         "yiisoft/yii2-bootstrap": "*",
         "yiisoft/yii2-swiftmailer": "*",
         "dektrium/yii2-user": "dev-master",
+        "neam/php-app-config": "dev-develop",
         "dmstr/yii2-migrate-command": "dev-master",
         "schmunk42/yii2-packaii": "dev-master",
         "dmstr/yii2-adminlte-asset": "dev-master"
