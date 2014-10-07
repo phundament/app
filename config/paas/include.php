@@ -7,14 +7,17 @@ namespace neam\bootstrap;
 
 // ==== Yii core config ====
 
-Config::expect("YII_DEBUG", $default = false, $required = false);
-Config::expect("YII_ENV", $default = 'paas', $required = false);
+Config::expect("YII_DEBUG", false);
+Config::expect("YII_ENV", 'paas');
 
 // ==== Identity-related config ====
 
-Config::expect("APP_NAME", $default = '[paas] Phundament 4', $required = false);
-Config::expect("ADMIN_EMAIL", $default = 'admin+paas@h17n.de', $required = false);
-Config::expect("SUPPORT_EMAIL", $default = 'support+paas@h17n.de', $required = false);
+Config::expect("APP_NAME", '[paas] Phundament 4');
+Config::expect("SUPPORT_EMAIL", 'support+paas@h17n.de');
+
+// ==== Admin user details ====
+
+Config::expect("ADMIN_EMAIL", 'admin+paas@h17n.de');
 
 // ==== Infrastructure-related config ====
 
@@ -22,19 +25,19 @@ Config::expect("SUPPORT_EMAIL", $default = 'support+paas@h17n.de', $required = f
 $_ENV["EXPAND_CONFIG_URLS"] = "1";
 
 // Support setting main db constants based on DATABASE_URL environment variable
-Config::expect("DATABASE_URL", $default = null, $required = false);
+Config::expect("DATABASE_URL", null);
 
 // Database table prefix
-Config::expect("DATABASE_TABLE_PREFIX", $default = null, $required = false);
+Config::expect("DATABASE_TABLE_PREFIX", null);
 
 // Test database configuration is only used when running tests, thus is only required then
-Config::expect("TEST_DB_SCHEME", $default = null, $required = Config::read("YII_ENV") == 'test');
-Config::expect("TEST_DB_HOST", $default = null, $required = Config::read("YII_ENV") == 'test');
-Config::expect("TEST_DB_PORT", $default = null, $required = Config::read("YII_ENV") == 'test');
-Config::expect("TEST_DB_USER", $default = null, $required = Config::read("YII_ENV") == 'test');
-Config::expect("TEST_DB_PASSWORD", $default = null, $required = Config::read("YII_ENV") == 'test');
-Config::expect("TEST_DB_NAME", $default = null, $required = Config::read("YII_ENV") == 'test');
-Config::expect("TEST_DB_TABLE_PREFIX", $default = null, $required = Config::read("YII_ENV") == 'test');
+Config::expect("TEST_DB_SCHEME", null, Config::read("YII_ENV") == 'test');
+Config::expect("TEST_DB_HOST", null, Config::read("YII_ENV") == 'test');
+Config::expect("TEST_DB_PORT", null, Config::read("YII_ENV") == 'test');
+Config::expect("TEST_DB_USER", null, Config::read("YII_ENV") == 'test');
+Config::expect("TEST_DB_PASSWORD", null, Config::read("YII_ENV") == 'test');
+Config::expect("TEST_DB_NAME", null, Config::read("YII_ENV") == 'test');
+Config::expect("TEST_DB_TABLE_PREFIX", null, Config::read("YII_ENV") == 'test');
 
 // Require setting smtp constants based on SMTP_URL environment variable
-Config::expect("SMTP_URL", $default = null, $required = true); // smtp://username:password@host:587?encryption=tls
+Config::expect("SMTP_URL", null, true); // smtp://username:password@host:587?encryption=tls

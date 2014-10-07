@@ -7,17 +7,17 @@ namespace neam\bootstrap;
 
 // ==== Yii core config ====
 
-Config::expect("YII_DEBUG", $default = true, $required = false);
-Config::expect("YII_ENV", $default = 'dev', $required = false);
+Config::expect("YII_DEBUG", true);
+Config::expect("YII_ENV", 'dev');
 
 // ==== Identity-related config ====
 
-Config::expect("APP_NAME", $default = '[local] Phundament 4', $required = false);
-Config::expect("ADMIN_EMAIL", $default = 'admin+local@h17n.de', $required = false);
-Config::expect("SUPPORT_EMAIL", $default = 'support+local@h17n.de', $required = false);
+Config::expect("APP_NAME", '[local] Phundament 4');
+Config::expect("ADMIN_EMAIL", 'admin+local@h17n.de');
+Config::expect("SUPPORT_EMAIL", 'support+local@h17n.de');
 
 // ==== Infrastructure-related config ====
 
 // Don't require the _URL constant locally
 
-Config::expect("DATABASE_URL", $default = null, $required = false);
+Config::expect("DATABASE_URL", null);
