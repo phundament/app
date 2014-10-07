@@ -1,7 +1,8 @@
 <?php
 
 require(__DIR__ . '/../../vendor/autoload.php');
-require(__DIR__ . '/../../vendor/neam/php-app-config/include.php');
+require(__DIR__ . '/../../common/config/env-local.php');
+require(__DIR__ . '/../../common/config/env.php');
 require(__DIR__ . '/../../vendor/yiisoft/yii2/Yii.php');
 require(__DIR__ . '/../../common/config/bootstrap.php');
 require(__DIR__ . '/../config/bootstrap.php');

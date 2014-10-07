@@ -26,6 +26,7 @@ $_ENV["EXPAND_CONFIG_URLS"] = "1";
 
 // Support setting main db constants based on DATABASE_URL environment variable
 Config::expect("DATABASE_URL", null);
+#Config::expect("DATABASE_HOST", 'localhost', true);
 
 // Database table prefix
 Config::expect("DATABASE_TABLE_PREFIX", null);
@@ -41,3 +42,5 @@ Config::expect("TEST_DB_TABLE_PREFIX", null, Config::read("YII_ENV") == 'test');
 
 // Require setting smtp constants based on SMTP_URL environment variable
 Config::expect("SMTP_URL", null, true); // smtp://username:password@host:587?encryption=tls
+
+Config::defineConstants();
