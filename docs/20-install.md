@@ -31,7 +31,7 @@ ln -s ../../backend/web backend
 ### Configure Application
 
 ```
-yii app/configure
+./yii app/configure
 ```
 
 
