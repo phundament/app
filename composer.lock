@@ -1286,12 +1286,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-app-command.git",
-                "reference": "6c4317fb5e099218ebba24803d9869fb7352ba89"
+                "reference": "1d10282b6c4ce10ab78d0f43dbd47642fa5ca8e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-app-command/zipball/6c4317fb5e099218ebba24803d9869fb7352ba89",
-                "reference": "6c4317fb5e099218ebba24803d9869fb7352ba89",
+                "url": "https://api.github.com/repos/dmstr/yii2-app-command/zipball/1d10282b6c4ce10ab78d0f43dbd47642fa5ca8e5",
+                "reference": "1d10282b6c4ce10ab78d0f43dbd47642fa5ca8e5",
                 "shasum": ""
             },
             "type": "yii2-extension",
@@ -1318,7 +1318,7 @@
                 "management",
                 "yii2"
             ],
-            "time": "2014-10-01 02:30:16"
+            "time": "2014-10-15 02:20:05"
         },
         {
             "name": "fzaninotto/faker",
