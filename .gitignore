@@ -1,5 +1,6 @@
 /_html
 /tmp
+.env
 
 # yii console command
 /yii
