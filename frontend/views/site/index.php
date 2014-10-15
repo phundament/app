@@ -9,7 +9,7 @@ $this->title = 'My Yii Application';
 
         <p class="lead">You have successfully created your Phundament application template.</p>
 
-        <p><a class="btn btn-lg btn-success" href="https://github.com/phundament/app/blob/4.0/docs/index.md" target="_blank">Get started</a></p>
+        <p><a class="btn btn-lg btn-success" href="https://github.com/phundament/app/blob/4.0/docs" target="_blank">Get started</a></p>
     </div>
 
     <div class="body-content">
