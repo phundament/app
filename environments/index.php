@@ -58,8 +58,8 @@ return [
             'frontend/config/main-local.php',
         ],
     ],
-    'Environment configuration based on environment variables' => [
-        'path' => 'env-vars',
+    'Dotenv' => [
+        'path' => 'dotenv',
         'setWritable' => [
             'backend/runtime',
             'backend/web/assets',
