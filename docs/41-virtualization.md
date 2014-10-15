@@ -36,6 +36,15 @@ Local virtualization
 - Login with `admin` / `admin1234`
 
 
+### Update
+
+> TODO: check stdin for migration
+
+```
+vagrant ssh --command /var/www/yii app/update
+```
+
+
 Cloud installations
 -------------------
 

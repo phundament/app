@@ -35,6 +35,13 @@ Generate application documentation to `docs-html`
 ./yii app/generate-docs
 ```
 
+Generating CRUDs
+----------------
+
+```
+./yii giiant-batch -tables=table1,table2,table3,table4
+```
+
 Use Yii Framework 2.0 Development Repo
 --------------------------------------
 
