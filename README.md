@@ -28,9 +28,7 @@ composer global require "fxp/composer-asset-plugin:1.0.0-beta2"
 composer create-project --stability=dev phundament/app:4.0.x-dev app-v4
 ~~~
 
-The project creation process will trigger the `Yii Application Initialization Tool` command to setup your application.
-
-> "We recommend you to choose `Development` as environment and skip through the options, if it's your very first setup."
+Follow the on-screen instructions to choose your environment and setup your application.
 
 Open `http://path/to/frontend/web` in your browser.
 
