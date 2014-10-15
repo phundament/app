@@ -3,16 +3,16 @@ return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=p4', #value:components.db.dsn#
-            'username' => 'dev', #value:components.db.username#
-            'password' => 'dev123', #value:components.db.password#
+            'dsn' => 'mysql:host=localhost;dbname=p4',
+            'username' => 'dev',
+            'password' => 'dev123',
             'charset' => 'utf8',
         ],
         'db_test' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=p4_test', #value:components.db_test.dsn#
-            'username' => 'dev', #value:components.db_test.username#
-            'password' => 'dev123', #value:components.db_test.password#
+            'dsn' => 'mysql:host=localhost;dbname=p4_test',
+            'username' => 'dev',
+            'password' => 'dev123',
             'charset' => 'utf8',
         ],
         'mailer' => [

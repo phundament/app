@@ -19,75 +19,15 @@ use Composer\Script\Event;
  */
 class ComposerCallback
 {
-    private static $config;
-    private static $isYiiInitialized;
-
     /**
-     * Application initialization
+     * Display application initialization instructions
      *
      * @param Event $event
      */
     public static function createProject(Event $event)
     {
-        require(__DIR__ . '/../../init');
-        self::yii(['app/configure']);
-        // reload possibly changed configurations
-        self::configureYii();
-        self::yii(['migrate']);
-        self::yii(['app/admin-user']);
-        self::yii(['app/virtual-host']);
-        echo "\nScript-hook 'create-project' completed.\n\n";
+        echo "Your Phundament application packages have been successfully installed.";
+        echo "\nPlease choose your environment with";
+        echo "\n\n  ./init\n\n";
     }
-
-    private static function yii($argv)
-    {
-        if (!self::$isYiiInitialized) {
-            self::initializeYii();
-        }
-        $_SERVER['argv'] = array_merge(['./yii'], $argv);
-        $application     = new \yii\console\Application(self::$config);
-        $exitCode        = $application->run();
-        if ($exitCode !== 0) {
-            exit($exitCode);
-        } else {
-            // continue ... eg. for usage in composer scripts
-        }
-    }
-
-    /**
-     * Yii console bootstrap
-     */
-    private static function initializeYii()
-    {
-        defined('YII_DEBUG') or define('YII_DEBUG', true);
-        defined('YII_ENV') or define('YII_ENV', 'dev');
-
-        // fcgi doesn't have STDIN and STDOUT defined by default
-        defined('STDIN') or define('STDIN', fopen('php://stdin', 'r'));
-        defined('STDOUT') or define('STDOUT', fopen('php://stdout', 'w'));
-
-        $basePath = __DIR__ . '/../../';
-        require($basePath . '/vendor/autoload.php');
-        require($basePath . '/vendor/yiisoft/yii2/Yii.php');
-        require($basePath . '/common/config/bootstrap.php');
-
-        self::configureYii();
-        self::$isYiiInitialized = true;
-    }
-
-    /**
-     * Yii application configuration
-     */
-    private static function configureYii()
-    {
-        $basePath     = __DIR__ . '/../../';
-        // TODO: support different application directory layouts
-        self::$config = \yii\helpers\ArrayHelper::merge(
-            require($basePath . '/common/config/main.php'),
-            require($basePath . '/common/config/main-local.php'),
-            require($basePath . '/console/config/main.php'),
-            require($basePath . '/console/config/main-local.php')
-        );
-    }
-
 }

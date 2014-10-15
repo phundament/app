@@ -79,7 +79,11 @@ foreach ($callbacks as $callback) {
     }
 }
 
-echo "\n  ... initialization completed.\n\n";
+echo "\n  ... initialization completed.";
+
+echo "\n\nAdjust the config files for your environment, see https://github.com/phundament/app for detailed instructions.";
+echo "\n\nTo finalize the application setup, run";
+echo "\n\n  ./yii app/setup\n\n";
 
 function getFileList($root, $basePath = '')
 {

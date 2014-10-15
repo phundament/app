@@ -9,6 +9,7 @@
 
 namespace console\controllers;
 
+use dektrium\user\ModelManager;
 use dmstr\console\controllers\BaseAppController;
 
 
@@ -19,10 +20,12 @@ use dmstr\console\controllers\BaseAppController;
  */
 class AppController extends BaseAppController
 {
+    public $defaultAction = 'version';
+
     /**
      * Displays application version from git describe
      */
-    public function actionIndex()
+    public function actionVersion()
     {
         echo "Application Version\n";
         $this->execute('git describe');
@@ -41,67 +44,13 @@ class AppController extends BaseAppController
     }
 
     /**
-     * Manage application configuration
+     * Initial application setup
      */
-    public function actionConfigure()
+    public function actionSetup()
     {
-        echo "\nPhundament Application Configuration\n";
-        echo "------------------------------------\n";
-
-        echo "Note: This feature is currently in DEVELOPMENT, make a backup of your data first!\n";
-
-        echo "Note: SQLite is currently not supported.\n";
-        $this->promptUpdateConfigurationValue(
-            'common/config/main-local.php',
-            'components.db.dsn',
-            'Database DSN'
-        );
-        $this->promptUpdateConfigurationValue(
-            'common/config/main-local.php',
-            'components.db.username',
-            'Database user'
-        );
-        $this->promptUpdateConfigurationValue(
-            'common/config/main-local.php',
-            'components.db.password',
-            'Database password'
-        );
-
-        $this->promptUpdateConfigurationValue(
-            'common/config/params.php',
-            'params.appName',
-            'Application name'
-        );
-        $this->promptUpdateConfigurationValue(
-            'common/config/params.php',
-            'params.adminEmail',
-            'Webmaster e-mail address'
-        );
-        $this->promptUpdateConfigurationValue(
-            'common/config/params.php',
-            'params.supportEmail',
-            'Support e-mail address'
-        );
-
-        if ($this->confirm("Setup test-database")) {
-
-            $this->promptUpdateConfigurationValue(
-                'common/config/main-local.php',
-                'components.db_test.dsn',
-                'Test-Database DSN'
-            );
-            $this->promptUpdateConfigurationValue(
-                'common/config/main-local.php',
-                'components.db_test.username',
-                'Test-Database user:'
-            );
-            $this->promptUpdateConfigurationValue(
-                'common/config/main-local.php',
-                'components.db_test.password',
-                'Test-Database password:'
-            );
-
-        }
+        $this->action('migrate');
+        $this->action('app/setup-admin-user');
+        $this->action('app/virtual-host');
     }
 
     /**
@@ -144,10 +93,33 @@ class AppController extends BaseAppController
      */
     public function actionSetupDocs()
     {
-        // TODO: remove dev packages
         $this->composer(
-            'require --dev "cebe/markdown:dev-master as 0.9.3" "cebe/markdown-latex:dev-master" "yiisoft/yii2-apidoc:*"'
+            'require --dev "yiisoft/yii2-apidoc:*"'
         );
+    }
+
+    /**
+     * Setup admin user (create, update password, confirm)
+     */
+    public function actionSetupAdminUser()
+    {
+        $mgr = new ModelManager;
+        $admin = $mgr->findUserByUsername('admin');
+        if ($admin === null) {
+            $email = $this->prompt('E-Mail for application admin user:', ['required' => true]);
+            $this->action('user/create', [$email, 'admin']);
+            $password = $this->prompt(
+                'Password for application admin user (leave empty if you want to use the auto-generated value):'
+            );
+        } else {
+            $password = $this->prompt(
+                'Update password for application admin user (leave empty to skip):'
+            );
+        }
+        if ($password) {
+            $this->action('user/password', ['admin', $password]);
+        }
+        $this->action('user/confirm', ['admin']);
     }
 
     /**
@@ -160,35 +132,31 @@ class AppController extends BaseAppController
     }
 
     /**
-     * Setup admin user (create, update password, confirm)
-     */
-    public function actionAdminUser()
-    {
-        $email    = $this->prompt('E-Mail for application admin user:', ['required' => true]);
-        $password = $this->prompt(
-            'Password for application admin user (leave empty if you want to use the auto-generated value):'
-        );
-        $this->action('user/create', [$email, 'admin']);
-        if ($password) {
-            $this->action('user/password', ['admin', $password]);
-        }
-        $this->action('user/confirm', ['admin']);
-    }
-
-    /**
      * Setup vhost with virtualhost.sh script
      */
     public function actionVirtualHost()
     {
-        echo "\n";
-        $frontendName = $this->prompt('"Frontend" Domain-name (example: myproject.com.local, leave empty to skip)');
-        if ($frontendName) {
-            $this->execute('virtualhost.sh ' . $frontendName . ' ' . \Yii::getAlias('@frontend') . DIRECTORY_SEPARATOR . "web");
+        if (`which virtualhost.sh`) {
             echo "\n";
-            $backendName = $this->prompt('"Backend" Domain-name (example: admin.' . $frontendName . ', leave empty to skip)');
-            if ($backendName) {
-                $this->execute('virtualhost.sh ' . $backendName . ' ' . \Yii::getAlias('@backend') . DIRECTORY_SEPARATOR . "web");
+            $frontendName = $this->prompt('"Frontend" Domain-name (example: myproject.com.local, leave empty to skip)');
+            if ($frontendName) {
+                $this->execute(
+                    'virtualhost.sh ' . $frontendName . ' ' . \Yii::getAlias('@frontend') . DIRECTORY_SEPARATOR . "web"
+                );
+                echo "\n";
+                $backendName = $this->prompt(
+                    '"Backend" Domain-name (example: admin.' . $frontendName . ', leave empty to skip)'
+                );
+                if ($backendName) {
+                    $this->execute(
+                        'virtualhost.sh ' . $backendName . ' ' . \Yii::getAlias(
+                            '@backend'
+                        ) . DIRECTORY_SEPARATOR . "web"
+                    );
+                }
             }
+        } else {
+            echo "Command virtualhost.sh not found, skipping.\n";
         }
     }
 
