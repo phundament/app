@@ -28,10 +28,10 @@ ln -s ../../backend/web backend
 ```
 
 
-### Configure Application
+### Setup Application
 
 ```
-./yii app/configure
+./yii app/setup
 ```
 
 
