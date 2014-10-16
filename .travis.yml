@@ -28,4 +28,4 @@ before_script:
   - php yii app/setup-tests --interactive=0
 
 script:
-  - php yii app/run-tests
+  - php yii app/run-tests --interactive=0
