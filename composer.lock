@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "82599070a4834aa1a5ada31aeecba416",
+    "hash": "dd411b5e142aa8e38ccdaa81b7b51c13",
     "packages": [
         {
             "name": "2amigos/yii2-arrayquery-component",
@@ -234,16 +234,16 @@
         },
         {
             "name": "bower-asset/jquery.inputmask",
-            "version": "3.1.32",
+            "version": "3.1.33",
             "source": {
                 "type": "git",
                 "url": "https://github.com/RobinHerbots/jquery.inputmask.git",
-                "reference": "bb776eb7e7be594fa77d5598e6f89d96029a8bac"
+                "reference": "0c6ce85c1bc12e81ecb0df62fbc62db116b7b53d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RobinHerbots/jquery.inputmask/zipball/bb776eb7e7be594fa77d5598e6f89d96029a8bac",
-                "reference": "bb776eb7e7be594fa77d5598e6f89d96029a8bac",
+                "url": "https://api.github.com/repos/RobinHerbots/jquery.inputmask/zipball/0c6ce85c1bc12e81ecb0df62fbc62db116b7b53d",
+                "reference": "0c6ce85c1bc12e81ecb0df62fbc62db116b7b53d",
                 "shasum": ""
             },
             "require": {
@@ -443,7 +443,7 @@
         },
         {
             "name": "dektrium/yii2-user",
-            "version": "dev-master",
+            "version": "v0.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dektrium/yii2-user.git",
@@ -876,16 +876,16 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v1.0.8",
+            "version": "v1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "e783b688cf5bc29a4ffd1b79c92eb4dd2a2e2237"
+                "reference": "56c252d48dce336da97926591aed71805203815b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/e783b688cf5bc29a4ffd1b79c92eb4dd2a2e2237",
-                "reference": "e783b688cf5bc29a4ffd1b79c92eb4dd2a2e2237",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/56c252d48dce336da97926591aed71805203815b",
+                "reference": "56c252d48dce336da97926591aed71805203815b",
                 "shasum": ""
             },
             "require": {
@@ -923,7 +923,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2014-10-14 15:06:44"
+            "time": "2014-10-16 14:50:21"
         },
         {
             "name": "yiisoft/yii2",
@@ -1286,12 +1286,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-app-command.git",
-                "reference": "1d10282b6c4ce10ab78d0f43dbd47642fa5ca8e5"
+                "reference": "4b6a6197b8ba901bab1155add642ee225b75f092"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-app-command/zipball/1d10282b6c4ce10ab78d0f43dbd47642fa5ca8e5",
-                "reference": "1d10282b6c4ce10ab78d0f43dbd47642fa5ca8e5",
+                "url": "https://api.github.com/repos/dmstr/yii2-app-command/zipball/4b6a6197b8ba901bab1155add642ee225b75f092",
+                "reference": "4b6a6197b8ba901bab1155add642ee225b75f092",
                 "shasum": ""
             },
             "type": "yii2-extension",
@@ -1318,7 +1318,7 @@
                 "management",
                 "yii2"
             ],
-            "time": "2014-10-15 02:20:05"
+            "time": "2014-10-16 16:25:09"
         },
         {
             "name": "fzaninotto/faker",
@@ -1548,7 +1548,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "dektrium/yii2-user": 20,
         "dmstr/yii2-migrate-command": 20,
         "schmunk42/yii2-packaii": 20,
         "dmstr/yii2-adminlte-asset": 20,

@@ -21,19 +21,19 @@
     "require": {
         "php": ">=5.4.0",
         "yiisoft/yii2-composer": "*",
-        "yiisoft/yii2": "*",
-        "yiisoft/yii2-bootstrap": "*",
-        "yiisoft/yii2-swiftmailer": "*",
-        "dektrium/yii2-user": "dev-master",
+        "yiisoft/yii2": "2.0.*",
+        "yiisoft/yii2-bootstrap": "2.*",
+        "yiisoft/yii2-swiftmailer": "2.*",
+        "dektrium/yii2-user": "*",
         "vlucas/phpdotenv": "1.*",
         "dmstr/yii2-migrate-command": "dev-master",
         "schmunk42/yii2-packaii": "dev-master",
         "dmstr/yii2-adminlte-asset": "dev-master"
     },
     "require-dev": {
-        "yiisoft/yii2-debug": "*",
-        "yiisoft/yii2-gii": "*",
-        "yiisoft/yii2-faker": "*",
+        "yiisoft/yii2-debug": "2.*",
+        "yiisoft/yii2-gii": "2.*",
+        "yiisoft/yii2-faker": "2.*",
         "dmstr/yii2-app-command": "dev-master",
         "schmunk42/yii2-giiant": "dev-master"
     },
