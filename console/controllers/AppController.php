@@ -64,7 +64,7 @@ class AppController extends BaseAppController
             'global require "codeception/codeception:2.0.*" "codeception/specify:*" "codeception/verify:*"'
         );
         $this->composer(
-            'require --dev "yiisoft/yii2-coding-standards:*" "yiisoft/yii2-codeception:*" "yiisoft/yii2-faker:*"'
+            'require --dev "yiisoft/yii2-coding-standards:2.*" "yiisoft/yii2-codeception:2.*" "yiisoft/yii2-faker:2.*"'
         );
 
         $this->execute('codecept build -c tests/codeception/backend');
