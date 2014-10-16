@@ -94,7 +94,7 @@ class AppController extends BaseAppController
     public function actionSetupDocs()
     {
         $this->composer(
-            'require --dev "yiisoft/yii2-apidoc:*"'
+            'require --dev "cebe/markdown-latex:dev-master" "yiisoft/yii2-apidoc:2.*"'
         );
     }
 
@@ -127,8 +127,11 @@ class AppController extends BaseAppController
      */
     public function actionGenerateDocs()
     {
-        $this->execute('vendor/bin/apidoc guide docs docs-html');
-        $this->execute('vendor/bin/apidoc api backend,common,console,frontend,vendor/schmunk42,vendor/dmstr docs-html');
+        if ($this->confirm('Regenerate documentation files into ./docs-html', true)) {
+            $this->execute('vendor/bin/apidoc guide --interactive=0 docs docs-html');
+            $this->execute('vendor/bin/apidoc api --interactive=0 --exclude=runtime/,tests/ backend,common,console,frontend docs-html');
+            $this->execute('vendor/bin/apidoc guide --interactive=0 docs docs-html');
+        }
     }
 
     /**
