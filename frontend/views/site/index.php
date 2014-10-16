@@ -21,7 +21,7 @@ $this->title = 'My Yii Application';
                 <p>Phundament and Yii2 online guides and class references.</p>
 
                 <div class="btn-group-vertical">
-                    <a class="btn btn-default" href="https://github.com/phundament/app/tree/4.0#documentation-overview">Phundament Documentation &raquo;</a>
+                    <a class="btn btn-default" href="https://github.com/phundament/app/blob/4.0/docs/README.md">Phundament Documentation &raquo;</a>
                     <a class="btn btn-default" href="http://www.yiiframework.com/doc-2.0/guide-index.html">Yii Documentation &raquo;</a>
                 </div>
             </div>
