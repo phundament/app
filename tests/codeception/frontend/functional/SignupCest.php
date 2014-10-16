@@ -85,6 +85,7 @@ class SignupCest
         ]);
 
         $I->expectTo('see that user logged in');
-        $I->seeLink('Logout (tester)');
+        $I->see('We need to confirm your email address');
+        //$I->seeLink('Logout (tester)');
     }
 }

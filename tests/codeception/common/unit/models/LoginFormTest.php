@@ -24,7 +24,7 @@ class LoginFormTest extends DbTestCase
             'components' => [
                 'user' => [
                     'class' => 'yii\web\User',
-                    'identityClass' => 'common\models\User',
+                    'identityClass' => 'dektrium\user\models\User',
                 ],
             ],
         ]);
@@ -52,7 +52,7 @@ class LoginFormTest extends DbTestCase
     public function testLoginWrongPassword()
     {
         $model = new LoginForm([
-            'login' => 'bayer.hudson',
+            'login' => 'admin',
             'password' => 'wrong_password',
         ]);
 
@@ -67,8 +67,8 @@ class LoginFormTest extends DbTestCase
     {
 
         $model = new LoginForm([
-            'login' => 'bayer.hudson',
-            'password' => 'password_0',
+            'login' => 'admin',
+            'password' => 'admin1234',
         ]);
 
         $this->specify('user should be able to login with correct credentials', function () use ($model) {

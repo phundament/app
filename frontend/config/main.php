@@ -13,7 +13,7 @@ return [
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
         'user' => [
-            'identityClass' => 'common\models\User',
+            # Note: identityClass is configured from dektrium\user
             'enableAutoLogin' => true,
         ],
         'log' => [
