@@ -6,39 +6,47 @@ Phundament uses [Vagrant](https://www.vagrantup.com), [VirtualBox](https://www.v
 But thanks to the flexibility of the above tools you should be able to choose from a wide variety of available components, including VMWare, Parallels, HyperV, RedHat, Amazon AWS, DigitalOcean, Rackspace and many more.
 
 
-Local virtualization
---------------------
+Local VM with vagrant
+---------------------
 
-- Use an exsting Phundament 4 project or `git clone` a new one.
-- Create a virtual machine on [PuPHPet](https://puphpet.com/).
-- Upload the configuration from `environments/puphpet/config.yaml` via drag&drop and ajdust it if needed.
-  - Make sure to install curl, gd
-- Click **Create** and download VM configuration package
-- Extract
-- Copy contents to Phundament project root folder
-- Go to project folder and copy initialization script
+- Install [Vagrant](https://www.vagrantup.com) and [VirtualBox](https://www.virtualbox.org)
+- Go to an exsting Phundament 4 project or `git clone -b4.0 https://github.com/phundament/app.git` a new one.
+- Upload the default configuration from `environments/puphpet/config-dist.yaml` via drag&drop to [PuPHPet](https://puphpet.com/)
+  - Adjust VM values if needed, eg. make sure to install `curl` and `gd`.
+  - Click **Create** and download VM configuration package.
+- Extract the contents (`Vagrantfile`,`puphpet/`) to the project root folder.
+- Initialize application in puphpet environment:
 
-    ~~~
-    cd app
-    cp environments/virtual/puphpet/files/exec-once/init.sh puphpet/files/exec-once/init.sh
-    ~~~
-- Update your `/etc/hosts` file:
+    ```
+    ./init --env="Puphpet"
+    ```
 
-    ~~~
+    *Note: This will copy the needed initialization script for the VM, which will switch your environment to _Development_ by default.*
+- To access the virtual host in the VM later, update your `/etc/hosts` file:
+
+    ```
     192.168.42.42    phundament.vagrant admin.phundament.vagrant
-    ~~~
+    ```
 - Bring up the virtual machine:
 
-    ~~~
+    ```
     vagrant up
-    ~~~
+    ```
 - Open [phundament.vagrant](http://phundament.vagrant) or [admin.phundament.vagrant](http://admin.phundament.vagrant) in your browser.
 - Login with `admin` / `admin1234`
 
 
-### Update
+### Accessing application in virtual machine
 
 > TODO: check stdin for migration
+
+To open a shell in the VM run:
+
+```
+vagrant ssh
+```
+
+You can run commands directly, for example to update the application in the virtual machine:
 
 ```
 vagrant ssh --command /var/www/yii app/update
