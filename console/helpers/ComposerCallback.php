@@ -20,14 +20,17 @@ use Composer\Script\Event;
 class ComposerCallback
 {
     /**
-     * Display application initialization instructions
+     * Displays application initialization instructions
      *
      * @param Event $event
      */
     public static function createProject(Event $event)
     {
-        echo "Your Phundament application packages have been successfully installed.";
-        echo "\nPlease choose your environment with";
-        echo "\n\n  ./init\n\n";
+        $path = realpath(dirname(__FILE__).'/../../');
+        echo "\nPhundament application packages have been successfully installed.";
+        echo "\nPlease choose your environment with\n";
+        echo "\n  cd $path";
+        echo "\n  ./init";
+        echo "\n\n";
     }
 }

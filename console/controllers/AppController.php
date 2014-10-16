@@ -103,7 +103,7 @@ class AppController extends BaseAppController
      */
     public function actionSetupAdminUser()
     {
-        $mgr = new ModelManager;
+        $mgr   = new ModelManager;
         $admin = $mgr->findUserByUsername('admin');
         if ($admin === null) {
             $email = $this->prompt('E-Mail for application admin user:', ['required' => true]);
@@ -144,8 +144,10 @@ class AppController extends BaseAppController
                     'virtualhost.sh ' . $frontendName . ' ' . \Yii::getAlias('@frontend') . DIRECTORY_SEPARATOR . "web"
                 );
                 echo "\n";
-                $backendName = $this->prompt(
-                    '"Backend" Domain-name (example: admin.' . $frontendName . ', leave empty to skip)'
+                $defaultBackendName = 'admin.' . $frontendName;
+                $backendName        = $this->prompt(
+                    '"Backend" Domain-name',
+                    ['default' => $defaultBackendName]
                 );
                 if ($backendName) {
                     $this->execute(
