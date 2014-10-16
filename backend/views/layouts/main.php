@@ -7,7 +7,7 @@ use yii\widgets\Breadcrumbs;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
-
+$this->title = $this->title.' [Backend] '.Yii::$app->params['appName'];
 AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
