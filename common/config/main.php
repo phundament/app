@@ -12,7 +12,5 @@ return [
             'defaultRoute' => 'profile',
             'admins'       => ['admin']
         ]
-        #array:modules>begin#
-        #array:modules>end#
     ]
 ];
