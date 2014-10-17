@@ -58,7 +58,7 @@
         "paas": {
             "document-root": "frontend",
             "index-document": "index.php",
-            "compile": ["./yii migrate"],
+            "compile": ["./init --env=Dotenv --overwrite=n","./yii migrate"],
             "new-relic": false
         }
     }
