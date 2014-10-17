@@ -58,7 +58,7 @@
         "paas": {
             "document-root": "frontend",
             "index-document": "index.php",
-            "compile": ["composer install --dev","./init --env=Dotenv --overwrite=n","./yii migrate"],
+            "compile": ["composer.phar install --dev","./init --env=Dotenv --overwrite=n","./yii migrate"],
             "new-relic": false
         }
     }
