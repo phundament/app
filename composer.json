@@ -20,15 +20,15 @@
     "minimum-stability": "stable",
     "require": {
         "php": ">=5.4.0",
+        "vlucas/phpdotenv": "1.*",
         "yiisoft/yii2-composer": "*",
         "yiisoft/yii2": "2.0.*",
         "yiisoft/yii2-bootstrap": "2.*",
         "yiisoft/yii2-swiftmailer": "2.*",
         "dektrium/yii2-user": "*",
-        "vlucas/phpdotenv": "1.*",
         "dmstr/yii2-migrate-command": "dev-master",
-        "schmunk42/yii2-packaii": "dev-master",
-        "dmstr/yii2-adminlte-asset": "dev-master"
+        "dmstr/yii2-adminlte-asset": "dev-master",
+        "schmunk42/yii2-packaii": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "2.*",
@@ -54,6 +54,12 @@
         "asset-installer-paths": {
             "npm-asset-library": "vendor/npm",
             "bower-asset-library": "vendor/bower"
+        },
+        "paas": {
+            "document-root": "frontend",
+            "index-document": "index.php",
+            "compile": ["./yii migrate"],
+            "new-relic": false
         }
     }
 }

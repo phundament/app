@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "dd411b5e142aa8e38ccdaa81b7b51c13",
+    "hash": "f2ce7fb1ab32e36ef5636fa5a9ebd43b",
     "packages": [
         {
             "name": "2amigos/yii2-arrayquery-component",
@@ -504,12 +504,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-adminlte-asset.git",
-                "reference": "879800d440b005f8d1fdbe16a84bb54c1e5f4755"
+                "reference": "39f4b4dd1d5f14764fc72b805554eb0a563afd24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-adminlte-asset/zipball/879800d440b005f8d1fdbe16a84bb54c1e5f4755",
-                "reference": "879800d440b005f8d1fdbe16a84bb54c1e5f4755",
+                "url": "https://api.github.com/repos/dmstr/yii2-adminlte-asset/zipball/39f4b4dd1d5f14764fc72b805554eb0a563afd24",
+                "reference": "39f4b4dd1d5f14764fc72b805554eb0a563afd24",
                 "shasum": ""
             },
             "require": {
@@ -536,7 +536,7 @@
                 "extension",
                 "yii2"
             ],
-            "time": "2014-10-02 00:01:14"
+            "time": "2014-10-16 18:17:02"
         },
         {
             "name": "dmstr/yii2-migrate-command",
@@ -1549,8 +1549,8 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "dmstr/yii2-migrate-command": 20,
-        "schmunk42/yii2-packaii": 20,
         "dmstr/yii2-adminlte-asset": 20,
+        "schmunk42/yii2-packaii": 20,
         "dmstr/yii2-app-command": 20,
         "schmunk42/yii2-giiant": 20
     },
