@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3c0d4dfbcf1174a271c8747b77b6285b",
+    "hash": "7142eec1de72608ec600197ceabed11d",
     "packages": [
         {
             "name": "2amigos/yii2-arrayquery-component",
@@ -1497,16 +1497,16 @@
         },
         {
             "name": "yiisoft/yii2-gii",
-            "version": "2.0.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-gii.git",
-                "reference": "0ab5293df49246a2002210150fa22af37fd9b782"
+                "reference": "e727a0c97d1921315e0a722dca56cb1fecb90c1d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/0ab5293df49246a2002210150fa22af37fd9b782",
-                "reference": "0ab5293df49246a2002210150fa22af37fd9b782",
+                "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/e727a0c97d1921315e0a722dca56cb1fecb90c1d",
+                "reference": "e727a0c97d1921315e0a722dca56cb1fecb90c1d",
                 "shasum": ""
             },
             "require": {
@@ -1542,7 +1542,7 @@
                 "gii",
                 "yii2"
             ],
-            "time": "2014-10-12 17:09:06"
+            "time": "2014-10-17 00:38:08"
         }
     ],
     "aliases": [],
@@ -1552,6 +1552,7 @@
         "dmstr/yii2-migrate-command": 20,
         "dmstr/yii2-adminlte-asset": 20,
         "schmunk42/yii2-packaii": 20,
+        "yiisoft/yii2-gii": 20,
         "schmunk42/yii2-giiant": 20
     },
     "prefer-stable": false,
