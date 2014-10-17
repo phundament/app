@@ -20,11 +20,11 @@ Getting Started
 Tutorials
 ---------
 
-- [Code Generation](40-code-generation.md)
-- [Testing](41-testing.md)
-- [Virtualization](42-vagrant.md)
-- **TBD** [Data Replication](43-replication.md)
+- [Code Generation](41-code-generation.md)
+- [Testing](42-testing.md)
 - [Extension Development](44-extension-development.md)
+- [Virtualization with vagrant](51-vagrant.md)
+- [PaaS Deployment](52-paas.md)
 
 Support
 -------
