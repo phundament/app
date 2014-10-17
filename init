@@ -23,7 +23,7 @@ $root = str_replace('\\', '/', __DIR__);
 $envs = require("$root/environments/index.php");
 $envNames = array_keys($envs);
 
-echo "Yii Application Initialization Tool v1.0\n\n";
+echo "Yii2 Application Initialization Tool\n\n";
 
 $envName = null;
 if (empty($params['env']) || $params['env'] === '1') {
