@@ -29,4 +29,4 @@ After initializing the application you have to adjust the `.env` file in your pr
 Alternatives
 ------------
 
-You can also use Phundament also with [Vagrant on a virtual-, cloud- or remote-server](42-installation-vagrant.md) or choose the configuration options *Development* and *Production* described in the standard `yiisoft/yii2-advanced-app`.
+You can also use Phundament also with [Vagrant on a virtual-, cloud- or remote-server](42-vagrant.md) or choose the configuration options *Development* and *Production* described in the standard `yiisoft/yii2-advanced-app`.
