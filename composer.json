@@ -19,7 +19,6 @@
     },
     "minimum-stability": "stable",
     "require": {
-        "fxp/composer-asset-plugin": "1.0.0-beta3",
         "php": ">=5.4.0",
         "vlucas/phpdotenv": "1.*",
         "yiisoft/yii2-composer": "*",
@@ -60,6 +59,8 @@
             "document-root": "frontend/web",
             "index-document": "index.php",
             "compile": [
+                "vendor/composer/bin/composer.phar global require 'fxp/composer-asset-plugin:1.0.0-beta3'",
+                "vendor/composer/bin/composer.phar install --no-dev",
                 "./init --env=Dotenv --overwrite=n",
                 "./yii migrate --interactive=0"
             ]
