@@ -18,7 +18,7 @@ Local VM with vagrant
 - Initialize application in puphpet environment:
 
     ```
-    ./init --env="Puphpet"
+    cp ./environments/_puphpet/puphpet/files/exec-once/init.sh ./puphpet/files/exec-once/init.sh
     ```
 
     *Note: This will copy the needed initialization script for the VM, which will switch your environment to _Development_ by default.*

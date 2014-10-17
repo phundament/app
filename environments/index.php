@@ -74,16 +74,4 @@ return [
             'frontend/config/main-local.php',
         ],
     ],
-    'Puphpet' => [
-        'path' => 'puphpet',
-        'setWritable' => [
-            'backend/runtime',
-            'backend/web/assets',
-            'frontend/runtime',
-            'frontend/web/assets',
-        ],
-        'setExecutable' => [
-            'yii',
-        ],
-    ],
 ];
