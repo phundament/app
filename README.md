@@ -1,7 +1,7 @@
 Phundament 4.0.x-dev
 ====================
 
-> Please note: This is a `dev` version. Do **NOT** use it for production yet.
+> Please note: This is a `beta` version.
 
 _Phundament_ is a _PHP_ application foundation based on _Yii Framework 2.0_.
 
