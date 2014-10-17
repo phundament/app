@@ -14,7 +14,7 @@ Quick-Start
 You can install the _Phundament 4_ application template using the following command:
 
 ~~~
-composer global require "fxp/composer-asset-plugin:1.0.0-beta2"
+composer global require "fxp/composer-asset-plugin:1.0.0-beta3"
 composer create-project --stability=dev phundament/app:4.0.x-dev app-v4
 ~~~
 
