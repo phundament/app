@@ -11,7 +11,7 @@ Features
 - guided CLI setup process
 - environment variables based configuration
 - puPHPet and vagrant support
-- works with PaaS
+- fully non-interactive deployment to work on PaaS
 - CLI task runner for application updates and testing
 - application backend dashboard [[screenshots](https://plus.google.com/+Phundament/posts/7y1TkmmsrcN?pid=6070967303804764434&oid=114873431066202526630)]
 - user management module
