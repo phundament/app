@@ -4,6 +4,21 @@ About
 Phundament is a PHP Application Foundation built upon Yii Framework 2.0 best for rapidly developing web
 applications.
 
+Features
+--------
+
+- *advanced-app* directory structure
+- guided CLI setup process
+- environment variables based configuration
+- puPHPet and vagrant support
+- works with PaaS
+- CLI task runner for application updates and testing
+- application backend dashboard [[screenshots](https://plus.google.com/+Phundament/posts/7y1TkmmsrcN?pid=6070967303804764434&oid=114873431066202526630)]
+- user management module
+- extension packages browser module
+- extended database migration support
+- extended model & crud code generators
+
 Based upon Yii2 Advanced Application Template
 ---------------------------------------------
 

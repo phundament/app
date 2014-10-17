@@ -19,23 +19,9 @@ composer create-project --stability=dev phundament/app:4.0.x-dev app-v4
 ~~~
 
 Follow the on-screen instructions to initialize your environment and setup your application.
+You should see an output, which is similar to [this](https://gist.github.com/schmunk42/3bcfbba5411bb9ea66f4).
 
-Open `http://path/to/frontend/web` in your browser.
-
-Features
---------
-
-- *advanced-app* directory structure
-- guided CLI setup process
-- environment variables based configuration
-- puPHPet and vagrant support
-- works with PaaS
-- CLI task runner for application updates and testing
-- application backend dashboard [[screenshots](https://plus.google.com/+Phundament/posts/7y1TkmmsrcN?pid=6070967303804764434&oid=114873431066202526630)]
-- user management module
-- extension packages browser module
-- extended database migration support
-- extended model & crud code generators
+Open `http://path/to/frontend/web` or `http://path/to/backend/web` in your browser.
 
 
 Resources
