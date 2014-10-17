@@ -24,15 +24,17 @@ YII_ENV: prod
 
 Update local `composer.json` file:
 
-    "paas": {
-        "document-root": "frontend/web",
-        "index-document": "index.php",
-        "compile": [
-            "vendor/composer/bin/composer.phar global require 'fxp/composer-asset-plugin:1.0.0-beta3'",
-            "vendor/composer/bin/composer.phar install --no-dev",
-            "./init --env=Dotenv --overwrite=n",
-            "./yii migrate --interactive=0"
-        ]
+    "extra": {
+        "paas": {
+            "document-root": "frontend/web",
+            "index-document": "index.php",
+            "compile": [
+                "vendor/composer/bin/composer.phar global require 'fxp/composer-asset-plugin:1.0.0-beta3'",
+                "vendor/composer/bin/composer.phar install --no-dev",
+                "./init --env=Dotenv --overwrite=n",
+                "./yii migrate --interactive=0"
+            ]
+        }
     }
 
 Setup git remote and push:

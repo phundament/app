@@ -54,16 +54,6 @@
         "asset-installer-paths": {
             "npm-asset-library": "vendor/npm",
             "bower-asset-library": "vendor/bower"
-        },
-        "paas": {
-            "document-root": "frontend/web",
-            "index-document": "index.php",
-            "compile": [
-                "vendor/composer/bin/composer.phar global require 'fxp/composer-asset-plugin:1.0.0-beta3'",
-                "vendor/composer/bin/composer.phar install --no-dev",
-                "./init --env=Dotenv --overwrite=n",
-                "./yii migrate --interactive=0"
-            ]
         }
     }
 }
