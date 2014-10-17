@@ -7,16 +7,6 @@ _Phundament_ is a _PHP_ application foundation based on _Yii Framework 2.0_.
 
 [![Build Status](https://travis-ci.org/phundament/app.svg?branch=4.0)](https://travis-ci.org/phundament/app)
 
-Features
---------
-
-- *advanced-app* directory structure
-- guided CLI setup process
-- application backend dashboard (wip)
-- user management module
-- package browser module (wip)
-- extended database migration support
-- extended model & crud code generators
 
 Quick-Start
 -----------
@@ -28,11 +18,30 @@ composer global require "fxp/composer-asset-plugin:1.0.0-beta2"
 composer create-project --stability=dev phundament/app:4.0.x-dev app-v4
 ~~~
 
-Follow the on-screen instructions to choose your environment and setup your application.
+Follow the on-screen instructions to initialize your environment and setup your application.
 
 Open `http://path/to/frontend/web` in your browser.
 
-Continue with the [documentation](docs/README.md) to configure your desired setup.
+Features
+--------
+
+- *advanced-app* directory structure
+- guided CLI setup process
+- environment variables based configuration
+- puPHPet and vagrant support
+- application backend dashboard [[screenshots](https://plus.google.com/+Phundament/posts/7y1TkmmsrcN?pid=6070967303804764434&oid=114873431066202526630)]
+- user management module
+- extension packages browser module
+- extended database migration support
+- extended model & crud code generators
+
+
+Resources
+---------
+
+- [Documentation](docs/README.md)
+- [Project Source-Code](https://github.com/phundament/app)
+- [Website](http://phundament.com)
 
 ---
 
