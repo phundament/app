@@ -1,9 +1,48 @@
-/vendor/
-/app/config/*-local.php
-/tests/codeception/_log
+/_html
+/tmp
+.env
 
+# yii console command
+/yii
+
+# phpstorm project files
+.idea
+
+# netbeans project files
+nbproject
+
+# zend studio for eclipse project files
+.buildpath
+.project
+.settings
+
+# windows thumbnail cache
+Thumbs.db
+
+# composer vendor dir
+/vendor
+
+# composer itself is not needed
+composer.phar
+
+# Mac DS_Store Files
+.DS_Store
+
+# apidoc generated documentation
+docs-html
+
+# phpunit itself is not needed
+phpunit.phar
+
+# local phpunit config
+/phpunit.xml
+
+# IDEs
 nbproject
 .DS_Store
 .idea
 *.swp
 .vagrant
+logs
+
+tests/_output/*

@@ -2,17 +2,30 @@ language: php
 
 php:
   - 5.4
+  - 5.5
+  - 5.6
+#  - hhvm
+
+# run build against PHP 5.6 and hhvm but allow them to fail
+# http://docs.travis-ci.com/user/build-configuration/#Rows-That-are-Allowed-To-Fail
+matrix:
+  allow_failures:
+    - php: hhvm
+    - php: 5.6
+
+install:
+  - composer self-update && composer --version
+# basic application:
+  - composer global require "fxp/composer-asset-plugin:1.0.0-beta3"
+  - export PATH=~/.composer/vendor/bin:$PATH
+  - composer install --dev --prefer-dist
+  - ./init --env=Development --overwrite=n
 
 before_script:
-    - composer require --dev "codeception/codeception:1.6.7"
-    - php -S localhost:31415 -t www/ &
+  - mysql -e 'create database p4_test;'
+  - mysql -e "CREATE USER 'dev'@'localhost' IDENTIFIED BY 'dev123';"
+  - mysql -uroot -e "GRANT ALL PRIVILEGES ON * . * TO 'dev'@'localhost';"
+  - php yii app/setup-tests --interactive=0
 
-script: sh test.sh
-
-env:
-    - PHUNDAMENT_TEST=true
-
-branches:
-  only:
-    - master
-    - develop
+script:
+  - php yii app/run-tests --interactive=0

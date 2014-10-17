@@ -1,111 +1,41 @@
-Phundament
-==========
+Phundament 4.0.x-dev
+====================
 
-**Version 3.0.24**
+> Please note: This is a `dev` version. Do **NOT** use it for production yet.
 
+_Phundament_ is a _PHP_ application foundation based on _Yii Framework 2.0_.
 
-What is it?
--------------------
+[![Build Status](https://travis-ci.org/phundament/app.svg?branch=4.0)](https://travis-ci.org/phundament/app)
 
-Phundament is a solid, highly customizable universal application foundation built with [composer](http://getcomposer.org) 
-upon [Yii Framework](http://yiiframework.com). 
-
-It's goal is the seamless integration of Yii extensions and libraries bundled in composer packages packages. 
-[Read on…](https://github.com/phundament/app/wiki/Phundament)
-
----
-
-**If you're looking for the Yii 2 version of Phundament please visit our [`4.0.x-dev` branch](https://github.com/phundament/app/tree/4.0).**
-
----
 
 Quick-Start
 -----------
 
-### Step 1
-   Option A) If you have [composer already installed](http://getcomposer.org/doc/00-intro.md#installation-nix)
-   
-```
-composer.phar create-project phundament/app:3.* app-v3
-```
-   
-   Option B) [Download](https://github.com/phundament/app/tags), extract, enter the app root folder
-      and start the installation process with
-```
-php composer.phar create-project
-```
+You can install the _Phundament 4_ application template using the following command:
 
-When asked, create local configuration files and choose your environment.
+~~~
+composer global require "fxp/composer-asset-plugin:1.0.0-beta3"
+composer create-project --stability=dev phundament/app:4.0.x-dev app-v4
+~~~
 
-### Step 2
+Follow the on-screen instructions to initialize your environment and setup your application.
+You should see an output, which is similar to [this](https://gist.github.com/schmunk42/3bcfbba5411bb9ea66f4).
 
-Apply the database migrations and enter your desired admin credentials.
-
-```
-cd app-v3
-app/yiic migrate
-```
-
-### Step 3
-
-Open `http://localhost/my-app/www/index.php` in your browser
-
-[Manage your application](https://github.com/phundament/app/wiki/Content-Management)
-
-*You may add the `--no-dev` option for production systems or use `--prefer-source` if you want to develop packages.*
-
-*Note: if you want to install Phundament 3 with a MySQL database, you have to update your config first, see the [Setup](https://github.com/phundament/app/wiki/Setup) section in our wiki.*
-
-Documentation
--------------
-
- * [The Definitive Guide to Phundament](https://github.com/phundament/app/wiki)
-
-Demo
-----
-
- * Try a test-drive at the [Demo Page](http://demo.phundament.com/3.0-dev)
-   * Login with `admin` / `admin`. **The demo website will be resetted every 6 hours.**
+Open `http://path/to/frontend/web` or `http://path/to/backend/web` in your browser.
 
 
 Resources
 ---------
 
-[![Latest Stable Version](https://poser.pugx.org/phundament/app/v/stable.png)](https://packagist.org/packages/phundament/app)
-[![Total Downloads](https://poser.pugx.org/phundament/app/downloads.png)](https://packagist.org/packages/phundament/app)
+- [Documentation](docs/README.md)
+- [Project Source-Code](https://github.com/phundament/app)
+- [Website](http://phundament.com)
 
-[![Latest Unstable Version](https://poser.pugx.org/phundament/app/v/unstable.png)](https://packagist.org/packages/phundament/app)
-[![Build Status](https://travis-ci.org/phundament/app.png?branch=develop)](https://travis-ci.org/phundament/app)
+---
 
-[![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/phundament/app/badges/quality-score.png?s=4d1ce01151a4e82df75b563e7ccf0001cc227bd1)](https://scrutinizer-ci.com/g/phundament/app/)
-[![Dependencies Status](https://depending.in/phundament/app.png)](http://depending.in/phundament/app)
+If you're looking for the Yii 1.1 version of Phundament please visit our [`3.0` branch](https://github.com/phundament/app/tree/3.0).
 
-### Fundamentals
- *  [Documentation](https://github.com/phundament/app/wiki/)
- *  [API Class Reference](http://docs.phundament.com/3.0)
- *  [FAQ / Troubleshooting](https://github.com/phundament/app/wiki/FAQ)
- *  [Support](https://github.com/phundament/app/wiki/Support)
- *  [Report a bug](https://github.com/phundament/app/issues)
- *  Composer Repository [packages.phundament.com](http://packages.phundament.com)
+---
 
-### Information
- *  [CHANGELOG](https://github.com/phundament/app/blob/master/CHANGELOG.md)
- *  [License](https://github.com/phundament/app/blob/master/LICENSE) BSD
-
-### Links
- *  [Phundament Website](http://phundament.com)
- *  [View at Yii Extensions](http://www.yiiframework.com/extension/phundament/)
- *  [View at packagist.org](https://packagist.org/packages/phundament/app)
- *  [Fork on github](https://github.com/phundament/app)
- *  [Downloads](https://github.com/phundament/app/tags)
- *  [Continuous Integration](https://travis-ci.org/phundament/app.png?branch=master)  
- *  [Company Website](http://herzogkommunikation.de)
- *  [Demo Website](http://demo.phundament.com/3.0-dev/)
-
-### Social Networks
- *  [Twitter](http://twitter.com/#!/phundament)
- *  [Facebook](http://www.facebook.com/phundament)
- *  [Google+](https://plus.google.com/114873431066202526630)
-
-### Contact
- *  phundament@usrbin.de
+> "Hey There! This file is part of **your project** now and should contain some useful information about it.
+> Feel free to modify it accordingly to your needs and remove this marker."

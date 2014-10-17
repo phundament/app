@@ -1,98 +1,59 @@
 {
-    "name":"phundament/app",
-    "description":"Yii Framework Application Boilerplate, with packages from composer repository http://packages.phundament.com",
-    "keywords":["yii", "web", "application", "boilerplate", "foundation", "template"],
-    "homepage":"http://phundament.com/",
-    "type":"yii-application",
-    "license":"BSD-3-Clause",
-    "authors":[
+    "name": "phundament/app",
+    "description": "Yii 2 Application Template",
+    "keywords": ["phundament", "yii2", "framework", "application template", "vagrant"],
+    "homepage": "http://www.phundament.com/",
+    "type": "project",
+    "license": "BSD-3-Clause",
+    "authors": [
         {
-            "name":"Tobias Munk",
-            "email":"schmunk@usrbin.de",
-            "homepage":"http://www.phundament.com"
+            "name": "Tobias Munk",
+            "email": "schmunk@usrbin.de",
+            "homepage": "http://www.phundament.com"
         }
     ],
-    "support":{
-        "email":"phundament@usrbin.de",
-        "issues":"https://github.com/phundament/app/issues",
-        "forum":"http://phundament.com/en/forum-13.html",
-        "faq":"http://stackoverflow.com/questions/tagged/phundament",
-        "wiki":"https://github.com/phundament/app/wiki",
-        "source":"https://github.com/phundament/app"
+    "support": {
+        "issues": "https://github.com/phundament/app/issues?state=open",
+        "forum": "https://groups.google.com/forum/#!forum/phundament-dev",
+        "source": "https://github.com/phundament/app"
     },
-    "repositories":[
-        {
-            "type": "git",
-            "url": "https://github.com/schmunk42/packagecompressor.git"
-        },
-        {
-            "type":"git",
-            "url":"https://github.com/schmunk42/yii-rights.git"
-        },
-        {
-            "type":"git",
-            "url":"https://github.com/Quexer69/yii.translate.git"
-        },
-        {
-            "type":"composer",
-            "url":"http://packages.phundament.com"
-        }
-    ],
-    "minimum-stability":"stable",
-    "require":{
-        "php":">=5.3.2",
-        "clevertech/yiibooster":"2.0.*",
-        "crisu83/yii-rights":"@dev",
-        "gusnips/yii-translate" : "dev-master",
-        "malyshev/yii-debug-toolbar":"dev-master#85d5955bfe3cc5d874825bd6f9e3e56830927890",
-        "mikehaertl/packagecompressor": "dev-develop",
-        "mishamx/yii-user":"@dev",
-        "moein7tl/yii-introjs":"@dev",
-        "nordsoftware/yii-emailer": "1.*",
-        "phundament/backend-theme":"@dev",
-        "phundament/jquery-file-upload": "@dev",
-        "phundament/p3admin":"0.16.*",
-        "phundament/p3extensions":">=0.17.1",
-        "phundament/p3bootstrap":"0.23.*",
-        "phundament/p3pages":"0.17.*",
-        "phundament/p3media":"0.17.*",
-        "phundament/p3widgets":"0.17.*",
-        "schmunk42/ckeditor-configurator":"@dev",
-        "schmunk42/multi-theme":"0.1.*",
-        "schmunk42/web-user-behavior":"0.1.*",
-        "waalzer/app-demo-data": "@dev",
-        "yiiext/fancybox-widget":"0.*",
-        "yiiext/lipsum-widget":"0.*",
-        "yiiext/migrate-command":"dev-master#35f315b as 0.7.2.1",
-        "yiisoft/yii":"1.1.14",
-        "nordsoftware/yii-utils": "@dev",
-        "mikehaertl/translatable": "~1.1.0"
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.4.0",
+        "vlucas/phpdotenv": "1.*",
+        "yiisoft/yii2-composer": "*",
+        "yiisoft/yii2": "2.0.*",
+        "yiisoft/yii2-bootstrap": "2.*",
+        "yiisoft/yii2-swiftmailer": "2.*",
+        "dektrium/yii2-user": "*",
+        "dmstr/yii2-app-command": "dev-master",
+        "dmstr/yii2-migrate-command": "dev-master",
+        "dmstr/yii2-adminlte-asset": "dev-master",
+        "schmunk42/yii2-packaii": "dev-master"
     },
-    "require-dev":{
-        "cloudhead/less.js":"1.3.*",
-        "crisu83/yii-less":"2.0.2",
-        "phundament/gii-template-collection":"dev-develop as 0.13.0",
-        "phundament/lessii":"@dev",
-        "schmunk42/database-command":"0.8.*",
-        "schmunk42/giic":"@dev",
-        "thomaspark/bootswatch":"2.3.*",
-        "twitter/bootstrap":"2.3.*"
+    "require-dev": {
+        "yiisoft/yii2-debug": "2.*",
+        "yiisoft/yii2-gii": "dev-master",
+        "yiisoft/yii2-faker": "2.*",
+        "schmunk42/yii2-giiant": "dev-master"
     },
-    "autoload":{
-        "psr-0":{
-            "Phundament":"./src"
+    "autoload": {
+        "psr-4": {
+            "console\\helpers\\": "./console/helpers"
         }
     },
-    "scripts":{
-        "pre-install-cmd":"Phundament\\ComposerCallback::preInstall",
-        "post-install-cmd":"Phundament\\ComposerCallback::postInstall",
-        "pre-update-cmd":"Phundament\\ComposerCallback::preUpdate",
-        "post-update-cmd":"Phundament\\ComposerCallback::postUpdate",
-        "post-package-install":[
-            "Phundament\\ComposerCallback::postPackageInstall"
-        ],
-        "post-package-update":[
-            "Phundament\\ComposerCallback::postPackageUpdate"
+    "scripts": {
+        "post-create-project-cmd": [
+            "console\\helpers\\ComposerCallback::createProject"
         ]
+    },
+    "config": {
+        "process-timeout": 1800
+    },
+    "extra": {
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
     }
 }
