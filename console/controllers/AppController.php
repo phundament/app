@@ -14,7 +14,7 @@ use dmstr\console\controllers\BaseAppController;
 
 
 /**
- * Helper command for the application
+ * Task runner command for development.
  * @package console\controllers
  * @author Tobias Munk <tobias@diemeisterei.de>
  */
