@@ -56,7 +56,7 @@
             "bower-asset-library": "vendor/bower"
         },
         "paas": {
-            "document-root": "frontend",
+            "document-root": "frontend/web",
             "index-document": "index.php",
             "compile": ["./init --env=Dotenv --overwrite=n","./yii migrate --interactive=0"],
             "new-relic": false
