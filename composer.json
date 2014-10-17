@@ -58,8 +58,12 @@
         "paas": {
             "document-root": "frontend/web",
             "index-document": "index.php",
-            "compile": ["./init --env=Dotenv --overwrite=n","./yii migrate --interactive=0"],
-            "new-relic": false
+            "compile": [
+                "/app/vendor/composer/bin/composer.phar global require 'fxp/composer-asset-plugin:1.0.0-beta2'",
+                "/app/vendor/composer/bin/composer.phar install --no-dev",
+                "./init --env=Dotenv --overwrite=n",
+                "./yii migrate --interactive=0"
+            ]
         }
     }
 }
