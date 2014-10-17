@@ -6,8 +6,9 @@ Appsdeck
 
 > Note: This feature is in development!
 
+- Make sure to have your application in a git repository
 - Register and setup account at [appsdeck](https://appsdeck.eu/home/apps)
-- Create App
+- `Create App` on Appsdeck
 - Under `Addons` add a *MySQL* database
 - Update `Environment`, make sure to fill in the values for `DATABASE_...` taken from `APPSDECK_MYSQL_URL`
 
