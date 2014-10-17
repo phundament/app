@@ -26,6 +26,7 @@
         "yiisoft/yii2-bootstrap": "2.*",
         "yiisoft/yii2-swiftmailer": "2.*",
         "dektrium/yii2-user": "*",
+        "dmstr/yii2-app-command": "dev-master",
         "dmstr/yii2-migrate-command": "dev-master",
         "dmstr/yii2-adminlte-asset": "dev-master",
         "schmunk42/yii2-packaii": "dev-master"
@@ -34,7 +35,6 @@
         "yiisoft/yii2-debug": "2.*",
         "yiisoft/yii2-gii": "2.*",
         "yiisoft/yii2-faker": "2.*",
-        "dmstr/yii2-app-command": "dev-master",
         "schmunk42/yii2-giiant": "dev-master"
     },
     "autoload": {
@@ -58,7 +58,7 @@
         "paas": {
             "document-root": "frontend",
             "index-document": "index.php",
-            "compile": ["composer.phar install --dev","./init --env=Dotenv --overwrite=n","./yii migrate"],
+            "compile": ["./init --env=Dotenv --overwrite=n","./yii migrate"],
             "new-relic": false
         }
     }

@@ -6,17 +6,18 @@ $params = \yii\helpers\ArrayHelper::merge(
     require(__DIR__ . '/params-local.php')
 );
 
-return [
+$config = [
     'id' => 'app-console',
     'basePath' => dirname(__DIR__),
-    'bootstrap' => ['log', 'gii'],
+    'bootstrap' => [
+        'log'
+    ],
     'controllerNamespace' => 'console\controllers',
     'controllerMap'       => [
         'app'     => 'console\\controllers\\AppController',
         'migrate' => 'dmstr\\console\\controllers\\MigrateController',
     ],
     'modules' => [
-        'gii' => 'yii\gii\Module',
     ],
     'components' => [
         'log' => [
@@ -30,3 +31,10 @@ return [
     ],
     'params'              => $params,
 ];
+
+if (YII_ENV == 'dev') {
+    $config['bootstrap'][] = 'gii';
+    $config['modules']['gii'] = 'yii\gii\Module';
+}
+
+return $config;
