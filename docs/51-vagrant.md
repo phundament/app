@@ -10,7 +10,7 @@ Docker
 
 Initialize project:
 
-    composer create-project --prefer-dist
+    composer create-project --prefer-dist phundament/app
     ./init --env=Dotenv
 
 Copy files from `environments/_docker` to project root
