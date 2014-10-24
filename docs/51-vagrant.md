@@ -83,7 +83,7 @@ vagrant ssh --command /var/www/yii app/update
 Cloud Installation
 ------------------
 
-### AWS EC2 deployment
+### AWS EC2
 
 #### Setup
 
