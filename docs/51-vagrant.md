@@ -5,8 +5,8 @@ Phundament uses [Vagrant](https://www.vagrantup.com), [VirtualBox](https://www.v
 
 But thanks to the flexibility of the above tools you should be able to choose from a wide variety of available components, including VMWare, Parallels, HyperV, RedHat, Amazon AWS, DigitalOcean, Rackspace and many more.
 
-Docker
-------
+Docker Container
+----------------
 
 Create project:
 
@@ -33,8 +33,8 @@ You should now be able to access the container under `http://docker.local:8280`
 
 
 
-Local VM with vagrant
----------------------
+Local VM
+--------
 
 - Install [Vagrant](https://www.vagrantup.com) and [VirtualBox](https://www.virtualbox.org)
 - Go to an exsting Phundament 4 project or `git clone -b4.0 https://github.com/phundament/app.git` a new one.
@@ -80,8 +80,8 @@ vagrant ssh --command /var/www/yii app/update
 ```
 
 
-Cloud installations
--------------------
+Cloud Installation
+------------------
 
 ### AWS EC2 deployment
 
@@ -113,3 +113,6 @@ You may use the base configuration from `environments/virtual` and switch to AWS
   * Testing (free) instance only available from `region: us-west-2`(?) US West (Oregon)
   * "Intelligent folder sync" (excluding vendor, web/assets...) Note: needs vagrans-aws >0.4.1 - no tag at the moment
 
+### Digitalocean
+
+tbd
