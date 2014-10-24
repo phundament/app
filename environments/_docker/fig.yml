@@ -1,0 +1,11 @@
+web:
+    build: .
+    command: php -S 0.0.0.0:8000 -t /app/frontend/web
+    ports:
+        - "8000:8000"
+    volumes:
+        - ./:/app
+    links:
+        - db
+db:
+    image: mysql
