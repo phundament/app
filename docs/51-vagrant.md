@@ -10,10 +10,17 @@ Docker
 
 Copy files from `environments/_docker` to project root
 
+Initialize project:
+
     composer create-project
     ./init --env=Dotenv
 
+Run container:
+
     vagrant up --provider=docker
+    vagrant docker-run web -- sh /app/environments/_docker/container-init.sh
+
+You should be able to access the container under `http://docker.local:8280`
 
 Local VM with vagrant
 ---------------------
