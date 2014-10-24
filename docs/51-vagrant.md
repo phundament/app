@@ -8,22 +8,25 @@ But thanks to the flexibility of the above tools you should be able to choose fr
 Docker
 ------
 
-Initialize project:
+Create project:
 
     composer create-project --stability=dev --prefer-dist phundament/app p4-docker
     cd p4-docker
+    
+Initialize and Copy files from `environments/_docker` to project root:
+
     ./init --env=Dotenv
-
-Copy files from `environments/_docker` to project root
-
     cp ./environments/_docker/Dockerfile .
     cp ./environments/_docker/Vagrantfile .
 
-If needed, adjust your config settings, such as port-forwardings, in the `Vagrantfile` and run the container:
-
 > Note: For Mac OS X or Windows you may use the provided Vagrantfile for a docker host-vm, set the ENV var and uncomment the config settings for `docker.vagrant_vagrantfile`.
 
+Review the config settings, such as port-forwardings, in the `Vagrantfile` and run the container:
+
     vagrant up --provider=docker
+
+You also have to initialize application once:
+    
     vagrant docker-run web -- sh /app/environments/_docker/container-init.sh
 
 You should now be able to access the container under `http://docker.local:8280`
