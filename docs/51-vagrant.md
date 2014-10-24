@@ -1,9 +1,9 @@
 Virtualization
 ==============
 
-Phundament uses [Vagrant](https://www.vagrantup.com), [VirtualBox](https://www.virtualbox.org) and [PuPHPet](https://puphpet.com) on a Debian Wheezy installation for its default virtualization configuration.
+Phundament supports various tools like [Docker](https://www.docker.com), [Vagrant](https://www.vagrantup.com), [VirtualBox](https://www.virtualbox.org) or [PuPHPet](https://puphpet.com) on different platforms.
 
-But thanks to the flexibility of the above tools you should be able to choose from a wide variety of available components, including VMWare, Parallels, HyperV, RedHat, Amazon AWS, DigitalOcean, Rackspace and many more.
+You can choose from additionally available components, including VMWare, Parallels, HyperV, RedHat, Amazon AWS, DigitalOcean, Rackspace and many more.
 
 Docker Container
 ----------------
@@ -19,9 +19,13 @@ Initialize and Copy files from `environments/_docker` to project root:
     cp ./environments/_docker/Dockerfile .
     cp ./environments/_docker/Vagrantfile .
 
-> Note: For Mac OS X or Windows you may use the provided Vagrantfile for a docker host-vm, set the ENV var and uncomment the config settings for `docker.vagrant_vagrantfile`.
+> Note: For Mac OS X or Windows users!
 
-Review the config settings, such as port-forwardings, in the `Vagrantfile` and run the container:
+> You may use the provided config from `./environments/_docker/dockerhost-vm/Vagrantfile` to create a docker host VM.
+> Set the ENV your `DOCKER_HOST_VAGRANTFILE` to the path of the  Vagrantfile aforementioned and uncomment the config 
+> settings for `docker.vagrant_vagrantfile` in `./Vagrantfile` .
+
+Review the config settings, such as port-forwardings, in the `./Vagrantfile` and run the container:
 
     vagrant up --provider=docker
 
@@ -29,7 +33,7 @@ You also have to initialize application once:
     
     vagrant docker-run web -- sh /app/environments/_docker/container-init.sh
 
-You should now be able to access the container under `http://docker.local:8280`
+You should now be able to access the container under `http://192.168.7.6:8280` and `http://192.168.7.6:8280/backend`
 
 
 
