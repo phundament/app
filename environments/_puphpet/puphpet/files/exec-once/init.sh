@@ -1,6 +1,6 @@
 cd /var/www
 composer self-update
-composer global require "fxp/composer-asset-plugin:1.0.0-beta2"
+composer global require "fxp/composer-asset-plugin:1.0.0-beta3"
 composer install
 ./init --env=Development --overwrite=n
 ./yii migrate/up --interactive=0

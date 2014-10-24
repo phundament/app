@@ -5,6 +5,15 @@ Phundament uses [Vagrant](https://www.vagrantup.com), [VirtualBox](https://www.v
 
 But thanks to the flexibility of the above tools you should be able to choose from a wide variety of available components, including VMWare, Parallels, HyperV, RedHat, Amazon AWS, DigitalOcean, Rackspace and many more.
 
+Docker
+------
+
+Copy files from `environments/_docker` to project root
+
+    composer create-project
+    ./init --env=Dotenv
+
+    vagrant up --provider=docker
 
 Local VM with vagrant
 ---------------------
