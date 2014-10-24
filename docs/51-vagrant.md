@@ -10,13 +10,14 @@ Docker
 
 Initialize project:
 
-    composer create-project --prefer-dist phundament/app
+    composer create-project --stability=dev --prefer-dist phundament/app p4-docker
+    cd p4-docker
     ./init --env=Dotenv
 
 Copy files from `environments/_docker` to project root
 
-    cp environments/_docker/Dockerfile .
-    cp environments/_docker/Vagrantfile .
+    cp ./environments/_docker/Dockerfile .
+    cp ./environments/_docker/Vagrantfile .
 
 If needed, adjust your config settings, such as port-forwardings, in the `Vagrantfile` and run the container:
 
