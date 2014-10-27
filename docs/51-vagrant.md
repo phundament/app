@@ -47,7 +47,7 @@ Initialize and Copy files from `environments/_docker` to project root:
 
     ./init --env=Dotenv
     cp ./environments/_docker/Dockerfile .
-    cp ./environments/_docker/Vagrantfile .
+    cp ./environments/_docker-vagrant/Vagrantfile .
 
 > Note: For Mac OS X or Windows users!
 
