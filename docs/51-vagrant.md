@@ -37,7 +37,7 @@ To initialize your application run the following commands once:
 
     fig run backend /app/yii app/migrate --interactive=0
 
-You should now be able to access the container under `http://docker.local:20080` and `http://docker.local:8280/backend`
+You should now be able to access the container under `http://docker.local:10080` and `http://docker.local:10081`
 
 
 
