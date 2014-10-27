@@ -19,6 +19,7 @@ Create project:
 
 Copy fig config to project root:
 
+    ./init --env=Dotenv
     cp ./environments/_docker/Dockerfile .
     cp ./environments/_docker/fig.yml .
 
