@@ -17,21 +17,27 @@ Create project:
 
 ### Option: fig
 
-Copy fig config to project root
+Copy fig config to project root:
 
+    cp ./environments/_docker/Dockerfile .
     cp ./environments/_docker/fig.yml .
 
-Edit `common/config/env.php` to map the fig ENV vars to the Phundament application
+Edit `./.env` to map the fig ENV vars to the Phundament application
 
-    // mapping ENV vars from fig to application
-    putenv('DATABASE_DSN=mysql:host='.getenv('DB_PORT_3306_TCP_ADDR').';dbname='.getenv('DB_ENV_MYSQL_DATABASE'));
-    putenv('DATABASE_USER='.getenv('DB_ENV_MYSQL_USER'));
-    putenv('DATABASE_PASSWORD='.getenv('DB_ENV_MYSQL_PASSWORD'));
+    # Database configuration
+    DATABASE_DSN=mysql:host={$DB_PORT_3306_TCP_ADDR};dbname={$DB_ENV_MYSQL_DATABASE}
+    DATABASE_USER={$DB_ENV_MYSQL_USER}
+    DATABASE_PASSWORD={DB_ENV_MYSQL_PASSWORD}
 
-Start containers
+Start the application containers:
 
     fig up
 
+To initialize your application run the following commands once:
+
+    fig run backend /app/yii app/migrate --interactive=0
+
+You should now be able to access the container under `http://docker.local:20080` and `http://docker.local:8280/backend`
 
 
 

@@ -1,5 +1,5 @@
 frontend:
-    image: schmunk42/docker-p4
+    build: .
     command: php -S 0.0.0.0:8000 -t /app/frontend/web
     ports:
         - "10080:8000"
@@ -12,7 +12,7 @@ frontend:
     environment:
         APP_NAME: Phundament 4 fig
 backend:
-    image: schmunk42/docker-p4
+    build: .
     command: php -S 0.0.0.0:8001 -t /app/backend/web
     ports:
         - "10081:8001"
