@@ -1,6 +1,8 @@
 Virtualization
 ==============
 
+> NOTE! This section is under development
+
 Phundament supports various tools like [Docker](https://www.docker.com), [Vagrant](https://www.vagrantup.com), [VirtualBox](https://www.virtualbox.org) or [PuPHPet](https://puphpet.com) on different platforms.
 
 You can choose from additionally available components, including VMWare, Parallels, HyperV, RedHat, Amazon AWS, DigitalOcean, Rackspace and many more.
@@ -12,7 +14,29 @@ Create project:
 
     composer create-project --stability=dev --prefer-dist phundament/app p4-docker
     cd p4-docker
-    
+
+### Option: fig
+
+Copy fig config to project root
+
+    cp ./environments/_docker/fig.yml .
+
+Edit `common/config/env.php` to map the fig ENV vars to the Phundament application
+
+    // mapping ENV vars from fig to application
+    putenv('DATABASE_DSN=mysql:host='.getenv('DB_PORT_3306_TCP_ADDR').';dbname='.getenv('DB_ENV_MYSQL_DATABASE'));
+    putenv('DATABASE_USER='.getenv('DB_ENV_MYSQL_USER'));
+    putenv('DATABASE_PASSWORD='.getenv('DB_ENV_MYSQL_PASSWORD'));
+
+Start containers
+
+    fig up
+
+
+
+
+### Option: vagrant
+
 Initialize and Copy files from `environments/_docker` to project root:
 
     ./init --env=Dotenv

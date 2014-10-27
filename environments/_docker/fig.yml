@@ -1,11 +1,33 @@
-web:
-    build: .
+frontend:
+    image: schmunk42/docker-p4
     command: php -S 0.0.0.0:8000 -t /app/frontend/web
     ports:
-        - "8000:8000"
+        - "10080:8000"
+    expose:
+        - "8000"
     volumes:
-        - ./:/app
+        - ./:/app/
     links:
         - db
+    environment:
+        APP_NAME: Phundament 4 fig
+backend:
+    image: schmunk42/docker-p4
+    command: php -S 0.0.0.0:8001 -t /app/backend/web
+    ports:
+        - "10081:8001"
+    expose:
+        - "8001"
+    volumes:
+        - ./:/app/
+    links:
+        - db
+    environment:
+        APP_NAME: Phundament 4 fig
 db:
     image: mysql
+    environment:
+        MYSQL_ROOT_PASSWORD: secretroot
+        MYSQL_USER: dev
+        MYSQL_PASSWORD: dev123
+        MYSQL_DATABASE: p4
