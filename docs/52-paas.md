@@ -1,7 +1,7 @@
 Deploy
 ======
 
-> Note! Feature is under development.
+> NOTE! This section is under development
 
 Platform as a Service (Paas)
 ----------------------------

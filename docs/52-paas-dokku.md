@@ -1,7 +1,7 @@
 Dokku
 ======
 
-> Note! Feature is under development.
+> NOTE! This section is under development
 
 Phundament 4 comes with built-in support for some PaaS providers thanks to the [yii-dna-deployment](https://github.com/neam/yii-dna-deployment) extension.
 

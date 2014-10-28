@@ -1,10 +1,10 @@
 PaaS
 ====
 
+> NOTE! This section is under development
+
 Appsdeck
 --------
-
-> Note: This feature is in development!
 
 - Make sure to have your application in a git repository
 - Register and setup account at [appsdeck](https://appsdeck.eu/home/apps)

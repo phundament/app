@@ -84,3 +84,11 @@ tests/
 vendor/                 dependent 3rd-party packages
 ```
 
+Branches
+--------
+
+The Phundament repository contains the following main branches:
+
+- master (development, unstable)
+- 4.0 (alpha, beta, RC, stable releases)
+- 3.0 (alpha, beta, RC, stable releases)
