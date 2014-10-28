@@ -1,4 +1,3 @@
 .git
-*/runtime/*
-*/assets/*
-vendor
+runtime/*
+assets/*
