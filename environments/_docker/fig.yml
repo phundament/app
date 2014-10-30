@@ -31,3 +31,5 @@ db:
         MYSQL_USER: dev
         MYSQL_PASSWORD: dev123
         MYSQL_DATABASE: p4
+    expose:
+        - "3306"
