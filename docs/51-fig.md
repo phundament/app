@@ -18,7 +18,6 @@ Copy fig config to project root:
 
 Edit `./.env` to map the fig ENV vars to the Phundament application
 
-    # Database configuration
     DATABASE_DSN=mysql:host={$DB_PORT_3306_TCP_ADDR};dbname={$DB_ENV_MYSQL_DATABASE}
     DATABASE_USER={$DB_ENV_MYSQL_USER}
     DATABASE_PASSWORD={$DB_ENV_MYSQL_PASSWORD}

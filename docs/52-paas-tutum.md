@@ -12,6 +12,12 @@ Initialize application:
     cp ./environments/_tutum/Dockerfile .
     cp ./environments/_tutum/tutum-run.sh .
 
+Edit your `.env` variables and map the database credentials:
+
+    DATABASE_DSN=mysql:host={$DB_PORT_3306_TCP_ADDR};port={$DB_PORT_3306_TCP_PORT};dbname={$DB_ENV_MYSQL_DATABASE}
+    DATABASE_USER={$DB_ENV_MYSQL_USER}
+    DATABASE_PASSWORD={$DB_ENV_MYSQL_PASSWORD}
+
 Build, tag and push update image:
 
     docker build -t myapp .
@@ -20,7 +26,7 @@ Build, tag and push update image:
 
 Create an database service and link the Phundament app to it and run:
 
-    export APPNAME="phundament"
+    export APPNAME="myapp"
 
     tutum service run -n $APPNAME-mysql \
       -e "MYSQL_ROOT_PASSWORD=supersecret" \
