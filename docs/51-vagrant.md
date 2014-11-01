@@ -43,6 +43,6 @@ vagrant ssh
 You can run commands directly, for example to update the application in the virtual machine:
 
 ```
-vagrant ssh --command /var/www/yii app/update
+vagrant ssh --command "/var/www/yii"
 ```
 
