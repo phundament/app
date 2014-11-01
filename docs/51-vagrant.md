@@ -40,7 +40,7 @@ To open a shell in the VM run:
 vagrant ssh
 ```
 
-You can run commands directly, for example to update the application in the virtual machine:
+You can run commands directly in the virtual machine, eg.:
 
 ```
 vagrant ssh --command "/var/www/yii"
