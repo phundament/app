@@ -32,8 +32,6 @@ Local VM with vagrant
 
 ### Accessing application in virtual machine
 
-> TODO: check stdin for migration
-
 To open a shell in the VM run:
 
 ```
