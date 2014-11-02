@@ -46,3 +46,22 @@ You can run commands directly, for example to update the application in the virt
 vagrant ssh --command /var/www/yii app/update
 ```
 
+
+Docker container with vagrant
+-----------------------------
+
+First time setup:
+
+    cp ./environments/_docker-vagrant/dockerhost-vm/Vagrantfile ~/dockerhost-vm/Vagrantfile
+
+And set environment variable `DOCKER_HOST_VAGRANTFILE`.
+
+Setup the app:
+
+    ./init --env=Dotenv
+    cp ./environments/_docker/Dockerfile .
+    cp ./environments/_docker-vagrant/Vagrantfile .
+
+Start:
+
+    vagrant up
