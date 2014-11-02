@@ -6,7 +6,7 @@ Phundament 4.0.x-dev
 _Phundament_ is a _PHP_ application foundation based on _Yii Framework 2.0_.
 
 [![Build Status](https://travis-ci.org/phundament/app.svg?branch=4.0)](https://travis-ci.org/phundament/app)
-
+[![Total Downloads](https://poser.pugx.org/phundament/app/downloads.png)](https://packagist.org/packages/phundament/app)
 
 Quick-Start
 -----------
