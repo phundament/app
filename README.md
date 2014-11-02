@@ -11,7 +11,7 @@ _Phundament_ is a _PHP_ application foundation based on _Yii Framework 2.0_.
 Quick-Start
 -----------
 
-You can install the _Phundament 4_ application template using [`composer`](https://getcomposer.org/download/):
+You can install _Phundament 4_ using [composer](https://getcomposer.org/download/):
 
 ~~~
 composer global require "fxp/composer-asset-plugin:1.0.0-beta3"
