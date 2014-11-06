@@ -18,7 +18,7 @@ APPSDECK_MYSQL_URL: mysql://USER:PASS@HOST:PORT/DB
 DATABASE_DSN: mysql:host=HOST;port=PORT;dbname=DB
 DATABASE_PASSWORD: PASS
 DATABASE_USER: USER
-SUPPORT_EMAIL: phundament-appsdeck@phundament.local
+APP_SUPPORT_EMAIL: phundament-appsdeck@phundament.local
 YII_DEBUG: 0
 YII_ENV: prod
 ```

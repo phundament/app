@@ -15,9 +15,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
           "YII_DEBUG" => true,
           "YII_ENV" => "dev",
           "APP_NAME" => "Phundament 4 Docker & Vagrant",
-          "ADMIN_EMAIL" => "admin@myapp.local",
-          "ADMIN_PASSWORD" => "admin1234",
-          "SUPPORT_EMAIL" => "support@myapp.local",
+          "APP_ADMIN_EMAIL" => "admin@myapp.local",
+          "APP_ADMIN_PASSWORD" => "admin1234",
+          "APP_SUPPORT_EMAIL" => "support@myapp.local",
           "DATABASE_DSN" => "mysql:host=172.17.42.1;dbname=p4",
           "DATABASE_USER" => "dev",
           "DATABASE_PASSWORD" => "dev-123"
