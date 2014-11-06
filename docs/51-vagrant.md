@@ -4,7 +4,7 @@ Local VM with vagrant
 > NOTE! This section is under development
 
 - Install [Vagrant](https://www.vagrantup.com) and [VirtualBox](https://www.virtualbox.org)
-- Go to an exsting Phundament 4 project or `git clone -b4.0 https://github.com/phundament/app.git` a new one.
+- Go to an exsting Phundament 4 project or `git clone https://github.com/phundament/app.git` a new one.
 - Upload the default configuration from `environments/puphpet/config-dist.yaml` via drag&drop to [PuPHPet](https://puphpet.com/)
   - Adjust VM values if needed, eg. make sure to install `curl` and `gd`.
   - Click **Create** and download VM configuration package.
@@ -32,18 +32,16 @@ Local VM with vagrant
 
 ### Accessing application in virtual machine
 
-> TODO: check stdin for migration
-
 To open a shell in the VM run:
 
 ```
 vagrant ssh
 ```
 
-You can run commands directly, for example to update the application in the virtual machine:
+You can run commands directly in the virtual machine, eg.:
 
 ```
-vagrant ssh --command /var/www/yii app/update
+vagrant ssh --command "/var/www/yii"
 ```
 
 

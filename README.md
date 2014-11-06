@@ -6,12 +6,12 @@ Phundament 4.0.x-dev
 _Phundament_ is a _PHP_ application foundation based on _Yii Framework 2.0_.
 
 [![Build Status](https://travis-ci.org/phundament/app.svg?branch=4.0)](https://travis-ci.org/phundament/app)
-
+[![Total Downloads](https://poser.pugx.org/phundament/app/downloads.png)](https://packagist.org/packages/phundament/app)
 
 Quick-Start
 -----------
 
-You can install the _Phundament 4_ application template using the following command:
+You can install _Phundament 4_ using [composer](https://getcomposer.org/download/):
 
 ~~~
 composer global require "fxp/composer-asset-plugin:1.0.0-beta3"
