@@ -27,51 +27,57 @@
  */
 return [
     'Development' => [
-        'path' => 'dev',
-        'setWritable' => [
+        'path'                   => 'dev',
+        'setWritable'            => [
             'backend/runtime',
             'backend/web/assets',
             'frontend/runtime',
             'frontend/web/assets',
         ],
-        'setExecutable' => [
+        'setExecutable'          => [
             'yii',
         ],
         'setCookieValidationKey' => [
             'backend/config/main-local.php',
             'frontend/config/main-local.php',
         ],
+        'configureMessage'             => 'Adjust parameters in `*-local.php` files.'
+        ,
     ],
-    'Production' => [
-        'path' => 'prod',
-        'setWritable' => [
+    'Production'  => [
+        'path'                   => 'prod',
+        'setWritable'            => [
             'backend/runtime',
             'backend/web/assets',
             'frontend/runtime',
             'frontend/web/assets',
         ],
-        'setExecutable' => [
+        'setExecutable'          => [
             'yii',
         ],
         'setCookieValidationKey' => [
             'backend/config/main-local.php',
             'frontend/config/main-local.php',
         ],
+        'configureMessage'             => 'Adjust parameters in `*-local.php` files.'
+        ,
     ],
-    'Dotenv' => [
-        'path' => 'dotenv',
-        'setWritable' => [
+    'Dotenv'      => [
+        'path'                   => 'dotenv',
+        'setWritable'            => [
             'backend/runtime',
             'backend/web/assets',
             'frontend/runtime',
             'frontend/web/assets',
         ],
-        'setExecutable' => [
+        'setExecutable'          => [
             'yii',
         ],
         'setCookieValidationKey' => [
             'backend/config/main-local.php',
             'frontend/config/main-local.php',
         ],
+        'configureMessage'             => 'Adjust parameters in `.env` or environment variables.'
+        ,
     ],
 ];
