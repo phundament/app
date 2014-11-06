@@ -44,3 +44,22 @@ You can run commands directly in the virtual machine, eg.:
 vagrant ssh --command "/var/www/yii"
 ```
 
+
+Docker container with vagrant
+-----------------------------
+
+First time setup:
+
+    cp ./environments/_docker-vagrant/dockerhost-vm/Vagrantfile ~/dockerhost-vm/Vagrantfile
+
+And set environment variable `DOCKER_HOST_VAGRANTFILE`.
+
+Setup the app:
+
+    ./init --env=Dotenv
+    cp ./environments/_docker/Dockerfile .
+    cp ./environments/_docker-vagrant/Vagrantfile .
+
+Start:
+
+    vagrant up
