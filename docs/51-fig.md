@@ -22,6 +22,8 @@ Edit `./.env` to map the fig ENV vars to the Phundament application
     DATABASE_USER={$DB_ENV_MYSQL_USER}
     DATABASE_PASSWORD={$DB_ENV_MYSQL_PASSWORD}
 
+> Note: If you are developing on OS X, make sure your host-vm is running (`boot2docker start`).
+
 Start the application containers:
 
     fig up
