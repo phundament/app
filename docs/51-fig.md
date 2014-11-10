@@ -5,8 +5,8 @@ Docker Container with fig
 
 Get it!
 
-    git clone https://github.com/phundament/app.git p4-docker
-    cd p4-docker
+    git clone https://github.com/phundament/app.git p4-fig
+    cd p4-fig
 
 Copy fig and Dotenv config to project root:
 
