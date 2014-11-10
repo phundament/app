@@ -135,6 +135,7 @@ class AppController extends BaseAppController
         if ($password) {
             $this->action('user/password', ['admin', $password]);
         }
+        sleep(1); // confirmation may not succeed without a short pause
         $this->action('user/confirm', ['admin']);
     }
 
