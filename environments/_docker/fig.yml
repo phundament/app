@@ -1,7 +1,7 @@
 frontend:
-    build: .
+    image: phundament/docker
     ports:
-        - "10080:8000"
+        - "40080:8000"
     expose:
         - "8000"
     command: php -S 0.0.0.0:8000 -t /app/frontend/web
@@ -12,9 +12,9 @@ frontend:
     environment:
         APP_NAME: Phundament 4 fig
 backend:
-    build: .
+    image: phundament/docker
     ports:
-        - "10081:8001"
+        - "40081:8001"
     expose:
         - "8001"
     command: php -S 0.0.0.0:8001 -t /app/backend/web
@@ -27,7 +27,7 @@ backend:
 db:
     image: mysql
     ports:
-        - "13306:3306"
+        - "43306:3306"
     expose:
         - "3306"
     environment:
