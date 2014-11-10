@@ -3,7 +3,7 @@ Docker Container with fig
 
 > NOTE! This section is under development
 
-Get it!
+[Download](https://github.com/phundament/app/tags) or clone:
 
     git clone https://github.com/phundament/app.git p4-fig
     cd p4-fig
