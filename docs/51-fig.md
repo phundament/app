@@ -20,7 +20,7 @@ You may edit `./.env` file to set environment parameters, like the application n
 
 To initialize your application run the following commands once:
 
-    fig run backend ./init --env=Dotenv --overwrite=n && composer install
+    fig run backend ./init --env=Dotenv --overwrite=n && composer install --prefer-dist
     fig run backend ./yii app/setup
 
 They will make the `vendor` folder available in your project directory on your host machine.
