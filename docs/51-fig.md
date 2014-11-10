@@ -3,12 +3,10 @@ Docker Container with fig
 
 > NOTE! This section is under development
 
-Create project:
+Get it!
 
-    composer create-project --stability=dev --prefer-dist phundament/app p4-docker
+    git clone https://github.com/phundament/app.git p4-docker
     cd p4-docker
-
-### Option: fig
 
 Copy fig and Dotenv config to project root:
 
