@@ -13,11 +13,13 @@ Copy fig and Dotenv config to project root:
     cp ./environments/_docker/fig.yml .
     cp ./environments/_docker/.env .
 
-You may edit `./.env` file to set environment parameters, like the application name.
+You may edit `fig.yml` file to update environment parameters, like the application name.
 
-> Note: If you are developing on OS X, make sure your host-vm is running (`boot2docker start`).
+> Note: Entries in `.env` file do *not* overwrite existing values from `fig.yml` by default.
 
 To initialize your application run the following commands once:
+
+> Note: If you are developing on OS X, make sure your host-vm is running (`boot2docker start`).
 
     fig run backend ./init --env=Dotenv --overwrite=n && composer install --prefer-dist
     fig run backend ./yii app/setup
