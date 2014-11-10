@@ -30,6 +30,9 @@ Start the application containers:
 
 To initialize your application run the following commands once:
 
+    fig run backend composer install
     fig run backend ./yii migrate
+
+They will make the `vendor` folder available in your project directory on your host machine.
 
 You should now be able to access the container under `http://docker.local:10080` and `http://docker.local:10081`
