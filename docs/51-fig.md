@@ -12,14 +12,9 @@ Copy fig and Dotenv config to project root:
 
     cp ./environments/_docker/Dockerfile .
     cp ./environments/_docker/fig.yml .
-    cp ./environments/dotenv/.env .
+    cp ./environments/_docker/.env .
 
-Edit `./.env` to map the fig ENV vars to the Phundament application
-
-    DATABASE_DSN=mysql:host={$DB_PORT_3306_TCP_ADDR};dbname={$DB_ENV_MYSQL_DATABASE}
-    DATABASE_USER={$DB_ENV_MYSQL_USER}
-    DATABASE_PASSWORD={$DB_ENV_MYSQL_PASSWORD}
-
+You may edit `./.env` file to set i.e. the application name.
 Start the application containers in daemon mode with:
 
     fig up -d
