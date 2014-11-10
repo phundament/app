@@ -10,7 +10,6 @@ Docker Container with fig
 
 Copy fig and Dotenv config to project root:
 
-    cp ./environments/_docker/Dockerfile .
     cp ./environments/_docker/fig.yml .
     cp ./environments/_docker/.env .
 
@@ -30,7 +29,7 @@ Start the application containers in daemon mode with:
 
     fig up -d
 
-You should now be able to access the container under `http://docker.local:10080` and `http://docker.local:10081`
+You should now be able to access the container under `http://docker.local:40080` and `http://docker.local:40081`
 
 > On Linux `docker.local` is usually equal to `localhost`, on OS X the command `echo $DOCKER_HOST` should print the IP of your host VM.
 
