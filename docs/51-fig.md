@@ -10,11 +10,11 @@ Create project:
 
 ### Option: fig
 
-Copy fig config to project root:
+Copy fig and Dotenv config to project root:
 
-    ./init --env=Dotenv
     cp ./environments/_docker/Dockerfile .
     cp ./environments/_docker/fig.yml .
+    cp ./environments/dotenv/.env .
 
 Edit `./.env` to map the fig ENV vars to the Phundament application
 
@@ -22,11 +22,11 @@ Edit `./.env` to map the fig ENV vars to the Phundament application
     DATABASE_USER={$DB_ENV_MYSQL_USER}
     DATABASE_PASSWORD={$DB_ENV_MYSQL_PASSWORD}
 
-> Note: If you are developing on OS X, make sure your host-vm is running (`boot2docker start`).
-
 Start the application containers in daemon mode with:
 
     fig up -d
+
+> Note: If you are developing on OS X, make sure your host-vm is running (`boot2docker start`).
 
 To initialize your application run the following commands once:
 
@@ -41,4 +41,4 @@ You should now be able to access the container under `http://docker.local:10080`
 
 > On Linux `docker.local` is usually equal to `localhost`, on OS X the command `echo $DOCKER_HOST` should print the IP of your host VM.
 
-> Default [Dockerfile](https://github.com/phundament/docker) for Phundament 4 Apps
+> Default [Dockerfile](https://github.com/phundament/docker) for Phundament 4 Apps.
