@@ -24,7 +24,7 @@ Edit `./.env` to map the fig ENV vars to the Phundament application
 
 > Note: If you are developing on OS X, make sure your host-vm is running (`boot2docker start`).
 
-Start the application containers:
+Start the application containers with:
 
     fig up
 
@@ -40,3 +40,5 @@ And sets up the database, along with an admin user.
 You should now be able to access the container under `http://docker.local:10080` and `http://docker.local:10081`
 
 > On Linux `docker.local` is usually equal to `localhost`, on OS X the command `echo $DOCKER_HOST` should print the IP of your host VM.
+
+> Default [Dockerfile](https://github.com/phundament/docker) for Phundament 4 Apps
