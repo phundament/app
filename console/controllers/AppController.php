@@ -60,9 +60,9 @@ class AppController extends BaseAppController
      */
     public function actionSetup()
     {
-        $this->action('migrate');
-        $this->action('app/setup-admin-user');
-        $this->action('app/virtual-host');
+        $this->action('migrate', ['interactive' => $this->interactive]);
+        $this->action('app/setup-admin-user', ['interactive' => $this->interactive]);
+        $this->action('app/virtual-host', ['interactive' => $this->interactive]);
     }
 
     /**
@@ -118,10 +118,14 @@ class AppController extends BaseAppController
         $mgr   = new ModelManager;
         $admin = $mgr->findUserByUsername('admin');
         if ($admin === null) {
-            $email = $this->prompt('E-Mail for application admin user:', ['required' => true]);
+            $email = $this->prompt(
+                'E-Mail for application admin user:',
+                ['default' => getenv('APP_ADMIN_EMAIL')]
+            );
             $this->action('user/create', [$email, 'admin']);
             $password = $this->prompt(
-                'Password for application admin user (leave empty if you want to use the auto-generated value):'
+                'Password for application admin user:',
+                ['default' => getenv('APP_ADMIN_PASSWORD')]
             );
         } else {
             $password = $this->prompt(
@@ -141,7 +145,9 @@ class AppController extends BaseAppController
     {
         if ($this->confirm('Regenerate documentation files into ./docs-html', true)) {
             $this->execute('vendor/bin/apidoc guide --interactive=0 docs docs-html');
-            $this->execute('vendor/bin/apidoc api --interactive=0 --exclude=runtime/,tests/ backend,common,console,frontend docs-html');
+            $this->execute(
+                'vendor/bin/apidoc api --interactive=0 --exclude=runtime/,tests/ backend,common,console,frontend docs-html'
+            );
             $this->execute('vendor/bin/apidoc guide --interactive=0 docs docs-html');
         }
     }
