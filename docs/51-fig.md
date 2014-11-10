@@ -13,9 +13,9 @@ Copy fig and Dotenv config to project root:
     cp ./environments/_docker/fig.yml .
     cp ./environments/_docker/.env .
 
-You may edit `fig.yml` file to update environment parameters, like the application name.
+You may edit the `.env` file to update environment parameters.
 
-> Note: Entries in `.env` file do *not* overwrite existing values from `fig.yml` by default.
+> Note: Entries in `fig.yml` are **not overwritten** by `.env`.
 
 To initialize your application run the following commands once:
 
