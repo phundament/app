@@ -24,3 +24,4 @@ Supported platforms
 
 - [Appsdeck](52-paas-appsdeck.md)
 - [Dokku](52-paas-dokku.md)
+- [Tutum](52-paas-tutum.md)
