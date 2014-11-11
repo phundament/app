@@ -34,7 +34,7 @@ After initializing the application you have to adjust the `.env` file in your pr
 Alternatives
 ------------
 
-You can also develop your local application with [fig and docker](https://github.com/phundament/app/blob/master/docs/51-fig.md) or [vagrant](51-vagrant.md). 
+You can also develop your local application with [fig and Docker containers](https://github.com/phundament/app/blob/master/docs/51-fig.md) or with [vagrant and Docker containers or virtual machines](51-vagrant.md). 
 
 For deployments use can choose between [vagrant on a cloud- or remote-server](https://github.com/phundament/app/blob/master/docs/51-vagrant-cloud.md) or various [Platform as a Service](https://github.com/phundament/app/blob/master/docs/52-paas.md) providers.
 
