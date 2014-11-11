@@ -13,7 +13,7 @@ Features
 - puPHPet and vagrant support
 - fully non-interactive deployment to work on PaaS
 - CLI task runner for application updates and testing
-- application backend dashboard [[screenshots](https://plus.google.com/+Phundament/posts/7y1TkmmsrcN?pid=6070967303804764434&oid=114873431066202526630)]
+- application backend dashboard ([screenshots](https://plus.google.com/+Phundament/posts/7y1TkmmsrcN?pid=6070967303804764434&oid=114873431066202526630))
 - user management module
 - extension packages browser module
 - extended database migration support
@@ -47,9 +47,9 @@ Directory Structure
 -------------------
 
 ```
-docs/                   developer documentation
-environments/           environment-based config templates (default overrides)
-common/
+ docs/                   developer documentation
+ environments/           environment-based config templates (default overrides)
+ common/
     config/             configurations used in all applications
     mail/               view files for e-mails
     models/             model classes used in all applications
