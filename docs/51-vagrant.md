@@ -3,7 +3,12 @@ Local VM with vagrant
 
 > NOTE! This section is under development
 
+### Requirements
+
 - Install [Vagrant](https://www.vagrantup.com) and [VirtualBox](https://www.virtualbox.org)
+
+### Get started! 
+
 - Go to an exsting Phundament 4 project or `git clone https://github.com/phundament/app.git` a new one.
 - Upload the default configuration from `environments/puphpet/config-dist.yaml` via drag&drop to [PuPHPet](https://puphpet.com/)
   - Adjust VM values if needed, eg. make sure to install `curl` and `gd`.
