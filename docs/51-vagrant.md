@@ -5,7 +5,8 @@ Local VM with vagrant
 
 ### Requirements
 
-- Install [Vagrant](https://www.vagrantup.com) and [VirtualBox](https://www.virtualbox.org)
+- [Vagrant](https://www.vagrantup.com)
+- [VirtualBox](https://www.virtualbox.org)
 
 ### Get started! 
 
@@ -53,7 +54,7 @@ vagrant ssh --command "/var/www/yii"
 Docker container with vagrant
 -----------------------------
 
-### Requirements
+### Additional Requirements
 
 - [Docker](https://www.docker.com)
 
