@@ -54,9 +54,7 @@ vagrant ssh --command "/var/www/yii"
 Docker container with vagrant
 -----------------------------
 
-### Additional Requirements
-
-- [Docker](https://www.docker.com)
+> Depending on your operating system, vagrant takes care about the required Docker setup.
 
 ### Get started!
 
