@@ -5,7 +5,7 @@ Docker Container with fig
 
 ### Requirements
 
-- [Dokcer](https://www.docker.com)(Linux) or [Boot2docker](http://boot2docker.io)(OS X, Windows)
+- [Docker](https://www.docker.com) (Linux) or [Boot2docker](http://boot2docker.io) (OS X, Windows)
 - [fig](http://www.fig.sh)
 
 ### Get started!
