@@ -3,6 +3,13 @@ Docker Container with fig
 
 > NOTE! This section is under development
 
+### Requirements
+
+- [Boot2docker](http://boot2docker.io)
+- [fig](http://www.fig.sh)
+
+### Get started!
+
 [Download](https://github.com/phundament/app/tags) or clone:
 
     git clone https://github.com/phundament/app.git p4-fig
