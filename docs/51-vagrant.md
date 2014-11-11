@@ -53,6 +53,12 @@ vagrant ssh --command "/var/www/yii"
 Docker container with vagrant
 -----------------------------
 
+### Requirements
+
+- [Docker](https://www.docker.com)
+
+### Get started!
+
 First time setup:
 
     cp ./environments/_docker-vagrant/dockerhost-vm/Vagrantfile ~/dockerhost-vm/Vagrantfile
