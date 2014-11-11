@@ -1,4 +1,4 @@
-Docker Container with fig
+Docker containers with fig
 -------------------------
 
 > NOTE! This section is under development
