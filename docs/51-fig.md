@@ -35,6 +35,9 @@ To initialize your application run the following commands once:
 They will make the `vendor` folder available in your project directory on your host machine.
 And sets up the database, along with an admin user.
 
+> You can replace the [Phundament 4 Docker image](https://github.com/phundament/docker) with your custom base container.
+
+
 #### Run
 
     fig up -d
@@ -43,4 +46,4 @@ You should now be able to access the container under `http://docker.local:40080`
 
 > On Linux `docker.local` is usually equal to `localhost`, on OS X the command `echo $DOCKER_HOST` should print the IP of your host VM.
 
-> Default [Dockerfile](https://github.com/phundament/docker) for Phundament 4 Apps.
+
