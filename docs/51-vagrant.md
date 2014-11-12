@@ -17,23 +17,20 @@ Local VM with vagrant
     
 #### Initialize
 
-- Upload the default configuration from `environments/puphpet/config-dist.yaml` via drag&drop to [PuPHPet](https://puphpet.com/)
-  - Adjust VM values if needed, eg. make sure to install `curl` and `gd`.
-  - Click **Create** and download VM configuration package.
-- Extract the contents (`Vagrantfile`,`puphpet/`) to the project root folder.
-- Initialize application in puphpet environment:
+Upload the default configuration from `environments/puphpet/config-dist.yaml` via drag&drop to [PuPHPet](https://puphpet.com/)
 
-    ```
+> Adjust VM values if needed, eg. make sure to install `curl` and `gd`.
+
+Click **Create** and download VM configuration package and extract its contents (`Vagrantfile`,`puphpet/`) to the project root folder.
+
+Initialize application for puPHPet:
+
     cp ./environments/_puphpet/puphpet/files/exec-once/init.sh \
        ./puphpet/files/exec-once/init.sh
-    ```
 
-    *Note: This will copy the needed initialization script for the VM, which will switch your environment to _Development_ by default.*
-- To access the virtual host in the VM later, update your `/etc/hosts` file:
+To access the virtual host in the VM later, update your `/etc/hosts` file:
 
-    ```
     192.168.42.42    phundament.vagrant admin.phundament.vagrant
-    ```
 
 #### Run
 
