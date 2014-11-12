@@ -4,7 +4,11 @@ Installation
 Get it!
 -------
 
-`composer create-project --stability=dev phundament/app:4.0.x-dev app-v4`
+> Note: Have a look at the [deployments](50-deploy.md) if you prefer a setup with Docker, vagrant or PaaS.
+
+```
+composer create-project --stability=dev phundament/app:4.0.x-dev app-v4
+```
 
 Setup your environment
 ----------------------
@@ -30,12 +34,3 @@ After initializing the application you have to adjust the `.env` file in your pr
 ```
 ./yii app/setup
 ```
-
-Alternatives
-------------
-
-You can also develop your local application with [fig and Docker containers](https://github.com/phundament/app/blob/master/docs/51-fig.md) or with [vagrant and Docker containers or virtual machines](51-vagrant.md). 
-
-For deployments use can choose between [vagrant on a cloud- or remote-server](https://github.com/phundament/app/blob/master/docs/51-vagrant-cloud.md) or various [Platform as a Service](https://github.com/phundament/app/blob/master/docs/52-paas.md) providers.
-
-> Although we strongly recommend the `Dotenv` configuration, you may also choose the configuration options *Development* and *Production* as described in the standard `yiisoft/yii2-advanced-app`.
