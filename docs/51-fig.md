@@ -15,6 +15,8 @@ Docker containers with fig
     git clone https://github.com/phundament/app.git
     cd app
 
+#### Initialize
+
 Copy fig and Dotenv config to project root:
 
     cp ./environments/_docker/fig.yml .
@@ -33,7 +35,7 @@ To initialize your application run the following commands once:
 They will make the `vendor` folder available in your project directory on your host machine.
 And sets up the database, along with an admin user.
 
-### Start application
+#### Run
 
     fig up -d
 
