@@ -15,7 +15,7 @@ Local VM with vagrant
     git clone https://github.com/phundament/app.git
     cd app
     
-#### Virtual Machine configuration
+#### Initialize
 
 - Upload the default configuration from `environments/puphpet/config-dist.yaml` via drag&drop to [PuPHPet](https://puphpet.com/)
   - Adjust VM values if needed, eg. make sure to install `curl` and `gd`.
@@ -34,7 +34,7 @@ Local VM with vagrant
     192.168.42.42    phundament.vagrant admin.phundament.vagrant
     ```
 
-### Start application
+#### Run
 
     ```
     vagrant up
@@ -63,7 +63,7 @@ Docker container with vagrant
 
 > Depending on your operating system, vagrant takes care about the required Docker setup.
 
-### Get started!
+#### Initialize
 
 First time setup:
 
@@ -76,6 +76,6 @@ Setup the app:
     cp ./environments/_docker/Dockerfile .
     cp ./environments/_docker-vagrant/Vagrantfile .
 
-### Start application
+#### Run
 
     vagrant up
