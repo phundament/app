@@ -10,7 +10,13 @@ Local VM with vagrant
 
 ### Get started! 
 
-- Go to an exsting Phundament 4 project or `git clone https://github.com/phundament/app.git` a new one.
+[Download](https://github.com/phundament/app/tags) or clone:
+
+    git clone https://github.com/phundament/app.git
+    cd app
+    
+#### Virtual Machine configuration
+
 - Upload the default configuration from `environments/puphpet/config-dist.yaml` via drag&drop to [PuPHPet](https://puphpet.com/)
   - Adjust VM values if needed, eg. make sure to install `curl` and `gd`.
   - Click **Create** and download VM configuration package.
@@ -27,13 +33,14 @@ Local VM with vagrant
     ```
     192.168.42.42    phundament.vagrant admin.phundament.vagrant
     ```
-- Bring up the virtual machine:
+
+### Start application
 
     ```
     vagrant up
     ```
-- Open [phundament.vagrant](http://phundament.vagrant) or [admin.phundament.vagrant](http://admin.phundament.vagrant) in your browser.
-- Login with `admin` / `admin1234`
+
+Open [phundament.vagrant](http://phundament.vagrant) or [admin.phundament.vagrant](http://admin.phundament.vagrant) in your browser.
 
 
 ### Accessing application in virtual machine
@@ -66,10 +73,9 @@ And set environment variable `DOCKER_HOST_VAGRANTFILE`.
 
 Setup the app:
 
-    ./init --env=Dotenv
     cp ./environments/_docker/Dockerfile .
     cp ./environments/_docker-vagrant/Vagrantfile .
 
-Start:
+### Start application
 
     vagrant up
