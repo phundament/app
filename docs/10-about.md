@@ -47,29 +47,19 @@ Directory Structure
 -------------------
 
 ```
- docs/                   developer documentation
- environments/           environment-based config templates (default overrides)
- common/
+.env                    configuration file with environment variables
+common/
     config/             configurations used in all applications
     mail/               view files for e-mails
     models/             model classes used in all applications
     tests/              various tests for objects that are common among applications
-frontend/
+frontend/, backend/
     assets/             application assets such as JavaScript and CSS
     config/             frontend configurations
     controllers/        Web controller classes
     models/             frontend-specific model classes
     runtime/            files generated during runtime
     tests/              various tests for the frontend application
-    views/              view files for the Web application
-    web/                the entry script and Web resources
-backend/
-    assets/             application assets such as JavaScript and CSS
-    config/             backend configurations
-    controllers/        Web controller classes
-    models/             backend-specific model classes
-    runtime/            files generated during runtime
-    tests/              various tests for the backend application
     views/              view files for the Web application
     web/                the entry script and Web resources
 console/
@@ -79,8 +69,10 @@ console/
     models/             console-specific model classes
     runtime/            files generated during runtime
     tests/              various tests for the console application
+docs/                   developer documentation
 tests/
     codeception         test suites
+platforms/              environment configurations for Docker, vagrant, PaaS, ...
 vendor/                 dependent 3rd-party packages
 ```
 
