@@ -28,3 +28,5 @@ The recommended setup is based on `vlucas/dotenv`, which reads environment varia
 ```
 ./yii app/setup
 ```
+
+Afterwards you can access your application under `http://localhost/app/frontend/web` and `http://localhost/app/backend/web`.
