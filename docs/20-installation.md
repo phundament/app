@@ -23,7 +23,7 @@ Create a new database to store application information.
 
 The recommended setup is based on `vlucas/dotenv`, which reads environment variables from the system or a local `.env` file. You can find background information about this topic in the [The Twelve Factor App](http://12factor.net/config) documentation.
 
-**After initializing the application you have to adjust the `.env` file in your project root.**
+**Before finalizing the application setup you have to adjust the `.env` file in your project root.**
 
 ```
 ./yii app/setup
