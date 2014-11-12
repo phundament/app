@@ -24,7 +24,8 @@ Local VM with vagrant
 - Initialize application in puphpet environment:
 
     ```
-    cp ./environments/_puphpet/puphpet/files/exec-once/init.sh ./puphpet/files/exec-once/init.sh
+    cp ./environments/_puphpet/puphpet/files/exec-once/init.sh \
+       ./puphpet/files/exec-once/init.sh
     ```
 
     *Note: This will copy the needed initialization script for the VM, which will switch your environment to _Development_ by default.*
@@ -36,9 +37,7 @@ Local VM with vagrant
 
 #### Run
 
-    ```
     vagrant up
-    ```
 
 Open [phundament.vagrant](http://phundament.vagrant) or [admin.phundament.vagrant](http://admin.phundament.vagrant) in your browser.
 
@@ -67,7 +66,8 @@ Docker container with vagrant
 
 First time setup:
 
-    cp ./environments/_docker-vagrant/dockerhost-vm/Vagrantfile ~/dockerhost-vm/Vagrantfile
+    cp ./environments/_docker-vagrant/dockerhost-vm/Vagrantfile \
+       ~/dockerhost-vm/Vagrantfile
 
 And set environment variable `DOCKER_HOST_VAGRANTFILE`.
 
