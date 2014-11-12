@@ -1,36 +1,30 @@
 <?php
-$params = \yii\helpers\ArrayHelper::merge(
-    require(__DIR__ . '/../../common/config/params.php'),
-    require(__DIR__ . '/../../common/config/params-local.php'),
-    require(__DIR__ . '/params.php'),
-    require(__DIR__ . '/params-local.php')
-);
 
-return [
-    'id' => 'app-backend',
-    'basePath' => dirname(__DIR__),
+$config = [
+    'id'                  => 'app-backend',
+    'basePath'            => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
-    'bootstrap' => ['log'],
-    'modules' => [
+    'bootstrap'           => ['log'],
+    'modules'             => [
     ],
-    'components' => [
-        'view' => [
+    'components'          => [
+        'view'         => [
             'theme' => [
                 'pathMap' => [
-                    '@app/views' => '@vendor/dmstr/yii2-adminlte-asset/phundament4',
+                    '@app/views'     => '@vendor/dmstr/yii2-adminlte-asset/phundament4',
                     '@yii/gii/views' => '@vendor/dmstr/yii2-adminlte-asset/phundament4',
                 ],
             ],
         ],
-        'user' => [
+        'user'         => [
             # Note: identityClass is configured from dektrium\user
             'enableAutoLogin' => true,
         ],
-        'log' => [
+        'log'          => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
-            'targets' => [
+            'targets'    => [
                 [
-                    'class' => 'yii\log\FileTarget',
+                    'class'  => 'yii\log\FileTarget',
                     'levels' => ['error', 'warning'],
                 ],
             ],
@@ -38,6 +32,21 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
+        'request' => [
+            // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
+            'cookieValidationKey' => getenv('APP_COOKIE_VALIDATION_KEY'),
+        ],
+        'assetManager' => [
+            'forceCopy' => YII_DEBUG ? true : false,
+        ],
     ],
-    'params' => $params,
+    'params'              => [
+    ]
 ];
+
+if (YII_ENV_DEV) {
+    // configuration adjustments for 'dev' environment
+
+}
+
+return $config;

@@ -60,6 +60,7 @@ class AppController extends BaseAppController
      */
     public function actionSetup()
     {
+        $this->composer("install");
         $this->action('migrate', ['interactive' => $this->interactive]);
         $this->action('app/setup-admin-user', ['interactive' => $this->interactive]);
         $this->action('app/virtual-host', ['interactive' => $this->interactive]);
