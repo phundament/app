@@ -3,12 +3,26 @@ Extensions
 
 You can integrate any Yii2 extension or PHP library into Phundament 4.
 
-packaii
--------
+Finding packages
+----------------
 
-> tbd
+- [Packagist](https://packagist.org)
+- `composer search ...`
+- **packaii** (available from the application backend dashboard)
 
-Packagist
----------
+Installing packagaes
+--------------------
 
-> tbd
+  composer require vendor/package
+  
+Configuring packages
+--------------------
+
+tbd
+  
+Show installed packages
+-----------------------
+
+  composer show --installed
+  
+Or also through **packaii** in the backend.  
