@@ -19,17 +19,11 @@ Create a new database to store application information.
 
 > Note! Currently a MySQL database is required for the user module.
 
-### Environment setup with ENV variables
+### Application setup setup with ENV variables
 
-Our recommended setup is based on `vlucas/dotenv`, which reads ENV variables from the system or a local file. You can find background information about this topic in the [The Twelve Factor App](http://12factor.net/config) documentation.
+The recommended setup is based on `vlucas/dotenv`, which reads environment variables from the system or a local `.env` file. You can find background information about this topic in the [The Twelve Factor App](http://12factor.net/config) documentation.
 
-Run the application initialization and choose `[2] Dotenv`:
-
-    ./init
-
-After initializing the application you have to adjust the `.env` file in your project root.
-
-### Application setup
+**After initializing the application you have to adjust the `.env` file in your project root.**
 
 ```
 ./yii app/setup
