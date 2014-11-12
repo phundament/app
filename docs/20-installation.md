@@ -17,7 +17,7 @@ Setup your environment
 
 Create a new database to store application information.
 
-> Note! Currently a MySQL is required for the user module.
+> Note! Currently a MySQL database is required for the user module.
 
 ### Environment setup with ENV variables
 
