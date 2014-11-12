@@ -13,7 +13,7 @@ Finding packages
 Installing packagaes
 --------------------
 
-  composer require vendor/package
+    composer require vendor/package
   
 Configuring packages
 --------------------
@@ -23,6 +23,6 @@ tbd
 Show installed packages
 -----------------------
 
-  composer show --installed
+    composer show --installed
   
 Or also through **packaii** in the backend.  
