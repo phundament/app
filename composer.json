@@ -44,12 +44,8 @@
     },
     "scripts": {
         "post-create-project-cmd": [
-            "console\\helpers\\ComposerCallback::createProject"
-        ]
-    },
-    "scripts": {
-        "post-create-project-cmd": [
-            "yii\\composer\\Installer::postCreateProject"
+            "yii\\composer\\Installer::postCreateProject",
+            "console\\helpers\\ComposerCallback::postCreateProject"
         ]
     },
     "extra": {
@@ -63,10 +59,6 @@
                     "backend/web/assets": "0777",
                     "yii": "0755"
                 }
-            ],
-            "generateCookieValidationKey": [
-                "frontend/config/main.php",
-                "backend/config/main.php"
             ]
         },
         "asset-installer-paths": {

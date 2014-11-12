@@ -34,7 +34,7 @@ $config = [
         ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-            'cookieValidationKey' => '',
+            'cookieValidationKey' => getenv('APP_COOKIE_VALIDATION_KEY'),
         ],
         'assetManager' => [
             'forceCopy' => YII_DEBUG ? true : false,
