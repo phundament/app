@@ -52,7 +52,7 @@ class AppController extends BaseAppController
         $this->execute("git pull");
         $this->composer("install");
         $this->action('migrate');
-        $this->action('cache/flush');
+        $this->action('cache/flush','cache');
     }
 
     /**
