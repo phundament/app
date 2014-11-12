@@ -33,7 +33,7 @@ To initialize your application run the following commands once:
 They will make the `vendor` folder available in your project directory on your host machine.
 And sets up the database, along with an admin user.
 
-Start the application containers in daemon mode with:
+### Start application
 
     fig up -d
 
