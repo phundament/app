@@ -41,7 +41,7 @@ $this->title .= 'Home';
                         The PHP way.
                         <hr>
                         <code class="lead">
-                            composer create-project phundament/app
+                            composer create-project --stability=beta phundament/app
                         </code>
                     </div>
                 </div>
