@@ -22,8 +22,6 @@ Features
 Requirements
 ------------
 
-### PHP-based installations
-
 - [Composer](http://getcomposer.org/doc/00-intro.md#installation-nix) installation
 - PHP 5.4
 
@@ -31,6 +29,10 @@ or
  
  - Docker
  - fig
+  
+or 
+ 
+ - Vagrant
 
 ### Recommendations
 
