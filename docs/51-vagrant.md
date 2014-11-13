@@ -25,7 +25,7 @@ Click **Create** and download VM configuration package and extract its contents 
 
 Initialize application for puPHPet:
 
-    cp ./environments/_puphpet/puphpet/files/exec-once/init.sh \
+    cp ./platforms/puphpet/puphpet/files/exec-once/init.sh \
        ./puphpet/files/exec-once/init.sh
 
 To access the virtual host in the VM later, update your `/etc/hosts` file:
@@ -63,15 +63,15 @@ Docker container with vagrant
 
 First time setup:
 
-    cp ./environments/_docker-vagrant/dockerhost-vm/Vagrantfile \
+    cp ./platforms/vagrant-docker/dockerhost-vm/Vagrantfile \
        ~/dockerhost-vm/Vagrantfile
 
-And set environment variable `DOCKER_HOST_VAGRANTFILE`.
+And set your environment variable `DOCKER_HOST_VAGRANTFILE` to `~/dockerhost-vm/Vagrantfile`.
 
 Setup the app:
 
-    cp ./environments/_docker/Dockerfile .
-    cp ./environments/_docker-vagrant/Vagrantfile .
+    cp ./platforms/docker/Dockerfile .
+    cp ./platforms/vagrant-docker/Vagrantfile .
 
 #### Run
 
