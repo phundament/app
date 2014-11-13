@@ -4,7 +4,6 @@ namespace backend\controllers;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
-use yii\filters\VerbFilter;
 
 /**
  * Default backend controller
@@ -27,9 +26,15 @@ class SiteController extends Controller
                         'actions' => ['index'],
                         'allow' => true,
                         'roles' => ['@'],
+                        'matchCallback' => function ($rule, $action) {
+                            return in_array(
+                                \Yii::$app->user->identity->username,
+                                \Yii::$app->getModule('user')->admins
+                            );
+                        }
                     ],
-                ],
-            ],
+                ]
+            ]
         ];
     }
 
