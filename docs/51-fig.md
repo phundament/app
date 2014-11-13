@@ -19,8 +19,8 @@ Docker containers with fig
 
 Copy fig and Dotenv config to project root:
 
-cp ./platforms/fig/fig.yml .
-cp ./platforms/fig/.env .
+    cp ./platforms/fig/fig.yml .
+    cp ./platforms/fig/.env .
 
 You may edit the `.env` file to update environment parameters.
 
