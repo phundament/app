@@ -8,6 +8,7 @@ Getting Started
 
 - [About](10-about.md)
 - [Installation](20-installation.md)
+- [Configuration](21-configuration.md)
 
 Customize 
 ---------
