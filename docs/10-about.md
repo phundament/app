@@ -7,16 +7,23 @@ applications. It follows the 12factor specifications on a slim codebase.
 Features
 --------
 
+### Code
+
 - *advanced-app* directory structure
 - minimalistic environment variables based configuration
-- guided CLI setup process
 - Docker, fig, vagrant and puPHPet support
-- fully non-interactive deployment to work on PaaS
-- CLI task runner for application updates and testing
-- application backend dashboard ([screenshots](https://plus.google.com/+Phundament/posts/7y1TkmmsrcN?pid=6070967303804764434&oid=114873431066202526630))
-- user management module
-- extension packages browser module
+
+### Console
+
+- CLI command for application setup, updates and testing
 - extended database migration support
+- fully non-interactive deployment to work on PaaS
+
+### Backend
+
+- application backend dashboard ([screenshots](https://plus.google.com/+Phundament/posts/7y1TkmmsrcN?pid=6070967303804764434&oid=114873431066202526630))
+- user management
+- package browser
 - extended model & crud code generators
 
 Requirements
