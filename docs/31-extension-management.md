@@ -10,8 +10,8 @@ Finding packages
 - `composer search ...`
 - **packaii** (available from the application backend dashboard)
 
-Installing packagaes
---------------------
+Installing packages
+-------------------
 
     composer require vendor/package
   
