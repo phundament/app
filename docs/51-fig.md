@@ -24,7 +24,7 @@ Copy fig and Dotenv config to project root:
 
 You may edit the `.env` file to update environment parameters.
 
-> Note: Entries in `fig.yml` are **not overwritten** by `.env`.
+> Note: Entries in `.env` will be **overwritten** by `fig.yml`.
 
 To initialize your application run the following commands once:
 
