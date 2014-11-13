@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7142eec1de72608ec600197ceabed11d",
+    "hash": "1c45f3bbb5932780f9789d2f8cdf4293",
     "packages": [
         {
             "name": "2amigos/yii2-arrayquery-component",
@@ -234,16 +234,16 @@
         },
         {
             "name": "bower-asset/jquery.inputmask",
-            "version": "3.1.33",
+            "version": "3.1.38",
             "source": {
                 "type": "git",
                 "url": "https://github.com/RobinHerbots/jquery.inputmask.git",
-                "reference": "0c6ce85c1bc12e81ecb0df62fbc62db116b7b53d"
+                "reference": "464cddbdea65411896468f40321e68abcc75a34c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RobinHerbots/jquery.inputmask/zipball/0c6ce85c1bc12e81ecb0df62fbc62db116b7b53d",
-                "reference": "0c6ce85c1bc12e81ecb0df62fbc62db116b7b53d",
+                "url": "https://api.github.com/repos/RobinHerbots/jquery.inputmask/zipball/464cddbdea65411896468f40321e68abcc75a34c",
+                "reference": "464cddbdea65411896468f40321e68abcc75a34c",
                 "shasum": ""
             },
             "require": {
@@ -286,16 +286,16 @@
         },
         {
             "name": "bower-asset/punycode",
-            "version": "v1.3.1",
+            "version": "v1.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bestiejs/punycode.js.git",
-                "reference": "de452f89aea23f126f7b219f576abda1c0823825"
+                "reference": "38c8d3131a82567bfef18da09f7f4db68c84f8a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bestiejs/punycode.js/zipball/de452f89aea23f126f7b219f576abda1c0823825",
-                "reference": "de452f89aea23f126f7b219f576abda1c0823825",
+                "url": "https://api.github.com/repos/bestiejs/punycode.js/zipball/38c8d3131a82567bfef18da09f7f4db68c84f8a3",
+                "reference": "38c8d3131a82567bfef18da09f7f4db68c84f8a3",
                 "shasum": ""
             },
             "type": "bower-asset-library",
@@ -340,16 +340,16 @@
         },
         {
             "name": "cebe/markdown",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cebe/markdown.git",
-                "reference": "4f6b35cc5cc1025ed946839fd24e05ace617867a"
+                "reference": "9d6c36d6623497523ed421a31d940bc1d7435578"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cebe/markdown/zipball/4f6b35cc5cc1025ed946839fd24e05ace617867a",
-                "reference": "4f6b35cc5cc1025ed946839fd24e05ace617867a",
+                "url": "https://api.github.com/repos/cebe/markdown/zipball/9d6c36d6623497523ed421a31d940bc1d7435578",
+                "reference": "9d6c36d6623497523ed421a31d940bc1d7435578",
                 "shasum": ""
             },
             "require": {
@@ -396,7 +396,7 @@
                 "markdown",
                 "markdown-extra"
             ],
-            "time": "2014-10-10 20:54:29"
+            "time": "2014-10-25 16:16:49"
         },
         {
             "name": "cebe/yii2-gravatar",
@@ -761,12 +761,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii2-packaii.git",
-                "reference": "015001eb17ab7c27a5f0f01e977c0becc4759852"
+                "reference": "46cceab97394e25bf6c6e0bd2db3bb59cfa72823"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii2-packaii/zipball/015001eb17ab7c27a5f0f01e977c0becc4759852",
-                "reference": "015001eb17ab7c27a5f0f01e977c0becc4759852",
+                "url": "https://api.github.com/repos/schmunk42/yii2-packaii/zipball/46cceab97394e25bf6c6e0bd2db3bb59cfa72823",
+                "reference": "46cceab97394e25bf6c6e0bd2db3bb59cfa72823",
                 "shasum": ""
             },
             "require": {
@@ -803,7 +803,7 @@
                 }
             ],
             "description": "Yii2 Framework Web-UI for browsing composer packages",
-            "time": "2014-10-14 19:52:56"
+            "time": "2014-10-30 10:14:59"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -859,17 +859,17 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v2.5.5",
+            "version": "v2.5.6",
             "target-dir": "Symfony/Component/EventDispatcher",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/EventDispatcher.git",
-                "reference": "f6281337bf5f985f585d1db6a83adb05ce531f46"
+                "reference": "804eb28dbbfba9ffdab21fe2066744906cea2212"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/f6281337bf5f985f585d1db6a83adb05ce531f46",
-                "reference": "f6281337bf5f985f585d1db6a83adb05ce531f46",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/804eb28dbbfba9ffdab21fe2066744906cea2212",
+                "reference": "804eb28dbbfba9ffdab21fe2066744906cea2212",
                 "shasum": ""
             },
             "require": {
@@ -912,7 +912,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "http://symfony.com",
-            "time": "2014-09-28 15:56:11"
+            "time": "2014-10-01 15:43:05"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -1501,12 +1501,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-gii.git",
-                "reference": "e727a0c97d1921315e0a722dca56cb1fecb90c1d"
+                "reference": "2b70572409c3953b8a9ab573e96cd25fd5881a84"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/e727a0c97d1921315e0a722dca56cb1fecb90c1d",
-                "reference": "e727a0c97d1921315e0a722dca56cb1fecb90c1d",
+                "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/2b70572409c3953b8a9ab573e96cd25fd5881a84",
+                "reference": "2b70572409c3953b8a9ab573e96cd25fd5881a84",
                 "shasum": ""
             },
             "require": {
@@ -1542,7 +1542,7 @@
                 "gii",
                 "yii2"
             ],
-            "time": "2014-10-17 00:38:08"
+            "time": "2014-10-25 12:30:03"
         }
     ],
     "aliases": [],
