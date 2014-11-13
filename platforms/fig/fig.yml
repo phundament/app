@@ -9,8 +9,6 @@ frontend:
         - ./:/app/
     links:
         - db
-    environment:
-        APP_NAME: Phundament 4 fig
 backend:
     image: phundament/docker
     ports:
@@ -22,8 +20,6 @@ backend:
         - ./:/app/
     links:
         - db
-    environment:
-        APP_NAME: Phundament 4 fig
 db:
     image: mysql
     ports:
