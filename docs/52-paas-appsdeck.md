@@ -32,8 +32,7 @@ Update local `composer.json` file:
             "compile": [
                 "vendor/composer/bin/composer.phar global require 'fxp/composer-asset-plugin:1.0.0-beta3'",
                 "vendor/composer/bin/composer.phar install --no-dev",
-                "./init --env=Dotenv --overwrite=n",
-                "./yii migrate --interactive=0"
+                "./yii app/setup --interactive=0"
             ]
         }
     }
