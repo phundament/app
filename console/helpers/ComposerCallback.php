@@ -24,13 +24,16 @@ class ComposerCallback
      *
      * @param Event $event
      */
-    public static function createProject(Event $event)
+    public static function postCreateProject(Event $event)
     {
         $path = realpath(dirname(__FILE__).'/../../');
         echo "\nPhundament application packages have been successfully installed.";
-        echo "\nPlease choose your environment with\n";
+        echo "\nPlease set your local environment variables with\n";
         echo "\n  cd $path";
-        echo "\n  ./init";
+        echo "\n  cp .env-dist .env";
+        echo "\n  edit .env";
+        echo "\n\nAfterwards finalize the setup with";
+        echo "\n\n  ./yii app/setup";
         echo "\n\n";
     }
 }

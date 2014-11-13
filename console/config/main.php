@@ -1,15 +1,9 @@
 <?php
-$params = \yii\helpers\ArrayHelper::merge(
-    require(__DIR__ . '/../../common/config/params.php'),
-    require(__DIR__ . '/../../common/config/params-local.php'),
-    require(__DIR__ . '/params.php'),
-    require(__DIR__ . '/params-local.php')
-);
 
 $config = [
-    'id' => 'app-console',
-    'basePath' => dirname(__DIR__),
-    'bootstrap' => [
+    'id'                  => 'app-console',
+    'basePath'            => dirname(__DIR__),
+    'bootstrap'           => [
         'log'
     ],
     'controllerNamespace' => 'console\controllers',
@@ -17,9 +11,9 @@ $config = [
         'app'     => 'console\\controllers\\AppController',
         'migrate' => 'dmstr\\console\\controllers\\MigrateController',
     ],
-    'modules' => [
+    'modules'             => [
     ],
-    'components' => [
+    'components'          => [
         'log' => [
             'targets' => [
                 [
@@ -29,12 +23,15 @@ $config = [
             ],
         ],
     ],
-    'params'              => $params,
+    'params'              => [
+        'yii.migrations' => [
+            '@dektrium/user/migrations'
+        ]
+    ],
 ];
 
-if (YII_ENV == 'dev') {
-    $config['bootstrap'][] = 'gii';
-    $config['modules']['gii'] = 'yii\gii\Module';
+if (YII_ENV_DEV) {
+    // configuration adjustments for 'dev' environment
 }
 
 return $config;

@@ -52,7 +52,7 @@ class AppController extends BaseAppController
         $this->execute("git pull");
         $this->composer("install");
         $this->action('migrate');
-        $this->action('cache/flush');
+        $this->action('cache/flush','cache');
     }
 
     /**
@@ -60,6 +60,7 @@ class AppController extends BaseAppController
      */
     public function actionSetup()
     {
+        $this->composer("install");
         $this->action('migrate', ['interactive' => $this->interactive]);
         $this->action('app/setup-admin-user', ['interactive' => $this->interactive]);
         $this->action('app/virtual-host', ['interactive' => $this->interactive]);

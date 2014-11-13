@@ -44,16 +44,29 @@
     },
     "scripts": {
         "post-create-project-cmd": [
-            "console\\helpers\\ComposerCallback::createProject"
+            "yii\\composer\\Installer::postCreateProject",
+            "console\\helpers\\ComposerCallback::postCreateProject"
         ]
     },
-    "config": {
-        "process-timeout": 1800
-    },
     "extra": {
+        "yii\\composer\\Installer::postCreateProject": {
+            "setPermission": [
+                {
+                    "console/runtime": "0777",
+                    "frontend/runtime": "0777",
+                    "frontend/web/assets": "0777",
+                    "backend/runtime": "0777",
+                    "backend/web/assets": "0777",
+                    "yii": "0755"
+                }
+            ]
+        },
         "asset-installer-paths": {
             "npm-asset-library": "vendor/npm",
             "bower-asset-library": "vendor/bower"
         }
+    },
+    "config": {
+        "process-timeout": 1800
     }
 }
