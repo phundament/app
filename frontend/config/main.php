@@ -31,6 +31,13 @@ return [
                 'yii\bootstrap\BootstrapAsset' => false, // provided by frontend/assets/web/app.css
             ],
         ],
+        'urlManager' => [
+            'enablePrettyUrl' => getenv('APP_PRETTY_URLS') ? true : false,
+            'showScriptName' => false,
+            'rules' => [
+                'docs/<file:[a-z0-9\-\.]*>' => 'site/docs'
+            ],
+        ],
         'view'         => [
             'theme' => [
                 'pathMap' => [
