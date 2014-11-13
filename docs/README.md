@@ -3,25 +3,28 @@ Phundament Guide
 
 Version 4.0-dev
 
-
-Introduction
-------------
-
-- [About](10-about.md)
-
 Getting Started
 ---------------
 
+- [About](10-about.md)
 - [Installation](20-installation.md)
+
+Customize 
+---------
+
 - [Customize Application](30-customize.md)
 - [Manage Extensions](31-extension-management.md)
 
-Tutorials
----------
+Develop
+-------
 
 - [Code Generation](41-code-generation.md)
 - [Testing](42-testing.md)
 - [Extension Development](44-extension-development.md)
+
+Deploy
+------
+
 - [Docker containers with fig](51-fig.md)
 - [Virtualization with vagrant](51-vagrant.md)
 - [PaaS Deployment](52-paas.md)
