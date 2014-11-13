@@ -63,15 +63,15 @@ Docker container with vagrant
 
 First time setup:
 
-    cp ./environments/_docker-vagrant/dockerhost-vm/Vagrantfile \
+    cp ./environments/vagrant-docker/dockerhost-vm/Vagrantfile \
        ~/dockerhost-vm/Vagrantfile
 
-And set environment variable `DOCKER_HOST_VAGRANTFILE`.
+And set your environment variable `DOCKER_HOST_VAGRANTFILE` to `~/dockerhost-vm/Vagrantfile`.
 
 Setup the app:
 
-    cp ./environments/_docker/Dockerfile .
-    cp ./environments/_docker-vagrant/Vagrantfile .
+    cp ./platforms/docker/Dockerfile .
+    cp ./platforms/vagrant-docker/Vagrantfile .
 
 #### Run
 
