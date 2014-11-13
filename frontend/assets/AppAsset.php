@@ -15,15 +15,19 @@ use yii\web\AssetBundle;
  */
 class AppAsset extends AssetBundle
 {
-    public $basePath = '@webroot';
-    public $baseUrl = '@web';
+    //public $basePath = '@webroot';
+    //public $baseUrl = '@web';
+    public $sourcePath = '@frontend/assets/web';
+
     public $css = [
-        'css/site.css',
+        'css/app.css',
     ];
     public $js = [
+        'js/app.js',
     ];
     public $depends = [
+        // we recompile the less files from 'yii\bootstrap\BootstrapAsset' and include the css in app.css,
+        // set bundle to false in assetManager config
         'yii\web\YiiAsset',
-        'yii\bootstrap\BootstrapAsset',
     ];
 }

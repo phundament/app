@@ -1,0 +1,202 @@
+/* based upon Greenfield http://www.bootply.com/render/85657 */
+/* Import Bootstrap with disabled Glyphicons; Font Awesome is included by FontAwesomeAsset */
+@import 'bootstrap';
+
+/* Custom Variables */
+@brand-primary: #222;
+@border-radius-base: 2px;
+@border-radius-large: 4px;
+@border-radius-small: 1px;
+@font-size-base: 18px;
+
+/* Custom CSS for Bootstrap 3.x */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin-top: 50px;
+  background: @gray-lighter;
+
+}
+
+.wrap {
+  background: white;
+  padding-bottom: 40px;
+}
+
+/* fix bs3 horizontal scrollbar bug */
+//.row { margin: 0; padding: 0 }
+
+h1 {
+  font-size: 45px;
+}
+
+code {
+  color: black;
+  overflow-x: scroll;
+}
+
+.icon-bar {
+  background-color: #fff;
+}
+
+.scroll-down a, .scroll-top a {
+  color: #ffffff;
+}
+
+.scroll-down {
+  position: fixed;
+  bottom: 20%;
+  right: 0%;
+  color: #f9f9f9;
+}
+
+.scroll-top {
+  //background-color:@brand-primary;
+}
+
+.navbar a {
+  color: #fff;
+}
+
+.navbar-bold {
+  background-color: darken(@brand-primary, 5%);
+  //font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+  li a:hover, li.active {
+    background-color: lighten(@brand-primary, 15%);
+  }
+  &.affix {
+    background-color: ligthen(@brand-primary, 5%);
+  }
+}
+
+.header {
+  height: 80%;
+  background: @brand-primary url('http://pub.phundament.com/unsplash.com/toddquackenbush/dufer-collateral.jpg') no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  h1 {
+    font-size: 140px;
+    @media (max-width: @screen-md) {
+      font-size: 100px;
+    }
+    @media (max-width: 767px) {
+      font-size: 50px;
+    }
+
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1);
+    color: #431a6d;
+    color: #fff;
+    margin-left: -5px;
+    margin-bottom: 5px;
+    //font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  .lead {
+    color: #eeeeee;
+    font-size: 25px;
+    @media (max-width: 767px) {
+      font-size: 15px;
+    }
+  }
+  .btn-lg {
+    font-size: 28px;
+    border-color: #eeeeee;
+    padding: 15px;
+    background-color: transparent;
+    color: #ffffff;
+  }
+
+  .btn-lg:hover {
+    background-color: #ffffff;
+    color: @brand-primary;
+  }
+
+}
+
+.vert {
+  vertical-align: middle;
+  width: 100%;
+  padding-top: 8%;
+  padding-bottom: 10%;
+}
+
+.blurb {
+  padding: 70px 0;
+  background-color: #fefefe;
+  .panel {
+    background-color: transparent;
+  }
+}
+
+.cite {
+  font-family: Georgia, serif;
+  color: @gray-light;
+}
+
+.bright {
+  color: @gray-darker;
+  background: @gray-lighter;
+  background-size: auto 100%;
+  .panel-body {
+    background: white;
+  }
+}
+
+.featurette {
+  background: #545455;
+  padding: 50px 0;
+  color: #ffffff;
+}
+
+.featurette-item, .featurette-item > A {
+  color: #ffffff;
+  margin-bottom: 15px;
+  i {
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 56px;
+    width: 140px;
+    height: 140px;
+    line-height: 136px;
+    vertical-align: middle;
+    text-align: center;
+  }
+  i:hover {
+    font-size: 68px;
+  }
+}
+
+.docs {
+  blockquote {
+    font-size: 1em;
+    color: @gray-light;
+  }
+  A {
+    text-decoration: underline;
+  }
+  .toc {
+    h1 {
+      font-size: 1.2em;
+    }
+    h2, h3, h4, h5 {
+      font-size: 1em;
+      color: @gray
+    }
+    ul {
+      padding-left: 20px;
+    }
+  }
+
+}
+
+footer {
+  padding: 30px 0;
+  color: @gray-light;
+}
+
+/* -- end custom css for Bootstrap 3.x --*/
