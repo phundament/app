@@ -1,19 +1,19 @@
 <?php
 return [
-    'id' => 'app-frontend',
-    'basePath' => dirname(__DIR__),
-    'bootstrap' => ['log'],
+    'id'                  => 'app-frontend',
+    'basePath'            => dirname(__DIR__),
+    'bootstrap'           => ['log'],
     'controllerNamespace' => 'frontend\controllers',
-    'components' => [
-        'user' => [
+    'components'          => [
+        'user'         => [
             # Note: identityClass is configured from dektrium\user
             'enableAutoLogin' => true,
         ],
-        'log' => [
+        'log'          => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
-            'targets' => [
+            'targets'    => [
                 [
-                    'class' => 'yii\log\FileTarget',
+                    'class'  => 'yii\log\FileTarget',
                     'levels' => ['error', 'warning'],
                 ],
             ],
@@ -21,14 +21,29 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        'request' => [
+        'request'      => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => getenv('APP_COOKIE_VALIDATION_KEY'),
         ],
         'assetManager' => [
             'forceCopy' => YII_DEBUG ? true : false,
+            'bundles'   => [
+                'yii\bootstrap\BootstrapAsset' => false, // provided by frontend/assets/web/app.css
+            ],
+        ],
+        'view'         => [
+            'theme' => [
+                'pathMap' => [
+                    '@dektrium/user/views' => '@app/views/user'
+                ],
+            ],
         ],
     ],
-    'params' => [
+    'modules'             => [
+        'user' => [
+            'layout' => '@frontend/views/layouts/container',
+        ],
+    ],
+    'params'              => [
     ],
 ];
