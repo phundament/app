@@ -19,8 +19,8 @@ Docker containers with fig
 
 Copy fig and Dotenv config to project root:
 
-    cp ./environments/_docker/fig.yml .
-    cp ./environments/_docker/.env .
+cp ./platforms/fig/fig.yml .
+cp ./platforms/fig/.env .
 
 You may edit the `.env` file to update environment parameters.
 
@@ -28,8 +28,9 @@ You may edit the `.env` file to update environment parameters.
 
 To initialize your application run the following commands once:
 
-> Note: If you are developing on OS X, make sure your host-vm is running (`boot2docker start`).
+> Note: If you are developing on OS X or Windows, make sure your host-vm is running in VirtualBox Manager or with `boot2docker start`.
 
+    fig run backend composer create-project --prefer-dist
     fig run backend ./yii app/setup --interactive=0
 
 They will make the `vendor` folder available in your project directory on your host machine.
