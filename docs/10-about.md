@@ -87,3 +87,17 @@ The Phundament repository contains the following main branches:
 - master (development, unstable)
 - 4.0 (alpha, beta, RC, stable releases)
 - 3.0 (alpha, beta, RC, stable releases)
+
+Developed by
+------------
+
+[diemeisterei GmbH](http://diemeisterei.de)
+
+Immenhofer Straße 21
+
+D-70180 Stuttgart
+
+Germany
+
+- Core developer: Tobias Munk (schmunk42)
+- [Contributors](https://github.com/phundament/app/graphs/contributors)
