@@ -1,17 +1,18 @@
 Customize
 =========
 
-Assets
-------
+Frontend Assets
+---------------
 
-> tbd
+The asset package in the *frontend* application is prepared for customization of *Bootstap 3* with less files.
+
+Configure your favourite less compiler to create the `app.css` file in `frontend/assets/web/css` from `frontend/assets/less`.
+
+> You may change this setup with to use your preferred CSS and JS frameworks.
+
+See also [Yii 2.0 Assets](http://www.yiiframework.com/doc-2.0/guide-structure-assets.html).
 
 Views
 -----
 
-> tbd
-
-Backend
--------
-
-> tbd
+See also [Yii 2.0 Views](http://www.yiiframework.com/doc-2.0/guide-structure-views.html).

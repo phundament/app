@@ -4,7 +4,11 @@ Installation
 Get it!
 -------
 
-`composer create-project --stability=dev phundament/app:4.0.x-dev app-v4`
+> Note: Have a look at the [deployments](50-deploy.md) if you prefer a setup with Docker, vagrant or PaaS.
+
+```
+composer create-project --stability=dev phundament/app
+```
 
 Setup your environment
 ----------------------
@@ -13,29 +17,21 @@ Setup your environment
 
 Create a new database to store application information.
 
-> Note! Currently a MySQL is required for the user module.
+> Note! Currently a MySQL database is required for the user module.
 
-### Environment setup with ENV variables
+### Application configuration with environment variables
 
-Our recommended setup is based on `vlucas/dotenv`, which reads ENV variables from the system or a local file. You can find background information about this topic in the [The Twelve Factor App](http://12factor.net/config) documentation.
+The recommended setup is based on `vlucas/dotenv`, which reads environment variables from the system or a local `.env` file. You can find background information about this topic in the [The Twelve Factor App](http://12factor.net/config) documentation.
 
-Run the application initialization and choose `[2] Dotenv`:
+```
+cp .env-dist .env
+edit .env
+```
 
-    ./init
-
-After initializing the application you have to adjust the `.env` file in your project root.
-
-### Application setup
+After adjusting the parameters, finalize the application setup with:
 
 ```
 ./yii app/setup
 ```
 
-Alternatives
-------------
-
-You can also develop your local application with [fig and Docker containers](https://github.com/phundament/app/blob/master/docs/51-fig.md) or with [vagrant and Docker containers or virtual machines](51-vagrant.md). 
-
-For deployments use can choose between [vagrant on a cloud- or remote-server](https://github.com/phundament/app/blob/master/docs/51-vagrant-cloud.md) or various [Platform as a Service](https://github.com/phundament/app/blob/master/docs/52-paas.md) providers.
-
-> Although we strongly recommend the `Dotenv` configuration, you may also choose the configuration options *Development* and *Production* as described in the standard `yiisoft/yii2-advanced-app`.
+Afterwards you can access your application under `http://localhost/app/frontend/web` and `http://localhost/app/backend/web`.

@@ -10,30 +10,33 @@ Local VM with vagrant
 
 ### Get started! 
 
-- Go to an exsting Phundament 4 project or `git clone https://github.com/phundament/app.git` a new one.
-- Upload the default configuration from `environments/puphpet/config-dist.yaml` via drag&drop to [PuPHPet](https://puphpet.com/)
-  - Adjust VM values if needed, eg. make sure to install `curl` and `gd`.
-  - Click **Create** and download VM configuration package.
-- Extract the contents (`Vagrantfile`,`puphpet/`) to the project root folder.
-- Initialize application in puphpet environment:
+[Download](https://github.com/phundament/app/tags) or clone:
 
-    ```
-    cp ./environments/_puphpet/puphpet/files/exec-once/init.sh ./puphpet/files/exec-once/init.sh
-    ```
+    git clone https://github.com/phundament/app.git
+    cd app
 
-    *Note: This will copy the needed initialization script for the VM, which will switch your environment to _Development_ by default.*
-- To access the virtual host in the VM later, update your `/etc/hosts` file:
+#### Initialize
 
-    ```
+Upload the default configuration from `environments/puphpet/config-dist.yaml` via drag&drop to [PuPHPet](https://puphpet.com/)
+
+> Adjust VM values if needed, eg. make sure to install `curl` and `gd`.
+
+Click **Create** and download VM configuration package and extract its contents (`Vagrantfile`,`puphpet/`) to the project root folder.
+
+Initialize application for puPHPet:
+
+    cp ./environments/_puphpet/puphpet/files/exec-once/init.sh \
+       ./puphpet/files/exec-once/init.sh
+
+To access the virtual host in the VM later, update your `/etc/hosts` file:
+
     192.168.42.42    phundament.vagrant admin.phundament.vagrant
-    ```
-- Bring up the virtual machine:
 
-    ```
+#### Run
+
     vagrant up
-    ```
-- Open [phundament.vagrant](http://phundament.vagrant) or [admin.phundament.vagrant](http://admin.phundament.vagrant) in your browser.
-- Login with `admin` / `admin1234`
+
+Open [phundament.vagrant](http://phundament.vagrant) or [admin.phundament.vagrant](http://admin.phundament.vagrant) in your browser.
 
 
 ### Accessing application in virtual machine
@@ -56,20 +59,20 @@ Docker container with vagrant
 
 > Depending on your operating system, vagrant takes care about the required Docker setup.
 
-### Get started!
+#### Initialize
 
 First time setup:
 
-    cp ./environments/_docker-vagrant/dockerhost-vm/Vagrantfile ~/dockerhost-vm/Vagrantfile
+    cp ./environments/_docker-vagrant/dockerhost-vm/Vagrantfile \
+       ~/dockerhost-vm/Vagrantfile
 
 And set environment variable `DOCKER_HOST_VAGRANTFILE`.
 
 Setup the app:
 
-    ./init --env=Dotenv
     cp ./environments/_docker/Dockerfile .
     cp ./environments/_docker-vagrant/Vagrantfile .
 
-Start:
+#### Run
 
     vagrant up

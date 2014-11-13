@@ -18,4 +18,7 @@ Documentation
 Media
 -----
 
-- [Phundament Logos](http://t.phundament.com)
+- [Phundament Logo](http://t.phundament.com) CDN
+- LESS based upon [Greenfield template]()
+- [Unsplash]() images from  [Todd Quackenbush]()
+

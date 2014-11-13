@@ -2,41 +2,44 @@ About
 =====
 
 Phundament is a PHP Application Foundation built upon Yii Framework 2.0 best for rapidly developing web
-applications.
+applications. It follows the 12factor specifications on a slim codebase.
 
 Features
 --------
 
+### Code
+
 - *advanced-app* directory structure
-- guided CLI setup process
-- environment variables based configuration
-- puPHPet and vagrant support
-- fully non-interactive deployment to work on PaaS
-- CLI task runner for application updates and testing
-- application backend dashboard ([screenshots](https://plus.google.com/+Phundament/posts/7y1TkmmsrcN?pid=6070967303804764434&oid=114873431066202526630))
-- user management module
-- extension packages browser module
+- minimalistic environment variables based configuration
+- Docker, fig, vagrant and puPHPet support
+
+### Console
+
+- CLI command for application setup, updates and testing
 - extended database migration support
+- fully non-interactive deployment to work on PaaS
+
+### Backend
+
+- application backend dashboard ([screenshots](https://plus.google.com/+Phundament/posts/7y1TkmmsrcN?pid=6070967303804764434&oid=114873431066202526630))
+- user management
+- package browser
 - extended model & crud code generators
-
-Based upon Yii2 Advanced Application Template
----------------------------------------------
-
-Yii 2 Advanced Application Template is a skeleton Yii 2 application best for
-developing complex Web applications with multiple tiers.
-
-The template includes three tiers: frontend, backend, and console, each of which
-is a separate Yii application.
-
-The template is designed to work in a team development environment. It supports
-deploying the application in different environments.
-
 
 Requirements
 ------------
 
 - [Composer](http://getcomposer.org/doc/00-intro.md#installation-nix) installation
 - PHP 5.4
+
+or  
+ 
+ - Docker
+ - fig
+  
+or 
+ 
+ - Vagrant
 
 ### Recommendations
 
@@ -47,29 +50,19 @@ Directory Structure
 -------------------
 
 ```
- docs/                   developer documentation
- environments/           environment-based config templates (default overrides)
- common/
+.env                    configuration file with environment variables
+common/
     config/             configurations used in all applications
     mail/               view files for e-mails
     models/             model classes used in all applications
     tests/              various tests for objects that are common among applications
-frontend/
+frontend/, backend/
     assets/             application assets such as JavaScript and CSS
     config/             frontend configurations
     controllers/        Web controller classes
     models/             frontend-specific model classes
     runtime/            files generated during runtime
     tests/              various tests for the frontend application
-    views/              view files for the Web application
-    web/                the entry script and Web resources
-backend/
-    assets/             application assets such as JavaScript and CSS
-    config/             backend configurations
-    controllers/        Web controller classes
-    models/             backend-specific model classes
-    runtime/            files generated during runtime
-    tests/              various tests for the backend application
     views/              view files for the Web application
     web/                the entry script and Web resources
 console/
@@ -79,8 +72,10 @@ console/
     models/             console-specific model classes
     runtime/            files generated during runtime
     tests/              various tests for the console application
+docs/                   developer documentation
 tests/
     codeception         test suites
+platforms/              environment configurations for Docker, vagrant, PaaS, ...
 vendor/                 dependent 3rd-party packages
 ```
 
@@ -92,3 +87,17 @@ The Phundament repository contains the following main branches:
 - master (development, unstable)
 - 4.0 (alpha, beta, RC, stable releases)
 - 3.0 (alpha, beta, RC, stable releases)
+
+Developed by
+------------
+
+[diemeisterei GmbH](http://diemeisterei.de)
+
+Immenhofer Straße 21
+
+D-70180 Stuttgart
+
+Germany
+
+- Core developer: Tobias Munk (schmunk42)
+- [Contributors](https://github.com/phundament/app/graphs/contributors)
