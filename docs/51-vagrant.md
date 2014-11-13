@@ -14,7 +14,7 @@ Local VM with vagrant
 
     git clone https://github.com/phundament/app.git
     cd app
-    
+
 #### Initialize
 
 Upload the default configuration from `environments/puphpet/config-dist.yaml` via drag&drop to [PuPHPet](https://puphpet.com/)
