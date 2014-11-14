@@ -61,12 +61,14 @@ Docker container with vagrant
 
 #### Initialize
 
-First time setup:
+> Recommended first time setup with a dedicated Docker-Host for Vagrant:
 
-    cp ./platforms/vagrant-docker/dockerhost-vm/Vagrantfile \
-       ~/dockerhost-vm/Vagrantfile
+> ```
+cp ./platforms/vagrant-docker/dockerhost-vm/Vagrantfile \
+   ~/dockerhost-vm/Vagrantfile
+  ```
 
-And set your environment variable `DOCKER_HOST_VAGRANTFILE` to `~/dockerhost-vm/Vagrantfile`.
+> And set your environment variable `DOCKER_HOST_VAGRANTFILE` to `~/dockerhost-vm/Vagrantfile`.
 
 Setup the app:
 
@@ -79,4 +81,5 @@ Setup the app:
 
 #### Setup
 
-    vagrant docker-run api -- ./yii app/setup --interactive=0
+    vagrant docker-run backend -- composer install --prefer-dist
+    vagrant docker-run backend -- ./yii app/setup --interactive=0
