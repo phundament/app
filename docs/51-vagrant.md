@@ -76,3 +76,7 @@ Setup the app:
 #### Run
 
     vagrant up
+
+#### Setup
+
+    vagrant docker-run api -- ./yii app/setup --interactive=0
