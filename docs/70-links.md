@@ -1,11 +1,18 @@
 Support
 =======
 
+Project
+-------
+
+- [Website](http://phundament.com)
+- [GitHub](http://phundament.com)
+- [Packagist](https://packagist.org/packages/phundament/app)
+
 Community
 ---------
 
-- [github](https://github.com/phundament/app/tree/4.0)
-- [Stackoverflow](http://stackoverflow.com/questions/tagged/phundament)
+- [Issues](https://github.com/phundament/app/tree/4.0)
+- [FAQ](http://stackoverflow.com/questions/tagged/phundament)
 
 
 Documentation
@@ -25,5 +32,5 @@ Media
 Older Versions
 --------------
 
-- [Phundament 3](http://v3.phundament.com/) Website
-- [Phundament 3](https://github.com/phundament/app/tree/3.0) Branch
+- Phundament 3 [Website](http://v3.phundament.com/)
+- Phundament 3 [Branch](https://github.com/phundament/app/tree/3.0)
