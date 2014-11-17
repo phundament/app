@@ -8,11 +8,12 @@ Phundament supports various tools like [Docker](https://www.docker.com), [Vagran
 ### Local development
 
  - [fig and Docker containers](51-fig.md)
- - [vagrant and Docker containers or virtual machines](51-vagrant.md)
+ - [Vagrant and Docker containers](51-vagrant-docker.md)
+ - [Vagrant and virtual machines](51-vagrant.md)
 
 ### Cloud deployment
  
- - [vagrant on a cloud- or remote-server](51-vagrant-cloud.md)
+ - [Vagrant on a cloud- or remote-server](51-vagrant-cloud.md)
  - [Platform as a Service](52-paas.md) (PaaS) providers
 
 You can modify the above config examples easily for VMWare, Parallels, HyperV, RedHat, Amazon AWS, DigitalOcean, Rackspace and many more.
