@@ -6230,6 +6230,11 @@ pre code {
   background-size: cover;
   text-align: center;
 }
+@media (max-width: 767px) {
+  .header {
+    background: #222222 url('http://pub.phundament.com/unsplash.com/toddquackenbush/dufer-collateral-low.jpg') no-repeat center center;
+  }
+}
 .header h1 {
   font-size: 140px;
   -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1);
