@@ -1,4 +1,4 @@
-Local VM with vagrant
+Local VM with Vagrant
 ---------------------
 
 > NOTE! This section is under development
