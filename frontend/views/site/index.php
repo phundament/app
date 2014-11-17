@@ -205,10 +205,10 @@ $this->title .= 'Home';
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h2>Perfection is achieved, not when there is nothing more to add, but when there is nothing left to
-                    take away.</h2>
+                <p class="lead">Perfection is achieved, not when there is nothing more to add, but when there is nothing left to
+                    take away.</p>
 
-                <p class="lead">Antoine de Saint-Exupery</p>
+                <p>Antoine de Saint-Exupery</p>
             </div>
         </div>
     </div>
