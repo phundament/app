@@ -1,6 +1,6 @@
 <?php
 /* @var $this yii\web\View */
-$this->title .= 'Home';
+$this->title .= 'Yii 2.0 App Template';
 ?>
 <div class="site-index ">
 
