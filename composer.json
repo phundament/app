@@ -29,7 +29,8 @@
         "dmstr/yii2-app-command": "dev-master",
         "dmstr/yii2-migrate-command": "dev-master",
         "dmstr/yii2-adminlte-asset": "dev-master",
-        "schmunk42/yii2-packaii": "dev-master"
+        "schmunk42/yii2-packaii": "dev-master",
+        "mikehaertl/php-shellcommand": "1.*"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "2.*",

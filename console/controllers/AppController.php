@@ -11,6 +11,7 @@ namespace console\controllers;
 
 use dektrium\user\ModelManager;
 use dmstr\console\controllers\BaseAppController;
+use mikehaertl\shellcommand\Command;
 use yii\base\Exception;
 
 
@@ -52,7 +53,7 @@ class AppController extends BaseAppController
         $this->execute("git pull");
         $this->composer("install");
         $this->action('migrate');
-        $this->action('cache/flush','cache');
+        $this->action('cache/flush', 'cache');
     }
 
     /**
@@ -93,10 +94,30 @@ class AppController extends BaseAppController
         echo "Note! You can tear down the test-server with `killall php`\n";
         if ($this->confirm("Start testing?", true)) {
             $this->execute('php -S localhost:8042 > /dev/null 2>&1 &');
-            $this->execute('codecept run -c tests/codeception/backend');
-            $this->execute('codecept run -c tests/codeception/frontend');
-            $this->execute('codecept run -c tests/codeception/common');
-            $this->execute('codecept run -c tests/codeception/console');
+
+            $commands[] = 'codecept run -c tests/codeception/backend';
+            $commands[] = 'codecept run -c tests/codeception/frontend';
+            $commands[] = 'codecept run -c tests/codeception/common';
+            $commands[] = 'codecept run -c tests/codeception/console';
+
+            $hasError = false;
+            foreach ($commands AS $command) {
+                $cmd = new Command($command);
+                if ($cmd->execute()) {
+                    echo $cmd->getOutput();
+                } else {
+                    echo $cmd->getOutput();
+                    echo $cmd->getStdErr();
+                    echo $cmd->getError();
+                    $hasError = true;
+                }
+                echo "\n";
+            }
+            if ($hasError) {
+                return 1;
+            } else {
+                return 0;
+            }
         }
     }
 
