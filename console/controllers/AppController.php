@@ -122,6 +122,60 @@ class AppController extends BaseAppController
     }
 
     /**
+     * Clear $app/web/assets folder, null clears all assets in frontend and backend
+     *
+     * @param frontend|backend|null $app
+     */
+    public function actionClearAssets($app = null)
+    {
+
+        $frontendAssets = \Yii::getAlias('@frontend/web/assets');
+        $backendAssets  = \Yii::getAlias('@backend/web/assets');
+        $matchRegex     = '"^[a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9]\?[a-z0-9]$"';
+        $command        = new Command(
+            array(
+                // Will be passed as options to proc_open()
+                'procOptions' => array(
+                    'bypass_shell' => true,
+                ),
+            )
+        );
+
+        // create $cmd command
+        switch ($app) {
+            case null :
+                $app = "frontend & backend";
+
+                $cmd = 'cd "' . $frontendAssets . '" && ls | grep -e ' . $matchRegex . ' | xargs rm -rf ';
+                $cmd .= ' && cd "' . $backendAssets . '" && ls | grep -e ' . $matchRegex . ' | xargs rm -rf ';
+                break;
+            case 'frontend':
+            case 'backend' :
+
+                // Set $assetFolder depending on $app param
+                if ($app === 'frontend') {
+                    $assetFolder = $frontendAssets;
+                } elseif ($app === 'backend') {
+                    $assetFolder = $backendAssets;
+                }
+
+                $cmd = 'cd "' . $assetFolder . '" && ls | grep -e "^[a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9]\?[a-z0-9]$" | xargs rm -rf ';
+                break;
+        }
+
+        // Set $command
+        $command->setCommand($cmd);
+
+        // Try to execute $command
+        if ($command->execute()) {
+            echo "\nOK - " . $app . " assets has been deleted." . "\n\n";
+        } else {
+            echo "\n" . $command->getError() . "\n";
+            echo $command->getStdErr();
+        }
+    }
+
+    /**
      * Install packages for documentation rendering
      */
     public function actionSetupDocs()
