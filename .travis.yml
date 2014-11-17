@@ -32,6 +32,9 @@ env:
     - DATABASE_DSN="mysql:host=localhost;dbname=p4"
     - DATABASE_USER=dev
     - DATABASE_PASSWORD=dev123
+    - TEST_DATABASE_DSN="mysql:host=localhost;dbname=p4_test"
+    - TEST_DATABASE_USER=dev
+    - TEST_DATABASE_PASSWORD=dev123
 
 script:
   - php yii app/run-tests --interactive=0

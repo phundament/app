@@ -13,7 +13,7 @@ $config = [
             'charset'     => 'utf8',
             'tablePrefix' => getenv('DATABASE_TABLE_PREFIX'),
         ],
-        'dbTest' => [
+        'db_test' => [
             'class'       => 'yii\db\Connection',
             'dsn'         => getenv('TEST_DATABASE_DSN'),
             'username'    => getenv('TEST_DATABASE_USER'),
