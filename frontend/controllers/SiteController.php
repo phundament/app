@@ -42,7 +42,7 @@ class SiteController extends Controller
         $this->view->registerMetaTag(
             [
                 'name'    => 'keywords',
-                'content' => 'Phundament,Yii,Yii2,application,template,12factor,PHP,docker,vagrant,fig'
+                'content' => 'Phundament,Yii,Yii2,app,application,template,12factor,PHP,docker,vagrant,fig'
             ],
             'keywords'
         );
