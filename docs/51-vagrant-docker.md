@@ -16,7 +16,7 @@ Docker container with vagrant
 > And set your environment variable `DOCKER_HOST_VAGRANTFILE=~/dockerhost-vm/Vagrantfile`.
 > For some Vagrant versions you may also need to set `DOCKER_TLS_VERIFY=0`.
 >
-> **Please also make sure to start the `dockerhost-vm` manually **before** starting the Docker containers with `vagrant up`.**
+> **Please also make sure to start the `dockerhost-vm` manually _before_ starting the Docker containers with `vagrant up`.**
 
 Setup the app:
 
