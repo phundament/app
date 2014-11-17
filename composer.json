@@ -1,7 +1,7 @@
 {
     "name": "phundament/app",
-    "description": "Yii 2 Application Template",
-    "keywords": ["phundament", "yii2", "framework", "application template", "vagrant"],
+    "description": "The 12factor Application Template for Yii 2.0 Framework",
+    "keywords": ["phundament", "yii2", "framework", "application", "template", "boilerplate", "vagrant", "docker", "fig", "12factor", "dotenv"],
     "homepage": "http://www.phundament.com/",
     "type": "project",
     "license": "BSD-3-Clause",
@@ -14,7 +14,6 @@
     ],
     "support": {
         "issues": "https://github.com/phundament/app/issues?state=open",
-        "forum": "https://groups.google.com/forum/#!forum/phundament-dev",
         "source": "https://github.com/phundament/app"
     },
     "minimum-stability": "stable",
