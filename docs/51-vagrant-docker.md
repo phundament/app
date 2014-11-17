@@ -31,7 +31,9 @@ Setup the app:
 
 ### Run
 
-    vagrant up
+    vagrant up db --provider=docker
+    vagrant up backend --provider=docker
+    vagrant up frontend --provider=docker
 
 ### Setup
 
