@@ -13,12 +13,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       docker.image = "phundament/docker"
       docker.cmd = ["php","-S","0.0.0.0:8000","-t","/app/frontend/web"]
       docker.env = {
-          "YII_DEBUG" => true,
-          "YII_ENV" => "dev",
-          "APP_NAME" => "Phundament 4 Docker & Vagrant",
-          "APP_ADMIN_EMAIL" => "admin@myapp.local",
-          "APP_ADMIN_PASSWORD" => "admin1234",
-          "APP_SUPPORT_EMAIL" => "support@myapp.local",
           "DATABASE_DSN" => "mysql:host=172.17.42.1;port=22279;dbname=p4",
           "DATABASE_USER" => "dev",
           "DATABASE_PASSWORD" => "dev-123"
@@ -34,12 +28,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       docker.image = "phundament/docker"
       docker.cmd = ["php","-S","0.0.0.0:8000","-t","/app/frontend/web"]
       docker.env = {
-          "YII_DEBUG" => true,
-          "YII_ENV" => "dev",
-          "APP_NAME" => "Phundament 4 Docker & Vagrant",
-          "APP_ADMIN_EMAIL" => "admin@myapp.local",
-          "APP_ADMIN_PASSWORD" => "admin1234",
-          "APP_SUPPORT_EMAIL" => "support@myapp.local",
           "DATABASE_DSN" => "mysql:host=172.17.42.1;port=22279;dbname=p4",
           "DATABASE_USER" => "dev",
           "DATABASE_PASSWORD" => "dev-123"
