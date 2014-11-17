@@ -1,6 +1,7 @@
 Docker container with vagrant
 -----------------------------
 
+### Initialize
 
 > #### Windows and OS X Users Only
 > Recommended first time setup with a dedicated Docker-Host for Vagrant:
@@ -14,8 +15,6 @@ Docker container with vagrant
 > For some Vagrant versions you may also need to set `DOCKER_TLS_VERIFY=0`.
 >
 > Please also make sure to start the `dockerhost-vm` manually **before** starting the Docker containers with `vagrant up`.
-
-### Initialize
 
 Setup the app:
 
