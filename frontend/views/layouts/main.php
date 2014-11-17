@@ -51,7 +51,7 @@ AppAsset::register($this);
             $menuItems[] = [
                 'label'       => '<i class="glyphicon glyphicon-log-out"></i>',
                 'url'         => ['/user/security/logout'],
-                'linkOptions' => ['data-method' => 'post']
+                'linkOptions' => ['data-method' => 'post', 'id' => 'link-logout']
             ];
         }
     }

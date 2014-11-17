@@ -47,7 +47,7 @@ class SignupCest
         $I->wantTo('ensure that signup works');
 
         $signupPage = SignupPage::openBy($I);
-        $I->see('Sign up', 'h3');
+        $I->see('Sign up', 'button');
         //$I->see('Please fill out the following fields to signup:');
 
         $I->amGoingTo('submit signup form with no data');

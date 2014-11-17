@@ -9,7 +9,7 @@ $loginPage = LoginPage::openBy($I);
 
 $I->amGoingTo('submit login form with no data');
 $loginPage->login('', '');
-$I->expectTo('see validations errorsxx');
+$I->expectTo('see validations errors');
 $I->see('Login cannot be blank.', '.help-block');
 $I->see('Password cannot be blank.', '.help-block');
 
@@ -22,7 +22,7 @@ $I->see('Invalid login or password', '.help-block');
 $I->amGoingTo('try to login with correct credentials');
 $loginPage->login('admin', 'admin1234');
 $I->expectTo('see that user is logged');
-$I->seeLink('Logout (admin)');
+$I->see(null,'#link-logout');
 $I->dontSeeLink('Login');
 $I->dontSeeLink('Signup');
 /** Uncomment if using WebDriver
