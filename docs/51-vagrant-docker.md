@@ -1,4 +1,4 @@
-Docker container with vagrant
+Docker containers with vagrant
 -----------------------------
 
 > **Note! This section is under development and requires `Vagrant >= 1.7.0-dev`**
