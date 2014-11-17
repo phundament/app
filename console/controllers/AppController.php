@@ -150,7 +150,7 @@ class AppController extends BaseAppController
     }
 
     /**
-     * Clear $app/web/assets folder, null clears all assets in frontend and backend
+     * Clear [application]/web/assets folder, null clears all assets in frontend and backend
      *
      * @param frontend|backend|null $app
      */
@@ -180,19 +180,23 @@ class AppController extends BaseAppController
                 }
                 $cmd = 'cd "' . $assetFolder . '" && ls | grep -e ' . $matchRegex .  ' | xargs rm -rf ';
                 break;
+            default:
+                echo "Error: Unknown application\n\n";
+                exit;
         }
 
         // Set command
         $command = new Command($cmd);
         
         // Prompt user        
-        $delete = $this->prompt("\nReally what to delete \"" . $app . "\" web assets? (leave empty to skip):");
+        $delete = $this->confirm("\nDo you really want to delete \"" . $app . "\" web assets?", ['default'=>true]);
 
         if ($delete) {
             
             // Try to execute $command
             if ($command->execute()) {
-                echo "\nOK - \"" . $app . "\" web assets has been deleted." . "\n\n";
+                echo "\"{$app}\" web assets have been deleted.";
+                echo "\nDone.\n\n";
             } else {
                 echo "\n" . $command->getError() . "\n";
                 echo $command->getStdErr();
