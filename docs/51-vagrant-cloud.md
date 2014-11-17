@@ -1,4 +1,4 @@
-Cloud installation with vagrant
+Cloud installation with Vagrant
 -------------------------------
 
 > NOTE! This section is under development
