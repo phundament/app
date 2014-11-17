@@ -28,9 +28,10 @@ before_script:
   - php yii app/setup-tests --interactive=0
 
 env:
-  - DATABASE_DSN=mysql:host=localhost;dbname=p4
-  - DATABASE_USER=dev
-  - DATABASE_PASSWORD=dev123
+  global:
+    - DATABASE_DSN="mysql:host=localhost;dbname=p4"
+    - DATABASE_USER=dev
+    - DATABASE_PASSWORD=dev123
 
 script:
   - php yii app/run-tests --interactive=0
