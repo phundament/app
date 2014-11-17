@@ -12,7 +12,7 @@ $this->title .= 'Home';
         <p class="lead">12factor PHP Application Template for Yii 2.0</p>
 
         <div>
-            <a href="<?= \yii\helpers\Url::to(['site/docs','file'=>'10-about.md']) ?>" class="btn btn-primary btn-lg">Read more...</a>
+            <a href="<?= \yii\helpers\Url::to(['site/docs','file'=>'10-about.md']) ?>" class="btn btn-primary btn-lg">Docs</a>
             <a href="#download" class="btn btn-primary btn-lg">Get It!</a>
         </div>
 
