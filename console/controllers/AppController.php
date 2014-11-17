@@ -128,24 +128,14 @@ class AppController extends BaseAppController
      */
     public function actionClearAssets($app = null)
     {
-
         $frontendAssets = \Yii::getAlias('@frontend/web/assets');
         $backendAssets  = \Yii::getAlias('@backend/web/assets');
         $matchRegex     = '"^[a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9]\?[a-z0-9]$"';
-        $command        = new Command(
-            array(
-                // Will be passed as options to proc_open()
-                'procOptions' => array(
-                    'bypass_shell' => true,
-                ),
-            )
-        );
 
         // create $cmd command
         switch ($app) {
             case null :
                 $app = "frontend & backend";
-
                 $cmd = 'cd "' . $frontendAssets . '" && ls | grep -e ' . $matchRegex . ' | xargs rm -rf ';
                 $cmd .= ' && cd "' . $backendAssets . '" && ls | grep -e ' . $matchRegex . ' | xargs rm -rf ';
                 break;
@@ -158,13 +148,12 @@ class AppController extends BaseAppController
                 } elseif ($app === 'backend') {
                     $assetFolder = $backendAssets;
                 }
-
                 $cmd = 'cd "' . $assetFolder . '" && ls | grep -e "^[a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9]\?[a-z0-9]$" | xargs rm -rf ';
                 break;
         }
 
-        // Set $command
-        $command->setCommand($cmd);
+        // Set command
+        $command = new Command($cmd);
 
         // Try to execute $command
         if ($command->execute()) {
