@@ -4,7 +4,12 @@ allow from all
 
 #Options +FollowSymLinks
 IndexIgnore */*
-RewriteEngine on
+
+RewriteEngine On
+
+# Redirect all traffic from www.example.com to example.local
+### RewriteCond %{HTTP_HOST}  ^www.example.com [nocase]
+### RewriteRule ^(.*)         http://example.com/$1 [last,redirect=301]
 
 # if a directory or a file exists, use it directly
 RewriteCond %{REQUEST_FILENAME} !-f
