@@ -130,6 +130,8 @@ class AppController extends BaseAppController
     {
         $frontendAssets = \Yii::getAlias('@frontend/web/assets');
         $backendAssets  = \Yii::getAlias('@backend/web/assets');
+
+        // Matches from 7-8 char folder names, the 8. char is optional
         $matchRegex     = '"^[a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9]\?[a-z0-9]$"';
 
         // create $cmd command
