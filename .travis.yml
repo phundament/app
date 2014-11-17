@@ -13,20 +13,6 @@ matrix:
     - php: hhvm
     - php: 5.6
 
-install:
-  - composer self-update && composer --version
-# basic application:
-  - composer global require "fxp/composer-asset-plugin:1.0.0-beta3"
-  - export PATH=~/.composer/vendor/bin:$PATH
-  - cp .env-dist .env
-  - composer install --dev --prefer-dist
-
-before_script:
-  - mysql -e 'create database p4_test;'
-  - mysql -e "CREATE USER 'dev'@'localhost' IDENTIFIED BY 'dev123';"
-  - mysql -uroot -e "GRANT ALL PRIVILEGES ON * . * TO 'dev'@'localhost';"
-  - php yii app/setup-tests --interactive=0
-
 env:
   global:
     - DATABASE_DSN="mysql:host=localhost;dbname=p4"
@@ -35,6 +21,19 @@ env:
     - TEST_DATABASE_DSN="mysql:host=localhost;dbname=p4_test"
     - TEST_DATABASE_USER=dev
     - TEST_DATABASE_PASSWORD=dev123
+
+install:
+  - composer self-update && composer --version
+# basic application:
+  - composer global require "fxp/composer-asset-plugin:1.0.0-beta3"
+  - cp .env-dist .env
+  - composer install --dev --prefer-dist
+
+before_script:
+  - mysql -e 'create database p4_test;'
+  - mysql -e "CREATE USER 'dev'@'localhost' IDENTIFIED BY 'dev123';"
+  - mysql -uroot -e "GRANT ALL PRIVILEGES ON * . * TO 'dev'@'localhost';"
+  - php yii app/setup-tests --interactive=0
 
 script:
   - php yii app/run-tests --interactive=0

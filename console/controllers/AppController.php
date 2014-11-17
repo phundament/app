@@ -41,7 +41,14 @@ class AppController extends BaseAppController
     public function actionVersion()
     {
         echo "Application Version\n";
-        $this->execute('git describe');
+        $cmd = new Command("git describe");
+        if ($cmd->execute()) {
+            echo $cmd->getOutput();
+        } else {
+            echo $cmd->getOutput();
+            echo $cmd->getStdErr();
+            echo $cmd->getError();
+        }
         echo "\n";
     }
 
@@ -50,7 +57,14 @@ class AppController extends BaseAppController
      */
     public function actionUpdate()
     {
-        $this->execute("git pull");
+        $cmd = new Command("git pull");
+        if ($cmd->execute()) {
+            echo $cmd->getOutput();
+        } else {
+            echo $cmd->getOutput();
+            echo $cmd->getStdErr();
+            echo $cmd->getError();
+        }
         $this->composer("install");
         $this->action('migrate');
         $this->action('cache/flush', 'cache');
@@ -80,10 +94,22 @@ class AppController extends BaseAppController
             'require --dev "yiisoft/yii2-coding-standards:2.*" "yiisoft/yii2-codeception:2.*" "yiisoft/yii2-faker:2.*"'
         );
 
-        $this->execute('codecept build -c tests/codeception/backend');
-        $this->execute('codecept build -c tests/codeception/frontend');
-        $this->execute('codecept build -c tests/codeception/common');
-        $this->execute('codecept build -c tests/codeception/console');
+        // array with commands
+        $commands[] = '~/.composer/vendor/bin/codecept build -c tests/codeception/backend';
+        $commands[] = '~/.composer/vendor/bin/codecept build -c tests/codeception/frontend';
+        $commands[] = '~/.composer/vendor/bin/codecept build -c tests/codeception/common';
+        $commands[] = '~/.composer/vendor/bin/codecept build -c tests/codeception/console';
+
+        foreach ($commands AS $command) {
+            $cmd = new Command($command);
+            if ($cmd->execute()) {
+                echo $cmd->getOutput();
+            } else {
+                echo $cmd->getOutput();
+                echo $cmd->getStdErr();
+                echo $cmd->getError();
+            }
+        }
     }
 
     /**
@@ -93,12 +119,14 @@ class AppController extends BaseAppController
     {
         echo "Note! You can tear down the test-server with `killall php`\n";
         if ($this->confirm("Start testing?", true)) {
-            $this->execute('php -S localhost:8042 > /dev/null 2>&1 &');
 
-            $commands[] = 'codecept run -c tests/codeception/backend';
-            $commands[] = 'codecept run -c tests/codeception/frontend';
-            $commands[] = 'codecept run -c tests/codeception/common';
-            $commands[] = 'codecept run -c tests/codeception/console';
+            // array with commands
+            $commands[] = 'php -S localhost:8042 > /dev/null 2>&1 &';
+            $commands[] = '~/.composer/vendor/bin/codecept run -c tests/codeception/backend';
+            $commands[] = '~/.composer/vendor/bin/codecept run -c tests/codeception/backend';
+            $commands[] = '~/.composer/vendor/bin/codecept run -c tests/codeception/frontend';
+            $commands[] = '~/.composer/vendor/bin/codecept run -c tests/codeception/common';
+            $commands[] = '~/.composer/vendor/bin/codecept run -c tests/codeception/console';
 
             $hasError = false;
             foreach ($commands AS $command) {
@@ -118,6 +146,51 @@ class AppController extends BaseAppController
             } else {
                 return 0;
             }
+        }
+    }
+
+    /**
+     * Clear $app/web/assets folder, null clears all assets in frontend and backend
+     *
+     * @param frontend|backend|null $app
+     */
+    public function actionClearAssets($app = null)
+    {
+        $frontendAssets = \Yii::getAlias('@frontend/web/assets');
+        $backendAssets  = \Yii::getAlias('@backend/web/assets');
+
+        // Matches from 7-8 char folder names, the 8. char is optional
+        $matchRegex     = '"^[a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9]\?[a-z0-9]$"';
+
+        // create $cmd command
+        switch ($app) {
+            case null :
+                $app = "frontend & backend";
+                $cmd = 'cd "' . $frontendAssets . '" && ls | grep -e ' . $matchRegex . ' | xargs rm -rf ';
+                $cmd .= ' && cd "' . $backendAssets . '" && ls | grep -e ' . $matchRegex . ' | xargs rm -rf ';
+                break;
+            case 'frontend':
+            case 'backend' :
+
+                // Set $assetFolder depending on $app param
+                if ($app === 'frontend') {
+                    $assetFolder = $frontendAssets;
+                } elseif ($app === 'backend') {
+                    $assetFolder = $backendAssets;
+                }
+                $cmd = 'cd "' . $assetFolder . '" && ls | grep -e ' . $matchRegex .  ' | xargs rm -rf ';
+                break;
+        }
+
+        // Set command
+        $command = new Command($cmd);
+
+        // Try to execute $command
+        if ($command->execute()) {
+            echo "\nOK - " . $app . " assets has been deleted." . "\n\n";
+        } else {
+            echo "\n" . $command->getError() . "\n";
+            echo $command->getStdErr();
         }
     }
 
@@ -166,11 +239,22 @@ class AppController extends BaseAppController
     public function actionGenerateDocs()
     {
         if ($this->confirm('Regenerate documentation files into ./docs-html', true)) {
-            $this->execute('vendor/bin/apidoc guide --interactive=0 docs docs-html');
-            $this->execute(
-                'vendor/bin/apidoc api --interactive=0 --exclude=runtime/,tests/ backend,common,console,frontend docs-html'
-            );
-            $this->execute('vendor/bin/apidoc guide --interactive=0 docs docs-html');
+
+            // array with commands
+            $commands[] = 'vendor/bin/apidoc guide --interactive=0 docs docs-html';
+            $commands[] = 'vendor/bin/apidoc api --interactive=0 --exclude=runtime/,tests/ backend,common,console,frontend docs-html';
+            $commands[] = 'vendor/bin/apidoc guide --interactive=0 docs docs-html';
+
+            foreach ($commands AS $command) {
+                $cmd = new Command($command);
+                if ($cmd->execute()) {
+                    echo $cmd->getOutput();
+                } else {
+                    echo $cmd->getOutput();
+                    echo $cmd->getStdErr();
+                    echo $cmd->getError();
+                }
+            }
         }
     }
 
@@ -205,4 +289,4 @@ class AppController extends BaseAppController
         }
     }
 
-} 
+}
