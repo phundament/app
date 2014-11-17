@@ -88,13 +88,16 @@ The Phundament repository contains the following main branches:
 - 4.0 (alpha, beta, RC, stable releases)
 - 3.0 (alpha, beta, RC, stable releases)
 
+Special thanks
+--------------
+
+... go out to the qiangxue, samdark, cebe, motin, mikehaertl, tonydspainyard, thyseus, quexer69, marc700 and disco-tex77 for their work, feedback and input.
+
 Developed by
 ------------
 
-[diemeisterei GmbH](http://diemeisterei.de)
-
-Immenhofer Straße 21
-
+[diemeisterei GmbH](http://diemeisterei.de)<br/>
+Immenhofer Straße 21<br/>
 D-70180 Stuttgart
 
 Germany
