@@ -35,7 +35,8 @@ return [
             'enablePrettyUrl' => getenv('APP_PRETTY_URLS') ? true : false,
             'showScriptName' => false,
             'rules' => [
-                'docs/<file:[a-z0-9\-\.]*>' => 'site/docs'
+                'docs/<file:[a-z0-9\-\.]+>' => 'site/docs',
+                'docs' => 'site/docs'
             ],
         ],
         'view'         => [
