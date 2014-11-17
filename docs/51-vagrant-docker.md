@@ -17,6 +17,7 @@ cp ./platforms/vagrant-docker/dockerhost-vm/Vagrantfile \
 
 Setup the app:
 
+    cp .env-dist .env
     cp ./platforms/vagrant-docker/Vagrantfile .
 
 ### Run
