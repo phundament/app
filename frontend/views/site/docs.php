@@ -6,10 +6,10 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <div class="docs">
     <div class="row">
-        <div class="col-lg-9 col-md-8 col-sm-12 pull-right">
+        <div class="col-lg-9 col-md-8 col-xs-12 pull-right">
             <?= $html ?>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-12 pull-left">
+        <div class="col-lg-3 col-md-4 col-xs-12 pull-left">
             <div class="toc well">
                 <?= $toc ?>
             </div>
