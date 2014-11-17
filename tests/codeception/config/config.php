@@ -5,7 +5,10 @@
 return [
     'components' => [
         'db' => [
-            'dsn' => 'mysql:host=localhost;dbname=p4_test',
+            'dsn'         => getenv('TEST_DATABASE_DSN'),
+            'username'    => getenv('TEST_DATABASE_USER'),
+            'password'    => getenv('TEST_DATABASE_PASSWORD'),
+            'tablePrefix' => getenv('TEST_DATABASE_TABLE_PREFIX'),
         ],
         'mailer' => [
             'useFileTransport' => true,

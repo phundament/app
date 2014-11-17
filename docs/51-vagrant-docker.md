@@ -1,10 +1,13 @@
-Docker container with vagrant
+Docker containers with vagrant
 -----------------------------
+
+> **Note! This section is under development and requires at least `Vagrant >= 1.7.0-dev`**
 
 ### Initialize
 
 > #### Windows and OS X Users Only
-> Recommended first time setup with a dedicated Docker-Host for Vagrant:
+>
+> Recommended first time setup with a dedicated `dockerhost-vm` for Vagrant:
 >
 > ```
 > cp ./platforms/vagrant-docker/dockerhost-vm/Vagrantfile \
@@ -14,7 +17,12 @@ Docker container with vagrant
 > And set your environment variable `DOCKER_HOST_VAGRANTFILE=~/dockerhost-vm/Vagrantfile`.
 > For some Vagrant versions you may also need to set `DOCKER_TLS_VERIFY=0`.
 >
-> Please also make sure to start the `dockerhost-vm` manually **before** starting the Docker containers with `vagrant up`.
+> **Please also make sure to start your `dockerhost-vm` manually _before_ starting the Docker containers:**
+>
+> ```
+> cd ~/dockerhost-vm
+> vagrant up
+> ```
 
 Setup the app:
 
@@ -23,7 +31,9 @@ Setup the app:
 
 ### Run
 
-    vagrant up
+    vagrant up db --provider=docker
+    vagrant up backend --provider=docker
+    vagrant up frontend --provider=docker
 
 ### Setup
 
