@@ -2,7 +2,7 @@ Docker container with vagrant
 -----------------------------
 
 
-> #### Windows and OSX Users Only
+> #### Windows and OS X Users Only
 > Recommended first time setup with a dedicated Docker-Host for Vagrant:
 >
 > ```
