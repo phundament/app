@@ -96,8 +96,8 @@ Special thanks
 Developed by
 ------------
 
-[diemeisterei GmbH](http://diemeisterei.de)<br/>
-Immenhofer Straße 21<br/>
+[diemeisterei GmbH](http://diemeisterei.de)  
+Immenhofer Straße 21  
 D-70180 Stuttgart
 
 Germany
