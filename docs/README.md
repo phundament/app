@@ -36,4 +36,7 @@ Support
 -------
 
 - [Online Ressources](70-links.md)
+
+---
+
 - *tbd* [Upgrading from 3.x](11-upgrading.md)
