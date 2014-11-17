@@ -18,8 +18,8 @@ install:
 # basic application:
   - composer global require "fxp/composer-asset-plugin:1.0.0-beta3"
   - export PATH=~/.composer/vendor/bin:$PATH
+  - cp .env-dist .env
   - composer install --dev --prefer-dist
-  - ./init --env=Development --overwrite=n
 
 before_script:
   - mysql -e 'create database p4_test;'
