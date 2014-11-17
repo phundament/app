@@ -184,13 +184,19 @@ class AppController extends BaseAppController
 
         // Set command
         $command = new Command($cmd);
+        
+        // Prompt user        
+        $delete = $this->prompt("\nReally what to delete \"" . $app . "\" web assets? (leave empty to skip):");
 
-        // Try to execute $command
-        if ($command->execute()) {
-            echo "\nOK - " . $app . " assets has been deleted." . "\n\n";
-        } else {
-            echo "\n" . $command->getError() . "\n";
-            echo $command->getStdErr();
+        if ($delete) {
+            
+            // Try to execute $command
+            if ($command->execute()) {
+                echo "\nOK - \"" . $app . "\" web assets has been deleted." . "\n\n";
+            } else {
+                echo "\n" . $command->getError() . "\n";
+                echo $command->getStdErr();
+            }
         }
     }
 
