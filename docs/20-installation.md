@@ -28,12 +28,6 @@ cp .env-dist .env
 edit .env
 ```
 
-If you choose `APP_PRETTY_URLS=1` in your `.env` file, activate the `/frontend/web/.htaccess`
-
-```
-cp frontend/web/.htaccess-dist frontend/web/.htaccess
-```
-
 After adjusting the parameters, finalize the application setup with:
 
 ```
