@@ -32,11 +32,34 @@ class SiteController extends Controller
         ];
     }
 
+    /**
+     * Renders the start page
+     * @return string
+     */
     public function actionIndex()
     {
+        // SEO meta tags
+        $this->view->registerMetaTag(
+            [
+                'name'    => 'keywords',
+                'content' => 'Phundament,Yii,Yii2,application,template,12factor,PHP,docker,vagrant,fig'
+            ],
+            'keywords'
+        );
+        $this->view->registerMetaTag(
+            [
+                'name'    => 'description',
+                'content' => 'Phundament 4 - 12factor PHP Web Application Template for Yii 2.0 Framework with Docker, fig, Vagrant, PaaS, cloud deployment and AWS EC2 support.'
+            ],
+            'description'
+        );
         return $this->render('index');
     }
 
+    /**
+     * Renders the contact page
+     * @return string
+     */
     public function actionContact()
     {
         $model = new ContactForm();
@@ -61,6 +84,10 @@ class SiteController extends Controller
         }
     }
 
+    /**
+     * Renders the documentation pages from github.com
+     * @return string
+     */
     public function actionDocs($file = '10-about.md')
     {
         // TOOD: DRY(!)
@@ -90,6 +117,10 @@ class SiteController extends Controller
         );
     }
 
+    /**
+     * Helper function for the docs action
+     * @return string
+     */
     private function createHtml($file)
     {
         $markdown = file_get_contents('https://raw.githubusercontent.com/phundament/app/master/docs/' . $file);

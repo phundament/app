@@ -16,8 +16,7 @@ AppAsset::register($this);
 <html lang="<?= Yii::$app->language ?>">
 <head>
     <meta charset="<?= Yii::$app->charset ?>"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name=”viewport” content=”width=1024, minimal-ui”>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
@@ -81,7 +80,7 @@ AppAsset::register($this);
         <p class="pull-left">&copy; <?= \Yii::$app->params['copyrightBy'] ?> <?= date('Y') ?></p>
 
         <p class="pull-right"><?= Html::a(
-                Html::img('http://t.phundament.com/p4-32-bw.png'),
+                Html::img('http://t.phundament.com/p4-32-bw.png', ['alt' => 'Icon Phundament 4']),
                 '#',
                 ['data-toggle' => 'modal', 'data-target' => '#infoModal']
             ) ?></p>

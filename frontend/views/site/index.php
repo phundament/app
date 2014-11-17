@@ -12,8 +12,9 @@ $this->title .= 'Home';
         <p class="lead">12factor PHP Application Template for Yii 2.0</p>
 
         <div>
+            <a href="#download" class="btn btn-primary btn-lg">Download</a>
             <a href="<?= \yii\helpers\Url::to(['site/docs','file'=>'10-about.md']) ?>" class="btn btn-primary btn-lg">Docs</a>
-            <a href="#download" class="btn btn-primary btn-lg">Get It!</a>
+            <a href="https://github.com/phundament/app" class="btn btn-primary btn-lg" target="_blank">Fork</a>
         </div>
 
     </div>
@@ -22,13 +23,6 @@ $this->title .= 'Home';
 <div class="container">
 
     <div class="blurb" id="download">
-        <div class="text-center">
-            <iframe style="margin-left: 40px"
-                    src="http://ghbtns.com/github-btn.html?user=phundament&repo=app&type=fork&count=true&size=large"
-                    allowtransparency="true" frameborder="0" scrolling="0" width="130" height="30"></iframe>
-            <iframe src="http://ghbtns.com/github-btn.html?user=phundament&repo=app&type=watch&count=true&size=large"
-                    allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
-        </div>
         <h2 class="text-center">Download</h2>
 
         <div class="row">
@@ -192,7 +186,7 @@ $this->title .= 'Home';
                     </div>
                     <div class="panel-body text-center">Core functionality.
                         <hr>
-                        <a target="_blank" class="btn btn-lg btn-default btn-block" target="_blank"
+                        <a target="_blank" class="btn btn-lg btn-default btn-block"
                            href="http://www.yiiframework.com/doc-2.0/guide-index.html">Yii 2.0 Definitive Guide</a>
                     </div>
                 </div>
@@ -227,11 +221,9 @@ $this->title .= 'Home';
         <div class="row">
             <div class="col-sm-4 col-sm-offset-2">
                 <div class="panel panel-default">
-                    <div class="panel-heading text-center"><h2><i class="glyphicon glyphicon-exclamation-sign"></i></h2>
+                    <div class="panel-heading text-center"><h2><i class="glyphicon glyphicon-exclamation-sign"></i> Issues</h2>
                     </div>
                     <div class="panel-body text-center">
-                        Issues.
-                        <hr>
                         <a target="_blank"
                            class="btn btn-lg btn-default btn-block"
                            href="https://github.com/phundament/app/issues?q=is%3Aopen+is%3Aissue+milestone%3A4.0">GitHub</a>
@@ -240,11 +232,9 @@ $this->title .= 'Home';
             </div>
             <div class="col-sm-4">
                 <div class="panel panel-default">
-                    <div class="panel-heading text-center"><h2><i class="glyphicon glyphicon-question-sign"></i></h2>
+                    <div class="panel-heading text-center"><h2><i class="glyphicon glyphicon-question-sign"></i> FAQ</h2>
                     </div>
                     <div class="panel-body text-center">
-                        FAQ.
-                        <hr>
                         <a target="_blank"
                            class="btn btn-lg btn-default btn-block"
                            href="http://stackoverflow.com/questions/tagged/phundament?sort=active">Stackoverflow</a>
