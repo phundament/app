@@ -1,6 +1,6 @@
 {
     "name": "phundament/app",
-    "description": "The 12factor Application Template for Yii 2.0 Framework",
+    "description": "12factor Application Template for Yii 2.0 Framework",
     "keywords": ["phundament", "yii2", "framework", "application", "template", "boilerplate", "vagrant", "docker", "fig", "12factor", "dotenv"],
     "homepage": "http://www.phundament.com/",
     "type": "project",
