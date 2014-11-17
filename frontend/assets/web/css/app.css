@@ -6245,7 +6245,7 @@ pre code {
 }
 @media (max-width: 767px) {
   .header h1 {
-    font-size: 50px;
+    font-size: 44px;
   }
 }
 .header .lead {
@@ -6263,6 +6263,12 @@ pre code {
   padding: 15px;
   background-color: transparent;
   color: #ffffff;
+}
+@media (max-width: 767px) {
+  .header .btn-lg {
+    display: block;
+    width: 100%;
+  }
 }
 .header .btn-lg:hover {
   background-color: #ffffff;
