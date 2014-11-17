@@ -6,7 +6,8 @@ Docker containers with vagrant
 ### Initialize
 
 > #### Windows and OS X Users Only
-> Recommended first time setup with a dedicated Docker-Host for Vagrant:
+>
+> Recommended first time setup with a dedicated `dockerhost-vm` for Vagrant:
 >
 > ```
 > cp ./platforms/vagrant-docker/dockerhost-vm/Vagrantfile \
@@ -16,7 +17,7 @@ Docker containers with vagrant
 > And set your environment variable `DOCKER_HOST_VAGRANTFILE=~/dockerhost-vm/Vagrantfile`.
 > For some Vagrant versions you may also need to set `DOCKER_TLS_VERIFY=0`.
 >
-> **Please also make sure to start your `dockerhost-vm` manually _before_ starting the Docker containers:
+> **Please also make sure to start your `dockerhost-vm` manually _before_ starting the Docker containers:**
 >
 > ```
 > cd ~/dockerhost-vm
