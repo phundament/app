@@ -11,7 +11,7 @@ Project
 Community
 ---------
 
-- [Issues](https://github.com/phundament/app/tree/4.0)
+- [Issues](https://github.com/phundament/app/issues?q=is%3Aopen+is%3Aissue+milestone%3A4.0)
 - [FAQ](http://stackoverflow.com/questions/tagged/phundament)
 
 
