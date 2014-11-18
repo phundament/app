@@ -6,7 +6,7 @@ Project
 
 - [Website](http://phundament.com)
 - [GitHub](http://phundament.com)
-- [Packagist](https://packagist.org/packages/phundament/app)
+- [Developer](http://diemeisterei.de)
 
 Community
 ---------
