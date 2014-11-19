@@ -48,3 +48,18 @@ You should now be able to access the container under `http://docker.local:40080`
 > On Linux `docker.local` is usually equal to `localhost`, on OS X the command `echo $DOCKER_HOST` should print the IP of your host VM.
 
 
+### Virtual hosts with Docker
+
+To automatically create virtual hosts for your projects, you can use a combination of this [nginx-proxy](https://registry.hub.docker.com/u/jwilder/nginx-proxy/)
+image and [xip.io](http://xip.io).
+
+First, run the container like described in its README, before you start web application containers.
+
+There are virtual hosts prepared in `fig.yml` for the web-applications, adjust the IPs if needed:
+ 
+```
+environment:
+    VIRTUAL_HOST: phundament.127.0.0.1.xip.io,phundament.192.168.59.103.xip.io
+```
+ 
+You should be able to access your web-application under `http://phundament.127.0.0.1.xip.io`. 
