@@ -55,6 +55,11 @@ image and [xip.io](http://xip.io).
 
 First, run the container like described in its README, before you start web application containers.
 
+```
+docker pull jwilder/nginx-proxy
+docker run -d -p 80:80 -v /var/run/docker.sock:/tmp/docker.sock jwilder/nginx-proxy
+```
+
 There are virtual hosts prepared in `fig.yml` for the web-applications, adjust the IPs if needed:
  
 ```
