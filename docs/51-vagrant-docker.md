@@ -1,7 +1,7 @@
 Docker containers with Vagrant
 ------------------------------
 
-> **Note! This section is under development and requires at least `Vagrant >= 1.7.0-dev`**
+> **Note! This section is under development and requires `Vagrant >= 1.6.5-dev`**
 
 ### Initialize
 
@@ -15,9 +15,6 @@ Docker containers with Vagrant
 > ```
 >
 > And set your environment variable `DOCKER_HOST_VAGRANTFILE=~/dockerhost-vm/Vagrantfile`.
-> For some Vagrant versions you may also need to set `DOCKER_TLS_VERIFY=0`.
->
-> **Please also make sure to start your `dockerhost-vm` manually _before_ starting the Docker containers:**
 >
 > ```
 > cd ~/dockerhost-vm
@@ -29,13 +26,24 @@ Setup the app:
     cp .env-dist .env
     cp ./platforms/vagrant-docker/Vagrantfile .
 
-### Run
+**Since Vagrant <=1.6.5 has issues, with simulateous Docker containers, we recommend to start only the `db` container first, to bring up the `dockerhost-vm` _before_ starting the rest of the Docker containers:**
 
     vagrant up db --provider=docker
-    vagrant up backend --provider=docker
-    vagrant up frontend --provider=docker
 
-### Setup
+When the database container is running, initialize the application and setup the the database:
 
     vagrant docker-run backend -- composer install --prefer-dist
     vagrant docker-run backend -- ./yii app/setup --interactive=0
+
+### Run
+
+After initialization and setup you can bring up the containers:
+
+    vagrant up backend --provider=docker
+    vagrant up frontend --provider=docker
+
+> #### Windows and OS X Users Only
+>
+> Our Vagrant `dockerhost-vm` registers a private network interface with the IP `192.168.7.6`, we recommend setting up a entry in `/etc/hosts` with `192.168.7.6 doccker.vagrant`
+
+Now, you're ready to access the [frontend application](http://docker.vagrant:22280) or [backend application](http://docker.vagrant:22281).
