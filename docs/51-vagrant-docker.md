@@ -21,7 +21,7 @@ Docker containers with Vagrant
 > vagrant up
 > ```
 
-Setup the app:
+Setup the your environment:
 
     cp .env-dist .env
     cp ./platforms/vagrant-docker/Vagrantfile .
