@@ -3,6 +3,13 @@ Docker containers with Vagrant
 
 > **Note! This section is under development and requires `Vagrant >= 1.6.5-dev`**
 
+### Get started!
+
+[Download](https://github.com/phundament/app/tags) or clone:
+
+    git clone https://github.com/phundament/app.git
+    cd app
+
 ### Initialize
 
 > #### Windows and OS X Users Only
