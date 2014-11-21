@@ -26,7 +26,8 @@ return [
             'cookieValidationKey' => getenv('APP_COOKIE_VALIDATION_KEY'),
         ],
         'assetManager' => [
-            'forceCopy' => YII_DEBUG ? true : false,
+            'forceCopy' => false, // Note: May degrade performance with Docker or VMs
+            'linkAssets' => false, // Note: May also publish files, which are excluded in an asset bundle
             'bundles'   => [
                 'yii\bootstrap\BootstrapAsset' => false, // provided by frontend/assets/web/app.css
             ],
