@@ -85,7 +85,7 @@ class AppController extends BaseAppController
      */
     public function actionSetupTests()
     {
-        $this->action('migrate', ['db' => 'db_test', 'interactive' => $this->interactive]);
+        $this->action('migrate', ['interactive' => $this->interactive]);
 
         $this->composer(
             'global require "codeception/codeception:2.0.*" "codeception/specify:*" "codeception/verify:*"'

@@ -139,6 +139,22 @@
             "time": "2014-02-26 17:37:17"
         },
         {
+            "name": "bower-asset/admin-lte",
+            "version": "1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/almasaeed2010/AdminLTE.git",
+                "reference": "0e6963e04d765304d07a8c9b68480dd0f013b2ab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/almasaeed2010/AdminLTE/zipball/0e6963e04d765304d07a8c9b68480dd0f013b2ab",
+                "reference": "0e6963e04d765304d07a8c9b68480dd0f013b2ab",
+                "shasum": ""
+            },
+            "type": "bower-asset-library"
+        },
+        {
             "name": "bower-asset/bootstrap",
             "version": "v3.2.0",
             "source": {
@@ -190,6 +206,43 @@
             ]
         },
         {
+            "name": "bower-asset/font-awesome",
+            "version": "v4.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FortAwesome/Font-Awesome.git",
+                "reference": "a65bd93d81e9e6bd5ebfa41757a4474960b973b4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/a65bd93d81e9e6bd5ebfa41757a4474960b973b4",
+                "reference": "a65bd93d81e9e6bd5ebfa41757a4474960b973b4",
+                "shasum": ""
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": [
+                    "./css/font-awesome.css",
+                    "./fonts/*"
+                ],
+                "bower-asset-ignore": [
+                    "*/.*",
+                    "*.json",
+                    "src",
+                    "*.yml",
+                    "Gemfile",
+                    "Gemfile.lock",
+                    "*.md"
+                ]
+            },
+            "license": [
+                "OFL-1.1",
+                "MIT",
+                "CC-BY-3.0"
+            ],
+            "description": "Font Awesome"
+        },
+        {
             "name": "bower-asset/jquery",
             "version": "2.1.1",
             "source": {
@@ -234,16 +287,16 @@
         },
         {
             "name": "bower-asset/jquery.inputmask",
-            "version": "3.1.38",
+            "version": "3.1.42",
             "source": {
                 "type": "git",
                 "url": "https://github.com/RobinHerbots/jquery.inputmask.git",
-                "reference": "464cddbdea65411896468f40321e68abcc75a34c"
+                "reference": "ba392f1c9c1f7a05d1b89a5e49cbd0610face768"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RobinHerbots/jquery.inputmask/zipball/464cddbdea65411896468f40321e68abcc75a34c",
-                "reference": "464cddbdea65411896468f40321e68abcc75a34c",
+                "url": "https://api.github.com/repos/RobinHerbots/jquery.inputmask/zipball/ba392f1c9c1f7a05d1b89a5e49cbd0610face768",
+                "reference": "ba392f1c9c1f7a05d1b89a5e49cbd0610face768",
                 "shasum": ""
             },
             "require": {
@@ -504,21 +557,25 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-adminlte-asset.git",
-                "reference": "39f4b4dd1d5f14764fc72b805554eb0a563afd24"
+                "reference": "fa8ce6d1517eea3ce93c964a0213a0f4e81ee87d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-adminlte-asset/zipball/39f4b4dd1d5f14764fc72b805554eb0a563afd24",
-                "reference": "39f4b4dd1d5f14764fc72b805554eb0a563afd24",
+                "url": "https://api.github.com/repos/dmstr/yii2-adminlte-asset/zipball/fa8ce6d1517eea3ce93c964a0213a0f4e81ee87d",
+                "reference": "fa8ce6d1517eea3ce93c964a0213a0f4e81ee87d",
                 "shasum": ""
             },
             "require": {
-                "yiisoft/yii2": "*"
+                "bower-asset/admin-lte": "*",
+                "bower-asset/font-awesome": "*",
+                "cebe/yii2-gravatar": "*",
+                "yiisoft/yii2": "*",
+                "yiisoft/yii2-bootstrap": "*"
             },
             "type": "yii2-extension",
             "autoload": {
                 "psr-4": {
-                    "dmstr\\web\\": ""
+                    "dmstr\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -529,14 +586,19 @@
                 {
                     "name": "Tobias Munk",
                     "email": "tobias@diemeisterei.de"
+                },
+                {
+                    "name": "Evgeniy Tkachenko",
+                    "email": "et.coder@gmail.com"
                 }
             ],
             "description": "Backend theme for Yii2 Framework",
             "keywords": [
+                "AdminLTE",
                 "extension",
                 "yii2"
             ],
-            "time": "2014-10-16 18:17:02"
+            "time": "2014-12-02 19:18:31"
         },
         {
             "name": "dmstr/yii2-app-command",
@@ -584,12 +646,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-migrate-command.git",
-                "reference": "c6eeaeee75998c79f9528f4d5c31c13edebe6fce"
+                "reference": "fb5090e747902e594dc910e3264495b11349b699"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-migrate-command/zipball/c6eeaeee75998c79f9528f4d5c31c13edebe6fce",
-                "reference": "c6eeaeee75998c79f9528f4d5c31c13edebe6fce",
+                "url": "https://api.github.com/repos/dmstr/yii2-migrate-command/zipball/fb5090e747902e594dc910e3264495b11349b699",
+                "reference": "fb5090e747902e594dc910e3264495b11349b699",
                 "shasum": ""
             },
             "type": "yii2-extension",
@@ -616,7 +678,7 @@
                 "migration",
                 "yii2"
             ],
-            "time": "2014-10-03 10:12:53"
+            "time": "2014-11-19 13:24:06"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -895,17 +957,17 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v2.5.6",
+            "version": "v2.6.0",
             "target-dir": "Symfony/Component/EventDispatcher",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/EventDispatcher.git",
-                "reference": "804eb28dbbfba9ffdab21fe2066744906cea2212"
+                "reference": "697331d4ac78668cf6d21a2bb009b3faae92814f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/804eb28dbbfba9ffdab21fe2066744906cea2212",
-                "reference": "804eb28dbbfba9ffdab21fe2066744906cea2212",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/697331d4ac78668cf6d21a2bb009b3faae92814f",
+                "reference": "697331d4ac78668cf6d21a2bb009b3faae92814f",
                 "shasum": ""
             },
             "require": {
@@ -914,7 +976,8 @@
             "require-dev": {
                 "psr/log": "~1.0",
                 "symfony/config": "~2.0",
-                "symfony/dependency-injection": "~2.0,<2.6.0",
+                "symfony/dependency-injection": "~2.6",
+                "symfony/expression-language": "~2.6",
                 "symfony/stopwatch": "~2.2"
             },
             "suggest": {
@@ -924,7 +987,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.5-dev"
+                    "dev-master": "2.6-dev"
                 }
             },
             "autoload": {
@@ -948,7 +1011,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "http://symfony.com",
-            "time": "2014-10-01 15:43:05"
+            "time": "2014-11-28 10:00:40"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -1444,12 +1507,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii2-giiant.git",
-                "reference": "e5f1728f23bdc824674cfe234510fa0f16fe208e"
+                "reference": "7036b941af02e20e8cd00add49c66b1e14812b30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii2-giiant/zipball/e5f1728f23bdc824674cfe234510fa0f16fe208e",
-                "reference": "e5f1728f23bdc824674cfe234510fa0f16fe208e",
+                "url": "https://api.github.com/repos/schmunk42/yii2-giiant/zipball/7036b941af02e20e8cd00add49c66b1e14812b30",
+                "reference": "7036b941af02e20e8cd00add49c66b1e14812b30",
                 "shasum": ""
             },
             "require": {
@@ -1482,7 +1545,7 @@
                 "gii",
                 "yii2"
             ],
-            "time": "2014-10-10 21:11:37"
+            "time": "2014-11-27 13:51:57"
         },
         {
             "name": "yiisoft/yii2-faker",

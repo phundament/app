@@ -13,14 +13,6 @@ $config = [
             'charset'     => 'utf8',
             'tablePrefix' => getenv('DATABASE_TABLE_PREFIX'),
         ],
-        'db_test' => [
-            'class'       => 'yii\db\Connection',
-            'dsn'         => getenv('TEST_DATABASE_DSN'),
-            'username'    => getenv('TEST_DATABASE_USER'),
-            'password'    => getenv('TEST_DATABASE_PASSWORD'),
-            'charset'     => 'utf8',
-            'tablePrefix' => getenv('TEST_DATABASE_TABLE_PREFIX'),
-        ],
         'mailer' => [
             'class'            => 'yii\swiftmailer\Mailer',
             'viewPath'         => '@common/mail',
