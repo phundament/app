@@ -18,9 +18,10 @@ Setup the your environment:
     cp ./platforms/vagrant-docker/Vagrantfile .
 
 **Since Vagrant <=1.6.5 has issues, with simulateous Docker containers, we recommend to start only the `db` container first, 
-to bring up the `dockerhost-vm` _before_ starting the rest of the Docker containers:**
+to bring up the `vagrant-docker-vm` _before_ starting the rest of the Docker containers:**
 
     vagrant up db --provider=docker
+    vagrant up proxy --provider=docker
 
 When the database container is running, initialize the application and setup the the database:
 
@@ -36,7 +37,7 @@ After initialization and setup you can bring up the containers:
 Now, you're ready to access the application under
  
  - [frontend application](http://docker.192.168.7.6.xip.io:22280)
- - [backend application](http://docker.192.168.7.6.xip.io:22281).
+ - [backend application](http://docker.192.168.7.6.xip.io:22281)
 
 
 > #### Linux Users
