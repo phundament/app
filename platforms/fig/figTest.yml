@@ -1,24 +1,25 @@
-web:
+webTest:
     image: phundament/docker
     ports:
-        - "40080:8000"
+        - "40090:8000"
     expose:
         - "8000"
     #command: php -S 0.0.0.0:8000 -t /app/frontend/web
     volumes:
         - ./:/app/
     links:
-        - db
+        - dbTest
     environment:
-        VIRTUAL_HOST: myapp-fig.127.0.0.1.xip.io,myapp-fig.192.168.59.103.xip.io
-db:
+        VIRTUAL_HOST: test.myapp-fig.127.0.0.1.xip.io,test.myapp-fig.192.168.59.103.xip.io
+        YII_ENV: test
+dbTest:
     image: mysql
     ports:
-        - "43306:3306"
+        - "43396:3306"
     expose:
         - "3306"
     environment:
         MYSQL_ROOT_PASSWORD: secretroot
-        MYSQL_USER: dev
-        MYSQL_PASSWORD: dev123
-        MYSQL_DATABASE: p4
+        MYSQL_USER: test
+        MYSQL_PASSWORD: test123
+        MYSQL_DATABASE: p4_test

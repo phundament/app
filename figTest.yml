@@ -1,0 +1,37 @@
+frontend:
+    image: phundament/docker
+    ports:
+        - "40080:8000"
+    expose:
+        - "8000"
+    command: php -S 0.0.0.0:8000 -t /app/frontend/web
+    volumes:
+        - ./:/app/
+    links:
+        - db
+    environment:
+        VIRTUAL_HOST: test.phundament.127.0.0.1.xip.io,test.phundament.192.168.59.103.xip.io
+backend:
+    image: phundament/docker
+    ports:
+        - "40081:8001"
+    expose:
+        - "8001"
+    command: php -S 0.0.0.0:8001 -t /app/backend/web
+    volumes:
+        - ./:/app/
+    links:
+        - db
+    environment:
+        VIRTUAL_HOST: test.admin.phundament.127.0.0.1.xip.io,test.admin.phundament.192.168.59.103.xip.io
+db:
+    image: mysql
+    ports:
+        - "43306:3306"
+    expose:
+        - "3306"
+    environment:
+        MYSQL_ROOT_PASSWORD: secretroot
+        MYSQL_USER: test
+        MYSQL_PASSWORD: test
+        MYSQL_DATABASE: p4_test
