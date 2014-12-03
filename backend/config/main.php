@@ -11,8 +11,8 @@ $config = [
         'view'         => [
             'theme' => [
                 'pathMap' => [
-                    '@app/views'     => '@vendor/dmstr/yii2-adminlte-asset/phundament4',
-                    '@yii/gii/views' => '@vendor/dmstr/yii2-adminlte-asset/phundament4',
+                    '@app/views'     => '@vendor/dmstr/yii2-adminlte-asset/example-views/phundament/app',
+                    '@yii/gii/views' => '@vendor/dmstr/yii2-adminlte-asset/example-views/phundament/app',
                 ],
             ],
         ],
