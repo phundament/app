@@ -4,7 +4,6 @@ webTest:
         - "40090:8000"
     expose:
         - "8000"
-    #command: php -S 0.0.0.0:8000 -t /app/frontend/web
     volumes:
         - ./:/app/
     links:
