@@ -10,26 +10,11 @@ ENV['VAGRANT_DEFAULT_PROVIDER'] = 'docker'
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
-  config.vm.define "frontend" do |frontend|
-    frontend.vm.network "forwarded_port", guest: 8000, host: 22280
-    frontend.vm.synced_folder "./", "/app"
-    frontend.vm.provider "docker" do |docker|
-      docker.vagrant_vagrantfile = ENV["DOCKER_HOST_VAGRANTFILE"]
-      docker.image = "phundament/docker"
-      docker.cmd = ["php","-S","0.0.0.0:8000","-t","/app/frontend/web"]
-      docker.env = {
-          "DATABASE_DSN" => "mysql:host=172.17.42.1;port=22279;dbname=p4",
-          "DATABASE_USER" => "dev",
-          "DATABASE_PASSWORD" => "dev-123"
-        }
-    end
-  end
-
-  config.vm.define "backend" do |backend|
-    backend.vm.network "forwarded_port", guest: 8000, host: 22281
-    backend.vm.synced_folder "./", "/app"
-    backend.vm.provider "docker" do |docker|
-      docker.vagrant_vagrantfile = ENV["DOCKER_HOST_VAGRANTFILE"]
+  config.vm.define "web" do |web|
+    web.vm.network "forwarded_port", guest: 8000, host: 22280
+    web.vm.synced_folder "./", "/app"
+    web.vm.provider "docker" do |docker|
+      docker.vagrant_vagrantfile = "platforms/vagrant-docker/dockerhost-vm/Vagrantfile"
       docker.image = "phundament/docker"
       docker.cmd = ["php","-S","0.0.0.0:8000","-t","/app/frontend/web"]
       docker.env = {
@@ -43,7 +28,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.define "db" do |db|
     db.vm.network "forwarded_port", guest: 3306, host: 22279
     db.vm.provider "docker" do |docker|
-      docker.vagrant_vagrantfile = ENV["DOCKER_HOST_VAGRANTFILE"]
+      docker.vagrant_vagrantfile = "platforms/vagrant-docker/dockerhost-vm/Vagrantfile"
       docker.image = "mysql"
       docker.env = {
         "MYSQL_ROOT_PASSWORD" => "secretroot",

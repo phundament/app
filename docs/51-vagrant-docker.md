@@ -12,45 +12,55 @@ Docker containers with Vagrant
 
 ### Initialize
 
-> #### Windows and OS X Users Only
->
-> Recommended first time setup with a dedicated `dockerhost-vm` for Vagrant:
->
-> ```
-> cp ./platforms/vagrant-docker/dockerhost-vm/Vagrantfile \
->    ~/dockerhost-vm/Vagrantfile
-> ```
->
-> And set your environment variable `DOCKER_HOST_VAGRANTFILE=~/dockerhost-vm/Vagrantfile`.
->
-> ```
-> cd ~/dockerhost-vm
-> vagrant up
-> ```
-
 Setup the your environment:
 
     cp .env-dist .env
     cp ./platforms/vagrant-docker/Vagrantfile .
 
-**Since Vagrant <=1.6.5 has issues, with simulateous Docker containers, we recommend to start only the `db` container first, to bring up the `dockerhost-vm` _before_ starting the rest of the Docker containers:**
+**Since Vagrant <=1.6.5 has issues, with simulateous Docker containers, we recommend to start only the `db` container first, 
+to bring up the `dockerhost-vm` _before_ starting the rest of the Docker containers:**
 
     vagrant up db --provider=docker
 
 When the database container is running, initialize the application and setup the the database:
 
-    vagrant docker-run backend -- composer install --prefer-dist
-    vagrant docker-run backend -- ./yii app/setup --interactive=0
+    vagrant docker-run web -- composer install --prefer-dist
+    vagrant docker-run web -- ./yii app/setup --interactive=0
 
 ### Run
 
 After initialization and setup you can bring up the containers:
 
-    vagrant up backend --provider=docker
-    vagrant up frontend --provider=docker
+    vagrant up proxy web --provider=docker
 
-> #### Windows and OS X Users Only
+Now, you're ready to access the application under
+ 
+ - [frontend application](http://docker.192.168.7.6.xip.io:22280)
+ - [backend application](http://docker.192.168.7.6.xip.io:22281).
+
+
+> #### Linux Users
 >
-> Our Vagrant `dockerhost-vm` registers a private network interface with the IP `192.168.7.6`, we recommend setting up a entry in `/etc/hosts` with `192.168.7.6 doccker.vagrant`
+> Our Vagrant `vagrant-docker-vm` registers a private network interface with the IP `192.168.7.6`.
+> If you'd like to use your system docker installation uncomment the `docker.vagrant_vagrantfile` sections in the `Vagrantfile`
+> in the project root folder. 
 
-Now, you're ready to access the [frontend application](http://docker.vagrant:22280) or [backend application](http://docker.vagrant:22281).
+
+> #### Windows and OS X Users 
+>
+> If you want to reuse the Vagrant VM for your Docker containers across projects, follow these guidelines
+>
+> ```
+> cp ./platforms/vagrant-docker/vm/Vagrantfile \
+>    ~/vagrant-docker-vm/Vagrantfile
+> ```
+>
+> And set your environment variable `DOCKER_HOST_VAGRANTFILE=~/vagrant-docker-vm/Vagrantfile`.
+> Make sure your host is up before using the Docker provider.
+>
+> ```
+> cd ~/vagrant-docker-vm
+> vagrant up
+> ```
+>
+> If you need to debug Docker, it is recommended to login to the `vagrant-docker-vm` with `vagrant ssh` and run docker from there.
