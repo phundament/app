@@ -7,7 +7,6 @@ web:
     volumes:
         - ./:/app/
     links:
-        - proxy
         - db
     environment:
         VIRTUAL_HOST: myapp-fig.127.0.0.1.xip.io,myapp-fig.192.168.59.103.xip.io
@@ -22,11 +21,3 @@ db:
         MYSQL_USER: dev
         MYSQL_PASSWORD: dev123
         MYSQL_DATABASE: p4
-proxy:
-    image: jwilder/nginx-proxy
-    ports:
-        - "80:80"
-    expose:
-        - "80"
-    volumes:
-        - /var/run/docker.sock:/tmp/docker.sock
