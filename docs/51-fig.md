@@ -43,7 +43,17 @@ And sets up the database, along with an admin user.
 
     fig up -d
 
-You should now be able to access the container under `http://docker.local:40080` and `http://docker.local:40081`
+You should now be able to access the application under 
+
+Linux
+
+- [myapp-fig.127.0.0.1.xip.io](http://myapp-fig.127.0.0.1.xip.io)
+- [myapp-fig.127.0.0.1.xip.io/backend](http://myapp-fig.127.0.0.1.xip.io/backend)
+
+OS X, Windows
+
+- [myapp-fig.192.168.59.103.xip.io](http://myapp-fig.192.168.59.103.xip.io)
+- [myapp-fig.192.168.59.103.xip.io/backend](http://myapp-fig.192.168.59.103.xip.io/backend)
 
 > On Linux `docker.local` is usually equal to `localhost`, on OS X the command `echo $DOCKER_HOST` should print the IP of your host VM.
 
