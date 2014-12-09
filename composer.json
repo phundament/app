@@ -26,16 +26,16 @@
         "yiisoft/yii2-swiftmailer": "2.*",
         "dektrium/yii2-user": "*",
         "dmstr/yii2-app-command": "dev-master",
-        "dmstr/yii2-migrate-command": "dev-master",
-        "dmstr/yii2-adminlte-asset": "dev-master",
+        "dmstr/yii2-migrate-command": "*",
+        "dmstr/yii2-adminlte-asset": "*",
         "schmunk42/yii2-packaii": "dev-master",
         "mikehaertl/php-shellcommand": "1.*"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "2.*",
-        "yiisoft/yii2-gii": "dev-master",
+        "yiisoft/yii2-gii": "2.*",
         "yiisoft/yii2-faker": "2.*",
-        "schmunk42/yii2-giiant": "dev-master"
+        "schmunk42/yii2-giiant": "*"
     },
     "autoload": {
         "psr-4": {
