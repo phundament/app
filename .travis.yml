@@ -21,7 +21,7 @@ env:
     - DB_PORT_3306_TCP_ADDR=localhost
     - DB_ENV_MYSQL_DATABASE=p4_test
     - DB_ENV_MYSQL_USER=test
-    - DB_ENV_MYSQL_PASSWORD=test1234
+    - DB_ENV_MYSQL_PASSWORD=test123
 install:
   - composer self-update && composer --version
 # basic application:
