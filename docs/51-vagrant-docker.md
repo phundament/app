@@ -45,8 +45,8 @@ Now, you're ready to access the application under
 > Our Vagrant `vagrant-docker-vm` registers a private network interface with the IP `192.168.7.6`.
 > If you'd like to use your system docker installation uncomment the `docker.vagrant_vagrantfile` sections in the `Vagrantfile`
 > in the project root folder. 
-
-
+ 
+ 
 > #### Windows and OS X Users 
 >
 > If you want to reuse the Vagrant VM for your Docker containers across projects, follow these guidelines
@@ -65,3 +65,16 @@ Now, you're ready to access the application under
 > ```
 >
 > If you need to debug Docker, it is recommended to login to the `vagrant-docker-vm` with `vagrant ssh` and run docker from there.
+ 
+ 
+> You can also load values from a  `fig.yml` into a `Vagrantfile` if you need to support both setups...
+> 
+>     fig = YAML.load(File.open(File.join(File.dirname(__FILE__), "fig.yml"), File::RDONLY).read)
+>
+> Assign a parameter from a fig file...
+> 
+>     docker.env = {
+>       "VIRTUAL_HOST" => fig["api"]["environment"]["VIRTUAL_HOST"]
+>     }
+
+
