@@ -1,5 +1,6 @@
 <?php
-return [
+
+$config = [
     'id'                  => 'app-frontend',
     'basePath'            => dirname(__DIR__),
     'bootstrap'           => ['log'],
@@ -56,3 +57,11 @@ return [
     'params'              => [
     ],
 ];
+
+if (YII_ENV_DEV) {
+    // configuration adjustments for 'dev' environment
+    $config['bootstrap'][]      = 'debug';
+    $config['modules']['debug'] = 'yii\debug\Module';
+}
+
+return $config;
