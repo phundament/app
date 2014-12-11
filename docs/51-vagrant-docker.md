@@ -65,7 +65,8 @@ Now, you're ready to access the application under
 > ```
 >
 > If you need to debug Docker, it is recommended to login to the `vagrant-docker-vm` with `vagrant ssh` and run docker from there.
- 
+
+--- 
  
 > You can also load values from a  `fig.yml` into a `Vagrantfile` if you need to support both setups...
 > 
