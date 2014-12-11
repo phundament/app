@@ -70,6 +70,7 @@ Now, you're ready to access the application under
  
 > You can also load values from a  `fig.yml` into a `Vagrantfile` if you need to support both setups...
 > 
+>     require "yaml"
 >     fig = YAML.load(File.open(File.join(File.dirname(__FILE__), "fig.yml"), File::RDONLY).read)
 >
 > Assign a parameter from a fig file...
