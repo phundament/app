@@ -1,3 +1,6 @@
 .git
-runtime/*
-assets/*
+
+vendor/*
+common/data/*
+
+*/runtime/*
