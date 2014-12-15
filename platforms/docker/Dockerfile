@@ -1,2 +1,2 @@
-FROM phundament/docker
+FROM phundament/app:development
 
