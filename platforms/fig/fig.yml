@@ -1,5 +1,5 @@
 web:
-    image: phundament/docker
+    image: phundament/app:development
     ports:
         - "40080:8000"
     expose:
