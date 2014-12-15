@@ -1,5 +1,5 @@
 webTest:
-    image: phundament/docker
+    image: phundament/app:testing
     ports:
         - "40090:8000"
     expose:
