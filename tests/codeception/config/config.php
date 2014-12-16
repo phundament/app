@@ -1,14 +1,11 @@
 <?php
 /**
- * Application configuration shared by all applications and test types
+ * Application configuration shared by all test types
  */
 return [
     'components' => [
         'db' => [
-            'dsn'         => getenv('DATABASE_DSN'),
-            'username'    => getenv('DATABASE_USER'),
-            'password'    => getenv('DATABASE_PASSWORD'),
-            'tablePrefix' => getenv('DATABASE_TABLE_PREFIX'),
+            'dsn' => 'mysql:host=localhost;dbname=yii2_basic_tests',
         ],
         'mailer' => [
             'useFileTransport' => true,
