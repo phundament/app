@@ -1,5 +1,5 @@
 <?php
-use tests\codeception\frontend\AcceptanceTester;
+use tests\codeception\app\AcceptanceTester;
 
 $I = new AcceptanceTester($scenario);
 $I->wantTo('ensure that home page works');

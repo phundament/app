@@ -1,10 +1,10 @@
 <?php
 
-namespace tests\codeception\frontend\unit\models;
+namespace tests\codeception\app\unit\models;
 
 use Yii;
-use tests\codeception\frontend\unit\TestCase;
-use frontend\models\ContactForm;
+use tests\codeception\app\unit\TestCase;
+use app\models\ContactForm;
 
 class ContactFormTest extends TestCase
 {

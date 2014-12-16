@@ -1,5 +1,5 @@
 <?php
-use tests\codeception\frontend\AcceptanceTester;
+use tests\codeception\app\AcceptanceTester;
 use tests\codeception\common\_pages\LoginPage;
 
 $I = new AcceptanceTester($scenario);

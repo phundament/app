@@ -1,5 +1,5 @@
 <?php
-use tests\codeception\frontend\FunctionalTester;
+use tests\codeception\app\FunctionalTester;
 $I = new FunctionalTester($scenario);
 $I->wantTo('ensure that home page works');
 $I->amOnPage(Yii::$app->homeUrl);

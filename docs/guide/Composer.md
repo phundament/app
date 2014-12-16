@@ -1,1 +1,0 @@
-tbd: packagist.org, packages.phundament.com, custom repos

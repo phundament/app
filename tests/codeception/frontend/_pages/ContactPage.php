@@ -1,12 +1,12 @@
 <?php
 
-namespace tests\codeception\frontend\_pages;
+namespace tests\codeception\app\_pages;
 
 use yii\codeception\BasePage;
 
 /**
  * Represents contact page
- * @property \codeception_frontend\AcceptanceTester|\codeception_frontend\FunctionalTester $actor
+ * @property \codeception_app\AcceptanceTester|\codeception_app\FunctionalTester $actor
  */
 class ContactPage extends BasePage
 {

@@ -1,6 +1,6 @@
 <?php
-use tests\codeception\frontend\FunctionalTester;
-use tests\codeception\frontend\_pages\ContactPage;
+use tests\codeception\app\FunctionalTester;
+use tests\codeception\app\_pages\ContactPage;
 
 $I = new FunctionalTester($scenario);
 $I->wantTo('ensure that contact works');

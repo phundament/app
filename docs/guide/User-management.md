@@ -1,1 +1,0 @@
-Package: mishamx/yii-user

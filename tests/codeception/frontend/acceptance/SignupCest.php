@@ -1,8 +1,8 @@
 <?php
 
-namespace tests\codeception\frontend\acceptance;
+namespace tests\codeception\app\acceptance;
 
-use tests\codeception\frontend\_pages\SignupPage;
+use tests\codeception\app\_pages\SignupPage;
 use dektrium\user\models\User;
 
 class SignupCest
@@ -37,7 +37,7 @@ class SignupCest
     }
 
     /**
-     * @param \codeception_frontend\AcceptanceTester $I
+     * @param \codeception_app\AcceptanceTester $I
      * @param \Codeception\Scenario $scenario
      */
     public function testUserSignup($I, $scenario)

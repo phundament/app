@@ -1,6 +1,6 @@
 <?php
-use tests\codeception\frontend\FunctionalTester;
-use tests\codeception\frontend\_pages\DocsPage;
+use tests\codeception\app\FunctionalTester;
+use tests\codeception\app\_pages\DocsPage;
 
 $I = new FunctionalTester($scenario);
 $I->wantTo('ensure that "Docs" works');
