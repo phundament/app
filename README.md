@@ -3,7 +3,7 @@ Phundament 4.0.x-dev
 
 > Please note: This is a `beta` version.
 
-_Phundament_ is a _PHP_ application foundation based on _Yii Framework 2.0_.
+Phundament is a 12factor PHP application template for Yii Framework 2.0.
 
 [![Build Status](https://travis-ci.org/phundament/app.svg?branch=4.0)](https://travis-ci.org/phundament/app)
 [![Total Downloads](https://poser.pugx.org/phundament/app/downloads.png)](https://packagist.org/packages/phundament/app)
@@ -11,18 +11,23 @@ _Phundament_ is a _PHP_ application foundation based on _Yii Framework 2.0_.
 Quick-Start
 -----------
 
-You can install _Phundament 4_ using [composer](https://getcomposer.org/download/):
+You can install _Phundament 4_ using [composer](https://getcomposer.org/download/)...
 
-~~~
-composer global require "fxp/composer-asset-plugin:1.0.0-beta3"
-composer create-project --stability=dev phundament/app
-~~~
+    composer global require "fxp/composer-asset-plugin:1.0.0-beta3"
+    composer create-project --stability=dev phundament/app
 
-Follow the on-screen instructions to initialize your environment and setup your application.
-You should see an output, which is similar to [this](https://gist.github.com/schmunk42/3bcfbba5411bb9ea66f4).
+Create and adjust your environment configuration, eg. add a database...
 
-Open `http://path/to/frontend/web` or `http://path/to/backend/web` in your browser.
+    cp .env-dist .env
+    edit .env
+    
+Run the application setup...
+    
+    ./yii app/setup
+    
+Open `http://path-to-app/web` or `http://path-to-app/web?r=admin` in your browser.
 
+> Note: Alternative installation methods for Docker, fig, Vagrant or PaaS can be found in the documentation.
 
 Resources
 ---------
@@ -30,12 +35,3 @@ Resources
 - [Documentation](docs/README.md)
 - [Project Source-Code](https://github.com/phundament/app)
 - [Website](http://phundament.com)
-
----
-
-If you're looking for the Yii 1.1 version of Phundament please visit our [`3.0` branch](https://github.com/phundament/app/tree/3.0).
-
----
-
-> "Hey There! This file is part of **your project** now and should contain some useful information about it.
-> Feel free to modify it accordingly to your needs and remove this marker."
