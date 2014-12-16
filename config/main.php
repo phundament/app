@@ -105,7 +105,7 @@ if (PHP_SAPI != 'cli') {
 } else {
 
     // console application settings
-
+    $config['controllerNamespace'] = 'app\commands';
 }
 
 if (YII_ENV_DEV) {

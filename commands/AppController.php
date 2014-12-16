@@ -7,7 +7,7 @@
  * file that was distributed with this source code.
  */
 
-namespace console\controllers;
+namespace app\commands;
 
 use dektrium\user\ModelManager;
 use dmstr\console\controllers\BaseAppController;
