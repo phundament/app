@@ -13,7 +13,7 @@ use yii\web\AssetBundle;
  * Configuration for `backend` client script files
  * @since 4.0
  */
-class AppAsset extends AssetBundle
+class AdminAsset extends AssetBundle
 {
     #public $basePath = '@webroot';
     #public $baseUrl = '@web';

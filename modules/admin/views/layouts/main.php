@@ -7,7 +7,7 @@ use dmstr\widgets\Alert;
 /* @var $this \yii\web\View */
 /* @var $content string */
 $this->title = $this->title.' [Backend] '.Yii::$app->params['appName'];
-\app\modules\admin\assets\AppAsset::register($this);
+\app\modules\admin\assets\AdminAsset::register($this);
 ?>
 
 <?php $this->beginPage() ?>
