@@ -36,7 +36,7 @@ class ContactFormTest extends TestCase
             'body' => 'body of current message',
         ];
 
-        $model->contact('admin@example.com');
+        $model->sendEmail('admin@example.com');
 
         $this->specify('email should be send', function () {
             expect('email file should exist', file_exists($this->getMessageFile()))->true();
