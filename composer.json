@@ -1,68 +1,87 @@
 {
-    "name": "phundament/app",
-    "description": "12factor Application Template for Yii 2.0 Framework",
-    "keywords": ["phundament", "yii2", "framework", "application", "template", "boilerplate", "vagrant", "docker", "fig", "12factor", "dotenv"],
-    "homepage": "http://www.phundament.com/",
-    "type": "project",
-    "license": "BSD-3-Clause",
-    "authors": [
-        {
-            "name": "Tobias Munk",
-            "email": "schmunk@usrbin.de",
-            "homepage": "http://www.phundament.com"
-        }
-    ],
-    "support": {
-        "issues": "https://github.com/phundament/app/issues?state=open",
-        "source": "https://github.com/phundament/app"
-    },
-    "minimum-stability": "stable",
-    "require": {
-        "php": ">=5.4.0",
-        "vlucas/phpdotenv": "1.*",
-        "yiisoft/yii2-composer": "*",
-        "yiisoft/yii2": "2.0.*",
-        "yiisoft/yii2-bootstrap": "2.*",
-        "yiisoft/yii2-swiftmailer": "2.*",
-        "dektrium/yii2-user": "*",
-        "dmstr/yii2-app-command": "dev-master",
-        "dmstr/yii2-migrate-command": "*",
-        "dmstr/yii2-adminlte-asset": "*",
-        "schmunk42/yii2-packaii": "dev-master",
-        "mikehaertl/php-shellcommand": "1.*"
-    },
-    "require-dev": {
-        "yiisoft/yii2-debug": "2.*",
-        "yiisoft/yii2-gii": "2.*",
-        "yiisoft/yii2-faker": "2.*",
-        "schmunk42/yii2-giiant": "*"
-    },
-    "autoload": {
-        "psr-4": {
-            "console\\helpers\\": "./console/helpers"
-        }
-    },
-    "scripts": {
-        "post-create-project-cmd": [
-            "yii\\composer\\Installer::postCreateProject"
-        ]
-    },
-    "extra": {
-        "yii\\composer\\Installer::postCreateProject": {
-            "setPermission": [
-                {
-                    "runtime": "0777",
-                    "web/assets": "0777",
-                    "yii": "0755"
-                }
-            ]
-        },
-        "asset-installer-paths": {
-            "npm-asset-library": "vendor/npm",
-            "bower-asset-library": "vendor/bower"
-        }
-    },
-    "config": {
-        "process-timeout": 1800
+  "name": "phundament/app",
+  "description": "12factor Application Template for Yii 2.0 Framework",
+  "keywords": [
+    "phundament",
+    "yii2",
+    "framework",
+    "application",
+    "template",
+    "boilerplate",
+    "vagrant",
+    "docker",
+    "fig",
+    "12factor",
+    "dotenv"
+  ],
+  "homepage": "http://www.phundament.com/",
+  "type": "project",
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Tobias Munk",
+      "email": "schmunk@usrbin.de",
+      "homepage": "http://www.phundament.com"
     }
+  ],
+  "support": {
+    "issues": "https://github.com/phundament/app/issues?state=open",
+    "source": "https://github.com/phundament/app"
+  },
+  "minimum-stability": "stable",
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/schmunk42/yii2-markdocs-module.git"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "vlucas/phpdotenv": "1.*",
+    "yiisoft/yii2-composer": "*",
+    "yiisoft/yii2": "2.0.*",
+    "yiisoft/yii2-bootstrap": "2.*",
+    "yiisoft/yii2-swiftmailer": "2.*",
+    "dektrium/yii2-user": "*",
+    "mikehaertl/php-shellcommand": "1.*",
+    "dmstr/yii2-app-command": "dev-master",
+    "dmstr/yii2-migrate-command": "*",
+    "dmstr/yii2-adminlte-asset": "*",
+    "schmunk42/yii2-packaii": "dev-master",
+    "schmunk42/yii2-markdocs-module": "dev-master"
+  },
+  "require-dev": {
+    "yiisoft/yii2-debug": "2.*",
+    "yiisoft/yii2-gii": "2.*",
+    "yiisoft/yii2-faker": "2.*",
+    "schmunk42/yii2-giiant": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "console\\helpers\\": "./console/helpers"
+    }
+  },
+  "scripts": {
+    "post-create-project-cmd": [
+      "yii\\composer\\Installer::postCreateProject"
+    ]
+  },
+  "extra": {
+    "yii\\composer\\Installer::postCreateProject": {
+      "setPermission": [
+        {
+          "runtime": "0777",
+          "web/assets": "0777",
+          "yii": "0755"
+        }
+      ]
+    },
+    "asset-installer-paths": {
+      "npm-asset-library": "vendor/npm",
+      "bower-asset-library": "vendor/bower"
+    }
+  },
+  "config": {
+    "process-timeout": 1800
+  }
 }

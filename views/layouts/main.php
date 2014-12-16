@@ -35,7 +35,7 @@ AppAsset::register($this);
         ]
     );
     $menuItems = [
-        ['label' => 'Docs', 'url' => ['/site/docs']],
+        ['label' => 'Docs', 'url' => ['/docs']],
         ['label' => 'Contact', 'url' => ['/site/contact']],
     ];
     if (Yii::$app->hasModule('user')) {

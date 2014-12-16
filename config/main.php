@@ -39,8 +39,8 @@ $config = [
             'enablePrettyUrl' => getenv('APP_PRETTY_URLS') ? true : false,
             'showScriptName'  => false,
             'rules'           => [
-                'docs/<file:[a-z0-9\-\.]*>' => 'site/docs',
-                'docs'                      => 'site/docs'
+                #'docs/<file:[a-z0-9\-\.]*>' => 'site/docs',
+                #'docs'                      => 'site/docs'
             ],
         ],
         'view'         => [
@@ -76,7 +76,10 @@ $config = [
             'class'  => \schmunk42\packaii\Module::className(),
             'layout' => '@admin-views/layouts/main',
         ],
-
+        'docs' => [
+            'class'  => \schmunk42\markdocs\Module::className(),
+            'layout' => '@app/views/layouts/container',
+        ],
     ],
     'params'     => [
         'appName'      => getenv('APP_NAME'),

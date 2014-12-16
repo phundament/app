@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1b0c0e5a03ecc9e5acb472524078fce0",
+    "hash": "e166c02cde75a87277f12bf047273593",
     "packages": [
         {
             "name": "2amigos/yii2-arrayquery-component",
@@ -287,16 +287,16 @@
         },
         {
             "name": "bower-asset/jquery.inputmask",
-            "version": "3.1.46",
+            "version": "3.1.48",
             "source": {
                 "type": "git",
                 "url": "https://github.com/RobinHerbots/jquery.inputmask.git",
-                "reference": "70b4cd4d470d31c1b44bb6412d1146a4b9ed48a7"
+                "reference": "d9ebcf6ce4be6bd8642a10c633fe950c0c0f0a9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RobinHerbots/jquery.inputmask/zipball/70b4cd4d470d31c1b44bb6412d1146a4b9ed48a7",
-                "reference": "70b4cd4d470d31c1b44bb6412d1146a4b9ed48a7",
+                "url": "https://api.github.com/repos/RobinHerbots/jquery.inputmask/zipball/d9ebcf6ce4be6bd8642a10c633fe950c0c0f0a9d",
+                "reference": "d9ebcf6ce4be6bd8642a10c633fe950c0c0f0a9d",
                 "shasum": ""
             },
             "require": {
@@ -500,16 +500,16 @@
         },
         {
             "name": "dektrium/yii2-user",
-            "version": "v0.8.1",
+            "version": "v0.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dektrium/yii2-user.git",
-                "reference": "3285bc20314bf7d1672ca4c3329431537da21fa3"
+                "reference": "29f4bea7cba852520b03a27826a1957c4248a1bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dektrium/yii2-user/zipball/3285bc20314bf7d1672ca4c3329431537da21fa3",
-                "reference": "3285bc20314bf7d1672ca4c3329431537da21fa3",
+                "url": "https://api.github.com/repos/dektrium/yii2-user/zipball/29f4bea7cba852520b03a27826a1957c4248a1bf",
+                "reference": "29f4bea7cba852520b03a27826a1957c4248a1bf",
                 "shasum": ""
             },
             "require": {
@@ -528,6 +528,10 @@
                 "branch-alias": {
                     "dev-master": "0.8.x-dev",
                     "dev-develop": "0.9.x-dev"
+                },
+                "asset-installer-paths": {
+                    "npm-asset-library": "vendor/npm",
+                    "bower-asset-library": "vendor/bower"
                 }
             },
             "autoload": {
@@ -553,7 +557,7 @@
                 "yii2",
                 "yii2-user"
             ],
-            "time": "2014-10-13 15:57:00"
+            "time": "2014-12-14 14:28:21"
         },
         {
             "name": "dmstr/yii2-adminlte-asset",
@@ -858,17 +862,53 @@
             "time": "2014-11-03 09:44:24"
         },
         {
+            "name": "schmunk42/yii2-markdocs-module",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmunk42/yii2-markdocs-module.git",
+                "reference": "0bd4be8db76bcb8d7e0b910367238ca8290288a8"
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "bootstrap": "schmunk42\\markdocs\\Bootstrap"
+            },
+            "autoload": {
+                "psr-4": {
+                    "schmunk42\\markdocs\\": ""
+                }
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Munk",
+                    "email": "schmunk@usrbin.de"
+                }
+            ],
+            "description": "Renders markdown files from local folder as views",
+            "keywords": [
+                "extension",
+                "yii2"
+            ],
+            "time": "2014-12-16 03:31:11"
+        },
+        {
             "name": "schmunk42/yii2-packaii",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii2-packaii.git",
-                "reference": "46cceab97394e25bf6c6e0bd2db3bb59cfa72823"
+                "reference": "97b0368f4526a283e4f137c691b0cf9f7befe354"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii2-packaii/zipball/46cceab97394e25bf6c6e0bd2db3bb59cfa72823",
-                "reference": "46cceab97394e25bf6c6e0bd2db3bb59cfa72823",
+                "url": "https://api.github.com/repos/schmunk42/yii2-packaii/zipball/97b0368f4526a283e4f137c691b0cf9f7befe354",
+                "reference": "97b0368f4526a283e4f137c691b0cf9f7befe354",
                 "shasum": ""
             },
             "require": {
@@ -905,7 +945,7 @@
                 }
             ],
             "description": "Yii2 Framework Web-UI for browsing composer packages",
-            "time": "2014-10-30 10:14:59"
+            "time": "2014-12-16 02:31:17"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -1019,16 +1059,16 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v1.0.9",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "56c252d48dce336da97926591aed71805203815b"
+                "reference": "732d2adb7d916c9593b9d58c3b0d9ebefead07aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/56c252d48dce336da97926591aed71805203815b",
-                "reference": "56c252d48dce336da97926591aed71805203815b",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/732d2adb7d916c9593b9d58c3b0d9ebefead07aa",
+                "reference": "732d2adb7d916c9593b9d58c3b0d9ebefead07aa",
                 "shasum": ""
             },
             "require": {
@@ -1066,7 +1106,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2014-10-16 14:50:21"
+            "time": "2014-12-05 15:19:21"
         },
         {
             "name": "yiisoft/yii2",
@@ -1652,7 +1692,8 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "dmstr/yii2-app-command": 20,
-        "schmunk42/yii2-packaii": 20
+        "schmunk42/yii2-packaii": 20,
+        "schmunk42/yii2-markdocs-module": 20
     },
     "prefer-stable": false,
     "platform": {
