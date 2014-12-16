@@ -95,10 +95,7 @@ class AppController extends BaseAppController
         );
 
         // array with commands
-        $commands[] = '~/.composer/vendor/bin/codecept build -c tests/codeception/backend';
-        $commands[] = '~/.composer/vendor/bin/codecept build -c tests/codeception/frontend';
-        $commands[] = '~/.composer/vendor/bin/codecept build -c tests/codeception/common';
-        $commands[] = '~/.composer/vendor/bin/codecept build -c tests/codeception/console';
+        $commands[] = '~/.composer/vendor/bin/codecept build';
 
         foreach ($commands AS $command) {
             $cmd = new Command($command);
@@ -117,16 +114,15 @@ class AppController extends BaseAppController
      */
     public function actionRunTests()
     {
-        echo "Note! You can tear down the test-server with `killall php`\n";
+        // array with commands
+        echo 'Note: You need a webserver running on port 8042, eg. ';
+        echo "\n\n";
+        echo '  php -S localhost:8042 -t web > /dev/null 2>&1 &';
+        echo "\n\n";
+
         if ($this->confirm("Start testing?", true)) {
 
-            // array with commands
-            $commands[] = 'php -S localhost:8042 > /dev/null 2>&1 &';
-            $commands[] = '~/.composer/vendor/bin/codecept run -c tests/codeception/backend';
-            $commands[] = '~/.composer/vendor/bin/codecept run -c tests/codeception/backend';
-            $commands[] = '~/.composer/vendor/bin/codecept run -c tests/codeception/frontend';
-            $commands[] = '~/.composer/vendor/bin/codecept run -c tests/codeception/common';
-            $commands[] = '~/.composer/vendor/bin/codecept run -c tests/codeception/console';
+            $commands[] = '~/.composer/vendor/bin/codecept run';
 
             $hasError = false;
             foreach ($commands AS $command) {
