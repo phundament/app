@@ -1,7 +1,7 @@
 web:
     image: phundament/app:development
     ports:
-        - "40080:8000"
+        - "8000"
     expose:
         - "8000"
     volumes:
