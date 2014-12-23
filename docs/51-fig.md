@@ -57,7 +57,7 @@ OS X, Windows
 
 ### Customize
 
-You can replace the [Phundament 4 Docker image](https://github.com/phundament/docker) with your custom base container.
+You can replace the [Phundament 4 Docker container](https://github.com/phundament/app) with your custom base container.
 
 
 ### Virtual hosts with Docker
