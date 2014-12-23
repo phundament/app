@@ -53,7 +53,7 @@ OS X, Windows
 - [myapp-fig.192.168.59.103.xip.io](http://myapp-fig.192.168.59.103.xip.io)
 - [myapp-fig.192.168.59.103.xip.io/backend](http://myapp-fig.192.168.59.103.xip.io/backend)
 
-> On Linux `docker.local` is usually equal to `localhost`, on OS X the command `echo $DOCKER_HOST` should print the IP of your host VM.
+> On OS X the command `echo $DOCKER_HOST` should print the IP of your host VM, replace it with `192.168.59.103` if neccessary.
 
 ### Customize
 
