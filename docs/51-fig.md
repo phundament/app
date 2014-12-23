@@ -15,6 +15,20 @@ Docker containers with fig
     git clone https://github.com/phundament/app.git
     cd app
 
+#### Prepare virtual hosts with Docker
+
+To automatically create virtual hosts for your projects, you can use a combination of this [nginx-proxy](https://registry.hub.docker.com/u/jwilder/nginx-proxy/)
+image and the [xip.io](http://xip.io) wildcard DNS service.
+
+First, run the reverse-proxy container like described in its README, before you start web application containers.
+
+```
+docker pull jwilder/nginx-proxy
+docker run -d -p 80:80 -v /var/run/docker.sock:/tmp/docker.sock jwilder/nginx-proxy
+```
+
+This will automatically setup virtual hosts accessible through port 80 on your Docker host.
+
 #### Initialize
 
 Copy fig and Dotenv config to project root:
@@ -53,30 +67,8 @@ OS X, Windows
 - [myapp-fig.192.168.59.103.xip.io](http://myapp-fig.192.168.59.103.xip.io)
 - [myapp-fig.192.168.59.103.xip.io/admin](http://myapp-fig.192.168.59.103.xip.io/backend)
 
-> On OS X the command `echo $DOCKER_HOST` should print the IP of your host VM, replace it with `192.168.59.103` if neccessary.
+> On OS X the command `echo $DOCKER_HOST` should print the IP of your host VM, replace it with `192.168.59.103` in `fig.yml` and the URLs above, if neccessary.
 
 ### Customize
 
 You can replace the [Phundament 4 Docker container](https://github.com/phundament/app) with your custom base container.
-
-
-### Virtual hosts with Docker
-
-To automatically create virtual hosts for your projects, you can use a combination of this [nginx-proxy](https://registry.hub.docker.com/u/jwilder/nginx-proxy/)
-image and [xip.io](http://xip.io).
-
-First, run the container like described in its README, before you start web application containers.
-
-```
-docker pull jwilder/nginx-proxy
-docker run -d -p 80:80 -v /var/run/docker.sock:/tmp/docker.sock jwilder/nginx-proxy
-```
-
-There are virtual hosts prepared in `fig.yml` for the web-applications, adjust the IPs if needed:
- 
-```
-environment:
-    VIRTUAL_HOST: phundament.127.0.0.1.xip.io,phundament.192.168.59.103.xip.io
-```
- 
-You should be able to access your web-application under `http://phundament.127.0.0.1.xip.io`. 
