@@ -94,7 +94,7 @@ $web = [
                     'levels'  => YII_DEBUG ? [] : ['error', 'warning'],
                     'logVars' => ['_GET', '_POST', '_FILES', '_COOKIE', '_SESSION'],
                     'logFile' => '@app/runtime/logs/web.log',
-                    'dirMode' => '0777'
+                    'dirMode' => 0777
                 ],
             ],
         ],
@@ -123,7 +123,7 @@ $console = [
                     'levels'  => YII_DEBUG ? [] : ['error', 'warning'],
                     'logVars' => ['_GET', '_POST', '_FILES', '_COOKIE', '_SESSION'],
                     'logFile' => '@app/runtime/logs/console.log',
-                    'dirMode' => '0777'
+                    'dirMode' => 0777
                 ],
             ],
         ],
