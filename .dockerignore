@@ -1,6 +1,6 @@
 .git
 
-vendor/*
-common/data/*
+vendor
+common/data
 
-*/runtime/*
+runtime
