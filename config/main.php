@@ -24,7 +24,8 @@ $config = [
             'targets'    => [
                 [
                     'class'  => 'yii\log\FileTarget',
-                    'levels' => ['error', 'warning'],
+                    'levels' => YII_DEBUG ? [] : ['error', 'warning'],
+                    'logVars' =>  ['_GET', '_POST', '_FILES', '_COOKIE', '_SESSION']
                 ],
             ],
         ],
@@ -86,37 +87,43 @@ $config = [
         'adminEmail'   => getenv('APP_ADMIN_EMAIL'),
         'supportEmail' => getenv('APP_SUPPORT_EMAIL'),
         'copyrightBy'  => getenv('APP_COPYRIGHT'),
+        'yii.migrations' => [
+            '@dektrium/user/migrations',
+        ]
     ]
 
 ];
 
-if (PHP_SAPI != 'cli') {
-
-    // web application settings
-
-    $config['components']['request']['cookieValidationKey'] = getenv('APP_COOKIE_VALIDATION_KEY');
-
-    $config['components']['user'] = [
-        # Note: identityClass is configured from dektrium\user
-        'enableAutoLogin' => true,
-    ];
-
-    $config['components']['errorHandler'] = [
-        'errorAction' => 'site/error',
-    ];
-
-} else {
+if (php_sapi_name() == 'cli') {
 
     // console application settings
     $config['controllerNamespace'] = 'app\commands';
+    $config['controllerMap'] = [
+        'migrate' => 'dmstr\console\controllers\MigrateController'
+    ];
+} else {
+
+    // web application settings
+    $config['components']['request'] = [
+        // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
+        'cookieValidationKey' => getenv('APP_COOKIE_VALIDATION_KEY'),
+    ];
+    $config['components']['user']    = [
+        'identityClass' => 'app\models\User',
+    ];
+
+    if (YII_ENV_DEV) {
+
+        // configuration adjustments for 'dev' environment
+
+        $config['bootstrap'][]      = 'debug';
+        $config['modules']['debug'] = 'yii\debug\Module';
+    }
 }
 
 if (YII_ENV_DEV) {
 
     // configuration adjustments for 'dev' environment
-
-    $config['bootstrap'][]      = 'debug';
-    $config['modules']['debug'] = 'yii\debug\Module';
 
     $config['bootstrap'][]    = 'gii';
     $config['modules']['gii'] = 'yii\gii\Module';
