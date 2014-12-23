@@ -19,16 +19,6 @@ $config = [
             'charset'     => 'utf8',
             'tablePrefix' => getenv('DATABASE_TABLE_PREFIX'),
         ],
-        'log'          => [
-            'traceLevel' => YII_DEBUG ? 3 : 0,
-            'targets'    => [
-                [
-                    'class'  => 'yii\log\FileTarget',
-                    'levels' => YII_DEBUG ? [] : ['error', 'warning'],
-                    'logVars' =>  ['_GET', '_POST', '_FILES', '_COOKIE', '_SESSION']
-                ],
-            ],
-        ],
         'assetManager' => [
             'forceCopy'  => false, // Note: May degrade performance with Docker or VMs
             'linkAssets' => false, // Note: May also publish files, which are excluded in an asset bundle
@@ -77,16 +67,16 @@ $config = [
             'class'  => \schmunk42\packaii\Module::className(),
             'layout' => '@admin-views/layouts/main',
         ],
-        'docs' => [
+        'docs'    => [
             'class'  => \schmunk42\markdocs\Module::className(),
             'layout' => '@app/views/layouts/container',
         ],
     ],
     'params'     => [
-        'appName'      => getenv('APP_NAME'),
-        'adminEmail'   => getenv('APP_ADMIN_EMAIL'),
-        'supportEmail' => getenv('APP_SUPPORT_EMAIL'),
-        'copyrightBy'  => getenv('APP_COPYRIGHT'),
+        'appName'        => getenv('APP_NAME'),
+        'adminEmail'     => getenv('APP_ADMIN_EMAIL'),
+        'supportEmail'   => getenv('APP_SUPPORT_EMAIL'),
+        'copyrightBy'    => getenv('APP_COPYRIGHT'),
         'yii.migrations' => [
             '@dektrium/user/migrations',
         ]
@@ -94,37 +84,66 @@ $config = [
 
 ];
 
-if (php_sapi_name() == 'cli') {
+$web = [
+    'components' => [
+        'log'     => [
+            'traceLevel' => YII_DEBUG ? 3 : 0,
+            'targets'    => [
+                [
+                    'class'   => 'yii\log\FileTarget',
+                    'levels'  => YII_DEBUG ? [] : ['error', 'warning'],
+                    'logVars' => ['_GET', '_POST', '_FILES', '_COOKIE', '_SESSION'],
+                    'logFile' => '@app/runtime/logs/web.log',
+                    'dirMode' => '0777'
+                ],
+            ],
+        ],
+        'request' => [
+            // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
+            'cookieValidationKey' => getenv('APP_COOKIE_VALIDATION_KEY'),
+        ],
+        'user'    => [
+            'identityClass' => 'app\models\User',
+        ],
+    ]
+];
 
-    // console application settings
-    $config['controllerNamespace'] = 'app\commands';
-    $config['controllerMap'] = [
+
+$console = [
+    'controllerNamespace' => 'app\commands',
+    'controllerMap'       => [
         'migrate' => 'dmstr\console\controllers\MigrateController'
-    ];
+    ],
+    'components'          => [
+        'log' => [
+            'traceLevel' => YII_DEBUG ? 3 : 0,
+            'targets'    => [
+                [
+                    'class'   => 'yii\log\FileTarget',
+                    'levels'  => YII_DEBUG ? [] : ['error', 'warning'],
+                    'logVars' => ['_GET', '_POST', '_FILES', '_COOKIE', '_SESSION'],
+                    'logFile' => '@app/runtime/logs/console.log',
+                    'dirMode' => '0777'
+                ],
+            ],
+        ],
+    ]
+];
+
+
+if (php_sapi_name() == 'cli') {
+    $config = \yii\helpers\ArrayHelper::merge($config, $console);
 } else {
-
-    // web application settings
-    $config['components']['request'] = [
-        // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-        'cookieValidationKey' => getenv('APP_COOKIE_VALIDATION_KEY'),
-    ];
-    $config['components']['user']    = [
-        'identityClass' => 'app\models\User',
-    ];
-
     if (YII_ENV_DEV) {
-
-        // configuration adjustments for 'dev' environment
-
+        // configuration adjustments for web 'dev' environment
         $config['bootstrap'][]      = 'debug';
         $config['modules']['debug'] = 'yii\debug\Module';
     }
+    $config = \yii\helpers\ArrayHelper::merge($config, $web);
 }
 
 if (YII_ENV_DEV) {
-
     // configuration adjustments for 'dev' environment
-
     $config['bootstrap'][]    = 'gii';
     $config['modules']['gii'] = 'yii\gii\Module';
 }
