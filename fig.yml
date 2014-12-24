@@ -1,0 +1,25 @@
+web:
+    image: phundament/app:development
+    ports:
+        - "80"
+    expose:
+        - "80"
+    volumes:
+        - ./:/app/
+    links:
+        - db
+    environment:
+        YII_ENV: dev
+        YII_DEBUG: 1
+        VIRTUAL_HOST: myapp-fig.127.0.0.1.xip.io,myapp-fig.192.168.59.103.xip.io
+db:
+    image: mysql
+    ports:
+        - "3306"
+    expose:
+        - "3306"
+    environment:
+        MYSQL_ROOT_PASSWORD: secretroot
+        MYSQL_USER: dev
+        MYSQL_PASSWORD: dev123
+        MYSQL_DATABASE: p4

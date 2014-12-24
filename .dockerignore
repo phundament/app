@@ -1,6 +1,7 @@
 .git
 
+data
 vendor
-common/data
 
 runtime
+web/assets
