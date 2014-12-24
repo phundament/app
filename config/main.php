@@ -11,6 +11,7 @@ $config = [
         'assetManager' => [
             'forceCopy'  => false, // Note: May degrade performance with Docker or VMs
             'linkAssets' => false, // Note: May also publish files, which are excluded in an asset bundle
+            'dirMode'    => 0777,
             'bundles'    => [
                 #'yii\bootstrap\BootstrapAsset' => false, // provided by frontend/assets/web/app.css
             ],
@@ -137,7 +138,10 @@ if (php_sapi_name() == 'cli') {
     if (YII_ENV_DEV) {
         // configuration adjustments for web 'dev' environment
         $config['bootstrap'][]      = 'debug';
-        $config['modules']['debug'] = 'yii\debug\Module';
+        $config['modules']['debug'] = [
+            'class'      => 'yii\debug\Module',
+            'allowedIPs' => ['192.168.59.3', '127.0.0.1', '::1']
+        ];
     }
     $config = \yii\helpers\ArrayHelper::merge($config, $web);
 }
