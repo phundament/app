@@ -13,7 +13,7 @@ $this->title .= 'Yii 2.0 App Template';
 
             <div>
                 <a href="#download" class="btn btn-primary btn-lg">Download</a>
-                <a href="<?= \yii\helpers\Url::to(['site/docs', 'file' => '10-about.md']) ?>"
+                <a href="<?= \yii\helpers\Url::to(['/docs', 'file' => '10-about.md']) ?>"
                    class="btn btn-primary btn-lg">Docs</a>
                 <a href="https://github.com/phundament/app" class="btn btn-primary btn-lg" target="_blank">Fork</a>
             </div>
