@@ -8,6 +8,13 @@ $config = [
         '@admin-views' => '@app/modules/admin/views'
     ],
     'components' => [
+        'assetManager' => [
+            'forceCopy'  => false, // Note: May degrade performance with Docker or VMs
+            'linkAssets' => false, // Note: May also publish files, which are excluded in an asset bundle
+            'bundles'    => [
+                #'yii\bootstrap\BootstrapAsset' => false, // provided by frontend/assets/web/app.css
+            ],
+        ],
         'cache'        => [
             'class' => 'yii\caching\FileCache',
         ],
@@ -19,12 +26,13 @@ $config = [
             'charset'     => 'utf8',
             'tablePrefix' => getenv('DATABASE_TABLE_PREFIX'),
         ],
-        'assetManager' => [
-            'forceCopy'  => false, // Note: May degrade performance with Docker or VMs
-            'linkAssets' => false, // Note: May also publish files, which are excluded in an asset bundle
-            'bundles'    => [
-                #'yii\bootstrap\BootstrapAsset' => false, // provided by frontend/assets/web/app.css
-            ],
+        'mailer'       => [
+            'class'            => 'yii\swiftmailer\Mailer',
+            //'viewPath'         => '@common/mail',
+            // send all mails to a file by default. You have to set
+            // 'useFileTransport' to false and configure a transport
+            // for the mailer to send real emails.
+            'useFileTransport' => YII_ENV_PROD ? false : true,
         ],
         'urlManager'   => [
             'enablePrettyUrl' => getenv('APP_PRETTY_URLS') ? true : false,
@@ -42,14 +50,6 @@ $config = [
                 ],
             ],
         ],
-        'mailer'       => [
-            'class'            => 'yii\swiftmailer\Mailer',
-            //'viewPath'         => '@common/mail',
-            // send all mails to a file by default. You have to set
-            // 'useFileTransport' to false and configure a transport
-            // for the mailer to send real emails.
-            'useFileTransport' => YII_ENV_PROD ? false : true,
-        ],
 
     ],
     'modules'    => [
@@ -57,19 +57,19 @@ $config = [
             'class'  => 'app\modules\admin\Module',
             'layout' => '@admin-views/layouts/main',
         ],
-        'user'    => [
-            'class'        => 'dektrium\user\Module',
-            'layout'       => '@admin-views/layouts/main',
-            'defaultRoute' => 'profile',
-            'admins'       => ['admin']
+        'docs'    => [
+            'class'  => \schmunk42\markdocs\Module::className(),
+            'layout' => '@app/views/layouts/container',
         ],
         'packaii' => [
             'class'  => \schmunk42\packaii\Module::className(),
             'layout' => '@admin-views/layouts/main',
         ],
-        'docs'    => [
-            'class'  => \schmunk42\markdocs\Module::className(),
-            'layout' => '@app/views/layouts/container',
+        'user'    => [
+            'class'        => 'dektrium\user\Module',
+            'layout'       => '@admin-views/layouts/main',
+            'defaultRoute' => 'profile',
+            'admins'       => ['admin']
         ],
     ],
     'params'     => [
@@ -87,11 +87,11 @@ $config = [
 $web = [
     'components' => [
         'log'     => [
-            'traceLevel' => YII_DEBUG ? 3 : 0,
+            'traceLevel' => getenv('YII_TRACE_LEVEL'),
             'targets'    => [
                 [
                     'class'   => 'yii\log\FileTarget',
-                    'levels'  => YII_DEBUG ? [] : ['error', 'warning'],
+                    'levels'  => YII_DEBUG ? ['error', 'warning', 'info', 'trace'] : ['error', 'warning'],
                     'logVars' => ['_GET', '_POST', '_FILES', '_COOKIE', '_SESSION'],
                     'logFile' => '@app/runtime/logs/web.log',
                     'dirMode' => 0777
@@ -116,11 +116,11 @@ $console = [
     ],
     'components'          => [
         'log' => [
-            'traceLevel' => YII_DEBUG ? 3 : 0,
+            'traceLevel' => getenv('YII_TRACE_LEVEL'),
             'targets'    => [
                 [
                     'class'   => 'yii\log\FileTarget',
-                    'levels'  => YII_DEBUG ? [] : ['error', 'warning'],
+                    'levels'  => YII_DEBUG ? ['error', 'warning', 'info', 'trace'] : ['error', 'warning'],
                     'logVars' => ['_GET', '_POST', '_FILES', '_COOKIE', '_SESSION'],
                     'logFile' => '@app/runtime/logs/console.log',
                     'dirMode' => 0777
