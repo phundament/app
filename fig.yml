@@ -9,8 +9,7 @@ web:
     links:
         - db
     environment:
-        YII_ENV: dev
-        YII_DEBUG: 1
+        APP_PRETTY_URLS: 1
         VIRTUAL_HOST: myapp-fig.127.0.0.1.xip.io,myapp-fig.192.168.59.103.xip.io
 db:
     image: mysql
@@ -22,4 +21,4 @@ db:
         MYSQL_ROOT_PASSWORD: secretroot
         MYSQL_USER: dev
         MYSQL_PASSWORD: dev123
-        MYSQL_DATABASE: p4
+        MYSQL_DATABASE: myapp-fig
