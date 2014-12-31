@@ -1,5 +1,5 @@
-Deploy
-======
+Develop & Deploy
+================
 
 > NOTE! This section is under development
 
@@ -7,7 +7,8 @@ Phundament supports various tools like [Docker](https://www.docker.com), [Vagran
 
 ### Local development
 
- - [fig and Docker containers](51-fig.md)
+ - [Docker container](51-docker.md)
+ - [Docker environment with fig](51-fig.md)
  - [Vagrant and Docker containers](51-vagrant-docker.md)
  - [Vagrant and virtual machines](51-vagrant.md)
 
