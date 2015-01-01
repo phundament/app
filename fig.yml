@@ -1,5 +1,5 @@
 web:
-    image: phundament/app:development
+    build: .
     ports:
         - "80"
     expose:
