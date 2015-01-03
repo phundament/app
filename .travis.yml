@@ -36,8 +36,9 @@ before_script:
   - mysql -e 'create database p4_test;'
   - mysql -e "CREATE USER 'test'@'localhost' IDENTIFIED BY 'test123';"
   - mysql -uroot -e "GRANT ALL PRIVILEGES ON * . * TO 'test'@'localhost';"
+  - php yii app/setup --interactive=0
   - php yii app/setup-tests --interactive=0
-  - php -S localhost:80 > /dev/null 2>&1 &
+  - php -S localhost:80 -t web > /dev/null 2>&1 &
 
 script:
   - codecept run
