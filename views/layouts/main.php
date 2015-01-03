@@ -81,7 +81,10 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; <?= \Yii::$app->params['copyrightBy'] ?> <?= date('Y') ?></p>
+        <p class="pull-left">
+            &copy; <?= \Yii::$app->params['copyrightBy'] ?> <?= date('Y') ?> |
+            <?= Html::a('About', ['/site/about']) ?>
+        </p>
 
         <p class="pull-right"><?= Html::a(
                 Html::img('http://t.phundament.com/p4-32-bw.png', ['alt' => 'Icon Phundament 4']),
