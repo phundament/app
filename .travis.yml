@@ -39,7 +39,7 @@ before_script:
   - php yii app/setup --interactive=0
   - php yii app/setup-tests --interactive=0
   #- sudo php -S localhost:80 -t web > /dev/null 2>&1 &
-  - sudo php -S localhost:80 -t web
+  - sudo php -S localhost:8080 -t web
 
 script:
   - codecept -vv run
