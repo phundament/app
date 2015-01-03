@@ -20,7 +20,7 @@ modules:
     config:
         PhpBrowser:
 # PLEASE ADJUST IT TO THE ACTUAL ENTRY POINT WITHOUT PATH INFO
-            url: http://127.0.0.1:80
+            url: http://localhost:80
 #        WebDriver:
 #            url: http://localhost:8080
 #            browser: firefox
