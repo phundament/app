@@ -18,6 +18,8 @@ env:
     #- DATABASE_DSN="mysql:host=localhost;dbname=p4_test"
     #- DATABASE_USER=test
     #- DATABASE_PASSWORD=test123
+    - YII_ENV=test
+    - APP_PRETTY_URLS=1
     - DB_PORT_3306_TCP_ADDR=localhost
     - DB_ENV_MYSQL_DATABASE=p4_test
     - DB_ENV_MYSQL_USER=test
@@ -34,6 +36,7 @@ before_script:
   - mysql -e "CREATE USER 'test'@'localhost' IDENTIFIED BY 'test123';"
   - mysql -uroot -e "GRANT ALL PRIVILEGES ON * . * TO 'test'@'localhost';"
   - php yii app/setup-tests --interactive=0
+  - php -S localhost:80 > /dev/null 2>&1 &
 
 script:
-  - php yii app/run-tests --interactive=0
+  - codecept run
