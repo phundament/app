@@ -25,6 +25,7 @@ env:
     - DB_ENV_MYSQL_USER=test
     - DB_ENV_MYSQL_PASSWORD=test123
 install:
+  - export PATH="$HOME/.composer/vendor/bin:$PATH"
   - composer self-update && composer --version
 # basic application:
   - composer global require "fxp/composer-asset-plugin:1.0.0-beta4"
