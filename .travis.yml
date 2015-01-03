@@ -38,4 +38,4 @@ before_script:
   - php yii app/setup-tests --interactive=0
 
 script:
-  - codecept -vv run
+  - codecept -v run
