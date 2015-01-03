@@ -13,7 +13,7 @@ Quick-Start
 
 You can install _Phundament 4_ using [composer](https://getcomposer.org/download/)...
 
-    composer global require "fxp/composer-asset-plugin:1.0.0-beta3"
+    composer global require "fxp/composer-asset-plugin:1.0.0-beta4"
     composer create-project --stability=dev phundament/app
 
 Create and adjust your environment configuration, eg. add a database...
