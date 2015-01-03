@@ -1,12 +1,12 @@
 Testing
-===========
+=======
 
-### Running codeception in isolated Docker containers
+### Running in isolated Docker containers
 
 Bring up the test container and execute the codeception test suites with docker...
 
 ```
-fig up testweb
+fig up -d testweb
 docker exec app_testweb_1 codecept run
 ```
 
@@ -22,6 +22,9 @@ Or to rebuild the codeception classes...
 docker exec app_testweb_1 codecept build
 ```
 
+### Running with a local webserver
+
+Update `url` in `tests/codeception/acceptance.suite.yml`
 
 Install required packages and build test classes
 
