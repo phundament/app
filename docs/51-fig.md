@@ -33,8 +33,7 @@ This will automatically setup virtual hosts accessible through port 80 on your D
 
 Copy fig and Dotenv config to project root:
 
-    cp ./platforms/fig/fig.yml .
-    cp ./platforms/fig/.env .
+    cp .env-dist .env
 
 You may edit the `.env` file to update environment parameters.
 
@@ -45,7 +44,6 @@ To initialize your application run the following commands once:
 > Note: If you are developing on OS X or Windows, make sure your host-vm is running in VirtualBox Manager or with `boot2docker start`.
 
     fig run web composer create-project --prefer-dist
-    fig run web ./yii app/setup --interactive=0
 
 They will make the `vendor` folder available in your project directory on your host machine.
 And sets up the database, along with an admin user.
