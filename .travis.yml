@@ -41,4 +41,4 @@ before_script:
   - sudo php -S localhost:80 -t web > /dev/null 2>&1 &
 
 script:
-  - codecept run
+  - codecept -vv run
