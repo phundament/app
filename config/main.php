@@ -92,7 +92,7 @@ $web = [
             'targets'    => [
                 [
                     'class'   => 'yii\log\FileTarget',
-                    'levels'  => YII_DEBUG ? ['error', 'warning', 'info', 'trace'] : ['error', 'warning'],
+                    'levels'  => YII_DEBUG ? ['error', 'warning', 'info'] : ['error', 'warning'],
                     'logVars' => ['_GET', '_POST', '_FILES', '_COOKIE', '_SESSION'],
                     'logFile' => '@app/runtime/logs/web.log',
                     'dirMode' => 0777
@@ -121,7 +121,8 @@ $console = [
             'targets'    => [
                 [
                     'class'   => 'yii\log\FileTarget',
-                    'levels'  => YII_DEBUG ? ['error', 'warning', 'info', 'trace'] : ['error', 'warning'],
+                    'prefix' => function(){return '[console]';},
+                    'levels'  => YII_DEBUG ? ['error', 'warning', 'info'] : ['error', 'warning'],
                     'logVars' => ['_GET', '_POST', '_FILES', '_COOKIE', '_SESSION'],
                     'logFile' => '@app/runtime/logs/console.log',
                     'dirMode' => 0777
