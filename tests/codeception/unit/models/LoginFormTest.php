@@ -47,8 +47,8 @@ class LoginFormTest extends TestCase
     public function testLoginCorrect()
     {
         $model = new LoginForm([
-            'login' => 'demo',
-            'password' => 'demo',
+            'login' => 'admin',
+            'password' => 'admin1234',
         ]);
 
         $this->specify('user should be able to login with correct credentials', function () use ($model) {

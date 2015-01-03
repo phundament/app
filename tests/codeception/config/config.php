@@ -19,6 +19,7 @@ return [
             'showScriptName' => true,
         ],
         'request' => [
+            'class' => 'yii\web\Request',
            'cookieValidationKey' => getenv('APP_COOKIE_VALIDATION_KEY')
         ]
     ],
