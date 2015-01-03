@@ -25,7 +25,7 @@ db:
         MYSQL_DATABASE: myapp-fig
 
 
-webTest:
+webtest:
     build: .
     ports:
         - "80"
@@ -34,13 +34,13 @@ webTest:
     volumes:
         - ./:/app/
     links:
-        - dbTest:DB
+        - dbtest:DB
     environment:
         APP_NAME: myappTest
         APP_PRETTY_URLS: 1
         YII_ENV_TEST: 1
         VIRTUAL_HOST: myapp-fig-test.127.0.0.1.xip.io,myapp-fig-test.192.168.59.103.xip.io
-dbTest:
+dbtest:
     image: mysql
     ports:
         - "3306"
