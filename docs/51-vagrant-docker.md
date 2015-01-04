@@ -18,15 +18,17 @@ Setup the your environment:
 
     cp .env-dist .env
 
-When the database container is running, initialize the application and setup the the database:
-
-    vagrant docker-run web -- composer install --prefer-dist
-
 ### Run
 
 After initialization and setup you can bring up the containers:
 
     vagrant up --no-parallel
+
+### Setup
+
+Get the `vendor` folder for development
+
+    vagrant docker-run web -- composer install --prefer-dist
 
 Now, you're ready to access the application under
  
