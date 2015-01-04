@@ -24,7 +24,7 @@ Get the `vendor` folder for development
 
     vagrant up db
     vagrant docker-run web -- composer install --prefer-dist
-    
+
 > Note! We manually start the `db` container since it's linked from the `web` container.
 
 ### Run
