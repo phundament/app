@@ -18,17 +18,21 @@ Setup the your environment:
 
     cp .env-dist .env
 
-### Run
-
-After initialization and setup you can bring up the containers:
-
-    vagrant up --no-parallel
-
 ### Setup
 
 Get the `vendor` folder for development
 
+    vagrant up db
     vagrant docker-run web -- composer install --prefer-dist
+    
+> Note! We manually start the `db` container since it's linked from the `web` container.
+
+### Run
+
+After initialization and setup you can bring up the containers
+
+    vagrant up --no-parallel
+
 
 Now, you're ready to access the application under
  
