@@ -14,11 +14,9 @@ Docker containers with Vagrant
 
 ### Initialize
 
-Setup the your environment:
+Setup the your environment
 
     cp .env-dist .env
-
-### Setup
 
 Get the `vendor` folder for development
 
