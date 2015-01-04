@@ -63,20 +63,31 @@ Directory Structure
 -------------------
 
 ```
-.env                    configuration file with environment variables
-    assets/             application assets such as JavaScript and CSS
-    config/             configurations used in all applications
-    controllers/        Web controller classes
-    commands/           console controllers (commands)
-    docs/               developer documentation
-    mail/               view files for e-mails
-    models/             application model classes
-    runtime/            files generated during runtime
-    migrations/         database migrations
-    tests/              various tests for objects that are common among applications
-    views/              view files for the Web application
-    web/
-    vendor/             dependent 3rd-party packages
+yii                 application CLI
+assets/             application assets such as JavaScript and CSS
+config/             applications configurations
+controllers/        web-controller classes
+commands/           console controller classes
+models/             application model classes
+modules/            application modules (eg. admin)
+migrations/         database migrations
+views/              view files for the application
+web/                document root with entry-script
+
+composer.json       application packages
+vendor/             dependent 3rd-party packages
+
+codeception.yml     test-suite configuration
+tests/              various tests for objects that are common among applications
+
+data/               application storage
+runtime/            files generated during runtime
+
+Dockerfile          docker image build information
+fig.yml             docker container setup
+
+Vagrantfile         Vagrant (docker) container setup
+Vagrantfile-dock..  Vagrant (docker) host VM
 ```
 
 Branches
