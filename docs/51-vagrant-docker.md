@@ -1,7 +1,9 @@
 Docker containers with Vagrant
 ------------------------------
 
-> **Note! This section is under development and requires `Vagrant >= 1.6.5-dev`**
+### Requirements
+
+- Vagrant >= 1.7.0
 
 ### Get started!
 
@@ -15,56 +17,44 @@ Docker containers with Vagrant
 Setup the your environment:
 
     cp .env-dist .env
-    cp ./platforms/vagrant-docker/Vagrantfile .
-
-**Since Vagrant <=1.6.5 has issues, with simulateous Docker containers, we recommend to start only the `db` container first, 
-to bring up the `vagrant-docker-vm` _before_ starting the rest of the Docker containers:**
-
-    vagrant up db --provider=docker
-    vagrant up proxy --provider=docker
 
 When the database container is running, initialize the application and setup the the database:
 
     vagrant docker-run web -- composer install --prefer-dist
-    vagrant docker-run web -- ./yii app/setup --interactive=0
 
 ### Run
 
 After initialization and setup you can bring up the containers:
 
-    vagrant up proxy web --provider=docker
+    vagrant up --no-parallel
 
 Now, you're ready to access the application under
  
- - [frontend application](http://docker.192.168.7.6.xip.io:22280)
- - [backend application](http://docker.192.168.7.6.xip.io:22281)
+ - [frontend application](http://myapp-vagrant.192.168.7.6.xip.io)
+ - [backend module](http://myapp-vagrant.192.168.7.6.xip.io/admin)
 
 
 > #### Linux Users
 >
 > Our Vagrant `vagrant-docker-vm` registers a private network interface with the IP `192.168.7.6`.
-> If you'd like to use your system docker installation uncomment the `docker.vagrant_vagrantfile` sections in the `Vagrantfile`
+> If you'd like to use your system docker installation comment the `docker.vagrant_vagrantfile` sections in the `Vagrantfile`
 > in the project root folder. 
  
  
 > #### Windows and OS X Users 
+> 
+> If you need to debug Docker, it is recommended to login to the *dockerhost* with 
+> `VAGRANT_VAGRANTFILE=Vagrantfile-dockerhost vagrant ssh` and run docker from there.
 >
 > If you want to reuse the Vagrant VM for your Docker containers across projects, follow these guidelines
 >
 > ```
-> cp ./platforms/vagrant-docker/vm/Vagrantfile \
+> cp Vagrantfile-dockerhost \
 >    ~/vagrant-docker-vm/Vagrantfile
 > ```
 >
-> And set your environment variable `DOCKER_HOST_VAGRANTFILE=~/vagrant-docker-vm/Vagrantfile`.
-> Make sure your host is up before using the Docker provider.
+> And update the `docker.vagrant_vagrantfile` setting in your `Vagrantfile`.
 >
-> ```
-> cd ~/vagrant-docker-vm
-> vagrant up
-> ```
->
-> If you need to debug Docker, it is recommended to login to the `vagrant-docker-vm` with `vagrant ssh` and run docker from there.
 
 --- 
  
