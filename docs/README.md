@@ -26,9 +26,9 @@ Develop
 Deploy
 ------
 
-- [Docker](51-docker.md)
 - [fig](51-fig.md)
 - [Vagrant & Docker](51-vagrant-docker.md)
+- [Docker](51-docker.md)
 - [Vagrant VMs](51-vagrant.md)
 - [Vagrant cloud deployment](51-vagrant-cloud.md)
 - [PaaS deployment](52-paas.md)
