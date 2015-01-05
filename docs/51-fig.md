@@ -63,7 +63,7 @@ Linux
 OS X, Windows
 
 - [myapp-fig.192.168.59.103.xip.io](http://myapp-fig.192.168.59.103.xip.io)
-- [myapp-fig.192.168.59.103.xip.io/admin](http://myapp-fig.192.168.59.103.xip.io/backend)
+- [myapp-fig.192.168.59.103.xip.io/admin](http://myapp-fig.192.168.59.103.xip.io/admin)
 
 > On OS X the command `echo $DOCKER_HOST` should print the IP of your host VM, replace it with `192.168.59.103` in `fig.yml` and the URLs above, if neccessary.
 
