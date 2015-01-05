@@ -4,14 +4,7 @@ Extension Development
 Building an extension
 ---------------------
 
-- Open `Gii > Extension Generator`
-- Enter values
-- Click preview
-- Click generate
-- Follow instructions and push repo to GitHub
-- Require via `composer`
-- Happy coding...
-
+### Gii from the command line (recommended)
 
 ```
  ./yii gii/extension \
@@ -25,7 +18,19 @@ Building an extension
      --authorEmail=you@example.com
 ```
 
-[Create a GitHub repository](https://github.com/new)
+### Gii Web interface
+
+- Open `Gii > Extension Generator`
+- Enter values
+- Click preview
+- Click generate
+- Follow instructions and push repo to GitHub
+- Require via `composer`
+- Happy coding...
+
+### Share your extension
+
+Create a new private or public repository, eg. on [GitHub](https://github.com/new)
 
 ```
 cd runtime/tmp-extensions/yii2-new-module
@@ -36,13 +41,13 @@ git remote add origin https://github.com/you/yii2-new-module.git
 git push -u origin master
 ```
 
-[Submit to packagist](https://packagist.org/packages/submit) ... wait or add repository manually to `composer.json`.
+[Submit to packagist](https://packagist.org/packages/submit) and wait a few minutes or add repository manually to `composer.json`.
 
 ```
 composer require you/yii2-new-module
 ```
 
-
+---
 
 Use Yii Framework 2.0 Development Repo
 --------------------------------------
