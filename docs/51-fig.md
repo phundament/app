@@ -67,6 +67,12 @@ OS X, Windows
 
 > On OS X the command `echo $DOCKER_HOST` should print the IP of your host VM, replace it with `192.168.59.103` in `fig.yml` and the URLs above, if neccessary.
 
+You can display the application logs with:
+
+```
+fig logs
+```
+
 #### Accessing from other clients on the network
 
 If you need to access the application in development from another client (eg. mobile devices), you can setup a port forwarding to your host-vm. This is an example how to add port forwarding to VirtualBox VM.
