@@ -49,7 +49,7 @@ AppAsset::register($this);
             ];
             $menuItems[] = [
                 'label' => '<i class="glyphicon glyphicon-dashboard"></i>',
-                'url'   => ['/admin', 'id' => \Yii::$app->user->id],
+                'url'   => ['/admin'],
             ];
             $menuItems[] = [
                 'label'       => '<i class="glyphicon glyphicon-log-out"></i>',

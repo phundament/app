@@ -103,7 +103,7 @@ $web = [
             'cookieValidationKey' => getenv('APP_COOKIE_VALIDATION_KEY'),
         ],
         'user'    => [
-            'identityClass' => 'app\models\User',
+            'identityClass' => 'dektrium\user\models\User',
         ],
     ]
 ];
