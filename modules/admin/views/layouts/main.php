@@ -169,7 +169,7 @@ sss
             echo Nav::widget(
                 [
                     'options'      => ['class' => 'sidebar-menu'],
-                    'items'        => $menuItems,
+                    'items'        => \Yii::$app->getModule('admin')->getMenuItems(),
                     'encodeLabels' => false,
                 ]
             );

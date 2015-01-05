@@ -23,9 +23,9 @@ class DefaultController extends Controller
                 'class' => AccessControl::className(),
                 'rules' => [
                     [
-                        'actions' => ['index'],
-                        'allow' => true,
-                        'roles' => ['@'],
+                        'actions'       => ['index', 'view-config'],
+                        'allow'         => true,
+                        'roles'         => ['@'],
                         'matchCallback' => function ($rule, $action) {
                             return in_array(
                                 \Yii::$app->user->identity->username,
@@ -59,4 +59,28 @@ class DefaultController extends Controller
     {
         return $this->render('index');
     }
+
+    /**
+     * Application configuration
+     * @return string
+     */
+    public function actionViewConfig()
+    {
+        $config  = $GLOBALS['config'];
+        $modules = $config['modules'];
+        unset($config['modules']);
+        $components = $config['components'];
+        unset($config['components']);
+        $params = $config['params'];
+        unset($config['params']);
+        return $this->render('view-config',
+                             [
+                                 'config'     => $config,
+                                 'modules'    => $modules,
+                                 'components' => $components,
+                                 'params'     => $params
+                             ]
+        );
+    }
+
 }
