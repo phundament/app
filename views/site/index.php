@@ -66,7 +66,7 @@ $this->title .= 'Yii 2.0 App Template';
                             Easy orchestration with fig.
                             <hr>
                             <a class="btn btn-lg btn-primary btn-block"
-                               href="<?= \yii\helpers\Url::to(['docs', 'file' => '51-fig.md']) ?>">fig up</a>
+                               href="<?= \yii\helpers\Url::to(['/docs', 'file' => '51-fig.md']) ?>">fig up</a>
                         </div>
                     </div>
                 </div>
@@ -80,7 +80,7 @@ $this->title .= 'Yii 2.0 App Template';
                             Use VirtualBox, Docker, AWS, ...
                             <hr>
                             <a class="btn btn-lg btn-primary btn-block"
-                               href="<?= \yii\helpers\Url::to(['docs', 'file' => '51-vagrant.md']) ?>">vagrant up</a>
+                               href="<?= \yii\helpers\Url::to(['/docs', 'file' => '51-vagrant.md']) ?>">vagrant up</a>
                         </div>
                     </div>
                 </div>

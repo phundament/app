@@ -39,8 +39,7 @@ $config = [
             'enablePrettyUrl' => getenv('APP_PRETTY_URLS') ? true : false,
             'showScriptName'  => getenv('YII_ENV_TEST') ? true : false,
             'rules'           => [
-                #'docs/<file:[a-z0-9\-\.]*>' => 'site/docs',
-                #'docs'                      => 'site/docs'
+                'docs/<file:[a-zA-Z0-9_\-\.]*>' => 'docs',
             ],
         ],
         'view'         => [
@@ -92,7 +91,7 @@ $web = [
             'targets'    => [
                 [
                     'class'   => 'yii\log\FileTarget',
-                    'levels'  => YII_DEBUG ? ['error', 'warning', 'info'] : ['error', 'warning'],
+                    'levels'  => YII_DEBUG ? ['error', 'warning', 'info', 'trace'] : ['error', 'warning'],
                     'logVars' => ['_GET', '_POST', '_FILES', '_COOKIE', '_SESSION'],
                     'logFile' => '@app/runtime/logs/web.log',
                     'dirMode' => 0777
@@ -121,7 +120,9 @@ $console = [
             'targets'    => [
                 [
                     'class'   => 'yii\log\FileTarget',
-                    'prefix' => function(){return '[console]';},
+                    'prefix'  => function () {
+                        return '[console]';
+                    },
                     'levels'  => YII_DEBUG ? ['error', 'warning', 'info'] : ['error', 'warning'],
                     'logVars' => ['_GET', '_POST', '_FILES', '_COOKIE', '_SESSION'],
                     'logFile' => '@app/runtime/logs/console.log',
@@ -141,7 +142,7 @@ if (php_sapi_name() == 'cli') {
         $config['bootstrap'][]      = 'debug';
         $config['modules']['debug'] = [
             'class'      => 'yii\debug\Module',
-            'allowedIPs' => ['192.168.59.3', '127.0.0.1', '::1']
+            'allowedIPs' => ['127.0.0.1', '::1', '192.168.59.3', '172.17.0.2']
         ];
     }
     $config = \yii\helpers\ArrayHelper::merge($config, $web);
