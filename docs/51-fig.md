@@ -69,7 +69,7 @@ OS X, Windows
 
 #### Accessing from other clients on the network
 
-If you need to access the application in development from another client (eg. mobile devices), you can setup a port forwarding to your host-vm. This is an example how to 
+If you need to access the application in development from another client (eg. mobile devices), you can setup a port forwarding to your host-vm. This is an example how to add port forwarding to VirtualBox VM.
  
 ```
 VBoxManage modifyvm "boot2docker-vm" --natpf1 "rproxy,tcp,,8001,,80"
