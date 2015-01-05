@@ -9,7 +9,7 @@ web:
     links:
         - db:DB
     environment:
-        APP_NAME: myapp
+        APP_NAME: myapp-fig
         APP_PRETTY_URLS: 1
         VIRTUAL_HOST: myapp-fig.127.0.0.1.xip.io,myapp-fig.192.168.59.103.xip.io
 db:
@@ -36,7 +36,7 @@ testweb:
     links:
         - testdb:DB
     environment:
-        APP_NAME: myapp-testing
+        APP_NAME: myapp-fig-testing
         APP_PRETTY_URLS: 1
         YII_ENV: test
         VIRTUAL_HOST: myapp-fig-test.127.0.0.1.xip.io,myapp-fig-test.192.168.59.103.xip.io
