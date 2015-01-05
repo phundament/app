@@ -51,7 +51,7 @@ And sets up the database, along with an admin user.
 
 #### Run
 
-    fig up -d
+    fig up -d web
 
 You should now be able to access the application under 
 
@@ -78,7 +78,9 @@ fig logs
 If you need to access the application in development from another client (eg. mobile devices), you can setup a port forwarding to your host-vm. This is an example how to add port forwarding to VirtualBox VM.
  
 ```
+boot2docker stop
 VBoxManage modifyvm "boot2docker-vm" --natpf1 "rproxy,tcp,,8001,,80"
+boot2docker start
 ```
 
 Make sure to update your `VIRTUAL_HOST` environment variable in `fig.yml`, replace `192.168.1.102` with the IP address of your machine.
@@ -87,7 +89,7 @@ Make sure to update your `VIRTUAL_HOST` environment variable in `fig.yml`, repla
 VIRTUAL_HOST: myapp-fig.127.0.0.1.xip.io,myapp-fig.192.168.1.102.xip.io
 ```
 
-and restart the containers.
+and restart the containers with `fig up -d web`.
 
 You can access the application under the following URL
 
