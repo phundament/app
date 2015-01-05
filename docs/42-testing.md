@@ -7,8 +7,10 @@ Bring up the test container and execute the codeception test suites with docker.
 
 ```
 fig up -d testweb
+docker exec app_testweb_1 codecept build
 docker exec app_testweb_1 codecept run
 ```
+> Note: Replace `app_testweb_1` with your container name.
 
 The following commands can be used to determine the container name to use with docker...
 
