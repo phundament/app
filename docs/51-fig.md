@@ -67,6 +67,30 @@ OS X, Windows
 
 > On OS X the command `echo $DOCKER_HOST` should print the IP of your host VM, replace it with `192.168.59.103` in `fig.yml` and the URLs above, if neccessary.
 
+#### Accessing from other clients on the network
+
+If you need to access the application in development from another client (eg. mobile devices), you can setup a port forwarding to your host-vm. This is an example how to 
+ 
+```
+VBoxManage modifyvm "boot2docker-vm" --natpf1 "rproxy,tcp,,8001,,80"
+```
+
+Make sure to update your `VIRTUAL_HOST` environment variable in `fig.yml`, replace `192.168.1.102` with the IP address of your machine.
+
+```
+VIRTUAL_HOST: myapp-fig.127.0.0.1.xip.io,myapp-fig.192.168.1.102.xip.io
+```
+
+and restart the containers.
+
+You can access the application under the following URL
+
+```
+http://myapp-fig.192.168.1.102.xip.io:8001
+```
+
+*More information on this topic available at [github.com/boot2docker](https://github.com/boot2docker/boot2docker/blob/master/doc/WORKAROUNDS.md).*
+
 ### Customize
 
 You can replace the [Phundament 4 Docker container](https://github.com/phundament/app) with your custom base container.
