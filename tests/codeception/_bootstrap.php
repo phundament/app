@@ -3,6 +3,11 @@
 require(__DIR__ . '/../../vendor/autoload.php');
 require(__DIR__ . '/../../config/env.php');
 
+if (getenv('YII_ENV') !== 'test') {
+    echo "Error: YII_ENV must be set to 'test'";
+    exit;
+}
+
 defined('YII_DEBUG') or define('YII_DEBUG', true);
 defined('YII_ENV') or define('YII_ENV', 'test');
 
