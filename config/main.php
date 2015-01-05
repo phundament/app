@@ -152,6 +152,11 @@ if (YII_ENV_DEV) {
     // configuration adjustments for 'dev' environment
     $config['bootstrap'][]    = 'gii';
     $config['modules']['gii'] = 'yii\gii\Module';
+
+    if (file_exists(__DIR__ . '/local.php')) {
+        $local  = require(__DIR__ . '/local.php');
+        $config = \yii\helpers\ArrayHelper::merge($config, $local);
+    }
 }
 
 return $config;
