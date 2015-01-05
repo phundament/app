@@ -79,6 +79,7 @@ class SiteController extends Controller
      */
     public function actionAbout()
     {
+        $this->layout = 'container';
         return $this->render('about');
     }
 }
