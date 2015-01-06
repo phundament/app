@@ -9,6 +9,7 @@
 
 namespace app\commands;
 
+use dektrium\user\Finder;
 use dektrium\user\ModelManager;
 use dmstr\console\controllers\BaseAppController;
 use mikehaertl\shellcommand\Command;
@@ -215,8 +216,8 @@ class AppController extends BaseAppController
      */
     public function actionSetupAdminUser()
     {
-        $mgr   = new ModelManager;
-        $admin = $mgr->findUserByUsername('admin');
+        $finder = \Yii::$container->get(Finder::className());
+        $admin = $finder->findUserByUsername('admin');
         if ($admin === null) {
             $email = $this->prompt(
                 'E-Mail for application admin user:',

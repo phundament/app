@@ -42,7 +42,7 @@
     "yiisoft/yii2": "2.0.*",
     "yiisoft/yii2-bootstrap": "2.*",
     "yiisoft/yii2-swiftmailer": "2.*",
-    "dektrium/yii2-user": "*",
+    "dektrium/yii2-user": "0.9.*",
     "mikehaertl/php-shellcommand": "1.*",
     "dmstr/yii2-app-command": "dev-master",
     "dmstr/yii2-migrate-command": "*",
