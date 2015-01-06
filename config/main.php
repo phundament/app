@@ -133,6 +133,7 @@ $console = [
     ]
 ];
 
+$allowedIPs = ['127.0.0.1', '::1', '192.168.59.3', '172.17.0.2'];
 
 if (php_sapi_name() == 'cli') {
     $config = \yii\helpers\ArrayHelper::merge($config, $console);
@@ -142,7 +143,7 @@ if (php_sapi_name() == 'cli') {
         $config['bootstrap'][]      = 'debug';
         $config['modules']['debug'] = [
             'class'      => 'yii\debug\Module',
-            'allowedIPs' => ['127.0.0.1', '::1', '192.168.59.3', '172.17.0.2']
+            'allowedIPs' => $allowedIPs
         ];
     }
     $config = \yii\helpers\ArrayHelper::merge($config, $web);
@@ -151,7 +152,10 @@ if (php_sapi_name() == 'cli') {
 if (YII_ENV_DEV) {
     // configuration adjustments for 'dev' environment
     $config['bootstrap'][]    = 'gii';
-    $config['modules']['gii'] = 'yii\gii\Module';
+    $config['modules']['gii'] = [
+        'class'      => 'yii\gii\Module',
+        'allowedIPs' => $allowedIPs
+    ];
 
     if (file_exists(__DIR__ . '/local.php')) {
         $local  = require(__DIR__ . '/local.php');
