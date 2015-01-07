@@ -15,20 +15,6 @@ Docker containers with fig
     git clone https://github.com/phundament/app.git
     cd app
 
-#### Prepare virtual hosts with Docker
-
-To automatically create virtual hosts for your projects, you can use a combination of this [nginx-proxy](https://registry.hub.docker.com/u/jwilder/nginx-proxy/)
-image and the [xip.io](http://xip.io) wildcard DNS service.
-
-First, run the reverse-proxy container like described in its README, before you start web application containers.
-
-```
-docker pull jwilder/nginx-proxy
-docker run -d -p 80:80 -v /var/run/docker.sock:/tmp/docker.sock jwilder/nginx-proxy
-```
-
-This will automatically setup virtual hosts accessible through port 80 on your Docker host.
-
 #### Initialize
 
 Copy fig and Dotenv config to project root:
@@ -53,6 +39,19 @@ And sets up the database, along with an admin user.
 
     fig up -d web
 
+#### Automated virtual hosts with Docker
+
+To automatically create virtual hosts for your projects, you can use a combination of this [nginx-proxy](https://registry.hub.docker.com/u/jwilder/nginx-proxy/)
+image and the [xip.io](http://xip.io) wildcard DNS service.
+
+First, run the reverse-proxy container like described in its README, before you start web application containers.
+
+```
+docker pull jwilder/nginx-proxy
+docker run -d -p 80:80 -v /var/run/docker.sock:/tmp/docker.sock jwilder/nginx-proxy
+```
+
+This will automatically setup virtual hosts accessible through port 80 on your Docker host.
 You should now be able to access the application under 
 
 Linux
