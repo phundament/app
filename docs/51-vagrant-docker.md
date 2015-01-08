@@ -14,7 +14,7 @@ Docker containers with Vagrant
 
 ### Initialize
 
-Setup the your environment
+Setup your environment
 
     cp .env-dist .env
 
