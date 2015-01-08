@@ -18,7 +18,7 @@ Setup your environment
 
     cp .env-dist .env
 
-Get the `vendor` folder for development
+Get the `vendor` folder for development like so
 
     vagrant up db
     vagrant docker-run web -- composer install --prefer-dist
