@@ -1,7 +1,7 @@
 About
 =====
 
-Phundament is a PHP Application Foundation built upon Yii Framework 2.0 best for rapidly developing web
+Phundament is a PHP Application Foundation built upon Yii Framework 2.0, best for rapidly developing web
 applications. It follows the 12factor specifications on a slim codebase.
 
 Features
@@ -102,7 +102,7 @@ The Phundament repository contains the following main branches:
 Special thanks
 --------------
 
-... go out to the qiangxue, samdark, cebe, motin, mikehaertl, tonydspainyard, crisu83, thyseus, quexer69, marc700 and disco-tex77 for their work, feedback and input.
+...go out to the qiangxue, samdark, cebe, motin, mikehaertl, tonydspainyard, crisu83, thyseus, quexer69, marc700 and disco-tex77 for their work, feedback and input.
 
 Developed by
 ------------
