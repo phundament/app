@@ -4,7 +4,7 @@ Installation
 Get it!
 -------
 
-> Note: Have a look at the [deployments](50-deploy.md) if you prefer a setup with Docker, vagrant or PaaS.
+> Note: Have a look at the [deployments](50-deploy.md) section if you prefer a setup with Docker, Vagrant or PaaS.
 
 ```
 composer create-project --stability=dev phundament/app
