@@ -7,7 +7,7 @@ Get it!
 > Note: Have a look at the [deployments](50-deploy.md) section if you prefer setting up Phundament with Docker, Vagrant or PaaS.
 
 ```
-composer create-project --stability=dev phundament/app
+composer create-project --stability=beta phundament/app
 ```
 
 Setup your environment
