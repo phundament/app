@@ -4,7 +4,7 @@ Installation
 Get it!
 -------
 
-> Note: Have a look at the [deployments](50-deploy.md) section if you prefer a setup with Docker, Vagrant or PaaS.
+> Note: Have a look at the [deployments](50-deploy.md) section if you prefer setting up Phundament with Docker, Vagrant or PaaS.
 
 ```
 composer create-project --stability=dev phundament/app
@@ -34,4 +34,4 @@ After adjusting the parameters, finalize the application setup with:
 ./yii app/setup
 ```
 
-Afterwards you can access your application under `http://localhost/app/frontend/web` and `http://localhost/app/backend/web`.
+Afterwards you can access your Phundament application under `http://localhost/app/frontend/web` and `http://localhost/app/backend/web`.
