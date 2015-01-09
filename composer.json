@@ -47,6 +47,7 @@
     "dmstr/yii2-app-command": "dev-master",
     "dmstr/yii2-migrate-command": "*",
     "dmstr/yii2-adminlte-asset": "*",
+    "dmstr/yii2-log": "dev-master",
     "schmunk42/yii2-packaii": "dev-master",
     "schmunk42/yii2-markdocs-module": "dev-master"
   },

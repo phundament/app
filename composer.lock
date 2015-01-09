@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ab5194a27d58bd5ffa6d1f04e7e65496",
+    "hash": "c55df72cf4d392c8483ba97c1d681610",
     "packages": [
         {
             "name": "2amigos/yii2-arrayquery-component",
@@ -287,16 +287,16 @@
         },
         {
             "name": "bower-asset/jquery.inputmask",
-            "version": "3.1.50",
+            "version": "3.1.53",
             "source": {
                 "type": "git",
                 "url": "https://github.com/RobinHerbots/jquery.inputmask.git",
-                "reference": "f44d5deec804c72fe85da31819b18bdcdad26f65"
+                "reference": "1a863a0c9b733444f6766e5500eaf79b7b1d1d03"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RobinHerbots/jquery.inputmask/zipball/f44d5deec804c72fe85da31819b18bdcdad26f65",
-                "reference": "f44d5deec804c72fe85da31819b18bdcdad26f65",
+                "url": "https://api.github.com/repos/RobinHerbots/jquery.inputmask/zipball/1a863a0c9b733444f6766e5500eaf79b7b1d1d03",
+                "reference": "1a863a0c9b733444f6766e5500eaf79b7b1d1d03",
                 "shasum": ""
             },
             "require": {
@@ -647,6 +647,48 @@
                 "yii2"
             ],
             "time": "2014-12-08 12:49:18"
+        },
+        {
+            "name": "dmstr/yii2-log",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dmstr/yii2-log.git",
+                "reference": "e4891ca3a58cd5d775c83c19342ddccc9977621d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dmstr/yii2-log/zipball/e4891ca3a58cd5d775c83c19342ddccc9977621d",
+                "reference": "e4891ca3a58cd5d775c83c19342ddccc9977621d",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "dmstr\\log\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-4-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Marc Mautz",
+                    "email": "marc@diemeisterei.de"
+                }
+            ],
+            "description": "SyslogTarget writes log to syslog.",
+            "keywords": [
+                "extension",
+                "log",
+                "target",
+                "yii2"
+            ],
+            "time": "2014-12-16 14:01:32"
         },
         {
             "name": "dmstr/yii2-migrate-command",
@@ -1001,17 +1043,17 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v2.6.1",
+            "version": "v2.6.3",
             "target-dir": "Symfony/Component/EventDispatcher",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/EventDispatcher.git",
-                "reference": "720fe9bca893df7ad1b4546649473b5afddf0216"
+                "reference": "40ff70cadea3785d83cac1c8309514b36113064e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/720fe9bca893df7ad1b4546649473b5afddf0216",
-                "reference": "720fe9bca893df7ad1b4546649473b5afddf0216",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/40ff70cadea3785d83cac1c8309514b36113064e",
+                "reference": "40ff70cadea3785d83cac1c8309514b36113064e",
                 "shasum": ""
             },
             "require": {
@@ -1019,10 +1061,10 @@
             },
             "require-dev": {
                 "psr/log": "~1.0",
-                "symfony/config": "~2.0",
+                "symfony/config": "~2.0,>=2.0.5",
                 "symfony/dependency-injection": "~2.6",
                 "symfony/expression-language": "~2.6",
-                "symfony/stopwatch": "~2.2"
+                "symfony/stopwatch": "~2.3"
             },
             "suggest": {
                 "symfony/dependency-injection": "",
@@ -1055,7 +1097,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "http://symfony.com",
-            "time": "2014-12-02 20:19:20"
+            "time": "2015-01-05 14:28:40"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -2268,6 +2310,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "dmstr/yii2-app-command": 20,
+        "dmstr/yii2-log": 20,
         "schmunk42/yii2-packaii": 20,
         "schmunk42/yii2-markdocs-module": 20,
         "yiisoft/yii2-apidoc": 20,

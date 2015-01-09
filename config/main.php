@@ -27,6 +27,19 @@ $config = [
             'charset'     => 'utf8',
             'tablePrefix' => getenv('DATABASE_TABLE_PREFIX'),
         ],
+
+        'log'     => [
+            'traceLevel' => getenv('YII_TRACE_LEVEL'),
+            'targets'    => [
+                [
+                    'class'   => 'dmstr\log\SyslogTarget',
+                    'levels'  => YII_DEBUG ? ['error', 'warning', 'info', 'trace'] : ['error', 'warning'],
+                    'logVars' => ['_GET', '_POST', '_FILES', '_COOKIE', '_SESSION'],
+                ],
+            ],
+        ],
+
+
         'mailer'       => [
             'class'            => 'yii\swiftmailer\Mailer',
             //'viewPath'         => '@common/mail',
