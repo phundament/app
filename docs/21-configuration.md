@@ -1,7 +1,7 @@
 Configuration
 =============
 
-The config structure is straight forward, there are three config files for an application:
+The Phundament config structure is straight forward, there are three config files for an application:
 
  - `.env` - environment depended configuration
  - `frontend/config/main.php` - application configuration
