@@ -1,8 +1,8 @@
 Installation
 ============
 
-Get it!
--------
+Get Phundament!
+---------------
 
 > Note: Have a look at the [deployments](50-deploy.md) section if you prefer setting up Phundament with Docker, Vagrant or PaaS.
 
