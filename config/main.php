@@ -33,8 +33,12 @@ $config = [
             'targets'    => [
                 [
                     'class'   => 'dmstr\log\SyslogTarget',
+                    'prefix'  => function () {
+                        return '';
+                    },
                     'levels'  => YII_DEBUG ? ['error', 'warning', 'info', 'trace'] : ['error', 'warning'],
                     'logVars' => ['_GET', '_POST', '_FILES', '_COOKIE', '_SESSION'],
+                    'enabled' => YII_DEBUG ? true : false,
                 ],
             ],
         ],

@@ -654,12 +654,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-log.git",
-                "reference": "e4891ca3a58cd5d775c83c19342ddccc9977621d"
+                "reference": "8fc081bf19f8a0ab8bcbd450b4aaf99d6c9abfc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-log/zipball/e4891ca3a58cd5d775c83c19342ddccc9977621d",
-                "reference": "e4891ca3a58cd5d775c83c19342ddccc9977621d",
+                "url": "https://api.github.com/repos/dmstr/yii2-log/zipball/8fc081bf19f8a0ab8bcbd450b4aaf99d6c9abfc1",
+                "reference": "8fc081bf19f8a0ab8bcbd450b4aaf99d6c9abfc1",
                 "shasum": ""
             },
             "require": {
@@ -688,7 +688,7 @@
                 "target",
                 "yii2"
             ],
-            "time": "2014-12-16 14:01:32"
+            "time": "2015-01-09 16:17:53"
         },
         {
             "name": "dmstr/yii2-migrate-command",
