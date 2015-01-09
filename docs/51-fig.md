@@ -10,7 +10,7 @@ Docker containers with fig
 
 ### Get started!
 
-[Download](https://github.com/phundament/app/tags) or clone:
+[Download Phundament](https://github.com/phundament/app/tags) or clone:
 
     git clone https://github.com/phundament/app.git
     cd app
