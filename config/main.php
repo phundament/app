@@ -27,8 +27,7 @@ $config = [
             'charset'     => 'utf8',
             'tablePrefix' => getenv('DATABASE_TABLE_PREFIX'),
         ],
-
-        'log'     => [
+        'log'          => [
             'traceLevel' => getenv('YII_TRACE_LEVEL'),
             'targets'    => [
                 [
@@ -42,8 +41,6 @@ $config = [
                 ],
             ],
         ],
-
-
         'mailer'       => [
             'class'            => 'yii\swiftmailer\Mailer',
             //'viewPath'         => '@common/mail',
@@ -153,8 +150,10 @@ $console = [
 $allowedIPs = ['127.0.0.1', '::1', '192.168.59.3', '172.17.0.2'];
 
 if (php_sapi_name() == 'cli') {
+    // Console application
     $config = \yii\helpers\ArrayHelper::merge($config, $console);
 } else {
+    // Web application
     if (YII_ENV_DEV) {
         // configuration adjustments for web 'dev' environment
         $config['bootstrap'][]      = 'debug';
@@ -173,11 +172,12 @@ if (YII_ENV_DEV) {
         'class'      => 'yii\gii\Module',
         'allowedIPs' => $allowedIPs
     ];
+}
 
-    if (file_exists(__DIR__ . '/local.php')) {
-        $local  = require(__DIR__ . '/local.php');
-        $config = \yii\helpers\ArrayHelper::merge($config, $local);
-    }
+if (file_exists(__DIR__ . '/local.php')) {
+    // Local configuration, if available
+    $local  = require(__DIR__ . '/local.php');
+    $config = \yii\helpers\ArrayHelper::merge($config, $local);
 }
 
 return $config;
