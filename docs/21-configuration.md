@@ -4,17 +4,14 @@ Configuration
 The Phundament config structure is straight forward, there are three config files for an application:
 
  - `.env` - environment depended configuration
- - `frontend/config/main.php` - application configuration
- - `common/config/main.php` -  shared application configuration
+ - `config/main.php` - application configuration
 
-
-If you choose `APP_PRETTY_URLS=1` in your `.env` file, activate the `/frontend/web/.htaccess`
-
-```
-cp frontend/web/.htaccess-dist frontend/web/.htaccess
-```
-
-
-> This also applies to `backend` and `console`.
- 
 See also [Dev/prod parity](http://12factor.net/dev-prod-parity).
+
+### Virtual Hosts and nice URLs
+ 
+If you choose `APP_PRETTY_URLS=1` in your `.env` file, activate the `web/.htaccess` if you are devleoping on your local machine.
+
+```
+cp web/.htaccess-dist web/.htaccess
+```
