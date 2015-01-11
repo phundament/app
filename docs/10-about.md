@@ -102,7 +102,7 @@ The Phundament repository contains the following main branches:
 Special thanks
 --------------
 
-...go out to the qiangxue, samdark, cebe, motin, mikehaertl, tonydspainyard, crisu83, thyseus, quexer69, marc700 and disco-tex77 for their work, feedback and input.
+...go out to the qiangxue, samdark, cebe, motin, mikehaertl, tonydspainyard, crisu83, thyseus, quexer69, marc7000 and disco-tex77 for their work, feedback and input.
 
 Developed by
 ------------
