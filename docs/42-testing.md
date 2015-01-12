@@ -3,7 +3,7 @@ Testing
 
 ### Running in isolated Docker containers
 
-Creating and running a test environment can be a cumbersome task, since you habe to take care about several specific tasks, like executing your tests in a separate database. Therefore the Phundament 4 `:development` images contain fully pre-installed Yii 2.0 Framework codeception test-suites for unit-, functional- and acceptance-testing.
+Creating and running a test environment can be a cumbersome task, since you have to take care about several specific tasks, like executing your tests in a separate database. Therefore the Phundament 4 `:development` images contain fully pre-installed Yii 2.0 Framework codeception test-suites for unit-, functional- and acceptance-testing.
 
 In `fig.yml` two additional containers `testweb` and `testdb` are defined which are used to run the test-suites. To get started, bring up the test containers and execute tests suites with docker.
 
