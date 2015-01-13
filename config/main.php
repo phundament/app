@@ -27,20 +27,6 @@ $config = [
             'charset'     => 'utf8',
             'tablePrefix' => getenv('DATABASE_TABLE_PREFIX'),
         ],
-        'log'          => [
-            'traceLevel' => getenv('YII_TRACE_LEVEL'),
-            'targets'    => [
-                [
-                    'class'   => 'dmstr\log\SyslogTarget',
-                    'prefix'  => function () {
-                        return '';
-                    },
-                    'levels'  => YII_DEBUG ? ['error', 'warning', 'info', 'trace'] : ['error', 'warning'],
-                    'logVars' => ['_GET', '_POST', '_FILES', '_COOKIE', '_SESSION'],
-                    'enabled' => YII_DEBUG ? true : false,
-                ],
-            ],
-        ],
         'mailer'       => [
             'class'            => 'yii\swiftmailer\Mailer',
             //'viewPath'         => '@common/mail',
@@ -98,14 +84,24 @@ $config = [
 
 ];
 
+
 $web = [
     'components' => [
         'log'     => [
             'traceLevel' => getenv('YII_TRACE_LEVEL'),
             'targets'    => [
                 [
+                    'class'   => 'dmstr\log\SyslogTarget',
+                    'prefix'  => function () {
+                        return '';
+                    },
+                    'levels'  => YII_DEBUG ? ['error', 'warning', 'info'] : ['error', 'warning'],
+                    'logVars' => ['_GET', '_POST', '_FILES', '_COOKIE', '_SESSION'],
+                    'enabled' => YII_DEBUG ? true : false,
+                ],
+                [
                     'class'   => 'yii\log\FileTarget',
-                    'levels'  => YII_DEBUG ? ['error', 'warning', 'info', 'trace'] : ['error', 'warning'],
+                    'levels'  => YII_DEBUG ? ['error', 'warning', 'info'] : ['error', 'warning'],
                     'logVars' => ['_GET', '_POST', '_FILES', '_COOKIE', '_SESSION'],
                     'logFile' => '@app/runtime/logs/web.log',
                     'dirMode' => 0777
@@ -146,6 +142,7 @@ $console = [
         ],
     ]
 ];
+
 
 $allowedIPs = ['127.0.0.1', '::1', '192.168.59.3', '172.17.0.2'];
 
