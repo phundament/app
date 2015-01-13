@@ -9,7 +9,7 @@ $this->title .= 'Yii 2.0 App Template';
 
             <h1>Phundament 4</h1>
 
-            <p class="lead">12factor PHP Application Template for Yii 2.0</p>
+            <h2 class="lead">12factor PHP Application Template for Yii 2.0</h2>
 
             <div>
                 <a href="#download" class="btn btn-primary btn-lg">Download</a>
@@ -50,7 +50,7 @@ $this->title .= 'Yii 2.0 App Template';
                             <h3><i class="glyphicon glyphicon-compressed"></i> zip</h3>
                         </div>
                         <div class="panel-body text-center">
-                            Classic or manual setup.
+                            Classic or virtual application setup.
                             <hr>
                             <a target="_blank" class="btn btn-lg btn-default btn-block"
                                href="https://github.com/phundament/app/tags">Download</a>
@@ -63,7 +63,7 @@ $this->title .= 'Yii 2.0 App Template';
                             </h3>
                         </div>
                         <div class="panel-body text-center">
-                            Easy orchestration with fig.
+                            Easy container orchestration with fig.
                             <hr>
                             <a class="btn btn-lg btn-primary btn-block"
                                href="<?= \yii\helpers\Url::to(['/docs', 'file' => '51-fig.md']) ?>">fig up</a>
@@ -92,7 +92,7 @@ $this->title .= 'Yii 2.0 App Template';
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h2>Holistic Approach</h2>
+                    <h3>A holistic Yii 2.0 application template</h3>
                 </div>
             </div>
             <div class="row">
@@ -142,7 +142,7 @@ $this->title .= 'Yii 2.0 App Template';
                 <div class="col-md-5 col-md-offset-1">
                     <div class="panel panel-default">
                         <div class="panel-heading text-center">
-                            <h2>The App</h2></div>
+                            <h3>The App</h3></div>
                         <div class="panel-body text-center">How-Tos & more.
                             <hr>
                             <a target="_blank" class="btn btn-lg btn-default btn-block"
@@ -153,7 +153,7 @@ $this->title .= 'Yii 2.0 App Template';
                 <div class="col-md-5">
                     <div class=" panel panel-default">
                         <div class="panel-heading text-center">
-                            <h2>The Code</h2>
+                            <h3>The Code</h3>
                         </div>
                         <div class="panel-body text-center">Classes, methods, variables.
                             <hr>
@@ -169,7 +169,7 @@ $this->title .= 'Yii 2.0 App Template';
                 <div class="col-md-5 col-md-offset-1">
                     <div class="panel panel-default">
                         <div class="panel-heading text-center">
-                            <h2>The Extensions</h2>
+                            <h3>The Extensions</h3>
                         </div>
                         <div class="panel-body text-center">
                             Use any Yii 2.0 package.
@@ -183,7 +183,7 @@ $this->title .= 'Yii 2.0 App Template';
                 <div class="col-md-5">
                     <div class="panel panel-default">
                         <div class="panel-heading text-center">
-                            <h2>The Framework</h2>
+                            <h3>The Framework</h3>
                         </div>
                         <div class="panel-body text-center">Core functionality.
                             <hr>
@@ -223,8 +223,8 @@ $this->title .= 'Yii 2.0 App Template';
             <div class="row">
                 <div class="col-sm-4 col-sm-offset-2">
                     <div class="panel panel-default">
-                        <div class="panel-heading text-center"><h2><i class="glyphicon glyphicon-exclamation-sign"></i>
-                                Issues</h2>
+                        <div class="panel-heading text-center"><h3><i class="glyphicon glyphicon-exclamation-sign"></i>
+                                Issues</h3>
                         </div>
                         <div class="panel-body text-center">
                             <a target="_blank"
@@ -235,8 +235,8 @@ $this->title .= 'Yii 2.0 App Template';
                 </div>
                 <div class="col-sm-4">
                     <div class="panel panel-default">
-                        <div class="panel-heading text-center"><h2><i class="glyphicon glyphicon-question-sign"></i> FAQ
-                            </h2>
+                        <div class="panel-heading text-center"><h3><i class="glyphicon glyphicon-question-sign"></i> FAQ
+                            </h3>
                         </div>
                         <div class="panel-body text-center">
                             <a target="_blank"
@@ -254,7 +254,7 @@ $this->title .= 'Yii 2.0 App Template';
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h2>Stay Tuned</h2>
+                    <h3>Stay Tuned</h3>
                 </div>
             </div>
             <div class="row">

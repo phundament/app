@@ -6,7 +6,9 @@ The Phundament config structure is straight forward, there are three config file
  - `.env` - environment depended configuration
  - `config/main.php` - application configuration
 
-See also [Dev/prod parity](http://12factor.net/dev-prod-parity).
+
+Compared to `yii2-app-basic` and `yii2-app-advanced` Phundament uses an environment variables based configuration instead
+of an `init` script. See also [Dev/prod parity](http://12factor.net/dev-prod-parity).
 
 ### Virtual Hosts and nice URLs
  

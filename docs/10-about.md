@@ -9,7 +9,7 @@ Features
 
 ### Code
 
-- *basic-app* directory structure
+- *yii2-app-basic* directory structure
 - minimalistic, environment variables based configuration
 - Docker, fig, Vagrant and puPHPet support
 
@@ -18,6 +18,7 @@ Features
 - extended database migration support
 - fully non-interactive deployment to work on PaaS
 - CLI command for application maintenance tasks
+- containerized Yii 2.0 Codeception test-suites 
 
 ### Backend
 
@@ -45,7 +46,7 @@ Requirements
 - [Composer](http://getcomposer.org/doc/00-intro.md#installation-nix) installation
 - PHP 5.4
 
-or  
+or a virtualized setup with
  
  - Docker
  - fig
@@ -102,7 +103,7 @@ The Phundament repository contains the following main branches:
 Special thanks
 --------------
 
-...go out to the qiangxue, samdark, cebe, motin, mikehaertl, tonydspainyard, crisu83, thyseus, quexer69, marc7000 and disco-tex77 for their work, feedback and input.
+...go out to the qiangxue, samdark, cebe, the yii core-devs, motin, mikehaertl, tonydspainyard, crisu83, thyseus, quexer69, marc7000 and disco-tex77 for their work, feedback and input.
 
 Developed by
 ------------
