@@ -154,10 +154,10 @@ class AppController extends BaseAppController
     public function actionClearAssets($app = null)
     {
         $frontendAssets = \Yii::getAlias('@app/web/assets');
-### TODO        $backendAssets  = \Yii::getAlias('@backend/web/assets');
+        ### TODO        $backendAssets  = \Yii::getAlias('@backend/web/assets');
 
         // Matches from 7-8 char folder names, the 8. char is optional
-        $matchRegex     = '"^[a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9]\?[a-z0-9]$"';
+        $matchRegex = '"^[a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9]\?[a-z0-9]$"';
 
         // create $cmd command
         switch ($app) {
@@ -175,7 +175,7 @@ class AppController extends BaseAppController
                 } elseif ($app === 'backend') {
                     $assetFolder = $backendAssets;
                 }
-                $cmd = 'cd "' . $assetFolder . '" && ls | grep -e ' . $matchRegex .  ' | xargs rm -rf ';
+                $cmd = 'cd "' . $assetFolder . '" && ls | grep -e ' . $matchRegex . ' | xargs rm -rf ';
                 break;
             default:
                 echo "Error: Unknown application\n\n";
@@ -184,12 +184,12 @@ class AppController extends BaseAppController
 
         // Set command
         $command = new Command($cmd);
-        
+
         // Prompt user        
-        $delete = $this->confirm("\nDo you really want to delete \"" . $app . "\" web assets?", ['default'=>true]);
+        $delete = $this->confirm("\nDo you really want to delete \"" . $app . "\" web assets?", ['default' => true]);
 
         if ($delete) {
-            
+
             // Try to execute $command
             if ($command->execute()) {
                 echo "\"{$app}\" web assets have been deleted.";
@@ -217,7 +217,7 @@ class AppController extends BaseAppController
     public function actionSetupAdminUser()
     {
         $finder = \Yii::$container->get(Finder::className());
-        $admin = $finder->findUserByUsername('admin');
+        $admin  = $finder->findUserByUsername('admin');
         if ($admin === null) {
             $email = $this->prompt(
                 'E-Mail for application admin user:',
@@ -294,6 +294,36 @@ class AppController extends BaseAppController
         } else {
             echo "Command virtualhost.sh not found, skipping.\n";
         }
+    }
+
+    /**
+     * create database and grant permissions based on ENV vars
+     *
+     * @param $db database name
+     */
+    public function actionCreateMysqlDb($db)
+    {
+        $root          = 'root';
+        $root_password = getenv("DB_ENV_MYSQL_ROOT_PASSWORD");
+        $host          = getenv("DB_PORT_3306_TCP_ADDR");
+        $port          = getenv("DB_PORT_3306_TCP_PORT");
+        $user          = getenv("DB_ENV_MYSQL_USER");
+        $pass          = getenv("DB_ENV_MYSQL_PASSWORD");
+        #$db            = getenv("DB_ENV_MYSQL_DATABASE");
+
+        try {
+            $dbh = new \PDO("mysql:host=$host;port=$port", $root, $root_password);
+            $dbh->exec(
+                "CREATE DATABASE IF NOT EXISTS `$db`;
+         GRANT ALL ON `$db`.* TO '$user'@'%' IDENTIFIED BY '$pass';
+         FLUSH PRIVILEGES;"
+            )
+            or die(print_r($dbh->errorInfo(), true));
+        } catch (\PDOException $e) {
+            die("DB ERROR: " . $e->getMessage());
+        }
+
+        echo "Database successfully created.\n";
     }
 
 }
