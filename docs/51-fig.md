@@ -100,4 +100,4 @@ http://myapp-fig.192.168.1.102.xip.io:8001
 
 ### Customize
 
-You can replace the [Phundament 4 Docker container](https://github.com/phundament/app) with your custom base container.
+You can replace the [Phundament 4 Docker container](https://registry.hub.docker.com/u/phundament/app/) ([repository](https://github.com/phundament/docker)) with your custom base container.
