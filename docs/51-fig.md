@@ -12,8 +12,8 @@ Docker containers with fig
 
 [Download Phundament](https://github.com/phundament/app/tags) or clone:
 
-    git clone https://github.com/phundament/app.git my-app
-    cd my-app
+    git clone https://github.com/phundament/app.git myapp-fig
+    cd myapp-fig
 
 #### Initialize
 
