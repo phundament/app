@@ -42,8 +42,14 @@ Now, you're ready to access the application under
 > #### Windows and OS X Users 
 > 
 > If you need to debug Docker, it is recommended to login to the *dockerhost* with 
+> 
+> OS X Users:
 > ```
 > VAGRANT_VAGRANTFILE=Vagrantfile-dockerhost vagrant ssh
+> ``` 
+> Windows Users:
+> ```
+> set VAGRANT_VAGRANTFILE=Vagrantfile-dockerhost && vagrant ssh
 > ``` 
 > 
 > and run `docker` from there.
