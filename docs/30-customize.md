@@ -4,9 +4,9 @@ Customize
 Frontend Assets
 ---------------
 
-The asset package in the *frontend* application is prepared for customization of *Bootstap 3* with less files.
+The asset package in the application is prepared for customization of *Bootstap 3* with less files.
 
-Configure your favourite less compiler to create the `app.css` file in `frontend/assets/web/css` from `frontend/assets/less`.
+Configure your favourite less compiler to create the `app.css` file in `assets/web/css` from `assets/less`.
 
 > You may change this setup with to use your preferred CSS and JS frameworks.
 
