@@ -39,11 +39,11 @@ Now, you're ready to access the application under
 
 ### Database migrations
 
-To run your database migations you have to open a bash in your `web` container with:
+To run your database migrations you have to open a bash in your `web` container with:
 
     vagrant docker-run -t web -- /bin/bash
 
-On this bash you can run your migrations with:
+On this bash you can run `yii` with:
     
     ./yii migrate
 
