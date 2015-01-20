@@ -37,6 +37,18 @@ Now, you're ready to access the application under
  - [frontend application](http://myapp-vagrant.192.168.7.6.xip.io)
  - [backend module](http://myapp-vagrant.192.168.7.6.xip.io/admin)
 
+### Database migrations
+
+To run your database migations you have to open a bash in your `web` container with:
+
+    vagrant docker-run -t web -- /bin/bash
+
+On this bash you can run your migrations with:
+    
+    ./yii migrate
+
+
+
 ### Platform specific information
  
 > #### Windows and OS X Users 
