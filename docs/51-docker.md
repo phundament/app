@@ -74,4 +74,5 @@ docker run \
     $APP_NAME
 ```
 
+> ### OS X and Windows users
 > Note: If you are using volumes, build your image from the `phundament/app:development` container, due to file and directory permissions. 
