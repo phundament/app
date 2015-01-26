@@ -54,7 +54,6 @@ On this bash you can run `yii` with:
     ./yii migrate
 
 
-
 ### Platform specific information
  
 > #### Windows and OS X Users 
@@ -75,8 +74,8 @@ On this bash you can run `yii` with:
 > If you want to reuse the Vagrant VM for your Docker containers across projects, follow these guidelines
 >
 > ```
-> cp Vagrantfile-dockerhost \
->    ~/vagrant-docker-vm/Vagrantfile
+> cp build/dockerhost/Vagrantfile \
+>    ~/vagrant-dockerhost/Vagrantfile
 > ```
 >
 > and update the `docker.vagrant_vagrantfile` setting in your `Vagrantfile`.
