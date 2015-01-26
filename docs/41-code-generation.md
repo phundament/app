@@ -7,6 +7,10 @@ Backend CRUD module
 Phundament allows you to use you custom designed database schema as the base for CRUD admin interfaces.
 To kickstart you application backend create a new `crud` module with Yii's built-in tools
 
+> If you would like to create an extension module in a composer package, please start by [creating an extension](44-extension-development.md) first
+> push it to your repo and install it with `composer require --prefer-source name/package`. 
+> Afterwards generate your code directly into `vendor/name/package` and use this repository for development.
+
 ```
 ./yii gii/module \
     --moduleID=crud \

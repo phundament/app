@@ -5,6 +5,12 @@ Docker containers with Vagrant
 
 - Vagrant >= 1.7.0
 
+> #### Important notice for Windows Users
+>
+> If you are working with Git repositories, make sure Git is not changing your line endings to CRLF, because
+> you'll run these files in development in a Linux container. You can find more information about this topic on [GitHub](https://help.github.com/articles/dealing-with-line-endings/).
+
+
 ### Get started!
 
 [Download](https://github.com/phundament/app/tags) or clone:
