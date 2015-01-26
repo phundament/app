@@ -10,7 +10,7 @@ vagrantfile-local:
         network:
             private_network: 192.168.42.42
             forwarded_port:
-                ZN3sRnRFHOIr:
+                fQszUbKukxGd:
                     host: '9266'
                     guest: '22'
         post_up_message: ''
@@ -32,7 +32,9 @@ vagrantfile-local:
                     - '--hiera_config /vagrant/puphpet/puppet/hiera.yaml'
                     - '--parser future'
         synced_folder:
-            c9hxY9LShbJZ:
+            lzo15yQAVr6B:
+                owner: ''
+                group: ''
                 source: ./
                 target: /var/www
                 sync_type: default
@@ -62,6 +64,13 @@ vagrantfile-local:
 server:
     install: '1'
     packages: {  }
+users_groups:
+    install: '1'
+    groups: {  }
+    users: {  }
+cron:
+    install: '1'
+    jobs: {  }
 firewall:
     install: '1'
     rules: null
@@ -77,36 +86,26 @@ apache:
     modules:
         - rewrite
     vhosts:
-        35hCaF8kdnaS:
+        kfzngnsqb5bz:
             servername: phundament.vagrant
-            docroot: /var/www/frontend/web
+            docroot: /var/www/web
             port: '80'
             setenv:
                 - 'APP_ENV dev'
-            override:
-                - All
-            options:
-                - Indexes
-                - FollowSymLinks
-                - MultiViews
-            engine: php
-            custom_fragment: ''
-            ssl_cert: ''
-            ssl_key: ''
-            ssl_chain: ''
-            ssl_certs_dir: ''
-        zggSL4GXjbh9:
-            servername: admin.phundament.vagrant
-            docroot: /var/www/backend/web
-            port: '80'
-            setenv:
-                - 'APP_ENV dev'
-            override:
-                - All
-            options:
-                - Indexes
-                - FollowSymLinks
-                - MultiViews
+            directories:
+                jkmabonowb7t:
+                    provider: directory
+                    path: /var/www/web
+                    options:
+                        - Indexes
+                        - FollowSymlinks
+                        - MultiViews
+                    allow_override:
+                        - All
+                    require:
+                        - all
+                        - granted
+                    custom_fragment: ''
             engine: php
             custom_fragment: ''
             ssl_cert: ''
@@ -120,12 +119,14 @@ nginx:
         default_vhost: 1
         proxy_buffer_size: 128k
         proxy_buffers: '4 256k'
+    upstreams: {  }
     vhosts:
-        CRxi6ruGikaG:
+        hermzisfiase:
+            proxy: ''
             server_name: awesome.dev
             server_aliases:
                 - www.awesome.dev
-            www_root: /var/www/awesome
+            www_root: /var/www/web
             listen_port: '80'
             location: \.php$
             index_files:
@@ -135,6 +136,7 @@ nginx:
             envvars:
                 - 'APP_ENV dev'
             engine: php
+            client_max_body_size: 1m
             ssl_cert: ''
             ssl_key: ''
 php:
@@ -145,10 +147,10 @@ php:
     modules:
         php:
             - cli
-            - intl
-            - mcrypt
             - curl
             - gd
+            - intl
+            - mcrypt
         pear: {  }
         pecl:
             - pecl_http
@@ -181,13 +183,16 @@ xdebug:
         xdebug.remote_port: '9000'
 xhprof:
     install: '0'
+wpcli:
+    install: '0'
+    version: ''
 drush:
     install: '0'
     version: 6.3.0
 ruby:
     install: '1'
     versions:
-        Ws0nGE2TxSrM:
+        JEELjmVmVFMw:
             version: ''
 nodejs:
     install: '0'
@@ -196,14 +201,15 @@ python:
     install: '1'
     packages: {  }
     versions:
-        rmJY6ggAqejk:
+        72eeCv2SU1Qj:
             version: ''
 mysql:
     install: '1'
+    override_options: {  }
     root_password: '123'
     adminer: 0
     databases:
-        wZodiW0c2el6:
+        KXo1ZySil0se:
             grant:
                 - ALL
             name: p4
@@ -222,6 +228,7 @@ postgresql:
     adminer: 0
 mariadb:
     install: '0'
+    override_options: {  }
     root_password: '123'
     adminer: 0
     databases: {  }
@@ -268,6 +275,11 @@ rabbitmq:
 elastic_search:
     install: '0'
     settings:
+        version: ''
         java_install: true
-        autoupgrade: true
+solr:
+    install: '0'
+    settings:
+        version: ''
+        port: ''
 

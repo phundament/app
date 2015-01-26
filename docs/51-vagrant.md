@@ -1,5 +1,5 @@
-Local VM with Vagrant
----------------------
+Local VM with Vagrant and Puppet from puPHPet.com
+-------------------------------------------------
 
 > NOTE! This section is under development
 
@@ -17,15 +17,18 @@ Local VM with Vagrant
 
 #### Initialize
 
-Upload the default configuration from `environments/puphpet/config-dist.yaml` via drag&drop to [PuPHPet](https://puphpet.com/)
+Upload the default configuration from `docs/examples/vagrant-puphpet/puphpet/config-dist.yaml` via drag&drop to [PuPHPet](https://puphpet.com/)
 
-> Adjust VM values if needed, eg. make sure to install `curl` and `gd`.
+> Adjust the VM configuration values if needed, eg. make sure to install `curl` and `gd`.
 
 Click **Create** and download VM configuration package and extract its contents (`Vagrantfile`,`puphpet/`) to the project root folder.
 
+> If you are using a full-stack VM instead of the default Docker container setup, we recommend you to remove the existing `Vagrantfile` 
+and `fig.yml`.
+
 Initialize application for puPHPet:
 
-    cp ./platforms/puphpet/puphpet/files/exec-once/init.sh \
+    cp ./docs/examples/vagrant-puphpet/puphpet/files/exec-once/init.sh \
        ./puphpet/files/exec-once/init.sh
 
 To access the virtual host in the VM later, update your `/etc/hosts` file:
@@ -36,7 +39,7 @@ To access the virtual host in the VM later, update your `/etc/hosts` file:
 
     vagrant up
 
-Open [phundament.vagrant](http://phundament.vagrant) or [admin.phundament.vagrant](http://admin.phundament.vagrant) in your browser.
+Open [phundament.vagrant](http://phundament.vagrant) in your browser.
 
 
 ### Accessing application in virtual machine
