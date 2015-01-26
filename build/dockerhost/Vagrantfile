@@ -13,7 +13,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Access docker container via private_network interface
   # Port mapping to this IP can be defined in the Vagrantfile of the container
-  config.vm.network "private_network", ip: "192.168.7.6", netmask: "255.255.0.0"
+  config.vm.network "private_network", ip: "192.168.7.6", netmask: "255.255.255.0"
   config.vm.provider :virtualbox do |vb|
     vb.customize ["modifyvm", :id, "--nicpromisc2", "allow-all"]
   end
