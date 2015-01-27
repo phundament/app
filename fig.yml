@@ -1,5 +1,5 @@
 web:
-    build: build/development
+    build: .
     ports:
         - "80"
     expose:
@@ -11,6 +11,8 @@ web:
     environment:
         APP_NAME: myapp-fig
         APP_PRETTY_URLS: 1
+        YII_ENV: dev
+        YII_DEBUG: true
         VIRTUAL_HOST: ~myapp-fig\..*\.xip\.io
 db:
     image: mysql
@@ -26,7 +28,7 @@ db:
 
 
 testweb:
-    build: build/development
+    build: .
     ports:
         - "80"
     expose:
@@ -51,17 +53,3 @@ testdb:
         MYSQL_USER: test
         MYSQL_PASSWORD: test123
         MYSQL_DATABASE: test-myapp-fig
-
-prodweb:
-    build: build/production
-    ports:
-        - "80"
-    expose:
-        - "80"
-    links:
-        - db:DB
-    environment:
-        APP_NAME: prod-myapp-fig
-        APP_PRETTY_URLS: 1
-        VIRTUAL_HOST: ~prod-myapp-fig\..*\.xip\.io
-        DB_ENV_MYSQL_DATABASE: prod-myapp-fig

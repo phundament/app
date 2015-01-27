@@ -1,4 +1,6 @@
 .git
+.vagrant
+build
 
 data
 vendor

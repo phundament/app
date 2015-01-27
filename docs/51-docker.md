@@ -76,3 +76,29 @@ docker run \
 
 > ### OS X and Windows users
 > Note: If you are using volumes, build your image from the `phundament/app:development` container, due to file and directory permissions. 
+
+
+
+### Customizing startup and webserver configuration
+
+Copy the startup files from the container into your `build/` directory.
+
+    docker cp app_web_1:/root/run.sh build/
+    docker cp app_web_1:/etc/nginx/sites-available/default build/
+    
+#### BASIC_AUTH example
+
+Create a password file    
+    
+    htpasswd -c build/htpasswd demo
+
+Update server configuration
+
+    auth_basic "Restricted";
+    auth_basic_user_file /etc/nginx/.htpasswd;
+    
+Add these updated configuration files to the build process    
+
+    ADD build/.htpasswd /etc/nginx/.htpasswd
+    ADD build/default /etc/nginx/sites-available/default
+    
