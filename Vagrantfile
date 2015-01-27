@@ -42,7 +42,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     web.vm.synced_folder "./", "/app"
     web.vm.provider "docker" do |docker|
       docker.vagrant_vagrantfile = "build/dockerhost/Vagrantfile"
-      docker.build_dir = "build/development"
+      docker.build_dir = "."
       docker.link("rproxy:RPROXY")
       docker.link("db:DB")
       docker.env = {
