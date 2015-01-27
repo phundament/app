@@ -24,6 +24,10 @@ use yii\helpers\Html;
                     <?= Html::a('Yii 2', 'http://yiiframework.com') ?>,
                     <?= Html::a('composer', 'http://getcomposer.org') ?>
                 </p>
+
+                <p class="small">
+                    <?= isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST']:'' ?> | <?= getenv('HOSTNAME') ?: 'local' ?>
+                </p>
             </div>
         </div>
     </div>
