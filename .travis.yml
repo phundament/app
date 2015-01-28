@@ -39,3 +39,7 @@ before_script:
 
 script:
   - codecept -v run
+
+after_success:
+  - php yii app/setup-docs --interactive=0
+  - php yii app/generate-docs --interactive=0
