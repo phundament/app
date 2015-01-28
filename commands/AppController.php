@@ -223,9 +223,9 @@ class AppController extends BaseAppController
         if ($this->confirm('Regenerate documentation files into ./docs-html', true)) {
 
             // array with commands
-            $commands[] = 'vendor/bin/apidoc guide --interactive=0 docs docs-html';
-            $commands[] = 'vendor/bin/apidoc api --interactive=0 --exclude=runtime/,tests/ backend,common,console,frontend docs-html';
-            $commands[] = 'vendor/bin/apidoc guide --interactive=0 docs docs-html';
+            $commands[] = 'vendor/bin/apidoc guide --interactive=0 docs web/apidocs';
+            $commands[] = 'vendor/bin/apidoc api --interactive=0 --exclude=runtime/,tests/,vendor/ . web/apidocs';
+            $commands[] = 'vendor/bin/apidoc guide --interactive=0 docs web/apidocs';
 
             foreach ($commands AS $command) {
                 $cmd = new Command($command);
