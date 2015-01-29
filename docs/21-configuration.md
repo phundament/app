@@ -3,8 +3,8 @@ Configuration
 
 The Phundament config structure is straight forward, there are three config files for an application:
 
- - `.env` - environment depended configuration
- - `config/main.php` - application configuration
+ - [`.env`](https://github.com/phundament/app/blob/master/.env-dist) - environment dependend configuration
+ - [`config/main.php`](https://github.com/phundament/app/blob/master/config/main.php) - application configuration
 
 
 Compared to `yii2-app-basic` and `yii2-app-advanced` Phundament uses an environment variables based configuration instead
