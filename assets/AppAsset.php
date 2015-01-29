@@ -34,6 +34,10 @@ class AppAsset extends AssetBundle
     public function init(){
         parent::init();
         \Yii::$app->getAssetManager()->bundles['yii\bootstrap\BootstrapAsset'] = false;
+        // "forceCopy" for this bundle only
+        /*if (YII_ENV_DEV) {
+            touch(\Yii::getAlias($this->sourcePath));
+        }*/        
     }
 
     public function registerAssetFiles($view) {
