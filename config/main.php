@@ -90,6 +90,7 @@ $web = [
         'log'     => [
             'traceLevel' => getenv('YII_TRACE_LEVEL'),
             'targets'    => [
+                // log route handled by nginx process
                 [
                     'class'   => 'dmstr\log\SyslogTarget',
                     'prefix'  => function () {
@@ -99,6 +100,7 @@ $web = [
                     'logVars' => ['_GET', '_POST', '_FILES', '_COOKIE', '_SESSION'],
                     'enabled' => YII_DEBUG ? true : false,
                 ],
+                // standard file log route
                 [
                     'class'   => 'yii\log\FileTarget',
                     'levels'  => YII_DEBUG ? ['error', 'warning', 'info'] : ['error', 'warning'],
