@@ -1,5 +1,5 @@
-Docker containers with fig
--------------------------
+Docker containers with fig (docker-compose)
+-------------------------------------------
 
 > NOTE! This section is under development
 
