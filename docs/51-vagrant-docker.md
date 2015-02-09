@@ -58,15 +58,11 @@ On this bash you can run `yii` with:
  
 > #### Windows and OS X Users 
 > 
-> If you need to debug Docker, it is recommended to login to the *dockerhost* with 
+> If you need to debug Docker, it is recommended to login to the *vagrant-dockerhost* with 
 > 
-> OS X Users:
 > ```
-> VAGRANT_VAGRANTFILE=Vagrantfile-dockerhost vagrant ssh
-> ``` 
-> Windows Users:
-> ```
-> set VAGRANT_VAGRANTFILE=Vagrantfile-dockerhost && vagrant ssh
+> cd vagrant-dockerhost
+> vagrant ssh
 > ``` 
 > 
 > and run `docker` from there.
@@ -74,7 +70,7 @@ On this bash you can run `yii` with:
 > If you want to reuse the Vagrant VM for your Docker containers across projects, follow these guidelines
 >
 > ```
-> cp build/dockerhost/Vagrantfile \
+> cp build/vagrant-dockerhost/Vagrantfile \
 >    ~/vagrant-dockerhost/Vagrantfile
 > ```
 >

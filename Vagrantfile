@@ -15,7 +15,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.define "rproxy" do |rproxy|
     rproxy.vm.network "forwarded_port", guest: 80, host: 80
     rproxy.vm.provider "docker" do |docker|
-      docker.vagrant_vagrantfile = "build/dockerhost/Vagrantfile"
+      docker.vagrant_vagrantfile = "build/vagrant-dockerhost/Vagrantfile"
       docker.name = "rproxy"
       docker.image = "jwilder/nginx-proxy"
       docker.volumes = ["/var/run/docker.sock:/tmp/docker.sock"]
@@ -25,7 +25,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.define "db" do |db|
     db.vm.network "forwarded_port", guest: 3306, host: 3306, auto_correct: true
     db.vm.provider "docker" do |docker|
-      docker.vagrant_vagrantfile = "build/dockerhost/Vagrantfile"
+      docker.vagrant_vagrantfile = "build/vagrant-dockerhost/Vagrantfile"
       docker.name = "db"
       docker.image = "mysql"
       docker.env = {
@@ -41,7 +41,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     web.vm.network "forwarded_port", guest: 80, host: 10080, auto_correct: true
     web.vm.synced_folder "./", "/app"
     web.vm.provider "docker" do |docker|
-      docker.vagrant_vagrantfile = "build/dockerhost/Vagrantfile"
+      docker.vagrant_vagrantfile = "build/vagrant-dockerhost/Vagrantfile"
       docker.build_dir = "."
       docker.link("rproxy:RPROXY")
       docker.link("db:DB")
