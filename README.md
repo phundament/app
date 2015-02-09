@@ -28,7 +28,7 @@ Run the application setup...
     
 Open `http://path-to-app/web` or `http://path-to-app/web?r=admin` in your browser.
 
-> Note: Alternative installation methods with [Docker](https://github.com/phundament/app/blob/master/docs/51-docker.md), [fig](https://github.com/phundament/app/blob/master/docs/51-fig.md), [Vagrant & Docker](https://github.com/phundament/app/blob/master/docs/51-vagrant-docker.md) or [PaaS](https://github.com/phundament/app/blob/master/docs/52-paas.md) are availble in the documentation.
+> Note: Alternative installation methods with [Docker](https://github.com/phundament/app/blob/master/docs/51-docker.md), [fig (docker-compose)](https://github.com/phundament/app/blob/master/docs/51-fig.md), [Vagrant & Docker](https://github.com/phundament/app/blob/master/docs/51-vagrant-docker.md) or [PaaS](https://github.com/phundament/app/blob/master/docs/52-paas.md) are availble in the documentation.
 
 Resources
 ---------
