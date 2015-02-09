@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/phundament/app.png?label=ready&title=Ready)](https://waffle.io/phundament/app)
 Phundament 4.0.x-dev
 ====================
 
