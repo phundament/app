@@ -1,4 +1,3 @@
-[![Stories in Ready](https://badge.waffle.io/phundament/app.png?label=ready&title=Ready)](https://waffle.io/phundament/app)
 Phundament 4.0.x-dev
 ====================
 
@@ -8,6 +7,7 @@ Phundament is a 12factor PHP application template for Yii Framework 2.0.
 
 [![Build Status](https://travis-ci.org/phundament/app.svg?branch=4.0)](https://travis-ci.org/phundament/app)
 [![Total Downloads](https://poser.pugx.org/phundament/app/downloads.png)](https://packagist.org/packages/phundament/app)
+[![Stories in Ready](https://badge.waffle.io/phundament/app.png?label=ready&title=Ready)](https://waffle.io/phundament/app)
 
 Quick-Start
 -----------
