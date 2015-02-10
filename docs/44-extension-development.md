@@ -51,8 +51,10 @@ It should show three files to be committed. If everything is fine commit and pus
 ```
 git commit -m "initial commit"
 git remote add origin https://github.com/mycompany/yii2-mypackage.git
-git push -u origin master
+git push origin master
 ```
+
+This is a one-time push from this repo, you should install your extension via composer now.
 
 #### Private packages
 
