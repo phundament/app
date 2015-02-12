@@ -1,3 +1,4 @@
+fig build testweb
 fig up -d testweb
 docker exec app_testweb_1 codecept build
 # wait for webserver

@@ -561,24 +561,24 @@
         },
         {
             "name": "dmstr/yii2-adminlte-asset",
-            "version": "0.1.0",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-adminlte-asset.git",
-                "reference": "fa8ce6d1517eea3ce93c964a0213a0f4e81ee87d"
+                "reference": "5b966d2aa3f4e913f41a8e70ffb9eba7863100ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-adminlte-asset/zipball/fa8ce6d1517eea3ce93c964a0213a0f4e81ee87d",
-                "reference": "fa8ce6d1517eea3ce93c964a0213a0f4e81ee87d",
+                "url": "https://api.github.com/repos/dmstr/yii2-adminlte-asset/zipball/5b966d2aa3f4e913f41a8e70ffb9eba7863100ec",
+                "reference": "5b966d2aa3f4e913f41a8e70ffb9eba7863100ec",
                 "shasum": ""
             },
             "require": {
-                "bower-asset/admin-lte": "*",
-                "bower-asset/font-awesome": "*",
-                "cebe/yii2-gravatar": "*",
-                "yiisoft/yii2": "*",
-                "yiisoft/yii2-bootstrap": "*"
+                "bower-asset/admin-lte": "~1.3",
+                "bower-asset/font-awesome": "~4.0",
+                "cebe/yii2-gravatar": "1.*",
+                "yiisoft/yii2": "2.*",
+                "yiisoft/yii2-bootstrap": "2.*"
             },
             "type": "yii2-extension",
             "autoload": {
@@ -606,7 +606,7 @@
                 "extension",
                 "yii2"
             ],
-            "time": "2014-12-02 19:18:31"
+            "time": "2015-02-11 13:59:00"
         },
         {
             "name": "dmstr/yii2-app-command",

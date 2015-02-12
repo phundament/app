@@ -2,7 +2,7 @@ FROM phundament/app:development
 
 ADD ./composer.lock /app/composer.lock
 ADD ./composer.json /app/composer.json
-RUN /usr/local/bin/composer install --prefer-dist --dev
+RUN /usr/local/bin/composer install --prefer-dist --dev --optimize-autoloader
 ADD . /app
 
 
