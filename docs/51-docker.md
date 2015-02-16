@@ -95,12 +95,14 @@ Start or use a running container to copy the startup files into your `build/` di
 
 Create a password file    
     
-    htpasswd -c build/htpasswd demo
+    htpasswd -c build/.htpasswd demo
 
-Update server configuration
+Update Nginx server configuration
 
-    auth_basic "Restricted";
-    auth_basic_user_file /etc/nginx/.htpasswd;
+    location  /  {
+        auth_basic "Restricted";
+        auth_basic_user_file /etc/nginx/.htpasswd;
+    }
     
 Add these updated configuration files to the build process    
 
