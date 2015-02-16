@@ -11,7 +11,7 @@ $config = [
         'assetManager' => [
             'forceCopy'  => false, // Note: May degrade performance with Docker or VMs
             'linkAssets' => false, // Note: May also publish files, which are excluded in an asset bundle
-            'dirMode'    => 0777,
+            'dirMode'    => YII_ENV_PROD ? 0777 : null, // Note: For using mounted volumes or shared folders
             'bundles'    => [
                 #'yii\bootstrap\BootstrapAsset' => false, // provided by frontend/assets/web/app.css
             ],
