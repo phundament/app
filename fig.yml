@@ -9,13 +9,13 @@ web:
     links:
         - db:DB
     environment:
-        APP_NAME: myapp-fig
         APP_PRETTY_URLS: 1
         YII_ENV: dev
         YII_DEBUG: true
-        VIRTUAL_HOST: ~myapp-fig\..*\.xip\.io
+        # make web container available under eg. http://myapp-fig.192.168.59.103.xip.io when running the jwilders rproxy container
+        VIRTUAL_HOST: ~^myapp\..*\.xip\.io
 db:
-    image: mysql
+    image: mariadb
     ports:
         - "3306"
     expose:
@@ -24,7 +24,7 @@ db:
         MYSQL_ROOT_PASSWORD: secretroot
         MYSQL_USER: dev
         MYSQL_PASSWORD: dev123
-        MYSQL_DATABASE: myapp-fig
+        MYSQL_DATABASE: myapp
 
 
 testweb:
@@ -38,12 +38,14 @@ testweb:
     links:
         - testdb:DB
     environment:
-        APP_NAME: test-myapp-fig
+        APP_ID: test-myapp
+        APP_Name: [Test] My Application
         APP_PRETTY_URLS: 1
         YII_ENV: test
-        VIRTUAL_HOST: ~test-myapp-fig\..*\.xip\.io
+        VIRTUAL_HOST: ~^test-myapp\..*\.xip\.io
+        DB_ENV_MYSQL_DATABASE: myapp-test
 testdb:
-    image: mysql
+    image: mariadb
     ports:
         - "3306"
     expose:
@@ -52,4 +54,4 @@ testdb:
         MYSQL_ROOT_PASSWORD: secretroot
         MYSQL_USER: test
         MYSQL_PASSWORD: test123
-        MYSQL_DATABASE: test-myapp-fig
+        MYSQL_DATABASE: test-myapp
