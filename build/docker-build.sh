@@ -1,5 +1,5 @@
-VERSION=`git describe --tags``test -z "$(git status --porcelain)" || echo "-dirty"`
-echo $VERSION > version
+#!/bin/sh
+echo `git describe --tags --dirty="-dev"` > version
 
 docker build -f Dockerfile-production -t myapp-production .
 docker build -f Dockerfile -t myapp-development .
