@@ -4,6 +4,7 @@
   "keywords": [
     "phundament",
     "yii2",
+    "app",
     "framework",
     "application",
     "template",
@@ -33,13 +34,11 @@
     "php": ">=5.4.0",
     "dektrium/yii2-user": "0.9.*",
     "dmstr/yii2-adminlte-asset": "@stable",
-    "dmstr/yii2-app-command": "dev-master",
+    "dmstr/yii2-app-command": "@stable",
     "dmstr/yii2-log": "@stable",
-    "dmstr/yii2-migrate-command": "*",
+    "dmstr/yii2-migrate-command": "@stable",
     "mikehaertl/php-shellcommand": "1.*",
-    "schmunk42/yii2-packaii": "dev-master",
-    "schmunk42/yii2-markdocs-module": "dev-master",
-    "vlucas/phpdotenv": "1.*",
+    "vlucas/phpdotenv": "1.1.*",
     "yiisoft/yii2": "2.0.*",
     "yiisoft/yii2-bootstrap": "2.*",
     "yiisoft/yii2-composer": "*",
@@ -53,11 +52,6 @@
     "yiisoft/yii2-faker": "2.*",
     "yiisoft/yii2-gii": "2.*",
     "schmunk42/yii2-giiant": "*"
-  },
-  "autoload": {
-    "psr-4": {
-      "console\\helpers\\": "./console/helpers"
-    }
   },
   "scripts": {
     "post-create-project-cmd": [
