@@ -7,6 +7,7 @@
 
 namespace app\assets;
 
+use yii\helpers\FileHelper;
 use yii\web\AssetBundle;
 
 /**
@@ -31,16 +32,27 @@ class AppAsset extends AssetBundle
         'yii\web\YiiAsset',
     ];
 
-    public function init(){
+    public function init()
+    {
         parent::init();
         \Yii::$app->getAssetManager()->bundles['yii\bootstrap\BootstrapAsset'] = false;
-        // "forceCopy" for this bundle only
-        /*if (YII_ENV_DEV) {
-            touch(\Yii::getAlias($this->sourcePath));
-        }*/        
+
+        // /!\ CSS/LESS development only setting /!\
+        // Touch the asset folder with the highest mtime of all contained files
+        // This will create a new folder in web/assets for every change and request
+        // made to the app assets.
+        if (YII_ENV_DEV) {
+            $files  = FileHelper::findFiles(\Yii::getAlias($this->sourcePath));
+            $mtimes = [];
+            foreach ($files AS $file) {
+                $mtimes[] = filemtime($file);
+            }
+            touch(\Yii::getAlias($this->sourcePath), max($mtimes));
+        }
     }
 
-    public function registerAssetFiles($view) {
+    public function registerAssetFiles($view)
+    {
         #$view->getAssetManager()->bundles['yii\bootstrap\BootstrapAsset'] = ['css'=>false];
         #var_dump($view->getAssetManager()->bundles);exit;
         parent::registerAssetFiles($view);

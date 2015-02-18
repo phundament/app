@@ -3,11 +3,11 @@
 @import "bootstrap";
 
 /* Custom Variables */
-@brand-primary: #222;
-@border-radius-base: 2px;
-@border-radius-large: 4px;
-@border-radius-small: 1px;
-@font-size-base: 18px;
+//@brand-primary: #484748;
+@border-radius-base: 1px;
+@border-radius-large: 3px;
+@border-radius-small: 0px;
+@font-size-base: 14px;
 
 /* Custom CSS for Bootstrap 3.x */
 html,
@@ -20,8 +20,8 @@ body {
 body {
   margin-top: 50px;
   background: @gray-lighter;
-
 }
+
 
 .wrap {
   background: white;
@@ -84,17 +84,17 @@ pre code {
 }
 
 .header {
-  height: 80%;
-  background: @brand-primary url('http://pub.phundament.com/unsplash.com/toddquackenbush/dufer-collateral.jpg') no-repeat center center;
+  height: 20%;
+  background: @brand-primary no-repeat center center;
   @media (max-width: 767px) {
-    background: @brand-primary url('http://pub.phundament.com/unsplash.com/toddquackenbush/dufer-collateral-low.jpg') no-repeat center center;
+    background: @brand-primary no-repeat center center;
   }
   background-size: cover;
   text-align: center;
   h1 {
-    font-size: 140px;
+    font-size: 3em;
     @media (max-width: @screen-md) {
-      font-size: 100px;
+      font-size: 2.5em;
     }
     @media (max-width: 767px) {
       font-size: 44px;
@@ -135,8 +135,8 @@ pre code {
 .vert {
   vertical-align: middle;
   width: 100%;
-  padding-top: 8%;
-  padding-bottom: 10%;
+  padding-top: 1%;
+  padding-bottom: 3%;
 }
 
 .blurb {
@@ -184,29 +184,6 @@ pre code {
   i:hover {
     font-size: 68px;
   }
-}
-
-.docs {
-  blockquote {
-    font-size: 1em;
-    color: @gray-light;
-  }
-  A {
-    text-decoration: underline;
-  }
-  .toc {
-    h1 {
-      font-size: 1.2em;
-    }
-    h2, h3, h4, h5 {
-      font-size: 1em;
-      color: @gray
-    }
-    ul {
-      padding-left: 20px;
-    }
-  }
-
 }
 
 footer {

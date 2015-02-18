@@ -27,7 +27,7 @@ AppAsset::register($this);
     <?php
     NavBar::begin(
         [
-            'brandLabel' => Yii::$app->params['appName'],
+            'brandLabel' => getenv('APP_ID'),
             'brandUrl'   => Yii::$app->homeUrl,
             'options'    => [
                 'class' => 'navbar navbar-fixed-top navbar-bold',
@@ -35,7 +35,7 @@ AppAsset::register($this);
         ]
     );
     $menuItems = [
-        ['label' => 'Docs', 'url' => ['/docs']],
+        ['label' => 'About', 'url' => ['/site/about']],
         ['label' => 'Contact', 'url' => ['/site/contact']],
     ];
     if (Yii::$app->hasModule('user')) {
@@ -81,12 +81,12 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">
-            &copy; <?= \Yii::$app->params['copyrightBy'] ?> <?= date('Y') ?> |
+        <p class="pull-right">
+            &copy; <?= date('Y') ?> |
             <?= Html::a('About', ['/site/about']) ?>
         </p>
 
-        <p class="pull-right"><?= Html::a(
+        <p class="pull-left"><?= Html::a(
                 Html::img('http://t.phundament.com/p4-32-bw.png', ['alt' => 'Icon Phundament 4']),
                 '#',
                 ['data-toggle' => 'modal', 'data-target' => '#infoModal']

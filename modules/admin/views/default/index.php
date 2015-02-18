@@ -4,7 +4,7 @@
         <div class="small-box bg-aqua">
             <div class="inner">
                 <h3>
-                    1
+                    &nbsp;
                 </h3>
 
                 <p>
@@ -22,7 +22,7 @@
     <!-- ./col -->
     <div class="col-md-3 col-xs-6">
         <!-- small box -->
-        <div class="small-box bg-blue">
+        <div class="small-box bg-primary">
             <div class="inner">
                 <h3>
                     <?= count(\Yii::$app->getModule('admin')->getControllers()) ?>
@@ -32,7 +32,7 @@
                     Application Controllers
                 </p>
             </div>
-            <div class="icon">
+            <div class="icon bg-">
                 <i class="ion ion-home"></i>
             </div>
             <a href="<?= \yii\helpers\Url::to(['/']) ?>" class="small-box-footer">
@@ -43,7 +43,7 @@
     <!-- ./col -->
     <div class="col-md-3 col-xs-6">
         <!-- small box -->
-        <div class="small-box bg-green">
+        <div class="small-box bg-gray">
             <div class="inner">
                 <h3>
                     <?= count(\Yii::$app->getModules()) ?>
@@ -56,7 +56,7 @@
             <div class="icon">
                 <i class="ion ion-stats-bars"></i>
             </div>
-            <a href="<?= \yii\helpers\Url::to(['/packaii']) ?>" class="small-box-footer">
+            <a href="<?= \yii\helpers\Url::to('http://packagist.com') ?>" class="small-box-footer" target="_blank">
                 Browse Packages <i class="fa fa-arrow-circle-right"></i>
             </a>
         </div>
@@ -66,14 +66,14 @@
 
     <div class="col-md-3 col-xs-6">
         <!-- small box -->
-        <div class="small-box bg-red">
+        <div class="small-box bg-<?= strstr(getenv('APP_VERSION'),'dirty')?'orange':'green' ?>">
             <div class="inner">
                 <h3>
                     <?= YII_ENV ?>
                 </h3>
 
                 <p>
-                    <?= YII_ENV_PROD ? 'P' : '' ?> <?= YII_ENV_DEV ? 'D' : '' ?> <?= YII_ENV_TEST ? 'T' : '' ?>
+                    <?= getenv('APP_VERSION') ?>
                 </p>
             </div>
             <div class="icon">
