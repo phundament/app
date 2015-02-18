@@ -79,6 +79,7 @@ class AppController extends BaseAppController
         $this->action('migrate', ['interactive' => $this->interactive]);
         $this->action('app/setup-admin-user', ['interactive' => $this->interactive]);
         $this->action('app/virtual-host', ['interactive' => $this->interactive]);
+        echo "Virtual-host configuration: ".getenv('VIRTUAL_HOST')."\n";
     }
 
     /**
