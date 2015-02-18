@@ -39,7 +39,7 @@ testweb:
         - testdb:DB
     environment:
         APP_ID: test-myapp
-        APP_Name: [Test] My Application
+        APP_Name: "[Test] My Application"
         APP_PRETTY_URLS: 1
         YII_ENV: test
         VIRTUAL_HOST: ~^test-myapp\..*\.xip\.io

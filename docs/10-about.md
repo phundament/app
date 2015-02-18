@@ -60,10 +60,10 @@ Requirements
 - [Composer](http://getcomposer.org/doc/00-intro.md#installation-nix) installation
 - PHP 5.4
 
-or a virtualized setup with
+or a virtualized setup with eg. VirtualBox
  
  - Docker
- - fig
+ - fig (docker-compose)
   
 or 
  
