@@ -12,6 +12,14 @@ RUN /usr/local/bin/composer install --prefer-dist --no-dev --optimize-autoloader
 # Add application code
 ADD . /app
 
+
+# Easy PaaS setup
+# ---------------
+ENV DB_ENV_MYSQL_DATABASE prod-myapp
+ENV APP_NAME My Application
+ENV APP_ADMIN_PASSWORD=YOU_HAVE_TO_CHANGE_THIS
+
+
 # Staging
 # -------
 # Uncomment to enable password protection (demo/demo) for app server

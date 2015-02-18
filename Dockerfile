@@ -12,4 +12,5 @@ RUN /usr/local/bin/composer install --prefer-dist --dev --optimize-autoloader
 # Add application code
 ADD . /app
 
-
+# Easy PaaS setup
+ENV DB_ENV_MYSQL_DATABASE dev-myapp
