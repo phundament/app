@@ -1,8 +1,16 @@
 About
 =====
 
-Phundament is a PHP Application Foundation built upon Yii Framework 2.0, best for rapidly developing web
-applications. It follows the [12factor specifications](http://12factor.net) on a slim codebase.
+Phundament is a Web Application Foundation built upon PHP and Yii Framework 2.0, best for rapidly developing web
+applications. It follows the [12factor specifications](http://12factor.net) on a very slim codebase.
+
+The goal of Phundament is to provide a rock-solid base for integrating the best tools and plugins for web-application development, 
+while not creating a new framework or [another competing standard](http://xkcd.com/927/). Instead, existing tools are pre-configured in a clean and
+easy way.
+
+Compared to the `yii2-app-advanced` and `yii2-app-basic` Phundament introduces a configuration based on environment variables,
+which gives you a maximum of control over your application setup.
+
 
 Features
 --------
@@ -13,12 +21,9 @@ Features
 - minimalistic, environment variables based configuration
 - Docker, fig, Vagrant and puPHPet support
 
-### Console
+### Frontend
 
-- extended database migration support
-- fully non-interactive deployment to work on PaaS
-- CLI command for application maintenance tasks
-- containerized Yii 2.0 Codeception test-suites 
+- full responsive Bootstrap 3 theme
 
 ### Backend
 
@@ -26,6 +31,14 @@ Features
 - user management
 - package browser
 - extended model & crud code generators
+
+### Console
+
+- extended database migration support
+- fully non-interactive deployment to work on PaaS
+- CLI command for application maintenance tasks
+- containerized Yii 2.0 Codeception test-suites 
+
 
 Status
 ------
@@ -39,6 +52,7 @@ Status
 [![Build Status](https://travis-ci.org/phundament/app.png?branch=master)](https://travis-ci.org/phundament/app)
 
 [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/phundament/app/badges/quality-score.png?s=4d1ce01151a4e82df75b563e7ccf0001cc227bd1)](https://scrutinizer-ci.com/g/phundament/app/)
+
 
 Requirements
 ------------
@@ -60,13 +74,14 @@ or
 - git
 - hg
 
+
 Directory Structure
 -------------------
 
 ```
 yii                 application CLI
 assets/             application assets such as JavaScript and CSS
-config/             applications configurations
+.env, config/       application configuration
 controllers/        web-controller classes
 commands/           console controller classes
 models/             application model classes
@@ -100,10 +115,12 @@ The Phundament repository contains the following main branches:
 - 4.0 (alpha, beta, RC, stable releases)
 - 3.0 (alpha, beta, RC, stable releases)
 
+
 Special thanks
 --------------
 
 ...go out to qiangxue, samdark, cebe, the yii core-devs, motin, mikehaertl, tonydspainyard, crisu83, thyseus, quexer69, marc7000 and disco-tex77 for their work, feedback and input.
+
 
 Developed by
 ------------
@@ -116,3 +133,7 @@ Germany
 
 - Core developer: Tobias Munk (schmunk42)
 - [Contributors](https://github.com/phundament/app/graphs/contributors)
+
+---
+
+*Continue to [Installation](20-installation.md)*
