@@ -28,6 +28,7 @@ class Module extends \yii\base\Module
             'gii'     => ['label' => '<i class="fa fa-code"></i> <span>Code Generation</span>', 'url' => ['/gii']],
         ];
 
+        $autoMenuItems = [];
         foreach (\Yii::$app->getModules() AS $name => $m) {
             switch ($name) {
                 case 'admin':
