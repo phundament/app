@@ -68,4 +68,5 @@ Resources
 - [Documentation](docs/README.md)
 - [Project Source-Code](https://github.com/phundament/app)
 - [Website](http://phundament.com)
-- [Developer/Imprint](http://herzogkommunikation.de/de/impressum-7.html)
+- [Team](https://github.com/orgs/phundament/teams)
+- [Imprint](http://herzogkommunikation.de/de/impressum-7.html)
