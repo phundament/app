@@ -43,7 +43,7 @@ testweb:
         APP_PRETTY_URLS: 1
         YII_ENV: test
         VIRTUAL_HOST: ~^test-myapp\..*\.xip\.io
-        DB_ENV_MYSQL_DATABASE: myapp-test
+        DB_ENV_MYSQL_DATABASE: test-myapp
 testdb:
     image: mariadb
     ports:
@@ -55,3 +55,18 @@ testdb:
         MYSQL_USER: test
         MYSQL_PASSWORD: test123
         MYSQL_DATABASE: test-myapp
+
+
+#prodweb:
+#    image: myapp-production
+#    ports:
+#        - "80"
+#    expose:
+#        - "80"
+#    links:
+#        - db:DB
+#    environment:
+#        YII_DEBUG: true
+#        APP_PRETTY_URLS: 1
+#        DB_ENV_MYSQL_DATABASE: prod-myapp
+#        VIRTUAL_HOST: ~^prod-myapp\..*\.xip\.io
