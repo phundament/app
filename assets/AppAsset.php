@@ -50,13 +50,4 @@ class AppAsset extends AssetBundle
             touch(\Yii::getAlias($this->sourcePath), max($mtimes));
         }
     }
-
-    public function registerAssetFiles($view)
-    {
-        #$view->getAssetManager()->bundles['yii\bootstrap\BootstrapAsset'] = ['css'=>false];
-        #var_dump($view->getAssetManager()->bundles);exit;
-        parent::registerAssetFiles($view);
-        #$view->getAssetManager()->bundles['yii\bootstrap\BootstrapAsset'] = false;
-
-    }
 }
