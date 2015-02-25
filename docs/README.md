@@ -36,7 +36,7 @@ Deploy
 Support
 -------
 
-- [Online Ressources](70-links.md)
+- [Online Resources](70-links.md)
 
 ---
 
