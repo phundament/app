@@ -70,3 +70,7 @@ testdb:
 #        APP_PRETTY_URLS: 1
 #        DB_ENV_MYSQL_DATABASE: prod-myapp
 #        VIRTUAL_HOST: ~^prod-myapp\..*\.xip\.io
+#selenium:
+#    image: selenium/standalone-firefox
+#    ports:
+#        - "14444:4444"
