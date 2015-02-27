@@ -5,10 +5,10 @@ Testing
 
 Creating and running a test environment can be a cumbersome task, since you have to take care about several specific tasks, like executing your tests in a separate database. Therefore the Phundament 4 `:development` images contain fully pre-installed Yii 2.0 Framework codeception test-suites for unit-, functional- and acceptance-testing.
 
-In `fig.yml` two additional containers `testweb` and `testdb` are defined which are used to run the test-suites. To get started, bring up the test containers and execute tests suites with docker.
+In `docker-compose.yml` two additional containers `testweb` and `testdb` are defined which are used to run the test-suites. To get started, bring up the test containers and execute tests suites with docker.
 
 ```
-fig up -d testweb
+docker-compose up -d testweb
 docker exec app_testweb_1 codecept build
 docker exec app_testweb_1 codecept run
 ```
@@ -33,7 +33,7 @@ docker exec app_testweb_1 codecept build
 ### Running with a local webserver
 
 > Note! This setup requires an additional database and a modified setup with ENV variables.
-> It is recommended to use the `fig` setup above.
+> It is recommended to use the `docker-compose` setup above.
 
 Update `url` in `tests/codeception/acceptance.suite.yml`
 

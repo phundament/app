@@ -24,7 +24,7 @@ Upload the default configuration from `docs/examples/vagrant-puphpet/puphpet/con
 Click **Create** and download VM configuration package and extract its contents (`Vagrantfile`,`puphpet/`) to the project root folder.
 
 > If you are using a full-stack VM instead of the default Docker container setup, we recommend you to remove the existing `Vagrantfile` 
-and `fig.yml`.
+and `docker-compose.yml`.
 
 Initialize application for puPHPet:
 

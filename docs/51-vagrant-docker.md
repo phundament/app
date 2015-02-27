@@ -87,17 +87,17 @@ On this bash you can run `yii` with:
 
 ---
 
-> #### Reading values from fig setup
+> #### Reading values from `docker-compose` setup
 >
-> You can also load values from a  `fig.yml` into a `Vagrantfile` if you need to support both setups...
+> You can also load values from a  `docker-compose.yml` into a `Vagrantfile` if you need to support both setups...
 > 
 >     require "yaml"
->     fig = YAML.load(File.open(File.join(File.dirname(__FILE__), "fig.yml"), File::RDONLY).read)
+>     dc = YAML.load(File.open(File.join(File.dirname(__FILE__), "docker-compose.yml"), File::RDONLY).read)
 >
-> Assign a parameter from a fig file...
+> Assign a parameters
 > 
 >     docker.env = {
->       "VIRTUAL_HOST" => fig["api"]["environment"]["VIRTUAL_HOST"]
+>       "VIRTUAL_HOST" => dc["api"]["environment"]["VIRTUAL_HOST"]
 >     }
 
 

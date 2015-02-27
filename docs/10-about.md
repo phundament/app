@@ -19,7 +19,7 @@ Features
 
 - *yii2-app-basic* directory structure
 - minimalistic, environment variables based configuration
-- Docker, fig, Vagrant and puPHPet support
+- Docker, docker-compose (aka fig), Vagrant and puPHPet support
 
 ### Frontend
 
@@ -62,8 +62,8 @@ Requirements
 
 or a virtualized setup with eg. VirtualBox
  
- - Docker
- - fig (docker-compose)
+ - Docker or boot2docker
+ - docker-compose (fig)
   
 or 
  
@@ -100,7 +100,7 @@ data/               application storage
 runtime/            files generated during runtime
 
 Dockerfile          docker image build information
-fig.yml             docker container setup
+docker-compose.yml  docker container setup
 
 Vagrantfile         Vagrant (docker) container setup
 Vagrantfile-dock..  Vagrant (docker) host VM

@@ -1,4 +1,4 @@
-Docker containers with fig (docker-compose)
+Docker containers with docker-compose (fig)
 -------------------------------------------
 
 > NOTE! This section is under development
@@ -12,8 +12,8 @@ Docker containers with fig (docker-compose)
 
 [Download Phundament](https://github.com/phundament/app/tags) or clone:
 
-    git clone https://github.com/phundament/app.git myapp-fig
-    cd myapp-fig
+    git clone https://github.com/phundament/app.git myapp
+    cd myapp
 
 #### Initialize
 
@@ -23,13 +23,13 @@ Copy fig and Dotenv config to project root:
 
 You may edit the `.env` file to update environment parameters.
 
-> Note: Values of ENV variables defined in `fig.yml` have precedence over `.env`.
+> Note: Values of ENV variables defined in `docker-compose.yml` have precedence over `.env`.
 
 To initialize your application run the following commands once:
 
 > Note: If you are developing on OS X or Windows, make sure your host-vm is running in VirtualBox Manager or with `boot2docker start`.
 
-    fig run web composer create-project --prefer-dist
+    docker-compose run web composer create-project --prefer-dist
 
 They will make the `vendor` folder available in your project directory on your host machine.
 And sets up the database, along with an admin user.
@@ -39,10 +39,10 @@ And sets up the database, along with an admin user.
 
 Bring up the `web` container
 
-    fig up -d web
+    docker-compose up -d web
 
 and check it's port with
 
-    fig ps
+    docker-compose ps
     
 If you'd like to have zero-configuration access via virtual-hosts, see the *[Automated virtual hosts with Docker](51-docker-virtual-hosts.md)* section.    
