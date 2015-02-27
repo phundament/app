@@ -293,6 +293,7 @@ class AppController extends BaseAppController
                 "CREATE DATABASE IF NOT EXISTS `$db`;
          GRANT ALL ON `$db`.* TO '$user'@'%' IDENTIFIED BY '$pass';
          GRANT SUPER ON *.* TO '$user'@'%' IDENTIFIED BY '$pass';
+         GRANT SELECT, CREATE VIEW ON *.* TO '$user'@'%' IDENTIFIED BY '$pass';
          FLUSH PRIVILEGES;"
             )
             or die(print_r($dbh->errorInfo(), true));
