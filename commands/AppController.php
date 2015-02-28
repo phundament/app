@@ -37,14 +37,15 @@ class AppController extends BaseAppController
     public $defaultAction = 'version';
 
     /**
-     * Displays application version from git describe
+     * Displays application version from git describe and writes it to `version`
      */
     public function actionVersion()
     {
         echo "Application Version\n";
-        $cmd = new Command("git describe");
+        $cmd = new Command("git describe --dirty");
         if ($cmd->execute()) {
             echo $cmd->getOutput();
+            file_put_contents(\Yii::getAlias('@app/version'), $cmd->getOutput());
         } else {
             echo $cmd->getOutput();
             echo $cmd->getStdErr();
@@ -79,7 +80,7 @@ class AppController extends BaseAppController
         $this->action('migrate', ['interactive' => $this->interactive]);
         $this->action('app/setup-admin-user', ['interactive' => $this->interactive]);
         $this->action('app/virtual-host', ['interactive' => $this->interactive]);
-        echo "Virtual-host configuration: ".getenv('VIRTUAL_HOST')."\n";
+        echo "Virtual-host configuration: " . getenv('VIRTUAL_HOST') . "\n";
     }
 
     /**
@@ -273,35 +274,40 @@ class AppController extends BaseAppController
     }
 
     /**
-     * create database and grant permissions based on ENV vars
+     * create database and grant permissions based on ENV vars, skip if empty
      *
      * @param $db database name
      */
-    public function actionCreateMysqlDb($db)
+    public function actionCreateMysqlDb($db = null)
     {
-        $root          = 'root';
-        $root_password = getenv("DB_ENV_MYSQL_ROOT_PASSWORD");
-        $host          = getenv("DB_PORT_3306_TCP_ADDR");
-        $port          = getenv("DB_PORT_3306_TCP_PORT");
-        $user          = getenv("DB_ENV_MYSQL_USER");
-        $pass          = getenv("DB_ENV_MYSQL_PASSWORD");
-        #$db            = getenv("DB_ENV_MYSQL_DATABASE");
+        if ($db === null) {
+            echo "No database specified, skipping...\n";
+        } else {
+            $root          = 'root';
+            $root_password = getenv("DB_ENV_MYSQL_ROOT_PASSWORD");
+            $host          = getenv("DB_PORT_3306_TCP_ADDR");
+            $port          = getenv("DB_PORT_3306_TCP_PORT");
+            $user          = getenv("DB_ENV_MYSQL_USER");
+            $pass          = getenv("DB_ENV_MYSQL_PASSWORD");
+            #$db            = getenv("DB_ENV_MYSQL_DATABASE");
 
-        try {
-            $dbh = new \PDO("mysql:host=$host;port=$port", $root, $root_password);
-            $dbh->exec(
-                "CREATE DATABASE IF NOT EXISTS `$db`;
+            try {
+                $dbh = new \PDO("mysql:host=$host;port=$port", $root, $root_password);
+                $dbh->exec(
+                    "CREATE DATABASE IF NOT EXISTS `$db`;
          GRANT ALL ON `$db`.* TO '$user'@'%' IDENTIFIED BY '$pass';
          GRANT SUPER ON *.* TO '$user'@'%' IDENTIFIED BY '$pass';
          GRANT SELECT, CREATE VIEW ON *.* TO '$user'@'%' IDENTIFIED BY '$pass';
          FLUSH PRIVILEGES;"
-            )
-            or die(print_r($dbh->errorInfo(), true));
-        } catch (\PDOException $e) {
-            die("DB ERROR: " . $e->getMessage());
+                )
+                or die(print_r($dbh->errorInfo(), true));
+            } catch (\PDOException $e) {
+                die("DB ERROR: " . $e->getMessage());
+            }
+
+            echo "Database successfully created.\n";
         }
 
-        echo "Database successfully created.\n";
     }
 
 }
