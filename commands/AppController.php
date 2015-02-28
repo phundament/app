@@ -68,7 +68,7 @@ class AppController extends BaseAppController
         }
         $this->composer("install");
         $this->action('migrate');
-        $this->action('cache/flush', 'cache');
+        $this->action('cache/flush', array('cache'));
     }
 
     /**
