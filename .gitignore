@@ -45,3 +45,4 @@ logs
 tests/_output/*
 backend
 local.php
+version
