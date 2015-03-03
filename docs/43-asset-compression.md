@@ -1,7 +1,10 @@
-wip
+Asset compression
+-----------------
 
-    mkdir -p web/assets-prod/js
-    mkdir -p web/assets-prod/css
-    touch web/assets-prod/js/backend-temp.js
+Phundament bundles the assets in the `:development` Docker container, which comes pre-installed with all required
+tools, to make use of Yii 2.0 Framework asset compresssion.
+
+    sh build/assets.sh
     
-    docker-compose run web ./yii asset config/assets.php config/assets-prod.php
+> Note! Make sure not to use a backlash `\` at the beginning of your asset-bundle name, since it may conflict with
+> the `className()` which returns values without a starting backslash
