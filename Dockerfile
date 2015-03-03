@@ -7,7 +7,7 @@ ADD ./build/composer/config.json /root/.composer/config.json
 # Install packages first
 ADD ./composer.lock /app/composer.lock
 ADD ./composer.json /app/composer.json
-RUN /usr/local/bin/composer install --prefer-dist --dev --optimize-autoloader
+RUN /usr/local/bin/composer install --prefer-dist --optimize-autoloader
 
 # Add application code
 ADD . /app

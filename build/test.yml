@@ -1,0 +1,35 @@
+testweb:
+    build: .
+    ports:
+        - "14080:80"
+    expose:
+        - "80"
+    volumes:
+        - ./:/app/
+    links:
+        - testdb:DB
+    environment:
+        APP_ID: test-myapp
+        APP_Name: "[Test] My Application"
+        APP_PRETTY_URLS: 1
+        YII_ENV: test
+        VIRTUAL_HOST: ~^test-myapp\..*\.xip\.io
+        DB_ENV_MYSQL_DATABASE: test-myapp
+testdb:
+    image: mariadb
+    ports:
+        - "3306"
+    expose:
+        - "3306"
+    environment:
+        MYSQL_ROOT_PASSWORD: secretroot
+        MYSQL_USER: test
+        MYSQL_PASSWORD: test123
+        MYSQL_DATABASE: test-myapp
+#db:
+#   image: postgres
+
+selenium:
+    image: selenium/standalone-firefox
+    ports:
+        - "14444:4444"

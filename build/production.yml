@@ -1,0 +1,28 @@
+prodweb:
+#    image: myapp:production
+    image: phundament/app:production
+    ports:
+        - "80"
+    #expose:
+     #   - "80"
+    links:
+        - db:DB
+    environment:
+        # Make web container available under eg. http://myapp-fig.192.168.59.103.xip.io when running the jwilders rproxy container.
+        VIRTUAL_HOST: ~^prod-myapp\..*
+        # Use a different database
+        DB_ENV_MYSQL_DATABASE: prod-myapp
+        APP_PRETTY_URLS: 1
+        # Note! While
+        YII_ENV: prod
+        YII_DEBUG: false
+db:
+    image: mariadb
+    ports:
+        - "3306"
+#    expose:
+#        - "3306"
+    environment:
+        MYSQL_ROOT_PASSWORD: secretroot
+        MYSQL_USER: prod
+        MYSQL_PASSWORD: prod123

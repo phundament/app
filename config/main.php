@@ -12,9 +12,7 @@ $config = [
             'forceCopy'  => false, // Note: May degrade performance with Docker or VMs
             'linkAssets' => false, // Note: May also publish files, which are excluded in an asset bundle
             'dirMode'    => YII_ENV_PROD ? 0777 : null, // Note: For using mounted volumes or shared folders
-            'bundles'    => [
-                #'yii\bootstrap\BootstrapAsset' => false, // provided by frontend/assets/web/app.css
-            ],
+            'bundles'    => YII_ENV_PROD ? require(__DIR__ . '/assets-prod.php') : null,
         ],
         'cache'        => [
             'class' => 'yii\caching\FileCache',
@@ -53,7 +51,7 @@ $config = [
 
     ],
     'modules'    => [
-        'admin'   => [
+        'admin' => [
             'class'  => 'app\modules\admin\Module',
             'layout' => '@admin-views/layouts/main',
         ],
@@ -65,7 +63,7 @@ $config = [
             'class'  => \schmunk42\packaii\Module::className(),
             'layout' => '@admin-views/layouts/main',
         ],*/
-        'user'    => [
+        'user'  => [
             'class'        => 'dektrium\user\Module',
             'layout'       => '@admin-views/layouts/main',
             'defaultRoute' => 'profile',
@@ -145,7 +143,12 @@ $console = [
 ];
 
 
-$allowedIPs = ['127.0.0.1', '::1', '192.168.59.*', '172.17.0.*'];
+$allowedIPs = [
+    '127.0.0.1',
+    '::1',
+    '192.168.*',
+    '172.17.*'
+];
 
 if (php_sapi_name() == 'cli') {
     // Console application

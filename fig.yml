@@ -12,8 +12,9 @@ web:
         APP_PRETTY_URLS: 1
         YII_ENV: dev
         YII_DEBUG: true
-        # make web container available under eg. http://myapp-fig.192.168.59.103.xip.io when running the jwilders rproxy container
-        VIRTUAL_HOST: ~^myapp\..*\.xip\.io
+        # make web container available under eg. http://myapp.192.168.59.103.xip.io when running an rproxy container
+        # see also https://github.com/phundament/app/blob/master/docs/51-docker-virtual-hosts.md
+        VIRTUAL_HOST: ~^myapp\..*
 db:
     image: mariadb
     ports:
@@ -25,52 +26,3 @@ db:
         MYSQL_USER: dev
         MYSQL_PASSWORD: dev123
         MYSQL_DATABASE: myapp
-
-
-testweb:
-    build: .
-    ports:
-        - "80"
-    expose:
-        - "80"
-    volumes:
-        - ./:/app/
-    links:
-        - testdb:DB
-    environment:
-        APP_ID: test-myapp
-        APP_Name: "[Test] My Application"
-        APP_PRETTY_URLS: 1
-        YII_ENV: test
-        VIRTUAL_HOST: ~^test-myapp\..*\.xip\.io
-        DB_ENV_MYSQL_DATABASE: test-myapp
-testdb:
-    image: mariadb
-    ports:
-        - "3306"
-    expose:
-        - "3306"
-    environment:
-        MYSQL_ROOT_PASSWORD: secretroot
-        MYSQL_USER: test
-        MYSQL_PASSWORD: test123
-        MYSQL_DATABASE: test-myapp
-
-
-#prodweb:
-#    image: myapp-production
-#    ports:
-#        - "80"
-#    expose:
-#        - "80"
-#    links:
-#        - db:DB
-#    environment:
-#        YII_DEBUG: true
-#        APP_PRETTY_URLS: 1
-#        DB_ENV_MYSQL_DATABASE: prod-myapp
-#        VIRTUAL_HOST: ~^prod-myapp\..*\.xip\.io
-#selenium:
-#    image: selenium/standalone-firefox
-#    ports:
-#        - "14444:4444"

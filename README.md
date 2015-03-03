@@ -56,7 +56,7 @@ Now you can start your application by bringing up the `web` service
 
     docker-compose up web
     
-If you're running a reverse proxy you can acces the application under [myapp.192.168.59.103.xip.io](http://myapp.192.168.59.103.xip.io).
+If you're running a [reverse proxy container](docs/51-docker-virtual-hosts.md) you can acces the application under [myapp.192.168.59.103.xip.io](http://myapp.192.168.59.103.xip.io).
 Or check the container port with `docker-compose ps`.
 
 
