@@ -22,6 +22,8 @@ modules:
 # PLEASE ADJUST IT TO THE ACTUAL ENTRY POINT WITHOUT PATH INFO
             url: http://localhost:80
 #        WebDriver:
-#            url: http://localhost:8080
+#            url: http://192.168.59.103:14080
+#            host: 192.168.59.103
+#            port: 14444
 #            browser: firefox
 #            restart: true
