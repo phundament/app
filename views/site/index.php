@@ -36,9 +36,15 @@ $this->title .= 'Yii 2.0 App Template';
             <div class="row">
                 <div class="col-md-2 col-md-offset-4 text-center">
                     <div class="featurette-item">
-                        <a href="<?= \yii\helpers\Url::to(['/debug/default/view', 'panel' => 'log']) ?>"><i
-                                class="glyphicon glyphicon-align-left"></i></a>
-                        <h4>Logs</h4>
+                        <?php if (YII_ENV_PROD): ?>
+                            <a href="#"><i
+                                    class="glyphicon glyphicon-cog"></i></a>
+                            <h4>Production</h4>
+                        <?php else: ?>
+                            <a href="<?= \yii\helpers\Url::to(['/debug/default/view', 'panel' => 'log']) ?>"><i
+                                    class="glyphicon glyphicon-align-left"></i></a>
+                            <h4>Logs</h4>
+                        <?php endif; ?>
                     </div>
                 </div>
                 <div class="col-md-2 text-center">
