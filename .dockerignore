@@ -6,3 +6,5 @@ vendor
 
 runtime
 web/assets
+
+config/local.php

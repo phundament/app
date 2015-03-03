@@ -2,15 +2,19 @@
 
 set -e
 
+# Setup build environment
 pushd `dirname $0`/..
 ./yii app/version
 source .env
 
 # Build assets
-mkdir -p web/assets-prod/js && touch web/assets-prod/js/backend-temp.js
-docker-compose run web ./yii asset config/assets.php config/assets-prod.php
+sh build/assets.sh
 
+# Build production image
 docker build -f Dockerfile-production -t $APP_ID:production .
 echo "\nDocker image '${APP_ID}:production' built and tagged."
+
+# Start production image
+docker-compose -f build/production.yml up
 
 popd

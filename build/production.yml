@@ -1,6 +1,6 @@
 prodweb:
-#    image: myapp:production
-    image: phundament/app:production
+    image: myapp:production
+    #image: phundament/app:production
     ports:
         - "80"
     #expose:
@@ -15,7 +15,7 @@ prodweb:
         APP_PRETTY_URLS: 1
         # Note! While
         YII_ENV: prod
-        YII_DEBUG: false
+        YII_DEBUG: 0
 db:
     image: mariadb
     ports:

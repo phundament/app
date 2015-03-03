@@ -1,6 +1,6 @@
 #!/bin/sh
 
-
+rm -rf web/assets-prod
 mkdir -p web/assets-prod/js
 mkdir -p web/assets-prod/css
 
