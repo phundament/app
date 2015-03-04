@@ -14,7 +14,7 @@ Demo
 
 Checkout the [Phundament Playground Application](http://playground.178.62.168.178.xip.io) Demo! 
 
-You can get the source-code of the demo application from its [[GitHub repository](https://github.com/phundament/playground)].
+You can get the source-code of the demo application from its [GitHub repository](https://github.com/phundament/playground).
 
 Quick-Start
 -----------
