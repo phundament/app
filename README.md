@@ -54,10 +54,7 @@ Create your application folder
     
 And copy the source code from the image    
     
-    docker run \
-        --volume `pwd`:/app-install \
-        phundament/app:4.0-development \
-        cp -r /app/. /app-install
+    docker run -v `pwd`:/install phundament/app:4.0-development cp -r /app/. /install
 
 Now you can start your application by bringing up the `web` service
 
