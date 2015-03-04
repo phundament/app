@@ -64,7 +64,7 @@ $this->title .= 'Yii 2.0 App Template';
             <div class="row">
                 <div class="col-md-12 text-center">
                     <p class="lead">
-                        This is the About page. You may modify the following file to customize its content:
+                        This is the Home page. You may modify the following file to customize its content:
 
 
                         <code><?= __FILE__ ?></code></p>

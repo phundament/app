@@ -9,6 +9,13 @@ Phundament is a 12factor PHP application template for Yii Framework 2.0.
 [![Total Downloads](https://poser.pugx.org/phundament/app/downloads.png)](https://packagist.org/packages/phundament/app)
 [![Stories in Ready](https://badge.waffle.io/phundament/app.png?label=ready&title=Ready)](https://waffle.io/phundament/app)
 
+Demo
+----
+
+Checkout the [Phundament Playground Application](http://playground.178.62.168.178.xip.io) Demo! 
+
+You can get the source-code of the demo application from its [GitHub repository](https://github.com/phundament/playground).
+
 Quick-Start
 -----------
 
@@ -47,10 +54,7 @@ Create your application folder
     
 And copy the source code from the image    
     
-    docker run \
-        --volume `pwd`:/app-install \
-        phundament/app:4.0-development \
-        cp -r /app/. /app-install
+    docker run -v `pwd`:/install phundament/app:4.0-development cp -r /app/. /install
 
 Now you can start your application by bringing up the `web` service
 
