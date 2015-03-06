@@ -12,7 +12,7 @@ Phundament is a 12factor PHP application template for Yii Framework 2.0.
 Demo
 ----
 
-Checkout the [Phundament Playground Application](https://github.com/phundament/playground) Demo! 
+Checkout the [Phundament Playground Application](https://github.com/phundament/playground/blob/master/README.md#phundament-developer-playground) Demo! 
 
 You can get the source-code of the demo application from its [GitHub repository](https://github.com/phundament/playground).
 
