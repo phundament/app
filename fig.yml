@@ -11,7 +11,7 @@ web:
     environment:
         APP_PRETTY_URLS: 1
         YII_ENV: dev
-        YII_DEBUG: true
+        YII_DEBUG: 1
         # make web container available under eg. http://myapp.192.168.59.103.xip.io when running an rproxy container
         # see also https://github.com/phundament/app/blob/master/docs/51-docker-virtual-hosts.md
         VIRTUAL_HOST: ~^myapp\..*
