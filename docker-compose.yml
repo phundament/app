@@ -1,7 +1,8 @@
+# Service Stack
+# =============
+#
 # docker-compose configuration for local development
-
-# API STACK
-# =========
+# see https://github.com/neam/docker-stack for image details
 
 # Includes a container to run commands locally - a Dockerized shell
 cli:

@@ -1,7 +1,7 @@
 FROM phundament/php:5.6-cli-4.0.0-dev
 
-#ENV foo bar
 # Install PHP extensions
+# TODO: Install imagemagick
 #RUN apt-get update && \
 #    apt-get -y install \
 #            libmagickwand-dev \
@@ -20,6 +20,3 @@ RUN /usr/local/bin/composer install --prefer-dist --optimize-autoloader
 
 # Add application code
 ADD . /app
-
-# Easy PaaS setup
-##ENV DB_ENV_MYSQL_DATABASE
