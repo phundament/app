@@ -9,8 +9,16 @@ The Phundament config structure is straight forward, there are just two config f
 Compared to `yii2-app-basic` and `yii2-app-advanced` Phundament uses an environment variables based configuration instead
 of an `init` script. See also [Dev/prod parity](http://12factor.net/dev-prod-parity) for more information about this topic.
 
+
+### Hierachy
+
+1. `docker-compose` / `Vagrant`
+2. Docker image (build-process)
+3. `.env`
+
 > Note! While in Yii configuration files the last value takes precedence, because they are based on PHP arrays and merged 
 > together, ENV variables are immutable by default.
+
 
 ### Virtual Hosts and nice URLs
  

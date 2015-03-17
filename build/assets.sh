@@ -9,4 +9,4 @@ touch web/assets-prod/js/backend-temp.js
 touch web/assets-prod/css/all-temp.css
 
 # Compress asset bundles in Docker container
-docker-compose run web ./yii asset config/assets.php config/assets-prod.php
+docker-compose run cli ./yii asset config/assets.php config/assets-prod.php

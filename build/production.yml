@@ -26,3 +26,12 @@ db:
         MYSQL_ROOT_PASSWORD: secretroot
         MYSQL_USER: prod
         MYSQL_PASSWORD: prod123
+
+haproxy:
+    image: tutum/haproxy
+    environment:
+        VIRTUAL_HOST: prod-myapp.178.62.168.178.xip.io
+    links:
+        prodweb:WEB
+
+

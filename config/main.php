@@ -84,26 +84,22 @@ $config = [
 
 $web = [
     'components' => [
+        // Logging
         'log'     => [
-            'traceLevel' => getenv('YII_TRACE_LEVEL'),
-            'targets'    => [
-                // log route handled by nginx process
+            'targets' => [
+                // writes to php-fpm output stream
+                // writes to php-fpm output stream
                 [
-                    'class'   => 'dmstr\log\SyslogTarget',
-                    'prefix'  => function () {
-                        return '';
-                    },
-                    'levels'  => YII_DEBUG ? ['error', 'warning', 'info'] : ['error', 'warning'],
-                    'logVars' => ['_GET', '_POST', '_FILES', '_COOKIE', '_SESSION'],
-                    'enabled' => YII_DEBUG ? true : false,
+                    'class'   => 'codemix\streamlog\Target',
+                    'url'     => 'php://stdout',
+                    'levels'  => ['info', 'trace'],
+                    'logVars' => [],
                 ],
-                // standard file log route
                 [
-                    'class'   => 'yii\log\FileTarget',
-                    'levels'  => YII_DEBUG ? ['error', 'warning', 'info'] : ['error', 'warning'],
-                    'logVars' => ['_GET', '_POST', '_FILES', '_COOKIE', '_SESSION'],
-                    'logFile' => '@app/runtime/logs/web.log',
-                    'dirMode' => 0777
+                    'class'   => 'codemix\streamlog\Target',
+                    'url'     => 'php://stderr',
+                    'levels'  => ['error', 'warning'],
+                    'logVars' => [],
                 ],
             ],
         ],
@@ -124,21 +120,7 @@ $console = [
         'migrate' => 'dmstr\console\controllers\MigrateController'
     ],
     'components'          => [
-        'log' => [
-            'traceLevel' => getenv('YII_TRACE_LEVEL'),
-            'targets'    => [
-                [
-                    'class'   => 'yii\log\FileTarget',
-                    'prefix'  => function () {
-                        return '[console]';
-                    },
-                    'levels'  => YII_DEBUG ? ['error', 'warning', 'info'] : ['error', 'warning'],
-                    'logVars' => ['_GET', '_POST', '_FILES', '_COOKIE', '_SESSION'],
-                    'logFile' => '@app/runtime/logs/console.log',
-                    'dirMode' => 0777
-                ],
-            ],
-        ],
+
     ]
 ];
 

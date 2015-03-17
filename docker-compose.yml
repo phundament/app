@@ -1,0 +1,51 @@
+# docker-compose configuration for local development
+
+# API STACK
+# =========
+
+# Includes a container to run commands locally - a Dockerized shell
+cli:
+  build: .
+  volumes:
+   - .:/app
+  links:
+   - web:WEB
+   - db:DB
+  command: "./yii app/setup --interactive=0"
+
+# The php-fpm server for interpreting php code
+fpm:
+  image: schmunk42/php:5.6-fpm-yii-2.0.3-runtime
+  links:
+    - db:DB
+  volumes:
+   - ./:/app
+  #command: "/app/build/stack/php-fpm/run.sh"
+  environment:
+    YII_DEBUG: 1
+    YII_ENV: dev
+
+# The nginx server for serving static files directly, cached contents via the memcached server and php files via the php-fpm server
+web:
+  image: phundament/nginx:1.7
+  links:
+    - fpm:PHPFPM
+  volumes:
+   - ./:/app
+  ports:
+    - "80"
+  environment:
+    VIRTUAL_HOST: ~^dev\.myapp\..*
+    NGINX_ERROR_LOG_LEVEL: 'notice'
+
+db:
+    image: mariadb
+    ports:
+        - "3306"
+    expose:
+        - "3306"
+    environment:
+        MYSQL_ROOT_PASSWORD: secretroot
+        MYSQL_USER: dev
+        MYSQL_PASSWORD: dev123
+        MYSQL_DATABASE: dev-myapp-2

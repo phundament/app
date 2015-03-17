@@ -47,3 +47,4 @@ backend
 local.php
 version
 web/assets-prod
+assets-prod.php

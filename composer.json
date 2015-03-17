@@ -32,10 +32,10 @@
   "minimum-stability": "stable",
   "require": {
     "php": ">=5.4.0",
+    "codemix/yii2-streamlog": "@stable",
     "dektrium/yii2-user": "0.9.*",
     "dmstr/yii2-adminlte-asset": "2.*@dev",
     "dmstr/yii2-app-command": "@stable",
-    "dmstr/yii2-log": "@stable",
     "dmstr/yii2-migrate-command": "@stable",
     "mikehaertl/php-shellcommand": "1.*",
     "vlucas/phpdotenv": "1.1.*",
