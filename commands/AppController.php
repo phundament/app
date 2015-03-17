@@ -47,8 +47,8 @@ class AppController extends BaseAppController
             echo $cmd->getOutput();
             file_put_contents(\Yii::getAlias('@app/version'), $cmd->getOutput());
         } else {
-            echo $cmd->getOutput();
-            echo $cmd->getStdErr();
+            echo $cmd->getOutput() . "\n";
+            echo $cmd->getStdErr() . "\n";
             echo $cmd->getError();
         }
         echo "\n";

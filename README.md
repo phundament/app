@@ -12,7 +12,7 @@ Phundament is a 12factor PHP application template for Yii Framework 2.0.
 Demo
 ----
 
-Checkout the [Phundament Playground Application](http://playground.178.62.168.178.xip.io) Demo! 
+Checkout the [Phundament Playground Application](https://github.com/phundament/playground/blob/master/README.md#phundament-developer-playground) Demo! 
 
 You can get the source-code of the demo application from its [GitHub repository](https://github.com/phundament/playground).
 
@@ -23,7 +23,7 @@ Quick-Start
 
 You can install _Phundament 4_ using [composer](https://getcomposer.org/download/)...
 
-    composer global require "fxp/composer-asset-plugin:1.0.0-beta4"
+    composer global require "fxp/composer-asset-plugin:1.0.0"
     composer create-project --stability=beta phundament/app myapp
 
 Create and adjust your environment configuration, eg. add a database...
