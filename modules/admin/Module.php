@@ -51,6 +51,27 @@ class Module extends \yii\base\Module
         return $menuItems;
     }
 
+    public function renameRouteForMenu($route){
+        
+        if(preg_match('#\Auser/admin/#',$route)){
+            return 'user/admin';
+        }
+
+        if(preg_match('#\Apackaii/#',$route)){
+            return 'packaii';
+        }        
+        
+        if(preg_match('#\Aadmin/#',$route)){
+            return 'admin';
+        }        
+        
+        if(preg_match('#\Agii/#',$route)){
+            return 'gii';
+        }        
+        
+        return $route;
+    }
+
     public function getControllers($module = null)
     {
         if ($module === null) {

@@ -143,16 +143,9 @@ dmstr\web\AdminLteAsset::register($this);
             </form>-->
             <!-- /.search form -->
             <?php
-            if (!\Yii::$app->user->isGuest) {
-                $menuItems = [
-                    ['label' => '<i class="fa fa-dashboard"></i> <span>Dashboard</span>', 'url' => ['/admin']],
-                    ['label' => '<i class="fa fa-users"></i> <span>Users</span>', 'url' => ['/user/admin']],
-                    ['label' => '<i class="fa fa-cubes"></i> <span>Packages</span>', 'url' => ['/packaii']],
-                    ['label' => '<i class="fa fa-code"></i> <span>Code Generation</span>', 'url' => ['/gii']],
-                ];
-            } else {
-                $menuItems = [];
-            }
+
+            $route = Yii::$app->controller->getRoute();
+            $route =  \Yii::$app->getModule('admin')->renameRouteForMenu($route);
 
             // sidebar menu: : style can be found in sidebar.less
             echo Nav::widget(
@@ -160,6 +153,7 @@ dmstr\web\AdminLteAsset::register($this);
                     'options'      => ['class' => 'sidebar-menu'],
                     'items'        => \Yii::$app->getModule('admin')->getMenuItems(),
                     'encodeLabels' => false,
+                    'route' => $route,
                 ]
             );
             ?>
