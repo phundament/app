@@ -28,7 +28,7 @@ fpm:
 
 # The nginx server for serving static files directly, cached contents via the memcached server and php files via the php-fpm server
 web:
-  image: phundament/nginx:1.7
+  image: schmunk42/nginx:1.7
   links:
     - fpm:PHPFPM
   volumes:
