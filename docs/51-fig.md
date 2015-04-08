@@ -6,7 +6,7 @@ Docker containers with docker-compose (fig)
 ### Requirements
 
 - [Docker](https://www.docker.com) (Linux) or [Boot2docker](http://boot2docker.io) (OS X, Windows)
-- [fig](http://www.fig.sh)
+- [docker-compose](https://docs.docker.com/compose/install/)
 
 ### Get started!
 
