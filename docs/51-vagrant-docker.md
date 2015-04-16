@@ -24,6 +24,10 @@ Setup your environment
 
     cp .env-dist .env
 
+Copy vagrant config
+
+    cp ./docs/examples/vagrant-dockerhost/Vagrantfile .
+
 Get the `vendor` folder for development like so
 
     vagrant up db
