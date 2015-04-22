@@ -1,11 +1,18 @@
-First pull the latest version of the container image
+## Kickstart
 
-    docker pull phundament/app
 
-Create a new application from the image and run it 
+First pull the latest version of the Phundament PHP CLI image
+
+    docker pull phundament/php
+
+To create a new application we copy the application template source from the image to a host-volume in the current
+working directory 
    
-    mkdir kickstart && cd kickstart && docker run --rm -v `pwd`:/SRC phundament/app cp -r /app/. /SRC && docker-compose run --rm testweb codecept build
-    
+    mkdir kickstart && cd kickstart
+    docker run --rm -v `pwd`:/app phundament/php cp -r /app-src/. /app
+
+       
+       
 Create a git repository, so you can track your changes from the beginning. Initialize a repo for your new project
 
     git add .
@@ -13,14 +20,25 @@ Create a git repository, so you can track your changes from the beginning. Initi
     git remote add origin git@github.com:phundament/playground.git
     git push -u origin master
 
-Edit `docker-compose.yml`, adjust 
-     
-    VIRTUAL_HOST: ~^lab\.hrzg\.de.*\
 
-Edit `.env`
+Start the stack in the background
+    
+    docker-compose up -d
 
-    APP_ID
-    APP_NAME
+Find webserver port
+            
+    docker-compose port web 80
+
+Open application
+
+    
+    open http://docker.local:32774
+    
+    
+
+    
+    
+
     
 Setup LESS watcher
     
@@ -68,7 +86,7 @@ fig up -d lab
 
 
 
-
+http://docs.docker.com/compose/install/
 
 
 

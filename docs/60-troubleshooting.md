@@ -9,6 +9,24 @@ For more frequently asked questions (FAQ) see [GitHub](https://github.com/phunda
 
 **Solution** Set `YII_ENV=dev` which is the variable responsible for the debug toolbar.
 
+#### A
+
+```
+PHP Warning – yii\base\ErrorException
+
+Cannot use a scalar value as an array
+1. in /app/vendor/yiisoft/yii2/web/AssetManager.php
+```
+
+**Fix** Check your application for missing asset files or configuration.
+
+## composer
+
+If you're experiencing slow updates, check what's going on in detail with
+
+    composer -vvv update
+
+
 ## Docker
 
 #### Can't push to private registry
@@ -24,6 +42,12 @@ echo "nameserver 8.8.8.8" > /etc/resolv.conf && sudo /etc/init.d/docker restart
 #### `YII_ENV=dev` and `phundament/app:production` image
 
 In most cases you won't be able to start images built `FROM phundament/app:production` image, if you set `YII_ENV=dev`, since development packages are missing on that image. It is also not recommended to use a production image in development mode.
+
+#### VM harddisk out of space
+
+See https://github.com/chadoe/docker-cleanup-volumes
+
+    docker run -v /var/run/docker.sock:/var/run/docker.sock -v /var/lib/docker:/var/lib/docker --rm martin/docker-cleanup-volumes
 
 
 ## Vagrant

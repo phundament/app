@@ -132,6 +132,7 @@ $allowedIPs = [
     '172.17.*'
 ];
 
+// detecting current application type based on `php_sapi_name()` since we've no application ready yet.
 if (php_sapi_name() == 'cli') {
     // Console application
     $config = \yii\helpers\ArrayHelper::merge($config, $console);
