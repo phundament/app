@@ -1,52 +1,63 @@
-# Service Stack
-# =============
-#
-# docker-compose configuration for local development
-# see https://github.com/neam/docker-stack for image details
+# Phundament 4 - Local Development Stack
+# ======================================
 
-# Includes a container to run commands locally - a Dockerized shell
-cli:
+# Application services
+# --------------------
+
+# container to run one-off commands - a dockerized shell
+appcli:
+  # should be replaced with: image: <project_name>_appsrc
   build: .
+  # host-volume for local development
   volumes:
-   - .:/app
+    - '.:/app'
   links:
-   - web:WEB
-   - db:DB
-  command: "./yii app/setup --interactive=0"
+    - 'appnginx:WEB'
+    - 'mariadb:DB'
+  environment:
+    APP_MIGRATION_LOOKUP: '@app/migrations'
+  command: 'tail -f /dev/null'
+
+appsrc:
+  build: .
+  # host-volume for local development
+  volumes:
+    - '.:/app'
+  command: 'tail -f /dev/null'
 
 # The php-fpm server for interpreting php code
-fpm:
-  image: schmunk42/php:5.6-fpm-yii-2.0.3-runtime
-  links:
-    - db:DB
+appfpm:
+  image: phundament/php:5.6-fpm-4.0.0
+  # host-volume for local development
   volumes:
-   - ./:/app
-  #command: "/app/build/stack/php-fpm/run.sh"
+    - '.:/app'
+  links:
+    - 'mariadb:DB'
   environment:
     YII_DEBUG: 1
     YII_ENV: dev
 
-# The nginx server for serving static files directly, cached contents via the memcached server and php files via the php-fpm server
-web:
-  image: phundament/nginx:1.7
+# The nginx server for serving static files directly
+appnginx:
+  image: 'schmunk42/nginx:1.7'
   links:
-    - fpm:PHPFPM
+    - 'appfpm:PHPFPM'
+  # host-volume for local development
   volumes:
-   - ./:/app
+    - '.:/app'
   ports:
-    - "80"
+    - '80'
   environment:
-    VIRTUAL_HOST: ~^dev\.myapp\..*
-    NGINX_ERROR_LOG_LEVEL: 'notice'
+    VIRTUAL_HOST: '~^dev\.khf\.com'
 
-db:
-    image: mariadb
-    ports:
-        - "3306"
-    expose:
-        - "3306"
-    environment:
-        MYSQL_ROOT_PASSWORD: secretroot
-        MYSQL_USER: dev
-        MYSQL_PASSWORD: dev123
-        MYSQL_DATABASE: dev-myapp-2
+# Data Services
+# -------------
+mariadb:
+  image: mariadb
+  ports:
+    - '3306'
+  environment:
+    MYSQL_ROOT_PASSWORD: secretroot
+    MYSQL_USER: dev
+    MYSQL_PASSWORD: dev123
+    MYSQL_DATABASE: dev-myapp-1

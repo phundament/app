@@ -31,27 +31,14 @@
   },
   "minimum-stability": "stable",
   "require": {
-    "php": ">=5.4.0",
-    "codemix/yii2-streamlog": "@stable",
-    "dektrium/yii2-user": "0.9.*",
-    "dmstr/yii2-adminlte-asset": "2.*@dev",
-    "dmstr/yii2-app-command": "@stable",
-    "dmstr/yii2-migrate-command": "@stable",
-    "mikehaertl/php-shellcommand": "1.*",
+    "dmstr/yii2-cms-metapackage": "dev-master",
+    "sammaye/yii2-audittrail":"dev-master",
     "vlucas/phpdotenv": "1.1.*",
     "yiisoft/yii2": "2.0.*",
-    "yiisoft/yii2-bootstrap": "2.*",
-    "yiisoft/yii2-composer": "*",
-    "yiisoft/yii2-swiftmailer": "2.*"
+    "yiisoft/yii2-composer": "@stable"
   },
   "require-dev": {
-    "yiisoft/yii2-apidoc": "2.*",
-    "yiisoft/yii2-codeception": "2.*",
-    "yiisoft/yii2-coding-standards": "2.*",
-    "yiisoft/yii2-debug": "2.*",
-    "yiisoft/yii2-faker": "2.*",
-    "yiisoft/yii2-gii": "2.*",
-    "schmunk42/yii2-giiant": "*"
+    "yiisoft/yii2-debug": "@stable"
   },
   "scripts": {
     "post-create-project-cmd": [
