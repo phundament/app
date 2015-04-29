@@ -10,7 +10,7 @@ Getting Started
 - [Installation](20-installation.md)
 - [Configuration](21-configuration.md)
 
-Customize 
+Customize
 ---------
 
 - [Customize Application](30-customize.md)

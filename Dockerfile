@@ -1,14 +1,5 @@
 FROM phundament/php:5.6-cli-4.0.0-dev
 
-# Install PHP extensions
-# TODO: Install imagemagick
-#RUN apt-get update && \
-#    apt-get -y install \
-#            libmagickwand-dev \
-#        --no-install-recommends && \
-#    rm -r /var/lib/apt/lists/*
-#RUN pecl install imagick-beta
-
 # Remove installation source
 RUN rm -rf /app-src
 

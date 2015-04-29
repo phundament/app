@@ -1,3 +1,6 @@
+Installation Alternatives
+-------------------------
+
 
 ### Composer installation
 

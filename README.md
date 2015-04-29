@@ -1,73 +1,68 @@
 Phundament 4
 ============
 
-> Please note: This is a `beta` [version](version).
-
-Phundament is a 12factor PHP application template for Yii Framework 2.0.
-
-[![Build Status](https://travis-ci.org/phundament/app.svg?branch=4.0)](https://travis-ci.org/phundament/app)
-[![Total Downloads](https://poser.pugx.org/phundament/app/downloads.png)](https://packagist.org/packages/phundament/app)
-[![Stories in Ready](https://badge.waffle.io/phundament/app.png?label=ready&title=Ready)](https://waffle.io/phundament/app)
-
-
-Demo
-----
-
-Checkout the [Phundament Playground Application](https://github.com/phundament/playground/blob/master/README.md#phundament-developer-playground) Demo! 
-
-You can get the source-code of the demo application from its [GitHub repository](https://github.com/phundament/playground).
+Phundament is a dockerized 12factor PHP application template for Yii Framework 2.0.
 
 
 Quick-Start
 -----------
 
-### Docker installation
+Clone the repository
 
-First pull the latest version of the container image
+    git clone https://github.com/phundament/app 
 
-    docker pull phundament/app
+Make the application stack
 
-Create your application folder    
-    
-    mkdir myapp
-    cd myapp
-    
-And copy the source code from the image    
-    
-    docker run --rm -v `pwd`:/app phundament/php cp -r /app-src/. /app
+    docker-compose up
 
-Now you can start your application by bringing up the `web` service
-
-    docker-compose up -d web
-    
-If you're running a [reverse proxy container](docs/51-docker-virtual-hosts.md) you can acces the application under [myapp.192.168.59.103.xip.io](http://myapp.192.168.59.103.xip.io).
-Or check the container port with `docker-compose ps`.
-
-### Composer installation
-
-See the [docs](docs/20-installation-composer.md) for a guide how to install Phundament 4 with composer.
+> For alternative installation methods see the [docs](docs/20-installation-composer.md).
 
 
-Settings
---------
+Configuration
+-------------
 
-### `docker-compose.yml`
-
-Edit `docker-compose.yml`, adjust the virtual host parameter for web application, we'll use it later to easily access the 
-  web-server through a wildcard DNS.
+### Environment - `docker-compose.yml`
      
- - `VIRTUAL_HOST` : ~^myapp\.
+ - **VIRTUAL_HOST** : `~^myapp\.` - Virtual-host configuration for reverse proxy, adjust the virtual host parameter 
+    for web application, we'll use it later to easily access the web-server through a wildcard DNS.
 
-### `.env`
 
- - `APP_ID` application and container identified
- - `APP_NAME` display name of the application
+### Environment defaults - `.env`
 
-### `config/main.php`
+ - **APP_ADMIN_EMAIL**: e-mail address of application admin user
+ - **APP_ADMIN_PASSWORD**: password of application admin user
+ - **APP_ASSET_FORCE_PUBLISH**: force asset publishing after any changes to asset files
+ - **APP_COOKIE_VALIDATION_KEY**: unique and random string to prevent XSS
+ - **APP_ID**: unique application and container identifier (only lowercase letters and number)
+ - **APP_MIGRATION_LOOKUP** : comma separated list of Yii aliases to look for database migrations, eg. `@app/migrations/data`
+ - **APP_NAME**: display name of the application
+ - **APP_PRETTY_URLS**: enable or disable nice URLs, allowed values `1` (yes) or `0` (no)
+ - **APP_SUPPORT_EMAIL**: e-mail address for the application eg. `support@myapp.local`
+ 
+ Framework
+ 
+ - **YII_DEBUG**: wheter to enable more verbose application output, eg. on PHP exceptions.
+ - **YII_ENV**: Yii application mode, allowed values `dev`, `prod` or `test`
+ - **YII_TRACE_LEVEL** amount of caller levels to display for logging.
+ 
+ Database variables
+ 
+ - **DB_ENV_MYSQL_DATABASE**: database name
+ - **DB_ENV_MYSQL_PASSWORD**: database password
+ - **DB_ENV_MYSQL_USER**: database user
+ - **DB_PORT_3306_TCP_ADDR**: database hostname
+ - **DB_PORT_3306_TCP_PORT**: database port
 
-Yii Application settings
+### Application settings - `config/main.php`
 
-> Note: Further installation methods with [Docker](https://github.com/phundament/app/blob/master/docs/51-docker.md), [fig (docker-compose)](https://github.com/phundament/app/blob/master/docs/51-fig.md), [Vagrant & Docker](https://github.com/phundament/app/blob/master/docs/51-vagrant-docker.md) or [PaaS](https://github.com/phundament/app/blob/master/docs/52-paas.md) are available in the documentation.
+For details of available application configuration, please refer to the Yii 2.0 Framework Definitive Guide. 
+
+
+Demo
+----
+
+> A demo can be found at  the [Phundament Playground Application](https://github.com/phundament/playground/blob/master/README.md#phundament-developer-playground) Demo! 
+> You can get the source-code of the demo application from its [GitHub repository](https://github.com/phundament/playground).
 
 
 Resources

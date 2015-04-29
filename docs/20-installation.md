@@ -39,18 +39,3 @@ After adjusting the parameters, finalize the application setup with:
 ```
 
 Afterwards you can access your Phundament application under `http://localhost/app/frontend/web` and `http://localhost/app/backend/web`.
-
-
-Create a git repository
--------------------
-
-Initialize a repo for your new project
-
-    git add .
-    git commit -m "inital commit"
-    git remote add origin git@github.com:phundament/playground.git
-    git push -u origin master
-
----
-
-*Continue to [Configuration](21-configuration.md)*

@@ -1,6 +1,11 @@
 About
 =====
 
+[![Build Status](https://travis-ci.org/phundament/app.svg?branch=4.0)](https://travis-ci.org/phundament/app)
+[![Total Downloads](https://poser.pugx.org/phundament/app/downloads.png)](https://packagist.org/packages/phundament/app)
+[![Stories in Ready](https://badge.waffle.io/phundament/app.png?label=ready&title=Ready)](https://waffle.io/phundament/app)
+
+
 Phundament is a Web Application Foundation built upon PHP and Yii Framework 2.0, best for rapidly developing web
 applications. It follows the [12factor specifications](http://12factor.net) on a very slim codebase.
 
@@ -8,7 +13,7 @@ The goal of Phundament is to provide a rock-solid base for integrating the best 
 while not creating a new framework or [another competing standard](http://xkcd.com/927/). Instead, existing tools are pre-configured in a clean and
 easy way.
 
-Compared to the `yii2-app-advanced` and `yii2-app-basic` Phundament introduces a configuration based on environment variables,
+Compared to the `yii2-app-advanced` and `yii2-app-basic`, Phundament introduces a configuration based on *environment variables*,
 which gives you a maximum of control over your application setup.
 
 
@@ -19,7 +24,7 @@ Features
 
 - *yii2-app-basic* directory structure
 - minimalistic, environment variables based configuration
-- Docker, docker-compose (aka fig), Vagrant and puPHPet support
+- Docker support
 
 ### Frontend
 
