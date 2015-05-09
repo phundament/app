@@ -1,5 +1,6 @@
 .git
 .vagrant
+.env
 
 data
 vendor

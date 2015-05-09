@@ -11,7 +11,7 @@
     "boilerplate",
     "vagrant",
     "docker",
-    "fig",
+    "docker-compose",
     "12factor",
     "dotenv"
   ],
@@ -32,12 +32,12 @@
   "minimum-stability": "stable",
   "require": {
     "dmstr/yii2-cms-metapackage": "dev-master",
-    "sammaye/yii2-audittrail":"dev-master",
     "vlucas/phpdotenv": "1.1.*",
     "yiisoft/yii2": "2.0.*",
     "yiisoft/yii2-composer": "@stable"
   },
   "require-dev": {
+    "dmstr/yii2-cms-dev-metapackage": "dev-master",
     "yiisoft/yii2-debug": "@stable"
   },
   "scripts": {

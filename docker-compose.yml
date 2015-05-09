@@ -45,6 +45,7 @@ appnginx:
   # host-volume for local development
   volumes:
     - '.:/app'
+    - 'build/nginx/run.sh:/root/run.sh'
   ports:
     - '80'
   environment:
