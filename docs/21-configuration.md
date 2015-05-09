@@ -12,23 +12,18 @@ of an `init` script. See also [Dev/prod parity](http://12factor.net/dev-prod-par
 
 ### Hierachy
 
-1. `docker-compose` / `Vagrant`
-2. Docker image (build-process)
-3. `.env`
+From highest to lowest priority. ENV variable are immutable by default, so if a value is set in a `Dockerfile`, you can not
+ overwrite it in your `.env` file, but in `docker-compose.yml`
+
+1. `docker-compose.yml`
+2. `docker-compose_env-file`
+3. `Dockerfile`
+4. `.env`
 
 > Note! While in Yii configuration files the last value takes precedence, because they are based on PHP arrays and merged 
 > together, ENV variables are immutable by default.
 
 
-### Virtual Hosts and nice URLs
- 
-If you choose `APP_PRETTY_URLS=1` in your `.env` file, activate the `web/.htaccess` if you are devleoping on your local machine.
-
-```
-cp web/.htaccess-dist web/.htaccess
-```
-
-> If you're working with Docker, you can use a reverse proxy to fully automate the virtual host setup.
  
 ---
 
