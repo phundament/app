@@ -3,7 +3,6 @@ Phundament 4
 
 Phundament is a dockerized 12factor PHP application template for Yii Framework 2.0.
 
-
 Quick-Start
 -----------
 
@@ -78,6 +77,7 @@ Demo
 > A demo can be found at  the [Phundament Playground Application](https://github.com/phundament/playground/blob/master/README.md#phundament-developer-playground) Demo! 
 > You can get the source-code of the demo application from its [GitHub repository](https://github.com/phundament/playground).
 
+[![Deploy to Tutum](https://s.tutum.co/deploy-to-tutum.svg)](https://dashboard.tutum.co/stack/deploy/)
 
 Resources
 ---------
