@@ -25,7 +25,8 @@
 
 ### Yii 
 
-- SHOULD USE `Yii::info()` or `Yii::trace()`, NOT `Yii::getLogger->(..., ..., ...)`
+- SHOULD use `Yii::info()` or `Yii::trace()`, NOT `Yii::getLogger->(..., ..., ...)`
+- SHOULD NOT use`application.language = null` with `codemix/yii2-localeurls`
 
 ### Giiant (Backend CRUD)
 
