@@ -49,7 +49,8 @@ AppAsset::register($this);
             ];
             $menuItems[] = [
                 'label' => '<i class="glyphicon glyphicon-dashboard"></i>',
-                'url'   => ['/admin'],
+                'url'   => ['/backend'],
+                'visible' => Yii::$app->user->can('backend_default') || (isset(Yii::$app->user->identity) && Yii::$app->user->identity->isAdmin)
             ];
             $menuItems[] = [
                 'label'       => '<i class="glyphicon glyphicon-log-out"></i>',

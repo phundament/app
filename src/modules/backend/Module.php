@@ -7,14 +7,14 @@
  * file that was distributed with this source code.
  */
 
-namespace app\modules\admin;
+namespace app\modules\backend;
 
 use yii\helpers\ArrayHelper;
 
 
 /**
  * Class Module
- * @package app\modules\admin
+ * @package app\modules\backend
  * @author Tobias Munk <tobias@diemeisterei.de>
  */
 class Module extends \yii\base\Module

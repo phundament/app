@@ -8,7 +8,7 @@ $common = [
     'vendorPath'  => '@app/../vendor',
     'runtimePath' => '@app/../runtime',
     'aliases'     => [
-        '@admin-views' => '@app/modules/admin/views'
+        '@admin-views' => '@app/modules/backend/views'
     ],
     'components'  => [
         'assetManager' => [
@@ -57,18 +57,18 @@ $common = [
 
     ],
     'modules'     => [
-        'admin' => [
-            'class'  => 'app\modules\admin\Module',
+        'backend' => [
+            'class'  => 'app\modules\backend\Module',
             'layout' => '@admin-views/layouts/main',
         ],
         /*'docs'    => [
             'class'  => \schmunk42\markdocs\Module::className(),
             'layout' => '@app/views/layouts/container',
         ],*/
-        /*'packaii' => [
-            'class'  => \schmunk42\packaii\Module::className(),
+        'pages' => [
+            'class'  => \dmstr\modules\pages\Module::className(),
             'layout' => '@admin-views/layouts/main',
-        ],*/
+        ],
         'user'  => [
             'class'        => 'dektrium\user\Module',
             'layout'       => '@app/views/layouts/container',
@@ -77,6 +77,14 @@ $common = [
         ],
         'rbac'  => [
             'class'  => 'dektrium\rbac\Module',
+            'layout' => '@admin-views/layouts/main',
+        ],
+        'pages' => [
+            'class'  => \dmstr\modules\pages\Module::className(),
+            'layout' => '@admin-views/layouts/main',
+        ],
+        'treemanager' => [
+            'class'  => '\kartik\tree\Module',
             'layout' => '@admin-views/layouts/main',
         ],
     ],

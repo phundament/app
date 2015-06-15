@@ -13,7 +13,7 @@ return [
     'bundles'       => [
         'app\assets\AppAsset',
         'yii\bootstrap\BootstrapAsset',
-        'app\modules\admin\assets\AdminAsset',
+        'app\modules\backend\assets\AdminAsset',
         \dmstr\web\AdminLteAsset::className()
     ],
     // Asset bundle for compression output:
@@ -37,7 +37,7 @@ return [
             'css'      => 'css/backend-{hash}.css',
             'depends'  => [
                 // Include only 'backend' assets:
-                'app\modules\admin\assets\AdminAsset',
+                'app\modules\backend\assets\AdminAsset',
                 \dmstr\web\AdminLteAsset::className()
             ],
         ],

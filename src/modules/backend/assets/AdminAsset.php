@@ -5,7 +5,7 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace app\modules\admin\assets;
+namespace app\modules\backend\assets;
 
 use yii\web\AssetBundle;
 
@@ -17,7 +17,7 @@ class AdminAsset extends AssetBundle
 {
     #public $basePath = '@webroot';
     #public $baseUrl = '@web';
-    public $sourcePath = '@app/modules/admin/assets/web';
+    public $sourcePath = '@app/modules/backend/assets/web';
 
     public $css = [
         'site.css',
