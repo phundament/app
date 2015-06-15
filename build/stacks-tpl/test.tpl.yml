@@ -1,0 +1,64 @@
+# docker-compose configuration for local development
+appsrc:
+  .volumes: CLEAN
+  volumes:
+    - %APP_DOCKERFILE_PATH%:/app
+
+appnginx:
+  .volumes: CLEAN
+  volumes:
+    - %APP_DOCKERFILE_PATH%:/app
+
+appcli:
+  image: adam_appsrc
+  environment:
+    YII_ENV: test
+  .external_links: CLEAN
+  links:
+    - 'seleniumhub:HUB'
+    - 'mariadb:DB'
+  .volumes: CLEAN
+  volumes:
+    - %APP_DOCKERFILE_PATH%:/app
+
+appfpm:
+  environment:
+    YII_ENV: test
+    YII_DEBUG: 1
+    APP_MIGRATION_LOOKUP: @app/migrations/test-data
+    APP_ENABLE_DATA_MIGRATIONS: 0
+  .external_links: CLEAN
+  links:
+    - 'mariadb:DB'
+  .volumes: CLEAN
+  volumes:
+    - %APP_DOCKERFILE_PATH%:/app
+
+
+# Development containers
+# ======================
+mariadb:
+  image: tutum/mariadb:10.1
+  environment:
+      MARIADB_PASS: secretadmin
+
+seleniumfirefox:
+    image: selenium/node-firefox-debug:2.46.0
+    links:
+      - 'appnginx:WEB'
+      - 'seleniumhub:HUB'
+    ports:
+      - '5900'
+
+seleniumchrome:
+    image: selenium/node-chrome-debug:2.46.0
+    links:
+      - 'appnginx:WEB'
+      - 'seleniumhub:HUB'
+    ports:
+      - '5900'
+
+seleniumhub:
+    image: selenium/hub:2.46.0
+    ports:
+      - '4444'

@@ -1,4 +1,4 @@
-FROM phundament/php:5.6-cli-4.0.0-dev
+FROM phundament/php:5.6-cli-dev
 
 # Remove installation source
 RUN rm -rf /app
@@ -9,9 +9,8 @@ RUN rm -rf /app-src
 ADD ./build/composer/config.json /root/.composer/config.json
 
 # Install packages first
-ADD ./composer.lock /app/composer.lock
-ADD ./composer.json /app/composer.json
+ADD ./composer.lock ./composer.json /app/
 RUN /usr/local/bin/composer install --prefer-dist --optimize-autoloader
 
 # Add application code
-ADD src /app/src
+ADD src web /app/

@@ -1,0 +1,45 @@
+appsrc:
+  .build: CLEAN
+  image: phundament/app:latest
+  .volumes: CLEAN
+  volumes:
+    - '/app'
+
+appcli:
+  image: phundament/app:latest
+  environment:
+    APP_MIGRATION_LOOKUP: '@app/migrations'
+    DB_ENV_MYSQL_DATABASE: 'adambase-staging-1'
+  command: "sh /root/tutum.sh"
+  .volumes: CLEAN
+  volumes_from:
+    - appsrc
+
+appfpm:
+  image: 'phundament/php:5.6-fpm-dev'
+  environment:
+    YII_DEBUG: 1
+    YII_ENV: prod
+    APP_PRETTY_URLS: 1
+    APP_ASSET_FORCE_PUBLISH: 0
+    DB_ENV_MYSQL_DATABASE: 'adambase-staging-1'
+  .volumes: CLEAN
+  volumes_from:
+    - 'appsrc'
+
+appnginx:
+  environment:
+    VIRTUAL_HOST: 'staging.adam.192.168.59.103.xip.io'
+  .volumes: CLEAN
+  volumes_from:
+    - appsrc
+
+adamhaproxy:
+  image: tutum/haproxy
+  links:
+    - appnginx:appnginx
+  ports:
+  - "80"
+  environment:
+    BACKEND_PORT: 80
+    VIRTUAL_HOST: 'staging.adam.192.168.59.103.xip.io'

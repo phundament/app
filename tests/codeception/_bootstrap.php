@@ -1,7 +1,7 @@
 <?php
 
 require(__DIR__ . '/../../vendor/autoload.php');
-require(__DIR__ . '/../../config/env.php');
+require(__DIR__ . '/../../src/config/env.php');
 
 if (getenv('YII_ENV') !== 'test') {
     echo "Error: YII_ENV must be set to 'test'\n";

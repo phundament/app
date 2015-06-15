@@ -7,7 +7,7 @@
 # container to run one-off commands - a dockerized shell
 appcli:
   # should be replaced with: image: <project_name>_appsrc
-  build: .
+  image: project_appsrc
   # host-volume for local development
   volumes:
     - '.:/app'
@@ -27,7 +27,7 @@ appsrc:
 
 # The php-fpm server for interpreting php code
 appfpm:
-  image: phundament/php:5.6-fpm-4.0.0
+  image: phundament/php:5.6-fpm-dev
   # host-volume for local development
   volumes:
     - '.:/app'
@@ -39,13 +39,13 @@ appfpm:
 
 # The nginx server for serving static files directly
 appnginx:
-  image: 'schmunk42/nginx:1.7'
+  image: schmunk42/nginx:1.7
   links:
     - 'appfpm:PHPFPM'
   # host-volume for local development
   volumes:
     - '.:/app'
-    - 'build/nginx/run.sh:/root/run.sh'
+    #- 'build/nginx/run.sh:/root/run.sh'
   ports:
     - '80'
   environment:
@@ -54,11 +54,8 @@ appnginx:
 # Data Services
 # -------------
 mariadb:
-  image: mariadb
+  image: tutum/mariadb:10.1
   ports:
     - '3306'
   environment:
-    MYSQL_ROOT_PASSWORD: secretroot
-    MYSQL_USER: dev
-    MYSQL_PASSWORD: dev123
-    MYSQL_DATABASE: dev-myapp-1
+    MARIADB_PASS: secretadmin

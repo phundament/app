@@ -1,18 +1,24 @@
 <?php
 
-$config = [
-    'id'         => 'app',
-    'basePath'   => dirname(__DIR__),
-    'bootstrap'  => ['log'],
-    'aliases'    => [
+
+$common = [
+    'id'          => 'app',
+    'basePath'    => dirname(__DIR__),
+    'bootstrap'   => ['log'],
+    'vendorPath'  => '@app/../vendor',
+    'runtimePath' => '@app/../runtime',
+    'aliases'     => [
         '@admin-views' => '@app/modules/admin/views'
     ],
-    'components' => [
+    'components'  => [
         'assetManager' => [
             'forceCopy'  => false, // Note: May degrade performance with Docker or VMs
             'linkAssets' => false, // Note: May also publish files, which are excluded in an asset bundle
             'dirMode'    => YII_ENV_PROD ? 0777 : null, // Note: For using mounted volumes or shared folders
             'bundles'    => YII_ENV_PROD ? require(__DIR__ . '/assets-prod.php') : null,
+        ],
+        'authManager'  => [
+            'class' => 'yii\rbac\DbManager',
         ],
         'cache'        => [
             'class' => 'yii\caching\FileCache',
@@ -43,14 +49,14 @@ $config = [
         'view'         => [
             'theme' => [
                 'pathMap' => [
-                    '@vendor/dektrium/yii2-user/views' => '@app/views/user',
-                    '@yii/gii/views/layouts'           => '@admin-views/layouts',
+                    '@vendor/dektrium/yii2-user/views/admin' => '@app/views/user/admin',
+                    '@yii/gii/views/layouts'                 => '@admin-views/layouts',
                 ],
             ],
         ],
 
     ],
-    'modules'    => [
+    'modules'     => [
         'admin' => [
             'class'  => 'app\modules\admin\Module',
             'layout' => '@admin-views/layouts/main',
@@ -65,16 +71,21 @@ $config = [
         ],*/
         'user'  => [
             'class'        => 'dektrium\user\Module',
-            'layout'       => '@admin-views/layouts/main',
+            'layout'       => '@app/views/layouts/container',
             'defaultRoute' => 'profile',
             'admins'       => ['admin']
         ],
+        'rbac'  => [
+            'class'  => 'dektrium\rbac\Module',
+            'layout' => '@admin-views/layouts/main',
+        ],
     ],
-    'params'     => [
+    'params'      => [
         'appName'        => getenv('APP_NAME'),
         'adminEmail'     => getenv('APP_ADMIN_EMAIL'),
         'supportEmail'   => getenv('APP_SUPPORT_EMAIL'),
         'yii.migrations' => [
+            '@yii/rbac/migrations',
             '@dektrium/user/migrations',
         ]
     ]
@@ -113,11 +124,11 @@ $web = [
     ]
 ];
 
-
 $console = [
     'controllerNamespace' => 'app\commands',
     'controllerMap'       => [
-        'migrate' => 'dmstr\console\controllers\MigrateController'
+        'migrate' => 'dmstr\console\controllers\MigrateController',
+        'yaml'    => 'dmstr\console\controllers\DockerStackConverterController'
     ],
     'components'          => [
 
@@ -135,18 +146,18 @@ $allowedIPs = [
 // detecting current application type based on `php_sapi_name()` since we've no application ready yet.
 if (php_sapi_name() == 'cli') {
     // Console application
-    $config = \yii\helpers\ArrayHelper::merge($config, $console);
+    $config = \yii\helpers\ArrayHelper::merge($common, $console);
 } else {
     // Web application
     if (YII_ENV_DEV) {
         // configuration adjustments for web 'dev' environment
-        $config['bootstrap'][]      = 'debug';
-        $config['modules']['debug'] = [
+        $common['bootstrap'][]      = 'debug';
+        $common['modules']['debug'] = [
             'class'      => 'yii\debug\Module',
             'allowedIPs' => $allowedIPs
         ];
     }
-    $config = \yii\helpers\ArrayHelper::merge($config, $web);
+    $config = \yii\helpers\ArrayHelper::merge($common, $web);
 }
 
 if (YII_ENV_DEV) {

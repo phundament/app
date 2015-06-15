@@ -21,7 +21,7 @@ actor: Tester
 #            - ../tests/*
 paths:
     tests: tests/codeception
-    log: tests/codeception/_output
+    log: _output/latest
     data: tests/codeception/_data
     helpers: tests/codeception/_support
 settings:

@@ -1,0 +1,64 @@
+appcli:
+    command: 'tail -f /dev/null'
+    environment:
+        APP_MIGRATION_LOOKUP: '@app/migrations'
+        YII_ENV: test
+    image: adam_appsrc
+    links:
+        - 'appnginx:WEB'
+        - 'mariadb:DB'
+        - 'seleniumhub:HUB'
+        - 'mariadb:DB'
+    volumes:
+        - '../..:/app'
+appfpm:
+    environment:
+        APP_ENABLE_DATA_MIGRATIONS: 0
+        APP_MIGRATION_LOOKUP: '@app/migrations/test-data'
+        YII_DEBUG: 1
+        YII_ENV: test
+    image: 'phundament/php:5.6-fpm-dev'
+    links:
+        - 'mariadb:DB'
+        - 'mariadb:DB'
+    volumes:
+        - '../..:/app'
+appnginx:
+    environment:
+        VIRTUAL_HOST: ~^dev\.khf\.com
+    image: 'schmunk42/nginx:1.7'
+    links:
+        - 'appfpm:PHPFPM'
+    ports:
+        - '80'
+    volumes:
+        - '../..:/app'
+appsrc:
+    build: .
+    command: 'tail -f /dev/null'
+    volumes:
+        - '../..:/app'
+mariadb:
+    environment:
+        MARIADB_PASS: secretadmin
+    image: 'tutum/mariadb:10.1'
+    ports:
+        - '3306'
+seleniumchrome:
+    image: 'selenium/node-chrome-debug:2.46.0'
+    links:
+        - 'appnginx:WEB'
+        - 'seleniumhub:HUB'
+    ports:
+        - '5900'
+seleniumfirefox:
+    image: 'selenium/node-firefox-debug:2.46.0'
+    links:
+        - 'appnginx:WEB'
+        - 'seleniumhub:HUB'
+    ports:
+        - '5900'
+seleniumhub:
+    image: 'selenium/hub:2.46.0'
+    ports:
+        - '4444'

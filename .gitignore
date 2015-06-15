@@ -42,7 +42,5 @@ nbproject
 .vagrant
 logs
 
-src/tests/_output/*
-src/config/local.php
-src/config/assets-prod.php
-src/web/assets-prod
+_output
+web/assets-prod

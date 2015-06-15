@@ -12,6 +12,7 @@ $I->see('Contact', 'h1');
 $I->amGoingTo('submit contact form with no data');
 $contactPage->submit([]);
 $I->expectTo('see validations errors');
+$I->wait(1);
 $I->see('Contact', 'h1');
 $I->see('Name cannot be blank');
 $I->see('Email cannot be blank');
@@ -28,6 +29,7 @@ $contactPage->submit([
     'verifyCode' => 'testme',
 ]);
 $I->expectTo('see that email adress is wrong');
+$I->wait(1);
 $I->dontSee('Name cannot be blank', '.help-inline');
 $I->see('Email is not a valid email address.');
 $I->dontSee('Subject cannot be blank', '.help-inline');
@@ -42,8 +44,8 @@ $contactPage->submit([
     'body' => 'test content',
     'verifyCode' => 'testme',
 ]);
-if (method_exists($I, 'wait')) {
-    $I->wait(3); // only for selenium
-}
+
+$I->wait(3);
+
 $I->dontSeeElement('#contact-form');
 $I->see('Thank you for contacting us. We will respond to you as soon as possible.');
