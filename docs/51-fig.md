@@ -29,7 +29,7 @@ To initialize your application run the following commands once:
 
 > Note: If you are developing on OS X or Windows, make sure your host-vm is running in VirtualBox Manager or with `boot2docker start`.
 
-    docker-compose run web composer create-project --prefer-dist
+    docker-compose run cli composer create-project --prefer-dist
 
 They will make the `vendor` folder available in your project directory on your host machine.
 And sets up the database, along with an admin user.
