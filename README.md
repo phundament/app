@@ -6,22 +6,42 @@ Phundament is a dockerized 12factor PHP application template for Yii Framework 2
 Quick-Start
 -----------
 
-Clone the repository
+Clone the repository and go to the application directory
 
-    git clone https://github.com/phundament/app 
+    git clone https://github.com/phundament/app
 
-Make the application stack
+Create environment configuration file    
+    
+    cd app
+    cp .env-dist .env
 
-    docker-compose up
+Inititalize the application
+
+    docker-compose run appcli composer install
+    docker-compose run appcli ./yii app/create-mysql-db
+    docker-compose run appcli ./yii migrate
+    docker-compose run appcli ./yii app/setup-admin-user
 
 > For alternative installation methods see the [docs](docs/20-installation-composer.md).
 
+Make the application stack
+
+    docker-compose up -d
+
 Find the port for the application nginx service
 
-    docker-compose ps
-    
+    docker-compose port web 80
+
 And open the application in your browser.    
 
+List all services    
+    
+    docker-compose ps
+
+Show and follow logs    
+    
+    docker-compose logs
+    
 Configuration
 -------------
 
