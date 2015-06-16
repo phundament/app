@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5037e071f3d5a8128f477e52ad5fe85b",
+    "hash": "29bda113254455b2a065162317401726",
     "packages": [
         {
             "name": "2amigos/yii2-ckeditor-widget",
@@ -1845,16 +1845,16 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v1.1.1",
+            "version": "v2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "0cac554ce06277e33ddf9f0b7ade4b8bbf2af3fa"
+                "reference": "91064290f5b53a09bdff1b939d7f69fb0e7531b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/0cac554ce06277e33ddf9f0b7ade4b8bbf2af3fa",
-                "reference": "0cac554ce06277e33ddf9f0b7ade4b8bbf2af3fa",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/91064290f5b53a09bdff1b939d7f69fb0e7531b5",
+                "reference": "91064290f5b53a09bdff1b939d7f69fb0e7531b5",
                 "shasum": ""
             },
             "require": {
@@ -1865,8 +1865,8 @@
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
-                    "Dotenv": "src/"
+                "psr-4": {
+                    "Dotenv\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1887,7 +1887,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2015-05-30 15:59:26"
+            "time": "2015-05-30 16:15:01"
         },
         {
             "name": "yiisoft/yii2",
@@ -2442,12 +2442,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-yaml-converter-command.git",
-                "reference": "78749ea20451c85e394669b604dd300cfe8450ba"
+                "reference": "01a6c1617a65eb685ea2be9daa4d47d39720daa1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-yaml-converter-command/zipball/78749ea20451c85e394669b604dd300cfe8450ba",
-                "reference": "78749ea20451c85e394669b604dd300cfe8450ba",
+                "url": "https://api.github.com/repos/dmstr/yii2-yaml-converter-command/zipball/01a6c1617a65eb685ea2be9daa4d47d39720daa1",
+                "reference": "01a6c1617a65eb685ea2be9daa4d47d39720daa1",
                 "shasum": ""
             },
             "require": {
@@ -2475,7 +2475,7 @@
                 "extension",
                 "yii2"
             ],
-            "time": "2015-06-15 14:05:24"
+            "time": "2015-06-16 01:28:36"
         },
         {
             "name": "fabpot/php-cs-fixer",
@@ -3712,7 +3712,6 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "dmstr/yii2-cms-metapackage": 20,
-        "yiisoft/yii2-composer": 0,
         "dmstr/yii2-cms-dev-metapackage": 20,
         "dmstr/yii2-yaml-converter-command": 20,
         "yiisoft/yii2-debug": 0

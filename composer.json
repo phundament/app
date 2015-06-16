@@ -32,9 +32,9 @@
   "minimum-stability": "stable",
   "require": {
     "dmstr/yii2-cms-metapackage": "dev-master",
-    "vlucas/phpdotenv": "1.1.*",
+    "vlucas/phpdotenv": "2.*",
     "yiisoft/yii2": "2.0.*",
-    "yiisoft/yii2-composer": "@stable"
+    "yiisoft/yii2-composer": "2.0.*"
   },
   "require-dev": {
     "dmstr/yii2-cms-dev-metapackage": "dev-master",
