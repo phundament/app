@@ -4,7 +4,7 @@ set -e
 pwd
 
 export BUILDER_SERVICE_SUFFIX=builder
-export APP_MIGRATION_LOOKUP=@app/migrations/test-data
+export APP_MIGRATION_LOOKUP=@app/migrations
 
 # get commit info
 APP_VERSION=$(cat version)
