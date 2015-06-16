@@ -23,7 +23,6 @@ if [ -d vendor/.git ] ; then echo "Directory 'vendor' is already a git repositor
 cp .env-dist .env
 make CI docker-kill docker-rm docker-pull
 make CI OPTS='--prefer-dist' app-install
-make CI ci-setup-assets
 make CI app-build-assets app-build-tests docker-build
 make CI docker-up app-setup
 make CI OPTS='-v acceptance prod' app-run-tests
