@@ -20,7 +20,7 @@ return [
     'targets'       => [
         'frontend' => [
             'class'    => 'yii\web\AssetBundle',
-            'basePath' => '@app/web/assets-prod',
+            'basePath' => '@app/../web/assets-prod',
             'baseUrl'  => '@web/assets-prod',
             'js'       => 'js/frontend-{hash}.js',
             'css'      => 'css/frontend-{hash}.css',
@@ -31,7 +31,7 @@ return [
         ],
         'backend' => [
             'class'    => 'yii\web\AssetBundle',
-            'basePath' => '@app/web/assets-prod',
+            'basePath' => '@app/../web/assets-prod',
             'baseUrl'  => '@web/assets-prod',
             'js'       => 'js/backend-{hash}.js',
             'css'      => 'css/backend-{hash}.css',
@@ -43,7 +43,7 @@ return [
         ],
         'all'          => [
             'class'    => 'yii\web\AssetBundle',
-            'basePath' => '@app/web/assets-prod',
+            'basePath' => '@app/../web/assets-prod',
             'baseUrl'  => '@web/assets-prod',
             'js'       => 'js/all-{hash}.js',
             'css'      => 'css/all-{hash}.css',
