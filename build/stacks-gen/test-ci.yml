@@ -1,7 +1,7 @@
 appbuilder:
     build: ../..
     volumes:
-        - '/Volumes/storage/%RUNNER_ID%/builds/project-21:/app'
+        - '/Volumes/storage/test-b/builds/project-21:/app'
 appcli:
     command: 'tail -f /dev/null'
     environment:
