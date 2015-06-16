@@ -38,6 +38,7 @@
   },
   "require-dev": {
     "dmstr/yii2-cms-dev-metapackage": "dev-master",
+    "dmstr/yii2-yaml-converter-command": "dev-master",
     "yiisoft/yii2-debug": "@stable"
   },
   "scripts": {

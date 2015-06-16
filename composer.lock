@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8395fb737e01f3f1de76a8cd6a2f15eb",
+    "hash": "5037e071f3d5a8128f477e52ad5fe85b",
     "packages": [
         {
             "name": "2amigos/yii2-ckeditor-widget",
@@ -2438,7 +2438,7 @@
         },
         {
             "name": "dmstr/yii2-yaml-converter-command",
-            "version": "0.3.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-yaml-converter-command.git",
@@ -3714,6 +3714,7 @@
         "dmstr/yii2-cms-metapackage": 20,
         "yiisoft/yii2-composer": 0,
         "dmstr/yii2-cms-dev-metapackage": 20,
+        "dmstr/yii2-yaml-converter-command": 20,
         "yiisoft/yii2-debug": 0
     },
     "prefer-stable": false,
