@@ -13,7 +13,7 @@ use yii\helpers\Html;
                 <h3><?= getenv('APP_NAME') ?></h3>
 
                 <p>
-                    Application Version <b><?= getenv('APP_ID') ?>-<?= getenv('APP_VERSION') ?></b><br>
+                    Application Version <b><?= getenv('APP_ID') ?>-<?= APP_VERSION ?></b><br>
                     Virtual Host <b><?= isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : '' ?></b><br/>
                     Hostname <b><?= getenv('HOSTNAME') ?: 'local' ?></b>
                 </p>
