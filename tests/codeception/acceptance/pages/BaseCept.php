@@ -13,7 +13,7 @@ $loginPage->login('admin', 'admin');
 $I->amGoingTo('try to view and create pages');
 $I->amOnPage('/pages');
 
-$I->see('Pages', 'h1');
+$I->see('Pages-Module', '.kv-heading-container');
 $I->makeScreenshot('success-pages-index');
 
 #$I->click('#w0-tree > ul > li:nth-child(1) > ul > li:nth-child(1) > div > div.kv-node-detail > span.kv-node-label');
