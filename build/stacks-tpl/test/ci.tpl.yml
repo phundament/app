@@ -3,7 +3,7 @@ appbuilder:
   .volumes: CLEAN
   volumes:
     # Mount volume on dedicated runner
-    - '/Volumes/storage/%RUNNER_ID%/builds/%PROJECT_DIR%:/app'
+    - '/Volumes/storage/runner-%RUNNER_ID%/builds/%PROJECT_DIR%:/app'
 
 appsrc:
   build: %APP_DOCKERFILE_PATH%
