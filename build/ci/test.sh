@@ -13,7 +13,7 @@ echo "Application Version ${APP_VERSION}"
 echo "${COMMIT_MESSAGE}"
 
 # instant-doma (Makefile templates)
-if [ -d doma ] ; then git -C doma pull ; else git clone https://github.com/schmunk42/doma.git doma ; fi ; export DOMA_DIR=`pwd`/doma
+export GIT_SSL_NO_VERIFY=1; if [ -d doma ] ; then git -C doma pull ; else git clone https://github.com/schmunk42/doma.git doma ; fi ; export DOMA_DIR=`pwd`/doma
 
 # persist vendor
 mkdir -p vendor && touch vendor/.gitkeep
