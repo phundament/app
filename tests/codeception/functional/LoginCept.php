@@ -23,4 +23,4 @@ $I->see('Invalid login or password');
 $I->amGoingTo('try to login with correct credentials');
 $loginPage->login('admin', 'admin');
 $I->expectTo('see user info');
-$I->see('','#link-logout');
+$I->seeElement('#link-logout');
