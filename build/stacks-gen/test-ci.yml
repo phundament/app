@@ -1,7 +1,7 @@
 appbuilder:
     build: ../..
     volumes:
-        - '/Volumes/storage/%RUNNER_ID%/builds/project-X:/app'
+        - '/Volumes/storage/%RUNNER_ID%/builds/project-21:/app'
 appcli:
     command: 'tail -f /dev/null'
     environment:
@@ -14,7 +14,7 @@ appcli:
         - 'seleniumhub:HUB'
         - 'mariadb:DB'
     volumes:
-        - '/Volumes/storage/_ci-reports/project:/app/_output'
+        - '/Volumes/storage/_ci-reports/phundament/app:/app/_output'
     volumes_from:
         - appsrc
 appfpm:
