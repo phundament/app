@@ -15,10 +15,7 @@ Finding packages
 
 Start with a search on [Packagist](https://packagist.org) or from your command line
 
-```
-composer search -N "yii2-auth"
-composer search -N "yii2-excel"
-```
+    composer search -N "yii2-excel"
 
 Installing packages
 -------------------

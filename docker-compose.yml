@@ -33,9 +33,6 @@ appfpm:
     - '.:/app'
   links:
     - 'mariadb:DB'
-  environment:
-    YII_DEBUG: 1
-    YII_ENV: dev
 
 # The nginx server for serving static files directly
 appnginx:
