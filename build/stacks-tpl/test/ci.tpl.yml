@@ -12,11 +12,10 @@ appsrc:
     - /app
 
 appcli:
-  volumes_from:
-    - appsrc
   .volumes: CLEAN
   volumes:
       # Mount shared location for reports
+      - '/Volumes/storage/runner-%RUNNER_ID%/builds/%PROJECT_DIR%:/app'
       - '/Volumes/storage/_ci-reports/%REPORT_DIR%:/app/_output'
 appfpm:
   .volumes: CLEAN

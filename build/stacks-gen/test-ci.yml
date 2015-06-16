@@ -14,9 +14,8 @@ appcli:
         - 'seleniumhub:HUB'
         - 'mariadb:DB'
     volumes:
+        - '/Volumes/storage/runner-test-b/builds/project-21:/app'
         - '/Volumes/storage/_ci-reports/phundament/app:/app/_output'
-    volumes_from:
-        - appsrc
 appfpm:
     environment:
         YII_DEBUG: 1
