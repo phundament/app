@@ -39,7 +39,7 @@ before_script:
   - php yii app/setup-tests --interactive=0
 
 script:
-  - codecept -v run
+  - codecept -v run functional && codecept -v run unit
 
 after_success:
   - php yii app/setup-docs --interactive=0
