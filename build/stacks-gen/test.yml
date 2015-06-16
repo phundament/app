@@ -13,8 +13,6 @@ appcli:
         - '../..:/app'
 appfpm:
     environment:
-        APP_ENABLE_DATA_MIGRATIONS: 0
-        APP_MIGRATION_LOOKUP: '@app/migrations/test-data'
         YII_DEBUG: 1
         YII_ENV: test
     image: 'phundament/php:5.6-fpm-dev'
