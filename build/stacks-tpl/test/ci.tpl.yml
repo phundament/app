@@ -1,0 +1,36 @@
+appbuilder:
+  build: %APP_DOCKERFILE_PATH%
+  .volumes: CLEAN
+  volumes:
+    # Mount volume on dedicated runner
+    - '/Volumes/storage/%RUNNER_ID%/builds/%PROJECT_DIR%:/app'
+
+appsrc:
+  build: %APP_DOCKERFILE_PATH%
+  .volumes: CLEAN
+  volumes:
+    - /app
+
+appcli:
+  volumes_from:
+    - appsrc
+  .volumes: CLEAN
+  volumes:
+      # Mount shared location for reports
+      - '/Volumes/storage/_ci-reports/%REPORT_DIR%:/app/_output'
+appfpm:
+  .volumes: CLEAN
+  volumes_from:
+    - appsrc
+
+appnginx:
+  .volumes: CLEAN
+  volumes_from:
+    - appsrc
+  environment:
+    VIRTUAL_HOST: ~^ci\.myapp\.com
+    NGINX_ERROR_LOG_LEVEL: 'notice'
+
+mariadb:
+    environment:
+        MYSQL_DATABASE: ci-2
