@@ -24,7 +24,8 @@ cp .env-dist .env
 make CI docker-kill docker-rm docker-pull
 make CI OPTS='--prefer-dist' app-install
 make CI app-build-assets app-build-tests docker-build
-make CI docker-up app-setup
+make CI docker-up
+make CI app-setup
 make CI OPTS='-v acceptance prod' app-run-tests
 export BUILDER_SERVICE_SUFFIX=src
 make docker-tag

@@ -32,7 +32,6 @@ TEST:		##@config configure application for local testing
 CI:		##@config configure application for local staging
 	$(eval BUILDER_SERVICE_SUFFIX := builder)
 	$(eval COMPOSE_FILE := build/stacks-gen/test-ci.yml)
-	$(eval COMPOSE_PROJECT_NAME := adam)
 
 STAGING:    ##@config configure application for local staging
 	$(eval COMPOSE_FILE := build/stacks-gen/staging.yml)
