@@ -60,28 +60,52 @@ $common = [
         'backend' => [
             'class'  => 'app\modules\backend\Module',
             'layout' => '@admin-views/layouts/main',
+            'params' => [
+                'menuItems'      => [
+                    'label' => 'Dashboard',
+                    'url'   => ['/backend']
+                ]
+            ]
         ],
-        /*'docs'    => [
+        'docs'    => [
             'class'  => \schmunk42\markdocs\Module::className(),
-            'layout' => '@app/views/layouts/container',
-        ],*/
+            'layout' => '@admin-views/layouts/main',
+        ],
         'pages' => [
             'class'  => \dmstr\modules\pages\Module::className(),
             'layout' => '@admin-views/layouts/main',
+            'params' => [
+                'availableViews' => [
+                    '@app/views/layouts/default.php' => 'Standard Page (with Sidebar)',
+                    '@vendor/dmstr/yii2-widgets-module/example-views/column1.php' => 'One Column'
+                ],
+                'menuItems'      => [
+                    'label' => 'Pages',
+                    'url'   => ['/pages']
+                ]
+            ]
         ],
         'user'  => [
             'class'        => 'dektrium\user\Module',
             'layout'       => '@app/views/layouts/container',
             'defaultRoute' => 'profile',
-            'admins'       => ['admin']
+            'admins'       => ['admin'],
+            'params' => [
+                'menuItems'      => [
+                    'label' => 'Users',
+                    'url'   => ['/user/admin']
+                ]
+            ]
         ],
         'rbac'  => [
             'class'  => 'dektrium\rbac\Module',
             'layout' => '@admin-views/layouts/main',
-        ],
-        'pages' => [
-            'class'  => \dmstr\modules\pages\Module::className(),
-            'layout' => '@admin-views/layouts/main',
+            'params' => [
+                'menuItems'      => [
+                    'label' => 'Permissions',
+                    'url'   => ['/rbac']
+                ]
+            ]
         ],
         'treemanager' => [
             'class'  => '\kartik\tree\Module',

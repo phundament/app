@@ -45,17 +45,23 @@ AppAsset::register($this);
         } else {
             $menuItems[] = [
                 'label' => '<i class="glyphicon glyphicon-user"></i> ' . Yii::$app->user->identity->username,
-                'url'   => ['/user/profile/show', 'id' => \Yii::$app->user->id],
+                'items' => [
+                    [
+                        'label' => '<i class="glyphicon glyphicon-user"></i> Profile',
+                        'url'   => ['/user/profile/show', 'id' => \Yii::$app->user->id],
+                    ],
+                    '<li class="divider"></li>',
+                    [
+                        'label'       => '<i class="glyphicon glyphicon-log-out"></i> Logout',
+                        'url'         => ['/user/security/logout'],
+                        'linkOptions' => ['data-method' => 'post', 'id' => 'link-logout']
+                    ],
+                ]
             ];
             $menuItems[] = [
-                'label' => '<i class="glyphicon glyphicon-dashboard"></i>',
+                'label' => '<i class="glyphicon glyphicon-cog"></i>',
                 'url'   => ['/backend'],
                 'visible' => Yii::$app->user->can('backend_default') || (isset(Yii::$app->user->identity) && Yii::$app->user->identity->isAdmin)
-            ];
-            $menuItems[] = [
-                'label'       => '<i class="glyphicon glyphicon-log-out"></i>',
-                'url'         => ['/user/security/logout'],
-                'linkOptions' => ['data-method' => 'post', 'id' => 'link-logout']
             ];
         }
     }
