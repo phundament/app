@@ -8,10 +8,7 @@ appcli:
         - 'mariadb:DB'
         - 'seleniumhub:HUB'
     volumes:
-        - '../../src:/app/src'
-        - '../../tests:/app/tests'
-        - '../../codeception.yml:/app/codeception.yml'
-        - '../../_output:/app/_output'
+        - '../..:/app'
 appfpm:
     environment:
         YII_DEBUG: 1

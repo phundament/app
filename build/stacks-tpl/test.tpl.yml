@@ -18,10 +18,7 @@ appcli:
     - 'seleniumhub:HUB'
   .volumes: CLEAN
   volumes:
-    - %APP_DOCKERFILE_PATH%/src:/app/src
-    - %APP_DOCKERFILE_PATH%/tests:/app/tests
-    - %APP_DOCKERFILE_PATH%/codeception.yml:/app/codeception.yml
-    - %APP_DOCKERFILE_PATH%/_output:/app/_output
+    - %APP_DOCKERFILE_PATH%:/app
 
 appfpm:
   environment:
