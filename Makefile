@@ -24,6 +24,7 @@ include $(DOMA_DIR)/phundament/4.0/Makefile
 
 # Local development config targets
 # --------------------------------
+.PHONY: TEST CI STAGING
 
 TEST:		##@config configure application for local testing
 	$(eval COMPOSE_FILE := build/stacks-gen/test.yml)

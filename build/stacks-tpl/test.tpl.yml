@@ -1,5 +1,6 @@
 # docker-compose configuration for local development
 appsrc:
+  build: %APP_DOCKERFILE_PATH%
   .volumes: CLEAN
   volumes:
     - %APP_DOCKERFILE_PATH%:/app
@@ -10,24 +11,22 @@ appnginx:
     - %APP_DOCKERFILE_PATH%:/app
 
 appcli:
-  image: adam_appsrc
+  build: %APP_DOCKERFILE_PATH%
   environment:
     YII_ENV: test
-  .external_links: CLEAN
   links:
     - 'seleniumhub:HUB'
-    - 'mariadb:DB'
   .volumes: CLEAN
   volumes:
-    - %APP_DOCKERFILE_PATH%:/app
+    - %APP_DOCKERFILE_PATH%/src:/app/src
+    - %APP_DOCKERFILE_PATH%/tests:/app/tests
+    - %APP_DOCKERFILE_PATH%/codeception.yml:/app/codeception.yml
+    - %APP_DOCKERFILE_PATH%/_output:/app/_output
 
 appfpm:
   environment:
     YII_ENV: test
     YII_DEBUG: 1
-  .external_links: CLEAN
-  links:
-    - 'mariadb:DB'
   .volumes: CLEAN
   volumes:
     - %APP_DOCKERFILE_PATH%:/app

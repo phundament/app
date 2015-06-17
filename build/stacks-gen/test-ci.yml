@@ -3,16 +3,14 @@ appbuilder:
     volumes:
         - '/Volumes/storage/runner-test-b/builds/project-21:/app'
 appcli:
-    command: 'tail -f /dev/null'
+    build: ../..
+    command: 'sh /app/build/container-files/init.sh'
     environment:
-        APP_MIGRATION_LOOKUP: '@app/migrations'
         YII_ENV: test
-    image: adam_appsrc
     links:
         - 'appnginx:WEB'
         - 'mariadb:DB'
         - 'seleniumhub:HUB'
-        - 'mariadb:DB'
     volumes:
         - '/Volumes/storage/runner-test-b/builds/project-21/tests:/app/tests'
         - '/Volumes/storage/runner-test-b/builds/project-21/codeception.yml:/app/codeception.yml'
@@ -23,9 +21,8 @@ appfpm:
     environment:
         YII_DEBUG: 1
         YII_ENV: test
-    image: 'phundament/php:5.6-fpm-dev'
+    image: 'phundament/php:5.6-fpm-4.0.0-rc1-dev'
     links:
-        - 'mariadb:DB'
         - 'mariadb:DB'
     volumes_from:
         - appsrc

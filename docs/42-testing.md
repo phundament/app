@@ -1,50 +1,37 @@
 Testing
 =======
 
-### Running in isolated Docker containers
+### Running in isolated Docker stacks
 
-Creating and running a test environment can be a cumbersome task, since you have to take care about several specific tasks, like executing your tests in a separate database. Therefore the Phundament 4 `:development` images contain fully pre-installed Yii 2.0 Framework codeception test-suites for unit-, functional- and acceptance-testing.
+Creating and running a test environment can be a cumbersome task, since you have to take care about several specific tasks, like executing your tests in a separate database. Therefore the Phundament 4 Docker images contain pre-installed Yii 2.0 Framework codeception test-suites for unit-, functional- and acceptance-testing.
 
-In `docker-compose.yml` two additional containers `testweb` and `testdb` are defined which are used to run the test-suites. To get started, bring up the test containers and execute tests suites with docker.
+We are using `Makefile` with `schmunk42/doma`-templates to control the test-stack.
 
-```
-docker-compose up -d testweb
-docker exec app_testweb_1 codecept build
-docker exec app_testweb_1 codecept run
-```
-> Note: Replace `app_testweb_1` with your container name.
->
-> You need to run `codecept build` only before the first `run` or after changes to the test classes.
->
-> Since acceptance tests are executed against a running webserver we need to use `docker exec` for conveniently running the test-suites in the container.
+### Basic usage 
+ 
+Before starting tests, it's recommended to build all images in the default development stack
 
-The following commands can be used to determine the container name to use with docker...
+    make docker-build
 
-```
-docker ps
-```
+Next step is to get a clean stack selected and configured by using `TEST` target.  
 
-Or to rebuild the codeception classes...
+    make TEST docker-kill docker-rm docker-up
 
-```
-docker exec app_testweb_1 codecept build
-```
+Before the test-suites can be run, we need to setup the application, like during development setup, but also in the test-stack. 
 
-### Running with a local webserver
+    make TEST app-setup
 
-> Note! This setup requires an additional database and a modified setup with ENV variables.
-> It is recommended to use the `docker-compose` setup above.
+Finally we can execute the tests.
 
-Update `url` in `tests/codeception/acceptance.suite.yml`
+    make TEST app-run-tests
 
-Install required packages and build test classes
+### Advanced usage
 
-```
-./yii app/setup-tests
-```
+To run specific tests you can use the `OPTS` environment variable
 
-Run all suites in all applications
+    make TEST app-run-tests OPTS='acceptance dev/MyCept --steps'
 
-```
-./yii app/run-tests
-```
+If you need to customize the codeception setup you can rebuild the tester classes with      
+
+    make TEST app-build-tests
+
