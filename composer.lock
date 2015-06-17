@@ -107,16 +107,16 @@
         },
         {
             "name": "bower-asset/bootstrap",
-            "version": "v3.3.4",
+            "version": "v3.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "a10eb60bc0b07b747fa0c4ebd8821eb7307bd07f"
+                "reference": "16b48259a62f576e52c903c476bd42b90ab22482"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/a10eb60bc0b07b747fa0c4ebd8821eb7307bd07f",
-                "reference": "a10eb60bc0b07b747fa0c4ebd8821eb7307bd07f",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/16b48259a62f576e52c903c476bd42b90ab22482",
+                "reference": "16b48259a62f576e52c903c476bd42b90ab22482",
                 "shasum": ""
             },
             "require": {
@@ -126,13 +126,7 @@
             "extra": {
                 "bower-asset-main": [
                     "less/bootstrap.less",
-                    "dist/css/bootstrap.css",
-                    "dist/js/bootstrap.js",
-                    "dist/fonts/glyphicons-halflings-regular.eot",
-                    "dist/fonts/glyphicons-halflings-regular.svg",
-                    "dist/fonts/glyphicons-halflings-regular.ttf",
-                    "dist/fonts/glyphicons-halflings-regular.woff",
-                    "dist/fonts/glyphicons-halflings-regular.woff2"
+                    "dist/js/bootstrap.js"
                 ],
                 "bower-asset-ignore": [
                     "/.*",
@@ -145,6 +139,9 @@
                     "test-infra"
                 ]
             },
+            "license": [
+                "MIT"
+            ],
             "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
             "keywords": [
                 "css",
@@ -848,16 +845,16 @@
         },
         {
             "name": "dmstr/yii2-adminlte-asset",
-            "version": "2.1.0",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-adminlte-asset.git",
-                "reference": "84928c5b3a886bd3a6cdde88bb8327bf1c088e7c"
+                "reference": "49c69eab422ada4295ece97279e5dd50e37d34be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-adminlte-asset/zipball/84928c5b3a886bd3a6cdde88bb8327bf1c088e7c",
-                "reference": "84928c5b3a886bd3a6cdde88bb8327bf1c088e7c",
+                "url": "https://api.github.com/repos/dmstr/yii2-adminlte-asset/zipball/49c69eab422ada4295ece97279e5dd50e37d34be",
+                "reference": "49c69eab422ada4295ece97279e5dd50e37d34be",
                 "shasum": ""
             },
             "require": {
@@ -898,7 +895,7 @@
                 "extension",
                 "yii2"
             ],
-            "time": "2015-06-01 20:35:02"
+            "time": "2015-06-17 03:09:25"
         },
         {
             "name": "dmstr/yii2-app-command",
@@ -1030,19 +1027,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-cms-metapackage.git",
-                "reference": "36473a58e233757cbe1aef449bbbe3e42150f8f1"
+                "reference": "ba6a55bd0de15b5aaf33fbb099a705f6236146b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-cms-metapackage/zipball/36473a58e233757cbe1aef449bbbe3e42150f8f1",
-                "reference": "36473a58e233757cbe1aef449bbbe3e42150f8f1",
+                "url": "https://api.github.com/repos/dmstr/yii2-cms-metapackage/zipball/ba6a55bd0de15b5aaf33fbb099a705f6236146b0",
+                "reference": "ba6a55bd0de15b5aaf33fbb099a705f6236146b0",
                 "shasum": ""
             },
             "require": {
                 "codemix/yii2-localeurls": "1.*",
                 "codemix/yii2-streamlog": "*",
                 "cybercog/yii2-google-analytics": "~0.2",
-                "dektrium/yii2-rbac": "~0.1",
+                "dektrium/yii2-rbac": "*",
                 "dektrium/yii2-user": "0.9.*",
                 "dmstr/yii2-adminlte-asset": "2.*",
                 "dmstr/yii2-app-command": "^0.3.2",
@@ -1069,7 +1066,7 @@
                 }
             ],
             "description": "Content Management Extensions for Phundament 4 (Yii 2.0 Framework)",
-            "time": "2015-06-15 18:25:22"
+            "time": "2015-06-16 03:47:56"
         },
         {
             "name": "dmstr/yii2-db",
@@ -1346,16 +1343,16 @@
         },
         {
             "name": "kartik-v/yii2-krajee-base",
-            "version": "v1.7.6",
+            "version": "v1.7.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-krajee-base.git",
-                "reference": "8eec77d90752aadc40fad22177c9d5fe40249101"
+                "reference": "c0adff9d9762f4fd3bf0e7cd0000fcab0bf00f19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-krajee-base/zipball/8eec77d90752aadc40fad22177c9d5fe40249101",
-                "reference": "8eec77d90752aadc40fad22177c9d5fe40249101",
+                "url": "https://api.github.com/repos/kartik-v/yii2-krajee-base/zipball/c0adff9d9762f4fd3bf0e7cd0000fcab0bf00f19",
+                "reference": "c0adff9d9762f4fd3bf0e7cd0000fcab0bf00f19",
                 "shasum": ""
             },
             "require": {
@@ -1369,7 +1366,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "BSD 3-Clause"
+                "BSD-3-Clause"
             ],
             "authors": [
                 {
@@ -1388,7 +1385,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2015-05-08 22:02:25"
+            "time": "2015-06-16 05:19:57"
         },
         {
             "name": "kartik-v/yii2-tree-manager",
