@@ -32,7 +32,3 @@ appnginx:
   environment:
     VIRTUAL_HOST: ~^ci\.myapp\.com
     NGINX_ERROR_LOG_LEVEL: 'notice'
-
-mariadb:
-    environment:
-        MYSQL_DATABASE: ci-2

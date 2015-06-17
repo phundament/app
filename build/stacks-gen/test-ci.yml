@@ -45,7 +45,6 @@ appsrc:
 mariadb:
     environment:
         MARIADB_PASS: secretadmin
-        MYSQL_DATABASE: ci-2
     image: 'tutum/mariadb:10.1'
     ports:
         - '3306'
