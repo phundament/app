@@ -14,7 +14,7 @@ appcli:
   links:
     - 'appnginx:WEB'
     - 'mariadb:DB'
-  command: 'sh /app/build/container-files/init.sh'
+  command: 'sh src/run.sh'
 
 # The php-fpm server for interpreting php code
 appfpm:

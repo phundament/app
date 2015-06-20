@@ -15,22 +15,13 @@ Create environment configuration file
     cd app
     cp .env-dist .env
 
-Inititalize the application
-
-    docker-compose run appcli composer install
-    docker-compose run appcli ./yii app/create-mysql-db
-    docker-compose run appcli ./yii migrate
-    docker-compose run appcli ./yii app/setup-admin-user
-
-> For alternative installation methods see the [docs](docs/20-installation-composer.md).
-
-Make the application stack
+Start the application stack
 
     docker-compose up -d
 
 Find the port for the application nginx service
 
-    docker-compose port web 80
+    docker-compose port appnginx 80
 
 And open the application in your browser.    
 
@@ -41,6 +32,8 @@ List all services
 Show and follow logs    
     
     docker-compose logs
+
+> For alternative installation methods see the [docs](docs/20-installation-composer.md).  
     
 Configuration
 -------------

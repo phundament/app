@@ -39,6 +39,11 @@ See also [issue on GitHub]()
 echo "nameserver 8.8.8.8" > /etc/resolv.conf && sudo /etc/init.d/docker restart
 ```
 
+#### Show environment variables (in container)
+
+    env | sort
+
+
 #### `YII_ENV=dev` and `phundament/app:production` image
 
 In most cases you won't be able to start images built `FROM phundament/app:production` image, if you set `YII_ENV=dev`, since development packages are missing on that image. It is also not recommended to use a production image in development mode.
