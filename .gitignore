@@ -42,5 +42,4 @@ nbproject
 .vagrant
 logs
 
-_output
 web/assets-prod
