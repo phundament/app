@@ -1,6 +1,6 @@
 appcli:
     build: ../..
-    command: 'sh /app/build/container-files/init.sh'
+    command: 'sh src/run.sh'
     environment:
         YII_ENV: test
     links:
