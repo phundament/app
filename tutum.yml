@@ -1,6 +1,8 @@
 # Phundament 4 - Spawn and Tutum Stack
 # ====================================
 
+# Note: Wait until `appcli` container has completed its startup.
+
 # Spawn a new project locally
 #
 #   docker-compose run appsrc cp -r /phundament-src/src /mnt

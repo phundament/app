@@ -3,6 +3,7 @@ Phundament 4
 
 Phundament is a dockerized 12factor PHP application template for Yii Framework 2.0.
 
+
 Quick-Start
 -----------
 
@@ -23,7 +24,9 @@ Find the port for the application nginx service
 
     docker-compose port appnginx 80
 
-And open the application in your browser.    
+And open the application in your browser, eg. `http://dockerhost:34567`    
+
+### Additional information
 
 List all services    
     
@@ -34,6 +37,24 @@ Show and follow logs
     docker-compose logs
 
 > For alternative installation methods see the [docs](docs/20-installation-composer.md).  
+
+Demo
+----
+
+### Test-drive with docker compose
+
+    curl -o docker-compose.yml https://raw.githubusercontent.com/phundament/app/master/tutum.yml    
+    docker-compose up -d
+
+### Online Demo
+
+> A demo can be found at  the [Phundament Playground Application](https://github.com/phundament/playground/blob/master/README.md) Demo! 
+> You can get the source-code of the demo application from its [GitHub repository](https://github.com/phundament/playground).
+
+### PaaS / cloud service
+
+[![Deploy to Tutum](https://s.tutum.co/deploy-to-tutum.svg)](https://dashboard.tutum.co/stack/deploy/)
+
     
 Configuration
 -------------
@@ -63,7 +84,7 @@ Application
 
 *Application development settings*
 
- - `APP_ASSET_FORCE_PUBLISH` force asset publishing after any changes to asset files. **Note!** This may degrade performance or cause permission issues, depending on your setup.
+ - `APP_ASSET_FORCE_PUBLISH` force asset publishing after any changes to asset files. **Note!** This may degrade performance, use *only during development*.
 
  Framework
  
@@ -73,24 +94,21 @@ Application
  
  Database
  
+ - `DB_ENV_MYSQL_ROOT_USER` user to create databases
+ - `DB_ENV_MYSQL_ROOT_PASSWORD` root password, eg. set from `"${DB_ENV_MARIADB_PASS}"`
  - `DB_ENV_MYSQL_DATABASE` database name
  - `DB_ENV_MYSQL_PASSWORD` database password
  - `DB_ENV_MYSQL_USER` database user
  - `DB_PORT_3306_TCP_ADDR` database hostname
  - `DB_PORT_3306_TCP_PORT` database port
+ - `DATABASE_TABLE_PREFIX` table prefix for default database connection
+
 
 ### PHP Application settings - `config/main.php`
 
 For details of available application configuration, please refer to the Yii 2.0 Framework Definitive Guide. 
 
 
-Demo
-----
-
-> A demo can be found at  the [Phundament Playground Application](https://github.com/phundament/playground/blob/master/README.md#phundament-developer-playground) Demo! 
-> You can get the source-code of the demo application from its [GitHub repository](https://github.com/phundament/playground).
-
-[![Deploy to Tutum](https://s.tutum.co/deploy-to-tutum.svg)](https://dashboard.tutum.co/stack/deploy/)
 
 Resources
 ---------
