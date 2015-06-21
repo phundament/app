@@ -11,7 +11,8 @@ PROJECT_REGISTRY ?= example.com/project
 APP_NAMES   ?= app
 APP_FOLDERS ?= .
 
-TEST_VERBOSITY			?=-v
+TEST_OUTPUT_PATH	?= /app/tests/codeception/_output/latest
+TEST_VERBOSITY		?= -v
 
 default: help
 
