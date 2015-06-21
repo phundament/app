@@ -45,6 +45,7 @@ AppAsset::register($this);
         } else {
             $menuItems[] = [
                 'label' => '<i class="glyphicon glyphicon-user"></i> ' . Yii::$app->user->identity->username,
+                'options' => ['id'=>'link-user-menu'],
                 'items' => [
                     [
                         'label' => '<i class="glyphicon glyphicon-user"></i> Profile',

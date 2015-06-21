@@ -13,4 +13,4 @@ modules:
       - Yii2
     config:
         Yii2:
-            configFile: 'tests/codeception/config/functional.php'
+            configFile: 'tests/codeception/_config/functional.php'

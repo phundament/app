@@ -11,8 +11,12 @@ $I->see('Sign in', 'h3');
 
 $I->amGoingTo('try to login with correct credentials');
 $loginPage->login('admin', 'admin');
-if (method_exists($I, 'wait')) {
-    $I->wait(3); // only for selenium
-}
+$I->makeScreenshot('login-success');
+
 $I->expectTo('see user info');
+$I->click('admin','.nav');
+#$i->wait(1);
+
 $I->see('','#link-logout');
+$I->click('#link-logout');
+$I->makeScreenshot('logout-success');
