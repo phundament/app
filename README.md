@@ -59,26 +59,23 @@ Demo
 Configuration
 -------------
 
-### Environment - `docker-compose.yml`
-     
- - `VIRTUAL_HOST` `~^myapp\.` - Virtual-host configuration for reverse proxy, adjust the virtual host parameter 
-    for web application, we'll use it later to easily access the web-server through a wildcard DNS.
-
 
 ### Environment defaults - `.env`
 
-Identifier
+> During development, it is recommended to change application configuration in the `.env` file, since it does not require restarting the containers. 
+
+*Identifier*
 
  - `APP_NS` namespace for the application, used i.e. for Docker image tags *[a-z0-9]*
- - `APP_ID` unique application and container identifier *[a-z0-9]*
- - `APP_NAME` display name of the application
+ - `APP_NAME` unique application and container identifier *[a-z0-9]*
+ - `APP_TITLE` display name of the application
 
-Application
+*Application*
  
  - `APP_MIGRATION_LOOKUP` comma separated list of Yii aliases to look for database migrations, eg. `@app/migrations/data`
- - `APP_ADMIN_EMAIL` e-mail address of application admin user
- - `APP_ADMIN_PASSWORD` password of application admin user
- - `APP_SUPPORT_EMAIL` e-mail address for the application eg. `support@myapp.local`
+ - `APP_ADMIN_EMAIL` e-mail address of application admin user (default in `./yii app/create-admin-user`)
+ - `APP_ADMIN_PASSWORD` password of application admin user (default in `./yii app/create-admin-user`)
+ - `APP_SUPPORT_EMAIL` e-mail address for the application, eg. `support@myapp.local`
  - `APP_COOKIE_VALIDATION_KEY` unique and random string to prevent XSS
  - `APP_PRETTY_URLS` enable or disable nice URLs, allowed values `1` (yes) or `0` (no)
 
@@ -86,13 +83,13 @@ Application
 
  - `APP_ASSET_FORCE_PUBLISH` force asset publishing after any changes to asset files. **Note!** This may degrade performance, use *only during development*.
 
- Framework
+*Framework*
  
  - `YII_DEBUG` wheter to enable more verbose application output, eg. on PHP exceptions.
  - `YII_ENV` Yii application mode, allowed values `dev`, `prod` or `test`
  - `YII_TRACE_LEVEL` amount of caller levels to display for logging.
  
- Database
+*Database*
  
  - `DB_ENV_MYSQL_ROOT_USER` user to create databases
  - `DB_ENV_MYSQL_ROOT_PASSWORD` root password, eg. set from `"${DB_ENV_MARIADB_PASS}"`
@@ -102,6 +99,14 @@ Application
  - `DB_PORT_3306_TCP_ADDR` database hostname
  - `DB_PORT_3306_TCP_PORT` database port
  - `DATABASE_TABLE_PREFIX` table prefix for default database connection
+
+
+### Environment overrides - `docker-compose.yml`
+
+> You can override any ENV variable in `.env` within a `docker-compose.yml` file.
+     
+ - `VIRTUAL_HOST` `~^myapp\.` Virtual-host configuration for reverse proxy, adjust the virtual host parameter 
+    for web application, we'll use it later to easily access the web-server through a wildcard DNS.
 
 
 ### PHP Application settings - `config/main.php`

@@ -12,15 +12,16 @@ $this->title .= 'Yii 2.0 App Template';
             <h2 class="lead">Up and running.</h2>
 
             <div>
-                <a href="<?= \yii\helpers\Url::to('http://phundament.com/docs/31-extension-management.md') ?>"
-                   target="_blank"
-                   class="btn btn-primary btn-lg">Install Packages</a>
-                <a href="<?= \yii\helpers\Url::to('http://phundament.com/docs/41-code-generation.md') ?>"
-                   target="_blank"
-                   class="btn btn-primary btn-lg">Generate Code</a>
-                <a href="<?= \yii\helpers\Url::to('http://phundament.com/docs/30-customize.md') ?>"
-                   target="_blank"
-                   class="btn btn-primary btn-lg">Customize App</a>
+                <a href="<?= \yii\helpers\Url::to(['/pages']) ?>"
+                   class="btn btn-primary btn-lg">
+                    <i class="glyphicon glyphicon-plus-sign"></i>
+                    Manage Pages</a>
+                <?php if (!YII_ENV_PROD): ?>
+                    <p class="lead">
+                        <br/>
+                       Login with <code>admin</code> / <code>admin</code>
+                    </p>
+                <?php endif; ?>
             </div>
 
         </div>
@@ -37,20 +38,20 @@ $this->title .= 'Yii 2.0 App Template';
                 <div class="col-md-2 col-md-offset-4 text-center">
                     <div class="featurette-item">
                         <?php if (YII_ENV_PROD): ?>
-                            <a href="#"><i
-                                    class="glyphicon glyphicon-cog"></i></a>
+                            <a href="#">
+                                <i class="glyphicon glyphicon-cog"></i></a>
                             <h4>Production</h4>
                         <?php else: ?>
-                            <a href="<?= \yii\helpers\Url::to(['/debug/default/view', 'panel' => 'log']) ?>"><i
-                                    class="glyphicon glyphicon-align-left"></i></a>
-                            <h4>Logs</h4>
+                            <a href="<?= \yii\helpers\Url::to(['/docs']) ?>">
+                                <i class="glyphicon glyphicon-book"></i></a>
+                            <h4>Docs</h4>
                         <?php endif; ?>
                     </div>
                 </div>
                 <div class="col-md-2 text-center">
                     <div class="featurette-item">
-                        <a href="<?= \yii\helpers\Url::to(['/admin']) ?>"><i
-                                class="glyphicon glyphicon-dashboard"></i></a>
+                        <a href="<?= \yii\helpers\Url::to(['/backend']) ?>">
+                            <i class="glyphicon glyphicon-dashboard"></i></a>
                         <h4>Dashboard</h4>
                     </div>
                 </div>

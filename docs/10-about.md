@@ -1,23 +1,25 @@
 About
 =====
 
-[![Build Status](https://travis-ci.org/phundament/app.svg?branch=4.0)](https://travis-ci.org/phundament/app)
+[![Build Status](https://travis-ci.org/phundament/app.svg?branch=master)](https://travis-ci.org/phundament/app)
 [![Total Downloads](https://poser.pugx.org/phundament/app/downloads.png)](https://packagist.org/packages/phundament/app)
+[![Latest Stable Version](https://poser.pugx.org/phundament/app/v/stable.png)](https://packagist.org/packages/phundament/app)
 [![Stories in Ready](https://badge.waffle.io/phundament/app.png?label=ready&title=Ready)](https://waffle.io/phundament/app)
 
 
-Phundament is a Web Application Foundation built upon PHP and Yii Framework 2.0, best for rapidly developing web
-applications. It follows the [12factor specifications](http://12factor.net) on a very slim codebase.
+Phundament is a Web Application Foundation built upon Docker, PHP and Yii Framework 2.0 and further tools, providing a consistent environment for rapidly developing web
+applications - from development to deployment.
+
 
 ### Design goals
 
 The goal of Phundament is to provide a rock-solid base for integrating the best tools and plugins for web-application development, 
-while not creating a new framework or [another competing standard](http://xkcd.com/927/). Instead, existing tools are pre-configured in a clean and
-easy way.
+while not creating a new framework or [another competing standard](http://xkcd.com/927/). 
 
-Compared to the `yii2-app-advanced` and `yii2-app-basic`, Phundament introduces a configuration based on *environment variables*,
-which gives you a maximum of control over your application setup.
+Instead, existing tools are pre-configured in a clean and easy way and built on Docker images to ensure 100% compatibility across different platforms.
 
+Compared to the standard Yii 2.0 application templates, Phundament introduces a configuration based on *environment variables*,
+which gives you a maximum level of control over your application setup. It follows the [12factor specifications](http://12factor.net) on a very slim codebase.
 
 
 Features
@@ -48,46 +50,31 @@ Features
 - containerized Yii 2.0 Codeception test-suites 
 
 
-Status
-------
-
-[![Total Downloads](https://poser.pugx.org/phundament/app/downloads.png)](https://packagist.org/packages/phundament/app)
-
-[![Latest Stable Version](https://poser.pugx.org/phundament/app/v/stable.png)](https://packagist.org/packages/phundament/app)
-[![Build Status](https://travis-ci.org/phundament/app.png?branch=4.0)](https://travis-ci.org/phundament/app)
-
-[![Latest Unstable Version](https://poser.pugx.org/phundament/app/v/unstable.png)](https://packagist.org/packages/phundament/app)
-[![Build Status](https://travis-ci.org/phundament/app.png?branch=master)](https://travis-ci.org/phundament/app)
-
-[![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/phundament/app/badges/quality-score.png?s=4d1ce01151a4e82df75b563e7ccf0001cc227bd1)](https://scrutinizer-ci.com/g/phundament/app/)
-
-
-Requirements
-------------
-
-- [Composer](http://getcomposer.org/doc/00-intro.md#installation-nix) installation
-- PHP 5.4
-
-or a virtualized setup with eg. VirtualBox
- 
- - Docker or boot2docker
- - docker-compose (fig)
-  
-or 
- 
- - Vagrant
-
-### Recommendations
-
-- git
-- hg
 
 
 Directory Structure
 -------------------
 
 ```
+Makefile            build and Docker stack control-targets
+docker-compose.yml  docker container setup
+Dockerfile          docker image build information
+composer.json       application packages
+codeception.yml     test-suite configuration
+
+build/              files for Docker build tasks
+docs/               application documentation (markdown)
+runtime/            files generated during runtime
+src/                application source-code
+tests/              various tests for objects that are common among applications
+vendor/             dependent 3rd-party packages
+```
+
+### src/
+
+```
 yii                 application CLI
+
 assets/             application assets such as JavaScript and CSS
 .env, config/       application configuration
 controllers/        web-controller classes
@@ -97,21 +84,6 @@ modules/            application modules (eg. admin)
 migrations/         database migrations
 views/              view files for the application
 web/                document root with entry-script
-
-composer.json       application packages
-vendor/             dependent 3rd-party packages
-
-codeception.yml     test-suite configuration
-tests/              various tests for objects that are common among applications
-
-data/               application storage
-runtime/            files generated during runtime
-
-Dockerfile          docker image build information
-docker-compose.yml  docker container setup
-
-Vagrantfile         Vagrant (docker) container setup
-Vagrantfile-dock..  Vagrant (docker) host VM
 ```
 
 Branches

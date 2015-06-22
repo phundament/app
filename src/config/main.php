@@ -30,6 +30,19 @@ $common = [
             'charset'     => 'utf8',
             'tablePrefix' => getenv('DATABASE_TABLE_PREFIX'),
         ],
+        'i18n'         => [
+            'translations' => [
+                '*' => [
+                    'class'              => 'yii\i18n\DbMessageSource',
+                    'db'                 => 'db',
+                    'sourceLanguage'     => 'xx', // Developer language
+                    'sourceMessageTable' => 'language_source',
+                    'messageTable'       => 'language_translate',
+                    'cachingDuration'    => 86400,
+                    'enableCaching'      => YII_DEBUG ? false : true,
+                ],
+            ],
+        ],
         'mailer'       => [
             'class'            => 'yii\swiftmailer\Mailer',
             //'viewPath'         => '@common/mail',
@@ -43,7 +56,8 @@ $common = [
             'showScriptName'  => getenv('YII_ENV_TEST') ? true : false,
             'baseUrl'         => '/',
             'rules'           => [
-                'docs/<file:[a-zA-Z0-9_\-\.]*>' => 'docs',
+                'docs/<file:[a-zA-Z0-9_\-\.]+>' => 'docs',
+                #'docs' => 'docs/default/index',
             ],
         ],
         'view'         => [
@@ -68,11 +82,13 @@ $common = [
             ]
         ],
         'docs'    => [
-            'class'  => \schmunk42\markdocs\Module::className(),
+            'class'  => 'schmunk42\markdocs\Module',
             'layout' => '@admin-views/layouts/main',
+            'markdownUrl' => '@app/../docs',
+            'forkUrl' => false
         ],
         'pages' => [
-            'class'  => \dmstr\modules\pages\Module::className(),
+            'class'  => 'dmstr\modules\pages\Module',
             'layout' => '@admin-views/layouts/main',
             'params' => [
                 'availableViews' => [
@@ -110,6 +126,17 @@ $common = [
         'treemanager' => [
             'class'  => '\kartik\tree\Module',
             'layout' => '@admin-views/layouts/main',
+            'treeViewSettings' => [
+                'nodeView'      => '@vendor/dmstr/yii2-pages-module/views/treeview/_form',
+                'nodeAddlViews' => [
+                    \kartik\tree\Module::VIEW_PART_1 => '',
+                    \kartik\tree\Module::VIEW_PART_2 => '',
+                    \kartik\tree\Module::VIEW_PART_3 => '',
+                    \kartik\tree\Module::VIEW_PART_4 => '',
+                    \kartik\tree\Module::VIEW_PART_5 => '',
+                ],
+                'fontAwesome'   => true
+            ],
         ],
     ],
     'params'      => [
@@ -119,6 +146,7 @@ $common = [
         'yii.migrations' => [
             '@yii/rbac/migrations',
             '@dektrium/user/migrations',
+            '@vendor/lajax/yii2-translate-manager/migrations',
         ]
     ]
 
@@ -127,6 +155,9 @@ $common = [
 
 $web = [
     'components' => [
+        'errorHandler' => [
+            'errorAction' => 'site/error',
+        ],
         // Logging
         'log'     => [
             'targets' => [
@@ -192,7 +223,7 @@ if (php_sapi_name() == 'cli') {
     $config = \yii\helpers\ArrayHelper::merge($common, $web);
 }
 
-if (YII_ENV_DEV) {
+if (YII_ENV_DEV || YII_ENV_TEST) {
     // configuration adjustments for 'dev' environment
     $config['bootstrap'][]    = 'gii';
     $config['modules']['gii'] = [

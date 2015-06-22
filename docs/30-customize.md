@@ -9,7 +9,7 @@ Frontend Assets
 The asset package in the application is prepared for customization of *Bootstap 3* with LESS files, but you can use
 any CSS-Framework you like in the application frontend.
 
-Configure your favourite less compiler to create the `app.css` file in `assets/web/css` from `assets/less`.
+The Phundament Docker images, come with a build in `lessc` binary to create the CSS files by the asset command or on-the-fly.
 
 > You may change this setup with to use your preferred CSS and JS frameworks.
 

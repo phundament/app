@@ -1,3 +1,5 @@
+@import "/app/vendor/bower/bootstrap/less/bootstrap.less";
+
 html,
 body {
     height: 100%;
@@ -94,4 +96,35 @@ a.desc:after {
     border-left: 3px solid #eed3d7;
     padding: 10px 20px;
     margin: 0 0 15px 0;
+}
+
+.docs {
+    .toc {
+        h1 {
+            .lead;
+            margin-top: 0;
+        }
+        h2 {
+            font-size: 1em;
+            font-weight: bold;
+            margin-top: 0;
+        }
+        ul {
+            .list-group;
+            margin-bottom: 0.5em;
+        }
+        &> ul > li {
+            .list-group-item;
+        }
+        ul li ul li {
+            margin-left: 1em;
+        }
+    }
+    .file-content {
+        font-size: 1.2em;
+        line-height: 1.6em;
+        blockquote {
+            background: lighten(@gray-lighter,3%);
+        }
+    }
 }

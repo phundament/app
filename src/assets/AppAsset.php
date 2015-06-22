@@ -16,8 +16,6 @@ use yii\web\AssetBundle;
  */
 class AppAsset extends AssetBundle
 {
-    //public $basePath = '@webroot';
-    //public $baseUrl = '@web';
     public $sourcePath = '@app/assets/web';
 
     public $css = [
@@ -27,14 +25,14 @@ class AppAsset extends AssetBundle
         'js/app.js',
     ];
     public $depends = [
-        // we recompile the less files from 'yii\bootstrap\BootstrapAsset' and include the css in app.css,
-        // set bundle to false in assetManager config
         'yii\web\YiiAsset',
     ];
 
     public function init()
     {
         parent::init();
+        // we recompile the less files from 'yii\bootstrap\BootstrapAsset' and include the css in app.css
+        // therefore we set bundle to false
         \Yii::$app->getAssetManager()->bundles['yii\bootstrap\BootstrapAsset'] = false;
 
         // /!\ CSS/LESS development only setting /!\

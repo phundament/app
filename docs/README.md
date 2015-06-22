@@ -1,43 +1,45 @@
 Phundament Guide
 ================
 
-Version 4.0-dev
+Version 4.0-rc3
 
 Getting Started
 ---------------
 
 - [About](10-about.md)
+- [Basic concepts](12-basic-concepts.md)
 - [Installation](20-installation.md)
 - [Configuration](21-configuration.md)
+- [Project git repository](22-git-repository.md)
 
-Customize
----------
+Develop & Customize
+-------------------
 
-- [Customize Application](30-customize.md)
-- [Manage Extensions](31-extension-management.md)
-
-Develop
--------
-
-- [Code Generation](41-code-generation.md)
+- [Views & assets](30-customize.md)
+- [Packages](31-extension-management.md)
+- [Code generation](41-code-generation.md)
 - [Testing](42-testing.md)
-- [Extension Development](44-extension-development.md)
+- [Extension development](44-extension-development.md)
 
 Deploy
 ------
 
-- [Docker basics](51-docker.md)
-- [docker-compose](51-fig.md)
-- [Docker & Vagrant](51-vagrant-docker.md)
-- [Puppet & Vagrant VMs](51-vagrant.md)
-- [Puppet & Vagrant cloud deployment](51-vagrant-cloud.md)
-- [PaaS deployment](52-paas.md)
+- [Instant deployments](50-deploy.md)
+- [Docker-stacks](51-docker-stacks.md)
+
+Advanced Topics
+---------------
+
+- [Coding conventions](61-coding-conventions.md)
+- [PaaS deployment](advanced/52-paas.md)
+- Vagrant
+  - [Docker & Vagrant](advanced/51-vagrant-docker.md)
+  - [Puppet & Vagrant VMs](advanced/51-vagrant.md)
+  - [Puppet & Vagrant cloud deployment](advanced/51-vagrant-cloud.md)
+
 
 Support
 -------
 
 - [Online Resources](70-links.md)
 
----
-
-- *tbd* [Upgrading from 3.x](11-upgrading.md)

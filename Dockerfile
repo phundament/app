@@ -1,4 +1,4 @@
-FROM phundament/php:5.6-cli-4.0.0-rc1-dev
+FROM phundament/php:5.6-cli-4.0.0-rc3-dev
 
 # Clean eventually orphaned files and remove installation source
 RUN rm -rf /app/src /app/web /app-src

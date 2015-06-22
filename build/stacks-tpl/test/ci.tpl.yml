@@ -16,9 +16,13 @@ appcli:
     - appsrc
   .volumes: CLEAN
   volumes:
-      # Mount shared location for reports
+      # Mount tests and configuration into application, since they are not part of the image
       - '/Volumes/storage/runner-%RUNNER_ID%/builds/%PROJECT_DIR%/tests:/app/tests'
       - '/Volumes/storage/runner-%RUNNER_ID%/builds/%PROJECT_DIR%/codeception.yml:/app/codeception.yml'
+      # Mount shared location for reports
+      - '/Volumes/storage/_ci-reports/%PROJECT_DIR%/tests:/app/tests/codeception/output'
+      - '/Volumes/storage/_ci-reports/%PROJECT_DIR%/docs:/app/runtime/docs'
+
 appfpm:
   .volumes: CLEAN
   volumes_from:

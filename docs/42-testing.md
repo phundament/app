@@ -1,6 +1,8 @@
 Testing
 =======
 
+> **Heads up!** This section uses [doma](https://github.com/schmunk42/doma).
+
 ### Running in isolated Docker stacks
 
 Creating and running a test environment can be a cumbersome task, since you have to take care about several specific tasks, like executing your tests in a separate database. Therefore the Phundament 4 Docker images contain pre-installed Yii 2.0 Framework codeception test-suites for unit-, functional- and acceptance-testing.

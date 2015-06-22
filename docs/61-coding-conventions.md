@@ -1,5 +1,7 @@
 # Coding conventions
 
+> **Heads up!** This section is under development.
+
 - DO NOT repeat yourself
 - USE PSR-2
 
@@ -32,6 +34,7 @@
 
 - SHOULD use `Yii::info()` or `Yii::trace()`, NOT `Yii::getLogger->(..., ..., ...)`
 - SHOULD NOT use `application.language = null` with `codemix/yii2-localeurls`
+- SHOULD NOT use static `::className()` calls in application configuration  
 
 ### Giiant (Backend CRUD)
 

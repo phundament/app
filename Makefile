@@ -14,6 +14,9 @@ APP_FOLDERS ?= .
 TEST_OUTPUT_PATH	?= /app/tests/codeception/_output/latest
 TEST_VERBOSITY		?= -v
 
+# TODO: add vendor/schmunk42
+DOCS_API_PATHS 		?= src,vendor/schmunk42,vendor/dmstr,vendor/codemix
+
 default: help
 
 
@@ -40,6 +43,7 @@ STAGING:    ##@config configure application for local staging
 
 # Local development
 # -----------------
+.PHONY: dev migrate crud
 
 migrate: 	##@Project app/migrate (migrate)
 	docker-compose run app$(BUILDER_SERVICE_SUFFIX) ./yii migrate --migrationLookup=@app/migrations/data
@@ -52,6 +56,6 @@ crud: 		##@app build/crud.sh
 
 build-files: app-build-stacks app-update-version ##@dev dev shorthands
 
-dev: app-up app-open
+dev: app-setup app-up app-open
 
 reset: docker-kill docker-rm

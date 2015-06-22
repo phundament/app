@@ -1,70 +1,11 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "29bda113254455b2a065162317401726",
+    "hash": "7876f1ef3fbad933a7e7d3798f308a6a",
     "packages": [
-        {
-            "name": "2amigos/yii2-ckeditor-widget",
-            "version": "1.0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/2amigos/yii2-ckeditor-widget.git",
-                "reference": "023eb29fedfc3c3121c17688ed237e8688f5eb50"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/2amigos/yii2-ckeditor-widget/zipball/023eb29fedfc3c3121c17688ed237e8688f5eb50",
-                "reference": "023eb29fedfc3c3121c17688ed237e8688f5eb50",
-                "shasum": ""
-            },
-            "require": {
-                "yiisoft/yii2": "~2.0.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "4.*"
-            },
-            "type": "yii2-extension",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                },
-                "asset-installer-paths": {
-                    "bower-asset-library": "vendor/bower"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "dosamigos\\ckeditor\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "2amigOS! Consulting Group",
-                    "email": "hola@2amigos.us",
-                    "homepage": "http://2amigos.us",
-                    "role": "Developer"
-                }
-            ],
-            "description": "CKEditor widget for Yii2.",
-            "homepage": "http://yiiwheels.com/extension/ckeditor-widget",
-            "keywords": [
-                "2amigos",
-                "CKEditor",
-                "extension",
-                "widget",
-                "yii",
-                "yii 2",
-                "yii2"
-            ],
-            "time": "2015-04-30 12:22:25"
-        },
         {
             "name": "almasaeed2010/adminlte",
             "version": "v2.1.2",
@@ -153,6 +94,43 @@
                 "responsive",
                 "web"
             ]
+        },
+        {
+            "name": "bower-asset/fontawesome",
+            "version": "v4.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FortAwesome/Font-Awesome.git",
+                "reference": "41b9ed01103e6820c3cb043ba7ddab30ecd3f4c0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/41b9ed01103e6820c3cb043ba7ddab30ecd3f4c0",
+                "reference": "41b9ed01103e6820c3cb043ba7ddab30ecd3f4c0",
+                "shasum": ""
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": [
+                    "./css/font-awesome.css",
+                    "./fonts/*"
+                ],
+                "bower-asset-ignore": [
+                    "*/.*",
+                    "*.json",
+                    "src",
+                    "*.yml",
+                    "Gemfile",
+                    "Gemfile.lock",
+                    "*.md"
+                ]
+            },
+            "license": [
+                "OFL-1.1",
+                "MIT",
+                "CC-BY-3.0"
+            ],
+            "description": "Font Awesome"
         },
         {
             "name": "bower-asset/jquery",
@@ -312,43 +290,6 @@
                 ]
             },
             "description": "A web-based tool to view, edit and format JSON"
-        },
-        {
-            "name": "bower-asset/moment",
-            "version": "2.10.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/moment/moment.git",
-                "reference": "25cc720fbaab7323a1016cd0beb6a36e349c41be"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/moment/moment/zipball/25cc720fbaab7323a1016cd0beb6a36e349c41be",
-                "reference": "25cc720fbaab7323a1016cd0beb6a36e349c41be",
-                "shasum": ""
-            },
-            "type": "bower-asset-library",
-            "extra": {
-                "bower-asset-main": "moment.js",
-                "bower-asset-ignore": [
-                    "**/.*",
-                    "benchmarks",
-                    "bower_components",
-                    "meteor",
-                    "node_modules",
-                    "scripts",
-                    "tasks",
-                    "test",
-                    "component.json",
-                    "composer.json",
-                    "CONTRIBUTING.md",
-                    "ender.js",
-                    "Gruntfile.js",
-                    "Moment.js.nuspec",
-                    "package.js",
-                    "package.json"
-                ]
-            }
         },
         {
             "name": "bower-asset/punycode",
@@ -557,16 +498,16 @@
         },
         {
             "name": "codemix/yii2-streamlog",
-            "version": "0.0.1",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/codemix/yii2-streamlog.git",
-                "reference": "08a5b0716ab07a63d5eb8299db99dc75ea250ef1"
+                "reference": "8a0f03900887651e00a4f26cf7c3a12043bc2784"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codemix/yii2-streamlog/zipball/08a5b0716ab07a63d5eb8299db99dc75ea250ef1",
-                "reference": "08a5b0716ab07a63d5eb8299db99dc75ea250ef1",
+                "url": "https://api.github.com/repos/codemix/yii2-streamlog/zipball/8a0f03900887651e00a4f26cf7c3a12043bc2784",
+                "reference": "8a0f03900887651e00a4f26cf7c3a12043bc2784",
                 "shasum": ""
             },
             "type": "library",
@@ -592,7 +533,7 @@
                 "stream",
                 "yii2"
             ],
-            "time": "2015-03-05 09:58:16"
+            "time": "2015-04-28 08:24:33"
         },
         {
             "name": "creocoder/yii2-nested-sets",
@@ -845,16 +786,16 @@
         },
         {
             "name": "dmstr/yii2-adminlte-asset",
-            "version": "2.1.1",
+            "version": "2.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-adminlte-asset.git",
-                "reference": "49c69eab422ada4295ece97279e5dd50e37d34be"
+                "reference": "119948bcc25a1091f1e25e8bedeefb6e04652954"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-adminlte-asset/zipball/49c69eab422ada4295ece97279e5dd50e37d34be",
-                "reference": "49c69eab422ada4295ece97279e5dd50e37d34be",
+                "url": "https://api.github.com/repos/dmstr/yii2-adminlte-asset/zipball/119948bcc25a1091f1e25e8bedeefb6e04652954",
+                "reference": "119948bcc25a1091f1e25e8bedeefb6e04652954",
                 "shasum": ""
             },
             "require": {
@@ -895,20 +836,20 @@
                 "extension",
                 "yii2"
             ],
-            "time": "2015-06-17 03:09:25"
+            "time": "2015-06-25 01:21:46"
         },
         {
             "name": "dmstr/yii2-app-command",
-            "version": "0.3.2",
+            "version": "0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-app-command.git",
-                "reference": "e59be03c88b748a372c92e6feb3ccf9ffb7f320f"
+                "reference": "f53e2156e4a600dc74590154791565bbe4877cea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-app-command/zipball/e59be03c88b748a372c92e6feb3ccf9ffb7f320f",
-                "reference": "e59be03c88b748a372c92e6feb3ccf9ffb7f320f",
+                "url": "https://api.github.com/repos/dmstr/yii2-app-command/zipball/f53e2156e4a600dc74590154791565bbe4877cea",
+                "reference": "f53e2156e4a600dc74590154791565bbe4877cea",
                 "shasum": ""
             },
             "require": {
@@ -938,7 +879,7 @@
                 "management",
                 "yii2"
             ],
-            "time": "2015-05-18 16:09:57"
+            "time": "2015-06-11 17:29:13"
         },
         {
             "name": "dmstr/yii2-application-metadata",
@@ -1027,32 +968,22 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-cms-metapackage.git",
-                "reference": "ba6a55bd0de15b5aaf33fbb099a705f6236146b0"
+                "reference": "ac9e80c76debb43a6cc620d69c0b20853a67ba0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-cms-metapackage/zipball/ba6a55bd0de15b5aaf33fbb099a705f6236146b0",
-                "reference": "ba6a55bd0de15b5aaf33fbb099a705f6236146b0",
+                "url": "https://api.github.com/repos/dmstr/yii2-cms-metapackage/zipball/ac9e80c76debb43a6cc620d69c0b20853a67ba0b",
+                "reference": "ac9e80c76debb43a6cc620d69c0b20853a67ba0b",
                 "shasum": ""
             },
             "require": {
-                "codemix/yii2-localeurls": "1.*",
-                "codemix/yii2-streamlog": "*",
                 "cybercog/yii2-google-analytics": "~0.2",
                 "dektrium/yii2-rbac": "*",
                 "dektrium/yii2-user": "0.9.*",
                 "dmstr/yii2-adminlte-asset": "2.*",
-                "dmstr/yii2-app-command": "^0.3.2",
-                "dmstr/yii2-application-metadata": "*",
-                "dmstr/yii2-bootstrap": "*",
-                "dmstr/yii2-db": "*",
-                "dmstr/yii2-migrate-command": "*",
-                "dmstr/yii2-news-module": "*",
+                "dmstr/yii2-libs-metapackage": "*",
                 "dmstr/yii2-pages-module": "*",
-                "lajax/yii2-translate-manager": "^1.4.7",
-                "sammaye/yii2-audittrail": "^0.3.0",
-                "schmunk42/retry": "*",
-                "yiisoft/yii2-swiftmailer": "2.*"
+                "lajax/yii2-translate-manager": "1.4.*"
             },
             "type": "library",
             "notification-url": "https://packagist.org/downloads/",
@@ -1066,7 +997,7 @@
                 }
             ],
             "description": "Content Management Extensions for Phundament 4 (Yii 2.0 Framework)",
-            "time": "2015-06-16 03:47:56"
+            "time": "2015-06-24 18:48:21"
         },
         {
             "name": "dmstr/yii2-db",
@@ -1106,6 +1037,87 @@
                 "yii2"
             ],
             "time": "2015-01-13 03:03:29"
+        },
+        {
+            "name": "dmstr/yii2-helpers",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dmstr/yii2-helpers.git",
+                "reference": "3375c3c1b0306e94c81c6e317f1d702bc38c11f4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dmstr/yii2-helpers/zipball/3375c3c1b0306e94c81c6e317f1d702bc38c11f4",
+                "reference": "3375c3c1b0306e94c81c6e317f1d702bc38c11f4",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "dmstr\\helpers\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sergej Kunz",
+                    "email": "s.kunz@herzogkommunikation.de"
+                }
+            ],
+            "description": "Yii2 Helpers",
+            "keywords": [
+                "extension",
+                "yii2"
+            ],
+            "time": "2015-06-23 15:07:07"
+        },
+        {
+            "name": "dmstr/yii2-libs-metapackage",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dmstr/yii2-libs-metapackage.git",
+                "reference": "3a7265b3acc64f571d39bfc205187f72a347eb2a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dmstr/yii2-libs-metapackage/zipball/3a7265b3acc64f571d39bfc205187f72a347eb2a",
+                "reference": "3a7265b3acc64f571d39bfc205187f72a347eb2a",
+                "shasum": ""
+            },
+            "require": {
+                "codemix/yii2-localeurls": "1.*",
+                "codemix/yii2-streamlog": "*",
+                "dmstr/yii2-app-command": "~0.3",
+                "dmstr/yii2-application-metadata": "*",
+                "dmstr/yii2-bootstrap": "*",
+                "dmstr/yii2-db": "*",
+                "dmstr/yii2-helpers": "*",
+                "dmstr/yii2-migrate-command": "*",
+                "sammaye/yii2-audittrail": "0.3.*",
+                "schmunk42/retry": "*",
+                "yiisoft/yii2-swiftmailer": "2.*"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Munk",
+                    "email": "tobias@diemeisterei.de"
+                }
+            ],
+            "description": "Core Library Extensions for Phundament 4 (Yii 2.0 Framework)",
+            "time": "2015-06-24 18:45:02"
         },
         {
             "name": "dmstr/yii2-migrate-command",
@@ -1148,72 +1160,24 @@
             "time": "2015-02-26 12:33:53"
         },
         {
-            "name": "dmstr/yii2-news-module",
-            "version": "0.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dmstr/yii2-news-module.git",
-                "reference": "a7afaf87bacc14d3e0131f8e78cad8f7580a3d44"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-news-module/zipball/a7afaf87bacc14d3e0131f8e78cad8f7580a3d44",
-                "reference": "a7afaf87bacc14d3e0131f8e78cad8f7580a3d44",
-                "shasum": ""
-            },
-            "require": {
-                "2amigos/yii2-ckeditor-widget": "*",
-                "dmstr/yii2-db": "*",
-                "dmstr/yii2-migrate-command": "*",
-                "yiisoft/yii2": "2.0.*",
-                "zhuravljov/yii2-datetime-widgets": "1.*"
-            },
-            "require-dev": {
-                "schmunk42/yii2-giiant": "dev-master"
-            },
-            "type": "yii2-module",
-            "autoload": {
-                "psr-4": {
-                    "dmstr\\modules\\news\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "d.letz",
-                    "email": "d.letz@herzogkommunikation.de"
-                }
-            ],
-            "description": "yii2 news module with text blocks image and video gallery, with yii2 moximanager",
-            "keywords": [
-                "module",
-                "news",
-                "yii2"
-            ],
-            "time": "2015-04-22 00:18:26"
-        },
-        {
             "name": "dmstr/yii2-pages-module",
-            "version": "0.1.8",
+            "version": "0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-pages-module.git",
-                "reference": "363b0490ba738affd1e6a703ac835db9afa006a0"
+                "reference": "6d1b064e07291ecd069e185061dfabe47950458b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-pages-module/zipball/363b0490ba738affd1e6a703ac835db9afa006a0",
-                "reference": "363b0490ba738affd1e6a703ac835db9afa006a0",
+                "url": "https://api.github.com/repos/dmstr/yii2-pages-module/zipball/6d1b064e07291ecd069e185061dfabe47950458b",
+                "reference": "6d1b064e07291ecd069e185061dfabe47950458b",
                 "shasum": ""
             },
             "require": {
                 "devgroup/yii2-jsoneditor": "1.0.*",
-                "kartik-v/yii2-tree-manager": "*",
-                "kartik-v/yii2-widget-select2": "*",
-                "rmrevin/yii2-fontawesome": "2.9.*",
+                "kartik-v/yii2-tree-manager": "~1.0.3",
+                "kartik-v/yii2-widget-select2": "^2.0.1",
+                "rmrevin/yii2-fontawesome": "~2.9",
                 "yiisoft/yii2": "2.0.*"
             },
             "type": "yii2-extension",
@@ -1246,7 +1210,7 @@
                 "navigation",
                 "yii2"
             ],
-            "time": "2015-06-09 21:17:33"
+            "time": "2015-06-25 01:24:47"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -1292,54 +1256,6 @@
                 "html"
             ],
             "time": "2013-11-30 08:25:19"
-        },
-        {
-            "name": "fortawesome/font-awesome",
-            "version": "v4.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/FortAwesome/Font-Awesome.git",
-                "reference": "41b9ed01103e6820c3cb043ba7ddab30ecd3f4c0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/41b9ed01103e6820c3cb043ba7ddab30ecd3f4c0",
-                "reference": "41b9ed01103e6820c3cb043ba7ddab30ecd3f4c0",
-                "shasum": ""
-            },
-            "require-dev": {
-                "jekyll": "1.0.2",
-                "lessc": "1.4.2"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.0.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "OFL-1.1",
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Dave Gandy",
-                    "email": "dave@fontawesome.io",
-                    "homepage": "http://twitter.com/davegandy",
-                    "role": "Developer"
-                }
-            ],
-            "description": "The iconic font and CSS framework",
-            "homepage": "http://fontawesome.io/",
-            "keywords": [
-                "FontAwesome",
-                "awesome",
-                "bootstrap",
-                "font",
-                "icon"
-            ],
-            "time": "2015-01-22 18:09:42"
         },
         {
             "name": "kartik-v/yii2-krajee-base",
@@ -1389,22 +1305,21 @@
         },
         {
             "name": "kartik-v/yii2-tree-manager",
-            "version": "v1.0.2",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-tree-manager.git",
-                "reference": "c0ac4bd5c3f7a7baecf335e03e36a76ddd401002"
+                "reference": "fd74335c0c82421fc550af1fed09b6872c3b1377"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-tree-manager/zipball/c0ac4bd5c3f7a7baecf335e03e36a76ddd401002",
-                "reference": "c0ac4bd5c3f7a7baecf335e03e36a76ddd401002",
+                "url": "https://api.github.com/repos/kartik-v/yii2-tree-manager/zipball/fd74335c0c82421fc550af1fed09b6872c3b1377",
+                "reference": "fd74335c0c82421fc550af1fed09b6872c3b1377",
                 "shasum": ""
             },
             "require": {
-                "creocoder/yii2-nested-sets": "*",
-                "kartik-v/yii2-krajee-base": "*",
-                "kartik-v/yii2-widget-activeform": "*"
+                "creocoder/yii2-nested-sets": "~0.9",
+                "kartik-v/yii2-widget-activeform": "~1.4"
             },
             "type": "yii2-extension",
             "autoload": {
@@ -1437,24 +1352,24 @@
                 "tree",
                 "treeview"
             ],
-            "time": "2015-05-22 13:06:31"
+            "time": "2015-06-22 20:01:08"
         },
         {
             "name": "kartik-v/yii2-widget-activeform",
-            "version": "v1.4.2",
+            "version": "v1.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-activeform.git",
-                "reference": "9666688fe5696bb7c43bf4de00d46caca418617c"
+                "reference": "4fec52f8549c23d8cda3e771d2bb6b082bb42e6b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-activeform/zipball/9666688fe5696bb7c43bf4de00d46caca418617c",
-                "reference": "9666688fe5696bb7c43bf4de00d46caca418617c",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-activeform/zipball/4fec52f8549c23d8cda3e771d2bb6b082bb42e6b",
+                "reference": "4fec52f8549c23d8cda3e771d2bb6b082bb42e6b",
                 "shasum": ""
             },
             "require": {
-                "kartik-v/yii2-krajee-base": "*"
+                "kartik-v/yii2-krajee-base": "~1.7"
             },
             "type": "yii2-extension",
             "autoload": {
@@ -1464,7 +1379,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "BSD 3-Clause"
+                "BSD-3-Clause"
             ],
             "authors": [
                 {
@@ -1484,24 +1399,24 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2015-05-10 19:44:05"
+            "time": "2015-06-17 17:44:34"
         },
         {
             "name": "kartik-v/yii2-widget-select2",
-            "version": "v2.0.0",
+            "version": "v2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-select2.git",
-                "reference": "b2a3981d3848c35a983bfcd57022cd18df40e418"
+                "reference": "d2d65a7e3b88b965f231a5949dc693807c03fff8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-select2/zipball/b2a3981d3848c35a983bfcd57022cd18df40e418",
-                "reference": "b2a3981d3848c35a983bfcd57022cd18df40e418",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-select2/zipball/d2d65a7e3b88b965f231a5949dc693807c03fff8",
+                "reference": "d2d65a7e3b88b965f231a5949dc693807c03fff8",
                 "shasum": ""
             },
             "require": {
-                "kartik-v/yii2-krajee-base": "*"
+                "kartik-v/yii2-krajee-base": "~1.7"
             },
             "type": "yii2-extension",
             "autoload": {
@@ -1511,7 +1426,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "BSD 3-Clause"
+                "BSD-3-Clause"
             ],
             "authors": [
                 {
@@ -1532,7 +1447,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2015-05-09 08:06:45"
+            "time": "2015-06-17 17:16:38"
         },
         {
             "name": "lajax/yii2-translate-manager",
@@ -1652,24 +1567,30 @@
         },
         {
             "name": "rmrevin/yii2-fontawesome",
-            "version": "2.9.2",
+            "version": "2.10.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rmrevin/yii2-fontawesome.git",
-                "reference": "717747ffd1f5169e4217b3f17e407366b51d22ca"
+                "reference": "ce4dd62a048090f3d98822d4bc9401bfcdde1f98"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rmrevin/yii2-fontawesome/zipball/717747ffd1f5169e4217b3f17e407366b51d22ca",
-                "reference": "717747ffd1f5169e4217b3f17e407366b51d22ca",
+                "url": "https://api.github.com/repos/rmrevin/yii2-fontawesome/zipball/ce4dd62a048090f3d98822d4bc9401bfcdde1f98",
+                "reference": "ce4dd62a048090f3d98822d4bc9401bfcdde1f98",
                 "shasum": ""
             },
             "require": {
-                "fortawesome/font-awesome": "4.3.*",
+                "bower-asset/fontawesome": "4.3.*",
                 "php": ">=5.4.0",
                 "yiisoft/yii2": "2.0.*"
             },
             "type": "yii2-extension",
+            "extra": {
+                "asset-installer-paths": {
+                    "npm-asset-library": "vendor/npm",
+                    "bower-asset-library": "vendor/bower"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "rmrevin\\yii\\fontawesome\\": ""
@@ -1694,7 +1615,7 @@
                 "font",
                 "yii"
             ],
-            "time": "2015-04-28 20:15:13"
+            "time": "2015-06-23 13:06:14"
         },
         {
             "name": "sammaye/yii2-audittrail",
@@ -1786,6 +1707,46 @@
                 "failure"
             ],
             "time": "2014-09-20 11:10:31"
+        },
+        {
+            "name": "schmunk42/yii2-markdocs-module",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmunk42/yii2-markdocs-module.git",
+                "reference": "9154df1181088981d9fd3eeac90da95b0a3c9f7d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schmunk42/yii2-markdocs-module/zipball/9154df1181088981d9fd3eeac90da95b0a3c9f7d",
+                "reference": "9154df1181088981d9fd3eeac90da95b0a3c9f7d",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "schmunk42\\markdocs\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Munk",
+                    "email": "schmunk@usrbin.de"
+                }
+            ],
+            "description": "Renders markdown files from local folder as views",
+            "keywords": [
+                "extension",
+                "yii2"
+            ],
+            "time": "2015-06-25 01:20:28"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -2218,52 +2179,6 @@
                 "yii2"
             ],
             "time": "2015-05-10 22:12:32"
-        },
-        {
-            "name": "zhuravljov/yii2-datetime-widgets",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/zhuravljov/yii2-datetime-widgets.git",
-                "reference": "b91d58ce5eff0101433c0a3d7a85573a914dd9fd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/zhuravljov/yii2-datetime-widgets/zipball/b91d58ce5eff0101433c0a3d7a85573a914dd9fd",
-                "reference": "b91d58ce5eff0101433c0a3d7a85573a914dd9fd",
-                "shasum": ""
-            },
-            "require": {
-                "bower-asset/moment": "2.*",
-                "yiisoft/yii2": "*"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "zhuravljov\\widgets\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Roman Zhuravlev",
-                    "email": "zhuravljov@gmail.com"
-                }
-            ],
-            "description": "Datetime widgets for Yii2.",
-            "homepage": "https://github.com/zhuravljov/yii2-datetime-widgets",
-            "keywords": [
-                "DateTimePicker",
-                "datepicker",
-                "daterangepicker",
-                "extension",
-                "widget",
-                "yii"
-            ],
-            "time": "2015-04-09 11:50:04"
         }
     ],
     "packages-dev": [
@@ -2854,49 +2769,6 @@
             "time": "2015-06-01 20:50:25"
         },
         {
-            "name": "schmunk42/yii2-markdocs-module",
-            "version": "0.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/schmunk42/yii2-markdocs-module.git",
-                "reference": "bb2d65bc83a43fcc5a5238561255ca920d3a035d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii2-markdocs-module/zipball/bb2d65bc83a43fcc5a5238561255ca920d3a035d",
-                "reference": "bb2d65bc83a43fcc5a5238561255ca920d3a035d",
-                "shasum": ""
-            },
-            "require": {
-                "yiisoft/yii2": "*"
-            },
-            "type": "yii2-extension",
-            "extra": {
-                "bootstrap": "schmunk42\\markdocs\\Bootstrap"
-            },
-            "autoload": {
-                "psr-4": {
-                    "schmunk42\\markdocs\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Tobias Munk",
-                    "email": "schmunk@usrbin.de"
-                }
-            ],
-            "description": "Renders markdown files from local folder as views",
-            "keywords": [
-                "extension",
-                "yii2"
-            ],
-            "time": "2015-01-26 18:38:05"
-        },
-        {
             "name": "sebastian/diff",
             "version": "1.3.0",
             "source": {
@@ -2950,16 +2822,16 @@
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "2.3.2",
+            "version": "2.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "e96d8579fbed0c95ecf2a0501ec4f307a4aa6404"
+                "reference": "c1a26c729508f73560c1a4f767f60b8ab6b4a666"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/e96d8579fbed0c95ecf2a0501ec4f307a4aa6404",
-                "reference": "e96d8579fbed0c95ecf2a0501ec4f307a4aa6404",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/c1a26c729508f73560c1a4f767f60b8ab6b4a666",
+                "reference": "c1a26c729508f73560c1a4f767f60b8ab6b4a666",
                 "shasum": ""
             },
             "require": {
@@ -3020,7 +2892,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2015-04-28 23:28:20"
+            "time": "2015-06-24 03:16:23"
         },
         {
             "name": "symfony/console",
@@ -3709,7 +3581,9 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "dmstr/yii2-cms-metapackage": 20,
+        "schmunk42/yii2-markdocs-module": 20,
         "dmstr/yii2-cms-dev-metapackage": 20,
+        "dmstr/yii2-libs-metapackage": 20,
         "dmstr/yii2-yaml-converter-command": 20,
         "yiisoft/yii2-debug": 0
     },

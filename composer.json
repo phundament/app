@@ -32,12 +32,14 @@
   "minimum-stability": "stable",
   "require": {
     "dmstr/yii2-cms-metapackage": "dev-master",
+    "schmunk42/yii2-markdocs-module": "dev-master",
     "vlucas/phpdotenv": "2.*",
     "yiisoft/yii2": "2.0.*",
     "yiisoft/yii2-composer": "2.0.*"
   },
   "require-dev": {
     "dmstr/yii2-cms-dev-metapackage": "dev-master",
+    "dmstr/yii2-libs-metapackage": "dev-master",
     "dmstr/yii2-yaml-converter-command": "dev-master",
     "yiisoft/yii2-debug": "@stable"
   },

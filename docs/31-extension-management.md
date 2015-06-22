@@ -1,5 +1,5 @@
-Extensions
-==========
+Packages (Extensions)
+=====================
 
 It is very easy to extend a Phundament-based application with existing composer packages. You can integrate any Yii2 
 extension or PHP library into Phundament 4.
@@ -23,7 +23,9 @@ Installing packages
 To install an extension simply require it in your `composer.json` with the following command
 
     composer require vendor/package
-    
+
+
+
 > Make sure to commit your `composer.lock` file, so your co-developers get the exact same version.     
   
 Configuring packages

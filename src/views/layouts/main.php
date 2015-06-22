@@ -27,11 +27,18 @@ AppAsset::register($this);
     <?php
     NavBar::begin(
         [
-            'brandLabel' => getenv('APP_ID'),
+            'brandLabel' => getenv('APP_NAME'),
             'brandUrl'   => Yii::$app->homeUrl,
             'options'    => [
                 'class' => 'navbar navbar-fixed-top navbar-bold',
             ],
+        ]
+    );
+    echo Nav::widget(
+        [
+            'options'      => ['class' => 'navbar-nav'],
+            'encodeLabels' => false,
+            'items'        => \dmstr\modules\pages\models\Tree::getMenuItems('root_'.Yii::$app->language),
         ]
     );
     $menuItems = [
@@ -75,6 +82,7 @@ AppAsset::register($this);
     );
     NavBar::end();
     ?>
+
     <div class="container">
         <?=
         Breadcrumbs::widget(
@@ -83,7 +91,9 @@ AppAsset::register($this);
             ]
         ) ?>
     </div>
+
     <?= Alert::widget() ?>
+
     <?= $content ?>
 </div>
 
