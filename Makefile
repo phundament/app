@@ -22,7 +22,7 @@ default: help
 
 # Templates
 # ---------
-
+DOMA_DIR = build/doma-0.8.1
 include $(DOMA_DIR)/phundament/4.0/Makefile
 
 
@@ -33,7 +33,7 @@ include $(DOMA_DIR)/phundament/4.0/Makefile
 TEST:		##@config configure application for local testing
 	$(eval COMPOSE_FILE := build/stacks-gen/test.yml)
 
-CI:		##@config configure application for local staging
+CI:		##@config configure application for continuous integration server
 	$(eval BUILDER_SERVICE_SUFFIX := builder)
 	$(eval COMPOSE_FILE := build/stacks-gen/test-ci.yml)
 
@@ -45,10 +45,10 @@ STAGING:    ##@config configure application for local staging
 # -----------------
 .PHONY: dev migrate crud
 
-migrate: 	##@Project app/migrate (migrate)
+migrate: 	##@Project app/migrate (database migrations with test data)
 	docker-compose run app$(BUILDER_SERVICE_SUFFIX) ./yii migrate --migrationLookup=@app/migrations/data
 
-user: 		##@Project app/migrate (migrate)
+user: 		##@Project app/setup-admin-user (dektrium/user)
 	docker-compose run app$(BUILDER_SERVICE_SUFFIX) ./yii app/setup-admin-user
 
 crud: 		##@app build/crud.sh

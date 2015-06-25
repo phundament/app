@@ -786,16 +786,16 @@
         },
         {
             "name": "dmstr/yii2-adminlte-asset",
-            "version": "2.1.2",
+            "version": "2.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-adminlte-asset.git",
-                "reference": "119948bcc25a1091f1e25e8bedeefb6e04652954"
+                "reference": "c5d2ea94209a2b087348ea9ee8fda11eedf943b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-adminlte-asset/zipball/119948bcc25a1091f1e25e8bedeefb6e04652954",
-                "reference": "119948bcc25a1091f1e25e8bedeefb6e04652954",
+                "url": "https://api.github.com/repos/dmstr/yii2-adminlte-asset/zipball/c5d2ea94209a2b087348ea9ee8fda11eedf943b6",
+                "reference": "c5d2ea94209a2b087348ea9ee8fda11eedf943b6",
                 "shasum": ""
             },
             "require": {
@@ -836,20 +836,20 @@
                 "extension",
                 "yii2"
             ],
-            "time": "2015-06-25 01:21:46"
+            "time": "2015-06-25 01:41:38"
         },
         {
             "name": "dmstr/yii2-app-command",
-            "version": "0.4.0",
+            "version": "0.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-app-command.git",
-                "reference": "f53e2156e4a600dc74590154791565bbe4877cea"
+                "reference": "6bd43156fcf75c6c87080f48f10429215ee745f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-app-command/zipball/f53e2156e4a600dc74590154791565bbe4877cea",
-                "reference": "f53e2156e4a600dc74590154791565bbe4877cea",
+                "url": "https://api.github.com/repos/dmstr/yii2-app-command/zipball/6bd43156fcf75c6c87080f48f10429215ee745f1",
+                "reference": "6bd43156fcf75c6c87080f48f10429215ee745f1",
                 "shasum": ""
             },
             "require": {
@@ -879,7 +879,7 @@
                 "management",
                 "yii2"
             ],
-            "time": "2015-06-11 17:29:13"
+            "time": "2015-06-16 01:57:22"
         },
         {
             "name": "dmstr/yii2-application-metadata",
