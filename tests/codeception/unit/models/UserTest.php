@@ -6,6 +6,9 @@ use yii\codeception\TestCase;
 
 class UserTest extends TestCase
 {
+
+    public $appConfig = '@tests/codeception/_config/unit.php';
+
     protected function setUp()
     {
         parent::setUp();

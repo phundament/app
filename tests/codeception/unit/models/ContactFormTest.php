@@ -10,6 +10,8 @@ class ContactFormTest extends TestCase
 {
     use Specify;
 
+    public $appConfig = '@tests/codeception/_config/unit.php';
+
     protected function setUp()
     {
         parent::setUp();
