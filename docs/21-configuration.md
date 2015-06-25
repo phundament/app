@@ -1,6 +1,8 @@
 Configuration
 =============
 
+## Environment & application
+
 The Phundament config structure is straight forward, there are just two config files for an application:
 
  - [`.env`](https://github.com/phundament/app/blob/master/.env-dist) - environment dependend configuration
@@ -24,6 +26,18 @@ From highest to lowest priority. ENV variable are immutable by default, so if a 
 > together, ENV variables are immutable by default.
 
 
+## Database migrations
+
+Lookup paths for migrations can be defined in application configuration, for details see [dmstr/yii2-migrate-command](https://github.com/dmstr/yii2-migrate-command/blob/master/README.md).
+
+    'params'      => [
+        'yii.migrations' => [
+            '@yii/rbac/migrations',
+            '@dektrium/user/migrations',
+            '@vendor/lajax/yii2-translate-manager/migrations',
+            '@bedezign/yii2/audit/migrations'
+        ]
+    ]
  
 ---
 
