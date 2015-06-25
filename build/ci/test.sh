@@ -14,10 +14,6 @@ COMMIT_MESSAGE=$(git log -1 --pretty=%B)
 echo "Application Version ${APP_VERSION}"
 echo "${COMMIT_MESSAGE}"
 
-# Instant-doma (Makefile templates)
-# TODO: remove GIT_SSL_NO_VERIFY=1
-export GIT_SSL_NO_VERIFY=1; if [ -d doma ] ; then git -C doma pull ; else git clone https://github.com/schmunk42/doma.git doma ; fi ; export DOMA_DIR=`pwd`/doma
-
 # Persist vendor
 # Note: This does not work with `git clone` as default checkout in CI
 mkdir -p vendor && touch vendor/.gitkeep
