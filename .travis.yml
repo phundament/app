@@ -29,7 +29,7 @@ install:
   - composer install --dev --prefer-dist
 
 before_script:
-  - mkdir test/codeception/_output && chmod 777 test/codeception/_output
+  - mkdir -p tests/codeception/_output && chmod 777 tests/codeception/_output
   - sed -i.bak 's/localhost:80/localhost:8080/' tests/codeception/acceptance.suite.yml
   - php -S localhost:8080 -t web > /dev/null 2>&1 &
   - mysql -e 'create database p4_test;'
