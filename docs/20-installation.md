@@ -13,6 +13,10 @@ Requirements
 Clone the repository and go to the application directory
 
     git clone https://github.com/phundament/app
+    
+or [download](https://github.com/phundament/app/releases) 
+    
+ 
 
 Create environment configuration file
 
