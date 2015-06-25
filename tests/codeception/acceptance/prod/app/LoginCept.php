@@ -14,9 +14,9 @@ $loginPage->login('admin', 'admin');
 $I->makeScreenshot('login-success');
 
 $I->expectTo('see user info');
-$I->click('admin','.nav');
+$I->click('.nav #link-user-menu a');
 #$i->wait(1);
 
-$I->see('','#link-logout');
+$I->seeElement('#link-logout');
 $I->click('#link-logout');
 $I->makeScreenshot('logout-success');
