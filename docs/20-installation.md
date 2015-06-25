@@ -10,6 +10,17 @@ Requirements
 > Note: You can run Phundament also by installing it with [composer](http://getcomposer.org/doc/00-intro.md#installation-nix) or within a Vagrant VM. But we recommend docker, since it provides a consistent environment
 
 
+Clone the repository and go to the application directory
 
-Name directory like your project, because of `docker-compose`
+    git clone https://github.com/phundament/app
 
+Create environment configuration file
+
+    cd app
+    cp .env-dist .env
+
+For the first initial setup run
+
+    make all
+    
+   
