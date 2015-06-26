@@ -123,18 +123,18 @@ $common = [
                 ]
             ]
         ],
+        'translatemanager' => [
+            'class'      => 'lajax\translatemanager\Module',
+            'root'       => '@app/views',
+            'layout'     => '@admin-views/layouts/main',
+            'allowedIPs' => ['*'],
+            'roles'      => ['admin', 'translate-manager'],
+        ],
         'treemanager' => [
             'class'  => '\kartik\tree\Module',
             'layout' => '@admin-views/layouts/main',
             'treeViewSettings' => [
                 'nodeView'      => '@vendor/dmstr/yii2-pages-module/views/treeview/_form',
-                'nodeAddlViews' => [
-                    \kartik\tree\Module::VIEW_PART_1 => '',
-                    \kartik\tree\Module::VIEW_PART_2 => '',
-                    \kartik\tree\Module::VIEW_PART_3 => '',
-                    \kartik\tree\Module::VIEW_PART_4 => '',
-                    \kartik\tree\Module::VIEW_PART_5 => '',
-                ],
                 'fontAwesome'   => true
             ],
         ],
@@ -161,7 +161,6 @@ $web = [
         // Logging
         'log'     => [
             'targets' => [
-                // writes to php-fpm output stream
                 // writes to php-fpm output stream
                 [
                     'class'   => 'codemix\streamlog\Target',
