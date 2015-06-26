@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7876f1ef3fbad933a7e7d3798f308a6a",
+    "hash": "1e1c6381bc888ab7470986682127de34",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -457,16 +457,16 @@
         },
         {
             "name": "codemix/yii2-localeurls",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/codemix/yii2-localeurls.git",
-                "reference": "13fb3c83a3475aea814ac070850adf5a53c6d3ca"
+                "reference": "e5eb02910d5be1c31670fe83399a44ac5fcb559a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codemix/yii2-localeurls/zipball/13fb3c83a3475aea814ac070850adf5a53c6d3ca",
-                "reference": "13fb3c83a3475aea814ac070850adf5a53c6d3ca",
+                "url": "https://api.github.com/repos/codemix/yii2-localeurls/zipball/e5eb02910d5be1c31670fe83399a44ac5fcb559a",
+                "reference": "e5eb02910d5be1c31670fe83399a44ac5fcb559a",
                 "shasum": ""
             },
             "require": {
@@ -494,7 +494,7 @@
                 "locale",
                 "yii2"
             ],
-            "time": "2015-05-03 09:23:22"
+            "time": "2015-06-25 09:46:29"
         },
         {
             "name": "codemix/yii2-streamlog",
@@ -840,7 +840,7 @@
         },
         {
             "name": "dmstr/yii2-app-command",
-            "version": "0.4.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-app-command.git",
@@ -964,7 +964,7 @@
         },
         {
             "name": "dmstr/yii2-cms-metapackage",
-            "version": "dev-master",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-cms-metapackage.git",
@@ -1084,24 +1084,23 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-libs-metapackage.git",
-                "reference": "3a7265b3acc64f571d39bfc205187f72a347eb2a"
+                "reference": "891cbd364f8ef5a6226361fe44edb9abf1fcb1f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-libs-metapackage/zipball/3a7265b3acc64f571d39bfc205187f72a347eb2a",
-                "reference": "3a7265b3acc64f571d39bfc205187f72a347eb2a",
+                "url": "https://api.github.com/repos/dmstr/yii2-libs-metapackage/zipball/891cbd364f8ef5a6226361fe44edb9abf1fcb1f0",
+                "reference": "891cbd364f8ef5a6226361fe44edb9abf1fcb1f0",
                 "shasum": ""
             },
             "require": {
                 "codemix/yii2-localeurls": "1.*",
                 "codemix/yii2-streamlog": "*",
-                "dmstr/yii2-app-command": "~0.3",
+                "dmstr/yii2-app-command": ">=0.3",
                 "dmstr/yii2-application-metadata": "*",
                 "dmstr/yii2-bootstrap": "*",
                 "dmstr/yii2-db": "*",
                 "dmstr/yii2-helpers": "*",
                 "dmstr/yii2-migrate-command": "*",
-                "sammaye/yii2-audittrail": "0.3.*",
                 "schmunk42/retry": "*",
                 "yiisoft/yii2-swiftmailer": "2.*"
             },
@@ -1117,7 +1116,7 @@
                 }
             ],
             "description": "Core Library Extensions for Phundament 4 (Yii 2.0 Framework)",
-            "time": "2015-06-24 18:45:02"
+            "time": "2015-06-25 23:51:38"
         },
         {
             "name": "dmstr/yii2-migrate-command",
@@ -1618,50 +1617,6 @@
             "time": "2015-06-23 13:06:14"
         },
         {
-            "name": "sammaye/yii2-audittrail",
-            "version": "0.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Sammaye/yii2-audittrail.git",
-                "reference": "eb78046b4dff6491302e652ae3effb19426ffcaf"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Sammaye/yii2-audittrail/zipball/eb78046b4dff6491302e652ae3effb19426ffcaf",
-                "reference": "eb78046b4dff6491302e652ae3effb19426ffcaf",
-                "shasum": ""
-            },
-            "require": {
-                "yiisoft/yii2": ">=2.0"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "sammaye\\audittrail\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD 3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Sammaye",
-                    "homepage": "http://sammaye.wordpress.com/"
-                }
-            ],
-            "description": "A port of audit trail",
-            "keywords": [
-                "Audit",
-                "audit trail",
-                "audittrail",
-                "extension",
-                "trail",
-                "yii2"
-            ],
-            "time": "2015-05-24 12:53:31"
-        },
-        {
             "name": "schmunk42/retry",
             "version": "0.0.1",
             "source": {
@@ -1707,46 +1662,6 @@
                 "failure"
             ],
             "time": "2014-09-20 11:10:31"
-        },
-        {
-            "name": "schmunk42/yii2-markdocs-module",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/schmunk42/yii2-markdocs-module.git",
-                "reference": "9154df1181088981d9fd3eeac90da95b0a3c9f7d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii2-markdocs-module/zipball/9154df1181088981d9fd3eeac90da95b0a3c9f7d",
-                "reference": "9154df1181088981d9fd3eeac90da95b0a3c9f7d",
-                "shasum": ""
-            },
-            "require": {
-                "yiisoft/yii2": "*"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "schmunk42\\markdocs\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Tobias Munk",
-                    "email": "schmunk@usrbin.de"
-                }
-            ],
-            "description": "Renders markdown files from local folder as views",
-            "keywords": [
-                "extension",
-                "yii2"
-            ],
-            "time": "2015-06-25 01:20:28"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -2769,6 +2684,46 @@
             "time": "2015-06-01 20:50:25"
         },
         {
+            "name": "schmunk42/yii2-markdocs-module",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmunk42/yii2-markdocs-module.git",
+                "reference": "9154df1181088981d9fd3eeac90da95b0a3c9f7d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schmunk42/yii2-markdocs-module/zipball/9154df1181088981d9fd3eeac90da95b0a3c9f7d",
+                "reference": "9154df1181088981d9fd3eeac90da95b0a3c9f7d",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "schmunk42\\markdocs\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Munk",
+                    "email": "schmunk@usrbin.de"
+                }
+            ],
+            "description": "Renders markdown files from local folder as views",
+            "keywords": [
+                "extension",
+                "yii2"
+            ],
+            "time": "2015-06-25 01:20:28"
+        },
+        {
             "name": "sebastian/diff",
             "version": "1.3.0",
             "source": {
@@ -3580,8 +3535,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "dmstr/yii2-cms-metapackage": 20,
-        "schmunk42/yii2-markdocs-module": 20,
+        "dmstr/yii2-app-command": 20,
         "dmstr/yii2-cms-dev-metapackage": 20,
         "dmstr/yii2-libs-metapackage": 20,
         "dmstr/yii2-yaml-converter-command": 20,

@@ -31,8 +31,8 @@
   },
   "minimum-stability": "stable",
   "require": {
-    "dmstr/yii2-cms-metapackage": "dev-master",
-    "schmunk42/yii2-markdocs-module": "dev-master",
+    "dmstr/yii2-app-command": "dev-master",
+    "dmstr/yii2-cms-metapackage": "*",
     "vlucas/phpdotenv": "2.*",
     "yiisoft/yii2": "2.0.*",
     "yiisoft/yii2-composer": "2.0.*"
