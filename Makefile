@@ -51,8 +51,12 @@ migrate: 	##@Project app/migrate (database migrations with test data)
 user: 		##@Project app/setup-admin-user (dektrium/user)
 	docker-compose run app$(BUILDER_SERVICE_SUFFIX) ./yii app/setup-admin-user
 
-crud: 		##@app build/crud.sh
+giiant: 	##@app build/crud.sh
 	docker-compose run app$(BUILDER_SERVICE_SUFFIX) build/app/crud.sh
+
+giiant-module:
+	docker-compose run app$(BUILDER_SERVICE_SUFFIX) ./yii gii/module --moduleID=$(MODULE_ID) --moduleClass=giiant\\$(MODULE_ID)\\Module
+
 
 build-files: app-build-stacks app-update-version ##@dev dev shorthands
 
