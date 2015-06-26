@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "hash": "1e1c6381bc888ab7470986682127de34",
@@ -844,12 +844,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-app-command.git",
-                "reference": "6bd43156fcf75c6c87080f48f10429215ee745f1"
+                "reference": "41f2815d94d739caa131125b28585e017ec34c3c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-app-command/zipball/6bd43156fcf75c6c87080f48f10429215ee745f1",
-                "reference": "6bd43156fcf75c6c87080f48f10429215ee745f1",
+                "url": "https://api.github.com/repos/dmstr/yii2-app-command/zipball/41f2815d94d739caa131125b28585e017ec34c3c",
+                "reference": "41f2815d94d739caa131125b28585e017ec34c3c",
                 "shasum": ""
             },
             "require": {
@@ -879,7 +879,7 @@
                 "management",
                 "yii2"
             ],
-            "time": "2015-06-16 01:57:22"
+            "time": "2015-06-26 19:11:50"
         },
         {
             "name": "dmstr/yii2-application-metadata",
