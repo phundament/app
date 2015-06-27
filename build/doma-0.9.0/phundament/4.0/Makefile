@@ -108,8 +108,7 @@ app-setup:	##@install prepare application runtime
 			/app/yii app/create-mysql-db && \
 			sleep 1 && \
 			/app/yii migrate --interactive=0 --migrationLookup=$(APP_MIGRATION_LOOKUP) && \
-			sleep 2 && \
-			/app/yii app/setup-admin-user admin --interactive=0 \
+			/app/yii app/setup-admin-user --interactive=0 \
 		'
 
 .PHONY: app-upgrade
@@ -166,7 +165,7 @@ _assets-pre:
 .PHONY: app-update-version
 app-update-version:		##@install 
 	docker-compose -p $(COMPOSE_PROJECT_NAME) -f $(COMPOSE_FILE) run --rm $(APP_NAME)$(BUILDER_SERVICE_SUFFIX) \
-		./yii app/version "/app/version"
+		./yii app/version /app/version
 
 # App running targets
 # -------------------
@@ -184,6 +183,10 @@ app-stop: docker-stop		##@running stop application
 
 .PHONY: app-open
 app-open: docker-open		##@running open application web service
+
+.PHONY: app-run
+app-run: SERVICE=$(APP_NAME)$(WORKER_SERVICE_SUFFIX)
+app-run: docker-run		##@running run an interactive shell in application container
 
 .PHONY: app-bash
 app-bash: docker-bash		##@running run an interactive shell in application container

@@ -188,6 +188,7 @@ Author
 ------
     
 - Tobias Munk (schmunk42)
+- Tim Gleue
 - [diemeisterei](http://diemeisterei.de)
 
 Links

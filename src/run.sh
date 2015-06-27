@@ -13,6 +13,6 @@ composer install
 mkdir -p /app/runtime/mail /app/runtime/cache /app/runtime/debug
 chmod -R 777 /app/web/assets /app/runtime/mail /app/runtime/cache /app/runtime/debug
 
-echo "\nApplication initialized"
+echo "\nApplication initialized. If you are running an interactive shell use <ctrl+c> to exit."
 
 tail -f /dev/null

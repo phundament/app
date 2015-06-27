@@ -116,7 +116,7 @@ docker-logs:
 	#
 	# Attaching to container log output
 	#
-	docker-compose -p $(COMPOSE_PROJECT_NAME) -f $(COMPOSE_FILE) logs $(service)
+	docker-compose -p $(COMPOSE_PROJECT_NAME) -f $(COMPOSE_FILE) logs $(SERVICE)
 
 .PHONY: docker-ps
 docker-ps:
@@ -135,7 +135,7 @@ docker-push: docker-login		##@docker Push project images to registry
 
 .PHONY: docker-rm
 docker-rm:
-	docker-compose -p $(COMPOSE_PROJECT_NAME) -f $(COMPOSE_FILE) rm --force $(service)
+	docker-compose -p $(COMPOSE_PROJECT_NAME) -f $(COMPOSE_FILE) rm --force $(SERVICE)
 
 .PHONY: docker-run
 docker-run:		##@docker /!\ EXPERIMENTAL /!\ Usage: make docker-run service=<service> cmd=<command> run a command off a project service
@@ -143,7 +143,7 @@ docker-run:		##@docker /!\ EXPERIMENTAL /!\ Usage: make docker-run service=<serv
 	# Runs an service in the project (for debugging only)
 	# Usage: make run service=<service> cmd=<command>
 	#
-	docker-compose -p $(COMPOSE_PROJECT_NAME) -f $(COMPOSE_FILE) run $(service) $(cmd)
+	docker-compose -p $(COMPOSE_PROJECT_NAME) -f $(COMPOSE_FILE) run $(SERVICE) $(CMD)
 
 .PHONY: docker-start _start
 docker-start: _start docker-ps		##@docker Start project stack and show processes

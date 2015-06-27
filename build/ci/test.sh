@@ -23,13 +23,18 @@ if [ -d vendor/.git ] ; then echo "Directory 'vendor' is already a git repositor
 cp .env-dist .env
 make CI docker-kill docker-rm
 make CI docker-pull
+
 make CI OPTS='--prefer-dist' app-install
 make CI app-build-assets docker-build
+
 make CI docker-up
-make CI app-setup
+# TODO: CI needs additional from run.sh and can not run: make CI app-setup
+make CI app-run CMD='sh src/run.sh'
 make CI app-clean-tests
+
 make CI OPTS='-v acceptance prod' app-run-tests
 make CI app-build-docs
+
 export BUILDER_SERVICE_SUFFIX=src
 make docker-tag
 make docker-push
