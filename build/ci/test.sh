@@ -29,7 +29,7 @@ make CI app-build-assets docker-build
 
 make CI docker-up
 # TODO: CI needs additional from run.sh and can not run: make CI app-setup
-make CI app-run CMD='sh src/run.sh'
+make CI app-run CMD='sh src/init.sh'
 make CI app-clean-tests
 
 make CI OPTS='-v acceptance prod' app-run-tests

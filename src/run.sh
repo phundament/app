@@ -1,18 +1,6 @@
 #!/usr/bin/env bash
 
-mkdir -p /app/web/assets /app/runtime
-chmod -R 777 /app/web/assets /app/runtime
+sh /app/src/init.sh
 
-composer install
-
-./yii app/create-mysql-db
-./yii migrate --interactive=0
-./yii app/setup-admin-user --interactive=0
-
-# TODO: temporary workaround, folders create by appcli, are not writable by appfpm
-mkdir -p /app/runtime/mail /app/runtime/cache /app/runtime/debug
-chmod -R 777 /app/web/assets /app/runtime/mail /app/runtime/cache /app/runtime/debug
-
-echo "\nApplication initialized. If you are running an interactive shell use <ctrl+c> to exit."
-
+echo "Container keep running to improve stack-stability, if you are running an interactive shell or one-off command use <ctrl+c> to exit."
 tail -f /dev/null
