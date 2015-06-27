@@ -143,7 +143,7 @@ docker-run:		##@docker /!\ EXPERIMENTAL /!\ Usage: make docker-run service=<serv
 	# Runs an service in the project (for debugging only)
 	# Usage: make run service=<service> cmd=<command>
 	#
-	docker-compose -p $(COMPOSE_PROJECT_NAME) -f $(COMPOSE_FILE) run $(SERVICE) $(CMD)
+	docker-compose -p $(COMPOSE_PROJECT_NAME) -f $(COMPOSE_FILE) run --rm $(SERVICE) $(CMD)
 
 .PHONY: docker-start _start
 docker-start: _start docker-ps		##@docker Start project stack and show processes
