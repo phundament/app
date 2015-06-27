@@ -8,10 +8,11 @@ Getting Started
 
 - [About](10-about.md)
 - [Basic concepts](12-basic-concepts.md)
+- [Requirements](19-requirements.md)
 - [Installation](20-installation.md)
 - [Configuration](21-configuration.md)
-- [Project git repository](22-git-repository.md)
-- [Stack control](23-doma-makefiles.md)
+- [Git repository](22-git-repository.md)
+- [Makefiles](23-doma-makefiles.md)
 
 Develop & Customize
 -------------------
@@ -28,15 +29,13 @@ Deploy
 - [Instant deployments](50-deploy.md)
 - [Docker-stacks](51-docker-stacks.md)
 
-Advanced Topics
----------------
+Additional Resources
+--------------------
 
-- [Coding conventions](61-coding-conventions.md)
-- [PaaS deployment](advanced/52-paas.md)
-- Vagrant
-  - [Docker & Vagrant](advanced/51-vagrant-docker.md)
-  - [Puppet & Vagrant VMs](advanced/51-vagrant.md)
-  - [Puppet & Vagrant cloud deployment](advanced/51-vagrant-cloud.md)
+- [Coding conventions](advanced/61-coding-conventions.md)
+- [Testing external extensions](advanced/42-testing-external-extensions.md)
+- [Advanced topics](https://github.com/phundament/app/tree/master/docs/advanced) PaaS deployment, Tutum, Appsdeck, Dokku
+- [Alteratives](https://github.com/phundament/app/tree/master/docs/alternatives) composer, Vagrant, localhost
 
 
 Support

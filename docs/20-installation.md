@@ -1,15 +1,7 @@
 Installation
 ============
 
-Requirements
-------------
-
- - Docker (boot2docker)
- - docker-compose
-
-
 > Note: You can run Phundament also by installing it with [composer](http://getcomposer.org/doc/00-intro.md#installation-nix) or within a Vagrant VM. But we recommend docker, since it provides a consistent environment
-
 
 Clone the repository and go to the application directory
 
@@ -23,7 +15,16 @@ Create environment configuration file
 For the first initial setup run
 
     make all
-    
+
+You can also chain single commands
+
+    make app-up app-setup app-open
    
+Or use configuration targets
    
-   make app-up app-setup app-open
+    make TEST docker-up
+
+    make STAGING docker-up
+
+
+

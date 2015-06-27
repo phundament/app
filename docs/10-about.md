@@ -52,40 +52,6 @@ Features
 
 
 
-Directory Structure
--------------------
-
-```
-Makefile            build and Docker stack control-targets
-docker-compose.yml  docker container setup
-Dockerfile          docker image build information
-composer.json       application packages
-codeception.yml     test-suite configuration
-
-build/              files for Docker build tasks
-docs/               application documentation (markdown)
-runtime/            files generated during runtime
-src/                application source-code
-tests/              various tests for objects that are common among applications
-vendor/             dependent 3rd-party packages
-```
-
-### src/
-
-```
-yii                 application CLI
-
-assets/             application assets such as JavaScript and CSS
-.env, config/       application configuration
-controllers/        web-controller classes
-commands/           console controller classes
-models/             application model classes
-modules/            application modules (eg. admin)
-migrations/         database migrations
-views/              view files for the application
-web/                document root with entry-script
-```
-
 Branches
 --------
 

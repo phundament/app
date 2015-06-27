@@ -1,8 +1,8 @@
 Code Generation
 ===============
 
-Backend CRUD module
--------------------
+Backend CMS/CRUD module
+-----------------------
 
 Phundament allows you to use you custom designed database schema as the base for CRUD admin interfaces.
 To kickstart you application backend create a new `crud` module with Yii's built-in tools
@@ -11,24 +11,38 @@ To kickstart you application backend create a new `crud` module with Yii's built
 > push it to your repo and install it with `composer require --prefer-source name/package`. 
 > Afterwards generate your code directly into `vendor/name/package` and use this repository for development.
 
+### Enter the CLI container
+
+For debugging and multiple one-off commands, you can enter the CLI container with
+
+```
+make app-bash
+```
+
+### Generate module code
+
+First, create the module with
+
 ```
 ./yii gii/module \
     --moduleID=crud \
     --moduleClass=app\\modules\\crud\\Module
 ```
 
-and add it to your application config
+and add it to your application config or `src/config/local.php`
 
 ```
-    'modules'    => [
-        'crud'    => [
-            'class'  => 'app\modules\crud\Module',
-            'layout' => '@admin-views/layouts/main',
-        ],
-    ]
+'modules'    => [
+    'crud'    => [
+        'class'  => 'app\modules\crud\Module',
+        'layout' => '@admin-views/layouts/main',
+    ],
+]
 ```
 
-create the backend CRUDs with gii and Giiant
+### Generate CMS/CRUD models, controllers and views 
+
+Create the backend CRUDs with gii and Giiant
 
 ```
 ./yii giiant-batch \
@@ -45,26 +59,13 @@ create the backend CRUDs with gii and Giiant
 
 See [Giiant documentation](https://github.com/schmunk42/yii2-giiant/blob/master/README.md) for an [example with Sakila demo database](https://github.com/schmunk42/yii2-giiant/blob/master/docs/generate-sakila-backend.md).
 
-I18N
-----
 
-Messages for Translations
-
-tbd
 
 HTML-Documentation
 ------------------
 
-Install required packages
+Generate application documentation
 
 ```
-./yii app/setup-docs
+make app-docs
 ```
-
-Generate application documentation to `docs-html`
-
-```
-./yii app/generate-docs
-```
-
-

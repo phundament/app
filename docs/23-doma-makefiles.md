@@ -13,6 +13,8 @@ To see which commands are available run
 
     make
 
+### Available tasks/targets
+
 Here's a full list of `doma-0.8.1` commands:
 
 ```
