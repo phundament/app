@@ -14,7 +14,7 @@ appcli:
     volumes:
         - '/Volumes/storage/runner-test-b/builds/project-21/tests:/app/tests'
         - '/Volumes/storage/runner-test-b/builds/project-21/codeception.yml:/app/codeception.yml'
-        - '/Volumes/storage/_ci-reports/project-21/tests:/app/tests/codeception/output'
+        - '/Volumes/storage/_ci-reports/project-21/tests:/app/tests/codeception/_output'
         - '/Volumes/storage/_ci-reports/project-21/docs:/app/runtime/docs'
     volumes_from:
         - appsrc

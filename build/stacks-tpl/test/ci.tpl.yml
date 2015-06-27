@@ -20,7 +20,7 @@ appcli:
       - '/Volumes/storage/runner-%RUNNER_ID%/builds/%PROJECT_DIR%/tests:/app/tests'
       - '/Volumes/storage/runner-%RUNNER_ID%/builds/%PROJECT_DIR%/codeception.yml:/app/codeception.yml'
       # Mount shared location for reports
-      - '/Volumes/storage/_ci-reports/%PROJECT_DIR%/tests:/app/tests/codeception/output'
+      - '/Volumes/storage/_ci-reports/%PROJECT_DIR%/tests:/app/tests/codeception/_output'
       - '/Volumes/storage/_ci-reports/%PROJECT_DIR%/docs:/app/runtime/docs'
 
 appfpm:
