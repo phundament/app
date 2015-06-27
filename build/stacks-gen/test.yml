@@ -1,6 +1,6 @@
 appcli:
     build: ../..
-    command: 'sh src/run.sh'
+    command: 'tail -f /dev/null'
     environment:
         YII_ENV: test
     links:

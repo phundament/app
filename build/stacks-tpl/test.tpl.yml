@@ -12,6 +12,7 @@ appnginx:
 
 appcli:
   build: %APP_DOCKERFILE_PATH%
+  command: 'tail -f /dev/null'
   environment:
     YII_ENV: test
   links:

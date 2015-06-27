@@ -4,7 +4,7 @@ appbuilder:
         - '/Volumes/storage/runner-test-b/builds/project-21:/app'
 appcli:
     build: ../..
-    command: 'sh src/run.sh'
+    command: 'tail -f /dev/null'
     environment:
         YII_ENV: test
     links:
