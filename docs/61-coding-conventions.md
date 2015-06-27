@@ -11,6 +11,7 @@
 
 ## Docker
 
+- host-volumes MUST NOT overlap
 - all containers SHOULD keep running, eg. data-containers with `tail -f /dev/null`
 
 ## Database (MySQL)

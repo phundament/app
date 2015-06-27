@@ -1,16 +1,19 @@
 Installation
 ============
 
+Requirements
+------------
 
-Setup a new project
---------------------
+ - Docker (boot2docker)
+ - docker-compose
+
+
+> Note: You can run Phundament also by installing it with [composer](http://getcomposer.org/doc/00-intro.md#installation-nix) or within a Vagrant VM. But we recommend docker, since it provides a consistent environment
+
 
 Clone the repository and go to the application directory
 
     git clone https://github.com/phundament/app
-
-or [download](https://github.com/phundament/app/releases) 
-    
 
 Create environment configuration file
 
@@ -20,24 +23,7 @@ Create environment configuration file
 For the first initial setup run
 
     make all
-
-On OS X your default browser should be opened at the end of the command.
-On other systems, check the console output for the `appnginx` port or use `make docker-ps` or `docker ps` to find the public port.
-
-
-Create a git repository
------------------------
-
-Initialize a repo for your new project
-
-    export REMOTE=git@github.com:phundament/playground.git
-
-    git init
-    git add .
-    git commit -m "inital commit"
-    git remote add origin $REMOTE
-    git push -u origin master 
-
----
-
-*Continue to [Configuration](21-configuration.md)*
+    
+   
+   
+   make app-up app-setup app-open

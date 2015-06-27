@@ -4,116 +4,32 @@ Basic concepts
 Layers
 ------
 
-- Application source-code
-- Containers
-- Services
-- (Stack-)Applications
-- Stacks
-- Docker
-- Virtual-Machine
-- Bare-Metal
+### PHP Application source-code
 
+The topmost layer of the stack is the application source-code in `/src`. The PHP application is build with
+Yii 2.0 Framework.
 
-`doma` Makefiles
-----------------
+### Containers
 
-Install [doma](https://github.com/schmunk42/doma).
+The application along with other services are run in containers, usually you have one container per service, but
+you can also scale PHP-FPM with a haproxy or run multiple workers off a CLI container.
 
-Run
+### Services
 
-    make
+Services are defined in `docker-compose.yml` they describe the stack components, such as the PHP application, databases,
+caches or testing containers.
 
-Doma provides a toolset of build and control targets for the Phundament application Docker stacks.
+### Sub-Stacks
 
-```
-Kraftbuch:app tobias$ make
-#
-# General targets
-#
+Pundament applications can be grouped into sub-stacks by a prefix. These groups can be controller with `doma` Makefile-templates.
+An example use-case for this would be two application tiers like an API and web-frontend.
 
-usage: make [target]
+### Stacks
 
-base:
-  help.....................Show this help
+Stacks and their service definitions can have different flavours. You may need slightly different setups in testing, staging
+and production environment. Phundament features as `yaml-converter-command`, which can create stack files from templates.  
 
-doma:
-  doma-version.............Show doma version
-  doma-selfupdate..........Update doma (only works with git repo)
+### Docker
 
-config:
-  NON-INTERACTIVE..........Do not ask for confirmation
-
-#
-# Docker specific targets
-#
-
-usage: make [config] [target]
-
-docker:
-  docker-open..............open application web service
-  docker-bash..............app=<prefix> Run a bash in builder container of
-  docker-build.............Build images for all services
-  docker-images............Show images with project and registry name prefix
-  docker-kill..............Kill all project services
-  docker-push..............Push project images to registry
-  docker-run.............../!\ EXPERIMENTAL /!\ Usage: make docker-run service=<service> cmd=<command> run a command off a project service
-  docker-start.............Start project stack and show processes
-  docker-stop..............Stop project stack
-  docker-tag...............Tag images for registry, if build and tests have been passed
-  docker-up................Bring up all containers in stack
-
-#
-# App specific targets
-#
-
-usage: make [config] [target]
-
-testing:
-  app-clean-tests..........clean up codeception test output
-  app-build-tests..........build codeception tests
-  app-run-tests............test application; OPTS='-v acceptance prod'
-
-app:
-  crud.....................build/crud.sh
-  app-up...................Bring app APP_NAME up
-
-dev:
-  build-files..............dev shorthands
-
-status:
-  app-check................project integrity check
-  app-info.................project info
-  app-show-installed.......installed packages
-  app-linkcheck............run a linkcheck for your app
-  app-vhost................show virtual host configuration variables
-  app-less.................start a LESS watcher
-
-install:
-  app-build-stacks.........create docker-compose.yml files from stack templates (define @root for changing output folders)
-  app-init.................initializes environment and installs Phundament application
-  app-pull.................pull application images
-  app-install..............installs Phundament application
-  app-setup................prepare application runtime 
-  app-upgrade..............update application packages
-  app-build................Build application image
-  app-build-assets.........bundle application assets
-  app-update-version.......
-
-running:
-  app-stop.................stop application
-  app-open.................open application web service
-  app-bash.................run an interactive shell in application container
-
-developer:
-  app-build-docs...........generate application documentation
-
-config:
-  TEST.....................configure application for local testing
-  CI.......................configure application for local staging
-  STAGING..................configure application for local staging
-
-Project:
-  migrate..................app/migrate (migrate)
-  user.....................app/migrate (migrate)
-```
-
+Docker is the container-engine in which all services and tools are run, this ensures a maximum of portability across
+ platforms and environments.
