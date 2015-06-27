@@ -22,7 +22,7 @@ default: help
 
 # Templates
 # ---------
-DOMA_DIR = build/doma-0.8.1
+DOMA_DIR = build/doma-0.9.0
 include $(DOMA_DIR)/phundament/4.0/Makefile
 
 
