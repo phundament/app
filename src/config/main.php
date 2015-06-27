@@ -56,7 +56,7 @@ $common = [
             'showScriptName'  => getenv('YII_ENV_TEST') ? true : false,
             'baseUrl'         => '/',
             'rules'           => [
-                'docs/<file:[a-zA-Z0-9_\-\.]+>' => 'docs',
+                'docs/<file:[a-zA-Z0-9_\-\./]+>' => 'docs',
                 #'docs' => 'docs/default/index',
             ],
         ],
