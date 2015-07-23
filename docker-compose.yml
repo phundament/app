@@ -50,7 +50,7 @@ appsrc:
 # Data Services
 # -------------
 mariadb:
-  image: tutum/mariadb:10.1
+  image: tutum/mariadb:10.0
   ports:
     - '3306'
   environment:
