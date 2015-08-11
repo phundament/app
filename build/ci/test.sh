@@ -63,5 +63,8 @@ fi;
 
 # Final cleanup
 make CI docker-kill docker-rm
+mkdir -p /mnt/storage/runner-33/ci-reports/phundament
+mkdir -p /mnt/storage/runner-33/ci-reports/phundament/app
+cp -r /docker/runner/ci-reports/phundament/app/* /mnt/storage/runner-33/ci-reports/phundament/app/
 
 exit 0

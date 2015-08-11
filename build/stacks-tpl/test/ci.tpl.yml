@@ -20,8 +20,8 @@ appcli:
       - '/docker/runner/builds/%PROJECT_DIR%/tests:/app/tests'
       - '/docker/runner/builds/%PROJECT_DIR%/codeception.yml:/app/codeception.yml'
       # Mount shared location for reports
-      - '/docker/runner/ci-reports/%PROJECT_DIR%/tests:/app/tests/codeception/_output'
-      - '/docker/runner/ci-reports/%PROJECT_DIR%/docs:/app/runtime/docs'
+      - '/docker/runner/ci-reports/%REPORT_DIR%/tests:/app/tests/codeception/_output'
+      - '/docker/runner/ci-reports/%REPORT_DIR%/docs:/app/runtime/docs'
 
 appfpm:
   .volumes: CLEAN
