@@ -18,7 +18,7 @@ appcli:
 
 # The php-fpm server for interpreting php code
 appfpm:
-  image: phundament/php:5.6-fpm-4.0.0-rc3-dev
+  image: phundament/php:5.6-fpm-4.0.0-dev
   # host-volume for local development
   volumes:
     - '.:/app'
@@ -50,7 +50,7 @@ appsrc:
 # Data Services
 # -------------
 mariadb:
-  image: tutum/mariadb:10.1
+  image: tutum/mariadb:10.0
   ports:
     - '3306'
   environment:
