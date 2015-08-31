@@ -24,6 +24,9 @@ class AppAsset extends AssetBundle
     public $js = [
         'js/app.js',
     ];
+    
+    // we recompile the less files from 'yii\bootstrap\BootstrapAsset' and include the css in app.css
+    // therefore we set bundle to false in application config
     public $depends = [
         'yii\web\YiiAsset',
     ];
@@ -31,9 +34,6 @@ class AppAsset extends AssetBundle
     public function init()
     {
         parent::init();
-        // we recompile the less files from 'yii\bootstrap\BootstrapAsset' and include the css in app.css
-        // therefore we set bundle to false
-        \Yii::$app->getAssetManager()->bundles['yii\bootstrap\BootstrapAsset'] = false;
 
         // /!\ CSS/LESS development only setting /!\
         // Touch the asset folder with the highest mtime of all contained files

@@ -33,6 +33,7 @@
 
 ### Yii 
 
+- MUST add `Tester` classes to the repository
 - SHOULD use `Yii::info()` or `Yii::trace()`, NOT `Yii::getLogger->(..., ..., ...)`
 - SHOULD NOT use `application.language = null` with `codemix/yii2-localeurls`
 - SHOULD NOT use static `::className()` calls in application configuration  
@@ -44,6 +45,7 @@
 
 
 ## CSS
+- SHOULD use hyphens for CSS classes and ID's i.e. `.my-class` and `#my-id`
 
 ## JavaScript
 

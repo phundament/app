@@ -41,7 +41,7 @@ class AppController extends BaseAppController
      */
     public function actionClearAssets()
     {
-        $assets = \Yii::getAlias('@app/web/assets');
+        $assets = \Yii::getAlias('@web/assets');
 
         // Matches from 7-8 char folder names, the 8. char is optional
         $matchRegex = '"^[a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9]\?[a-z0-9]$"';
