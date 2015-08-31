@@ -11,6 +11,7 @@ Yii 2.0 Framework.
 
 - [View application source](https://github.com/phundament/app/tree/master/src)
 - [View application tests](https://github.com/phundament/app/tree/master/tests)
+- [View application ENV variables](https://github.com/phundament/app/tree/master/.env-dist)
 
 ### Containers
 
