@@ -46,16 +46,16 @@ STAGING:    ##@config configure application for local staging
 .PHONY: dev migrate crud
 
 migrate: 	##@Project app/migrate (database migrations with test data)
-	docker-compose run app$(BUILDER_SERVICE_SUFFIX) ./yii migrate --migrationLookup=@app/migrations/data
+	docker-compose run app$(WORKER_SERVICE_SUFFIX) ./yii migrate --migrationLookup=@app/migrations/data
 
 user: 		##@Project app/setup-admin-user (dektrium/user)
-	docker-compose run app$(BUILDER_SERVICE_SUFFIX) ./yii app/setup-admin-user
-
-giiant: 	##@app build/crud.sh
-	docker-compose run app$(BUILDER_SERVICE_SUFFIX) build/app/crud.sh
+	docker-compose run app$(WORKER_SERVICE_SUFFIX) ./yii app/setup-admin-user
 
 giiant-module:
-	docker-compose run app$(BUILDER_SERVICE_SUFFIX) ./yii gii/module --moduleID=$(MODULE_ID) --moduleClass=giiant\\$(MODULE_ID)\\Module
+	docker-compose run app$(WORKER_SERVICE_SUFFIX) ./yii gii/giiant-module --moduleID=$(MODULE_ID) --moduleClass=ext\\$(MODULE_ID)\\Module
+
+giiant-batch: 	##@app build/crud.sh
+	docker-compose run app$(WORKER_SERVICE_SUFFIX) sh -c "MODULE_ID=$(MODULE_ID) sh /app/src/giiant.sh"
 
 
 build-files: app-build-stacks app-update-version ##@dev dev shorthands
