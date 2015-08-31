@@ -32,7 +32,7 @@
   "minimum-stability": "stable",
   "require": {
     "dmstr/yii2-app-command": "dev-master",
-    "dmstr/yii2-cms-metapackage": "*",
+    "dmstr/yii2-cms-metapackage": "dev-master",
     "vlucas/phpdotenv": "2.*",
     "yiisoft/yii2": "2.0.*",
     "yiisoft/yii2-composer": "2.0.*"
@@ -41,7 +41,8 @@
     "dmstr/yii2-cms-dev-metapackage": "dev-master",
     "dmstr/yii2-libs-metapackage": "dev-master",
     "dmstr/yii2-yaml-converter-command": "dev-master",
-    "yiisoft/yii2-debug": "@stable"
+    "yiisoft/yii2-debug": "@stable",
+    "schmunk42/yii2-giiant": "dev-master#d40733b"
   },
   "scripts": {
     "post-create-project-cmd": [
