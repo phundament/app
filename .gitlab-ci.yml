@@ -9,4 +9,5 @@ test & push:
   - export PROJECT_REGISTRY="phundament"
   - export IMAGE_NAME="app"
   - export DB_ENV_MYSQL_DATABASE=myapp-2-ci
-  - REGISTRY_PASS=$REGISTRY_PASS bash build/ci/test.sh
+  - export REGISTRY_PASS=$LOCAL_REGISTRY_PASS
+  - bash build/ci/test.sh
