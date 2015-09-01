@@ -10,9 +10,7 @@ ADD ./build/container-files/ /
 
 # Install application packages, if there are changes the composer files
 ADD ./composer.lock ./composer.json /app/
-RUN /usr/local/bin/composer self-update && \
-    /usr/local/bin/composer global update && \
-    /usr/local/bin/composer install --prefer-dist --optimize-autoloader --quiet
+RUN /usr/local/bin/composer install --prefer-dist --optimize-autoloader --quiet
 
 # Add application code
 ADD version /app/version
