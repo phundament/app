@@ -8,4 +8,5 @@ test & push:
   - export PROJECT_REGISTRY="phundament"
   - export IMAGE_NAME="app"
   - export DB_ENV_MYSQL_DATABASE=myapp-2-ci
+  - chmod u+x build/ci/test.sh
   - build/ci/test.sh
