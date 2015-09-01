@@ -12,8 +12,12 @@ $common = [
     ],
     'components'  => [
         'assetManager' => [
-            'dirMode'    => YII_ENV_PROD ? 0777 : null, // Note: For using mounted volumes or shared folders
-            'bundles'    => YII_ENV_PROD ? require(__DIR__ . '/assets-gen/prod.php') : null,
+            'dirMode'  => YII_ENV_PROD ? 0777 : null, // Note: For using mounted volumes or shared folders
+            'bundles'  => YII_ENV_PROD ?
+                require(__DIR__ . '/assets-gen/prod.php') :
+                [
+                    'yii\bootstrap\BootstrapAsset' => false,
+                ],
             'basePath' => '@app/../web/assets',
         ],
         'authManager'  => [

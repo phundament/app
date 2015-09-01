@@ -12,7 +12,6 @@ return [
     // The list of asset bundles to compress:
     'bundles'       => [
         'app\assets\AppAsset',
-        'yii\bootstrap\BootstrapAsset',
         'app\modules\backend\assets\AdminAsset',
         \dmstr\web\AdminLteAsset::className()
     ],
