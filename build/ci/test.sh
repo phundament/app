@@ -54,8 +54,8 @@ export STACK_VERSION=`echo $CURRENT_VERSION | sed 's/\./-/g'`
 ## Create tagged image
 if [ "$LATEST_TAG" = "$CURRENT_VERSION" ]; then
     echo "Stable tag $CURRENT_VERSION detected, tagging image..."
-    make docker-tag version=$CURRENT_VERSION
-    make docker-push version=$CURRENT_VERSION
+    make docker-tag IMAGE_VERSION=$CURRENT_VERSION
+    make docker-push IMAGE_VERSION=$CURRENT_VERSION
     echo "Image pushed to registry."
 else
     echo "No stable tag found."
