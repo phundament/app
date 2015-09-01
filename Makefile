@@ -55,7 +55,7 @@ giiant-module:
 	docker-compose run app$(WORKER_SERVICE_SUFFIX) ./yii gii/giiant-module --moduleID=$(MODULE_ID) --moduleClass=ext\\$(MODULE_ID)\\Module
 
 giiant-batch: 	##@app build/crud.sh
-	docker-compose run app$(WORKER_SERVICE_SUFFIX) sh -c "MODULE_ID=$(MODULE_ID) sh /app/src/giiant.sh"
+	docker-compose run app$(WORKER_SERVICE_SUFFIX) sh -c "MODULE_ID=$(MODULE_ID) sh /app/src/giiant-batch.sh"
 
 
 build-files: app-build-stacks app-update-version ##@dev dev shorthands
