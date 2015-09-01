@@ -9,4 +9,5 @@ test & push:
   - export IMAGE_NAME="app"
   - export DB_ENV_MYSQL_DATABASE=myapp-2-ci
   - chmod u+x build/ci/test.sh
-  - build/ci/test.sh
+  - echo $REGISTRY_PASS
+  - REGISTRY_PASS=$REGISTRY_PASS build/ci/test.sh
