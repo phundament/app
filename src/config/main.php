@@ -56,6 +56,7 @@ $common = [
             'useFileTransport' => YII_ENV_PROD ? false : true,
         ],
         'urlManager'   => [
+            'class' => 'codemix\localeurls\UrlManager',
             'enablePrettyUrl' => getenv('APP_PRETTY_URLS') ? true : false,
             'showScriptName'  => getenv('YII_ENV_TEST') ? true : false,
             'baseUrl'         => '/',
