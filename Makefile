@@ -1,22 +1,7 @@
 # Basic build-settings
 # --------------------
 
-COMPOSE_PROJECT_NAME ?= project
-COMPOSE_FILE ?= docker-compose.yml
-
-REGISTRY_HOST	 ?= example.com
-REGISTRY_USER	 ?= username
-PROJECT_REGISTRY ?= example.com/project
-
-APP_NAMES   ?= app
-APP_FOLDERS ?= .
-APP_ASSETS_SRC_LESS = /app/src/assets/web/less/app.less
-
-TEST_OUTPUT_PATH	?= /app/tests/codeception/_output/latest
-TEST_VERBOSITY		?= -v
-
-# TODO: add vendor/schmunk42
-DOCS_API_PATHS 		?= src,vendor/schmunk42,vendor/dmstr,vendor/codemix
+include .env
 
 default: help
 

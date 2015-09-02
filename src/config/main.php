@@ -40,8 +40,8 @@ $common = [
                     'class'              => 'yii\i18n\DbMessageSource',
                     'db'                 => 'db',
                     'sourceLanguage'     => 'xx', // Developer language
-                    'sourceMessageTable' => 'language_source',
-                    'messageTable'       => 'language_translate',
+                    'sourceMessageTable' => '{{%language_source}}',
+                    'messageTable'       => '{{%language_translate}}',
                     'cachingDuration'    => 86400,
                     'enableCaching'      => YII_DEBUG ? false : true,
                 ],
@@ -63,6 +63,9 @@ $common = [
                 'docs/<file:[a-zA-Z0-9_\-\./]+>' => 'docs',
                 #'docs' => 'docs/default/index',
             ],
+            'languages' => [
+                'de'
+            ]
         ],
         'view'         => [
             'theme' => [

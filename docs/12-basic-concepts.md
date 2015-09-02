@@ -9,9 +9,9 @@ Layers
 The topmost layer of the stack is the application source-code in `/src`. The PHP application is build with
 Yii 2.0 Framework.
 
+- [View application ENV variables](https://github.com/phundament/app/tree/master/.env-dist)
 - [View application source](https://github.com/phundament/app/tree/master/src)
 - [View application tests](https://github.com/phundament/app/tree/master/tests)
-- [View application ENV variables](https://github.com/phundament/app/tree/master/.env-dist)
 
 ### Containers
 
