@@ -103,8 +103,7 @@ apache:
                     allow_override:
                         - All
                     require:
-                        - all
-                        - granted
+                        - 'all granted'
                     custom_fragment: ''
             engine: php
             custom_fragment: ''
