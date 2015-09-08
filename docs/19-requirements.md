@@ -9,6 +9,8 @@ Requirements
 
 ### Linux
 
+See [Docker installation](https://docs.docker.com/installation/) documentation.
+
 Install make, Docker & Compose
  
     apt-get install make
