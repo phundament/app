@@ -19,7 +19,7 @@ The application along with other services are run in containers, usually you hav
 you can also scale PHP-FPM with a haproxy or run multiple workers off a CLI container.
 
 - [View application Dockerfile](https://github.com/phundament/app/blob/master/Dockerfile)
-- [View Phundament Docker images](https://registry.hub.docker.com/repos/phundament/)
+- [View Phundament Docker images](https://hub.docker.com/u/phundament/)
 
 ### Services
 
