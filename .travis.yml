@@ -15,7 +15,7 @@ matrix:
 env:
   global:
     - YII_ENV=test
-    - APP_PRETTY_URLS=0
+    - APP_PRETTY_URLS=1
     - DB_PORT_3306_TCP_ADDR=localhost
     - DB_ENV_MYSQL_DATABASE=p4_test
     - DB_ENV_MYSQL_USER=test
