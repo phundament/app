@@ -1,9 +1,11 @@
 job:
     script:
-        - export CI_APP_VOLUME=/srv/gitlab-runner/$CI_PROJECT_DIR
+        - "export CI_APP_VOLUME=/srv/gitlab-runner/$CI_PROJECT_DIR"
         - "bash build/ci/test.sh"
     stage: test
 
 deploy:
-    script: "bash build/ci/deploy.sh"
+    script:
+        - "cp .env-dist .env"
+        - "bash build/ci/deploy.sh"
     stage: deploy
