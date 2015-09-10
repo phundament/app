@@ -33,7 +33,8 @@ edit .env
 After adjusting the parameters, finalize the application setup with:
 
 ```
-./yii app/setup
+./yii migrate --interactive=0
+./yii app/setup-admin-user --interactive=0
 ```
 
 Afterwards you can access your Phundament application under `http://localhost/app/frontend/web` and `http://localhost/app/backend/web`.

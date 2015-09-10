@@ -16,7 +16,8 @@ Update `url` in `tests/codeception/acceptance.suite.yml`
 Install required packages and build test classes
 
 ```
-./yii app/setup-tests
+./yii migrate --interactive=0
+./yii app/setup-admin-user --interactive=0
 ```
 
 Run all suites in all applications

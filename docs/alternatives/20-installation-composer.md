@@ -17,7 +17,8 @@ Create and adjust your environment configuration, eg. add a database...
     
 Run the application setup...
     
-    ./yii app/setup
+    ./yii migrate --interactive=0
+    ./yii app/setup-admin-user --interactive=0
     
 Open `http://path-to-app/web` or `http://path-to-app/web?r=admin` in your browser.
 
