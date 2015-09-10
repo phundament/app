@@ -41,30 +41,7 @@ make CI app-clean-tests
 make CI OPTS='-v acceptance prod' app-run-tests
 make CI app-build-docs
 
-## Tag source container
-export BUILDER_SERVICE_SUFFIX=src
-make docker-tag
-make docker-push
-
-# Create tagged image from git tag
-## Get commit message
-export LATEST_TAG=`git describe --abbrev=0`
-export CURRENT_VERSION=`git describe`
-export STACK_VERSION=`echo $CURRENT_VERSION | sed 's/\./-/g'`
-## Create tagged image
-if [ "$LATEST_TAG" = "$CURRENT_VERSION" ]; then
-    echo "Stable tag $CURRENT_VERSION detected, tagging image..."
-    make docker-tag IMAGE_VERSION=$CURRENT_VERSION
-    make docker-push IMAGE_VERSION=$CURRENT_VERSION
-    echo "Image pushed to registry."
-else
-    echo "No stable tag found."
-fi;
-
 # Final cleanup
 make CI docker-kill docker-rm
-mkdir -p /mnt/storage/runner-33/ci-reports/phundament
-mkdir -p /mnt/storage/runner-33/ci-reports/phundament/app
-cp -r /docker/runner/ci-reports/phundament/app/* /mnt/storage/runner-33/ci-reports/phundament/app/
 
 exit 0
