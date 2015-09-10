@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "hash": "36a5cc06c996f25379b6036d209e1e49",
@@ -818,16 +818,16 @@
         },
         {
             "name": "dmstr/yii2-adminlte-asset",
-            "version": "2.1.3",
+            "version": "2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-adminlte-asset.git",
-                "reference": "c5d2ea94209a2b087348ea9ee8fda11eedf943b6"
+                "reference": "769f9a12307753856a509720573f98cb378703e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-adminlte-asset/zipball/c5d2ea94209a2b087348ea9ee8fda11eedf943b6",
-                "reference": "c5d2ea94209a2b087348ea9ee8fda11eedf943b6",
+                "url": "https://api.github.com/repos/dmstr/yii2-adminlte-asset/zipball/769f9a12307753856a509720573f98cb378703e4",
+                "reference": "769f9a12307753856a509720573f98cb378703e4",
                 "shasum": ""
             },
             "require": {
@@ -868,7 +868,7 @@
                 "extension",
                 "yii2"
             ],
-            "time": "2015-06-25 01:41:38"
+            "time": "2015-09-10 12:17:21"
         },
         {
             "name": "dmstr/yii2-app-command",
@@ -2726,6 +2726,7 @@
             },
             "require": {
                 "dmstr/yii2-bootstrap": "*",
+                "dmstr/yii2-db": "*",
                 "dmstr/yii2-helpers": "*",
                 "yiisoft/yii2": "~2.0.4",
                 "yiisoft/yii2-gii": "~2.0.4"
@@ -2853,16 +2854,16 @@
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "2.3.3",
+            "version": "2.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "c1a26c729508f73560c1a4f767f60b8ab6b4a666"
+                "reference": "11a2545c44a5915f883e2e5ec12e14ed345e3ab2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/c1a26c729508f73560c1a4f767f60b8ab6b4a666",
-                "reference": "c1a26c729508f73560c1a4f767f60b8ab6b4a666",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/11a2545c44a5915f883e2e5ec12e14ed345e3ab2",
+                "reference": "11a2545c44a5915f883e2e5ec12e14ed345e3ab2",
                 "shasum": ""
             },
             "require": {
@@ -2923,20 +2924,20 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2015-06-24 03:16:23"
+            "time": "2015-09-09 00:18:50"
         },
         {
             "name": "symfony/console",
-            "version": "v2.7.3",
+            "version": "v2.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "d6cf02fe73634c96677e428f840704bfbcaec29e"
+                "reference": "9ff9032151186bd66ecee727d728f1319f52d1d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/d6cf02fe73634c96677e428f840704bfbcaec29e",
-                "reference": "d6cf02fe73634c96677e428f840704bfbcaec29e",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/9ff9032151186bd66ecee727d728f1319f52d1d8",
+                "reference": "9ff9032151186bd66ecee727d728f1319f52d1d8",
                 "shasum": ""
             },
             "require": {
@@ -2980,20 +2981,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2015-07-28 15:18:12"
+            "time": "2015-09-03 11:40:38"
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v2.7.3",
+            "version": "v2.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/EventDispatcher.git",
-                "reference": "9310b5f9a87ec2ea75d20fec0b0017c77c66dac3"
+                "reference": "b58c916f1db03a611b72dd702564f30ad8fe83fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/9310b5f9a87ec2ea75d20fec0b0017c77c66dac3",
-                "reference": "9310b5f9a87ec2ea75d20fec0b0017c77c66dac3",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/b58c916f1db03a611b72dd702564f30ad8fe83fa",
+                "reference": "b58c916f1db03a611b72dd702564f30ad8fe83fa",
                 "shasum": ""
             },
             "require": {
@@ -3038,20 +3039,20 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2015-06-18 19:21:56"
+            "time": "2015-08-24 07:13:45"
         },
         {
             "name": "symfony/filesystem",
-            "version": "v2.7.3",
+            "version": "v2.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Filesystem.git",
-                "reference": "2d7b2ddaf3f548f4292df49a99d19c853d43f0b8"
+                "reference": "f079e9933799929584200b9a926f72f29e291654"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/2d7b2ddaf3f548f4292df49a99d19c853d43f0b8",
-                "reference": "2d7b2ddaf3f548f4292df49a99d19c853d43f0b8",
+                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/f079e9933799929584200b9a926f72f29e291654",
+                "reference": "f079e9933799929584200b9a926f72f29e291654",
                 "shasum": ""
             },
             "require": {
@@ -3087,20 +3088,20 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2015-07-09 16:07:40"
+            "time": "2015-08-27 07:03:44"
         },
         {
             "name": "symfony/finder",
-            "version": "v2.7.3",
+            "version": "v2.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Finder.git",
-                "reference": "ae0f363277485094edc04c9f3cbe595b183b78e4"
+                "reference": "fff4b0c362640a0ab7355e2647b3d461608e9065"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Finder/zipball/ae0f363277485094edc04c9f3cbe595b183b78e4",
-                "reference": "ae0f363277485094edc04c9f3cbe595b183b78e4",
+                "url": "https://api.github.com/repos/symfony/Finder/zipball/fff4b0c362640a0ab7355e2647b3d461608e9065",
+                "reference": "fff4b0c362640a0ab7355e2647b3d461608e9065",
                 "shasum": ""
             },
             "require": {
@@ -3136,20 +3137,20 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2015-07-09 16:07:40"
+            "time": "2015-08-26 17:56:37"
         },
         {
             "name": "symfony/process",
-            "version": "v2.7.3",
+            "version": "v2.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Process.git",
-                "reference": "48aeb0e48600321c272955132d7606ab0a49adb3"
+                "reference": "f7b3f73f70a7f8f49a1c838dc3debbf054732d8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Process/zipball/48aeb0e48600321c272955132d7606ab0a49adb3",
-                "reference": "48aeb0e48600321c272955132d7606ab0a49adb3",
+                "url": "https://api.github.com/repos/symfony/Process/zipball/f7b3f73f70a7f8f49a1c838dc3debbf054732d8e",
+                "reference": "f7b3f73f70a7f8f49a1c838dc3debbf054732d8e",
                 "shasum": ""
             },
             "require": {
@@ -3185,20 +3186,20 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2015-07-01 11:25:50"
+            "time": "2015-08-27 06:45:45"
         },
         {
             "name": "symfony/stopwatch",
-            "version": "v2.7.3",
+            "version": "v2.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Stopwatch.git",
-                "reference": "b07a866719bbac5294c67773340f97b871733310"
+                "reference": "abc61bac76fb10ffa2c6373d7932bc35190dbf3b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Stopwatch/zipball/b07a866719bbac5294c67773340f97b871733310",
-                "reference": "b07a866719bbac5294c67773340f97b871733310",
+                "url": "https://api.github.com/repos/symfony/Stopwatch/zipball/abc61bac76fb10ffa2c6373d7932bc35190dbf3b",
+                "reference": "abc61bac76fb10ffa2c6373d7932bc35190dbf3b",
                 "shasum": ""
             },
             "require": {
@@ -3234,20 +3235,20 @@
             ],
             "description": "Symfony Stopwatch Component",
             "homepage": "https://symfony.com",
-            "time": "2015-07-01 18:23:16"
+            "time": "2015-08-24 07:13:45"
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.7.3",
+            "version": "v2.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "71340e996171474a53f3d29111d046be4ad8a0ff"
+                "reference": "2dc7b06c065df96cc686c66da2705e5e18aef661"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/71340e996171474a53f3d29111d046be4ad8a0ff",
-                "reference": "71340e996171474a53f3d29111d046be4ad8a0ff",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/2dc7b06c065df96cc686c66da2705e5e18aef661",
+                "reference": "2dc7b06c065df96cc686c66da2705e5e18aef661",
                 "shasum": ""
             },
             "require": {
@@ -3283,7 +3284,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2015-07-28 14:07:07"
+            "time": "2015-08-24 07:13:45"
         },
         {
             "name": "yiisoft/yii2-apidoc",
