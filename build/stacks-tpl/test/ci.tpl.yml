@@ -3,7 +3,7 @@ appbuilder:
   .volumes: CLEAN
   volumes:
     # Mount volume on dedicated runner
-    - '/docker/runner/builds/%PROJECT_DIR%:/app'
+    - '${CI_APP_VOLUME}:/app'
 
 appsrc:
   build: %APP_DOCKERFILE_PATH%
@@ -17,8 +17,8 @@ appcli:
   .volumes: CLEAN
   volumes:
       # Mount tests and configuration into application, since they are not part of the image
-      - '/docker/runner/builds/%PROJECT_DIR%/tests:/app/tests'
-      - '/docker/runner/builds/%PROJECT_DIR%/codeception.yml:/app/codeception.yml'
+      - '${CI_APP_VOLUME}/tests:/app/tests'
+      - '${CI_APP_VOLUME}/codeception.yml:/app/codeception.yml'
       # Mount shared location for reports
       - '/docker/runner/ci-reports/%REPORT_DIR%/tests:/app/tests/codeception/_output'
       - '/docker/runner/ci-reports/%REPORT_DIR%/docs:/app/runtime/docs'

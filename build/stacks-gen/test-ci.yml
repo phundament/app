@@ -1,7 +1,7 @@
 appbuilder:
     build: ../..
     volumes:
-        - '/docker/runner/builds/project-21:/app'
+        - '${CI_APP_VOLUME}:/app'
 appcli:
     build: ../..
     command: 'tail -f /dev/null'
@@ -12,8 +12,8 @@ appcli:
         - 'mariadb:DB'
         - 'seleniumhub:HUB'
     volumes:
-        - '/docker/runner/builds/project-21/tests:/app/tests'
-        - '/docker/runner/builds/project-21/codeception.yml:/app/codeception.yml'
+        - '${CI_APP_VOLUME}/tests:/app/tests'
+        - '${CI_APP_VOLUME}/codeception.yml:/app/codeception.yml'
         - '/docker/runner/ci-reports/phundament/app/tests:/app/tests/codeception/_output'
         - '/docker/runner/ci-reports/phundament/app/docs:/app/runtime/docs'
     volumes_from:
