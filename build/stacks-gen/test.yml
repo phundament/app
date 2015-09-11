@@ -13,7 +13,7 @@ appfpm:
     environment:
         YII_DEBUG: 1
         YII_ENV: test
-    image: 'phundament/php:5.6-fpm-4.0.0-dev'
+    image: 'phundament/php:5.6-fpm-4.1.0-dev'
     links:
         - 'mariadb:DB'
     volumes:
@@ -21,7 +21,7 @@ appfpm:
 appnginx:
     environment:
         VIRTUAL_HOST: ~^dev\.myapp\.
-    image: 'schmunk42/nginx:1.7'
+    image: 'schmunk42/nginx:1.9'
     links:
         - 'appfpm:PHPFPM'
     ports:

@@ -25,7 +25,7 @@ appfpm:
 appnginx:
     environment:
         VIRTUAL_HOST: staging.myapp.192.168.59.103.xip.io
-    image: 'schmunk42/nginx:1.7'
+    image: 'schmunk42/nginx:1.9'
     links:
         - 'appfpm:PHPFPM'
     ports:
