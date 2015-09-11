@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 ## Tag source container
 export BUILDER_SERVICE_SUFFIX=src
 make docker-tag
