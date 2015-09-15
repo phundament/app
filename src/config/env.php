@@ -1,7 +1,7 @@
 <?php
 
-$dotenv = new Dotenv\Dotenv(__DIR__ . '/../..');
-$dotenv->load();
+$dotenv = new Dotenv;
+$dotenv->load(__DIR__ . '/../../','.env');
 
 $dotenv->required('YII_DEBUG', ["", "0", "1", "true", true]);
 $dotenv->required('YII_ENV', ['dev', 'prod', 'test']);
