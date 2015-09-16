@@ -4,6 +4,8 @@ set -e
 
 ## Tag source container
 export BUILDER_SERVICE_SUFFIX=src
+cp .env-dist .env
+
 make docker-tag
 make docker-push
 
