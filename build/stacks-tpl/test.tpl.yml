@@ -1,17 +1,17 @@
 # docker-compose configuration for local development
 appsrc:
-  build: %APP_DOCKERFILE_PATH%
+  build: ../..
   .volumes: CLEAN
   volumes:
-    - %APP_DOCKERFILE_PATH%:/app
+    - ../..:/app
 
 appnginx:
   .volumes: CLEAN
   volumes:
-    - %APP_DOCKERFILE_PATH%:/app
+    - ../..:/app
 
 appcli:
-  build: %APP_DOCKERFILE_PATH%
+  build: ../..
   command: 'tail -f /dev/null'
   environment:
     YII_ENV: test
@@ -19,7 +19,7 @@ appcli:
     - 'seleniumhub:HUB'
   .volumes: CLEAN
   volumes:
-    - %APP_DOCKERFILE_PATH%:/app
+    - ../..:/app
 
 appfpm:
   environment:
@@ -27,7 +27,7 @@ appfpm:
     YII_DEBUG: 1
   .volumes: CLEAN
   volumes:
-    - %APP_DOCKERFILE_PATH%:/app
+    - ../..:/app
 
 
 # Development containers

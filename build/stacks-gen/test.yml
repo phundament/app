@@ -1,5 +1,5 @@
 appcli:
-    build: '%APP_DOCKERFILE_PATH%'
+    build: ../..
     command: 'tail -f /dev/null'
     environment:
         YII_ENV: test
@@ -8,7 +8,7 @@ appcli:
         - 'mariadb:DB'
         - 'seleniumhub:HUB'
     volumes:
-        - '%APP_DOCKERFILE_PATH%:/app'
+        - '../..:/app'
 appfpm:
     environment:
         YII_DEBUG: 1
@@ -17,7 +17,7 @@ appfpm:
     links:
         - 'mariadb:DB'
     volumes:
-        - '%APP_DOCKERFILE_PATH%:/app'
+        - '../..:/app'
 appnginx:
     environment:
         VIRTUAL_HOST: ~^dev\.myapp\.
@@ -27,12 +27,12 @@ appnginx:
     ports:
         - '80'
     volumes:
-        - '%APP_DOCKERFILE_PATH%:/app'
+        - '../..:/app'
 appsrc:
-    build: '%APP_DOCKERFILE_PATH%'
+    build: ../..
     command: 'tail -f /dev/null'
     volumes:
-        - '%APP_DOCKERFILE_PATH%:/app'
+        - '../..:/app'
 mariadb:
     environment:
         MARIADB_PASS: secretadmin

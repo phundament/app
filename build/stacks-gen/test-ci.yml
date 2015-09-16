@@ -3,7 +3,7 @@ appbuilder:
     volumes:
         - '${CI_APP_VOLUME}:/app'
 appcli:
-    build: '%APP_DOCKERFILE_PATH%'
+    build: ../..
     command: 'tail -f /dev/null'
     environment:
         YII_ENV: test
