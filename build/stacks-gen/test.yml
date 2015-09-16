@@ -13,7 +13,7 @@ appfpm:
     environment:
         YII_DEBUG: 1
         YII_ENV: test
-    image: 'phundament/php:5.6-fpm-4.1.0-dev'
+    image: 'phundament/php:5.6-fpm-4.2.1-dev'
     links:
         - 'mariadb:DB'
     volumes:
