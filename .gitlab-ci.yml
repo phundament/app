@@ -1,7 +1,13 @@
+before_script:
+    - export CI_APP_VOLUME=/srv/gitlab-runner/$CI_PROJECT_DIR
+    - export COMPOSE_PROJECT_NAME=build${CI_BUILD_ID}
+    - export CI_REPORTS_PATH=/volume1/Servers/storage/internal-30/ci-reports/projects/${CI_PROJECT_ID}/builds/${CI_BUILD_ID}
+
 job:
     script:
-        - "export CI_APP_VOLUME=/srv/gitlab-runner/$CI_PROJECT_DIR"
-        - "bash build/ci/test.sh"
+        - bash build/ci/test.sh
+        - sshpass -p "$SFTP_PASS" ssh sftp@192.168.23.17 "mkdir -p ${CI_REPORTS_PATH}"
+        - sshpass -p "$SFTP_PASS" scp -o StrictHostKeyChecking=no -r ${PWD}/tests/codeception/_output/* sftp@192.168.23.17:${CI_REPORTS_PATH}
     stage: test
 
 deploy:
@@ -10,6 +16,6 @@ deploy:
         - export REGISTRY_USER=schmunk42
         - export PROJECT_REGISTRY=phundament
         - export IMAGE_NAME=app
-        - "cp .env-dist .env"
-        - "bash build/ci/deploy.sh"
+        #- cp .env-dist .env
+        - bash build/ci/deploy.sh
     stage: deploy
