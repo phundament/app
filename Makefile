@@ -18,6 +18,7 @@ include $(DOMA_DIR)/phundament/4.0/Makefile
 
 TEST:		##@config configure application for local testing
 	$(eval COMPOSE_FILE := build/stacks-gen/test.yml)
+	$(eval COMPOSE_PROJECT_NAME := test${COMPOSE_PROJECT_NAME})
 
 CI:		##@config configure application for continuous integration server
 	$(eval BUILDER_SERVICE_SUFFIX := builder)
@@ -25,6 +26,7 @@ CI:		##@config configure application for continuous integration server
 
 STAGING:    ##@config configure application for local staging
 	$(eval COMPOSE_FILE := build/stacks-gen/staging.yml)
+	$(eval COMPOSE_PROJECT_NAME := staging${COMPOSE_PROJECT_NAME})
 
 
 # Local development
