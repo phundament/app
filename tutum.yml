@@ -16,7 +16,7 @@
 appcli:
   command: 'sh /app/src/run.sh'
   # should be replaced with: image: <project_name>_appsrc
-  image: phundament/app:4.0.0-rc1-dev
+  image: phundament/app:4.0.0-rc5-dev
   links:
     - 'appnginx:WEB'
     - 'mariadb:DB'
@@ -24,14 +24,14 @@ appcli:
     APP_MIGRATION_LOOKUP: '@app/migrations'
 
 appsrc:
-  image: phundament/app:4.0.0-rc1-dev
+  image: phundament/app:4.0.0-rc5-dev
   volumes:
     - '/app'
   command: 'tail -f /dev/null'
 
 # The php-fpm server for interpreting php code
 appfpm:
-  image: phundament/php:5.6-fpm-4.0.0-rc3-dev
+  image: phundament/php:5.6-fpm-4.2.0-dev
   # host-volume for local development
   volumes_from:
     - appsrc
@@ -40,7 +40,7 @@ appfpm:
 
 # The nginx server for serving static files directly
 appnginx:
-  image: schmunk42/nginx:1.7
+  image: schmunk42/nginx:1.9
   links:
     - 'appfpm:PHPFPM'
   # host-volume for local development
