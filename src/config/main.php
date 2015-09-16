@@ -175,6 +175,7 @@ $web = [
                     'url'     => 'php://stdout',
                     'levels'  => ['info', 'trace'],
                     'logVars' => [],
+                    'enabled' => YII_DEBUG,
                 ],
                 [
                     'class'   => 'codemix\streamlog\Target',
