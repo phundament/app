@@ -489,16 +489,16 @@
         },
         {
             "name": "codemix/yii2-localeurls",
-            "version": "1.2.5",
+            "version": "1.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/codemix/yii2-localeurls.git",
-                "reference": "79c3144bbf840213ec17bad9ac2acf1235090503"
+                "reference": "7784a526fcdc482a6a962e64f9dd0158b34453e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codemix/yii2-localeurls/zipball/79c3144bbf840213ec17bad9ac2acf1235090503",
-                "reference": "79c3144bbf840213ec17bad9ac2acf1235090503",
+                "url": "https://api.github.com/repos/codemix/yii2-localeurls/zipball/7784a526fcdc482a6a962e64f9dd0158b34453e4",
+                "reference": "7784a526fcdc482a6a962e64f9dd0158b34453e4",
                 "shasum": ""
             },
             "require": {
@@ -526,7 +526,7 @@
                 "locale",
                 "yii2"
             ],
-            "time": "2015-08-14 11:13:59"
+            "time": "2015-09-14 22:41:01"
         },
         {
             "name": "codemix/yii2-streamlog",
@@ -1193,16 +1193,16 @@
         },
         {
             "name": "dmstr/yii2-pages-module",
-            "version": "0.6.3",
+            "version": "0.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-pages-module.git",
-                "reference": "adc671d537120b19ddd0b6d3d1fcb1902d8aef69"
+                "reference": "5daf8465999b232ae2a05105a3b0bc6ab2ca570e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-pages-module/zipball/adc671d537120b19ddd0b6d3d1fcb1902d8aef69",
-                "reference": "adc671d537120b19ddd0b6d3d1fcb1902d8aef69",
+                "url": "https://api.github.com/repos/dmstr/yii2-pages-module/zipball/5daf8465999b232ae2a05105a3b0bc6ab2ca570e",
+                "reference": "5daf8465999b232ae2a05105a3b0bc6ab2ca570e",
                 "shasum": ""
             },
             "require": {
@@ -1242,7 +1242,7 @@
                 "navigation",
                 "yii2"
             ],
-            "time": "2015-07-13 13:46:22"
+            "time": "2015-09-11 22:16:09"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -1477,16 +1477,16 @@
         },
         {
             "name": "kartik-v/yii2-widget-select2",
-            "version": "v2.0.2",
+            "version": "v2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-select2.git",
-                "reference": "585e8797d7982e0c9d09370b98b451a028a59439"
+                "reference": "e72880e7e8dfc845c112ed7df275bf1c929be6db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-select2/zipball/585e8797d7982e0c9d09370b98b451a028a59439",
-                "reference": "585e8797d7982e0c9d09370b98b451a028a59439",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-select2/zipball/e72880e7e8dfc845c112ed7df275bf1c929be6db",
+                "reference": "e72880e7e8dfc845c112ed7df275bf1c929be6db",
                 "shasum": ""
             },
             "require": {
@@ -1521,7 +1521,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2015-07-01 15:20:59"
+            "time": "2015-09-12 19:56:48"
         },
         {
             "name": "lajax/yii2-translate-manager",
