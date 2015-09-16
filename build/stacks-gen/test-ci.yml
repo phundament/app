@@ -3,7 +3,7 @@ appbuilder:
     volumes:
         - '${CI_APP_VOLUME}:/app'
 appcli:
-    build: ../..
+    build: '%APP_DOCKERFILE_PATH%'
     command: 'tail -f /dev/null'
     environment:
         YII_ENV: test
@@ -14,8 +14,6 @@ appcli:
     volumes:
         - '${CI_APP_VOLUME}/tests:/app/tests'
         - '${CI_APP_VOLUME}/codeception.yml:/app/codeception.yml'
-        - '/docker/runner/ci-reports/phundament/app/tests:/app/tests/codeception/_output'
-        - '/docker/runner/ci-reports/phundament/app/docs:/app/runtime/docs'
     volumes_from:
         - appsrc
 appfpm:
