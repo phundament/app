@@ -1,10 +1,11 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "hash": "36a5cc06c996f25379b6036d209e1e49",
+    "content-hash": "d7db6480e830f7818053b978e31cc982",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -489,16 +490,16 @@
         },
         {
             "name": "codemix/yii2-localeurls",
-            "version": "1.2.7",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/codemix/yii2-localeurls.git",
-                "reference": "7784a526fcdc482a6a962e64f9dd0158b34453e4"
+                "reference": "7c2544e006c4971d29747632985d6401492cd9ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codemix/yii2-localeurls/zipball/7784a526fcdc482a6a962e64f9dd0158b34453e4",
-                "reference": "7784a526fcdc482a6a962e64f9dd0158b34453e4",
+                "url": "https://api.github.com/repos/codemix/yii2-localeurls/zipball/7c2544e006c4971d29747632985d6401492cd9ef",
+                "reference": "7c2544e006c4971d29747632985d6401492cd9ef",
                 "shasum": ""
             },
             "require": {
@@ -526,7 +527,7 @@
                 "locale",
                 "yii2"
             ],
-            "time": "2015-09-14 22:41:01"
+            "time": "2015-09-17 07:13:16"
         },
         {
             "name": "codemix/yii2-streamlog",
@@ -1193,16 +1194,16 @@
         },
         {
             "name": "dmstr/yii2-pages-module",
-            "version": "0.7.0",
+            "version": "0.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-pages-module.git",
-                "reference": "5daf8465999b232ae2a05105a3b0bc6ab2ca570e"
+                "reference": "d14e0a74fcfe7ef99a39d4f789513020d0b50374"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-pages-module/zipball/5daf8465999b232ae2a05105a3b0bc6ab2ca570e",
-                "reference": "5daf8465999b232ae2a05105a3b0bc6ab2ca570e",
+                "url": "https://api.github.com/repos/dmstr/yii2-pages-module/zipball/d14e0a74fcfe7ef99a39d4f789513020d0b50374",
+                "reference": "d14e0a74fcfe7ef99a39d4f789513020d0b50374",
                 "shasum": ""
             },
             "require": {
@@ -1242,7 +1243,7 @@
                 "navigation",
                 "yii2"
             ],
-            "time": "2015-09-11 22:16:09"
+            "time": "2015-09-17 19:26:14"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -2720,7 +2721,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii2-giiant/zipball/ed238147f5554e13d75f43ed27ef595b87eb7cba",
+                "url": "https://api.github.com/repos/schmunk42/yii2-giiant/zipball/fbb00f518f25175880b90db5193a35cb676482f1",
                 "reference": "d40733b",
                 "shasum": ""
             },
