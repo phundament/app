@@ -41,10 +41,7 @@ AppAsset::register($this);
             'items'        => \dmstr\modules\pages\models\Tree::getMenuItems('root_'.Yii::$app->language),
         ]
     );
-    $menuItems = [
-        ['label' => 'About', 'url' => ['/site/about']],
-        ['label' => 'Contact', 'url' => ['/site/contact']],
-    ];
+    $menuItems = [];
     if (Yii::$app->hasModule('user')) {
         if (Yii::$app->user->isGuest) {
             $menuItems[] = ['label' => 'Signup', 'url' => ['/user/registration/register']];
@@ -101,7 +98,9 @@ AppAsset::register($this);
     <div class="container">
         <p class="pull-right">
             &copy; <?= date('Y') ?> |
-            <?= Html::a('About', ['/site/about']) ?>
+            <?= Html::a('About', ['/site/about']) ?> |
+            <?= Html::a('Contact', ['/site/contact']) ?>
+
         </p>
 
         <p class="pull-left"><?= Html::a(

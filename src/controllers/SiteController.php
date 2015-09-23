@@ -7,6 +7,7 @@ use app\models\PasswordResetRequestForm;
 use app\models\ResetPasswordForm;
 use app\models\SignupForm;
 use Yii;
+use yii\filters\AccessControl;
 use yii\helpers\Markdown;
 use yii\helpers\Url;
 use yii\web\Controller;
@@ -16,6 +17,33 @@ use yii\web\Controller;
  */
 class SiteController extends Controller
 {
+    /**
+     * @inheritdoc
+     */
+    public function behaviors()
+    {
+        return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'allow' => true,
+                        'actions' => ['error'],
+                    ],
+                    [
+                        'allow' => true,
+                        'matchCallback' => function ($rule, $action) {
+                            return \Yii::$app->user->can(
+                                $this->module->id . '_' . $this->id . '_' . $action->id,
+                                ['route' => true]
+                            );
+                        },
+                    ]
+                ]
+            ]
+        ];
+    }
+
     /**
      * @inheritdoc
      */
