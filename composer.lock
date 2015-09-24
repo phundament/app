@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "36a5cc06c996f25379b6036d209e1e49",
-    "content-hash": "d7db6480e830f7818053b978e31cc982",
+    "hash": "e294e1c6b95d119266a915f1bed2f75a",
+    "content-hash": "eab84c57a0c22fabaac3dab714f71faa",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -873,7 +873,7 @@
         },
         {
             "name": "dmstr/yii2-app-command",
-            "version": "dev-master",
+            "version": "0.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-app-command.git",
@@ -997,7 +997,7 @@
         },
         {
             "name": "dmstr/yii2-cms-metapackage",
-            "version": "dev-master",
+            "version": "0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-cms-metapackage.git",
@@ -1114,7 +1114,7 @@
         },
         {
             "name": "dmstr/yii2-libs-metapackage",
-            "version": "dev-master",
+            "version": "0.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-libs-metapackage.git",
@@ -1928,16 +1928,16 @@
         },
         {
             "name": "yiisoft/yii2-authclient",
-            "version": "2.0.4",
+            "version": "2.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-authclient.git",
-                "reference": "cbe801a7d8bb477be15cb0fbdaa75ca5bdfeb91b"
+                "reference": "22910bfe0000538f5b3ca1102cd3de0b5d14a0e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-authclient/zipball/cbe801a7d8bb477be15cb0fbdaa75ca5bdfeb91b",
-                "reference": "cbe801a7d8bb477be15cb0fbdaa75ca5bdfeb91b",
+                "url": "https://api.github.com/repos/yiisoft/yii2-authclient/zipball/22910bfe0000538f5b3ca1102cd3de0b5d14a0e2",
+                "reference": "22910bfe0000538f5b3ca1102cd3de0b5d14a0e2",
                 "shasum": ""
             },
             "require": {
@@ -1972,25 +1972,25 @@
                 "oauth",
                 "yii2"
             ],
-            "time": "2015-05-10 22:07:56"
+            "time": "2015-09-23 17:26:02"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
-            "version": "2.0.4",
+            "version": "2.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-bootstrap.git",
-                "reference": "1b6b1e61cf91c3cdd517d6a7e71d30bb212e4af0"
+                "reference": "1464f93834b1d5edb1f5625f7ffd6c3723fa4923"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/1b6b1e61cf91c3cdd517d6a7e71d30bb212e4af0",
-                "reference": "1b6b1e61cf91c3cdd517d6a7e71d30bb212e4af0",
+                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/1464f93834b1d5edb1f5625f7ffd6c3723fa4923",
+                "reference": "1464f93834b1d5edb1f5625f7ffd6c3723fa4923",
                 "shasum": ""
             },
             "require": {
                 "bower-asset/bootstrap": "3.3.* | 3.2.* | 3.1.*",
-                "yiisoft/yii2": ">=2.0.4"
+                "yiisoft/yii2": ">=2.0.6"
             },
             "type": "yii2-extension",
             "extra": {
@@ -2022,7 +2022,7 @@
                 "bootstrap",
                 "yii2"
             ],
-            "time": "2015-05-10 22:08:17"
+            "time": "2015-09-23 17:48:24"
         },
         {
             "name": "yiisoft/yii2-composer",
@@ -2301,7 +2301,7 @@
         },
         {
             "name": "dmstr/yii2-cms-dev-metapackage",
-            "version": "dev-master",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-cms-dev-metapackage.git",
@@ -2341,16 +2341,16 @@
         },
         {
             "name": "dmstr/yii2-yaml-converter-command",
-            "version": "dev-master",
+            "version": "0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-yaml-converter-command.git",
-                "reference": "9bf2c8e3474d03d5f2f705ab1303e5795dbc0b5d"
+                "reference": "01a6c1617a65eb685ea2be9daa4d47d39720daa1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-yaml-converter-command/zipball/9bf2c8e3474d03d5f2f705ab1303e5795dbc0b5d",
-                "reference": "9bf2c8e3474d03d5f2f705ab1303e5795dbc0b5d",
+                "url": "https://api.github.com/repos/dmstr/yii2-yaml-converter-command/zipball/01a6c1617a65eb685ea2be9daa4d47d39720daa1",
+                "reference": "01a6c1617a65eb685ea2be9daa4d47d39720daa1",
                 "shasum": ""
             },
             "require": {
@@ -2378,7 +2378,7 @@
                 "extension",
                 "yii2"
             ],
-            "time": "2015-07-01 22:47:09"
+            "time": "2015-06-16 01:28:36"
         },
         {
             "name": "fabpot/php-cs-fixer",
@@ -2713,16 +2713,16 @@
         },
         {
             "name": "schmunk42/yii2-giiant",
-            "version": "dev-master",
+            "version": "0.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii2-giiant.git",
-                "reference": "d40733b"
+                "reference": "cdc442afc6c16016fba850c74e1128f825ba5f1d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii2-giiant/zipball/fbb00f518f25175880b90db5193a35cb676482f1",
-                "reference": "d40733b",
+                "url": "https://api.github.com/repos/schmunk42/yii2-giiant/zipball/cdc442afc6c16016fba850c74e1128f825ba5f1d",
+                "reference": "cdc442afc6c16016fba850c74e1128f825ba5f1d",
                 "shasum": ""
             },
             "require": {
@@ -2759,7 +2759,7 @@
                 "gii",
                 "yii2"
             ],
-            "time": "2015-08-28 20:35:26"
+            "time": "2015-09-24 00:00:42"
         },
         {
             "name": "schmunk42/yii2-markdocs-module",
@@ -3613,13 +3613,10 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "dmstr/yii2-app-command": 20,
-        "dmstr/yii2-cms-metapackage": 20,
-        "dmstr/yii2-cms-dev-metapackage": 20,
-        "dmstr/yii2-libs-metapackage": 20,
-        "dmstr/yii2-yaml-converter-command": 20,
-        "yiisoft/yii2-debug": 0,
-        "schmunk42/yii2-giiant": 20
+        "dmstr/yii2-cms-metapackage": 0,
+        "dmstr/yii2-cms-dev-metapackage": 0,
+        "dmstr/yii2-libs-metapackage": 0,
+        "yiisoft/yii2-debug": 0
     },
     "prefer-stable": false,
     "prefer-lowest": false,

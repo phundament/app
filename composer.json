@@ -31,18 +31,16 @@
   },
   "minimum-stability": "stable",
   "require": {
-    "dmstr/yii2-app-command": "dev-master",
-    "dmstr/yii2-cms-metapackage": "dev-master",
+    "dmstr/yii2-cms-metapackage": "@stable",
     "vlucas/phpdotenv": "2.*",
     "yiisoft/yii2": "2.0.*",
     "yiisoft/yii2-composer": "2.0.*"
   },
   "require-dev": {
-    "dmstr/yii2-cms-dev-metapackage": "dev-master",
-    "dmstr/yii2-libs-metapackage": "dev-master",
-    "dmstr/yii2-yaml-converter-command": "dev-master",
+    "dmstr/yii2-cms-dev-metapackage": "@stable",
+    "dmstr/yii2-libs-metapackage": "@stable",
     "yiisoft/yii2-debug": "@stable",
-    "schmunk42/yii2-giiant": "dev-master#d40733b"
+    "schmunk42/yii2-giiant": "0.5.*"
   },
   "scripts": {
     "post-create-project-cmd": [
