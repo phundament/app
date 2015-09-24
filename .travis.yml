@@ -38,7 +38,7 @@ before_script:
   - php yii migrate --interactive=0
 
 script:
-  - codecept -v run unit && codecept -v run functional
+  - codecept -v run unit && codecept -v run functional prod
 
 after_success:
   - php yii app/setup-docs --interactive=0
