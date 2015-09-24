@@ -7,7 +7,7 @@ pwd
 # ENV settings
 export DOCKER_CLIENT_TIMEOUT=120
 export BUILDER_SERVICE_SUFFIX=builder
-export APP_MIGRATION_LOOKUP=@root/tests/codeception/_migrations
+##export APP_MIGRATION_LOOKUP=@root/tests/codeception/_migrations
 export DOCS_OUTPUT_PATH=/app/tests/_output/docs
 
 # Get commit info
@@ -35,7 +35,7 @@ make CI app-build-assets docker-build
 ## Start and prepare application
 make CI docker-up
 # TODO: CI needs additional from run.sh and can not run: make CI app-setup
-make CI app-run CMD='sh src/init.sh'
+make CI app-run CMD='APP_MIGRATION_LOOKUP=@root/tests/codeception/_migrations sh src/init.sh'
 make CI app-clean-tests
 
 make CI OPTS='-v acceptance prod' app-run-tests
