@@ -7,7 +7,7 @@ pwd
 # ENV settings
 export DOCKER_CLIENT_TIMEOUT=120
 export BUILDER_SERVICE_SUFFIX=builder
-export APP_MIGRATION_LOOKUP=@app/migrations
+export APP_MIGRATION_LOOKUP=@root/tests/codeception/_migrations
 export DOCS_OUTPUT_PATH=/app/tests/_output/docs
 
 # Get commit info

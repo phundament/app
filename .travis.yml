@@ -35,7 +35,7 @@ before_script:
   - mysql -e 'create database p4_test;'
   - mysql -e "CREATE USER 'test'@'localhost' IDENTIFIED BY 'test123';"
   - mysql -uroot -e "GRANT ALL PRIVILEGES ON * . * TO 'test'@'localhost';"
-  - php yii migrate --interactive=0
+  - php yii migrate --migrationLookup=@root/tests/codeception/_migrations --interactive=0
 
 script:
   - codecept -v run unit && codecept -v run functional prod
