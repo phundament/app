@@ -124,3 +124,6 @@ For details of available application configuration, please refer to the Yii 2.0 
 -----------
 
 *Developed by diemeisterei GmbH, Stuttgart.*
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/phundament/app/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
