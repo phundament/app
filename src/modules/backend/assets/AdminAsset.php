@@ -21,7 +21,7 @@ class AdminAsset extends AssetBundle
     public $sourcePath = '@app/modules/backend/assets/web';
 
     public $css = [
-        'site.less',
+        'less/site.less',
     ];
     public $js = [
     ];
