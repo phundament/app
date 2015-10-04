@@ -106,7 +106,6 @@ $common = [
             'layout' => '@admin-views/layouts/main',
             'params' => [
                 'availableViews' => [
-                    '@app/views/layouts/default.php' => 'Standard Page (with Sidebar)',
                     '@vendor/dmstr/yii2-widgets-module/example-views/column1.php' => 'One Column'
                 ],
                 'menuItems'      => [
