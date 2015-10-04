@@ -34,7 +34,7 @@ STAGING:    ##@config configure application for local staging
 .PHONY: dev migrate crud
 
 migrate: 	##@Project app/migrate (database migrations with test data)
-	docker-compose run app$(WORKER_SERVICE_SUFFIX) ./yii migrate --migrationLookup=@app/migrations/data
+	docker-compose run app$(WORKER_SERVICE_SUFFIX) ./yii migrate --migrationLookup=@app/migrations
 
 user: 		##@Project app/setup-admin-user (dektrium/user)
 	docker-compose run app$(WORKER_SERVICE_SUFFIX) ./yii app/setup-admin-user
