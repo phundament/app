@@ -32,7 +32,11 @@ STAGING:    ##@config configure application for local staging
 
 # Local development
 # -----------------
-.PHONY: dev migrate crud
+.PHONY: env-init dev migrate crud
+
+env-init:   ##@Project copy .env-dist .env
+	cp -i .env-dist .env
+	@echo "\nDefault environment settings copied."
 
 migrate: 	##@Project app/migrate (database migrations with test data)
 	docker-compose run app$(WORKER_SERVICE_SUFFIX) ./yii migrate --migrationLookup=$(APP_MIGRATION_LOOKUP)
