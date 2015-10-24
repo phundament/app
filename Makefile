@@ -50,4 +50,4 @@ build-files: app-build-stacks app-update-version ##@dev dev shorthands
 
 dev: app-setup app-up app-open
 
-reset: docker-kill docker-rm
+reset: docker-kill docker-rm docker-up app-setup
