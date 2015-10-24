@@ -65,7 +65,8 @@ $common = [
                 #'docs' => 'docs/default/index',
             ],
             'languages' => [
-                'de'
+                'de',
+                'en'
             ]
         ],
         'user'    => [
