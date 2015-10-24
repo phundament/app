@@ -2,7 +2,6 @@
 # --------------------
 
 -include .env
-include .env
 
 default: help
 
