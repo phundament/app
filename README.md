@@ -18,10 +18,24 @@ Quick-Start
 Clone the repository and go to the application directory
 
     git clone https://github.com/phundament/app
+    cd app
+
+**With MAKE**
+
+Create environment configuration file
+
+    make env-init
+    
+Start the application stack
+
+    make app-build app-install app-setup app-up app-open
+    
+> The new application will open automatically in your default browser
+
+**Without MAKE**
 
 Create environment configuration file    
     
-    cd app
     cp .env-dist .env
 
 Start the application stack
@@ -33,6 +47,7 @@ Find the port for the application nginx service
     docker-compose port appnginx 80
 
 And open the application in your browser, eg. `http://dockerhost:34567`    
+
 
 ### Additional information
 
