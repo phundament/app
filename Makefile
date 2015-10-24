@@ -1,6 +1,7 @@
 # Basic build-settings
 # --------------------
 
+-include .env
 include .env
 
 default: help
