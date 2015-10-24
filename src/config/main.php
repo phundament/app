@@ -205,9 +205,10 @@ $web = [
 
 $console = [
     'controllerNamespace' => 'app\commands',
-    'controllerMap'       => [
-        'migrate' => 'dmstr\console\controllers\MigrateController',
-        'yaml'    => 'dmstr\console\controllers\DockerStackConverterController'
+    'controllerMap' => [
+        'migrate'   => 'dmstr\console\controllers\MigrateController',
+        'yaml'      => 'dmstr\console\controllers\DockerStackConverterController',
+        'translate' => '\lajax\translatemanager\commands\TranslatemanagerController',
     ],
     'components'          => [
 
