@@ -42,7 +42,7 @@ appnginx:
 # Build-container with CLI and source-code
 appsrc:
   build: .
-  command: 'tail -f /dev/null'
+  command: '/bin/bash'
   # host-volume for local development
   volumes:
     - '.:/app'
