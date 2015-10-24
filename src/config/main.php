@@ -105,10 +105,10 @@ $common = [
         'pages' => [
             'class'  => 'dmstr\modules\pages\Module',
             'layout' => '@admin-views/layouts/main',
+            'availableViews' => [
+                '@vendor/dmstr/yii2-pages-module/example-views/column1.php' => 'One Column'
+            ],
             'params' => [
-                'availableViews' => [
-                    '@vendor/dmstr/yii2-widgets-module/example-views/column1.php' => 'One Column'
-                ],
                 'menuItems'      => [
                     'label' => 'Pages',
                     'url'   => ['/pages']

@@ -1192,16 +1192,16 @@
         },
         {
             "name": "dmstr/yii2-pages-module",
-            "version": "0.8.0",
+            "version": "0.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-pages-module.git",
-                "reference": "d14e0a74fcfe7ef99a39d4f789513020d0b50374"
+                "reference": "f3968612a8c11023ccf7b26593b6d2774fa44d63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-pages-module/zipball/d14e0a74fcfe7ef99a39d4f789513020d0b50374",
-                "reference": "d14e0a74fcfe7ef99a39d4f789513020d0b50374",
+                "url": "https://api.github.com/repos/dmstr/yii2-pages-module/zipball/f3968612a8c11023ccf7b26593b6d2774fa44d63",
+                "reference": "f3968612a8c11023ccf7b26593b6d2774fa44d63",
                 "shasum": ""
             },
             "require": {
@@ -1241,7 +1241,7 @@
                 "navigation",
                 "yii2"
             ],
-            "time": "2015-09-17 19:26:14"
+            "time": "2015-10-24 22:44:36"
         },
         {
             "name": "ezyang/htmlpurifier",
