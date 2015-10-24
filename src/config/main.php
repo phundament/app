@@ -66,7 +66,6 @@ $common = [
             ],
             'languages' => [
                 'de',
-                'en'
             ]
         ],
         'user'    => [
