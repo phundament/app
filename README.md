@@ -28,7 +28,7 @@ Create environment configuration file
     
 Start the application stack
 
-    make app-build app-install app-setup app-up app-open
+    make docker-up app-build app-install app-setup app-open
     
 > The new application will open automatically in your default browser
 
