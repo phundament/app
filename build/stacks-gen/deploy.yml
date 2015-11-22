@@ -33,7 +33,7 @@ appnginx:
     volumes_from:
         - appsrc
 appsrc:
-    command: 'tail -f /dev/null'
+    command: /bin/bash
     image: 'phundament/app:latest'
     volumes:
         - /app
