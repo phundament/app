@@ -65,7 +65,7 @@ $common = [
                 #'docs' => 'docs/default/index',
             ],
             'languages' => [
-                'de'
+                'de',
             ]
         ],
         'user'    => [
@@ -104,11 +104,10 @@ $common = [
         'pages' => [
             'class'  => 'dmstr\modules\pages\Module',
             'layout' => '@admin-views/layouts/main',
+            'availableViews' => [
+                '@vendor/dmstr/yii2-pages-module/example-views/column1.php' => 'One Column'
+            ],
             'params' => [
-                'availableViews' => [
-                    '@app/views/layouts/default.php' => 'Standard Page (with Sidebar)',
-                    '@vendor/dmstr/yii2-widgets-module/example-views/column1.php' => 'One Column'
-                ],
                 'menuItems'      => [
                     'label' => 'Pages',
                     'url'   => ['/pages']
@@ -205,9 +204,10 @@ $web = [
 
 $console = [
     'controllerNamespace' => 'app\commands',
-    'controllerMap'       => [
-        'migrate' => 'dmstr\console\controllers\MigrateController',
-        'yaml'    => 'dmstr\console\controllers\DockerStackConverterController'
+    'controllerMap' => [
+        'migrate'   => 'dmstr\console\controllers\MigrateController',
+        'yaml'      => 'dmstr\console\controllers\DockerStackConverterController',
+        'translate' => '\lajax\translatemanager\commands\TranslatemanagerController',
     ],
     'components'          => [
 

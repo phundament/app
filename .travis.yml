@@ -29,6 +29,8 @@ install:
   - composer install --dev --prefer-dist
 
 before_script:
+  - php yii
+  - ./yii
   - mkdir -p tests/codeception/_output && chmod 777 tests/codeception/_output
   - sed -i.bak 's/localhost:80/localhost:8080/' tests/codeception/acceptance.suite.yml
   - php -S localhost:8080 -t web > /dev/null 2>&1 &

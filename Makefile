@@ -1,7 +1,7 @@
 # Basic build-settings
 # --------------------
 
-include .env
+-include .env
 
 default: help
 
@@ -31,18 +31,28 @@ STAGING:    ##@config configure application for local staging
 
 # Local development
 # -----------------
-.PHONY: dev migrate crud
+.PHONY: env-init dev migrate crud
 
-migrate: 	##@Project app/migrate (database migrations with test data)
-	docker-compose run app$(WORKER_SERVICE_SUFFIX) ./yii migrate --migrationLookup=@app/migrations/data
+env-init:			##@Project copy .env-dist .env
+	cp -i .env-dist .env
+	@echo "\nDefault environment settings copied."
 
-user: 		##@Project app/setup-admin-user (dektrium/user)
+migrate:			##@Project app/migrate (database migrations with test data)
+	docker-compose run app$(WORKER_SERVICE_SUFFIX) ./yii migrate --migrationLookup=$(APP_MIGRATION_LOOKUP)
+
+translate-scan:		##@Project translate/scan (scan translations)
+	docker-compose run app$(WORKER_SERVICE_SUFFIX) ./yii translate/scan
+
+translate-optimize:	##@Project translate/optimize (optimize translations)
+	docker-compose run app$(WORKER_SERVICE_SUFFIX) ./yii translate/optimize
+
+user:				##@Project app/setup-admin-user (dektrium/user)
 	docker-compose run app$(WORKER_SERVICE_SUFFIX) ./yii app/setup-admin-user
 
-giiant-module:
+giiant-module:		##@Project giiant/batch (schmunk42/yii2-giiant)
 	docker-compose run app$(WORKER_SERVICE_SUFFIX) ./yii gii/giiant-module --moduleID=$(MODULE_ID) --moduleClass=ext\\$(MODULE_ID)\\Module
 
-giiant-batch: 	##@app build/crud.sh
+giiant-batch: 		##@app build/crud.sh
 	docker-compose run app$(WORKER_SERVICE_SUFFIX) sh -c "MODULE_ID=$(MODULE_ID) sh /app/src/giiant-batch.sh"
 
 
@@ -50,4 +60,4 @@ build-files: app-build-stacks app-update-version ##@dev dev shorthands
 
 dev: app-setup app-up app-open
 
-reset: docker-kill docker-rm
+reset: docker-kill docker-rm docker-up app-setup
