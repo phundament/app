@@ -19,3 +19,5 @@ deploy:
         #- cp .env-dist .env
         - bash build/ci/deploy.sh
     stage: deploy
+    only:
+        - master

@@ -1,4 +1,4 @@
-FROM phundament/php:5.6-cli-4.5.0-dev
+FROM phundament/php-one:5.6-fpm
 
 # Clean eventually orphaned files and remove installation source
 RUN rm -rf /app/src /app/web /app-src
@@ -20,5 +20,5 @@ ADD web /app/web
 ADD src /app/src
 
 # Create folder writable by the application (non-persistent data)
-RUN mkdir /app/web/assets /app/runtime && \
+RUN mkdir -p /app/web/assets /app/runtime && \
     chmod 777 /app/web/assets /app/runtime

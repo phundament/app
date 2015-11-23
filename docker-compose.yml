@@ -18,7 +18,7 @@ appcli:
 
 # The php-fpm server for interpreting php code
 appfpm:
-  image: phundament/php:5.6-fpm-4.5.0-dev
+  image: phundament/php-one:5.6-fpm
   # host-volume for local development
   volumes:
     - '.:/app'
