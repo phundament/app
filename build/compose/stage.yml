@@ -1,0 +1,9 @@
+php:
+  image: app_php
+  volumes:
+    - /app
+nginx:
+  volumes_from:
+    - php
+  ports:
+    - '40081:80'

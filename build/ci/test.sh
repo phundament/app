@@ -1,28 +1,12 @@
 #!/bin/bash
 
-# Script settings & info
-set -e
-pwd
-
 # ENV settings
-export DOCKER_CLIENT_TIMEOUT=120
-export BUILDER_SERVICE_SUFFIX=builder
+export COMPOSE_HTTP_TIMEOUT=120
 export APP_MIGRATION_LOOKUP=@root/tests/codeception/_migrations
-export DOCS_OUTPUT_PATH=/app/tests/_output/docs
-
-# Get commit info
-APP_VERSION=$(cat version)
-COMMIT_MESSAGE=$(git log -1 --pretty=%B)
-echo "Application Version ${APP_VERSION}"
-echo "${COMMIT_MESSAGE}"
-
-# Persist vendor
-# Note: This does not work with `git clone` as default checkout in CI
-mkdir -p vendor && touch vendor/.gitkeep
-if [ -d vendor/.git ] ; then echo "Directory 'vendor' is already a git repository."; else git -C vendor init; git -C vendor add .gitkeep; git -C vendor commit -m 'persist'; fi ;
 
 # Cleanup, install, setup, build, test, tag
-cp .env-dist .env
-docker-compose build
+make TEST setup up
+make TEST run-tests codecept_opts='unit prod --html=_report_unit.html'
+make TEST run-tests codecept_opts='acceptance prod --html=_report_acceptance.html'
 
 exit 0

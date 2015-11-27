@@ -1,23 +1,47 @@
 before_script:
-    - export CI_APP_VOLUME=/srv/gitlab-runner/$CI_PROJECT_DIR
-    - export COMPOSE_PROJECT_NAME=build${CI_BUILD_ID}
-    - export CI_REPORTS_PATH=/volume1/Servers/storage/internal-30/ci-reports/projects/${CI_PROJECT_ID}/builds/${CI_BUILD_ID}
+  - export CI_APP_VOLUME=$CI_PROJECT_DIR
+  - export COMPOSE_PROJECT_NAME=build${CI_BUILD_ID}
+  - export CI_REPORTS_PATH=/volume1/Servers/storage/internal-30/ci-reports/projects/${CI_PROJECT_ID}/builds/${CI_BUILD_ID}
+  - echo $CI_APP_VOLUME
 
-job:
-    script:
-        - bash build/ci/test.sh
-        - sshpass -p "$SFTP_PASS" ssh sftp@192.168.23.17 "mkdir -p ${CI_REPORTS_PATH}"
-        - sshpass -p "$SFTP_PASS" scp -o StrictHostKeyChecking=no -r ${PWD}/tests/codeception/_output/* sftp@192.168.23.17:${CI_REPORTS_PATH}
-    stage: test
+cache:
+  untracked: true
+  paths:
+    - vendor/
+
+stages:
+  - build
+  - test
+  - cleanup_test
+  - deploy
+
+build:
+  stage: build
+  script:
+      - bash build/ci/build.sh
+
+test:
+  stage: test
+  script:
+      - bash build/ci/test.sh
+      - mv tests/codeception/_output/latest reports-${CI_BUILD_ID}
+  artifacts:
+    paths:
+      - reports-${CI_BUILD_ID}
+
+cleanup_test:
+  stage: cleanup_test
+  script:
+    - make TEST clean
+  when: always
 
 deploy:
-    script:
-        - export REGISTRY_HOST=index.docker.io
-        - export REGISTRY_USER=schmunk42
-        - export PROJECT_REGISTRY=phundament
-        - export IMAGE_NAME=app
-        #- cp .env-dist .env
-        - bash build/ci/deploy.sh
-    stage: deploy
-    only:
-        - master
+  stage: deploy
+  script:
+      - export REGISTRY_HOST=index.docker.io
+      - export REGISTRY_USER=schmunk42
+      - export PROJECT_REGISTRY=phundament
+      - export IMAGE_NAME=app
+      - bash build/ci/deploy.sh
+  only:
+      - master

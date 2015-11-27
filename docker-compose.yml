@@ -8,8 +8,6 @@ php:
   build: .
   links:
     - 'mariadb:DB'
-  volumes:
-    - .:/app
   #environment:
   #  APP_MIGRATION_LOOKUP: '@app/migrations'
 
@@ -17,8 +15,6 @@ nginx:
   image: phundament/nginx-one:1.9
   links:
     - 'php:PHPFPM'
-  volumes:
-    - .:/app
 
 mariadb:
   image: 'tutum/mariadb:10.1'

@@ -1,12 +1,20 @@
+php:
+  volumes:
+    - /app
 nginx:
+  volumes_from:
+    - php
   ports:
     - '80'
 tester:
   build: .
   links:
+    - 'mariadb:DB'
     - 'seleniumfirefox:HUB'
   volumes:
-    - .:/app
+    - ${CI_APP_VOLUME}:/app
+  environment:
+    - YII_ENV=test
 seleniumfirefox:
   image: selenium/standalone-firefox-debug:2.47.1
   links:

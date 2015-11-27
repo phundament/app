@@ -1,6 +1,11 @@
+php:
+  volumes:
+    - .:/app
 nginx:
   ports:
     - '40080:80'
+  volumes:
+    - .:/app
 mariadb:
   ports:
     - '43306:3306'

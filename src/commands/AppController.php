@@ -36,6 +36,10 @@ class AppController extends BaseAppController
 
     public $defaultAction = 'version';
 
+    public function actionVersion($alias = '/app/version')
+    {
+        parent::actionVersion($alias);
+    }
     /**
      * Clear [application]/web/assets folder
      */
