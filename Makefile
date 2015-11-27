@@ -34,13 +34,23 @@ setup:	##@docker setup application packages and database
 	docker-compose run $(PHP) yii migrate --interactive=0
 	docker-compose run $(PHP) yii app/setup-admin-user --interactive=0
 
-clean:
+
+clean:  ##@docker remove application containers
 	docker-compose kill
 	docker-compose rm -fv
 
-update:
+update: ##@docker update application packages
 	git pull
 	docker-compose run php composer install
+
+
+TEST:	##@config configure application for local testing
+	$(eval COMPOSE_PROJECT_NAME := test${COMPOSE_PROJECT_NAME})
+    $(eval COMPOSE_FILES_PARAM := -f docker-compose.yml -f build/compose/testing.yml)
+
+run-tests:
+	docker-compose $(COMPOSE_FILES_PARAM) up -d
+	docker-compose $(COMPOSE_FILES_PARAM) run tester sh -c 'YII_ENV=test codecept run'
 
 # Help based on https://gist.github.com/prwhite/8168133 thanks to @nowox and @prwhite
 # And add help text after each target name starting with '\#\#'

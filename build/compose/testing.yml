@@ -1,0 +1,16 @@
+nginx:
+  ports:
+    - '80'
+tester:
+  build: .
+  links:
+    - 'seleniumfirefox:HUB'
+  volumes:
+    - .:/app
+seleniumfirefox:
+  image: selenium/standalone-firefox-debug:2.47.1
+  links:
+    - 'nginx:WEB'
+  ports:
+    - '4444'
+    - '5900'

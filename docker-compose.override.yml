@@ -1,0 +1,6 @@
+nginx:
+  ports:
+    - '40080:80'
+mariadb:
+  ports:
+    - '43306:3306'
