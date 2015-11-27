@@ -20,19 +20,15 @@ Clone the repository and go to the application directory
     git clone https://github.com/phundament/app
     cd app
 
-**With MAKE**
+**With Make**
 
-Create environment configuration file
+Just run...
 
-    make env-init
-    
-Start the application stack
+    make
+     
+> On OS X, the new application should open automatically in your default browser.
 
-    make docker-up app-build app-install app-setup app-open
-    
-> The new application will open automatically in your default browser
-
-**Without MAKE**
+**Without Make**
 
 Create environment configuration file    
     
@@ -42,11 +38,8 @@ Start the application stack
 
     docker-compose up -d
 
-Find the port for the application nginx service
 
-    docker-compose port appnginx 80
-
-And open the application in your browser, eg. `http://dockerhost:34567`    
+After startup is complete, open `http://docker:40080` to access the application and login with `admin`/`admin`.
 
 
 ### Additional information
@@ -81,7 +74,6 @@ Demo
     
 Configuration
 -------------
-
 
 ### Environment defaults - `.env`
 

@@ -23,26 +23,6 @@ if [ -d vendor/.git ] ; then echo "Directory 'vendor' is already a git repositor
 
 # Cleanup, install, setup, build, test, tag
 cp .env-dist .env
-make CI docker-kill
-make CI docker-rm
-
-## Pull source images and build project image
-make CI docker-pull
-
-make CI OPTS='--prefer-dist' app-install
-make CI app-build-assets docker-build
-
-## Start and prepare application
-make CI docker-up
-# TODO: CI needs additional from run.sh and can not run: make CI app-setup
-make CI app-run CMD='sh src/init.sh'
-make CI app-run CMD='yii migrate --migrationLookup=@root/tests/codeception/_migrations --interactive=0'
-make CI app-clean-tests
-
-make CI OPTS='-v acceptance prod' app-run-tests
-make CI app-build-docs
-
-# Final cleanup
-make CI docker-kill docker-rm
+docker-compose build
 
 exit 0

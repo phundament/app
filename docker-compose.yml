@@ -4,54 +4,27 @@
 # Application services
 # --------------------
 
-# container to run one-off commands - a dockerized shell
-appcli:
-  # should be replaced with image, eg. <project_name>_appsrc
+php:
   build: .
-  # host-volume for local development
-  volumes:
-    - '.:/app'
-  links:
-    - 'appnginx:WEB'
-    - 'mariadb:DB'
-  command: 'sh src/run.sh'
-
-# The php-fpm server for interpreting php code
-appfpm:
-  image: phundament/php-one:5.6-fpm
-  # host-volume for local development
-  volumes:
-    - '.:/app'
   links:
     - 'mariadb:DB'
-
-# The nginx server for serving static files directly
-appnginx:
-  image: schmunk42/nginx:1.9
-  links:
-    - 'appfpm:PHPFPM'
-  # host-volume for local development
   volumes:
-    - '.:/app'
-    #- 'build/nginx/run.sh:/root/run.sh'
+    - /app
+  #environment:
+  #  APP_MIGRATION_LOOKUP: '@app/migrations'
+
+nginx:
+  image: phundament/nginx-one:1.9
+  links:
+    - 'php:PHPFPM'
   ports:
-    - '80'
-  environment:
-    VIRTUAL_HOST: '~^dev\.myapp\.'
+    - '40080:80'
+  volumes_from:
+    - php
 
-# Build-container with CLI and source-code
-appsrc:
-  build: .
-  command: '/bin/bash'
-  # host-volume for local development
-  volumes:
-    - '.:/app'
-
-# Data Services
-# -------------
 mariadb:
-  image: tutum/mariadb:10.1
+  image: 'tutum/mariadb:10.1'
   ports:
-    - '3306'
+    - '43306:3306'
   environment:
     MARIADB_PASS: secretadmin

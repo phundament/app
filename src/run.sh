@@ -2,5 +2,4 @@
 
 sh /app/src/init.sh
 
-echo "Container is kept running to improve stack-stability, if you are running an interactive shell or one-off command: use <ctrl+c> to exit."
-tail -f /dev/null
+php-fpm
