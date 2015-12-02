@@ -1,8 +1,11 @@
 before_script:
+  - export COMPOSE_PROJECT_NAME=build${CI_BUILD_REF}
   - export CI_APP_VOLUME=$CI_PROJECT_DIR
-  - export COMPOSE_PROJECT_NAME=build${CI_BUILD_ID}
   - export CI_REPORTS_PATH=/volume1/Servers/storage/internal-30/ci-reports/projects/${CI_PROJECT_ID}/builds/${CI_BUILD_ID}
-  - echo $CI_APP_VOLUME
+  - export REGISTRY_HOST=index.docker.io
+  - export REGISTRY_USER=schmunk42
+  - export IMAGE_NAME=phundament/app
+
 
 cache:
   untracked: true
@@ -38,10 +41,6 @@ cleanup_test:
 deploy:
   stage: deploy
   script:
-      - export REGISTRY_HOST=index.docker.io
-      - export REGISTRY_USER=schmunk42
-      - export PROJECT_REGISTRY=phundament
-      - export IMAGE_NAME=app
       - bash build/ci/deploy.sh
   only:
       - master
