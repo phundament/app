@@ -5,7 +5,6 @@ before_script:
   - echo $CI_APP_VOLUME
 
 cache:
-  untracked: true
   paths:
     - vendor/
 
