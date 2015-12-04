@@ -28,17 +28,17 @@ AppAsset::register($this);
     NavBar::begin(
         [
             'brandLabel' => getenv('APP_NAME'),
-            'brandUrl'   => Yii::$app->homeUrl,
-            'options'    => [
+            'brandUrl' => Yii::$app->homeUrl,
+            'options' => [
                 'class' => 'navbar navbar-fixed-top navbar-bold',
             ],
         ]
     );
     echo Nav::widget(
         [
-            'options'      => ['class' => 'navbar-nav'],
+            'options' => ['class' => 'navbar-nav'],
             'encodeLabels' => false,
-            'items'        => \dmstr\modules\pages\models\Tree::getMenuItems('root_'.Yii::$app->language),
+            'items' => \dmstr\modules\pages\models\Tree::getMenuItems('root_' . Yii::$app->language),
         ]
     );
     $menuItems = [];
@@ -49,32 +49,34 @@ AppAsset::register($this);
         } else {
             $menuItems[] = [
                 'label' => '<i class="glyphicon glyphicon-user"></i> ' . Yii::$app->user->identity->username,
-                'options' => ['id'=>'link-user-menu'],
+                'options' => ['id' => 'link-user-menu'],
                 'items' => [
                     [
                         'label' => '<i class="glyphicon glyphicon-user"></i> Profile',
-                        'url'   => ['/user/profile/show', 'id' => \Yii::$app->user->id],
+                        'url' => ['/user/profile/show', 'id' => \Yii::$app->user->id],
                     ],
                     '<li class="divider"></li>',
                     [
-                        'label'       => '<i class="glyphicon glyphicon-log-out"></i> Logout',
-                        'url'         => ['/user/security/logout'],
+                        'label' => '<i class="glyphicon glyphicon-log-out"></i> Logout',
+                        'url' => ['/user/security/logout'],
                         'linkOptions' => ['data-method' => 'post', 'id' => 'link-logout']
                     ],
                 ]
             ];
             $menuItems[] = [
                 'label' => '<i class="glyphicon glyphicon-cog"></i>',
-                'url'   => ['/backend'],
-                'visible' => Yii::$app->user->can('backend_default') || (isset(Yii::$app->user->identity) && Yii::$app->user->identity->isAdmin)
+                'url' => ['/backend'],
+                'visible' => Yii::$app->user->can(
+                        'backend_default'
+                    ) || (isset(Yii::$app->user->identity) && Yii::$app->user->identity->isAdmin)
             ];
         }
     }
     echo Nav::widget(
         [
-            'options'      => ['class' => 'navbar-nav navbar-right'],
+            'options' => ['class' => 'navbar-nav navbar-right'],
             'encodeLabels' => false,
-            'items'        => $menuItems,
+            'items' => $menuItems,
         ]
     );
     NavBar::end();
@@ -97,17 +99,16 @@ AppAsset::register($this);
 <footer class="footer">
     <div class="container">
         <p class="pull-right">
-            &copy; <?= date('Y') ?> |
-            <?= Html::a('About', ['/site/about']) ?> |
-            <?= Html::a('Contact', ['/site/contact']) ?>
-
+            &copy; <?= date('Y') ?>
         </p>
 
-        <p class="pull-left"><?= Html::a(
+        <p class="pull-left">
+            <?= Html::a(
                 Html::img('http://t.phundament.com/p4-32-bw.png', ['alt' => 'Icon Phundament 4']),
                 '#',
                 ['data-toggle' => 'modal', 'data-target' => '#infoModal']
-            ) ?></p>
+            ) ?>
+        </p>
     </div>
 </footer>
 
