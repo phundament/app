@@ -8,7 +8,6 @@ before_script:
 
 
 cache:
-  untracked: true
   paths:
     - vendor/
 
