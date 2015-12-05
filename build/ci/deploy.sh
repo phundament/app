@@ -5,7 +5,7 @@ LATEST_TAG=`git describe --abbrev=0`
 CURRENT_VERSION=`git describe`
 
 # Create and push :latest
-docker tag ${COMPOSE_PROJECT_NAME}_php ${IMAGE_NAME}:latest
+docker tag -f ${COMPOSE_PROJECT_NAME}_php ${IMAGE_NAME}:latest
 docker push ${IMAGE_NAME}:latest
 
 # Create and push :<CURRENT_VERSION>
