@@ -10,5 +10,5 @@ echo "----------------------------------"
 
 cp .env-dist .env
 
-make TEST clean
-make TEST build
+make clean
+make build

@@ -9,7 +9,7 @@ DOCKER_COMPOSE ?= docker-compose
 
 export CI_APP_VOLUME ?= .
 
-.PHONY: open bash build setup clean update
+.PHONY: open bash build setup clean update TEST STAGE
 
 default: help
 

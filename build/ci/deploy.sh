@@ -11,8 +11,8 @@ docker push ${IMAGE_NAME}:latest
 # Create and push :<CURRENT_VERSION>
 if [ "$LATEST_TAG" = "$CURRENT_VERSION" ]; then
     echo "Stable tag $CURRENT_VERSION detected, tagging image..."
-    docker tag app_php ${IMAGE_NAME}:${CURRENT_VERSION}
-    docker tag app_php ${IMAGE_NAME}:${CURRENT_VERSION}
+    docker tag ${COMPOSE_PROJECT_NAME}_php ${IMAGE_NAME}:${CURRENT_VERSION}
+    docker tag ${COMPOSE_PROJECT_NAME}_php ${IMAGE_NAME}:${CURRENT_VERSION}
     docker push ${IMAGE_NAME}:${CURRENT_VERSION}
     echo "Image pushed to registry."
 else
