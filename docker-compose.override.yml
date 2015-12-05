@@ -3,12 +3,13 @@
 php:
   volumes:
     - .:/app
-    - /Users/tobias/hrzg/git/phundament/ee-docs:/app/docs-ext
+
 nginx:
   ports:
     - '40080:80'
   volumes:
     - .:/app
+
 mariadb:
   ports:
     - '43306:3306'

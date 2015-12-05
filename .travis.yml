@@ -1,8 +1,6 @@
 language: php
 
 php:
-  - 5.4
-  - 5.5
   - 5.6
   - hhvm
 
@@ -21,6 +19,7 @@ env:
     - DB_ENV_MYSQL_USER=test
     - DB_ENV_MYSQL_PASSWORD=test123
 install:
+  - npm install -g less
   - export PATH="$HOME/.composer/vendor/bin:$PATH"
   - composer self-update && composer --version
   - composer global require --prefer-dist "codeception/codeception:2.0.*" "codeception/specify:*" "codeception/verify:*" && composer global dumpautoload --optimize
@@ -40,7 +39,8 @@ before_script:
   - php yii migrate --migrationLookup=@root/tests/codeception/_migrations --interactive=0
 
 script:
-  - codecept -v run unit && codecept -v run functional prod
+  - codecept -v run unit
+  - codecept -vv run functional prod
 
 after_success:
   - php yii app/setup-docs --interactive=0
