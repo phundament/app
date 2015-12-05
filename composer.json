@@ -9,7 +9,6 @@
     "application",
     "template",
     "boilerplate",
-    "vagrant",
     "docker",
     "docker-compose",
     "12factor",
@@ -21,8 +20,8 @@
   "authors": [
     {
       "name": "Tobias Munk",
-      "email": "schmunk@usrbin.de",
-      "homepage": "http://www.phundament.com"
+      "email": "tobias@diemeisterei.de",
+      "homepage": "http://www.diemeisterei.de"
     }
   ],
   "support": {
@@ -38,25 +37,10 @@
   },
   "require-dev": {
     "dmstr/yii2-cms-dev-metapackage": "@stable",
-    "dmstr/yii2-libs-metapackage": "@stable",
     "yiisoft/yii2-debug": "@stable",
     "schmunk42/yii2-giiant": "0.5.*"
   },
-  "scripts": {
-    "post-create-project-cmd": [
-      "yii\\composer\\Installer::postCreateProject"
-    ]
-  },
   "extra": {
-    "yii\\composer\\Installer::postCreateProject": {
-      "setPermission": [
-        {
-          "runtime": "0777",
-          "web/assets": "0777",
-          "yii": "0755"
-        }
-      ]
-    },
     "asset-installer-paths": {
       "npm-asset-library": "vendor/npm",
       "bower-asset-library": "vendor/bower"
