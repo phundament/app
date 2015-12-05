@@ -1,15 +1,9 @@
-# Phundament 4 - Local Development Stack
-# ======================================
-
-# Application services
-# --------------------
+# Phundament 4 - Application stack
 
 php:
   build: .
   links:
     - 'mariadb:DB'
-  #environment:
-  #  APP_MIGRATION_LOOKUP: '@app/migrations'
 
 nginx:
   image: phundament/nginx-one:1.9

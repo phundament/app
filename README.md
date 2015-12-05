@@ -6,7 +6,7 @@ Phundament is a dockerized 12factor PHP application template for Yii Framework 2
 Resources
 ---------
 
-- [Documentation](docs/README.md)
+- [Documentation](https://github.com/phundament/docs)
 - [Project Source-Code](https://github.com/phundament/app)
 - [Website](http://phundament.com)
 - [Team](https://github.com/orgs/phundament/teams)
@@ -24,7 +24,7 @@ Clone the repository and go to the application directory
 
 Just run...
 
-    make
+    make all
      
 > On OS X, the new application should open automatically in your default browser.
 
@@ -57,20 +57,7 @@ Show and follow logs
 Demo
 ----
 
-### Test-drive with docker compose
-
-    curl -o docker-compose.yml https://raw.githubusercontent.com/phundament/app/master/tutum.yml    
-    docker-compose up -d
-
-### Online Demo
-
-> A demo can be found at the [Phundament Playground Application](https://github.com/phundament/playground/blob/master/README.md) Demo! 
-> You can get the source-code of the demo application from its [GitHub repository](https://github.com/phundament/playground).
-
-### PaaS / cloud service
-
-[![Deploy to Tutum](https://s.tutum.co/deploy-to-tutum.svg)](https://dashboard.tutum.co/stack/deploy/)
-
+See [Phundament playground](https://github.com/phundament/playground).
     
 Configuration
 -------------

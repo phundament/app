@@ -53,10 +53,10 @@ run-tests:
 
 TEST:	##@config configure application for local testing
 	$(eval PHP := tester)
-	$(eval DOCKER_COMPOSE := docker-compose -p testapp -f docker-compose.yml -f build/compose/test.yml)
+	$(eval DOCKER_COMPOSE := docker-compose -p testapp -f docker-compose.yml -f build/compose/test.override.yml)
 
 STAGE:	##@config configure application for local testing
-	$(eval DOCKER_COMPOSE := docker-compose -p stageapp -f docker-compose.yml -f build/compose/stage.yml)
+	$(eval DOCKER_COMPOSE := docker-compose -p stageapp -f docker-compose.yml -f build/compose/stage.override.yml)
 
 
 # Help based on https://gist.github.com/prwhite/8168133 thanks to @nowox and @prwhite
