@@ -55,7 +55,7 @@ TEST:	##@config configure application for local testing
 	$(eval PHP := tester)
 	$(eval DOCKER_COMPOSE := docker-compose -p testapp -f docker-compose.yml -f build/compose/test.override.yml)
 
-STAGE:	##@config configure application for local testing
+STAGE:	##@config configure application for local staging
 	$(eval DOCKER_COMPOSE := docker-compose -p stageapp -f docker-compose.yml -f build/compose/stage.override.yml)
 
 
@@ -75,7 +75,7 @@ HELP_FUN = \
 		} \
 		print "\n"; }
 
-help:				##@base Show this help
+help:				##@base show this help
 	#
 	# General targets
 	#
