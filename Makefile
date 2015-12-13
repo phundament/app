@@ -13,7 +13,7 @@ export CI_APP_VOLUME ?= .
 
 default: help
 
-all: build setup up open
+all: build setup up open    ##@docker build, setup, start & open application
 
 up:      ##@docker start application
 	$(DOCKER_COMPOSE) up -d
@@ -66,7 +66,7 @@ STAGE:	##@config configure application for local staging
 HELP_FUN = \
 		%help; \
 		while(<>) { push @{$$help{$$2 // 'options'}}, [$$1, $$3] if /^([\w-]+)\s*:.*\#\#(?:@([\w-]+))?\s(.*)$$/ }; \
-		print "\nusage: make [target]\n\n"; \
+		print "\nusage: make [target ...]\n\n"; \
 	for (keys %help) { \
 		print "$$_:\n"; \
 		for (@{$$help{$$_}}) { \
