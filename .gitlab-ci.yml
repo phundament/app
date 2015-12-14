@@ -30,6 +30,14 @@ test:
     paths:
       - reports-${CI_BUILD_ID}
 
+system:
+  stage: test
+  script:
+      - docker-compose run php composer diagnose
+  artifacts:
+    paths:
+      - reports-${CI_BUILD_ID}
+
 cleanup_test:
   stage: cleanup_test
   script:
