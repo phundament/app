@@ -34,9 +34,7 @@ system:
   stage: test
   script:
       - docker-compose run php composer diagnose
-  artifacts:
-    paths:
-      - reports-${CI_BUILD_ID}
+  allow_failure: true
 
 cleanup_test:
   stage: cleanup_test
