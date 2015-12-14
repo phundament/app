@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cafa40b8e492b941ed785ef93a5e6a25",
-    "content-hash": "a086a71320844504fadfe5da318731a0",
+    "hash": "109a1e4e072b2571db01966e7f061941",
+    "content-hash": "89319a0907583a78ddc7c99fd91dc6a9",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -1333,16 +1333,16 @@
         },
         {
             "name": "kartik-v/yii2-krajee-base",
-            "version": "v1.7.9",
+            "version": "v1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-krajee-base.git",
-                "reference": "6f10fd0a0bfccd729764c65fa65eb4ccf2cbade9"
+                "reference": "602e7203680642ac4a2a5f9355316eaa9939b6ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-krajee-base/zipball/6f10fd0a0bfccd729764c65fa65eb4ccf2cbade9",
-                "reference": "6f10fd0a0bfccd729764c65fa65eb4ccf2cbade9",
+                "url": "https://api.github.com/repos/kartik-v/yii2-krajee-base/zipball/602e7203680642ac4a2a5f9355316eaa9939b6ff",
+                "reference": "602e7203680642ac4a2a5f9355316eaa9939b6ff",
                 "shasum": ""
             },
             "require": {
@@ -1375,20 +1375,20 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2015-11-25 07:03:35"
+            "time": "2015-12-11 19:01:49"
         },
         {
             "name": "kartik-v/yii2-tree-manager",
-            "version": "v1.0.3",
+            "version": "v1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-tree-manager.git",
-                "reference": "fd74335c0c82421fc550af1fed09b6872c3b1377"
+                "reference": "4061a6265f6f4fbd4415b946ff94691aad31b39a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-tree-manager/zipball/fd74335c0c82421fc550af1fed09b6872c3b1377",
-                "reference": "fd74335c0c82421fc550af1fed09b6872c3b1377",
+                "url": "https://api.github.com/repos/kartik-v/yii2-tree-manager/zipball/4061a6265f6f4fbd4415b946ff94691aad31b39a",
+                "reference": "4061a6265f6f4fbd4415b946ff94691aad31b39a",
                 "shasum": ""
             },
             "require": {
@@ -1426,20 +1426,20 @@
                 "tree",
                 "treeview"
             ],
-            "time": "2015-06-22 20:01:08"
+            "time": "2015-12-13 16:39:50"
         },
         {
             "name": "kartik-v/yii2-widget-activeform",
-            "version": "v1.4.6",
+            "version": "v1.4.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-activeform.git",
-                "reference": "59a224de3104552c55de3a6aa67138ee1b73fd70"
+                "reference": "6acc1539c37d731c79a67989409ad76e389fd5f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-activeform/zipball/59a224de3104552c55de3a6aa67138ee1b73fd70",
-                "reference": "59a224de3104552c55de3a6aa67138ee1b73fd70",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-activeform/zipball/6acc1539c37d731c79a67989409ad76e389fd5f0",
+                "reference": "6acc1539c37d731c79a67989409ad76e389fd5f0",
                 "shasum": ""
             },
             "require": {
@@ -1473,7 +1473,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2015-12-05 11:11:22"
+            "time": "2015-12-11 19:07:50"
         },
         {
             "name": "kartik-v/yii2-widget-select2",
@@ -2492,16 +2492,16 @@
         },
         {
             "name": "mikevanriel/text-to-latex",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mvriel/TextToLatex.git",
-                "reference": "e654076192d73b829ac549041ac58ab08b7a2436"
+                "reference": "c9f3a4d6b89f9449782455c848d5fa3dd0e216ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mvriel/TextToLatex/zipball/e654076192d73b829ac549041ac58ab08b7a2436",
-                "reference": "e654076192d73b829ac549041ac58ab08b7a2436",
+                "url": "https://api.github.com/repos/mvriel/TextToLatex/zipball/c9f3a4d6b89f9449782455c848d5fa3dd0e216ba",
+                "reference": "c9f3a4d6b89f9449782455c848d5fa3dd0e216ba",
                 "shasum": ""
             },
             "require-dev": {
@@ -2527,7 +2527,7 @@
                 }
             ],
             "description": "A converter class that converts normal ASCII text to valid LaTeX",
-            "time": "2013-12-20 21:34:24"
+            "time": "2015-12-13 07:33:35"
         },
         {
             "name": "nikic/php-parser",
@@ -2859,22 +2859,25 @@
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "2.4.0",
+            "version": "2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "32a879f4f35019d78d568db2885d7779ca084a33"
+                "reference": "e4fb41d5d0387d556e2c25534d630b3cce90ea67"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/32a879f4f35019d78d568db2885d7779ca084a33",
-                "reference": "32a879f4f35019d78d568db2885d7779ca084a33",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/e4fb41d5d0387d556e2c25534d630b3cce90ea67",
+                "reference": "e4fb41d5d0387d556e2c25534d630b3cce90ea67",
                 "shasum": ""
             },
             "require": {
                 "ext-tokenizer": "*",
                 "ext-xmlwriter": "*",
                 "php": ">=5.1.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
             },
             "bin": [
                 "scripts/phpcs",
@@ -2929,7 +2932,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2015-11-23 21:30:59"
+            "time": "2015-12-11 00:12:46"
         },
         {
             "name": "symfony/console",
@@ -3678,7 +3681,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "dmstr/yii2-cms-metapackage": 0,
         "dmstr/yii2-cms-dev-metapackage": 0,
         "yiisoft/yii2-debug": 0
     },
