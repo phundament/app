@@ -12,6 +12,9 @@ class_name: AcceptanceTester
 modules:
     enabled:
         - WebDriver
+        - REST:
+            depends: PhpBrowser
+            url: 'http://web/'
     config:
         WebDriver:
             host: HUB

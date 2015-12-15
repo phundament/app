@@ -43,7 +43,7 @@ $common = [
                 '*' => [
                     'class' => 'yii\i18n\DbMessageSource',
                     'db' => 'db',
-                    'sourceLanguage' => 'xx', // Developer language
+                    'sourceLanguage' => 'en',
                     'sourceMessageTable' => '{{%language_source}}',
                     'messageTable' => '{{%language_translate}}',
                     'cachingDuration' => 86400,
@@ -69,7 +69,7 @@ $common = [
                 #'docs' => 'docs/default/index',
             ],
             'languages' => [
-                'de',
+                'en', 'de',
             ]
         ],
         'user' => [
