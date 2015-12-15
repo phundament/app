@@ -26,13 +26,13 @@ bash:	##@docker open application shell in container
 	$(DOCKER_COMPOSE) run $(PHP) bash
 
 build:	##@docker build application images
+	$(DOCKER_COMPOSE) run $(PHP) yii app/version
 	$(DOCKER_COMPOSE) build --pull
 
 setup:	##@docker setup application packages and database
 	echo $(COMPOSE_FILE)
 	cp -n .env-dist .env &2>/dev/null
 	$(DOCKER_COMPOSE) run $(PHP) composer install
-	$(DOCKER_COMPOSE) run $(PHP) yii app/version
 	$(DOCKER_COMPOSE) run $(PHP) yii app/create-mysql-db
 	$(DOCKER_COMPOSE) run $(PHP) yii migrate --interactive=0
 	$(DOCKER_COMPOSE) run $(PHP) yii app/setup-admin-user --interactive=0
