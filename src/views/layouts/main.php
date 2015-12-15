@@ -104,7 +104,7 @@ AppAsset::register($this);
 
         <p class="pull-left">
             <?= Html::a(
-                Html::img('http://t.phundament.com/p4-32-bw.png', ['alt' => 'Icon Phundament 4']),
+                Html::img('http://t.phundament.com/p4-16-bw.png', ['alt' => 'Icon Phundament 4']),
                 '#',
                 ['data-toggle' => 'modal', 'data-target' => '#infoModal']
             ) ?>
