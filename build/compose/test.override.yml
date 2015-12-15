@@ -12,7 +12,7 @@ tester:
     - 'mariadb:DB'
     - 'seleniumfirefox:HUB'
   volumes:
-    - ${CI_APP_VOLUME}:/app
+    - ${HOST_APP_VOLUME}:/app
   environment:
     - YII_ENV=test
 seleniumfirefox:

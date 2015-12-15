@@ -7,7 +7,7 @@ WEB				?= nginx
 DOCKER_HOST_IP  ?= $(shell echo $(DOCKER_HOST) | sed 's/tcp:\/\///' | sed 's/:[0-9.]*//')
 DOCKER_COMPOSE  ?= docker-compose
 
-export CI_APP_VOLUME ?= .
+export HOST_APP_VOLUME ?= .
 
 .PHONY: open bash build setup clean update TEST STAGE
 
