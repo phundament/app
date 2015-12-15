@@ -12,7 +12,7 @@ echo "----------------------------------"
 
 cp .env-dist .env
 
-make clean
-make build
+make TEST clean
+make TEST build
 
 exit 0
