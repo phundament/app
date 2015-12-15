@@ -1,8 +1,6 @@
 #!/bin/bash
 
-# ENV settings
-export COMPOSE_HTTP_TIMEOUT=120
-export APP_MIGRATION_LOOKUP=@root/tests/codeception/_migrations
+set -e
 
 # Cleanup, install, setup, build, test, tag
 make TEST setup up

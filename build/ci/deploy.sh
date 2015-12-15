@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 # Create tagged image from git tag
 LATEST_TAG=`git describe --abbrev=0`
 CURRENT_VERSION=`git describe`
@@ -18,3 +20,5 @@ if [ "$LATEST_TAG" = "$CURRENT_VERSION" ]; then
 else
     echo "No stable tag found."
 fi;
+
+exit 0

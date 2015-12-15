@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 # Get commit info
 APP_VERSION=$(cat version)
 COMMIT_MESSAGE=$(git log -1 --pretty=%B)
@@ -12,3 +14,5 @@ cp .env-dist .env
 
 make clean
 make build
+
+exit 0
