@@ -1,6 +1,7 @@
 <?php
 namespace app\controllers;
 
+use app\components\Helper;
 use app\models\PasswordResetRequestForm;
 use app\models\ResetPasswordForm;
 use app\models\SignupForm;
@@ -63,6 +64,8 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+        Helper::checkApplication();
+
         return $this->render('index');
     }
 }
