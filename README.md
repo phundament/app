@@ -115,6 +115,21 @@ Configuration
 
 For details of available application configuration, please refer to the Yii 2.0 Framework Definitive Guide. 
 
+Testing
+-------
+
+Set `YII_ENV` to `test.
+
+Deployment
+----------
+
+Variables for pushing docker images.
+
+- `REGISTRY_USER`
+- `REGISTRY_PASS`
+- `REGISTRY_HOST`
+- `IMAGE_NAME`
+
 -----------
 
 *Developed by diemeisterei GmbH, Stuttgart.*
