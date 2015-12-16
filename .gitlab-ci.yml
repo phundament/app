@@ -1,6 +1,6 @@
 before_script:
   - export APP_MIGRATION_LOOKUP=@root/tests/codeception/_migrations
-  - export COMPOSE_PROJECT_NAME=build${CI_BUILD_REF}
+  - export COMPOSE_PROJECT_NAME=buildref${CI_BUILD_REF}
   - export COMPOSE_HTTP_TIMEOUT=120
   - export HOST_APP_VOLUME=$CI_PROJECT_DIR
   - export IMAGE_NAME=phundament/app
@@ -26,6 +26,16 @@ test:
     paths:
       - reports-${CI_BUILD_ID}
 
+test-dev:
+  stage: test
+  script:
+      - export COMPOSE_PROJECT_NAME=buildref${CI_BUILD_REF}${CI_BUILD_NAME}
+      - bash build/ci/test-dev.sh
+      - mv tests/codeception/_output/ reports-dev-${CI_BUILD_ID}
+  artifacts:
+    paths:
+      - reports-dev-${CI_BUILD_ID}
+
 system:
   stage: test
   script:
@@ -36,6 +46,7 @@ cleanup_test:
   stage: cleanup_test
   script:
     - make TEST clean
+    - make clean COMPOSE_PROJECT_NAME=buildref${CI_BUILD_REF}test-dev
   when: always
 
 deploy:
