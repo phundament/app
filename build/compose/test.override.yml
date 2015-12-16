@@ -1,6 +1,8 @@
 php:
   volumes:
     - /app
+  environment:
+    - YII_ENV=test
 nginx:
   volumes_from:
     - php
@@ -11,6 +13,7 @@ tester:
   links:
     - 'mariadb:DB'
     - 'seleniumfirefox:HUB'
+    - 'nginx:WEB'
   volumes:
     - ${HOST_APP_VOLUME}:/app
   environment:

@@ -9,15 +9,15 @@
 
 $I = new AcceptanceTester($scenario);
 
-$I->wantTo('ensure that language urls and redirects work');
+$I->wantTo('ensure that responsive mobile layout works');
 
+$I->resizeWindow(320, 568);
 $I->amOnPage('/');
-$I->seeCurrentUrlEquals('/en/user/login');
+$I->makeScreenshot('mobile');
 
-$I->amOnPage('/de');
-$I->seeCurrentUrlEquals('/de/user/login');
-$I->see('Anmelden');
-$I->makeScreenshot('language-de');
+$I->click('button.navbar-toggle');
+$I->wait(3);
 
-$I->amOnPage('/en-us');
-$I->see('Not Found');
+$I->seeElement('li.active');
+$I->seeLink('Login');
+$I->makeScreenshot('mobile-open-menu');

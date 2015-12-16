@@ -12,10 +12,7 @@ $I->expectTo('see user info');
 $I->amOnPage('/xx');
 $I->seeResponseCodeIs(404);
 
-$I->amOnPage('/en-us');
-$I->seeResponseCodeIs(404);
-
-$I->amOnPage('/en');
+$I->amOnPage('/');
 $I->seeResponseCodeIs(200);
 
 $I->amOnPage('/de');

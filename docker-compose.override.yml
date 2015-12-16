@@ -3,6 +3,9 @@
 php:
   volumes:
     - .:/app
+  environment:
+    - YII_ENV=dev
+    - YII_DEBUG=1
 
 nginx:
   ports:

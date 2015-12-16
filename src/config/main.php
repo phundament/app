@@ -3,6 +3,7 @@
 
 $common = [
     'id' => 'app',
+    'language' => 'en',
     'basePath' => dirname(__DIR__),
     'vendorPath' => '@app/../vendor',
     'runtimePath' => '@app/../runtime',
@@ -63,6 +64,7 @@ $common = [
             'class' => 'codemix\localeurls\UrlManager',
             'enablePrettyUrl' => getenv('APP_PRETTY_URLS') ? true : false,
             'showScriptName' => getenv('YII_ENV_TEST') ? true : false,
+            'enableDefaultLanguageUrlCode' => true,
             'baseUrl' => '/',
             'rules' => [
                 'docs/<file:[a-zA-Z0-9_\-\./]+>' => 'docs',

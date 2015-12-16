@@ -47,7 +47,8 @@ update: ##@docker update application packages
 
 run-tests:
 	$(DOCKER_COMPOSE) $(COMPOSE_FILES_PARAM) up -d
-	$(DOCKER_COMPOSE) $(COMPOSE_FILES_PARAM) run $(PHP) sh -c 'codecept run $(codecept_opts)'
+	$(DOCKER_COMPOSE) $(COMPOSE_FILES_PARAM) run $(PHP) sh -c 'codecept clean && codecept run $(codecept_opts)'
+	@echo "\nSee tests/codeception/_output for report files"
 
 
 TEST:	##@config configure application for local testing

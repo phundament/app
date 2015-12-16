@@ -99,7 +99,8 @@ AppAsset::register($this);
 <footer class="footer">
     <div class="container">
         <p class="pull-right">
-            &copy; <?= date('Y') ?>
+            <span class="label label-default"><?= YII_ENV ?></span>
+            <span class="label label-info">&copy; <?= date('Y') ?></span>
         </p>
 
         <p class="pull-left">
