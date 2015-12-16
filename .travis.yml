@@ -22,7 +22,7 @@ install:
   - npm install -g less
   - export PATH="$HOME/.composer/vendor/bin:$PATH"
   - composer self-update && composer --version
-  - composer global require --prefer-dist "codeception/codeception:2.0.*" "codeception/specify:*" "codeception/verify:*" && composer global dumpautoload --optimize
+  - composer global require --prefer-dist "codeception/codeception:2.1.*" "codeception/specify:*" "codeception/verify:*" && composer global dumpautoload --optimize
   - composer global require "fxp/composer-asset-plugin:1.1.*"
   - cp .env-dist .env
   - composer install --dev --prefer-dist
