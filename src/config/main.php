@@ -61,6 +61,10 @@ $common = [
             // for the mailer to send real emails.
             'useFileTransport' => YII_ENV_PROD ? false : true,
         ],
+        // Note: enable db sessions, if multiple containers are running
+        #'session' => [
+        #    'class' => 'yii\web\DbSession'
+        #],
         'settings' => [
             'class' => 'pheme\settings\components\Settings',
         ],
