@@ -7,7 +7,7 @@ LATEST_TAG=`git describe --abbrev=0`
 CURRENT_VERSION=`git describe`
 
 # Login to registry
-docker login --username=${REGISTRY_USER} --password=${REGISTRY_PASS} ${REGISTRY_HOST}
+docker login --username=${REGISTRY_USER} --password=${REGISTRY_PASS} --email reg@h17n.de ${REGISTRY_HOST}
 
 # Create and push :latest
 docker tag -f ${COMPOSE_PROJECT_NAME}_php ${IMAGE_NAME}:latest
