@@ -79,7 +79,8 @@ $common = [
                 #'docs' => 'docs/default/index',
             ],
             'languages' => [
-                'en', 'de',
+                'en',
+                'de',
             ]
         ],
         'user' => [
@@ -112,8 +113,8 @@ $common = [
         'pages' => [
             'class' => 'dmstr\modules\pages\Module',
             'layout' => '@admin-views/layouts/main',
-            'availableViews' => [
-                '@vendor/dmstr/yii2-pages-module/example-views/column1.php' => 'One Column'
+            'availableRoutes' => [
+                '/site/index' => '/site/index',
             ],
         ],
         'user' => [

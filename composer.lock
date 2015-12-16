@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "88e60b0ac94bcdb94525fc838db6dcc0",
-    "content-hash": "6f0f6e5271cd7dba939b1e9d188458f5",
+    "hash": "5107096f38b79e5d0068acf03194e8a9",
+    "content-hash": "6d3de9036a234a8e7fbc202bf93805b2",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -1194,7 +1194,7 @@
         },
         {
             "name": "dmstr/yii2-pages-module",
-            "version": "0.10.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-pages-module.git",
@@ -3757,6 +3757,12 @@
     ],
     "aliases": [
         {
+            "alias": "0.10.1",
+            "alias_normalized": "0.10.1.0",
+            "version": "9999999-dev",
+            "package": "dmstr/yii2-pages-module"
+        },
+        {
             "alias": "0.3.0",
             "alias_normalized": "0.3.0.0",
             "version": "9999999-dev",
@@ -3765,6 +3771,7 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
+        "dmstr/yii2-pages-module": 20,
         "pheme/yii2-settings": 20
     },
     "prefer-stable": false,

@@ -37,6 +37,7 @@
   ],
   "require": {
     "dmstr/yii2-cms-metapackage": "1.*",
+    "dmstr/yii2-pages-module": "dev-master as 0.10.1",
     "pheme/yii2-settings": "dev-master as 0.3.0",
     "vlucas/phpdotenv": "2.*",
     "yiisoft/yii2": "2.0.*",
