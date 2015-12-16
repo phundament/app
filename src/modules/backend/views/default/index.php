@@ -4,7 +4,7 @@
         <div class="small-box bg-blue">
             <div class="inner">
                 <h3>
-                     <?= YII_ENV ?>
+                    <?= getenv('APP_NAME') ?>
                 </h3>
 
                 <p>
@@ -60,8 +60,8 @@
                 <div class="icon">
                     <i class="ion ion-stats-bars"></i>
                 </div>
-                <a href="<?= \yii\helpers\Url::to(['/debug']) ?>" class="small-box-footer">
-                    Debug <i class="fa fa-arrow-circle-right"></i>
+                <a href="<?= \yii\helpers\Url::to(['/backend/default/view-config']) ?>" class="small-box-footer">
+                    Configuration <i class="fa fa-arrow-circle-right"></i>
                 </a>
             </div>
 
@@ -83,8 +83,8 @@
                 <div class="icon">
                     <i class="ion ion-grid"></i>
                 </div>
-                <a href="<?= \yii\helpers\Url::to('http://phundament.com') ?>" target="_blank" class="small-box-footer">
-                    Phundament Online <i class="fa fa-arrow-circle-right"></i>
+                <a href="<?= \yii\helpers\Url::to(['/debug']) ?>" class="small-box-footer">
+                    Debug <i class="fa fa-arrow-circle-right"></i>
                 </a>
             </div>
         </div>
@@ -105,8 +105,8 @@
                 foreach (\Yii::$app->urlManager->languages AS $name) {
                     echo yii\helpers\Html::a(
                         $name,
-                        ['', \Yii::$app->urlManager->languageParam=>$name],
-                        ['class' => 'btn btn-default btn-flat '.(Yii::$app->language == $name?'active':'')]
+                        ['', \Yii::$app->urlManager->languageParam => $name],
+                        ['class' => 'btn btn-default btn-flat ' . (Yii::$app->language == $name ? 'active' : '')]
                     );
                 }
                 ?>
@@ -160,6 +160,12 @@
                     <h3 class="box-title">Documentation</h3>
                 </div>
                 <div class="box-body">
+                    <p>
+                        <a href="<?= \yii\helpers\Url::to('http://phundament.com') ?>" target="_blank"
+                           class="small-box-footer">
+                            Phundament Online <i class="fa fa-arrow-circle-right"></i>
+                        </a>
+                    </p>
                     <div class="alert alert-info">
                         <i class="fa fa-warning"></i>
                         <b>Notice!</b> Use the <i>yii2-apidoc</i> extension to

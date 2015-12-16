@@ -81,8 +81,8 @@ foreach (\dmstr\helpers\Metadata::getModules() as $name => $module) {
 if (Yii::$app->user->identity && Yii::$app->user->identity->isAdmin) {
     $menuItems[] = [
         'url' => '#',
-        'icon' => 'fa fa-cog',
-        'label'   => 'Developer',
+        'icon' => 'fa fa-cube',
+        'label'   => 'Modules',
         'items'   => $developerMenuItems,
         'options' => ['class' => 'treeview'],
         'visible' => Yii::$app->user->identity->isAdmin

@@ -1,6 +1,6 @@
 <?php
 
-$this->context->layout = '@admin-views/layouts/main';
+$this->context->layout = '@admin-views/layouts/box';
 
 $regex = '|(\\'.DIRECTORY_SEPARATOR.'[^\\'.DIRECTORY_SEPARATOR.']*\\'.DIRECTORY_SEPARATOR.'[^\\'.DIRECTORY_SEPARATOR.']*\.php)$|';
 preg_match($regex, __FILE__, $matches);

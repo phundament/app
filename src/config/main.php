@@ -38,6 +38,7 @@ $common = [
             'password' => getenv('DATABASE_PASSWORD'),
             'charset' => 'utf8',
             'tablePrefix' => getenv('DATABASE_TABLE_PREFIX'),
+            'enableSchemaCache' => YII_ENV_PROD ? true : false,
         ],
         'i18n' => [
             'translations' => [
@@ -97,7 +98,7 @@ $common = [
         ],
         'docs' => [
             'class' => 'schmunk42\markdocs\Module',
-            'layout' => '@admin-views/layouts/main',
+            'layout' => '@admin-views/layouts/box',
             'markdownUrl' => '@app/../docs',
             'forkUrl' => false
         ],
@@ -117,13 +118,13 @@ $common = [
         ],
         'rbac' => [
             'class' => 'dektrium\rbac\Module',
-            'layout' => '@admin-views/layouts/main',
+            'layout' => '@admin-views/layouts/box',
             'enableFlashMessages' => false,
         ],
         'translatemanager' => [
             'class' => 'lajax\translatemanager\Module',
             'root' => '@app/views',
-            'layout' => '@admin-views/layouts/main',
+            'layout' => '@admin-views/layouts/box',
             'allowedIPs' => ['*'],
             'roles' => ['admin', 'translate-manager'],
         ],

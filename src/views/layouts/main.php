@@ -24,6 +24,7 @@ AppAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
 <div class="wrap">
+
     <?php
     NavBar::begin(
         [
@@ -82,6 +83,8 @@ AppAsset::register($this);
     NavBar::end();
     ?>
 
+    <?= Alert::widget() ?>
+
     <div class="container">
         <?=
         Breadcrumbs::widget(
@@ -90,8 +93,6 @@ AppAsset::register($this);
             ]
         ) ?>
     </div>
-
-    <?= Alert::widget() ?>
 
     <?= $content ?>
 </div>
