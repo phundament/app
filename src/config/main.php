@@ -132,6 +132,7 @@ $common = [
         'settings' => [
             'class' => 'pheme\settings\Module',
             'layout' => '@admin-views/layouts/box',
+            'accessRoles' => ['Admin']
         ],
         'translatemanager' => [
             'class' => 'lajax\translatemanager\Module',
