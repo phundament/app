@@ -6,10 +6,7 @@ before_script:
   - export REGISTRY_HOST=index.docker.io
   - export REGISTRY_USER=schmunk42
   - export IMAGE_NAME=phundament/app
-
-cache:
-  paths:
-    - vendor/
+  - cp build/compose/test.override.yml docker-compose.override.yml
 
 stages:
   - build
@@ -21,6 +18,9 @@ build:
   stage: build
   script:
       - bash build/ci/build.sh
+  cache:
+    paths:
+      - vendor/
 
 test:
   stage: test
