@@ -2,9 +2,12 @@ CHANGELOG
 =========
 
 Phundament 4
+------------
 
-4.0.0-dev
----------
+- [UPD] codeception requirement to 2.1
+
+4.0.0-beta12
+------------
 
 - [UPD] updated default configuration (schmunk42)
 
