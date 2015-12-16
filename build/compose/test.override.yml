@@ -15,7 +15,8 @@ tester:
     - 'seleniumfirefox:HUB'
     - 'nginx:WEB'
   volumes:
-    - ${HOST_APP_VOLUME}:/app
+    - ${HOST_APP_VOLUME}/codeception.yml:/app/codeception.yml
+    - ${HOST_APP_VOLUME}/tests:/app/tests
   environment:
     - YII_ENV=test
 seleniumfirefox:

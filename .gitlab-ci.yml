@@ -18,9 +18,6 @@ build:
   stage: build
   script:
       - bash build/ci/build.sh
-  cache:
-    paths:
-      - vendor/
 
 test:
   stage: test
