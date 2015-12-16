@@ -10,7 +10,7 @@ LoginPage::openBy($I)->login('admin', 'admin');
 $I->expectTo('see user info');
 
 $I->amOnPage('/');
-$I->see(getenv('APP_TITLE'));
+$I->see('en/site/index','.label');
 
 $I->amOnPage('/backend');
 $I->see('admin', '.user-panel');
