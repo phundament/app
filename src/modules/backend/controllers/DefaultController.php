@@ -13,8 +13,7 @@ use yii\web\Controller;
 class DefaultController extends Controller
 {
     /**
-     * Behaviors, eg. access control
-     * @return array
+     * @inheritdoc
      */
     public function behaviors()
     {
@@ -23,16 +22,18 @@ class DefaultController extends Controller
                 'class' => AccessControl::className(),
                 'rules' => [
                     [
-                        'actions'       => ['index', 'view-config'],
-                        'allow'         => true,
-                        'roles'         => ['@'],
-                        'matchCallback' => function ($rule, $action) {
-                            return in_array(
-                                \Yii::$app->user->identity->username,
-                                \Yii::$app->getModule('user')->admins
-                            );
-                        }
+                        'allow' => true,
+                        'actions' => ['error'],
                     ],
+                    [
+                        'allow' => true,
+                        'matchCallback' => function ($rule, $action) {
+                            return \Yii::$app->user->can(
+                                $this->module->id . '_' . $this->id . '_' . $action->id,
+                                ['route' => true]
+                            );
+                        },
+                    ]
                 ]
             ]
         ];
