@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "109a1e4e072b2571db01966e7f061941",
-    "content-hash": "89319a0907583a78ddc7c99fd91dc6a9",
+    "hash": "88e60b0ac94bcdb94525fc838db6dcc0",
+    "content-hash": "6f0f6e5271cd7dba939b1e9d188458f5",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -996,27 +996,28 @@
         },
         {
             "name": "dmstr/yii2-cms-metapackage",
-            "version": "0.3.0",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-cms-metapackage.git",
-                "reference": "5bf8477f7a29d41c308d4d1cbbdcfc1ce3d04292"
+                "reference": "60960de6a0a5c7e51dfb0c4d0f162c3c91a3355c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-cms-metapackage/zipball/5bf8477f7a29d41c308d4d1cbbdcfc1ce3d04292",
-                "reference": "5bf8477f7a29d41c308d4d1cbbdcfc1ce3d04292",
+                "url": "https://api.github.com/repos/dmstr/yii2-cms-metapackage/zipball/60960de6a0a5c7e51dfb0c4d0f162c3c91a3355c",
+                "reference": "60960de6a0a5c7e51dfb0c4d0f162c3c91a3355c",
                 "shasum": ""
             },
             "require": {
                 "cybercog/yii2-google-analytics": "~0.2",
-                "dektrium/yii2-rbac": "*",
+                "dektrium/yii2-rbac": "^0.2.0",
                 "dektrium/yii2-user": "0.9.*",
                 "dmstr/yii2-adminlte-asset": "2.*",
-                "dmstr/yii2-libs-metapackage": "*",
-                "dmstr/yii2-pages-module": "*",
+                "dmstr/yii2-libs-metapackage": "^0.0.2",
+                "dmstr/yii2-pages-module": "^0.10.0",
                 "insolita/yii2-adminlte-widgets": "~1.1",
-                "lajax/yii2-translate-manager": "1.4.*"
+                "lajax/yii2-translate-manager": "1.5.*",
+                "pheme/yii2-settings": "~0.2"
             },
             "type": "library",
             "notification-url": "https://packagist.org/downloads/",
@@ -1030,7 +1031,7 @@
                 }
             ],
             "description": "Content Management Extensions for Phundament 4 (Yii 2.0 Framework)",
-            "time": "2015-08-31 20:23:15"
+            "time": "2015-12-16 01:54:09"
         },
         {
             "name": "dmstr/yii2-db",
@@ -1525,20 +1526,19 @@
         },
         {
             "name": "lajax/yii2-translate-manager",
-            "version": "1.4.9",
+            "version": "1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lajax/yii2-translate-manager.git",
-                "reference": "329c08a9a18f7025e7255140ad989f28b87eadda"
+                "reference": "0c3ab55b8fe8568c61465a5d71197c11387ee8e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lajax/yii2-translate-manager/zipball/329c08a9a18f7025e7255140ad989f28b87eadda",
-                "reference": "329c08a9a18f7025e7255140ad989f28b87eadda",
+                "url": "https://api.github.com/repos/lajax/yii2-translate-manager/zipball/0c3ab55b8fe8568c61465a5d71197c11387ee8e9",
+                "reference": "0c3ab55b8fe8568c61465a5d71197c11387ee8e9",
                 "shasum": ""
             },
             "require": {
-                "phpspec/php-diff": ">=1.0.2",
                 "yiisoft/yii2": "*",
                 "yiisoft/yii2-bootstrap": "*",
                 "yiisoft/yii2-jui": "*"
@@ -1567,7 +1567,7 @@
                 "translate",
                 "yii2"
             ],
-            "time": "2015-07-24 17:23:56"
+            "time": "2015-11-16 18:34:12"
         },
         {
             "name": "mikehaertl/php-shellcommand",
@@ -1606,38 +1606,81 @@
             "time": "2015-09-22 18:26:51"
         },
         {
-            "name": "phpspec/php-diff",
-            "version": "v1.0.2",
+            "name": "pheme/yii2-settings",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/phpspec/php-diff.git",
-                "reference": "30e103d19519fe678ae64a60d77884ef3d71b28a"
+                "url": "https://github.com/schmunk42/yii2-settings.git",
+                "reference": "bd424d858d1b6227c60e9c1bcbf42e14e400d2f2"
             },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/php-diff/zipball/30e103d19519fe678ae64a60d77884ef3d71b28a",
-                "reference": "30e103d19519fe678ae64a60d77884ef3d71b28a",
-                "shasum": ""
+            "require": {
+                "pheme/yii2-toggle-column": "*",
+                "yiisoft/yii2": ">=2.0.6"
             },
-            "type": "library",
+            "type": "yii2-extension",
             "autoload": {
-                "psr-0": {
-                    "Diff": "lib/"
+                "psr-4": {
+                    "pheme\\settings\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
             "authors": [
                 {
-                    "name": "Chris Boulton",
-                    "homepage": "http://github.com/chrisboulton",
-                    "role": "Original developer"
+                    "name": "Aris Karageorgos",
+                    "email": "aris@phe.me"
                 }
             ],
-            "description": "A comprehensive library for generating differences between two hashable objects (strings or arrays).",
-            "time": "2013-11-01 13:02:21"
+            "description": "Yii2 Database settings",
+            "keywords": [
+                "config",
+                "settings",
+                "yii2"
+            ],
+            "time": "2015-12-16 02:42:43"
+        },
+        {
+            "name": "pheme/yii2-toggle-column",
+            "version": "0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phemellc/yii2-toggle-column.git",
+                "reference": "6fb846a86f76234c63b3d475dc70dd59022718c1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phemellc/yii2-toggle-column/zipball/6fb846a86f76234c63b3d475dc70dd59022718c1",
+                "reference": "6fb846a86f76234c63b3d475dc70dd59022718c1",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "\\pheme\\grid\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aris Karageorgos",
+                    "email": "aris@phe.me"
+                }
+            ],
+            "description": "Provides a toggle data column and action",
+            "keywords": [
+                "column",
+                "extension",
+                "toggle",
+                "yii2"
+            ],
+            "time": "2014-10-12 15:54:14"
         },
         {
             "name": "rmrevin/yii2-fontawesome",
@@ -2678,6 +2721,40 @@
             "time": "2015-02-03 12:10:50"
         },
         {
+            "name": "phpspec/php-diff",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpspec/php-diff.git",
+                "reference": "30e103d19519fe678ae64a60d77884ef3d71b28a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpspec/php-diff/zipball/30e103d19519fe678ae64a60d77884ef3d71b28a",
+                "reference": "30e103d19519fe678ae64a60d77884ef3d71b28a",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Diff": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Boulton",
+                    "homepage": "http://github.com/chrisboulton",
+                    "role": "Original developer"
+                }
+            ],
+            "description": "A comprehensive library for generating differences between two hashable objects (strings or arrays).",
+            "time": "2013-11-01 13:02:21"
+        },
+        {
             "name": "psr/log",
             "version": "1.0.0",
             "source": {
@@ -3678,11 +3755,17 @@
             "time": "2015-05-10 22:09:31"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "alias": "0.3.0",
+            "alias_normalized": "0.3.0.0",
+            "version": "9999999-dev",
+            "package": "pheme/yii2-settings"
+        }
+    ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "dmstr/yii2-cms-dev-metapackage": 0,
-        "yiisoft/yii2-debug": 0
+        "pheme/yii2-settings": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

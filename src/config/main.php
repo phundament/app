@@ -61,6 +61,9 @@ $common = [
             // for the mailer to send real emails.
             'useFileTransport' => YII_ENV_PROD ? false : true,
         ],
+        'settings' => [
+            'class' => 'pheme\settings\components\Settings',
+        ],
         'urlManager' => [
             'class' => 'codemix\localeurls\UrlManager',
             'enablePrettyUrl' => getenv('APP_PRETTY_URLS') ? true : false,
@@ -121,6 +124,10 @@ $common = [
             'layout' => '@admin-views/layouts/box',
             'enableFlashMessages' => false,
         ],
+        'settings' => [
+            'class' => 'pheme\settings\Module',
+            'layout' => '@admin-views/layouts/box',
+        ],
         'translatemanager' => [
             'class' => 'lajax\translatemanager\Module',
             'root' => '@app/views',
@@ -145,6 +152,7 @@ $common = [
             '@yii/rbac/migrations',
             '@dektrium/user/migrations',
             '@vendor/lajax/yii2-translate-manager/migrations',
+            '@vendor/pheme/yii2-settings/migrations',
         ]
     ]
 

@@ -29,15 +29,22 @@
     "source": "https://github.com/phundament/app"
   },
   "minimum-stability": "stable",
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/schmunk42/yii2-settings.git"
+    }
+  ],
   "require": {
-    "dmstr/yii2-cms-metapackage": "^0.3.0",
+    "dmstr/yii2-cms-metapackage": "1.*",
+    "pheme/yii2-settings": "dev-master as 0.3.0",
     "vlucas/phpdotenv": "2.*",
     "yiisoft/yii2": "2.0.*",
     "yiisoft/yii2-composer": "2.0.*"
   },
   "require-dev": {
-    "dmstr/yii2-cms-dev-metapackage": "@stable",
-    "yiisoft/yii2-debug": "@stable",
+    "dmstr/yii2-cms-dev-metapackage": "^0.2.0",
+    "yiisoft/yii2-debug": "2.*",
     "schmunk42/yii2-giiant": "0.5.*"
   },
   "extra": {
