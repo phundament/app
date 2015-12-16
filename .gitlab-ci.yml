@@ -35,6 +35,7 @@ test-dev:
   artifacts:
     paths:
       - reports-dev-${CI_BUILD_ID}
+  allow_failure: true
 
 system:
   stage: test
