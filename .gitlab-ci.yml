@@ -3,8 +3,6 @@ before_script:
   - export COMPOSE_PROJECT_NAME=build${CI_BUILD_REF}
   - export COMPOSE_HTTP_TIMEOUT=120
   - export HOST_APP_VOLUME=$CI_PROJECT_DIR
-  - export REGISTRY_HOST=index.docker.io
-  - export REGISTRY_USER=schmunk42
   - export IMAGE_NAME=phundament/app
   - cp build/compose/test.override.yml docker-compose.override.yml
 
