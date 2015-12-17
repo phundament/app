@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -e
+set -v
 
 make TEST setup up
 make TEST run-tests codecept_opts='unit prod --html=_report_unit.html'
