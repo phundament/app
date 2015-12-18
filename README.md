@@ -3,17 +3,24 @@ Phundament 4
 
 Phundament is a dockerized 12factor PHP application template for Yii Framework 2.0.
 
-Resources
----------
+Full [documentation](https://github.com/phundament/docs).
+See Phundament playground  for a [demo](https://github.com/phundament/playground).
 
-- [Documentation](https://github.com/phundament/docs)
-- [Project Source-Code](https://github.com/phundament/app)
-- [Website](http://phundament.com)
-- [Team](https://github.com/orgs/phundament/teams)
-- [Imprint](http://herzogkommunikation.de/de/impressum-7.html)
 
-Quick-Start
------------
+Requirements
+------------
+
+- [docker](https://docs.docker.com/engine/installation/)
+- [docker-compose](https://docs.docker.com/compose/) **>=1.5.2**
+
+or
+
+- [composer](https://getcomposer.org/download/)
+- [fxp/composer-asset-plugin](https://github.com/francoispluchino/composer-asset-plugin) **>=1.1.1**
+
+
+Installation
+------------
 
 Clone the repository and go to the application directory
 
@@ -21,8 +28,6 @@ Clone the repository and go to the application directory
     cd app
 
 **With Make**
-
-Just run...
 
     make all
      
@@ -39,6 +44,14 @@ Start the application stack
     docker-compose up -d
 
 
+Setup
+-----
+
+Run setup commands
+    
+    docker-compose run php composer install
+    docker-compose run php sh src/init.sh
+
 After startup is complete, open `http://docker:40080` to access the application and login with `admin`/`admin`.
 
 
@@ -54,11 +67,8 @@ Show and follow logs
 
 > For alternative installation methods see the [docs](docs/20-installation-composer.md).  
 
-Demo
-----
 
-See [Phundament playground](https://github.com/phundament/playground).
-    
+
 Configuration
 -------------
 
@@ -115,10 +125,12 @@ Configuration
 
 For details of available application configuration, please refer to the Yii 2.0 Framework Definitive Guide. 
 
+
 Testing
 -------
 
 Set `YII_ENV` to `test.
+
 
 Deployment
 ----------
@@ -129,6 +141,16 @@ Variables for pushing docker images.
 - `REGISTRY_PASS`
 - `REGISTRY_HOST`
 - `IMAGE_NAME`
+
+
+Links
+-----
+
+- [Documentation](https://github.com/phundament/docs)
+- [Project Source-Code](https://github.com/phundament/app)
+- [Website](http://phundament.com)
+- [Team](https://github.com/orgs/phundament/teams)
+- [Imprint](http://herzogkommunikation.de/de/impressum-7.html)
 
 -----------
 
