@@ -15,12 +15,12 @@ stages:
 build:
   stage: build
   script:
-      - bash build/ci/build.sh
+      - bash build/scripts/build.sh
 
 test:
   stage: test
   script:
-      - bash build/ci/test.sh
+      - bash build/scripts/test.sh
       - mv tests/codeception/_output/ reports-${CI_BUILD_ID}
   artifacts:
     paths:
@@ -30,7 +30,7 @@ test-dev:
   stage: test
   script:
       - export COMPOSE_PROJECT_NAME=buildref${CI_BUILD_REF}${CI_BUILD_NAME}
-      - bash build/ci/test-dev.sh
+      - bash build/scripts/test-dev.sh
       - mv tests/codeception/_output/ reports-dev-${CI_BUILD_ID}
   artifacts:
     paths:
@@ -53,6 +53,6 @@ cleanup_test:
 deploy:
   stage: deploy
   script:
-      - bash build/ci/deploy.sh
+      - bash build/scripts/deploy.sh
   only:
       - master
