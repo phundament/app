@@ -5,6 +5,7 @@ SHELL           ?= /bin/bash
 
 DOCKER_HOST_IP  ?= $(shell echo $(DOCKER_HOST) | sed 's/tcp:\/\///' | sed 's/:[0-9.]*//')
 DOCKER_COMPOSE  ?= docker-compose
+OPEN_CMD        ?= open
 
 PHP_SERVICE		?= php
 WEB_SERVICE		?= nginx
@@ -15,7 +16,7 @@ export HOST_APP_VOLUME  ?= .
 
 default: help
 
-all: diagnose build setup up open    ##@docker build, setup, start & open application
+all: diagnose init build setup up open    ##@docker build, setup, start & open application
 
 diagnose: ##@system check requirements
 	bash build/scripts/requirements.sh
@@ -25,7 +26,7 @@ up:      ##@docker start application
 	$(DOCKER_COMPOSE) ps
 
 open:	 ##@docker open application web service in browser
-	open http://$(DOCKER_HOST_IP):`$(DOCKER_COMPOSE) port $(WEB_SERVICE) 80 | sed 's/[0-9.]*://'`
+	$(OPEN_CMD) http://$(DOCKER_HOST_IP):`$(DOCKER_COMPOSE) port $(WEB_SERVICE) 80 | sed 's/[0-9.]*://'`
 
 bash:	##@docker open application shell in container
 	$(DOCKER_COMPOSE) run $(PHP_SERVICE) bash
@@ -36,9 +37,11 @@ build:	##@docker build application images
 	$(DOCKER_COMPOSE) run $(PHP_SERVICE) yii app/version
 	$(DOCKER_COMPOSE) build --pull
 
+init:
+	cp -n .env-dist .env &2>/dev/null
+
 setup:	##@docker setup application packages and database
 	echo $(COMPOSE_FILE)
-	cp -n .env-dist .env &2>/dev/null
 	$(DOCKER_COMPOSE) run $(PHP_SERVICE) yii app/create-mysql-db
 	$(DOCKER_COMPOSE) run $(PHP_SERVICE) yii migrate --interactive=0
 	$(DOCKER_COMPOSE) run $(PHP_SERVICE) yii app/setup-admin-user --interactive=0
