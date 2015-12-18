@@ -1,57 +1,60 @@
 # Phundament Makefile
 # -------------------
 
-export HOST_APP_VOLUME ?= .
+SHELL           ?= /bin/bash
 
-PHP				?= php
-WEB				?= nginx
 DOCKER_HOST_IP  ?= $(shell echo $(DOCKER_HOST) | sed 's/tcp:\/\///' | sed 's/:[0-9.]*//')
 DOCKER_COMPOSE  ?= docker-compose
 
-.PHONY: open bash build setup clean update TEST STAGE
+PHP_SERVICE		?= php
+WEB_SERVICE		?= nginx
+
+export HOST_APP_VOLUME  ?= .
+
+.PHONY: help default all open bash build setup clean update run-tests TEST STAGE
 
 default: help
 
-all: build setup up open    ##@docker build, setup, start & open application
+all: diagnose build setup up open    ##@docker build, setup, start & open application
+
+diagnose: ##@system check requirements
+	bash build/scripts/requirements.sh
 
 up:      ##@docker start application
 	$(DOCKER_COMPOSE) up -d
 	$(DOCKER_COMPOSE) ps
 
 open:	 ##@docker open application web service in browser
-	open http://$(DOCKER_HOST_IP):`$(DOCKER_COMPOSE) port $(WEB) 80 | sed 's/[0-9.]*://'`
+	open http://$(DOCKER_HOST_IP):`$(DOCKER_COMPOSE) port $(WEB_SERVICE) 80 | sed 's/[0-9.]*://'`
 
 bash:	##@docker open application shell in container
-	$(DOCKER_COMPOSE) run $(PHP) bash
+	$(DOCKER_COMPOSE) run $(PHP_SERVICE) bash
 
 build:	##@docker build application images
-	$(DOCKER_COMPOSE) run $(PHP) composer install
-	$(DOCKER_COMPOSE) run $(PHP) yii app/version
+	$(curl_check)
+	$(DOCKER_COMPOSE) run $(PHP_SERVICE) composer install
+	$(DOCKER_COMPOSE) run $(PHP_SERVICE) yii app/version
 	$(DOCKER_COMPOSE) build --pull
 
 setup:	##@docker setup application packages and database
 	echo $(COMPOSE_FILE)
 	cp -n .env-dist .env &2>/dev/null
-	$(DOCKER_COMPOSE) run $(PHP) yii app/create-mysql-db
-	$(DOCKER_COMPOSE) run $(PHP) yii migrate --interactive=0
-	$(DOCKER_COMPOSE) run $(PHP) yii app/setup-admin-user --interactive=0
+	$(DOCKER_COMPOSE) run $(PHP_SERVICE) yii app/create-mysql-db
+	$(DOCKER_COMPOSE) run $(PHP_SERVICE) yii migrate --interactive=0
+	$(DOCKER_COMPOSE) run $(PHP_SERVICE) yii app/setup-admin-user --interactive=0
 
 clean:  ##@docker remove application containers
 	$(DOCKER_COMPOSE) kill
 	$(DOCKER_COMPOSE) rm -fv
 
-update: ##@docker update application packages
-	git pull
-	$(DOCKER_COMPOSE) run php composer install
-
 run-tests:
 	$(DOCKER_COMPOSE) up -d
-	$(DOCKER_COMPOSE) run $(PHP) sh -c 'codecept clean && codecept run $(codecept_opts)'
+	$(DOCKER_COMPOSE) run $(PHP_SERVICE) sh -c 'codecept clean && codecept run $(codecept_opts)'
 	@echo "\nSee tests/codeception/_output for report files"
 
 
 TEST:	##@config configure application for local testing
-	$(eval PHP := tester)
+	$(eval PHP_SERVICE := tester)
 	$(eval DOCKER_COMPOSE := docker-compose -f docker-compose.yml -f build/compose/test.override.yml)
 
 STAGE:	##@config configure application for local staging
@@ -74,7 +77,7 @@ HELP_FUN = \
 		} \
 		print "\n"; }
 
-help:				##@base show this help
+help:				##@system show this help
 	#
 	# General targets
 	#
