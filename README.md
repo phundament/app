@@ -27,13 +27,13 @@ Clone the repository and go to the application directory
     git clone https://github.com/phundament/app
     cd app
 
-**With Make**
+### With `make`
 
     make all
      
 > On OS X, the new application should open automatically in your default browser.
 
-**Without Make**
+### Without `make`
 
 Create environment configuration file    
     
@@ -43,19 +43,14 @@ Start the application stack
 
     docker-compose up -d
 
-
-Setup
------
-
 Run setup commands
     
     docker-compose run php composer install
     docker-compose run php sh src/init.sh
 
-After startup is complete, open `http://docker:40080` to access the application and login with `admin`/`admin`.
-
-
 ### Additional information
+
+After startup is complete, open `http://docker:40080` to access the application and login with `admin`/`admin`.
 
 List all services    
     
