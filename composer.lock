@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5107096f38b79e5d0068acf03194e8a9",
-    "content-hash": "6d3de9036a234a8e7fbc202bf93805b2",
+    "hash": "32d3a437685da044d6258416df3ed880",
+    "content-hash": "99b21f3384b1b2fa0f5fda0e114ae6e5",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -996,27 +996,27 @@
         },
         {
             "name": "dmstr/yii2-cms-metapackage",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-cms-metapackage.git",
-                "reference": "60960de6a0a5c7e51dfb0c4d0f162c3c91a3355c"
+                "reference": "273ce00c5a3807f25b0244b54029628099a19249"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-cms-metapackage/zipball/60960de6a0a5c7e51dfb0c4d0f162c3c91a3355c",
-                "reference": "60960de6a0a5c7e51dfb0c4d0f162c3c91a3355c",
+                "url": "https://api.github.com/repos/dmstr/yii2-cms-metapackage/zipball/273ce00c5a3807f25b0244b54029628099a19249",
+                "reference": "273ce00c5a3807f25b0244b54029628099a19249",
                 "shasum": ""
             },
             "require": {
                 "cybercog/yii2-google-analytics": "~0.2",
-                "dektrium/yii2-rbac": "^0.2.0",
-                "dektrium/yii2-user": "0.9.*",
-                "dmstr/yii2-adminlte-asset": "2.*",
-                "dmstr/yii2-libs-metapackage": "^0.0.2",
-                "dmstr/yii2-pages-module": "^0.10.0",
+                "dektrium/yii2-rbac": "~0.2",
+                "dektrium/yii2-user": "^0.9.5",
+                "dmstr/yii2-adminlte-asset": "^2.2.4",
+                "dmstr/yii2-libs-metapackage": "~0.0",
+                "dmstr/yii2-pages-module": "~0.10",
                 "insolita/yii2-adminlte-widgets": "~1.1",
-                "lajax/yii2-translate-manager": "1.5.*",
+                "lajax/yii2-translate-manager": "^1.5.1",
                 "pheme/yii2-settings": "~0.2"
             },
             "type": "library",
@@ -1031,7 +1031,7 @@
                 }
             ],
             "description": "Content Management Extensions for Phundament 4 (Yii 2.0 Framework)",
-            "time": "2015-12-16 01:54:09"
+            "time": "2015-12-17 18:54:23"
         },
         {
             "name": "dmstr/yii2-db",
@@ -1154,16 +1154,16 @@
         },
         {
             "name": "dmstr/yii2-migrate-command",
-            "version": "0.2.0",
+            "version": "0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-migrate-command.git",
-                "reference": "180a041e5a30144e6c5924e28e3e3e256173dc16"
+                "reference": "d7283955d3eb8b78b0a044d7422a84226cf5a394"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-migrate-command/zipball/180a041e5a30144e6c5924e28e3e3e256173dc16",
-                "reference": "180a041e5a30144e6c5924e28e3e3e256173dc16",
+                "url": "https://api.github.com/repos/dmstr/yii2-migrate-command/zipball/d7283955d3eb8b78b0a044d7422a84226cf5a394",
+                "reference": "d7283955d3eb8b78b0a044d7422a84226cf5a394",
                 "shasum": ""
             },
             "type": "yii2-extension",
@@ -1190,20 +1190,20 @@
                 "migration",
                 "yii2"
             ],
-            "time": "2015-02-26 12:33:53"
+            "time": "2015-12-17 16:57:56"
         },
         {
             "name": "dmstr/yii2-pages-module",
-            "version": "dev-master",
+            "version": "0.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-pages-module.git",
-                "reference": "5e8f83eeda4c53b92124a0d65ee6e768a838addb"
+                "reference": "c0a1a46a6cc127e6a1aef1a6e2421333c87c61e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-pages-module/zipball/5e8f83eeda4c53b92124a0d65ee6e768a838addb",
-                "reference": "5e8f83eeda4c53b92124a0d65ee6e768a838addb",
+                "url": "https://api.github.com/repos/dmstr/yii2-pages-module/zipball/c0a1a46a6cc127e6a1aef1a6e2421333c87c61e9",
+                "reference": "c0a1a46a6cc127e6a1aef1a6e2421333c87c61e9",
                 "shasum": ""
             },
             "require": {
@@ -1243,7 +1243,7 @@
                 "navigation",
                 "yii2"
             ],
-            "time": "2015-11-24 16:39:57"
+            "time": "2015-12-17 18:21:00"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -1478,16 +1478,16 @@
         },
         {
             "name": "kartik-v/yii2-widget-select2",
-            "version": "v2.0.3",
+            "version": "v2.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-select2.git",
-                "reference": "e72880e7e8dfc845c112ed7df275bf1c929be6db"
+                "reference": "ffc59cef18864d773c79f3b2da2f34c948ff5648"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-select2/zipball/e72880e7e8dfc845c112ed7df275bf1c929be6db",
-                "reference": "e72880e7e8dfc845c112ed7df275bf1c929be6db",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-select2/zipball/ffc59cef18864d773c79f3b2da2f34c948ff5648",
+                "reference": "ffc59cef18864d773c79f3b2da2f34c948ff5648",
                 "shasum": ""
             },
             "require": {
@@ -1522,7 +1522,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2015-09-12 19:56:48"
+            "time": "2015-12-16 19:38:06"
         },
         {
             "name": "lajax/yii2-translate-manager",
@@ -1610,8 +1610,14 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/schmunk42/yii2-settings.git",
-                "reference": "bd424d858d1b6227c60e9c1bcbf42e14e400d2f2"
+                "url": "https://github.com/phemellc/yii2-settings.git",
+                "reference": "8c81f472"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phemellc/yii2-settings/zipball/8c81f472d5342f9be5a842e62f96a35211c1bc75",
+                "reference": "8c81f472",
+                "shasum": ""
             },
             "require": {
                 "pheme/yii2-toggle-column": "*",
@@ -1623,6 +1629,7 @@
                     "pheme\\settings\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -1634,11 +1641,11 @@
             ],
             "description": "Yii2 Database settings",
             "keywords": [
+                "Settings",
                 "config",
-                "settings",
                 "yii2"
             ],
-            "time": "2015-12-16 02:42:43"
+            "time": "2015-12-16 03:25:55"
         },
         {
             "name": "pheme/yii2-toggle-column",
@@ -3757,21 +3764,14 @@
     ],
     "aliases": [
         {
-            "alias": "0.10.1",
-            "alias_normalized": "0.10.1.0",
-            "version": "9999999-dev",
-            "package": "dmstr/yii2-pages-module"
-        },
-        {
-            "alias": "0.3.0",
-            "alias_normalized": "0.3.0.0",
+            "alias": "0.2.99",
+            "alias_normalized": "0.2.99.0",
             "version": "9999999-dev",
             "package": "pheme/yii2-settings"
         }
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "dmstr/yii2-pages-module": 20,
         "pheme/yii2-settings": 20
     },
     "prefer-stable": false,
