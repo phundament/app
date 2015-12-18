@@ -3,7 +3,6 @@
 
 SHELL           ?= /bin/bash
 
-DOCKER_HOST_IP  ?= $(shell echo $(DOCKER_HOST) | sed 's/tcp:\/\///' | sed 's/:[0-9.]*//')
 DOCKER_COMPOSE  ?= docker-compose
 
 PHP_SERVICE		?= php
@@ -13,9 +12,11 @@ export HOST_APP_VOLUME  ?= .
 
 UNAME_S := $(shell uname -s)
 ifeq ($(UNAME_S), Darwin)
-	OPEN_CMD = open
+	OPEN_CMD        ?= open
+	DOCKER_HOST_IP  ?= $(shell echo $(DOCKER_HOST) | sed 's/tcp:\/\///' | sed 's/:[0-9.]*//')
 else
-	OPEN_CMD = xdg-open
+	OPEN_CMD        ?= xdg-open
+	DOCKER_HOST_IP  ?= 127.0.0.1
 endif
 
 .PHONY: help default all open bash build setup clean update run-tests TEST STAGE
