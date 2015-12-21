@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "32d3a437685da044d6258416df3ed880",
-    "content-hash": "99b21f3384b1b2fa0f5fda0e114ae6e5",
+    "hash": "19ebd95caa705d1f06d64ffc7cf4d446",
+    "content-hash": "bfd91cc1133f74921f321a176c11da64",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -871,89 +871,6 @@
             "time": "2015-11-06 10:35:36"
         },
         {
-            "name": "dmstr/yii2-app-command",
-            "version": "0.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dmstr/yii2-app-command.git",
-                "reference": "41f2815d94d739caa131125b28585e017ec34c3c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-app-command/zipball/41f2815d94d739caa131125b28585e017ec34c3c",
-                "reference": "41f2815d94d739caa131125b28585e017ec34c3c",
-                "shasum": ""
-            },
-            "require": {
-                "mikehaertl/php-shellcommand": "*"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "dmstr\\console\\controllers\\": "controllers"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Tobias Munk",
-                    "email": "tobias@diemeisterei.de"
-                }
-            ],
-            "description": "Console command for Yii 2 Framework to manage your application source code and configuration settings",
-            "keywords": [
-                "application",
-                "command",
-                "configuration",
-                "management",
-                "yii2"
-            ],
-            "time": "2015-06-26 19:11:50"
-        },
-        {
-            "name": "dmstr/yii2-application-metadata",
-            "version": "0.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dmstr/yii2-application-metadata.git",
-                "reference": "3c56fe23b45686ae4a30351b82218a46a89ce890"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-application-metadata/zipball/3c56fe23b45686ae4a30351b82218a46a89ce890",
-                "reference": "3c56fe23b45686ae4a30351b82218a46a89ce890",
-                "shasum": ""
-            },
-            "require": {
-                "yiisoft/yii2": "2.0.*"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "dmstr\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Tobias Munk",
-                    "email": "tobias@diemeisterei.de"
-                }
-            ],
-            "description": "Provides in-depth configuration and application information",
-            "keywords": [
-                "extension",
-                "yii2"
-            ],
-            "time": "2015-02-11 08:01:24"
-        },
-        {
             "name": "dmstr/yii2-bootstrap",
             "version": "0.1.1",
             "source": {
@@ -996,16 +913,16 @@
         },
         {
             "name": "dmstr/yii2-cms-metapackage",
-            "version": "1.1.0",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-cms-metapackage.git",
-                "reference": "273ce00c5a3807f25b0244b54029628099a19249"
+                "reference": "0147bdf12e07c0625a5b424205080238446148ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-cms-metapackage/zipball/273ce00c5a3807f25b0244b54029628099a19249",
-                "reference": "273ce00c5a3807f25b0244b54029628099a19249",
+                "url": "https://api.github.com/repos/dmstr/yii2-cms-metapackage/zipball/0147bdf12e07c0625a5b424205080238446148ce",
+                "reference": "0147bdf12e07c0625a5b424205080238446148ce",
                 "shasum": ""
             },
             "require": {
@@ -1013,7 +930,7 @@
                 "dektrium/yii2-rbac": "~0.2",
                 "dektrium/yii2-user": "^0.9.5",
                 "dmstr/yii2-adminlte-asset": "^2.2.4",
-                "dmstr/yii2-libs-metapackage": "~0.0",
+                "dmstr/yii2-libs-metapackage": "~0.1",
                 "dmstr/yii2-pages-module": "~0.10",
                 "insolita/yii2-adminlte-widgets": "~1.1",
                 "lajax/yii2-translate-manager": "^1.5.1",
@@ -1031,26 +948,27 @@
                 }
             ],
             "description": "Content Management Extensions for Phundament 4 (Yii 2.0 Framework)",
-            "time": "2015-12-17 18:54:23"
+            "time": "2015-12-21 10:55:45"
         },
         {
             "name": "dmstr/yii2-db",
-            "version": "0.2.0",
+            "version": "0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-db.git",
-                "reference": "066ce45be3e2e2b48286ef96250cdc53ae119075"
+                "reference": "49e3227665c1f38b8da5d8b7cbe29b9f5b3fbab0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-db/zipball/066ce45be3e2e2b48286ef96250cdc53ae119075",
-                "reference": "066ce45be3e2e2b48286ef96250cdc53ae119075",
+                "url": "https://api.github.com/repos/dmstr/yii2-db/zipball/49e3227665c1f38b8da5d8b7cbe29b9f5b3fbab0",
+                "reference": "49e3227665c1f38b8da5d8b7cbe29b9f5b3fbab0",
                 "shasum": ""
             },
             "type": "yii2-extension",
             "autoload": {
                 "psr-4": {
-                    "dmstr\\db\\": "db/"
+                    "dmstr\\db\\": "db/",
+                    "dmstr\\console\\": "console/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1070,20 +988,20 @@
                 "extension",
                 "yii2"
             ],
-            "time": "2015-01-13 03:03:29"
+            "time": "2015-12-21 10:01:49"
         },
         {
             "name": "dmstr/yii2-helpers",
-            "version": "0.0.3",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-helpers.git",
-                "reference": "beb7362357f9f4210d2194c7b4eedc0603e351f7"
+                "reference": "7badd9c2152cef72b07020cecfea09aeb3854669"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-helpers/zipball/beb7362357f9f4210d2194c7b4eedc0603e351f7",
-                "reference": "beb7362357f9f4210d2194c7b4eedc0603e351f7",
+                "url": "https://api.github.com/repos/dmstr/yii2-helpers/zipball/7badd9c2152cef72b07020cecfea09aeb3854669",
+                "reference": "7badd9c2152cef72b07020cecfea09aeb3854669",
                 "shasum": ""
             },
             "require": {
@@ -1092,7 +1010,7 @@
             "type": "yii2-extension",
             "autoload": {
                 "psr-4": {
-                    "dmstr\\helpers\\": ""
+                    "dmstr\\helpers\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1103,6 +1021,10 @@
                 {
                     "name": "Sergej Kunz",
                     "email": "s.kunz@herzogkommunikation.de"
+                },
+                {
+                    "name": "Tobias Munk",
+                    "email": "t.munk@herzogkommunikation.de"
                 }
             ],
             "description": "Yii2 Helpers",
@@ -1110,32 +1032,31 @@
                 "extension",
                 "yii2"
             ],
-            "time": "2015-07-02 08:38:46"
+            "time": "2015-12-21 10:11:28"
         },
         {
             "name": "dmstr/yii2-libs-metapackage",
-            "version": "0.0.2",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-libs-metapackage.git",
-                "reference": "891cbd364f8ef5a6226361fe44edb9abf1fcb1f0"
+                "reference": "f0ff6b1485b0ca41cbc32a1abb39c89f83d13453"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-libs-metapackage/zipball/891cbd364f8ef5a6226361fe44edb9abf1fcb1f0",
-                "reference": "891cbd364f8ef5a6226361fe44edb9abf1fcb1f0",
+                "url": "https://api.github.com/repos/dmstr/yii2-libs-metapackage/zipball/f0ff6b1485b0ca41cbc32a1abb39c89f83d13453",
+                "reference": "f0ff6b1485b0ca41cbc32a1abb39c89f83d13453",
                 "shasum": ""
             },
             "require": {
-                "codemix/yii2-localeurls": "1.*",
-                "codemix/yii2-streamlog": "*",
-                "dmstr/yii2-app-command": ">=0.3",
-                "dmstr/yii2-application-metadata": "*",
-                "dmstr/yii2-bootstrap": "*",
-                "dmstr/yii2-db": "*",
-                "dmstr/yii2-helpers": "*",
-                "dmstr/yii2-migrate-command": "*",
-                "schmunk42/retry": "*",
+                "codemix/yii2-localeurls": "^1.3",
+                "codemix/yii2-streamlog": "^1.0",
+                "dmstr/yii2-bootstrap": "~0.0",
+                "dmstr/yii2-db": "~0.3",
+                "dmstr/yii2-helpers": "~0.1",
+                "dmstr/yii2-migrate-command": "~0.3",
+                "mikehaertl/php-shellcommand": "^1.2",
+                "schmunk42/retry": "~0.0",
                 "yiisoft/yii2-swiftmailer": "2.*"
             },
             "type": "library",
@@ -1150,7 +1071,7 @@
                 }
             ],
             "description": "Core Library Extensions for Phundament 4 (Yii 2.0 Framework)",
-            "time": "2015-06-25 23:51:38"
+            "time": "2015-12-21 10:17:17"
         },
         {
             "name": "dmstr/yii2-migrate-command",
@@ -1279,8 +1200,7 @@
                 {
                     "name": "Edward Z. Yang",
                     "email": "admin@htmlpurifier.org",
-                    "homepage": "http://ezyang.com",
-                    "role": "Developer"
+                    "homepage": "http://ezyang.com"
                 }
             ],
             "description": "Standards compliant HTML filter written in PHP",

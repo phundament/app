@@ -46,7 +46,7 @@ Start the application stack
 Run setup commands
     
     docker-compose run php composer install
-    docker-compose run php sh src/init.sh
+    docker-compose run php sh src/setup.sh
 
 ### Additional information
 

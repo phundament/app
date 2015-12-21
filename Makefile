@@ -49,9 +49,7 @@ init:
 
 setup:	##@docker setup application packages and database
 	echo $(COMPOSE_FILE)
-	$(DOCKER_COMPOSE) run $(PHP_SERVICE) yii app/create-mysql-db
-	$(DOCKER_COMPOSE) run $(PHP_SERVICE) yii migrate --interactive=0
-	$(DOCKER_COMPOSE) run $(PHP_SERVICE) yii app/setup-admin-user --interactive=0
+	$(DOCKER_COMPOSE) run $(PHP_SERVICE) sh src/setup.sh
 
 clean:  ##@docker remove application containers
 	$(DOCKER_COMPOSE) kill
