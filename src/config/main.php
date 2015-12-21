@@ -203,7 +203,6 @@ $console = [
     'controllerMap' => [
         'db' => 'dmstr\console\controllers\MysqlController',
         'migrate' => 'dmstr\console\controllers\MigrateController',
-        'yaml' => 'dmstr\console\controllers\DockerStackConverterController',
         'translate' => '\lajax\translatemanager\commands\TranslatemanagerController',
     ],
     'components' => [
