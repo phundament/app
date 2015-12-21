@@ -39,7 +39,7 @@ class Helper extends Component
             $link = Html::a('pages module', ['/pages']);
             \Yii::$app->session->addFlash(
                 'warning',
-                "There is no navigation root node, visit {$link} ot create a root node."
+                "There is no navigation root node, visit {$link} to create a root node."
             );
         }
     }

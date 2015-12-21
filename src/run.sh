@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-sh /app/src/init.sh
+sh /app/src/setup.sh
 
 php-fpm

@@ -23,13 +23,13 @@ test:
   stage: test
   script:
       - export COMPOSE_PROJECT_NAME=buildref${CI_BUILD_REF}${CI_BUILD_NAME}
-      - bash build/scripts/test.sh; cp -r tests/codeception/_output/ /tmp/reports-${CI_BUILD_REF}
+      - bash build/scripts/test.sh || EXIT_CODE=$?; cp -r tests/codeception/_output/ /tmp/reports-${CI_BUILD_REF}; exit ${EXIT_CODE}
 
 test-allow_fail:
   stage: test
   script:
       - export COMPOSE_PROJECT_NAME=buildref${CI_BUILD_REF}${CI_BUILD_NAME}
-      - bash build/scripts/test-allow_fail.sh; cp -r tests/codeception/_output/ /tmp/reports-allow_fail-${CI_BUILD_REF}
+      - bash build/scripts/test.sh || EXIT_CODE=$?; cp -r tests/codeception/_output/ /tmp/reports-allow_fail-${CI_BUILD_REF}; exit ${EXIT_CODE}
   allow_failure: true
 
 system:
