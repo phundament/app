@@ -31,16 +31,11 @@
   "minimum-stability": "stable",
   "require": {
     "dmstr/yii2-cms-metapackage": "~2.0",
-    "pheme/yii2-settings": "dev-master#8c81f472 as 0.2.99",
     "vlucas/phpdotenv": "2.*",
-    "yiisoft/yii2": "2.0.*",
-    "yiisoft/yii2-composer": "2.0.*",
-    "dmstr/yii2-pages-module": "^0.11.0"
+    "yiisoft/yii2": "~2.0.6"
   },
   "require-dev": {
-    "dmstr/yii2-cms-dev-metapackage": "^0.2.0",
-    "yiisoft/yii2-debug": "2.*",
-    "schmunk42/yii2-giiant": "0.5.*"
+    "dmstr/yii2-cms-dev-metapackage": "^0.2.0"
   },
   "extra": {
     "asset-installer-paths": {

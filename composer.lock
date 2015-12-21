@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "19ebd95caa705d1f06d64ffc7cf4d446",
-    "content-hash": "bfd91cc1133f74921f321a176c11da64",
+    "hash": "cf8b2a7980aaaa644e8ff8e73ccd6aad",
+    "content-hash": "ba6596c72d6b79a53980179f315687f0",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -1527,16 +1527,16 @@
         },
         {
             "name": "pheme/yii2-settings",
-            "version": "dev-master",
+            "version": "0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phemellc/yii2-settings.git",
-                "reference": "8c81f472"
+                "reference": "8c81f472d5342f9be5a842e62f96a35211c1bc75"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/phemellc/yii2-settings/zipball/8c81f472d5342f9be5a842e62f96a35211c1bc75",
-                "reference": "8c81f472",
+                "reference": "8c81f472d5342f9be5a842e62f96a35211c1bc75",
                 "shasum": ""
             },
             "require": {
@@ -3682,18 +3682,9 @@
             "time": "2015-05-10 22:09:31"
         }
     ],
-    "aliases": [
-        {
-            "alias": "0.2.99",
-            "alias_normalized": "0.2.99.0",
-            "version": "9999999-dev",
-            "package": "pheme/yii2-settings"
-        }
-    ],
+    "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "pheme/yii2-settings": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
