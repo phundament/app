@@ -62,13 +62,14 @@ run-tests:
 	$(DOCKER_COMPOSE) run --rm $(PHP_SERVICE) sh -c 'codecept clean && codecept run $(codecept_opts)'
 	@echo "\nSee tests/codeception/_output for report files"
 
-
+TEST: export COMPOSE_PROJECT_NAME?=testapp
 TEST:	##@config configure application for local testing
 	$(eval PHP_SERVICE := tester)
-	$(eval DOCKER_COMPOSE := docker-compose -f docker-compose.yml -f build/compose/test.override.yml)
+	$(eval DOCKER_COMPOSE := docker-compose -p "$$(COMPOSE_PROJECT_NAME)" -f docker-compose.yml -f build/compose/test.override.yml)
 
+STAGE: export COMPOSE_PROJECT_NAME?=stageapp
 STAGE:	##@config configure application for local staging
-	$(eval DOCKER_COMPOSE := docker-compose -f docker-compose.yml -f build/compose/stage.override.yml)
+	$(eval DOCKER_COMPOSE := docker-compose -p "$$(COMPOSE_PROJECT_NAME)" -f docker-compose.yml -f build/compose/stage.override.yml)
 
 
 # Help based on https://gist.github.com/prwhite/8168133 thanks to @nowox and @prwhite

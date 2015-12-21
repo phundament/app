@@ -4,7 +4,7 @@ set -e
 
 cp .env-dist .env
 
-make clean build
+make build
 make TEST clean
 
 exit 0

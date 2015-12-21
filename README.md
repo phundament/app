@@ -38,6 +38,7 @@ Clone the repository and go to the application directory
 Create environment configuration file    
     
     cp .env-dist .env
+    cp docker-compose.override-dist.yml docker-compose.override.yml
 
 Start the application stack
 
@@ -124,7 +125,30 @@ For details of available application configuration, please refer to the Yii 2.0 
 Testing
 -------
 
-Set `YII_ENV` to `test.
+Run the test suites by scripts
+
+    sh build/scripts/build.sh
+    sh build/scripts/test.sh
+
+Or one-by-one via `Makefile` targets
+
+Make sure to build first, if you have made changes to `src`
+
+    make build
+    
+Start the test stack    
+    
+    make TEST setup up 
+
+Enter the `tester` container    
+    
+    make TEST bash
+
+Run codeception directly from the container
+
+    codecept run acceptance allow_fail
+
+> :information_source: `YII_ENV` must be set to `test` when running codeception.
 
 
 Deployment
