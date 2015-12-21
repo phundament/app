@@ -4,13 +4,13 @@ $I = new FunctionalTester($scenario);
 
 $I->wantTo('check application versioning');
 
-$I->dontSeeFileFound('/app/src/version');
-$I->seeFileFound('/app/version');
-$I->openFile('/app/version');
+$I->dontSeeFileFound('src/version');
+$I->seeFileFound('version');
+$I->openFile('version');
 $I->dontSeeInThisFile('dev');
 $I->dontSeeInThisFile('dirty');
 
-$version = file_get_contents('/app/version');
+$version = file_get_contents('version');
 
 $I->amGoingTo('check version visiblity in modal');
 $I->expectTo('see application version '.$version);
