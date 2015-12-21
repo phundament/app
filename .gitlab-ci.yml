@@ -9,7 +9,8 @@ before_script:
 stages:
   - build
   - test
-  - cleanup_test
+  - report
+  - cleanup
   - deploy
 
 build:
@@ -21,20 +22,16 @@ test:
   stage: test
   script:
       - bash build/scripts/test.sh
-      - mv tests/codeception/_output/ reports-${CI_BUILD_ID}
-  artifacts:
-    paths:
-      - reports-${CI_BUILD_ID}
+      - mv tests/codeception/_output/ tmp/reports-${CI_BUILD_ID}
 
-test-dev:
+test-allow_fail:
   stage: test
   script:
       - export COMPOSE_PROJECT_NAME=buildref${CI_BUILD_REF}${CI_BUILD_NAME}
-      - bash build/scripts/test-dev.sh
-      - mv tests/codeception/_output/ reports-dev-${CI_BUILD_ID}
+      - bash build/scripts/test-allow_fail.sh
+      - mv tests/codeception/_output/ tmp/reports-allow_fail-${CI_BUILD_ID}
   artifacts:
     paths:
-      - reports-dev-${CI_BUILD_ID}
   allow_failure: true
 
 system:
@@ -43,11 +40,20 @@ system:
       - bash build/scripts/system.sh
   allow_failure: true
 
-cleanup_test:
-  stage: cleanup_test
+report:
+  stage: report
+  script:
+    - echo "Report stage"
+  artifacts:
+    paths:
+      - tmp/reports-${CI_BUILD_ID}
+      - tmp/reports-allow_fail-${CI_BUILD_ID}
+
+cleanup:
+  stage: cleanup
   script:
     - make TEST clean
-    - make clean COMPOSE_PROJECT_NAME=buildref${CI_BUILD_REF}test-dev
+    - make clean COMPOSE_PROJECT_NAME=buildref${CI_BUILD_REF}test-allow_fail
   when: always
 
 deploy:
