@@ -1,17 +1,18 @@
 <?php
 /**
  * @link http://www.yiiframework.com/
+ *
  * @copyright Copyright (c) 2008 Yii Software LLC
  * @license http://www.yiiframework.com/license/
  */
-
 namespace app\modules\backend\assets;
 
 use yii\helpers\FileHelper;
 use yii\web\AssetBundle;
 
 /**
- * Configuration for `backend` client script files
+ * Configuration for `backend` client script files.
+ *
  * @since 4.0
  */
 class AdminAsset extends AssetBundle
@@ -43,9 +44,9 @@ class AdminAsset extends AssetBundle
         // This will create a new folder in web/assets for every change and request
         // made to the app assets.
         if (getenv('APP_ASSET_FORCE_PUBLISH')) {
-            $files  = FileHelper::findFiles(\Yii::getAlias($this->sourcePath));
+            $files = FileHelper::findFiles(\Yii::getAlias($this->sourcePath));
             $mtimes = [];
-            foreach ($files AS $file) {
+            foreach ($files as $file) {
                 $mtimes[] = filemtime($file);
             }
             touch(\Yii::getAlias($this->sourcePath), max($mtimes));

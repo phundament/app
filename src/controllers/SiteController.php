@@ -1,22 +1,19 @@
 <?php
+
 namespace app\controllers;
 
 use app\components\Helper;
-use app\models\PasswordResetRequestForm;
-use app\models\ResetPasswordForm;
-use app\models\SignupForm;
-use common\models\LoginForm;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 
 /**
- * Site controller
+ * Site controller.
  */
 class SiteController extends Controller
 {
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function behaviors()
     {
@@ -32,18 +29,18 @@ class SiteController extends Controller
                         'allow' => true,
                         'matchCallback' => function ($rule, $action) {
                             return \Yii::$app->user->can(
-                                $this->module->id . '_' . $this->id . '_' . $action->id,
+                                $this->module->id.'_'.$this->id.'_'.$action->id,
                                 ['route' => true]
                             );
                         },
-                    ]
-                ]
-            ]
+                    ],
+                ],
+            ],
         ];
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function actions()
     {
@@ -59,7 +56,8 @@ class SiteController extends Controller
     }
 
     /**
-     * Renders the start page
+     * Renders the start page.
+     *
      * @return string
      */
     public function actionIndex()

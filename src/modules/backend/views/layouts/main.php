@@ -4,7 +4,7 @@ use yii\helpers\Html;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
-$this->title = $this->title . ' [Backend] ' . Yii::$app->params['appName'];
+$this->title = $this->title.' [Backend] '.Yii::$app->params['appName'];
 dmstr\web\AdminLteAsset::register($this);
 ?>
 
@@ -77,10 +77,13 @@ dmstr\web\AdminLteAsset::register($this);
                                 <li>
                                     <!-- inner menu: contains the actual data -->
                                     <ul class="menu">
-                                        <?php foreach(Yii::$app->urlManager->languages as $language): ?>
-                                        <li>
-                                            <?= Html::a($language,['',Yii::$app->urlManager->languageParam=>$language]) ?>
-                                        </li>
+                                        <?php foreach (Yii::$app->urlManager->languages as $language): ?>
+                                            <li>
+                                                <?= Html::a(
+                                                    $language,
+                                                    ['', Yii::$app->urlManager->languageParam => $language]
+                                                ) ?>
+                                            </li>
                                         <?php endforeach; ?>
                                     </ul>
                                 </li>
@@ -97,13 +100,13 @@ dmstr\web\AdminLteAsset::register($this);
                                 <li class="user-header bg-light-blue">
                                     <?php echo \cebe\gravatar\Gravatar::widget(
                                         [
-                                            'email'   => (\Yii::$app->user->identity->profile->gravatar_email === null)
-                                                        ? \Yii::$app->user->identity->email 
-                                                        : \Yii::$app->user->identity->profile->gravatar_email,
+                                            'email' => (\Yii::$app->user->identity->profile->gravatar_email === null)
+                                                ? \Yii::$app->user->identity->email
+                                                : \Yii::$app->user->identity->profile->gravatar_email,
                                             'options' => [
-                                                'alt' => \Yii::$app->user->identity->username
+                                                'alt' => \Yii::$app->user->identity->username,
                                             ],
-                                            'size'    => 128
+                                            'size' => 128,
                                         ]
                                     ); ?>
                                     <p>

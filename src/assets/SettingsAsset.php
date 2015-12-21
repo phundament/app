@@ -1,12 +1,12 @@
 <?php
 /**
  * @link http://www.diemeisterei.de/
+ *
  * @copyright Copyright (c) 2015 diemeisterei GmbH, Stuttgart
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace app\assets;
 
 use yii\caching\FileDependency;
@@ -42,12 +42,11 @@ class SettingsAsset extends AssetBundle
         if (isset($config[self::SETTINGS_KEY])) {
             $hash = sha1(Json::encode($config[self::SETTINGS_KEY]));
             if ($hash !== \Yii::$app->cache->get(self::CACHE_ID)) {
-
                 $lessFiles = FileHelper::findFiles($sourcePath, ['only' => ['*.less']]);
-                foreach ($lessFiles AS $file) {
+                foreach ($lessFiles as $file) {
                     unlink($file);
                 }
-                foreach ($config[self::SETTINGS_KEY] AS $key => $value) {
+                foreach ($config[self::SETTINGS_KEY] as $key => $value) {
                     file_put_contents("$sourcePath/$key.less", $value[0]);
                 }
 
@@ -58,5 +57,4 @@ class SettingsAsset extends AssetBundle
             }
         }
     }
-
 }

@@ -1,5 +1,5 @@
 <h2>Application</h2>
-<?php foreach ($config AS $name => $element): ?>
+<?php foreach ($config as $name => $element): ?>
     <div class="row">
         <div class="col-sm-2">
             <b><?= $name ?></b>
@@ -13,7 +13,7 @@
 <?php endforeach ?>
 
 <h2>Modules</h2>
-<?php foreach ($modules AS $name => $element): ?>
+<?php foreach ($modules as $name => $element): ?>
     <div class="row">
         <div class="col-sm-2">
             <b><?= $name ?></b>
@@ -27,7 +27,7 @@
 <?php endforeach ?>
 
 <h2>Components</h2>
-<?php foreach ($components AS $name => $element): ?>
+<?php foreach ($components as $name => $element): ?>
     <div class="row">
         <div class="col-sm-2">
             <b><?= $name ?></b>
@@ -41,7 +41,7 @@
 <?php endforeach ?>
 
 <h2>Params</h2>
-<?php foreach ($params AS $name => $element): ?>
+<?php foreach ($params as $name => $element): ?>
     <div class="row">
         <div class="col-sm-2">
             <b><?= $name ?></b>

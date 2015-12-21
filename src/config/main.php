@@ -8,17 +8,17 @@ $common = [
     'vendorPath' => '@app/../vendor',
     'runtimePath' => '@app/../runtime',
     'bootstrap' => [
-        'log'
+        'log',
     ],
     'aliases' => [
-        '@admin-views' => '@app/modules/backend/views'
+        '@admin-views' => '@app/modules/backend/views',
     ],
     'components' => [
         'assetManager' => [
             // Note: For using mounted volumes or shared folders
             'dirMode' => YII_ENV_PROD ? 0777 : null,
             'bundles' => getenv('APP_ASSET_USE_BUNDLED') ?
-                require(__DIR__ . '/assets-gen/prod.php') :
+                require(__DIR__.'/assets-gen/prod.php') :
                 [
                     // Note: if your asset bundle includes bootstrap, you can disable the default asset
                     #'yii\bootstrap\BootstrapAsset' => false,
@@ -81,7 +81,7 @@ $common = [
             'languages' => [
                 'en',
                 'de',
-            ]
+            ],
         ],
         'user' => [
             'class' => 'app\components\User',
@@ -108,7 +108,7 @@ $common = [
             'class' => 'schmunk42\markdocs\Module',
             'layout' => '@admin-views/layouts/box',
             'markdownUrl' => '@app/../docs',
-            'forkUrl' => false
+            'forkUrl' => false,
         ],
         'pages' => [
             'class' => 'dmstr\modules\pages\Module',
@@ -132,7 +132,7 @@ $common = [
         'settings' => [
             'class' => 'pheme\settings\Module',
             'layout' => '@admin-views/layouts/box',
-            'accessRoles' => ['Admin']
+            'accessRoles' => ['Admin'],
         ],
         'translatemanager' => [
             'class' => 'lajax\translatemanager\Module',
@@ -146,7 +146,7 @@ $common = [
             'layout' => '@admin-views/layouts/main',
             'treeViewSettings' => [
                 'nodeView' => '@vendor/dmstr/yii2-pages-module/views/treeview/_form',
-                'fontAwesome' => true
+                'fontAwesome' => true,
             ],
         ],
     ],
@@ -159,11 +159,10 @@ $common = [
             '@dektrium/user/migrations',
             '@vendor/lajax/yii2-translate-manager/migrations',
             '@vendor/pheme/yii2-settings/migrations',
-        ]
-    ]
+        ],
+    ],
 
 ];
-
 
 $web = [
     'components' => [
@@ -196,28 +195,27 @@ $web = [
         'user' => [
             'identityClass' => 'dektrium\user\models\User',
         ],
-    ]
+    ],
 ];
 
 $console = [
     'controllerNamespace' => 'app\commands',
     'controllerMap' => [
-        'db' =>  'dmstr\console\controllers\MysqlController',
+        'db' => 'dmstr\console\controllers\MysqlController',
         'migrate' => 'dmstr\console\controllers\MigrateController',
         'yaml' => 'dmstr\console\controllers\DockerStackConverterController',
         'translate' => '\lajax\translatemanager\commands\TranslatemanagerController',
     ],
     'components' => [
 
-    ]
+    ],
 ];
-
 
 $allowedIPs = [
     '127.0.0.1',
     '::1',
     '192.168.*',
-    '172.17.*'
+    '172.17.*',
 ];
 
 // detecting current application type based on `php_sapi_name()` since we've no application ready yet.
@@ -231,7 +229,7 @@ if (php_sapi_name() == 'cli') {
         $common['bootstrap'][] = 'debug';
         $common['modules']['debug'] = [
             'class' => 'yii\debug\Module',
-            'allowedIPs' => $allowedIPs
+            'allowedIPs' => $allowedIPs,
         ];
     }
     $config = \yii\helpers\ArrayHelper::merge($common, $web);
@@ -242,13 +240,13 @@ if (YII_ENV_DEV || YII_ENV_TEST) {
     $config['bootstrap'][] = 'gii';
     $config['modules']['gii'] = [
         'class' => 'yii\gii\Module',
-        'allowedIPs' => $allowedIPs
+        'allowedIPs' => $allowedIPs,
     ];
 }
 
-if (file_exists(__DIR__ . '/local.php')) {
+if (file_exists(__DIR__.'/local.php')) {
     // Local configuration, if available
-    $local = require(__DIR__ . '/local.php');
+    $local = require __DIR__.'/local.php';
     $config = \yii\helpers\ArrayHelper::merge($config, $local);
 }
 

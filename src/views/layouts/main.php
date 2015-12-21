@@ -10,8 +10,7 @@ use yii\widgets\Breadcrumbs;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
-$this->title = $this->title . ' - ' . Yii::$app->params['appName'];
-
+$this->title = $this->title.' - '.Yii::$app->params['appName'];
 
 if (Yii::$app->settings->get('useSettingsAsset', 'app.assets')) {
     SettingsAsset::register($this);
@@ -48,7 +47,7 @@ if (Yii::$app->settings->get('useSettingsAsset', 'app.assets')) {
         [
             'options' => ['class' => 'navbar-nav'],
             'encodeLabels' => false,
-            'items' => \dmstr\modules\pages\models\Tree::getMenuItems('root_' . Yii::$app->language),
+            'items' => \dmstr\modules\pages\models\Tree::getMenuItems('root_'.Yii::$app->language),
         ]
     );
     $menuItems = [];
@@ -58,7 +57,7 @@ if (Yii::$app->settings->get('useSettingsAsset', 'app.assets')) {
             $menuItems[] = ['label' => 'Login', 'url' => ['/user/security/login']];
         } else {
             $menuItems[] = [
-                'label' => '<i class="glyphicon glyphicon-user"></i> ' . Yii::$app->user->identity->username,
+                'label' => '<i class="glyphicon glyphicon-user"></i> '.Yii::$app->user->identity->username,
                 'options' => ['id' => 'link-user-menu'],
                 'items' => [
                     [
@@ -69,16 +68,16 @@ if (Yii::$app->settings->get('useSettingsAsset', 'app.assets')) {
                     [
                         'label' => '<i class="glyphicon glyphicon-log-out"></i> Logout',
                         'url' => ['/user/security/logout'],
-                        'linkOptions' => ['data-method' => 'post', 'id' => 'link-logout']
+                        'linkOptions' => ['data-method' => 'post', 'id' => 'link-logout'],
                     ],
-                ]
+                ],
             ];
             $menuItems[] = [
                 'label' => '<i class="glyphicon glyphicon-cog"></i>',
                 'url' => ['/backend'],
                 'visible' => Yii::$app->user->can(
                         'backend_default'
-                    ) || (isset(Yii::$app->user->identity) && Yii::$app->user->identity->isAdmin)
+                    ) || (isset(Yii::$app->user->identity) && Yii::$app->user->identity->isAdmin),
             ];
         }
     }

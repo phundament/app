@@ -1,4 +1,5 @@
 <?php
+
 namespace app\modules\backend\controllers;
 
 use Yii;
@@ -6,14 +7,14 @@ use yii\filters\AccessControl;
 use yii\web\Controller;
 
 /**
- * Default backend controller
+ * Default backend controller.
  *
  * Usually renders a customized dashboard for logged in users
  */
 class DefaultController extends Controller
 {
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function behaviors()
     {
@@ -29,18 +30,19 @@ class DefaultController extends Controller
                         'allow' => true,
                         'matchCallback' => function ($rule, $action) {
                             return \Yii::$app->user->can(
-                                $this->module->id . '_' . $this->id . '_' . $action->id,
+                                $this->module->id.'_'.$this->id.'_'.$action->id,
                                 ['route' => true]
                             );
                         },
-                    ]
-                ]
-            ]
+                    ],
+                ],
+            ],
         ];
     }
 
     /**
-     * Actions defined in classes, eg. error page
+     * Actions defined in classes, eg. error page.
+     *
      * @return array
      */
     public function actions()
@@ -53,7 +55,8 @@ class DefaultController extends Controller
     }
 
     /**
-     * Application dashboard
+     * Application dashboard.
+     *
      * @return string
      */
     public function actionIndex()
@@ -62,26 +65,28 @@ class DefaultController extends Controller
     }
 
     /**
-     * Application configuration
+     * Application configuration.
+     *
      * @return string
      */
     public function actionViewConfig()
     {
-        $config  = $GLOBALS['config'];
+        $config = $GLOBALS['config'];
         $modules = $config['modules'];
         unset($config['modules']);
         $components = $config['components'];
         unset($config['components']);
         $params = $config['params'];
         unset($config['params']);
-        return $this->render('view-config',
-                             [
-                                 'config'     => $config,
-                                 'modules'    => $modules,
-                                 'components' => $components,
-                                 'params'     => $params
-                             ]
+
+        return $this->render(
+            'view-config',
+            [
+                'config' => $config,
+                'modules' => $modules,
+                'components' => $components,
+                'params' => $params,
+            ]
         );
     }
-
 }

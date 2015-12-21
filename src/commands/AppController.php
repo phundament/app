@@ -1,22 +1,21 @@
 <?php
 /**
  * @link http://www.diemeisterei.de/
+ *
  * @copyright Copyright (c) 2014 diemeisterei GmbH, Stuttgart
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace app\commands;
 
 use dektrium\user\Finder;
 use mikehaertl\shellcommand\Command;
 use yii\console\Controller;
 
-
 /**
  * Task runner command for development.
- * @package console\controllers
+ *
  * @author Tobias Munk <tobias@diemeisterei.de>
  */
 class AppController extends Controller
@@ -24,7 +23,7 @@ class AppController extends Controller
     public $defaultAction = 'version';
 
     /**
-     * Displays application version from git describe and writes it to `version`
+     * Displays application version from git describe and writes it to `version`.
      */
     public function actionVersion($alias = '@root/version')
     {
@@ -32,9 +31,8 @@ class AppController extends Controller
         $this->stdout("\n");
     }
 
-
     /**
-     * Setup admin user (create, update password, confirm)
+     * Setup admin user (create, update password, confirm).
      */
     public function actionSetupAdminUser()
     {
@@ -62,9 +60,8 @@ class AppController extends Controller
         $this->action('user/confirm', ['admin']);
     }
 
-
     /**
-     * Clear [application]/web/assets folder
+     * Clear [application]/web/assets folder.
      */
     public function actionClearAssets()
     {
@@ -74,7 +71,7 @@ class AppController extends Controller
         $matchRegex = '"^[a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9]\?[a-z0-9]$"';
 
         // create $cmd command
-        $cmd = 'cd "' . $assets . '" && ls | grep -e ' . $matchRegex . ' | xargs rm -rf ';
+        $cmd = 'cd "'.$assets.'" && ls | grep -e '.$matchRegex.' | xargs rm -rf ';
 
         // Set command
         $command = new Command($cmd);
@@ -87,14 +84,14 @@ class AppController extends Controller
             if ($command->execute()) {
                 echo "Web assets have been deleted.\n\n";
             } else {
-                echo "\n" . $command->getError() . "\n";
+                echo "\n".$command->getError()."\n";
                 echo $command->getStdErr();
             }
         }
     }
 
     /**
-     * Generate application and required vendor documentation
+     * Generate application and required vendor documentation.
      */
     public function actionGenerateDocs()
     {
@@ -105,7 +102,7 @@ class AppController extends Controller
             $commands[] = 'vendor/bin/apidoc api --interactive=0 --exclude=runtime/,tests/,vendor/ . web/apidocs';
             $commands[] = 'vendor/bin/apidoc guide --interactive=0 docs web/apidocs';
 
-            foreach ($commands AS $command) {
+            foreach ($commands as $command) {
                 $cmd = new Command($command);
                 if ($cmd->execute()) {
                     echo $cmd->getOutput();
@@ -117,7 +114,6 @@ class AppController extends Controller
             }
         }
     }
-
 
     protected function action($command, $params = [])
     {

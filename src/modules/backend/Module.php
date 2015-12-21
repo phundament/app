@@ -1,20 +1,19 @@
 <?php
 /**
  * @link http://www.diemeisterei.de/
+ *
  * @copyright Copyright (c) 2014 diemeisterei GmbH, Stuttgart
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace app\modules\backend;
 
 use yii\helpers\ArrayHelper;
 
-
 /**
- * Class Module
- * @package app\modules\backend
+ * Class Module.
+ *
  * @author Tobias Munk <tobias@diemeisterei.de>
  */
 class Module extends \yii\base\Module
@@ -22,14 +21,14 @@ class Module extends \yii\base\Module
     public function getMenuItems()
     {
         $menuItemPresets = [
-            'admin'   => ['label' => '<i class="fa fa-dashboard"></i> <span>Dashboard</span>', 'url' => ['/admin']],
-            'user'    => ['label' => '<i class="fa fa-users"></i> <span>Users</span>', 'url' => ['/user/admin']],
+            'admin' => ['label' => '<i class="fa fa-dashboard"></i> <span>Dashboard</span>', 'url' => ['/admin']],
+            'user' => ['label' => '<i class="fa fa-users"></i> <span>Users</span>', 'url' => ['/user/admin']],
             'packaii' => ['label' => '<i class="fa fa-cubes"></i> <span>Packages</span>', 'url' => ['/packaii']],
-            'gii'     => ['label' => '<i class="fa fa-code"></i> <span>Code Generation</span>', 'url' => ['/gii']],
+            'gii' => ['label' => '<i class="fa fa-code"></i> <span>Code Generation</span>', 'url' => ['/gii']],
         ];
 
         $autoMenuItems = [];
-        foreach (\Yii::$app->getModules() AS $name => $m) {
+        foreach (\Yii::$app->getModules() as $name => $m) {
             switch ($name) {
                 case 'admin':
                 case 'user':
@@ -38,10 +37,10 @@ class Module extends \yii\base\Module
                     $menuItems[] = $menuItemPresets[$name];
                     break;
                 default:
-                    $module          = \Yii::$app->getModule($name);
+                    $module = \Yii::$app->getModule($name);
                     $autoMenuItems[] = [
-                        'label' => '<i class="fa fa-cube"></i> <span>' . ucfirst($name) . '</span>',
-                        'url'   => ['/' . $module->id]
+                        'label' => '<i class="fa fa-cube"></i> <span>'.ucfirst($name).'</span>',
+                        'url' => ['/'.$module->id],
                     ];
             }
         }
@@ -58,12 +57,13 @@ class Module extends \yii\base\Module
         } else {
             $module = \Yii::$app->getModule($module);
         }
-        foreach (scandir($module->getControllerPath()) AS $i => $name) {
+        foreach (scandir($module->getControllerPath()) as $i => $name) {
             if (substr($name, 0, 1) == '.') {
                 continue;
             }
             $controllers[] = \yii\helpers\Inflector::camel2id(str_replace('Controller.php', '', $name));
         }
+
         return $controllers;
     }
 }

@@ -17,7 +17,7 @@ class ContactForm extends Model
     public $verifyCode;
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function rules()
     {
@@ -32,7 +32,7 @@ class ContactForm extends Model
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function attributeLabels()
     {
@@ -43,8 +43,10 @@ class ContactForm extends Model
 
     /**
      * Sends an email to the specified email address using the information collected by this model.
-     * @param  string  $email the target email address
-     * @return boolean whether the model passes validation
+     *
+     * @param string $email the target email address
+     *
+     * @return bool whether the model passes validation
      */
     public function sendEmail($email)
     {
@@ -55,6 +57,7 @@ class ContactForm extends Model
                 ->setSubject($this->subject)
                 ->setTextBody($this->body)
                 ->send();
+
             return true;
         } else {
             return false;

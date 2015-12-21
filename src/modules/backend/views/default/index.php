@@ -102,11 +102,11 @@
             </div>
             <div class="box-body">
                 <?php
-                foreach (\Yii::$app->urlManager->languages AS $name) {
+                foreach (\Yii::$app->urlManager->languages as $name) {
                     echo yii\helpers\Html::a(
                         $name,
                         ['', \Yii::$app->urlManager->languageParam => $name],
-                        ['class' => 'btn btn-default btn-flat ' . (Yii::$app->language == $name ? 'active' : '')]
+                        ['class' => 'btn btn-default btn-flat '.(Yii::$app->language == $name ? 'active' : '')]
                     );
                 }
                 ?>
@@ -134,11 +134,11 @@
                 </div>
                 <div class="box-body">
                     <?php
-                    foreach (\Yii::$app->getModules() AS $name => $m) {
+                    foreach (\Yii::$app->getModules() as $name => $m) {
                         $module = \Yii::$app->getModule($name);
                         echo yii\helpers\Html::a(
                             $module->id,
-                            ['/' . $module->id],
+                            ['/'.$module->id],
                             ['class' => 'btn btn-default btn-flat']
                         );
                     }
@@ -176,7 +176,7 @@
                 <div class="box-footer">
                     <small>Need help? Get <?= yii\helpers\Html::a(
                             'support',
-                            'mailto:' . \Yii::$app->params['supportEmail']
+                            'mailto:'.\Yii::$app->params['supportEmail']
                         ); ?>.
                     </small>
                 </div>

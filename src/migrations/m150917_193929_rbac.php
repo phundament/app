@@ -47,5 +47,4 @@ class m150917_193929_rbac extends Migration
             throw new \yii\base\Exception('Application authManager must be an instance of \yii\rbac\DbManager');
         }
     }
-
 }
