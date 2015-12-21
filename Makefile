@@ -47,6 +47,7 @@ build:	##@docker build application images
 
 init:
 	cp -n .env-dist .env &2>/dev/null
+	cp -n docker-compose.override-dist.yml docker-compose.override.yml &2>/dev/null
 
 setup:	##@docker setup application packages and database
 	echo $(COMPOSE_FILE)
