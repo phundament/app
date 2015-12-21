@@ -52,8 +52,8 @@ cleanup:
   stage: cleanup
   script:
     - make TEST clean
-    - make clean COMPOSE_PROJECT_NAME=buildref${CI_BUILD_REF}test
-    - make clean COMPOSE_PROJECT_NAME=buildref${CI_BUILD_REF}test-allow_fail
+    - make TEST clean COMPOSE_PROJECT_NAME=buildref${CI_BUILD_REF}test
+    - make TEST clean COMPOSE_PROJECT_NAME=buildref${CI_BUILD_REF}test-allow_fail
   when: always
 
 deploy:
