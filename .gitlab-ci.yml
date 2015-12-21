@@ -23,13 +23,13 @@ test:
   stage: test
   script:
       - export COMPOSE_PROJECT_NAME=buildref${CI_BUILD_REF}${CI_BUILD_NAME}
-      - bash build/scripts/test.sh || EXIT_CODE=$?; cp -r tests/codeception/_output/ /tmp/reports-${CI_BUILD_REF}; exit ${EXIT_CODE}
+      - bash build/scripts/${CI_BUILD_NAME}.sh || EXIT_CODE=$?; cp -r tests/codeception/_output/ /tmp/${CI_BUILD_NAME}-${CI_BUILD_REF}; exit ${EXIT_CODE}
 
-test-allow_fail:
+test-allow_failure:
   stage: test
   script:
       - export COMPOSE_PROJECT_NAME=buildref${CI_BUILD_REF}${CI_BUILD_NAME}
-      - bash build/scripts/test.sh || EXIT_CODE=$?; cp -r tests/codeception/_output/ /tmp/reports-allow_fail-${CI_BUILD_REF}; exit ${EXIT_CODE}
+      - bash build/scripts/${CI_BUILD_NAME}.sh || EXIT_CODE=$?; cp -r tests/codeception/_output/ /tmp/${CI_BUILD_NAME}-${CI_BUILD_REF}; exit ${EXIT_CODE}
   allow_failure: true
 
 system:
@@ -45,7 +45,7 @@ report:
   artifacts:
     paths:
       - /tmp/reports-${CI_BUILD_REF}
-      - /tmp/reports-allow_fail-${CI_BUILD_REF}
+      - /tmp/reports-allow_failure-${CI_BUILD_REF}
   when: always
 
 cleanup:
@@ -53,7 +53,7 @@ cleanup:
   script:
     - make TEST clean
     - make TEST clean COMPOSE_PROJECT_NAME=buildref${CI_BUILD_REF}test
-    - make TEST clean COMPOSE_PROJECT_NAME=buildref${CI_BUILD_REF}test-allow_fail
+    - make TEST clean COMPOSE_PROJECT_NAME=buildref${CI_BUILD_REF}test-allow_failure
   when: always
 
 deploy:
