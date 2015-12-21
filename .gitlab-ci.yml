@@ -44,8 +44,8 @@ report:
     - ls -la tmp
   artifacts:
     paths:
-      - /tmp/reports-${CI_BUILD_REF}
-      - /tmp/reports-allow_failure-${CI_BUILD_REF}
+      - /tmp/test-${CI_BUILD_REF}
+      - /tmp/test-allow_failure-${CI_BUILD_REF}
   when: always
 
 cleanup:
