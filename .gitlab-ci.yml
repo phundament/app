@@ -40,10 +40,7 @@ test-dev:
 system:
   stage: test
   script:
-      - docker-compose run php composer diagnose
-      - docker run -v ${HOST_APP_VOLUME}/build/scripts/build.sh:/tmp/FileToBeChecked chrisdaish/shellcheck
-      - docker run -v ${HOST_APP_VOLUME}/build/scripts/test.sh:/tmp/FileToBeChecked chrisdaish/shellcheck
-      - docker run -v ${HOST_APP_VOLUME}/build/scripts/deploy.sh:/tmp/FileToBeChecked chrisdaish/shellcheck
+      - bash build/scripts/system.sh
   allow_failure: true
 
 cleanup_test:
