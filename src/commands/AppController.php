@@ -28,16 +28,8 @@ class AppController extends Controller
      */
     public function actionVersion($alias = '@root/version')
     {
-        $cmd = new Command("git describe --dirty");
-        if ($cmd->execute()) {
-            echo \Yii::$app->id.' version '.$cmd->getOutput();
-            file_put_contents(\Yii::getAlias($alias), $cmd->getOutput());
-        } else {
-            echo $cmd->getOutput();
-            echo $cmd->getStdErr();
-            echo $cmd->getError();
-        }
-        echo "\n";
+        $this->stdout(\Yii::$app->id.' version '.APP_VERSION);
+        $this->stdout("\n");
     }
 
 

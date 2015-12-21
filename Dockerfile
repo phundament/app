@@ -13,11 +13,11 @@ ADD ./composer.lock ./composer.json /app/
 RUN /usr/local/bin/composer install --prefer-dist --optimize-autoloader
 
 # Add application code
-ADD version /app/version
 ADD .env-dist /app/.env
-ADD yii Dockerfile docker-compose.yml /app/
+ADD yii /app/
 ADD web /app/web
 ADD src /app/src
+ADD version /app/version
 
 # Create folder writable by the application (non-persistent data)
 RUN mkdir -p /app/web/assets /app/runtime && \

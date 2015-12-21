@@ -36,12 +36,12 @@ open:	 ##@docker open application web service in browser
 	$(OPEN_CMD) http://$(DOCKER_HOST_IP):`$(DOCKER_COMPOSE) port $(WEB_SERVICE) 80 | sed 's/[0-9.]*://'`
 
 bash:	##@docker open application shell in container
-	$(DOCKER_COMPOSE) run $(PHP_SERVICE) bash
+	$(DOCKER_COMPOSE) run --rm $(PHP_SERVICE) bash
 
 build:	##@docker build application images
-	$(curl_check)
-	$(DOCKER_COMPOSE) run $(PHP_SERVICE) composer install
-	$(DOCKER_COMPOSE) run $(PHP_SERVICE) yii app/version
+	$(DOCKER_COMPOSE) run --rm $(PHP_SERVICE) composer install
+	$(shell echo $(shell git describe --long --tags --dirty --always) > version)
+	@echo $(shell cat version)
 	$(DOCKER_COMPOSE) build --pull
 
 init:
@@ -49,7 +49,7 @@ init:
 
 setup:	##@docker setup application packages and database
 	echo $(COMPOSE_FILE)
-	$(DOCKER_COMPOSE) run $(PHP_SERVICE) sh src/setup.sh
+	$(DOCKER_COMPOSE) run --rm $(PHP_SERVICE) sh src/setup.sh
 
 clean:  ##@docker remove application containers
 	$(DOCKER_COMPOSE) kill
@@ -57,7 +57,7 @@ clean:  ##@docker remove application containers
 
 run-tests:
 	$(DOCKER_COMPOSE) up -d
-	$(DOCKER_COMPOSE) run $(PHP_SERVICE) sh -c 'codecept clean && codecept run $(codecept_opts)'
+	$(DOCKER_COMPOSE) run --rm $(PHP_SERVICE) sh -c 'codecept clean && codecept run $(codecept_opts)'
 	@echo "\nSee tests/codeception/_output for report files"
 
 

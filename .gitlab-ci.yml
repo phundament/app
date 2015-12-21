@@ -1,10 +1,11 @@
 before_script:
   - export APP_MIGRATION_LOOKUP=@root/tests/codeception/_migrations
   - export COMPOSE_PROJECT_NAME=buildref${CI_BUILD_REF}
+  - export TEST_IMAGE_PREFIX=buildref${CI_BUILD_REF}
   - export COMPOSE_HTTP_TIMEOUT=120
   - export HOST_APP_VOLUME=$CI_PROJECT_DIR
   - export IMAGE_NAME=phundament/app
-  - cp build/compose/test.override.yml docker-compose.override.yml
+  - mkdir -p tmp
 
 stages:
   - build
@@ -21,17 +22,14 @@ build:
 test:
   stage: test
   script:
-      - bash build/scripts/test.sh
-      - mv tests/codeception/_output/ tmp/reports-${CI_BUILD_ID}
+      - export COMPOSE_PROJECT_NAME=buildref${CI_BUILD_REF}${CI_BUILD_NAME}
+      - bash build/scripts/test.sh; cp -r tests/codeception/_output/ /tmp/reports-${CI_BUILD_REF}
 
 test-allow_fail:
   stage: test
   script:
       - export COMPOSE_PROJECT_NAME=buildref${CI_BUILD_REF}${CI_BUILD_NAME}
-      - bash build/scripts/test-allow_fail.sh
-      - mv tests/codeception/_output/ tmp/reports-allow_fail-${CI_BUILD_ID}
-  artifacts:
-    paths:
+      - bash build/scripts/test-allow_fail.sh; cp -r tests/codeception/_output/ /tmp/reports-allow_fail-${CI_BUILD_REF}
   allow_failure: true
 
 system:
@@ -43,16 +41,18 @@ system:
 report:
   stage: report
   script:
-    - echo "Report stage"
+    - ls -la tmp
   artifacts:
     paths:
-      - tmp/reports-${CI_BUILD_ID}
-      - tmp/reports-allow_fail-${CI_BUILD_ID}
+      - /tmp/reports-${CI_BUILD_REF}
+      - /tmp/reports-allow_fail-${CI_BUILD_REF}
+  when: always
 
 cleanup:
   stage: cleanup
   script:
     - make TEST clean
+    - make clean COMPOSE_PROJECT_NAME=buildref${CI_BUILD_REF}test
     - make clean COMPOSE_PROJECT_NAME=buildref${CI_BUILD_REF}test-allow_fail
   when: always
 
