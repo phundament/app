@@ -7,6 +7,9 @@ HOST_APP_VOLUME="${HOST_APP_VOLUME-${PWD}/${DIRNAME}/../..}"
 set -v
 
 docker-compose run --rm php composer diagnose || EXIT_CODE=1
+
+docker-compose run --rm php php-cs-fixer fix --dry-run --format=txt -v --diff src || EXIT_CODE=1
+
 docker run --rm -v "${HOST_APP_VOLUME}/build/scripts/system.sh:/tmp/FileToBeChecked" chrisdaish/shellcheck || EXIT_CODE=1
 docker run --rm -v "${HOST_APP_VOLUME}/build/scripts/build.sh:/tmp/FileToBeChecked" chrisdaish/shellcheck || EXIT_CODE=1
 docker run --rm -v "${HOST_APP_VOLUME}/build/scripts/test.sh:/tmp/FileToBeChecked" chrisdaish/shellcheck || EXIT_CODE=1
