@@ -173,5 +173,5 @@ Links
 
 -----------
 
-*Developed by diemeisterei GmbH, Stuttgart.*
+Built by *dmstr, Stuttgart :de:
 
