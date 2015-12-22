@@ -36,6 +36,8 @@ test-allow_failure:
       - cp -r tests/codeception/_output/ /tmp/${CI_BUILD_NAME}-${CI_BUILD_REF}
       - exit ${EXIT_CODE}
   allow_failure: true
+  only:
+      - develop
 
 system:
   stage: test
