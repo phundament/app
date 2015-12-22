@@ -34,7 +34,7 @@ up:      ##@docker start application
 	$(DOCKER_COMPOSE) ps
 
 open:	 ##@docker open application web service in browser
-	$(OPEN_CMD) http://$(DOCKER_HOST_IP):`$(DOCKER_COMPOSE) port $(WEB_SERVICE) 80 | sed 's/[0-9.]*://'`
+	$(OPEN_CMD) http://$(DOCKER_HOST_IP):$(shell $(DOCKER_COMPOSE) port $(WEB_SERVICE) 80 | sed 's/[0-9.]*://')
 
 bash:	##@docker open application shell in container
 	$(DOCKER_COMPOSE) run --rm $(PHP_SERVICE) bash
