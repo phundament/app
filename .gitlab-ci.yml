@@ -38,7 +38,7 @@ test-allow_failure:
   allow_failure: true
 
 system:
-  stage: test_pre
+  stage: test
   script:
       - bash build/scripts/system.sh
   allow_failure: true
