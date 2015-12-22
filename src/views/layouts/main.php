@@ -36,7 +36,7 @@ if (Yii::$app->settings->get('useSettingsAsset', 'app.assets')) {
     <?php
     NavBar::begin(
         [
-            'brandLabel' => getenv('APP_NAME'),
+            'brandLabel' => getenv('APP_TITLE'),
             'brandUrl' => Yii::$app->homeUrl,
             'options' => [
                 'class' => 'navbar-default',
