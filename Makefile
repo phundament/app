@@ -53,13 +53,17 @@ setup:	##@docker setup application packages and database
 	echo $(COMPOSE_FILE)
 	$(DOCKER_COMPOSE) run --rm $(PHP_SERVICE) sh src/setup.sh
 
+clean: clean-tests
 clean:  ##@docker remove application containers
 	$(DOCKER_COMPOSE) kill
 	$(DOCKER_COMPOSE) rm -fv
 
+clean-tests:
+	$(DOCKER_COMPOSE) run --rm $(PHP_SERVICE) sh -c 'codecept clean'
+
 run-tests:
 	$(DOCKER_COMPOSE) up -d
-	$(DOCKER_COMPOSE) run --rm $(PHP_SERVICE) sh -c 'codecept clean && codecept run $(codecept_opts)'
+	$(DOCKER_COMPOSE) run --rm $(PHP_SERVICE) sh -c 'codecept run $(codecept_opts)'
 	@echo "\nSee tests/codeception/_output for report files"
 
 TEST: export COMPOSE_PROJECT_NAME?=testapp

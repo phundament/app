@@ -4,6 +4,7 @@ EXIT_CODE=0
 
 set -e
 make TEST setup up
+make TEST clean-tests
 
 set +e
 set -v
