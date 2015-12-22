@@ -34,6 +34,7 @@ class User extends \yii\web\User
                 return true;
                 break;
             case !empty($params['route']):
+                \Yii::trace("Checking route permissions for '{$permissionName}'", __METHOD__);
                 return $this->checkAccessRoute($permissionName, $params, $allowCaching);
                 break;
             default:
