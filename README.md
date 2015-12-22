@@ -13,16 +13,13 @@ Requirements
 - [docker](https://docs.docker.com/engine/installation/)
 - [docker-compose](https://docs.docker.com/compose/) **>=1.5.2**
 
-or
-
-- [composer](https://getcomposer.org/download/)
-- [fxp/composer-asset-plugin](https://github.com/francoispluchino/composer-asset-plugin) **>=1.1.1**
+> For alternative installation methods, such as composer, see the [docs](https://github.com/phundament/docs).  
 
 
 Installation
 ------------
 
-Clone the repository and go to the application directory
+[Download](https://github.com/phundament/app/releases) or clone the repository and go to the application directory
 
     git clone https://github.com/phundament/app
     cd app
@@ -60,9 +57,6 @@ List all services
 Show and follow logs    
     
     docker-compose logs
-
-> For alternative installation methods see the [docs](docs/20-installation-composer.md).  
-
 
 
 Configuration
@@ -128,10 +122,34 @@ For details of available application configuration, please refer to the Yii 2.0 
 Testing
 -------
 
-Run the test suites by scripts
+### Without `make`
 
-    sh build/scripts/build.sh
-    sh build/scripts/test.sh
+First, build your application image
+
+    docker-compose build 
+
+Set environment variables for test stack
+
+    export COMPOSE_PROJECT_NAME=testapp
+    export TEST_IMAGE_PREFIX=app
+    export HOST_APP_VOLUME=.
+
+Start test stack and enter tester CLI container
+
+    docker-compose -f docker-compose.yml -f build/compose/test.override.yml up -d    
+    docker-compose -f docker-compose.yml -f build/compose/test.override.yml run tester bash    
+
+Setup application *(container bash)*    
+    
+    $ sh src/setup.sh
+
+Run test suites *(container bash)*
+
+    $ codecept run functional prod
+    $ codecept run acceptance prod
+
+
+### With `make`
 
 Or one-by-one via `Makefile` targets, make sure to build first, if you have made changes to `src`
 
@@ -145,9 +163,14 @@ Enter the `tester` container
     
     make TEST bash
 
-Run codeception directly from the container
+Run codeception directly *(container bash)*
 
-    codecept run acceptance allow_fail
+    $ codecept run acceptance allow_fail
+
+Or run the test suites from build scripts
+
+    $ sh build/scripts/build.sh
+    $ sh build/scripts/test.sh
 
 > :information_source: `YII_ENV` must be set to `test` when running codeception.
 
