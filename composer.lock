@@ -1200,7 +1200,8 @@
                 {
                     "name": "Edward Z. Yang",
                     "email": "admin@htmlpurifier.org",
-                    "homepage": "http://ezyang.com"
+                    "homepage": "http://ezyang.com",
+                    "role": "Developer"
                 }
             ],
             "description": "Standards compliant HTML filter written in PHP",
@@ -1398,16 +1399,16 @@
         },
         {
             "name": "kartik-v/yii2-widget-select2",
-            "version": "v2.0.4",
+            "version": "v2.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-select2.git",
-                "reference": "ffc59cef18864d773c79f3b2da2f34c948ff5648"
+                "reference": "f8475c5b895726e082a1614993c1aff64f77e367"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-select2/zipball/ffc59cef18864d773c79f3b2da2f34c948ff5648",
-                "reference": "ffc59cef18864d773c79f3b2da2f34c948ff5648",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-select2/zipball/f8475c5b895726e082a1614993c1aff64f77e367",
+                "reference": "f8475c5b895726e082a1614993c1aff64f77e367",
                 "shasum": ""
             },
             "require": {
@@ -1442,7 +1443,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2015-12-16 19:38:06"
+            "time": "2015-12-22 17:42:57"
         },
         {
             "name": "lajax/yii2-translate-manager",
@@ -2771,19 +2772,20 @@
         },
         {
             "name": "schmunk42/yii2-markdocs-module",
-            "version": "0.2.0",
+            "version": "0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii2-markdocs-module.git",
-                "reference": "5b225c8d7b00c2298e4742a55228055c66df0263"
+                "reference": "db4105721679c585426aaba21aaa6e5d04f35be1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii2-markdocs-module/zipball/5b225c8d7b00c2298e4742a55228055c66df0263",
-                "reference": "5b225c8d7b00c2298e4742a55228055c66df0263",
+                "url": "https://api.github.com/repos/schmunk42/yii2-markdocs-module/zipball/db4105721679c585426aaba21aaa6e5d04f35be1",
+                "reference": "db4105721679c585426aaba21aaa6e5d04f35be1",
                 "shasum": ""
             },
             "require": {
+                "pheme/yii2-settings": "~0.3",
                 "yiisoft/yii2": "*"
             },
             "type": "yii2-extension",
@@ -2807,7 +2809,7 @@
                 "extension",
                 "yii2"
             ],
-            "time": "2015-12-05 17:01:30"
+            "time": "2015-12-22 20:50:40"
         },
         {
             "name": "sebastian/diff",

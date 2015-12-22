@@ -106,9 +106,7 @@ $common = [
         ],
         'docs' => [
             'class' => 'schmunk42\markdocs\Module',
-            'layout' => '@admin-views/layouts/box',
-            'markdownUrl' => '@app/../docs',
-            'forkUrl' => false,
+            'layout' => '@app/views/layouts/container',
         ],
         'pages' => [
             'class' => 'dmstr\modules\pages\Module',
