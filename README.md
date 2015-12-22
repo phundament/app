@@ -68,13 +68,24 @@ Show and follow logs
 Configuration
 -------------
 
-### Environment defaults - `.env`
+### Environment overrides - `docker-compose.override.yml`
+
+- host-volumes for local development
+- port mappings
+
+### Environment defaults - `docker-compose.yml`
+
+> You can override any ENV variable in `.env` within a `docker-compose.yml` file.
+     
+ - `VIRTUAL_HOST` `~^myapp\.` Virtual-host configuration for reverse proxy, adjust the virtual host parameter 
+    for web application, we'll use it later to easily access the web-server through a wildcard DNS.
+
+### Application defaults - `.env`
 
 > During development, it is recommended to change application configuration in the `.env` file, since it does not require restarting the containers. 
 
 *Identifier*
 
- - `APP_NS` namespace for the application, used i.e. for Docker image tags *[a-z0-9]*
  - `APP_NAME` unique application and container identifier *[a-z0-9]*
  - `APP_TITLE` display name of the application
 
@@ -109,14 +120,6 @@ Configuration
  - `DATABASE_TABLE_PREFIX` table prefix for default database connection
 
 
-### Environment overrides - `docker-compose.yml`
-
-> You can override any ENV variable in `.env` within a `docker-compose.yml` file.
-     
- - `VIRTUAL_HOST` `~^myapp\.` Virtual-host configuration for reverse proxy, adjust the virtual host parameter 
-    for web application, we'll use it later to easily access the web-server through a wildcard DNS.
-
-
 ### PHP Application settings - `config/main.php`
 
 For details of available application configuration, please refer to the Yii 2.0 Framework Definitive Guide. 
@@ -130,9 +133,7 @@ Run the test suites by scripts
     sh build/scripts/build.sh
     sh build/scripts/test.sh
 
-Or one-by-one via `Makefile` targets
-
-Make sure to build first, if you have made changes to `src`
+Or one-by-one via `Makefile` targets, make sure to build first, if you have made changes to `src`
 
     make build
     
