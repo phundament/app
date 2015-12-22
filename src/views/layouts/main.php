@@ -27,6 +27,7 @@ if (Yii::$app->settings->get('useSettingsAsset', 'app.assets')) {
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
+    <?= Yii::$app->settings->get('head', 'app.html') ?>
     <?php $this->head() ?>
 </head>
 <body>
@@ -91,27 +92,19 @@ if (Yii::$app->settings->get('useSettingsAsset', 'app.assets')) {
     NavBar::end();
     ?>
 
-    <?= Alert::widget() ?>
-
-    <div class="container">
-        <?=
-        Breadcrumbs::widget(
-            [
-                'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-            ]
-        ) ?>
+    <div class="alert-wrapper">
+        <?= Alert::widget() ?>
     </div>
 
     <?= $content ?>
 </div>
 
 <footer class="footer">
+    <?= Yii::$app->settings->get('footer', 'app.html') ?>
     <div class="container">
         <p class="pull-right">
             <span class="label label-default"><?= YII_ENV ?></span>
-            <span class="label label-info">&copy; <?= date('Y') ?></span>
         </p>
-
         <p class="pull-left">
             <?= Html::a(
                 Html::img('http://t.phundament.com/p4-16-bw.png', ['alt' => 'Icon Phundament 4']),
