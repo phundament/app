@@ -48,7 +48,6 @@ system:
 report:
   stage: report
   script:
-    - sleep 5 # waiting for copy task
     - ls -lat /tmp
   artifacts:
     paths:
