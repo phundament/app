@@ -24,7 +24,11 @@ test:
   stage: test
   script:
       - export COMPOSE_PROJECT_NAME=buildref${CI_BUILD_REF}${CI_BUILD_NAME}
-      - bash build/scripts/${CI_BUILD_NAME}.sh || EXIT_CODE=$?; cp -r tests/codeception/_output/ /tmp/${CI_BUILD_NAME}-${CI_BUILD_REF}; exit ${EXIT_CODE}
+      - set +e
+      - bash build/scripts/${CI_BUILD_NAME}.sh || EXIT_CODE=$?
+      - set -e
+      - cp -r tests/codeception/_output/ /tmp/${CI_BUILD_NAME}-${CI_BUILD_REF}
+      - exit ${EXIT_CODE}
 
 test-allow_failure:
   stage: test_pre
