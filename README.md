@@ -24,15 +24,10 @@ Installation
     git clone https://github.com/phundament/app
     cd app
 
-### With `make`
+> Heads up! Phundament features `Makefile` targets for development and continuous integration, type `make help` to see 
+> all available targets or `make all` to run installation and setup.
 
-    make all
-     
-> On OS X, the new application should open automatically in your default browser.
-
-### Without `make`
-
-Create environment configuration file    
+Create environment configuration files   
     
     cp .env-dist .env
     cp docker-compose.override-dist.yml docker-compose.override.yml
@@ -46,17 +41,7 @@ Run setup commands
     docker-compose run php composer install
     docker-compose run php sh src/setup.sh
 
-### Additional information
-
-After startup is complete, open `http://docker:40080` to access the application and login with `admin`/`admin`.
-
-List all services    
-    
-    docker-compose ps
-
-Show and follow logs    
-    
-    docker-compose logs
+After startup is complete, open `http://<DOCKER_HOST>:40080` to access the application and login with `admin`/`admin`.
 
 
 Configuration
@@ -78,13 +63,10 @@ Configuration
 
 > During development, it is recommended to change application configuration in the `.env` file, since it does not require restarting the containers. 
 
-*Identifier*
+*Application*
 
  - `APP_NAME` unique application and container identifier *[a-z0-9]*
  - `APP_TITLE` display name of the application
-
-*Application*
- 
  - `APP_MIGRATION_LOOKUP` comma separated list of Yii aliases to look for database migrations, eg. `@app/migrations/data`
  - `APP_ADMIN_EMAIL` e-mail address of application admin user (default in `./yii app/create-admin-user`)
  - `APP_ADMIN_PASSWORD` password of application admin user (default in `./yii app/create-admin-user`)
@@ -114,15 +96,13 @@ Configuration
  - `DATABASE_TABLE_PREFIX` table prefix for default database connection
 
 
-### PHP Application settings - `config/main.php`
+### Application configuration - `config/main.php`
 
 For details of available application configuration, please refer to the Yii 2.0 Framework Definitive Guide. 
 
 
 Testing
 -------
-
-### Without `make`
 
 First, build your application image
 
@@ -147,30 +127,6 @@ Run test suites *(container bash)*
 
     $ codecept run functional prod
     $ codecept run acceptance prod
-
-
-### With `make`
-
-Or one-by-one via `Makefile` targets, make sure to build first, if you have made changes to `src`
-
-    make build
-    
-Start the test stack    
-    
-    make TEST setup up 
-
-Enter the `tester` container    
-    
-    make TEST bash
-
-Run codeception directly *(container bash)*
-
-    $ codecept run acceptance allow_fail
-
-Or run the test suites from build scripts
-
-    $ sh build/scripts/build.sh
-    $ sh build/scripts/test.sh
 
 > :information_source: `YII_ENV` must be set to `test` when running codeception.
 

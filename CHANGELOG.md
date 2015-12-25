@@ -2,7 +2,14 @@ CHANGELOG
 =========
 
 Phundament 4
-------------
+
+dev
+---
+
+- [UPD] updated docs
+
+4.0.0-rc12
+----------
 
 - [UPD] codeception requirement to 2.1
 

@@ -9,10 +9,10 @@ php:
 
 nginx:
   ports:
-    - '41080:80'
+    - '40080:80'
   volumes:
     - .:/app
 
 mariadb:
   ports:
-    - '41306:3306'
+    - '43306:3306'
