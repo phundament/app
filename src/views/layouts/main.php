@@ -1,19 +1,17 @@
 <?php
 
 use app\assets\AppAsset;
-use app\assets\SettingsAsset;
 use app\widgets\Alert;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\helpers\Html;
-use yii\widgets\Breadcrumbs;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
 $this->title = $this->title.' - '.Yii::$app->params['appName'];
 
-if (Yii::$app->settings->get('useSettingsAsset', 'app.assets')) {
-    SettingsAsset::register($this);
+if (Yii::$app->settings->get('useDbAsset', 'cms.assets')) {
+    \app\modules\cms\assets\DbAsset::register($this);
 } else {
     AppAsset::register($this);
 }

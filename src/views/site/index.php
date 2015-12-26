@@ -5,6 +5,6 @@ $this->title .= 'Home';
 
 <div class="site-index">
 
-    <?= \app\widgets\HtmlWidget::widget() ?>
+    <?= \app\modules\cms\widgets\HtmlWidget::widget() ?>
 
 </div>

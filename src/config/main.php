@@ -104,6 +104,10 @@ $common = [
             'class' => 'app\modules\backend\Module',
             'layout' => '@admin-views/layouts/main',
         ],
+        'cms'    => [
+            'class'  => 'app\modules\cms\Module',
+            'layout' => '@admin-views/layouts/main',
+        ],
         'docs' => [
             'class' => 'schmunk42\markdocs\Module',
             'layout' => '@app/views/layouts/container',
@@ -157,6 +161,7 @@ $common = [
             '@dektrium/user/migrations',
             '@vendor/lajax/yii2-translate-manager/migrations',
             '@vendor/pheme/yii2-settings/migrations',
+            '@app/modules/cms/migrations'
         ],
     ],
 
@@ -239,6 +244,11 @@ if (YII_ENV_DEV || YII_ENV_TEST) {
         'class' => 'yii\gii\Module',
         'allowedIPs' => $allowedIPs,
     ];
+    if (file_exists(__DIR__.'/giiant.php')) {
+        // Local configuration, if available
+        $giiant = require __DIR__.'/giiant.php';
+        $config = \yii\helpers\ArrayHelper::merge($config, $giiant);
+    }
 }
 
 if (file_exists(__DIR__.'/local.php')) {
