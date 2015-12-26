@@ -49,19 +49,19 @@ Configuration
 
 ### Environment overrides - `docker-compose.override.yml`
 
-- host-volumes for local development
-- port mappings
+ - host-volumes for local development
+ - port mappings
 
 ### Environment defaults - `docker-compose.yml`
 
-> You can override any ENV variable in `.env` within a `docker-compose.yml` file.
+You can override any ENV variable in `.env` within a `docker-compose.yml` file.
      
  - `VIRTUAL_HOST` `~^myapp\.` Virtual-host configuration for reverse proxy, adjust the virtual host parameter 
     for web application, we'll use it later to easily access the web-server through a wildcard DNS.
 
 ### Application defaults - `.env`
 
-> During development, it is recommended to change application configuration in the `.env` file, since it does not require restarting the containers. 
+During development, it is recommended to change application configuration in the `.env` file, since it does not require restarting the containers. 
 
 *Application*
 
@@ -71,11 +71,9 @@ Configuration
  - `APP_ADMIN_EMAIL` e-mail address of application admin user (default in `./yii app/create-admin-user`)
  - `APP_ADMIN_PASSWORD` password of application admin user (default in `./yii app/create-admin-user`)
  - `APP_SUPPORT_EMAIL` e-mail address for the application, eg. `support@myapp.local`
+ - `APP_CONFIG_FILE` custom configuration file to load
  - `APP_COOKIE_VALIDATION_KEY` unique and random string to prevent XSS
  - `APP_PRETTY_URLS` enable or disable nice URLs, allowed values `1` (yes) or `0` (no)
-
-*Application development settings*
-
  - `APP_ASSET_FORCE_PUBLISH` force asset publishing after any changes to asset files. **Note!** This may degrade performance, use *only during development*.
 
 *Framework*
@@ -153,5 +151,5 @@ Links
 
 -----------
 
-Built by *dmstr, Stuttgart :de:
+Built by [*dmstr](http://diemeisterei.de), Stuttgart :de:
 
