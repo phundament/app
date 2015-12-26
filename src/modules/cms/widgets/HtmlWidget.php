@@ -22,10 +22,10 @@ class HtmlWidget extends Widget
         $html = \app\modules\cms\models\Html::findOne(['key' => $this->generateKey()]);
 
         if (\Yii::$app->user->can(self::ACCESS_ROLE)) {
-            $settingsModule = Html::a('CMS module', ['/cms/html']);
+            $link = ($html) ? $this->generateEditLink($html->id) : $this->generateCreateLink();
             \Yii::$app->session->addFlash(
                 ($html) ? 'success' : 'info',
-                "Edit contents in {$settingsModule}, key: <code>{$this->generateKey()}</code>"
+                "Edit contents in {$link}, key: <code>{$this->generateKey()}</code>"
             );
         }
 
@@ -36,5 +36,15 @@ class HtmlWidget extends Widget
     {
         $id = \Yii::$app->request->getQueryParam('id');
         return \Yii::$app->language.'/'.\Yii::$app->controller->route.($id ? '/'.$id : '');
+    }
+
+    private function generateCreateLink()
+    {
+        return Html::a('CMS module', ['/cms/html/create', 'Html' => ['key' => $this->generateKey()]]);
+    }
+
+    private function generateEditLink($id)
+    {
+        return Html::a('CMS module', ['/cms/html/update', 'id' => $id]);
     }
 }

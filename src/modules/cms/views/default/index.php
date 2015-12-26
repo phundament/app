@@ -10,6 +10,7 @@ $controllers = \dmstr\helpers\Metadata::getModuleControllers($this->context->mod
 $favourites  = [];
 
 $patterns = [
+    '^default$'     => ['color' => 'gray', 'icon' => FA::_CUBE],
     '^.*$'          => ['color' => 'blue', 'icon' => FA::_CUBE],
 ];
 

@@ -29,7 +29,7 @@ use \dmstr\bootstrap\Tabs;
         <p>
             
 			<?= $form->field($model, 'key')->textInput(['maxlength' => true]) ?>
-			<?= $form->field($model, 'value')->textarea(['rows' => 6]) ?>
+			<?= $form->field($model, 'value')->widget(\trntv\aceeditor\AceEditor::className()) ?>
         </p>
         <?php $this->endBlock(); ?>
         

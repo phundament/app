@@ -5,6 +5,10 @@ use schmunk42\giiant\generators\crud\callbacks\base\Callback;
 use schmunk42\giiant\generators\crud\callbacks\yii\Db;
 use schmunk42\giiant\generators\crud\callbacks\yii\Html;
 
+$aceEditorField = function ($attribute, $model, $generator) {
+    return "\$form->field(\$model, '{$attribute}')->widget(\\trntv\\aceeditor\\AceEditor::className())";
+};
+
 \Yii::$container->set(
     'schmunk42\giiant\generators\crud\providers\CallbackProvider',
     [
@@ -18,6 +22,7 @@ use schmunk42\giiant\generators\crud\callbacks\yii\Html;
             // hide system fields in form
             'id$'                         => Db::falseIfAutoIncrement(),
             'id$|created_at$|updated_at$' => Callback::false(),
+            'value'                       => $aceEditorField,
         ],
         'attributeFormats' => [
             // render HTML output

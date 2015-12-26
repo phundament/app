@@ -244,6 +244,7 @@ if (YII_ENV_DEV || YII_ENV_TEST) {
         'class' => 'yii\gii\Module',
         'allowedIPs' => $allowedIPs,
     ];
+
     if (file_exists(__DIR__.'/giiant.php')) {
         // Local configuration, if available
         $giiant = require __DIR__.'/giiant.php';
