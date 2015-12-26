@@ -48,6 +48,22 @@
             "time": "2015-10-23 14:50:49"
         },
         {
+            "name": "bower-asset/ace-builds",
+            "version": "v1.1.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ajaxorg/ace-builds.git",
+                "reference": "e3ccd2c654cf45ee41ffb09d0e7fa5b40cf91a8f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ajaxorg/ace-builds/zipball/e3ccd2c654cf45ee41ffb09d0e7fa5b40cf91a8f",
+                "reference": "e3ccd2c654cf45ee41ffb09d0e7fa5b40cf91a8f",
+                "shasum": ""
+            },
+            "type": "bower-asset-library"
+        },
+        {
             "name": "bower-asset/bootstrap",
             "version": "v3.3.5",
             "source": {
@@ -913,16 +929,16 @@
         },
         {
             "name": "dmstr/yii2-cms-metapackage",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-cms-metapackage.git",
-                "reference": "0147bdf12e07c0625a5b424205080238446148ce"
+                "reference": "ea1c3f19249a6ce1d27dfd99f35277528a99dd0f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-cms-metapackage/zipball/0147bdf12e07c0625a5b424205080238446148ce",
-                "reference": "0147bdf12e07c0625a5b424205080238446148ce",
+                "url": "https://api.github.com/repos/dmstr/yii2-cms-metapackage/zipball/ea1c3f19249a6ce1d27dfd99f35277528a99dd0f",
+                "reference": "ea1c3f19249a6ce1d27dfd99f35277528a99dd0f",
                 "shasum": ""
             },
             "require": {
@@ -934,7 +950,8 @@
                 "dmstr/yii2-pages-module": "~0.10",
                 "insolita/yii2-adminlte-widgets": "~1.1",
                 "lajax/yii2-translate-manager": "^1.5.1",
-                "pheme/yii2-settings": "~0.2"
+                "pheme/yii2-settings": "~0.2",
+                "trntv/yii2-aceeditor": "~2.0"
             },
             "type": "library",
             "notification-url": "https://packagist.org/downloads/",
@@ -948,7 +965,7 @@
                 }
             ],
             "description": "Content Management Extensions for Phundament 4 (Yii 2.0 Framework)",
-            "time": "2015-12-21 10:55:45"
+            "time": "2015-12-26 13:48:44"
         },
         {
             "name": "dmstr/yii2-db",
@@ -1200,8 +1217,7 @@
                 {
                     "name": "Edward Z. Yang",
                     "email": "admin@htmlpurifier.org",
-                    "homepage": "http://ezyang.com",
-                    "role": "Developer"
+                    "homepage": "http://ezyang.com"
                 }
             ],
             "description": "Standards compliant HTML filter written in PHP",
@@ -1763,6 +1779,48 @@
             "time": "2015-06-06 14:19:39"
         },
         {
+            "name": "trntv/yii2-aceeditor",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/trntv/yii2-aceeditor.git",
+                "reference": "ba8cdfe2624f1e0793b0000c8f8ccd6d24b1bb57"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/trntv/yii2-aceeditor/zipball/ba8cdfe2624f1e0793b0000c8f8ccd6d24b1bb57",
+                "reference": "ba8cdfe2624f1e0793b0000c8f8ccd6d24b1bb57",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/ace-builds": "~1.1.8",
+                "yiisoft/yii2": "~2.0"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "trntv\\aceeditor\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Eugine Terentev",
+                    "email": "eugine@terentev.net"
+                }
+            ],
+            "description": "Yii2 ajax.org Ace Editor widget",
+            "keywords": [
+                "aceeditor",
+                "code editor",
+                "yii"
+            ],
+            "time": "2014-12-18 18:07:28"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v2.1.0",
             "source": {
@@ -2275,6 +2333,47 @@
             "time": "2014-10-20 23:24:21"
         },
         {
+            "name": "cmrcx/phptidy",
+            "version": "v2.16",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cmrcx/phptidy.git",
+                "reference": "7c84e830163e81cd4ac39ddb160cb0c20f89bd1f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cmrcx/phptidy/zipball/7c84e830163e81cd4ac39ddb160cb0c20f89bd1f",
+                "reference": "7c84e830163e81cd4ac39ddb160cb0c20f89bd1f",
+                "shasum": ""
+            },
+            "require": {
+                "ext-tokenizer": "*",
+                "php": ">=5.0"
+            },
+            "suggest": {
+                "ext-mbstring": "*"
+            },
+            "bin": [
+                "phptidy"
+            ],
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Magnus Rosenbaum",
+                    "email": "phptidy@cmr.cx",
+                    "homepage": "http://cmr.cx",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP code formatter",
+            "homepage": "https://github.com/cmrcx/phptidy",
+            "time": "2015-10-27 09:29:21"
+        },
+        {
             "name": "dmstr/yii2-cms-dev-metapackage",
             "version": "0.2.0",
             "source": {
@@ -2722,19 +2821,20 @@
         },
         {
             "name": "schmunk42/yii2-giiant",
-            "version": "0.5.0",
+            "version": "0.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii2-giiant.git",
-                "reference": "cdc442afc6c16016fba850c74e1128f825ba5f1d"
+                "reference": "7da656b601fe63b483724ce35ad7fdae9b5b99c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii2-giiant/zipball/cdc442afc6c16016fba850c74e1128f825ba5f1d",
-                "reference": "cdc442afc6c16016fba850c74e1128f825ba5f1d",
+                "url": "https://api.github.com/repos/schmunk42/yii2-giiant/zipball/7da656b601fe63b483724ce35ad7fdae9b5b99c8",
+                "reference": "7da656b601fe63b483724ce35ad7fdae9b5b99c8",
                 "shasum": ""
             },
             "require": {
+                "cmrcx/phptidy": "2.*",
                 "dmstr/yii2-bootstrap": "*",
                 "dmstr/yii2-db": "*",
                 "dmstr/yii2-helpers": "*",
@@ -2768,7 +2868,7 @@
                 "gii",
                 "yii2"
             ],
-            "time": "2015-09-24 00:00:42"
+            "time": "2015-12-26 13:53:07"
         },
         {
             "name": "schmunk42/yii2-markdocs-module",
@@ -3160,20 +3260,23 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "0b6a8940385311a24e060ec1fe35680e17c74497"
+                "reference": "49ff736bd5d41f45240cec77b44967d76e0c3d25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/0b6a8940385311a24e060ec1fe35680e17c74497",
-                "reference": "0b6a8940385311a24e060ec1fe35680e17c74497",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/49ff736bd5d41f45240cec77b44967d76e0c3d25",
+                "reference": "49ff736bd5d41f45240cec77b44967d76e0c3d25",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-mbstring": "For best performance"
             },
             "type": "library",
             "extra": {
@@ -3212,7 +3315,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2015-11-04 20:28:58"
+            "time": "2015-11-20 09:19:13"
         },
         {
             "name": "symfony/process",
