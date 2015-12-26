@@ -44,6 +44,11 @@ class Helper extends Component
         }
     }
 
+    /**
+     * Password check
+     * Based upon http://stackoverflow.com/a/10753064
+     * @param $pwd
+     */
     private static function checkPassword($pwd)
     {
         $errors = [];
