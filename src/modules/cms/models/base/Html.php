@@ -32,9 +32,10 @@ abstract class Html extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['key'], 'required'],
+            [['key', 'value'], 'required'],
             [['value'], 'string'],
-            [['key'], 'string', 'max' => 255]
+            [['key'], 'string', 'max' => 255],
+            [['key'], 'unique']
         ];
     }
 
