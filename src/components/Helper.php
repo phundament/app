@@ -17,6 +17,7 @@ class Helper extends Component
 {
     public static function checkApplication()
     {
+        self::checkPassword(getenv('APP_ADMIN_PASSWORD'));
         self::checkUserSetup();
         self::checkPagesSetup();
     }
@@ -39,6 +40,31 @@ class Helper extends Component
             \Yii::$app->session->addFlash(
                 'warning',
                 "There is no navigation root node, visit {$link} to create a root node."
+            );
+        }
+    }
+
+    private static function checkPassword($pwd)
+    {
+        $errors = [];
+
+        if (strlen($pwd) < 8) {
+            $errors[] = "Password too short!";
+        }
+
+        if (!preg_match("#[0-9]+#", $pwd)) {
+            $errors[] = "Password must include at least one number!";
+        }
+
+        if (!preg_match("#[a-zA-Z]+#", $pwd)) {
+            $errors[] = "Password must include at least one letter!";
+        }
+
+        if (count($errors) > 0) {
+            $msg = implode('<br/>', $errors);
+            \Yii::$app->session->addFlash(
+                'danger',
+                "Application admin password from environment setting is not strong enough.<br/><i>{$msg}</i>"
             );
         }
     }
