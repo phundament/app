@@ -78,10 +78,7 @@ $common = [
                 'docs/<file:[a-zA-Z0-9_\-\./]+>' => 'docs',
                 #'docs' => 'docs/default/index',
             ],
-            'languages' => [
-                'en',
-                'de',
-            ],
+            'languages' => explode(',',getenv('APP_LANGUAGES')),
         ],
         'user' => [
             'class' => 'app\components\User',
