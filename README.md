@@ -67,6 +67,7 @@ During development, it is recommended to change application configuration in the
 
  - `APP_NAME` unique application and container identifier *[a-z0-9]*
  - `APP_TITLE` display name of the application
+ - `APP_LANGUAGES` available languages for URL manager
  - `APP_MIGRATION_LOOKUP` comma separated list of Yii aliases to look for database migrations, eg. `@app/migrations/data`
  - `APP_ADMIN_EMAIL` e-mail address of application admin user (default in `./yii app/create-admin-user`)
  - `APP_ADMIN_PASSWORD` password of application admin user (default in `./yii app/create-admin-user`)
@@ -97,6 +98,34 @@ During development, it is recommended to change application configuration in the
 ### Application configuration - `config/main.php`
 
 For details of available application configuration, please refer to the Yii 2.0 Framework Definitive Guide. 
+
+### Settings
+
+Web UI for application wide key-value store.
+
+- **`pages` Sitemap**
+ - `availableRoutes`
+- **`schmunk42.markdocs` Markdown** 
+ - `markdownUrl` URL or local path for markdown eg. `https://raw.githubusercontent.com/phundament/docs/master`
+ - `defaultIndexFile` eg. `1-introduction/about.md`
+- **`cms.assets` Assets/LESS** 
+ - `useDbAsset` boolean
+
+### Users & permissions
+
+#### Users
+
+- admin
+- editor
+- preview
+
+#### Roles
+
+- Admin
+- Editor
+- Public
+
+Typical `Public` permissions: `app_site`, `docs_default`
 
 
 Testing
