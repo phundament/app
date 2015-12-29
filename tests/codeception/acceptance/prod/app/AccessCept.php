@@ -7,9 +7,9 @@ $I->wantTo('ensure backend access works');
 
 $I->amOnPage('/backend');
 $I->dontSeeElement('.small-box');
-$I->amOnPage('/cms/html');
+$I->amOnPage('/prototype/html');
 $I->dontSee('Htmls', 'h1');
-$I->amOnPage('/cms/less');
+$I->amOnPage('/prototype/less');
 $I->dontSee('Lesses', 'h1');
 
 $loginPage = LoginPage::openBy($I);
@@ -17,7 +17,7 @@ $loginPage->login('admin', 'admin');
 
 $I->amOnPage('/backend');
 $I->seeElement('.small-box');
-$I->amOnPage('/cms/html');
+$I->amOnPage('/prototype/html');
 $I->see('Htmls', 'h1');
-$I->amOnPage('/cms/less');
+$I->amOnPage('/prototype/less');
 $I->see('Lesses', 'h1');
