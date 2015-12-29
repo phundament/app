@@ -43,7 +43,7 @@ build:	##@docker build application images
 	$(DOCKER_COMPOSE) run --rm $(PHP_SERVICE) composer install
 	$(shell echo $(shell git describe --long --tags --dirty --always) > version)
 	@echo $(shell cat version)
-	$(DOCKER_COMPOSE) build --pull
+	$(DOCKER_COMPOSE) build
 
 init:
 	cp -n .env-dist .env &2>/dev/null
