@@ -17,9 +17,11 @@ class Helper extends Component
 {
     public static function checkApplication()
     {
-        self::checkPassword(getenv('APP_ADMIN_PASSWORD'));
-        self::checkUserSetup();
-        self::checkPagesSetup();
+        if (\Yii::$app->user->can('Admin')) {
+            self::checkPassword(getenv('APP_ADMIN_PASSWORD'));
+            self::checkUserSetup();
+            self::checkPagesSetup();
+        }
     }
 
     private static function checkUserSetup()
@@ -47,6 +49,7 @@ class Helper extends Component
     /**
      * Password check
      * Based upon http://stackoverflow.com/a/10753064
+     *
      * @param $pwd
      */
     private static function checkPassword($pwd)
