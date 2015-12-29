@@ -10,10 +10,14 @@ use yii\helpers\Html;
 /* @var $content string */
 $this->title = $this->title.' - '.Yii::$app->params['appName'];
 
-if (Yii::$app->settings->get('useDbAsset', 'cms.assets')) {
-    \app\modules\cms\assets\DbAsset::register($this);
-} else {
-    AppAsset::register($this);
+switch (Yii::$app->settings->get('registerPrototypeAsset', 'app.assets')) {
+    case true:
+        \app\modules\prototype\assets\DbAsset::register($this);
+    case null:
+        Yii::$app->settings->set('registerPrototypeAsset', true, 'app.assets');
+        Yii::$app->settings->deactivate('registerPrototypeAsset', 'app.assets');
+    case false:
+        AppAsset::register($this);
 }
 
 ?>
@@ -25,7 +29,7 @@ if (Yii::$app->settings->get('useDbAsset', 'cms.assets')) {
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
-    <?= Yii::$app->settings->get('head', 'app.html') ?>
+    <?= \app\modules\prototype\widgets\HtmlWidget::widget(['key' => 'head']) ?>
     <?php $this->head() ?>
 </head>
 <body>
@@ -98,7 +102,7 @@ if (Yii::$app->settings->get('useDbAsset', 'cms.assets')) {
 </div>
 
 <footer class="footer">
-    <?= Yii::$app->settings->get('footer', 'app.html') ?>
+    <?= \app\modules\prototype\widgets\HtmlWidget::widget(['key' => 'footer']) ?>
     <div class="container">
         <p class="pull-right">
             <span class="label label-default"><?= YII_ENV ?></span>

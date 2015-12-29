@@ -101,10 +101,6 @@ $common = [
             'class' => 'app\modules\backend\Module',
             'layout' => '@admin-views/layouts/main',
         ],
-        'cms'    => [
-            'class'  => 'app\modules\cms\Module',
-            'layout' => '@admin-views/layouts/main',
-        ],
         'docs' => [
             'class' => 'schmunk42\markdocs\Module',
             'layout' => '@app/views/layouts/container',
@@ -115,6 +111,10 @@ $common = [
             'availableRoutes' => [
                 '/site/index' => '/site/index',
             ],
+        ],
+        'prototype'    => [
+            'class'  => 'app\modules\prototype\Module',
+            'layout' => '@admin-views/layouts/main',
         ],
         'user' => [
             'class' => 'dektrium\user\Module',
@@ -158,7 +158,7 @@ $common = [
             '@dektrium/user/migrations',
             '@vendor/lajax/yii2-translate-manager/migrations',
             '@vendor/pheme/yii2-settings/migrations',
-            '@app/modules/cms/migrations'
+            '@app/modules/prototype/migrations'
         ],
     ],
 

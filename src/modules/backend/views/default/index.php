@@ -93,4 +93,4 @@
 
 </div>
 
-<?= \app\modules\cms\widgets\HtmlWidget::widget(); ?>
+<?= \app\modules\prototype\widgets\HtmlWidget::widget(['enableFlash'=>true]); ?>

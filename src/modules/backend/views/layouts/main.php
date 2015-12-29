@@ -148,10 +148,13 @@ dmstr\web\AdminLteAsset::register($this);
             <h1>
                 <small><?= $this->title ?></small>
             </h1>
-            <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                <li class="active">Dashboard</li>
-            </ol>
+            <?=
+            \yii\widgets\Breadcrumbs::widget(
+                [
+                    'homeLink' => ['label'=>'Backend', 'url' => ['/backend']],
+                    'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+                ]
+            ) ?>
         </section>
 
         <!-- Main content -->
@@ -164,7 +167,7 @@ dmstr\web\AdminLteAsset::register($this);
     </div>
     <!-- /.content-wrapper -->
     <footer class="main-footer">
-        Powered by <strong><a href="http://phundament.com">Phundament 4</a></strong>
+        <strong><a href="http://phundament.com">Phundament</a></strong> <?= APP_VERSION ?>
     </footer>
 </div>
 <!-- ./wrapper -->
