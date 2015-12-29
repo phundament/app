@@ -1217,7 +1217,8 @@
                 {
                     "name": "Edward Z. Yang",
                     "email": "admin@htmlpurifier.org",
-                    "homepage": "http://ezyang.com"
+                    "homepage": "http://ezyang.com",
+                    "role": "Developer"
                 }
             ],
             "description": "Standards compliant HTML filter written in PHP",
@@ -1271,16 +1272,16 @@
         },
         {
             "name": "kartik-v/yii2-krajee-base",
-            "version": "v1.8.0",
+            "version": "v1.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-krajee-base.git",
-                "reference": "602e7203680642ac4a2a5f9355316eaa9939b6ff"
+                "reference": "9e50c30aa8d6ac56b90250456a951edf32cb7175"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-krajee-base/zipball/602e7203680642ac4a2a5f9355316eaa9939b6ff",
-                "reference": "602e7203680642ac4a2a5f9355316eaa9939b6ff",
+                "url": "https://api.github.com/repos/kartik-v/yii2-krajee-base/zipball/9e50c30aa8d6ac56b90250456a951edf32cb7175",
+                "reference": "9e50c30aa8d6ac56b90250456a951edf32cb7175",
                 "shasum": ""
             },
             "require": {
@@ -1313,20 +1314,20 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2015-12-11 19:01:49"
+            "time": "2015-12-27 15:42:59"
         },
         {
             "name": "kartik-v/yii2-tree-manager",
-            "version": "v1.0.4",
+            "version": "v1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-tree-manager.git",
-                "reference": "4061a6265f6f4fbd4415b946ff94691aad31b39a"
+                "reference": "0fd506de3ef0c73ec8a3f0c9267ed8353f5e9f89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-tree-manager/zipball/4061a6265f6f4fbd4415b946ff94691aad31b39a",
-                "reference": "4061a6265f6f4fbd4415b946ff94691aad31b39a",
+                "url": "https://api.github.com/repos/kartik-v/yii2-tree-manager/zipball/0fd506de3ef0c73ec8a3f0c9267ed8353f5e9f89",
+                "reference": "0fd506de3ef0c73ec8a3f0c9267ed8353f5e9f89",
                 "shasum": ""
             },
             "require": {
@@ -1364,7 +1365,7 @@
                 "tree",
                 "treeview"
             ],
-            "time": "2015-12-13 16:39:50"
+            "time": "2015-12-27 18:48:51"
         },
         {
             "name": "kartik-v/yii2-widget-activeform",
@@ -2821,16 +2822,16 @@
         },
         {
             "name": "schmunk42/yii2-giiant",
-            "version": "0.6.0",
+            "version": "0.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii2-giiant.git",
-                "reference": "7da656b601fe63b483724ce35ad7fdae9b5b99c8"
+                "reference": "cc73b483ae7735ae682dba325a98103da4f3d6eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii2-giiant/zipball/7da656b601fe63b483724ce35ad7fdae9b5b99c8",
-                "reference": "7da656b601fe63b483724ce35ad7fdae9b5b99c8",
+                "url": "https://api.github.com/repos/schmunk42/yii2-giiant/zipball/cc73b483ae7735ae682dba325a98103da4f3d6eb",
+                "reference": "cc73b483ae7735ae682dba325a98103da4f3d6eb",
                 "shasum": ""
             },
             "require": {
@@ -2868,7 +2869,7 @@
                 "gii",
                 "yii2"
             ],
-            "time": "2015-12-26 13:53:07"
+            "time": "2015-12-28 21:36:46"
         },
         {
             "name": "schmunk42/yii2-markdocs-module",
