@@ -20,7 +20,7 @@ else
 	DOCKER_HOST_IP  ?= 127.0.0.1
 endif
 
-.PHONY: help default all open bash build setup clean update run-tests TEST STAGE
+.PHONY: help default all open bash build setup clean update tests clean-tests run-tests TEST STAGE
 
 default: help
 
@@ -57,6 +57,10 @@ clean: clean-tests
 clean:  ##@docker remove application containers
 	$(DOCKER_COMPOSE) kill
 	$(DOCKER_COMPOSE) rm -fv
+
+tests:
+	$(MAKE) build
+	$(MAKE) TEST setup up clean-tests run-tests
 
 clean-tests:
 	$(DOCKER_COMPOSE) run --rm $(PHP_SERVICE) sh -c 'codecept clean'
