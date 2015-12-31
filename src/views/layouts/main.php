@@ -27,7 +27,7 @@ switch (Yii::$app->settings->get('registerPrototypeAsset', 'app.assets')) {
 <html lang="<?= Yii::$app->language ?>">
 <head>
     <meta charset="<?= Yii::$app->charset ?>"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?= \app\modules\prototype\widgets\HtmlWidget::widget(['key' => 'head']) ?>
