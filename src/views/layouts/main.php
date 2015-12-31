@@ -13,6 +13,7 @@ $this->title = $this->title.' - '.Yii::$app->params['appName'];
 switch (Yii::$app->settings->get('registerPrototypeAsset', 'app.assets')) {
     case true:
         \app\modules\prototype\assets\DbAsset::register($this);
+        break;
     case null:
         Yii::$app->settings->set('registerPrototypeAsset', true, 'app.assets');
         Yii::$app->settings->deactivate('registerPrototypeAsset', 'app.assets');
