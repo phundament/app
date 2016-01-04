@@ -45,12 +45,13 @@ class AppAsset extends AssetBundle
         // This will create a new folder in web/assets for every change and request
         // made to the app assets.
         if (getenv('APP_ASSET_FORCE_PUBLISH')) {
-            $files = FileHelper::findFiles(\Yii::getAlias($this->sourcePath));
+            $path = \Yii::getAlias($this->sourcePath);
+            $files = FileHelper::findFiles($path);
             $mtimes = [];
             foreach ($files as $file) {
                 $mtimes[] = filemtime($file);
             }
-            touch(\Yii::getAlias($this->sourcePath), max($mtimes));
+            touch($path, max($mtimes));
         }
     }
 }
