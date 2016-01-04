@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 mkdir -p /app/web/assets /app/runtime
 mkdir -p /app/runtime/mail /app/runtime/cache /app/runtime/debug
 
