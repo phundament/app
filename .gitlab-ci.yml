@@ -43,10 +43,10 @@ test-allow_failure:
   only:
       - develop
 
-system:
+lint:
   stage: test
   script:
-      - bash build/scripts/system.sh
+      - bash build/scripts/lint.sh
   allow_failure: true
 
 report:
