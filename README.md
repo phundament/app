@@ -113,19 +113,16 @@ Web UI for application wide key-value store.
 
 ### Users & permissions
 
-#### Users
+#### Default users
 
-- admin
-- editor
-- preview
+- `admin`
 
-#### Roles
+#### Default roles
 
-- Admin
-- Editor
-- Public
+- `Editor`
+- `Public`
 
-Typical `Public` permissions: `app_site`, `docs_default`
+:bulb: To enable public access you need to assign permissions, like `app_site`, `docs_default`, to the `Public` role. 
 
 
 Testing
