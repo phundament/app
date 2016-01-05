@@ -3,9 +3,8 @@ Phundament 4
 
 Phundament is a dockerized 12factor PHP application template for Yii Framework 2.0.
 
-Full [documentation](https://github.com/phundament/docs).
-See Phundament playground  for a [demo](https://github.com/phundament/playground).
-
+- Full [documentation](https://github.com/phundament/docs)
+- [Demo](https://github.com/phundament/playground) at Phundament playground
 
 Requirements
 ------------
@@ -174,6 +173,8 @@ Links
 - [Website](http://phundament.com)
 - [Team](https://github.com/orgs/phundament/teams)
 - [Imprint](http://herzogkommunikation.de/de/impressum-7.html)
+- Docker build [![build status](https://git.hrzg.de/ci/projects/21/status.png?ref=master)](https://git.hrzg.de/phundament/app/builds?scope=all)
+- Composer build [![Build Status](https://travis-ci.org/phundament/app.svg?branch=4.0)](https://travis-ci.org/phundament/app)
 
 -----------
 
