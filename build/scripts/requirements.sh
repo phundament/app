@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 
-set -e
-
 # Credits to Dennis Williamson - http://stackoverflow.com/a/4025065/291573
+# DO NOT set -e
 vercomp () {
     if [[ "$1" == "$2" ]]
     then
@@ -38,8 +37,9 @@ echo "Checking system requirements..."
 
 # Check docker-compose
 DOCKER_COMPOSE_MIN_VERSION=1.5.2
-[[ $(docker-compose --version) =~ version(.*), ]] && export DOCKER_COMPOSE_VERSION=${BASH_REMATCH[1]}
+[[ $(docker-compose --version) =~ version\ (.*), ]] && export DOCKER_COMPOSE_VERSION=${BASH_REMATCH[1]}
 vercomp "${DOCKER_COMPOSE_VERSION}" "${DOCKER_COMPOSE_MIN_VERSION}"
-[[ $? != 2 ]] && echo "[OK] docker-compose ${DOCKER_COMPOSE_VERSION}" || echo "[ERROR] docker-compose ${DOCKER_COMPOSE_MIN_VERSION} required"
+RESULT=$?
+[[ $RESULT != 2 ]] && echo "[OK] docker-compose ${DOCKER_COMPOSE_VERSION}" || echo "[ERROR] docker-compose ${DOCKER_COMPOSE_MIN_VERSION} required, get the latest version from https://github.com/docker/compose/releases"
 
 exit 0
