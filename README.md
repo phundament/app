@@ -173,6 +173,8 @@ Links
 - [Website](http://phundament.com)
 - [Team](https://github.com/orgs/phundament/teams)
 - [Imprint](http://herzogkommunikation.de/de/impressum-7.html)
+- Version [![Latest Stable Version](https://poser.pugx.org/phundament/app/v/stable.png)](https://packagist.org/packages/phundament/app)
+- Packagist [![Total Downloads](https://poser.pugx.org/phundament/app/downloads.png)](https://packagist.org/packages/phundament/app)
 - GitLab CI [![build status](https://git.hrzg.de/ci/projects/21/status.png?ref=master)](https://git.hrzg.de/phundament/app/builds?scope=all)
 - Travis CI [![Build Status](https://travis-ci.org/phundament/app.svg?branch=4.0)](https://travis-ci.org/phundament/app)
 
