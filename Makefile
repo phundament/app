@@ -53,7 +53,6 @@ setup:	##@docker setup application packages and database
 	echo $(COMPOSE_FILE)
 	$(DOCKER_COMPOSE) run --rm $(PHP_SERVICE) sh src/setup.sh
 
-clean: clean-tests
 clean:  ##@docker remove application containers
 	$(DOCKER_COMPOSE) kill
 	$(DOCKER_COMPOSE) rm -fv
