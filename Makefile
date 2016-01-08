@@ -24,7 +24,7 @@ endif
 
 default: help
 
-all: diagnose init build setup up open    ##@docker build, setup, start & open application
+all: diagnose init build up setup open    ##@docker build, setup, start & open application
 
 diagnose: ##@system check requirements
 	bash build/scripts/requirements.sh
