@@ -33,9 +33,16 @@ vercomp () {
     return 0
 }
 
-echo "Checking system requirements..."
+echo "Checking system requirements"
+
+# Check docker
+set -e
+echo "Docker daemon..."
+(docker ps && echo "[OK]") || (echo "Create or start your Docker host with docker-machine, get the latest version from https://github.com/docker/machine/releases" && exit 1)
+set +e
 
 # Check docker-compose
+echo "docker-compose..."
 DOCKER_COMPOSE_MIN_VERSION=1.5.2
 [[ $(docker-compose --version) =~ version\ (.*), ]] && export DOCKER_COMPOSE_VERSION=${BASH_REMATCH[1]}
 vercomp "${DOCKER_COMPOSE_VERSION}" "${DOCKER_COMPOSE_MIN_VERSION}"
