@@ -46,6 +46,7 @@ test-allow_failure:
 lint:
   stage: test
   script:
+      - make diagnose
       - bash build/scripts/lint.sh
   allow_failure: true
 
