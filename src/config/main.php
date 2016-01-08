@@ -101,10 +101,6 @@ $common = [
             'class' => 'app\modules\backend\Module',
             'layout' => '@admin-views/layouts/main',
         ],
-        'docs' => [
-            'class' => 'schmunk42\markdocs\Module',
-            'layout' => '@app/views/layouts/container',
-        ],
         'pages' => [
             'class' => 'dmstr\modules\pages\Module',
             'layout' => '@admin-views/layouts/main',
