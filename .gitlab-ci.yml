@@ -1,10 +1,11 @@
 before_script:
   - export APP_MIGRATION_LOOKUP=@root/tests/codeception/_migrations
-  - export COMPOSE_PROJECT_NAME=buildref${CI_BUILD_REF}
-  - export TEST_IMAGE_PREFIX=buildref${CI_BUILD_REF}
+  - export BUILD_PREFIX=buildref${CI_BUILD_REF}${CI_BUILD_REF_NAME}
+  - export COMPOSE_PROJECT_NAME=${BUILD_PREFIX}
   - export COMPOSE_HTTP_TIMEOUT=120
   - export HOST_APP_VOLUME=$CI_PROJECT_DIR
   - export IMAGE_NAME=phundament/app
+  - export TEST_IMAGE_PREFIX=${BUILD_PREFIX}
   - mkdir -p tmp
 
 stages:
@@ -23,7 +24,7 @@ build:
 test:
   stage: test
   script:
-      - export COMPOSE_PROJECT_NAME=buildref${CI_BUILD_REF}${CI_BUILD_NAME}
+      - export COMPOSE_PROJECT_NAME=${BUILD_PREFIX}${CI_BUILD_NAME}
       - set +e
       - bash build/scripts/${CI_BUILD_NAME}.sh || EXIT_CODE=$?
       - set -e
@@ -33,7 +34,7 @@ test:
 test-allow_failure:
   stage: test_pre
   script:
-      - export COMPOSE_PROJECT_NAME=buildref${CI_BUILD_REF}${CI_BUILD_NAME}
+      - export COMPOSE_PROJECT_NAME=${BUILD_PREFIX}${CI_BUILD_NAME}
       - set +e
       - bash build/scripts/${CI_BUILD_NAME}.sh || EXIT_CODE=$?
       - set -e
@@ -64,9 +65,9 @@ cleanup:
   stage: cleanup
   script:
     - make TEST clean
-    - export COMPOSE_PROJECT_NAME="buildref${CI_BUILD_REF}test"
+    - export COMPOSE_PROJECT_NAME="${BUILD_PREFIX}test"
     - make TEST clean
-    - export COMPOSE_PROJECT_NAME="buildref${CI_BUILD_REF}test-allow_failure"
+    - export COMPOSE_PROJECT_NAME="${BUILD_PREFIX}test-allow_failure"
     - make TEST clean
     - rm -rf /tmp/test-${CI_BUILD_REF}
     - rm -rf /tmp/test-allow_failure-${CI_BUILD_REF}
