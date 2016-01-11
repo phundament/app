@@ -4,7 +4,6 @@ before_script:
   - export COMPOSE_PROJECT_NAME=${BUILD_PREFIX}
   - export COMPOSE_HTTP_TIMEOUT=120
   - export HOST_APP_VOLUME=$CI_PROJECT_DIR
-  - export IMAGE_NAME=phundament/app
   - export TEST_IMAGE_PREFIX=${BUILD_PREFIX}
   - mkdir -p tmp
 

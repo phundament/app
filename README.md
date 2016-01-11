@@ -157,7 +157,7 @@ Run test suites *(container bash)*
 Deployment
 ----------
 
-Variables for pushing docker images.
+Required variables for building & pushing docker images.
 
 - `REGISTRY_USER`
 - `REGISTRY_PASS`
