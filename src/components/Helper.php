@@ -1,4 +1,7 @@
 <?php
+
+namespace app\components;
+
 /**
  * @link http://www.diemeisterei.de/
  *
@@ -7,7 +10,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace app\components;
 
 use dektrium\user\models\User as UserModel;
 use yii\base\Component;
