@@ -14,7 +14,8 @@ namespace app\components;
 /**
  * Class User.
  *
- * Custom user class with additional checks
+ * Custom user class with additional checks and implementation of a 'root' user, who
+ * has all permissions (`can()` always return true)
  */
 class User extends \yii\web\User
 {

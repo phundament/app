@@ -17,13 +17,21 @@ abstract class Less extends \yii\db\ActiveRecord
 {
 
 
-
     /**
      * @inheritdoc
      */
     public static function tableName()
     {
         return 'app_less';
+    }
+
+    /**
+     * @inheritdoc
+     * @return \app\modules\prototype\models\query\LessQuery the active query used by this AR class.
+     */
+    public static function find()
+    {
+        return new \app\modules\prototype\models\query\LessQuery(get_called_class());
     }
 
     /**
@@ -49,17 +57,6 @@ abstract class Less extends \yii\db\ActiveRecord
             'key' => Yii::t('app', 'Key'),
             'value' => Yii::t('app', 'Value'),
         ];
-    }
-
-
-    
-    /**
-     * @inheritdoc
-     * @return \app\modules\prototype\models\query\LessQuery the active query used by this AR class.
-     */
-    public static function find()
-    {
-        return new \app\modules\prototype\models\query\LessQuery(get_called_class());
     }
 
 

@@ -4,24 +4,26 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /**
-* @var yii\web\View $this
-* @var app\modules\prototype\models\search\Html $model
-* @var yii\widgets\ActiveForm $form
-*/
+ * @var yii\web\View $this
+ * @var app\modules\prototype\models\search\Html $model
+ * @var yii\widgets\ActiveForm $form
+ */
 ?>
 
 <div class="html-search">
 
-    <?php $form = ActiveForm::begin([
-    'action' => ['index'],
-    'method' => 'get',
-    ]); ?>
+    <?php $form = ActiveForm::begin(
+        [
+            'action' => ['index'],
+            'method' => 'get',
+        ]
+    ); ?>
 
-    		<?= $form->field($model, 'id') ?>
+    <?= $form->field($model, 'id') ?>
 
-		<?= $form->field($model, 'key') ?>
+    <?= $form->field($model, 'key') ?>
 
-		<?= $form->field($model, 'value') ?>
+    <?= $form->field($model, 'value') ?>
 
     <div class="form-group">
         <?= Html::submitButton(Yii::t('app', 'Search'), ['class' => 'btn btn-primary']) ?>

@@ -2,8 +2,8 @@
 
 namespace app\modules\prototype\models;
 
+use app\modules\prototype\models\base\Html as BaseHtml;
 use Yii;
-use \app\modules\prototype\models\base\Html as BaseHtml;
 
 /**
  * This is the model class for table "app_html".

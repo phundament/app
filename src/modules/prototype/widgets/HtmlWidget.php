@@ -27,10 +27,10 @@ class HtmlWidget extends Widget
         if (\Yii::$app->user->can(self::ACCESS_ROLE)) {
             $link = ($html) ? $this->generateEditLink($html->id) : $this->generateCreateLink();
             if ($this->enableFlash) {
-            \Yii::$app->session->addFlash(
-                ($html) ? 'success' : 'info',
-                "Edit contents in {$link}, key: <code>{$this->generateKey()}</code>"
-            );
+                \Yii::$app->session->addFlash(
+                    ($html) ? 'success' : 'info',
+                    "Edit contents in {$link}, key: <code>{$this->generateKey()}</code>"
+                );
             } else {
 
             }

@@ -39,7 +39,7 @@ use yii\helpers\Html;
         <p>
 
             <?= $form->field($model, 'key')->textInput(['maxlength' => true]) ?>
-            <?= $form->field($model, 'value')->widget(\trntv\aceeditor\AceEditor::className(),['mode' => 'less']) ?>
+            <?= $form->field($model, 'value')->widget(\trntv\aceeditor\AceEditor::className(), ['mode' => 'less']) ?>
         </p>
         <?php $this->endBlock(); ?>
 
