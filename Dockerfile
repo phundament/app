@@ -1,5 +1,14 @@
 FROM phundament/php-one:5.6-fpm-4.6.0
 
+RUN apt-get update \
+ && apt-get install -y \
+        libpq5 \
+        libpq-dev \
+        --no-install-recommends \
+ && apt-get clean \
+ && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
+ && docker-php-ext-install pdo_pgsql
+
 # Clean eventually orphaned files and remove installation source
 RUN rm -rf /app/src /app/web /app-src
 

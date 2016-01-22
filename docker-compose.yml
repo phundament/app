@@ -3,14 +3,20 @@
 php:
   build: .
   links:
-    - 'mariadb:DB'
+    - 'postgres:DB'
+  environment:
+    - DATABASE_DSN_BASE=pgsql:host=db
+    - DATABASE_DSN_DB=pg
+    - DATABASE_USER=pg
+    - DATABASE_PASSWORD=dev123
 
 nginx:
   image: phundament/nginx-one:1.9
   links:
     - 'php:PHPFPM'
 
-mariadb:
-  image: 'tutum/mariadb:10.1'
+postgres:
+  image: 'postgres'
   environment:
-    MARIADB_PASS: secretadmin
+    POSTGRES_USER: pg
+    POSTGRES_PASSWORD: dev123
