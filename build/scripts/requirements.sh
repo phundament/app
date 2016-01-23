@@ -43,10 +43,21 @@ set +e
 
 # Check docker-compose
 echo "docker-compose..."
-DOCKER_COMPOSE_MIN_VERSION=1.5.2
-[[ $(docker-compose --version) =~ version\ (.*), ]] && export DOCKER_COMPOSE_VERSION=${BASH_REMATCH[1]}
-vercomp "${DOCKER_COMPOSE_VERSION}" "${DOCKER_COMPOSE_MIN_VERSION}"
-RESULT=$?
-[[ $RESULT != 2 ]] && echo "[OK] docker-compose ${DOCKER_COMPOSE_VERSION}" || echo "[ERROR] docker-compose ${DOCKER_COMPOSE_MIN_VERSION} required, get the latest version from https://github.com/docker/compose/releases"
+DOCKER_COMPOSE_MIN_VERSION=1.5.1
+if [[ $(docker-compose --version) =~ version[:]?\ (.*)[,]? ]]; then
+    DOCKER_COMPOSE_VERSION=${BASH_REMATCH[1]}
+    echo "${DOCKER_COMPOSE_VERSION} >= ${DOCKER_COMPOSE_MIN_VERSION}"
+    vercomp "${DOCKER_COMPOSE_VERSION}" "${DOCKER_COMPOSE_MIN_VERSION}"
+    RESULT=$?
+    if [[ $RESULT != 2 ]]; then
+        echo "[OK] docker-compose ${DOCKER_COMPOSE_VERSION}"
+    else
+        echo "[ERROR] docker-compose ${DOCKER_COMPOSE_MIN_VERSION} required, get the latest version from https://github.com/docker/compose/releases"
+        exit 1
+    fi
+else
+    echo "[ERROR] could not determine docker-compose version"
+    exit 1
+fi
 
 exit 0
