@@ -38,7 +38,7 @@ echo "Checking system requirements"
 # Check docker
 set -e
 echo "Docker daemon..."
-(docker ps && echo "[OK]") || (echo "Create or start your Docker host with docker-machine, get the latest version from https://github.com/docker/machine/releases" && exit 1)
+(docker ps -q && echo "[OK]") || (echo "Create or start your Docker host with docker-machine, get the latest version from https://github.com/docker/machine/releases" && exit 1)
 set +e
 
 # Check docker-compose
