@@ -9,5 +9,5 @@ $I->amGoingTo('try to login as admin');
 $loginPage = LoginPage::openBy($I);
 $loginPage->login('admin', 'admin');
 
-$I->see('admin','.user-panel .pull-left');
-$I->makeScreenshot('admin-login');
+$I->see('admin','#link-user-menu');
+$I->makeScreenshot('admin-login-frontend');

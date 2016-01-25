@@ -3,12 +3,15 @@
 use tests\codeception\_pages\AboutPage;
 
 $I = new AcceptanceTester($scenario);
-$I->wantTo('ensure that about works');
+
+$I->wantTo('ensure that preview access works');
+
+$I->amOnPage('/');
+$I->makeScreenshot('debug-preview-access-login');
 
 $loginPage = \tests\codeception\_pages\LoginPage::openBy($I);
 $I->amGoingTo('try to login as preview');
 $loginPage->login('preview', 'preview1234');
-
-
-$I->amOnPage('/impressum-358');
-$I->see('Impressum', 'h1');
+$I->amOnPage('/');
+$I->dontSee('.alert');
+$I->makeScreenshot('success-preview-access');
