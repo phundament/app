@@ -25,9 +25,9 @@ class AppController extends Controller
     public $defaultAction = 'version';
 
     /**
-     * Displays application version from git describe and writes it to `version`.
+     * Displays application version from ENV variable (read from version file).
      */
-    public function actionVersion($alias = '@root/version')
+    public function actionVersion()
     {
         $this->stdout(\Yii::$app->id.' version '.APP_VERSION);
         $this->stdout("\n");
