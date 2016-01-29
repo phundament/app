@@ -78,4 +78,3 @@ deploy:
       - bash build/scripts/deploy.sh
   only:
       - master
-      - /^[0-9]+\.[0-9]+.*$/

@@ -3,8 +3,13 @@
 EXIT_CODE=0
 DIRNAME=$(dirname "$0")
 HOST_APP_VOLUME="${HOST_APP_VOLUME-${PWD}/${DIRNAME}/../..}"
+DOCKERFILE=Dockerfile
+DOCKERFILE_PATH=.
 
 set -v
+
+docker run --rm -v "${PWD}/${DOCKERFILE_PATH}/${DOCKERFILE}":/Dockerfile:ro redcoolbeans/dockerlint
+docker run --rm --privileged -v ${PWD}/${DOCKERFILE_PATH}:/root/ projectatomic/dockerfile-lint dockerfile_lint -f ${DOCKERFILE}
 
 docker-compose run --rm php composer diagnose || EXIT_CODE=1
 
