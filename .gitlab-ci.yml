@@ -18,7 +18,9 @@ stages:
 build:
   stage: build
   script:
-      - bash build/scripts/build.sh
+      - cp .env-dist .env
+      - make build
+      - make TEST clean
 
 test:
   stage: test
