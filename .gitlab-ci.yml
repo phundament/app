@@ -1,10 +1,9 @@
 before_script:
-  - export APP_MIGRATION_LOOKUP=@root/tests/codeception/_migrations
+  - export BUILD_APP_VOLUME=${CI_PROJECT_DIR}
   - export BUILD_PREFIX=buildref${CI_BUILD_REF}$(echo ${CI_BUILD_REF_NAME} | tr -dc '[:alnum:]\n\r' | tr '[:upper:]' '[:lower:]')
+  - export BUILD_IMAGE_PREFIX=${BUILD_PREFIX}
   - export COMPOSE_PROJECT_NAME=${BUILD_PREFIX}
-  - export COMPOSE_HTTP_TIMEOUT=120
-  - export HOST_APP_VOLUME=$CI_PROJECT_DIR
-  - export TEST_IMAGE_PREFIX=${BUILD_PREFIX}
+  - export APP_MIGRATION_LOOKUP=@root/tests/codeception/_migrations
   - mkdir -p tmp
 
 stages:
@@ -30,6 +29,7 @@ test:
       - bash build/scripts/${CI_BUILD_NAME}.sh || EXIT_CODE=$?
       - set -e
       - cp -r tests/codeception/_output/ /tmp/${CI_BUILD_NAME}-${CI_BUILD_REF}
+      - ls -lat /tmp
       - exit ${EXIT_CODE}
 
 test-allow_failure:

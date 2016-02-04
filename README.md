@@ -134,8 +134,8 @@ First, build your application image
 Set environment variables for test stack
 
     export COMPOSE_PROJECT_NAME=testapp
-    export TEST_IMAGE_PREFIX=app
-    export HOST_APP_VOLUME=.
+    export BUILD_IMAGE_PREFIX=app
+    export BUILD_APP_VOLUME=.
 
 Start test stack and enter tester CLI container
 
