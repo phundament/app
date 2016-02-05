@@ -19,7 +19,7 @@ use yii\web\AssetBundle;
  */
 class AppAsset extends AssetBundle
 {
-    public $sourcePath = __DIR__.'/web';
+    public $sourcePath = '@app/assets/web';
 
     public $css = [
         // Note: less files require a compiler (available by default on Phundament Docker images)
