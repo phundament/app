@@ -5,7 +5,7 @@ use schmunk42\giiant\generators\crud\callbacks\base\Callback;
 use schmunk42\giiant\generators\crud\callbacks\yii\Db;
 use schmunk42\giiant\generators\crud\callbacks\yii\Html;
 
-$aceEditorField = function ($attribute, $model, $generator) {
+$aceEditorField = function($attribute, $model, $generator) {
     return "\$form->field(\$model, '{$attribute}')->widget(\\trntv\\aceeditor\\AceEditor::className())";
 };
 
