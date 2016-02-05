@@ -15,6 +15,7 @@ docker run --rm -v "${PWD}/${DOCKERFILE_PATH}/${DOCKERFILE}":/Dockerfile:ro redc
 docker run --rm --privileged -v ${PWD}/${DOCKERFILE_PATH}:/root/ projectatomic/dockerfile-lint dockerfile_lint -f ${DOCKERFILE}
 
 docker-compose run --rm php composer diagnose || EXIT_CODE=1
+docker-compose run --rm php composer show -i || EXIT_CODE=1
 
 docker-compose run --rm php vendor/bin/php-cs-fixer fix --dry-run --format=txt -v src || EXIT_CODE=1
 
