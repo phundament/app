@@ -8,6 +8,9 @@ DOCKERFILE_PATH=.
 
 set -v
 
+make
+make help
+
 docker run --rm -v "${PWD}/${DOCKERFILE_PATH}/${DOCKERFILE}":/Dockerfile:ro redcoolbeans/dockerlint
 docker run --rm --privileged -v ${PWD}/${DOCKERFILE_PATH}:/root/ projectatomic/dockerfile-lint dockerfile_lint -f ${DOCKERFILE}
 
