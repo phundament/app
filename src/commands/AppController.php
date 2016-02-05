@@ -117,6 +117,9 @@ class AppController extends Controller
         }
     }
 
+    /**
+     * @param string $command
+     */
     protected function action($command, $params = [])
     {
         echo "\nRunning action '$command'...\n";
