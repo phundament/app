@@ -41,8 +41,8 @@ bash:	##@docker open application shell in container
 
 build:	##@docker build application images
 	$(DOCKER_COMPOSE) run --rm $(PHP_SERVICE) composer install
-	$(shell echo $(shell git describe --long --tags --dirty --always) > version)
-	@echo $(shell cat version)
+	$(shell echo $(shell git describe --long --tags --dirty --always) > src/version)
+	@echo $(shell cat src/version)
 	$(DOCKER_COMPOSE) build
 
 init:
