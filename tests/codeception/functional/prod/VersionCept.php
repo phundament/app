@@ -4,9 +4,9 @@ $I = new FunctionalTester($scenario);
 
 $I->wantTo('check application versioning');
 
-$I->dontSeeFileFound('src/version');
-$I->seeFileFound('version');
-$I->openFile('version');
+$I->dontSeeFileFound('version');
+$I->seeFileFound('src/version');
+$I->openFile('src/version');
 $I->dontSeeInThisFile('dev');
 $I->dontSeeInThisFile('dirty');
 
