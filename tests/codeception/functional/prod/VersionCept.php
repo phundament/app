@@ -10,7 +10,7 @@ $I->openFile('src/version');
 $I->dontSeeInThisFile('dev');
 $I->dontSeeInThisFile('dirty');
 
-$version = file_get_contents('version');
+$version = file_get_contents('src/version');
 
 $I->amGoingTo('check version visiblity in modal');
 $I->expectTo('see application version '.$version);
