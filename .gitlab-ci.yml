@@ -1,9 +1,14 @@
+# GitLab CI configuration
+#
+# Requirements
+#  - schmunk42/gitlab-runner >=4.2.0-rc1
+
 before_script:
   - export BUILD_APP_VOLUME=${CI_PROJECT_DIR}
   - export BUILD_PREFIX=buildref${CI_BUILD_REF}$(echo ${CI_BUILD_REF_NAME} | tr -dc '[:alnum:]\n\r' | tr '[:upper:]' '[:lower:]')
   - export COMPOSE_PROJECT_NAME=${BUILD_PREFIX}
   - export APP_MIGRATION_LOOKUP=@root/tests/codeception/_migrations
-  - mkdir -p tmp
+  - mkdir -p /tmp/${BUILD_PREFIX}
 
 stages:
   - build
@@ -29,8 +34,7 @@ test:
       - set +e
       - bash build/scripts/${CI_BUILD_NAME}.sh || EXIT_CODE=$?
       - set -e
-      - cp -r tests/codeception/_output/ /tmp/${CI_BUILD_NAME}-${CI_BUILD_REF}
-      - ls -lat /tmp
+      - cp -r tests/codeception/_output/ /tmp/${BUILD_PREFIX}/${CI_BUILD_NAME}
       - exit ${EXIT_CODE}
   except:
     - tags
@@ -42,7 +46,7 @@ test-allow_failure:
       - set +e
       - bash build/scripts/${CI_BUILD_NAME}.sh || EXIT_CODE=$?
       - set -e
-      - cp -r tests/codeception/_output/ /tmp/${CI_BUILD_NAME}-${CI_BUILD_REF}
+      - cp -r tests/codeception/_output/ /tmp/${BUILD_PREFIX}/${CI_BUILD_NAME}
       - exit ${EXIT_CODE}
   allow_failure: true
   only:
@@ -62,11 +66,10 @@ lint:
 report:
   stage: report
   script:
-    - ls -lat /tmp
+    - cp -r /tmp/${BUILD_PREFIX} $(basename $PWD)-${CI_BUILD_REF}
   artifacts:
     paths:
-      - /tmp/test-${CI_BUILD_REF}
-      - /tmp/test-allow_failure-${CI_BUILD_REF}
+      - $(basename $PWD)-${CI_BUILD_REF}
   when: always
   except:
     - tags
@@ -79,8 +82,7 @@ cleanup:
     - make TEST clean
     - export COMPOSE_PROJECT_NAME="${BUILD_PREFIX}test-allow_failure"
     - make TEST clean
-    - rm -rf /tmp/test-${CI_BUILD_REF}
-    - rm -rf /tmp/test-allow_failure-${CI_BUILD_REF}
+    - rm -rf /tmp/${BUILD_PREFIX}
   when: always
   except:
     - tags
@@ -88,8 +90,8 @@ cleanup:
 deploy:
   stage: deploy
   script:
-      - bash build/scripts/deploy.sh
+    - bash build/scripts/deploy.sh
   only:
-      - master
+    - master
   except:
     - tags
