@@ -21,7 +21,7 @@ env:
     - DB_ENV_MYSQL_USER=test
     - DB_ENV_MYSQL_PASSWORD=test123
 install:
-  - git describe --long --tags --always > version
+  - git describe --long --tags --always > src/version
   - npm install -g less
   - export PATH="$HOME/.composer/vendor/bin:$PATH"
   - composer self-update && composer --version
