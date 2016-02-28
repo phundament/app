@@ -3,6 +3,32 @@ CHANGELOG
 
 ## dmstr/phd
 
+### 4.1.0 (28.2.2016)
+
+- :arrow_up: composer packages
+- :arrow_up: base image
+- updated CI config
+- fixed path in test
+- moved version file to src
+- simplified build variables, combined BUILD_PREFIX/BUILD_IMAGE_PREFIX
+- removed hardcoded IMAGE_NAME from CI config
+- removed unused .gitkeep files
+- removed constant from sourcePath
+- added legacy test for PHP 5.5
+- removed unused form
+- updated build with Dockerfile linting; don't run build jobs on tag
+- fixed stack name when branch has a slash '/' in its name
+- hardened docker-compose version check
+- updated & enabled access tests
+- just ouput IDs when checking requirements
+- hardened docker-compose version check, see https://github.com/docker/compose/issues/2733
+- hardened testing; moved lint to test_pre to combine all allow_failure tests
+- improved CI stack isolation for tags
+- added docker daemon check
+- do not clean-test in target clean, since it may conflict with initial builds
+- fixed startup order in makefile target all
+- removed docs module configuration from main.php
+  
 ### 4.0.2 (8.1.2016)
 
 - added make diagnose target to lint job
