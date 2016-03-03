@@ -40,6 +40,7 @@ before_script:
   - mysql -e "CREATE USER 'test'@'localhost' IDENTIFIED BY 'test123';"
   - mysql -uroot -e "GRANT ALL PRIVILEGES ON * . * TO 'test'@'localhost';"
   - php yii migrate --migrationLookup=@root/tests/codeception/_migrations --interactive=0
+  - php yii app/setup-admin-user --interactive=0
 
 script:
   - codecept -v run unit
