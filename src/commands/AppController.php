@@ -79,7 +79,7 @@ class AppController extends Controller
         $command = new Command($cmd);
 
         // Prompt user
-        $delete = $this->confirm("\nDo you really want to delete web assets?", ['default' => true]);
+        $delete = $this->confirm("\nDo you really want to delete web assets?", true);
 
         if ($delete) {
             // Try to execute $command
@@ -100,8 +100,9 @@ class AppController extends Controller
         if ($this->confirm('Regenerate documentation files into ./docs-html', true)) {
 
             // array with commands
+            $commands = [];
             $commands[] = 'vendor/bin/apidoc guide --interactive=0 docs web/apidocs';
-            $commands[] = 'vendor/bin/apidoc api --interactive=0 --exclude=runtime/,tests/,vendor/ . web/apidocs';
+            $commands[] = 'vendor/bin/apidoc api --interactive=0 --exclude=runtime/,tests/ src,vendor/schmunk42 web/apidocs';
             $commands[] = 'vendor/bin/apidoc guide --interactive=0 docs web/apidocs';
 
             foreach ($commands as $command) {
