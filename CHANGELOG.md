@@ -3,6 +3,14 @@ CHANGELOG
 
 ## dmstr/phd
 
+### 4.2.0-dev
+
+- moved application scripts to `/app/src/bin` folder
+- moved `composer.sh` to base-images
+- updated `YII_ENV` settings for acceptance tests
+- fixed unit test application mocking
+- moved prototype module to separate extension
+
 ### 4.1.0 (28.2.2016)
 
 - :arrow_up: composer packages

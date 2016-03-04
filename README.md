@@ -38,7 +38,7 @@ Start the application stack
 Run setup commands
     
     docker-compose run php composer install
-    docker-compose run php sh src/setup.sh
+    docker-compose run php setup.sh
 
 After startup is complete, open `http://<DOCKER_HOST>:40080` to access the application and login with `admin`/`admin`.
 
@@ -144,7 +144,7 @@ Start test stack and enter tester CLI container
 
 Setup application *(container bash)*    
     
-    $ sh src/setup.sh
+    $ setup.sh
 
 Run test suites *(container bash)*
 
