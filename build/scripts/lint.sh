@@ -19,10 +19,10 @@ docker-compose run --rm php composer show -i || EXIT_CODE=1
 
 docker-compose run --rm php vendor/bin/php-cs-fixer fix --dry-run --format=txt -v src || EXIT_CODE=1
 
-docker run -t -i -v `pwd`:/project jolicode/phaudit phploc src/
-docker run -t -i -v `pwd`:/project jolicode/phaudit phpcpd src/
-docker run -t -i -v `pwd`:/project jolicode/phaudit phpdcd src/
-docker run -t -i -v `pwd`:/project jolicode/phaudit phpmetrics src/
+docker run -v `pwd`:/project jolicode/phaudit phploc src/
+docker run -v `pwd`:/project jolicode/phaudit phpcpd src/
+docker run -v `pwd`:/project jolicode/phaudit phpdcd src/
+docker run -v `pwd`:/project jolicode/phaudit phpmetrics src/
 
 docker run --rm -v "${BUILD_APP_VOLUME}/build/scripts/lint.sh:/tmp/FileToBeChecked" chrisdaish/shellcheck || EXIT_CODE=1
 docker run --rm -v "${BUILD_APP_VOLUME}/build/scripts/test.sh:/tmp/FileToBeChecked" chrisdaish/shellcheck || EXIT_CODE=1
