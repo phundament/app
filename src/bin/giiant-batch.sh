@@ -12,11 +12,11 @@ yii giiant-batch \
       --overwrite=1 \
       --tablePrefix=app_ \
       --modelDb=db \
-      --modelNamespace=app\\modules\\prototype\\models \
-      --modelQueryNamespace=app\\modules\\prototype\\models\\query \
+      --modelNamespace=app\\modules\\crud\\models \
+      --modelQueryNamespace=app\\modules\\crud\\models\\query \
       --crudAccessFilter=1 \
-      --crudControllerNamespace=app\\modules\\prototype\\controllers \
-      --crudSearchModelNamespace=app\\modules\\prototype\\models\\search \
-      --crudViewPath=@app/modules/prototype/views \
+      --crudControllerNamespace=app\\modules\\crud\\controllers \
+      --crudSearchModelNamespace=app\\modules\\crud\\models\\search \
+      --crudViewPath=@app/modules/crud/views \
       --crudPathPrefix= \
       --tables=app_html,app_less

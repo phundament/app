@@ -20,5 +20,7 @@ ADD src /app/src
 
 # Create folder writable by the application (non-persistent data)
 RUN mkdir -p /app/web/assets /app/runtime \
- && chmod 777 /app/web/assets /app/runtime \
- && echo "alias composer='sh /app/src/composer.sh'" >> /root/.bashrc
+ && chmod 777 /app/web/assets /app/runtime
+
+RUN chmod -R u+x /app/src/bin
+ENV PATH /app/src/bin:${PATH}

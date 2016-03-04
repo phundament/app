@@ -51,7 +51,7 @@ init:
 
 setup:	##@docker setup application packages and database
 	echo $(COMPOSE_FILE)
-	$(DOCKER_COMPOSE) run --rm $(PHP_SERVICE) sh src/setup.sh
+	$(DOCKER_COMPOSE) run --rm $(PHP_SERVICE) setup.sh
 
 clean:  ##@docker remove application containers
 	$(DOCKER_COMPOSE) kill
