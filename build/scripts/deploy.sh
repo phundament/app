@@ -10,7 +10,7 @@ CURRENT_VERSION=$(git describe)
 docker login --username="${REGISTRY_USER}" --password="${REGISTRY_PASS}" --email reg@h17n.de "${REGISTRY_HOST}"
 
 # Create and push :latest
-docker tag -f "${COMPOSE_PROJECT_NAME}_php" "${IMAGE_NAME}":latest
+docker tag "${COMPOSE_PROJECT_NAME}_php" "${IMAGE_NAME}":latest
 docker push "${IMAGE_NAME}":latest
 
 # Create and push :<CURRENT_VERSION>
