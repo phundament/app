@@ -109,7 +109,7 @@ $common = [
             ],
         ],
         'prototype'    => [
-            'class'  => 'app\modules\prototype\Module',
+            'class'  => 'dmstr\modules\prototype\Module',
             'layout' => '@admin-views/layouts/main',
         ],
         'user' => [
@@ -154,7 +154,7 @@ $common = [
             '@dektrium/user/migrations',
             '@vendor/lajax/yii2-translate-manager/migrations',
             '@vendor/pheme/yii2-settings/migrations',
-            '@app/modules/prototype/migrations'
+            '@vendor/dmstr/yii2-prototype-module/src/migrations'
         ],
     ],
 

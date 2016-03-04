@@ -10,7 +10,7 @@ $this->title = $this->title.' - '.Yii::$app->params['appName'];
 
 switch (Yii::$app->settings->get('registerPrototypeAsset', 'app.assets')) {
     case true:
-        \app\modules\prototype\assets\DbAsset::register($this);
+        \dmstr\modules\prototype\assets\DbAsset::register($this);
         break;
     case null:
         Yii::$app->settings->set('registerPrototypeAsset', true, 'app.assets');
@@ -28,7 +28,7 @@ switch (Yii::$app->settings->get('registerPrototypeAsset', 'app.assets')) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
-    <?= \app\modules\prototype\widgets\HtmlWidget::widget(['key' => 'head']) ?>
+    <?= \dmstr\modules\prototype\widgets\HtmlWidget::widget(['key' => 'head']) ?>
     <?php $this->head() ?>
 </head>
 <body>
@@ -42,7 +42,7 @@ switch (Yii::$app->settings->get('registerPrototypeAsset', 'app.assets')) {
 </div>
 
 <footer class="footer">
-    <?= \app\modules\prototype\widgets\HtmlWidget::widget(['key' => 'footer']) ?>
+    <?= \dmstr\modules\prototype\widgets\HtmlWidget::widget(['key' => 'footer']) ?>
     <div class="container">
         <p class="pull-right">
             <span class="label label-default"><?= YII_ENV ?></span>
