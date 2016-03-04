@@ -3,7 +3,7 @@ CHANGELOG
 
 ## dmstr/phd
 
-### 4.2.0-dev
+### 4.2.0-rc1 (4.3.2016)
 
 - moved application scripts to `/app/src/bin` folder
 - moved `composer.sh` to base-images
