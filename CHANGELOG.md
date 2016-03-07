@@ -3,6 +3,10 @@ CHANGELOG
 
 ## dmstr/phd
 
+### 4.2.0-rc2 (7.3.2016)
+
+- removed relative setup script paths (container usage)
+
 ### 4.2.0-rc1 (4.3.2016)
 
 - moved application scripts to `/app/src/bin` folder
