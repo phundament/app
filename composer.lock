@@ -950,16 +950,16 @@
         },
         {
             "name": "dmstr/yii2-helpers",
-            "version": "0.2.0",
+            "version": "0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-helpers.git",
-                "reference": "1951d90ae9926b6aa64ad38a585ccdfa20a9b4f9"
+                "reference": "034af22a34645d89baf6cc2dace9fffe2c37fe55"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-helpers/zipball/1951d90ae9926b6aa64ad38a585ccdfa20a9b4f9",
-                "reference": "1951d90ae9926b6aa64ad38a585ccdfa20a9b4f9",
+                "url": "https://api.github.com/repos/dmstr/yii2-helpers/zipball/034af22a34645d89baf6cc2dace9fffe2c37fe55",
+                "reference": "034af22a34645d89baf6cc2dace9fffe2c37fe55",
                 "shasum": ""
             },
             "require": {
@@ -990,7 +990,7 @@
                 "extension",
                 "yii2"
             ],
-            "time": "2016-01-07 13:03:59"
+            "time": "2016-03-07 08:57:01"
         },
         {
             "name": "dmstr/yii2-libs-metapackage",
@@ -1127,16 +1127,16 @@
         },
         {
             "name": "dmstr/yii2-prototype-module",
-            "version": "0.0.2",
+            "version": "0.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-prototype-module.git",
-                "reference": "00aab5588b390c7618978629cfa675eef1b546e5"
+                "reference": "602c008ab1240f4248252146a6ce568559467fb3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-prototype-module/zipball/00aab5588b390c7618978629cfa675eef1b546e5",
-                "reference": "00aab5588b390c7618978629cfa675eef1b546e5",
+                "url": "https://api.github.com/repos/dmstr/yii2-prototype-module/zipball/602c008ab1240f4248252146a6ce568559467fb3",
+                "reference": "602c008ab1240f4248252146a6ce568559467fb3",
                 "shasum": ""
             },
             "require": {
@@ -1163,7 +1163,7 @@
                 "extension",
                 "yii2"
             ],
-            "time": "2016-03-04 18:48:18"
+            "time": "2016-03-06 21:06:21"
         },
         {
             "name": "dmstr/yii2-web",
