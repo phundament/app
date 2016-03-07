@@ -31,4 +31,27 @@ $aceEditorField = function($attribute, $model, $generator) {
     ]
 );
 
-return [];
+return [
+    'controllerMap' => [
+        'crud' => [
+            'class' => 'schmunk42\giiant\commands\BatchController',
+            'interactive' => false,
+            'overwrite' => true,
+            'modelNamespace' => 'app\\modules\\crud\\models',
+            'modelQueryNamespace' => 'app\\modules\\crud\\models\\query',
+            'crudTidyOutput' => true,
+            'crudAccessFilter' => true,
+            'crudControllerNamespace' => 'app\\modules\\crud\\controllers',
+            'crudSearchModelNamespace' => 'app\\modules\\crud\\models\\search',
+            'crudViewPath' => '@app/modules/crud/views',
+            'crudPathPrefix' => '/crud/',
+            'crudProviders' => [
+                'schmunk42\\giiant\\generators\\crud\\providers\\optsProvider',
+            ],
+            'tablePrefix' => 'xyz_',
+            /*'tables' => [
+                'xyz_category',
+            ]*/
+        ]
+    ]
+];
