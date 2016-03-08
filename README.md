@@ -70,7 +70,6 @@ During development, it is recommended to change application configuration in the
  - `APP_MIGRATION_LOOKUP` comma separated list of Yii aliases to look for database migrations, eg. `@app/migrations/data`
  - `APP_ADMIN_EMAIL` e-mail address of application admin user (default in `./yii app/create-admin-user`)
  - `APP_ADMIN_PASSWORD` password of application admin user (default in `./yii app/create-admin-user`)
- - `APP_SUPPORT_EMAIL` e-mail address for the application, eg. `support@myapp.local`
  - `APP_CONFIG_FILE` custom configuration file to load
  - `APP_COOKIE_VALIDATION_KEY` unique and random string to prevent XSS
  - `APP_PRETTY_URLS` enable or disable nice URLs, allowed values `1` (yes) or `0` (no)

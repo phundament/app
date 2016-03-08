@@ -6,7 +6,7 @@ use yii\helpers\Html;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
-$this->title = $this->title.' - '.Yii::$app->params['appName'];
+$this->title = $this->title;
 
 switch (Yii::$app->settings->get('registerPrototypeAsset', 'app.assets')) {
     case true:

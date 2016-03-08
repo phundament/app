@@ -146,9 +146,7 @@ $common = [
         ],
     ],
     'params' => [
-        'appName' => getenv('APP_NAME'),
         'adminEmail' => getenv('APP_ADMIN_EMAIL'),
-        'supportEmail' => getenv('APP_SUPPORT_EMAIL'),
         'yii.migrations' => [
             '@yii/rbac/migrations',
             '@dektrium/user/migrations',
