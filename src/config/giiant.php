@@ -48,9 +48,9 @@ return [
             'crudProviders' => [
                 'schmunk42\\giiant\\generators\\crud\\providers\\optsProvider',
             ],
-            'tablePrefix' => 'xyz_',
+            'tablePrefix' => 'app_',
             /*'tables' => [
-                'xyz_category',
+                'app_profile',
             ]*/
         ]
     ]
