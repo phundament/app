@@ -33,7 +33,7 @@ $aceEditorField = function($attribute, $model, $generator) {
 
 return [
     'controllerMap' => [
-        'crud' => [
+        'batch' => [
             'class' => 'schmunk42\giiant\commands\BatchController',
             'interactive' => false,
             'overwrite' => true,
