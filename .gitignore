@@ -46,3 +46,4 @@ web/assets-prod
 local.php
 docker-compose.override.yml
 version
+.phptidy-cache
