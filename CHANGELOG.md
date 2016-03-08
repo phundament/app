@@ -3,6 +3,12 @@ CHANGELOG
 
 ## dmstr/phd
 
+### 4.2.0-dev (not released yet)
+
+- removed application params 'appName' and 'supportEmail'
+- removed ENV variable APP_SUPPORT_EMAIL
+- moved `giiant-batch.sh` to `yii batch`
+
 ### 4.2.0-rc2 (7.3.2016)
 
 - removed relative setup script paths (container usage)
