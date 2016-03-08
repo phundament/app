@@ -4,7 +4,6 @@
 #  - schmunk42/gitlab-runner >=4.2.0-rc1
 
 before_script:
-  - export BUILD_APP_VOLUME=${CI_PROJECT_DIR}
   - export BUILD_PREFIX=buildref${CI_BUILD_REF}$(echo ${CI_BUILD_REF_NAME} | tr -dc '[:alnum:]\n\r' | tr '[:upper:]' '[:lower:]')
   - export COMPOSE_PROJECT_NAME=${BUILD_PREFIX}
   - export APP_MIGRATION_LOOKUP=@root/tests/codeception/_migrations

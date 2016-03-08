@@ -2,7 +2,6 @@
 
 EXIT_CODE=0
 DIRNAME=$(dirname "$0")
-BUILD_APP_VOLUME="${BUILD_APP_VOLUME-${PWD}/${DIRNAME}/../..}"
 DOCKERFILE=Dockerfile
 DOCKERFILE_PATH=.
 
@@ -24,10 +23,10 @@ docker run -v `pwd`:/project jolicode/phaudit phpcpd src/
 docker run -v `pwd`:/project jolicode/phaudit phpdcd src/
 docker run -v `pwd`:/project jolicode/phaudit phpmetrics src/
 
-docker run --rm -v "${BUILD_APP_VOLUME}/build/scripts/lint.sh:/tmp/FileToBeChecked" chrisdaish/shellcheck || EXIT_CODE=1
-docker run --rm -v "${BUILD_APP_VOLUME}/build/scripts/test.sh:/tmp/FileToBeChecked" chrisdaish/shellcheck || EXIT_CODE=1
-docker run --rm -v "${BUILD_APP_VOLUME}/build/scripts/deploy.sh:/tmp/FileToBeChecked" chrisdaish/shellcheck || EXIT_CODE=1
-docker run --rm -v "${BUILD_APP_VOLUME}/build/scripts/requirements.sh:/tmp/FileToBeChecked" chrisdaish/shellcheck || EXIT_CODE=1
+docker run --rm -v "${PWD}/build/scripts/lint.sh:/tmp/FileToBeChecked" chrisdaish/shellcheck || EXIT_CODE=1
+docker run --rm -v "${PWD}/build/scripts/test.sh:/tmp/FileToBeChecked" chrisdaish/shellcheck || EXIT_CODE=1
+docker run --rm -v "${PWD}/build/scripts/deploy.sh:/tmp/FileToBeChecked" chrisdaish/shellcheck || EXIT_CODE=1
+docker run --rm -v "${PWD}/build/scripts/requirements.sh:/tmp/FileToBeChecked" chrisdaish/shellcheck || EXIT_CODE=1
 
 set +v
 

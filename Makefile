@@ -9,7 +9,6 @@ PHP_SERVICE		?= php
 WEB_SERVICE		?= nginx
 
 export BUILD_PREFIX         ?= $(shell echo $(notdir $(PWD)) | tr -dc '[:alnum:]\n\r' | tr '[:upper:]' '[:lower:]')
-export BUILD_APP_VOLUME     ?= .
 
 UNAME_S := $(shell uname -s)
 ifeq ($(UNAME_S), Darwin)
