@@ -35,7 +35,6 @@ return [
     'controllerMap' => [
         'batch' => [
             'class' => 'schmunk42\giiant\commands\BatchController',
-            'interactive' => false,
             'overwrite' => true,
             'modelNamespace' => 'app\\modules\\crud\\models',
             'modelQueryNamespace' => 'app\\modules\\crud\\models\\query',
