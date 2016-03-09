@@ -1,5 +1,4 @@
 php:
-  image: ${BUILD_PREFIX}_php
   volumes:
     - /app
   environment:
@@ -10,7 +9,7 @@ nginx:
   ports:
     - '80'
 tester:
-  image: ${BUILD_PREFIX}_php
+  build: .
   links:
     - 'mariadb:DB'
     - 'seleniumfirefox:HUB'
