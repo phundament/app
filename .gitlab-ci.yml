@@ -21,8 +21,7 @@ build:
   stage: build
   script:
       - cp .env-dist .env
-      - make TEST build
-      - make TEST clean
+      - make build
   except:
     - tags
 
