@@ -1,5 +1,6 @@
 <?php
-namespace temp;
+
+namespace app\config;
 
 use schmunk42\giiant\generators\crud\callbacks\base\Callback;
 use schmunk42\giiant\generators\crud\callbacks\yii\Db;
