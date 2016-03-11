@@ -167,7 +167,7 @@ dmstr\web\AdminLteAsset::register($this);
     </div>
     <!-- /.content-wrapper -->
     <footer class="main-footer">
-        <strong><a href="http://phundament.com">Phundament</a></strong> <?= APP_VERSION ?>
+        <strong><?= getenv('APP_NAME') ?>-<?= APP_VERSION ?></strong> built with <a href="http://phundament.com" target="_blank">phd</a>
     </footer>
 </div>
 <!-- ./wrapper -->
