@@ -19,6 +19,8 @@ services:
           - web
   tester:
     image: ${BUILD_PREFIX}_php
+    depends_on:
+      - seleniumfirefox
     volumes:
       - ./codeception.yml:/app/codeception.yml
       - ./tests:/app/tests
