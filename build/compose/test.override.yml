@@ -13,6 +13,10 @@ services:
       - php
     ports:
       - '80'
+    networks:
+      internal:
+        aliases:
+          - web
   tester:
     image: ${BUILD_PREFIX}_php
     volumes:
@@ -33,3 +37,5 @@ services:
       - '5900'
     networks:
       internal:
+        aliases:
+          - hub
