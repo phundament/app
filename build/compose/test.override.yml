@@ -1,29 +1,31 @@
-php:
-  image: ${BUILD_PREFIX}_php
-  volumes:
-    - /app
-  environment:
-    - YII_ENV=prod
-nginx:
-  volumes_from:
-    - php
-  ports:
-    - '80'
-tester:
-  image: ${BUILD_PREFIX}_php
-  links:
-    - 'mariadb:DB'
-    - 'seleniumfirefox:HUB'
-    - 'nginx:WEB'
-  volumes:
-    - ./codeception.yml:/app/codeception.yml
-    - ./tests:/app/tests
-  environment:
-    - YII_ENV=test
-seleniumfirefox:
-  image: selenium/standalone-firefox-debug:2.47.1
-  links:
-    - 'nginx:WEB'
-  ports:
-    - '4444'
-    - '5900'
+version: '2'
+services:
+  php:
+    image: ${BUILD_PREFIX}_php
+    volumes:
+      - /app
+    environment:
+      - YII_ENV=prod
+  nginx:
+    volumes_from:
+      - php
+    ports:
+      - '80'
+  tester:
+    image: ${BUILD_PREFIX}_php
+    links:
+      - 'mariadb:DB'
+      - 'seleniumfirefox:HUB'
+      - 'nginx:WEB'
+    volumes:
+      - ./codeception.yml:/app/codeception.yml
+      - ./tests:/app/tests
+    environment:
+      - YII_ENV=test
+  seleniumfirefox:
+    image: selenium/standalone-firefox-debug:2.47.1
+    links:
+      - 'nginx:WEB'
+    ports:
+      - '4444'
+      - '5900'
