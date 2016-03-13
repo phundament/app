@@ -13,10 +13,6 @@ services:
       - '80'
   tester:
     image: ${BUILD_PREFIX}_php
-    links:
-      - 'mariadb:DB'
-      - 'seleniumfirefox:HUB'
-      - 'nginx:WEB'
     volumes:
       - ./codeception.yml:/app/codeception.yml
       - ./tests:/app/tests
@@ -24,8 +20,6 @@ services:
       - YII_ENV=test
   seleniumfirefox:
     image: selenium/standalone-firefox-debug:2.47.1
-    links:
-      - 'nginx:WEB'
     ports:
       - '4444'
       - '5900'
