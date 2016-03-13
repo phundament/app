@@ -1,16 +1,32 @@
-# Phundament 4 - Application stack
+# phd - application stack
 
-php:
-  build: .
-  links:
-    - 'mariadb:DB'
+version: '2'
+services:
+  php:
+    build: .
+    depends_on:
+      - db
+    networks:
+      internal:
+        aliases:
+          - phpfpm
 
-nginx:
-  image: phundament/nginx-one:1.9
-  links:
-    - 'php:PHPFPM'
+  nginx:
+    image: phundament/nginx-one:1.9
+    depends_on:
+      - php
+    networks:
+      internal:
+      external:
 
-mariadb:
-  image: 'tutum/mariadb:10.1'
-  environment:
-    MARIADB_PASS: secretadmin
+  db:
+    image: 'percona:5.6'
+    environment:
+      MYSQL_ROOT_PASSWORD: secretadmin
+    networks:
+      internal:
+
+networks:
+  internal:
+  external:
+
