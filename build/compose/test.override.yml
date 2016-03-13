@@ -6,6 +6,8 @@ services:
       - /app
     environment:
       - YII_ENV=prod
+      - DB_PORT_3306_TCP_ADDR=db
+      - DB_PORT_3306_TCP_PORT=3306
   nginx:
     volumes_from:
       - php
@@ -18,8 +20,15 @@ services:
       - ./tests:/app/tests
     environment:
       - YII_ENV=test
+      - DB_PORT_3306_TCP_ADDR=db
+      - DB_PORT_3306_TCP_PORT=3306
+      - DB_ENV_MYSQL_ROOT_PASSWORD=secretadmin
+    networks:
+      internal:
   seleniumfirefox:
     image: selenium/standalone-firefox-debug:2.47.1
     ports:
       - '4444'
       - '5900'
+    networks:
+      internal:
