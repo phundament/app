@@ -22,6 +22,7 @@ services:
       - YII_ENV=test
       - DB_PORT_3306_TCP_ADDR=db
       - DB_PORT_3306_TCP_PORT=3306
+      - DB_ENV_MYSQL_ROOT_USER=root
       - DB_ENV_MYSQL_ROOT_PASSWORD=secretadmin
     networks:
       internal:
