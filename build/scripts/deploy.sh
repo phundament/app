@@ -3,8 +3,8 @@
 set -e
 
 # Create tagged image from git tag
-LATEST_TAG=$(git describe --abbrev=0)
-CURRENT_VERSION=$(git describe)
+LATEST_TAG=$(git describe --abbrev=0 --always)
+CURRENT_VERSION=$(git describe --always)
 
 # Login to registry
 docker login --username="${REGISTRY_USER}" --password="${REGISTRY_PASS}" --email reg@h17n.de "${REGISTRY_HOST}"
