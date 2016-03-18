@@ -1,5 +1,9 @@
 <?php
 
+namespace _;
+
+use Yii;
+
 ?>
 
 <!-- Sidebar user panel -->
@@ -30,9 +34,7 @@
 <?php
 
 // prepare menu items, get all modules
-$menuItems = [];
-
-$favouriteMenuItems[] = ['label' => 'MAIN NAVIGATION', 'options' => ['class' => 'header']];
+$adminMenuItems = [];
 $developerMenuItems = [];
 
 foreach (\dmstr\helpers\Metadata::getModules() as $name => $module) {
@@ -46,29 +48,14 @@ foreach (\dmstr\helpers\Metadata::getModules() as $name => $module) {
         'items' => [],
     ];
 
-    // check for module configuration and assign to favourites
-    $moduleConfigItem = (is_object($module)) ?
-        (isset($module->params['menuItems']) ? $module->params['menuItems'] : []) :
-        (isset($module['params']['menuItems']) ? $module['params']['menuItems'] : []);
-    switch (true) {
-        case !empty($moduleConfigItem):
-            $moduleConfigItem = array_merge($defaultItem, $moduleConfigItem);
-            $moduleConfigItem['visible'] = \dmstr\helpers\RouteAccess::can($moduleConfigItem['url']);
-            $favouriteMenuItems[] = $moduleConfigItem;
-            continue 2;
-            break;
-        default:
-            $defaultItem['icon'] = 'fa fa-circle-o';
-            $developerMenuItems[] = $defaultItem;
-            break;
-    }
+    $developerMenuItems[] = $defaultItem;
 }
 
 // create developer menu, when user is admin
 if (Yii::$app->user->identity && Yii::$app->user->identity->isAdmin) {
-    $menuItems[] = [
+    $adminMenuItems[] = [
         'url' => '#',
-        'icon' => 'fa fa-cube',
+        'icon' => 'fa fa-cogs',
         'label' => 'Modules',
         'items' => $developerMenuItems,
         'options' => ['class' => 'treeview'],
@@ -76,10 +63,15 @@ if (Yii::$app->user->identity && Yii::$app->user->identity->isAdmin) {
     ];
 }
 
-echo dmstr\widgets\Menu::widget(
+
+echo \dmstr\widgets\Menu::widget(
     [
         'options' => ['class' => 'sidebar-menu'],
-        'items' => \yii\helpers\ArrayHelper::merge($favouriteMenuItems, $menuItems),
+        'items' => \yii\helpers\ArrayHelper::merge(
+            ['items'=>['label' => 'Backend navigation', 'options' => ['class' => 'header']]],
+            \dmstr\modules\pages\models\Tree::getMenuItems('backend'),
+            $adminMenuItems
+        ),
     ]
 );
 ?>
