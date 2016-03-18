@@ -3,6 +3,12 @@ CHANGELOG
 
 ## dmstr/phd
 
+### 4.2.1-dev
+
+- fixed `APP_CONFIG_FILE` support
+- backend sidebar view cleanup
+- updated backend access tests
+
 ### 4.2.0 (11.3.2016)
 
 - removed application params `appName` and `supportEmail`
