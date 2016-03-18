@@ -248,9 +248,9 @@ if (YII_ENV_DEV || YII_ENV_TEST) {
     }
 }
 
-if (file_exists(__DIR__.'/local.php')) {
+if (file_exists(getenv('APP_CONFIG_FILE'))) {
     // Local configuration, if available
-    $local = require __DIR__.'/local.php';
+    $local = require (getenv('APP_CONFIG_FILE'));
     $config = \yii\helpers\ArrayHelper::merge($config, $local);
 }
 
