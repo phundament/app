@@ -5,7 +5,7 @@ use yii\helpers\Html;
 /* @var $this \yii\web\View */
 /* @var $content string */
 $this->title = $this->title.' [Backend]';
-dmstr\web\AdminLteAsset::register($this);
+\app\modules\backend\assets\AdminAsset::register($this);
 ?>
 
 <?php $this->beginPage() ?>
