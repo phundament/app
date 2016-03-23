@@ -8,7 +8,6 @@ use yii\helpers\Html;
 
 ?>
 
-?>
 <b><?= Html::a($model['route'], $model['route']) ?></b>
 
 <br/>
