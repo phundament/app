@@ -13,6 +13,7 @@ set -v
 # Makefiles
 make
 make help
+make -n all
 
 # Dockerfiles
 docker run --rm -v "${PWD}/${DOCKERFILE_PATH}/${DOCKERFILE}":/Dockerfile:ro redcoolbeans/dockerlint
@@ -25,10 +26,10 @@ docker-compose run --rm php climb || EXIT_CODE=1
 
 # PHP source
 docker-compose run --rm php vendor/bin/php-cs-fixer fix --dry-run --format=txt -v src || EXIT_CODE=1
-docker run -v "${PWD}:/project" jolicode/phaudit phploc src/
-docker run -v "${PWD}:/project" jolicode/phaudit phpcpd src/
-docker run -v "${PWD}:/project" jolicode/phaudit phpdcd src/
-docker run -v "${PWD}:/project" jolicode/phaudit phpmetrics src/
+docker run --rm -v "${PWD}:/project" jolicode/phaudit phploc src/
+docker run --rm -v "${PWD}:/project" jolicode/phaudit phpcpd src/
+docker run --rm -v "${PWD}:/project" jolicode/phaudit phpdcd src/
+docker run --rm -v "${PWD}:/project" jolicode/phaudit phpmetrics src/
 
 # shell scripts
 docker run --rm -v "${PWD}/build/scripts/lint.sh:/tmp/FileToBeChecked" chrisdaish/shellcheck || EXIT_CODE=1
