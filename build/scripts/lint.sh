@@ -29,7 +29,7 @@ docker-compose run --rm php vendor/bin/php-cs-fixer fix --dry-run --format=txt -
 docker run --rm -v "${PWD}:/project" jolicode/phaudit phploc src/
 docker run --rm -v "${PWD}:/project" jolicode/phaudit phpcpd src/
 docker run --rm -v "${PWD}:/project" jolicode/phaudit phpdcd src/
-docker run --rm -v "${PWD}:/project" jolicode/phaudit phpmetrics src/
+docker run --rm -v "${PWD}:/project" jolicode/phaudit phpmetrics --report-html=tests/_metrics/report.html src/
 
 # shell scripts
 docker run --rm -v "${PWD}/build/scripts/lint.sh:/tmp/FileToBeChecked" chrisdaish/shellcheck || EXIT_CODE=1
