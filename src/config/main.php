@@ -122,6 +122,7 @@ $common = [
             'layout' => '@app/views/layouts/container',
             'defaultRoute' => 'profile',
             'admins' => ['admin'],
+            'roles' => ['user-module'],
             'enableFlashMessages' => false,
         ],
         'rbac' => [
@@ -132,14 +133,14 @@ $common = [
         'settings' => [
             'class' => 'pheme\settings\Module',
             'layout' => '@admin-views/layouts/box',
-            'accessRoles' => ['Admin'],
+            'accessRoles' => ['settings-module'],
         ],
         'translatemanager' => [
             'class' => 'lajax\translatemanager\Module',
             'root' => '@app/views',
             'layout' => '@admin-views/layouts/box',
             'allowedIPs' => ['*'],
-            'roles' => ['admin', 'translate-manager'],
+            'roles' => ['translate-module'],
         ],
         'treemanager' => [
             'class' => '\kartik\tree\Module',

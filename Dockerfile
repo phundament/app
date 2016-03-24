@@ -19,8 +19,9 @@ ADD web /app/web
 ADD src /app/src
 
 # Create folder writable by the application (non-persistent data)
-RUN mkdir -p /app/web/assets /app/runtime \
- && chmod 777 /app/web/assets /app/runtime
+# Prepare folders for Yii 2.0 Framework (www-data)
+RUN mkdir -p /app/runtime /app/web/assets && \
+    chown -R 1000:33 /app/runtime /app/web/assets
 
 RUN chmod -R u+x /app/src/bin
 ENV PATH /app/src/bin:${PATH}

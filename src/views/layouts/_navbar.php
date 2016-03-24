@@ -31,9 +31,7 @@ if (\Yii::$app->hasModule('user')) {
         $menuItems[] = [
             'label' => '<i class="glyphicon glyphicon-cog"></i>',
             'url' => ['/backend'],
-            'visible' => \Yii::$app->user->can(
-                    'backend_default'
-                ) || (isset(\Yii::$app->user->identity) && \Yii::$app->user->identity->isAdmin),
+            'visible' => \Yii::$app->user->can('backend_default_index', ['route'=>true]),
         ];
     }
 }
