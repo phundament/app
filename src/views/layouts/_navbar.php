@@ -41,7 +41,7 @@ NavBar::begin(
         'brandLabel' => getenv('APP_TITLE'),
         'brandUrl' => \Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar navbar-top',
+            'class' => 'navbar navbar-default navbar-top',
         ],
     ]
 );

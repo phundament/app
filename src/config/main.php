@@ -115,7 +115,7 @@ $common = [
         ],
         'prototype'    => [
             'class'  => 'dmstr\modules\prototype\Module',
-            'layout' => '@admin-views/layouts/main',
+            'layout' => '@admin-views/layouts/box',
         ],
         'user' => [
             'class' => 'dektrium\user\Module',
