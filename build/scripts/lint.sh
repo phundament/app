@@ -16,7 +16,7 @@ make help
 
 # Dockerfiles
 docker run --rm -v "${PWD}/${DOCKERFILE_PATH}/${DOCKERFILE}":/Dockerfile:ro redcoolbeans/dockerlint
-docker run --rm --privileged -v ${PWD}/${DOCKERFILE_PATH}:/root/ projectatomic/dockerfile-lint dockerfile_lint -f ${DOCKERFILE}
+docker run --rm --privileged -v "${PWD}/${DOCKERFILE_PATH}:/root/" projectatomic/dockerfile-lint dockerfile_lint -f ${DOCKERFILE}
 
 # composer packages
 docker-compose run --rm php composer diagnose || EXIT_CODE=1
