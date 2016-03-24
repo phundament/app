@@ -14,8 +14,8 @@ use yii\helpers\Html;
 
 <?php
 $controller = Yii::$app->createController($model['module'].'/'.$model['name']);
-foreach (Metadata::getControllerActions($controller[0]) AS $action) {
-    echo Html::a($action['route'], [$action['route']])."<br/>";
+foreach (Metadata::getControllerActions($controller[0]) as $action) {
+    echo Html::a($action['route'], [$action['route']]).'<br/>';
 }
 ?>
 

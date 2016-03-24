@@ -15,7 +15,7 @@ use yii\widgets\ListView;
 <?php
 $controllerDataProvider = new ArrayDataProvider(
     [
-        'allModels' => \dmstr\helpers\Metadata::getModuleControllers($key)
+        'allModels' => \dmstr\helpers\Metadata::getModuleControllers($key),
     ]
 );
 ?>
@@ -24,7 +24,7 @@ $controllerDataProvider = new ArrayDataProvider(
     [
         'dataProvider' => $controllerDataProvider,
         'layout' => "{items}\n{pager}",
-        'itemView' => '_controller'
+        'itemView' => '_controller',
     ]
 )
 ?>
@@ -39,8 +39,8 @@ $controllerDataProvider = new ArrayDataProvider(
             [
                 'label' => $key.' '.(is_object($model) ? '<span class="label label-info">loaded</span>' : ''),
                 'content' => $this->blocks['routes'],
-            ]
-        ]
+            ],
+        ],
     ]
 ); ?>
 

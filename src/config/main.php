@@ -83,7 +83,7 @@ $common = [
                 'docs/<file:[a-zA-Z0-9_\-\./]+>' => 'docs',
                 #'docs' => 'docs/default/index',
             ],
-            'languages' => explode(',',getenv('APP_LANGUAGES')),
+            'languages' => explode(',', getenv('APP_LANGUAGES')),
         ],
         'user' => [
             'class' => 'app\components\User',
@@ -113,8 +113,8 @@ $common = [
                 '/site/index' => '/site/index',
             ],
         ],
-        'prototype'    => [
-            'class'  => 'dmstr\modules\prototype\Module',
+        'prototype' => [
+            'class' => 'dmstr\modules\prototype\Module',
             'layout' => '@admin-views/layouts/box',
         ],
         'user' => [
@@ -158,7 +158,7 @@ $common = [
             '@dektrium/user/migrations',
             '@vendor/lajax/yii2-translate-manager/migrations',
             '@vendor/pheme/yii2-settings/migrations',
-            '@vendor/dmstr/yii2-prototype-module/src/migrations'
+            '@vendor/dmstr/yii2-prototype-module/src/migrations',
         ],
     ],
 
@@ -251,7 +251,7 @@ if (YII_ENV_DEV || YII_ENV_TEST) {
 
 if (file_exists(getenv('APP_CONFIG_FILE'))) {
     // Local configuration, if available
-    $local = require (getenv('APP_CONFIG_FILE'));
+    $local = require getenv('APP_CONFIG_FILE');
     $config = \yii\helpers\ArrayHelper::merge($config, $local);
 }
 

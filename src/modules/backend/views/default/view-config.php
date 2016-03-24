@@ -14,7 +14,7 @@ use yii\widgets\ListView;
         <?= ListView::widget(
             [
                 'dataProvider' => $loadedModulesDataProvider,
-                'itemView' => '_module'
+                'itemView' => '_module',
             ]
         )
         ?>

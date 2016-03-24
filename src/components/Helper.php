@@ -2,7 +2,7 @@
 
 namespace app\components;
 
-/**
+/*
  * @link http://www.diemeisterei.de/
  *
  * @copyright Copyright (c) 2015 diemeisterei GmbH, Stuttgart
@@ -50,7 +50,7 @@ class Helper extends Component
 
     /**
      * Password check
-     * Based upon http://stackoverflow.com/a/10753064
+     * Based upon http://stackoverflow.com/a/10753064.
      *
      * @param $pwd
      */
@@ -59,15 +59,15 @@ class Helper extends Component
         $errors = [];
 
         if (strlen($pwd) < 8) {
-            $errors[] = "Password too short!";
+            $errors[] = 'Password too short!';
         }
 
-        if (!preg_match("#[0-9]+#", $pwd)) {
-            $errors[] = "Password must include at least one number!";
+        if (!preg_match('#[0-9]+#', $pwd)) {
+            $errors[] = 'Password must include at least one number!';
         }
 
-        if (!preg_match("#[a-zA-Z]+#", $pwd)) {
-            $errors[] = "Password must include at least one letter!";
+        if (!preg_match('#[a-zA-Z]+#', $pwd)) {
+            $errors[] = 'Password must include at least one letter!';
         }
 
         if (count($errors) > 0) {

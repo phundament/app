@@ -21,4 +21,3 @@ if (is_file(__DIR__.'/../version')) {
 }
 
 defined('APP_VERSION') or define('APP_VERSION', $version);
-

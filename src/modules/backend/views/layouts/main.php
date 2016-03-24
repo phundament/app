@@ -151,7 +151,7 @@ $this->title = $this->title.' [Backend]';
             <?=
             \yii\widgets\Breadcrumbs::widget(
                 [
-                    'homeLink' => ['label'=>'Backend', 'url' => ['/backend']],
+                    'homeLink' => ['label' => 'Backend', 'url' => ['/backend']],
                     'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
                 ]
             ) ?>

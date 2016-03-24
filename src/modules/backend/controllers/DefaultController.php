@@ -82,7 +82,7 @@ class DefaultController extends Controller
         unset($config['params']);
 
         $loadedModules = Metadata::getModules();
-        $loadedModulesDataProvider = new ArrayDataProvider(['allModels'=>$loadedModules]);
+        $loadedModulesDataProvider = new ArrayDataProvider(['allModels' => $loadedModules]);
 
         return $this->render(
             'view-config',

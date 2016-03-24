@@ -2,7 +2,7 @@
 
 namespace app\modules\backend;
 
-/**
+/*
  * @link http://www.diemeisterei.de/
  *
  * @copyright Copyright (c) 2014 diemeisterei GmbH, Stuttgart
