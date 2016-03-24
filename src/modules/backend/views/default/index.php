@@ -93,4 +93,4 @@
 
 </div>
 
-<?= \dmstr\modules\prototype\widgets\HtmlWidget::widget(['enableFlash'=>true]); ?>
+<?= \dmstr\modules\prototype\widgets\HtmlWidget::widget(['enableFlash' => true]); ?>

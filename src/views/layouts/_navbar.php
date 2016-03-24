@@ -31,9 +31,7 @@ if (\Yii::$app->hasModule('user')) {
         $menuItems[] = [
             'label' => '<i class="glyphicon glyphicon-cog"></i>',
             'url' => ['/backend'],
-            'visible' => \Yii::$app->user->can(
-                    'backend_default'
-                ) || (isset(\Yii::$app->user->identity) && \Yii::$app->user->identity->isAdmin),
+            'visible' => \Yii::$app->user->can('backend_default_index', ['route' => true]),
         ];
     }
 }
@@ -43,7 +41,7 @@ NavBar::begin(
         'brandLabel' => getenv('APP_TITLE'),
         'brandUrl' => \Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar navbar-top',
+            'class' => 'navbar navbar-default navbar-top',
         ],
     ]
 );
@@ -64,5 +62,3 @@ echo Nav::widget(
 );
 
 NavBar::end();
-
-?>

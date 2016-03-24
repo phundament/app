@@ -2,7 +2,9 @@
 
 namespace app\modules\backend\controllers;
 
+use dmstr\helpers\Metadata;
 use Yii;
+use yii\data\ArrayDataProvider;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 
@@ -79,6 +81,9 @@ class DefaultController extends Controller
         $params = $config['params'];
         unset($config['params']);
 
+        $loadedModules = Metadata::getModules();
+        $loadedModulesDataProvider = new ArrayDataProvider(['allModels' => $loadedModules]);
+
         return $this->render(
             'view-config',
             [
@@ -86,6 +91,7 @@ class DefaultController extends Controller
                 'modules' => $modules,
                 'components' => $components,
                 'params' => $params,
+                'loadedModulesDataProvider' => $loadedModulesDataProvider,
             ]
         );
     }

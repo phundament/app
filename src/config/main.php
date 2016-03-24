@@ -83,7 +83,7 @@ $common = [
                 'docs/<file:[a-zA-Z0-9_\-\./]+>' => 'docs',
                 #'docs' => 'docs/default/index',
             ],
-            'languages' => explode(',',getenv('APP_LANGUAGES')),
+            'languages' => explode(',', getenv('APP_LANGUAGES')),
         ],
         'user' => [
             'class' => 'app\components\User',
@@ -113,15 +113,16 @@ $common = [
                 '/site/index' => '/site/index',
             ],
         ],
-        'prototype'    => [
-            'class'  => 'dmstr\modules\prototype\Module',
-            'layout' => '@admin-views/layouts/main',
+        'prototype' => [
+            'class' => 'dmstr\modules\prototype\Module',
+            'layout' => '@admin-views/layouts/box',
         ],
         'user' => [
             'class' => 'dektrium\user\Module',
             'layout' => '@app/views/layouts/container',
             'defaultRoute' => 'profile',
             'admins' => ['admin'],
+            // TODO: supported from 0.9.6 --- 'roles' => ['user-module'],
             'enableFlashMessages' => false,
         ],
         'rbac' => [
@@ -132,14 +133,14 @@ $common = [
         'settings' => [
             'class' => 'pheme\settings\Module',
             'layout' => '@admin-views/layouts/box',
-            'accessRoles' => ['Admin'],
+            'accessRoles' => ['settings-module'],
         ],
         'translatemanager' => [
             'class' => 'lajax\translatemanager\Module',
             'root' => '@app/views',
             'layout' => '@admin-views/layouts/box',
             'allowedIPs' => ['*'],
-            'roles' => ['admin', 'translate-manager'],
+            'roles' => ['translate-module'],
         ],
         'treemanager' => [
             'class' => '\kartik\tree\Module',
@@ -157,7 +158,7 @@ $common = [
             '@dektrium/user/migrations',
             '@vendor/lajax/yii2-translate-manager/migrations',
             '@vendor/pheme/yii2-settings/migrations',
-            '@vendor/dmstr/yii2-prototype-module/src/migrations'
+            '@vendor/dmstr/yii2-prototype-module/src/migrations',
         ],
     ],
 
@@ -248,9 +249,9 @@ if (YII_ENV_DEV || YII_ENV_TEST) {
     }
 }
 
-if (file_exists(__DIR__.'/local.php')) {
+if (file_exists(getenv('APP_CONFIG_FILE'))) {
     // Local configuration, if available
-    $local = require __DIR__.'/local.php';
+    $local = require getenv('APP_CONFIG_FILE');
     $config = \yii\helpers\ArrayHelper::merge($config, $local);
 }
 

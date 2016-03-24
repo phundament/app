@@ -5,6 +5,6 @@ $this->title .= 'Home';
 
 <div class="site-index">
 
-    <?= \dmstr\modules\prototype\widgets\HtmlWidget::widget(['enableFlash'=>true]) ?>
+    <?= \dmstr\modules\prototype\widgets\HtmlWidget::widget(['enableFlash' => true]) ?>
 
 </div>
