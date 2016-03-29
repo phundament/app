@@ -90,7 +90,7 @@ $common = [
             'enableAutoLogin' => true,
             'loginUrl' => ['/user/security/login'],
             'identityClass' => 'dektrium\user\models\User',
-            'rootUsers' => ['admin']
+            'rootUsers' => ['admin'],
         ],
         'view' => [
             'theme' => [
