@@ -122,7 +122,7 @@ $common = [
             'layout' => '@app/views/layouts/container',
             'defaultRoute' => 'profile',
             'admins' => ['admin'],
-            // TODO: supported from 0.9.6 --- 'roles' => ['user-module'],
+            'adminPermission' => 'user-module',
             'enableFlashMessages' => false,
         ],
         'rbac' => [
