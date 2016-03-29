@@ -1,5 +1,7 @@
 <?php
 
+// @group mandatory
+
 $I = new AcceptanceTester($scenario);
 
 $I->wantTo('ensure that home page is not visible without login');

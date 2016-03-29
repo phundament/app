@@ -1,5 +1,7 @@
 <?php
 
+// @group optional
+
 use tests\codeception\_pages\LoginPage;
 
 $I = new FunctionalTester($scenario);

@@ -1,9 +1,11 @@
 <?php
 
+// @group optional
+
 use tests\codeception\_pages\LoginPage;
 
 $I = new AcceptanceTester($scenario);
-$I->wantTo('ensure that login works');
+$I->wantTo('ensure that logout from frontend works');
 
 $loginPage = LoginPage::openBy($I);
 
@@ -15,8 +17,8 @@ $I->makeScreenshot('login-success');
 
 $I->expectTo('see user info');
 $I->click('.nav #link-user-menu a');
-#$i->wait(1);
 
-$I->seeElement('#link-logout');
+$I->amOnPage('/');
+$I->click('.dropdown-toggle','.link-user-menu');
 $I->click('#link-logout');
-$I->makeScreenshot('logout-success');
+$I->dontSee('admin');

@@ -1,6 +1,6 @@
 <?php
 
-use tests\codeception\_pages\AboutPage;
+// @group mandatory
 
 $I = new AcceptanceTester($scenario);
 $I->wantTo('ensure that sign-up works');

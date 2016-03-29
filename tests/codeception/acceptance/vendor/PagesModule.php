@@ -1,4 +1,7 @@
 <?php
+
+// @group mandatory
+
 use tests\codeception\_pages\LoginPage;
 
 $I = new AcceptanceTester($scenario);
