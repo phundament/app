@@ -39,7 +39,7 @@ class User extends \yii\web\User
     {
         switch (true) {
             // root users have all permissions
-            case (in_array(\Yii::$app->user->identity->username, $this->rootUsers)):
+            case (\Yii::$app->user->identity && in_array(\Yii::$app->user->identity->username, $this->rootUsers)):
                 return true;
                 break;
             case !empty($params['route']):
