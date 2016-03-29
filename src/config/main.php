@@ -90,6 +90,7 @@ $common = [
             'enableAutoLogin' => true,
             'loginUrl' => ['/user/security/login'],
             'identityClass' => 'dektrium\user\models\User',
+            'rootUsers' => ['admin']
         ],
         'view' => [
             'theme' => [
@@ -121,7 +122,6 @@ $common = [
             'class' => 'dektrium\user\Module',
             'layout' => '@app/views/layouts/container',
             'defaultRoute' => 'profile',
-            'admins' => ['admin'],
             'adminPermission' => 'user-module',
             'enableFlashMessages' => false,
         ],
