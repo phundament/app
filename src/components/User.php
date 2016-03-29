@@ -33,7 +33,8 @@ class User extends \yii\web\User
     public function can($permissionName, $params = [], $allowCaching = true)
     {
         switch (true) {
-            case \Yii::$app->user->identity && \Yii::$app->user->identity->isAdmin:
+            // Checking only admin user, otherwise we would run into a recursion (user->can()) in dektrium/yii2-user
+            case (\Yii::$app->user->identity && in_array(\Yii::$app->user->identity->username, \Yii::$app->getModule('user')->admins)):
                 return true;
                 break;
             case !empty($params['route']):
