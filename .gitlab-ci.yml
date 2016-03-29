@@ -57,6 +57,7 @@ lint:
   script:
       - make diagnose
       - bash build/scripts/lint.sh
+      - cp -r tests/_metrics/ /tmp/${BUILD_PREFIX}/${CI_BUILD_NAME}
   allow_failure: true
   except:
     - tags
