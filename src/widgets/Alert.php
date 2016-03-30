@@ -1,12 +1,13 @@
 <?php
+
+namespace app\widgets;
+
 /**
  * @link http://www.yiiframework.com/
  *
  * @copyright Copyright (c) 2008 Yii Software LLC
  * @license http://www.yiiframework.com/license/
  */
-
-namespace app\widgets;
 
 /**
  * Alert widget renders a message from session flash. All flash messages are displayed

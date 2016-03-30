@@ -4,11 +4,11 @@
         <div class="small-box bg-blue">
             <div class="inner">
                 <h3>
-                    <?= getenv('APP_NAME') ?>
+                    ID
                 </h3>
 
                 <p>
-                    Go to Frontend
+                    <?= getenv('APP_NAME') ?>
                 </p>
             </div>
             <div class="icon">

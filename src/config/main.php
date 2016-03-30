@@ -90,6 +90,7 @@ $common = [
             'enableAutoLogin' => true,
             'loginUrl' => ['/user/security/login'],
             'identityClass' => 'dektrium\user\models\User',
+            'rootUsers' => ['admin'],
         ],
         'view' => [
             'theme' => [
@@ -121,8 +122,7 @@ $common = [
             'class' => 'dektrium\user\Module',
             'layout' => '@app/views/layouts/container',
             'defaultRoute' => 'profile',
-            'admins' => ['admin'],
-            // TODO: supported from 0.9.6 --- 'roles' => ['user-module'],
+            'adminPermission' => 'user-module',
             'enableFlashMessages' => false,
         ],
         'rbac' => [
@@ -154,6 +154,7 @@ $common = [
     'params' => [
         'adminEmail' => getenv('APP_ADMIN_EMAIL'),
         'yii.migrations' => [
+            getenv('APP_MIGRATION_LOOKUP'),
             '@yii/rbac/migrations',
             '@dektrium/user/migrations',
             '@vendor/lajax/yii2-translate-manager/migrations',

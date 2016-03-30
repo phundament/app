@@ -1,5 +1,7 @@
 <?php
 
+// @group mandatory
+
 $I = new FunctionalTester($scenario);
 
 $I->wantTo('check application versioning');

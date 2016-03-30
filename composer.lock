@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8d549abfc000e8e4a7b4c5d1f9804604",
-    "content-hash": "676445a5ed2d2ba70a380319aa4d8d23",
+    "hash": "7097c23a2558459199818aab0ae05847",
+    "content-hash": "2e6c8208f40d55367fcc45ba8248616a",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
-            "version": "v2.3.2",
+            "version": "v2.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/almasaeed2010/AdminLTE.git",
-                "reference": "1ee281b3b99e8d8cccdc72fb8437c6888149cb46"
+                "reference": "8db979795044412a2e2b4e9659788c23cb59fcd3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/almasaeed2010/AdminLTE/zipball/1ee281b3b99e8d8cccdc72fb8437c6888149cb46",
-                "reference": "1ee281b3b99e8d8cccdc72fb8437c6888149cb46",
+                "url": "https://api.github.com/repos/almasaeed2010/AdminLTE/zipball/8db979795044412a2e2b4e9659788c23cb59fcd3",
+                "reference": "8db979795044412a2e2b4e9659788c23cb59fcd3",
                 "shasum": ""
             },
             "type": "library",
@@ -45,7 +45,7 @@
                 "theme",
                 "web"
             ],
-            "time": "2015-10-23 14:50:49"
+            "time": "2016-03-24 14:31:41"
         },
         {
             "name": "bower-asset/ace-builds",
@@ -658,16 +658,16 @@
         },
         {
             "name": "dektrium/yii2-user",
-            "version": "v0.9.5",
+            "version": "0.9.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dektrium/yii2-user.git",
-                "reference": "84100e0e63e2052ef4ddd12f1840dfd092446e23"
+                "reference": "ae737861ff170b9c4376b274244bd9994ee0d248"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dektrium/yii2-user/zipball/84100e0e63e2052ef4ddd12f1840dfd092446e23",
-                "reference": "84100e0e63e2052ef4ddd12f1840dfd092446e23",
+                "url": "https://api.github.com/repos/dektrium/yii2-user/zipball/ae737861ff170b9c4376b274244bd9994ee0d248",
+                "reference": "ae737861ff170b9c4376b274244bd9994ee0d248",
                 "shasum": ""
             },
             "require": {
@@ -717,7 +717,7 @@
                 "yii2",
                 "yii2-user"
             ],
-            "time": "2015-09-27 14:49:11"
+            "time": "2016-03-27 18:09:10"
         },
         {
             "name": "devgroup/yii2-jsoneditor",
@@ -870,24 +870,24 @@
         },
         {
             "name": "dmstr/yii2-cms-metapackage",
-            "version": "3.2.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-cms-metapackage.git",
-                "reference": "458154babde02ae0781e34fbe3602a896741bfc7"
+                "reference": "dcdf3e81614c626a1e27f30f152fd1b769d127e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-cms-metapackage/zipball/458154babde02ae0781e34fbe3602a896741bfc7",
-                "reference": "458154babde02ae0781e34fbe3602a896741bfc7",
+                "url": "https://api.github.com/repos/dmstr/yii2-cms-metapackage/zipball/dcdf3e81614c626a1e27f30f152fd1b769d127e7",
+                "reference": "dcdf3e81614c626a1e27f30f152fd1b769d127e7",
                 "shasum": ""
             },
             "require": {
                 "dektrium/yii2-rbac": "~0.2",
-                "dektrium/yii2-user": "^0.9.5",
+                "dektrium/yii2-user": "^0.9.6",
                 "dmstr/yii2-adminlte-asset": "^2.2.4",
                 "dmstr/yii2-libs-metapackage": "~0.1",
-                "dmstr/yii2-pages-module": "^0.11.3 || ~0.12",
+                "dmstr/yii2-pages-module": "0.12.0-beta2",
                 "dmstr/yii2-prototype-module": "~0.0",
                 "insolita/yii2-adminlte-widgets": "~1.1",
                 "lajax/yii2-translate-manager": "^1.5.1",
@@ -906,7 +906,7 @@
                 }
             ],
             "description": "Content Management Extensions for Phundament 4 (Yii 2.0 Framework)",
-            "time": "2016-03-04 18:12:12"
+            "time": "2016-03-29 08:21:42"
         },
         {
             "name": "dmstr/yii2-db",
@@ -1074,16 +1074,16 @@
         },
         {
             "name": "dmstr/yii2-pages-module",
-            "version": "0.11.3",
+            "version": "0.12.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-pages-module.git",
-                "reference": "6407f5dffd8d321ceeba2237678541c68e189494"
+                "reference": "07cd7404c7cd757f2a8a9629e8e348149b4b8f74"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-pages-module/zipball/6407f5dffd8d321ceeba2237678541c68e189494",
-                "reference": "6407f5dffd8d321ceeba2237678541c68e189494",
+                "url": "https://api.github.com/repos/dmstr/yii2-pages-module/zipball/07cd7404c7cd757f2a8a9629e8e348149b4b8f74",
+                "reference": "07cd7404c7cd757f2a8a9629e8e348149b4b8f74",
                 "shasum": ""
             },
             "require": {
@@ -1091,7 +1091,7 @@
                 "kartik-v/yii2-tree-manager": "~1.0.3",
                 "kartik-v/yii2-widget-select2": "^2.0.1",
                 "rmrevin/yii2-fontawesome": "~2.9",
-                "yiisoft/yii2": "2.0.*"
+                "yiisoft/yii2": "^2.0.6"
             },
             "type": "yii2-extension",
             "extra": {
@@ -1123,7 +1123,7 @@
                 "navigation",
                 "yii2"
             ],
-            "time": "2016-02-05 09:10:28"
+            "time": "2016-03-23 20:52:43"
         },
         {
             "name": "dmstr/yii2-prototype-module",
@@ -3772,7 +3772,10 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "dmstr/yii2-pages-module": 10,
+        "dmstr/yii2-cms-metapackage": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

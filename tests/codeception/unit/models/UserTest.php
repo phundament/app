@@ -15,17 +15,26 @@ class UserTest extends TestCase
         parent::setUp();
     }
 
+    /**
+     * @group mandatory
+     */
     public function testUserLogout()
     {
         $this->assertTrue(\Yii::$app->user->logout());
     }
 
+    /**
+     * @group mandatory
+     */
     public function testUserLogin()
     {
         $identity = User::findIdentity(1);
         $this->assertTrue(\Yii::$app->user->login($identity, 3600));
     }
 
+    /**
+     * @group mandatory
+     */
     public function testNonExistingUserModel()
     {
         $identity = User::findIdentity(99999);

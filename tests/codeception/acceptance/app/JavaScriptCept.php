@@ -1,5 +1,7 @@
 <?php
 
+// @group mandatory
+
 $I = new AcceptanceTester($scenario);
 
 $I->wantTo('ensure that JavaScript works');

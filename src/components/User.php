@@ -22,6 +22,11 @@ class User extends \yii\web\User
     const PUBLIC_ROLE = 'Public';
 
     /**
+     * @var array Users with all permissions
+     */
+    public $rootUsers = [];
+
+    /**
      * Extended permission check with `Guest` role and `route`.
      *
      * @param string    $permissionName
@@ -33,7 +38,8 @@ class User extends \yii\web\User
     public function can($permissionName, $params = [], $allowCaching = true)
     {
         switch (true) {
-            case \Yii::$app->user->identity && \Yii::$app->user->identity->isAdmin:
+            // root users have all permissions
+            case \Yii::$app->user->identity && in_array(\Yii::$app->user->identity->username, $this->rootUsers):
                 return true;
                 break;
             case !empty($params['route']):
