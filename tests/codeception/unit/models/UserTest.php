@@ -18,14 +18,6 @@ class UserTest extends TestCase
     /**
      * @group mandatory
      */
-    public function testUserLogout()
-    {
-        $this->assertTrue(\Yii::$app->user->logout());
-    }
-
-    /**
-     * @group mandatory
-     */
     public function testUserLogin()
     {
         $identity = User::findIdentity(1);
@@ -40,4 +32,13 @@ class UserTest extends TestCase
         $identity = User::findIdentity(99999);
         $this->assertNull($identity);
     }
+
+    /**
+     * @group mandatory
+     */
+    public function testUserLogout()
+    {
+        $this->assertTrue(\Yii::$app->user->logout());
+    }
+
 }
