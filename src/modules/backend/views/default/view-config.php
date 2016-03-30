@@ -3,6 +3,7 @@
 namespace _;
 
 use yii\helpers\Json;
+use yii\helpers\VarDumper;
 use yii\widgets\ListView;
 
 ?>
@@ -20,19 +21,6 @@ use yii\widgets\ListView;
         ?>
     </div>
 
-    <h2>Application</h2>
-<?php foreach ($config as $name => $element): ?>
-    <div class="row">
-        <div class="col-sm-2">
-            <b><?= $name ?></b>
-        </div>
-        <div class="col-sm-10">
-<pre>
-<?= Json::encode($element, JSON_PRETTY_PRINT) ?>
-</pre>
-        </div>
-    </div>
-<?php endforeach ?>
 
 <h2>Params</h2>
 <?php foreach ($params as $name => $element): ?>
@@ -71,7 +59,7 @@ use yii\widgets\ListView;
         </div>
         <div class="col-sm-10">
 <pre>
-<?= Json::encode($element, JSON_PRETTY_PRINT) ?>
+<?= VarDumper::dumpAsString($element, 1, true) ?>
 </pre>
         </div>
     </div>

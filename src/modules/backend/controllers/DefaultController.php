@@ -73,24 +73,15 @@ class DefaultController extends Controller
      */
     public function actionViewConfig()
     {
-        $config = $GLOBALS['config'];
-        $modules = $config['modules'];
-        unset($config['modules']);
-        $components = $config['components'];
-        unset($config['components']);
-        $params = $config['params'];
-        unset($config['params']);
-
         $loadedModules = Metadata::getModules();
         $loadedModulesDataProvider = new ArrayDataProvider(['allModels' => $loadedModules]);
 
         return $this->render(
             'view-config',
             [
-                'config' => $config,
-                'modules' => $modules,
-                'components' => $components,
-                'params' => $params,
+                'params' => Yii::$app->params,
+                'components' => Yii::$app->getComponents(),
+                'modules' => Yii::$app->getModules(),
                 'loadedModulesDataProvider' => $loadedModulesDataProvider,
             ]
         );
