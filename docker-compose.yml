@@ -7,7 +7,7 @@ services:
     depends_on:
       - db
     networks:
-      internal:
+      default:
         aliases:
           - phpfpm
 
@@ -15,18 +15,8 @@ services:
     image: phundament/nginx-one:1.9
     depends_on:
       - php
-    networks:
-      internal:
-      external:
 
   db:
     image: 'percona:5.6'
     environment:
       MYSQL_ROOT_PASSWORD: secretadmin
-    networks:
-      internal:
-
-networks:
-  internal:
-  external:
-
