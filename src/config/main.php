@@ -243,11 +243,8 @@ if (YII_ENV_DEV || YII_ENV_TEST) {
         'allowedIPs' => $allowedIPs,
     ];
 
-    if (file_exists(__DIR__.'/giiant.php')) {
-        // Local configuration, if available
-        $giiant = require __DIR__.'/giiant.php';
-        $config = \yii\helpers\ArrayHelper::merge($config, $giiant);
-    }
+    $giiant = require __DIR__.'/giiant.php';
+    $config = \yii\helpers\ArrayHelper::merge($config, $giiant);
 }
 
 if (file_exists(getenv('APP_CONFIG_FILE'))) {

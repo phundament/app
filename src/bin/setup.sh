@@ -10,4 +10,5 @@ yii db/create
 yii migrate --interactive=0 --migrationLookup=${APP_MIGRATION_LOOKUP}
 yii app/setup-admin-user --interactive=0
 
-echo "\nApplication initialized."
+echo ""
+echo "Application initialized."
