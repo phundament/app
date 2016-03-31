@@ -1,7 +1,10 @@
 version: '2'
 services:
   php:
-    image: app_php
+    environment:
+      - YII_ENV=prod
+    env_file:
+      - build/compose/stage.env
     volumes:
       - /app
   nginx:
