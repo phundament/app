@@ -1,18 +1,18 @@
-# Phundament 4 - Local development overrides
+# phd - local development overrides
 
-php:
-  volumes:
-    - .:/app
-  environment:
-    - YII_ENV=dev
-    - YII_DEBUG=1
-
-nginx:
-  ports:
-    - '40080:80'
-  volumes:
-    - .:/app
-
-mariadb:
-  ports:
-    - '43306:3306'
+version: '2'
+services:
+  php:
+    volumes:
+      - .:/app
+    environment:
+      - YII_ENV=dev
+      - YII_DEBUG=1
+      - DB_PORT_3306_TCP_ADDR=db
+      - DB_PORT_3306_TCP_PORT=3306
+      - DB_ENV_MYSQL_ROOT_PASSWORD=secretadmin
+  nginx:
+    ports:
+      - '40080:80'
+    volumes:
+      - .:/app

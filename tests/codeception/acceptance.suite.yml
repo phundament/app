@@ -17,7 +17,7 @@ modules:
             url: 'http://web/'
     config:
         WebDriver:
-            host: HUB
+            host: hub
             url: http://WEB:80/
             browser: firefox
             port: 4444
@@ -29,7 +29,7 @@ env:
             config:
                 WebDriver:
                     browser: 'chrome'
-                    host: HUB
+                    host: hub
                     window_size: 1280x720
 
     firefox:

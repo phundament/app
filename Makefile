@@ -55,6 +55,7 @@ setup:	##@docker setup application packages and database
 clean:  ##@docker remove application containers
 	$(DOCKER_COMPOSE) kill
 	$(DOCKER_COMPOSE) rm -fv
+	-$(DOCKER_COMPOSE) down
 
 tests:
 	$(MAKE) build

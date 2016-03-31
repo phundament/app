@@ -1,29 +1,41 @@
-php:
-  image: ${BUILD_PREFIX}_php
-  volumes:
-    - /app
-  environment:
-    - YII_ENV=prod
-nginx:
-  volumes_from:
-    - php
-  ports:
-    - '80'
-tester:
-  image: ${BUILD_PREFIX}_php
-  links:
-    - 'mariadb:DB'
-    - 'seleniumfirefox:HUB'
-    - 'nginx:WEB'
-  volumes:
-    - ./codeception.yml:/app/codeception.yml
-    - ./tests:/app/tests
-  environment:
-    - YII_ENV=test
-seleniumfirefox:
-  image: selenium/standalone-firefox-debug:2.47.1
-  links:
-    - 'nginx:WEB'
-  ports:
-    - '4444'
-    - '5900'
+version: '2'
+services:
+  php:
+    image: ${BUILD_PREFIX}_php
+    volumes:
+      - /app
+    environment:
+      - YII_ENV=prod
+      - DB_PORT_3306_TCP_ADDR=db
+      - DB_PORT_3306_TCP_PORT=3306
+  nginx:
+    volumes_from:
+      - php
+    ports:
+      - '80'
+    networks:
+      default:
+        aliases:
+          - web
+  tester:
+    image: ${BUILD_PREFIX}_php
+    depends_on:
+      - seleniumfirefox
+    volumes:
+      - ./codeception.yml:/app/codeception.yml
+      - ./tests:/app/tests
+    environment:
+      - YII_ENV=test
+      - DB_PORT_3306_TCP_ADDR=db
+      - DB_PORT_3306_TCP_PORT=3306
+      - DB_ENV_MYSQL_ROOT_USER=root
+      - DB_ENV_MYSQL_ROOT_PASSWORD=secretadmin
+  seleniumfirefox:
+    image: selenium/standalone-firefox-debug:2.47.1
+    ports:
+      - '4444'
+      - '5900'
+    networks:
+      default:
+        aliases:
+          - hub

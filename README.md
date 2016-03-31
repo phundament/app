@@ -10,7 +10,7 @@ Requirements
 ------------
 
 - [docker](https://docs.docker.com/engine/installation/)
-- [docker-compose](https://docs.docker.com/compose/) **>=1.5.2**
+- [docker-compose](https://docs.docker.com/compose/) **>=1.6.2**
 
 > For alternative installation methods, such as composer, see the [docs](https://github.com/phundament/docs).  
 

@@ -43,7 +43,7 @@ set +e
 
 # Check docker-compose
 echo "docker-compose..."
-DOCKER_COMPOSE_MIN_VERSION=1.5.1
+DOCKER_COMPOSE_MIN_VERSION=1.6.2
 if [[ $(docker-compose --version) =~ version[:]?\ ([^,]*)[,]? ]]; then
     DOCKER_COMPOSE_VERSION=${BASH_REMATCH[1]}
     echo "${DOCKER_COMPOSE_VERSION} >= ${DOCKER_COMPOSE_MIN_VERSION}"

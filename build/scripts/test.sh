@@ -11,6 +11,6 @@ set -v
 
 set +e
 
-make TEST run-tests codecept_opts='unit,cli,functional,acceptance -g mandatory --html=_report_mandatory.html' || EXIT_CODE=1
+make TEST run-tests codecept_opts='functional,unit,cli,acceptance -g mandatory --html=_report_mandatory.html' || EXIT_CODE=1
 
 exit ${EXIT_CODE}
