@@ -45,8 +45,8 @@ before_script:
   - php yii app/setup-admin-user --interactive=0
 
 script:
-  - codecept -v run unit
-  - codecept -vv run functional
+  - codecept -v run unit -g mandatory
+  - codecept -vv run functional -g mandatory
 
 after_success:
   - php yii app/setup-docs --interactive=0
