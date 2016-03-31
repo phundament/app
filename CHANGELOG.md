@@ -1,13 +1,25 @@
-CHANGELOG
-=========
-
 ## dmstr/phd
 
-### 4.2.1-dev
+### 4.3.0-dev
 
 - fixed `APP_CONFIG_FILE` support
 - backend sidebar view cleanup
 - updated backend access tests
+- updated Docker test & build process
+- updated docker-compose configuration to v2 format
+- added tests and test-groups
+- updated ENV defaults
+- fixed travis test path
+- updated backend dashboard
+- added adminPermission for user module access
+- updated user root/admin check (compatibility with yii2-user 0.9.5, 0.9.6)
+- backend sidebar view cleanup, added "backend" root node support
+- updated asset config
+- updated hostnames in testing to use lowercase values, see https://github.com/docker/docker/issues/21169
+- updated PHP base image
+- removed `config/bootstrap.php`; moved content to main config
+- removed application params 'appName' and 'supportEmail', removed ENV variable `APP_SUPPORT_EMAIL`, `BUILD_APP_VOLUME`
+- moved `giiant-batch.sh` to `yii batch`
 
 ### 4.2.0 (11.3.2016)
 
