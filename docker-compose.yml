@@ -4,6 +4,7 @@ version: '2'
 services:
   php:
     build: .
+    image: local/myapp/php:${BUILD_PREFIX}
     depends_on:
       - db
     networks:

@@ -1,9 +1,8 @@
 version: '2'
 services:
   php:
-    image: ${BUILD_PREFIX}_php
     volumes:
-      - /app
+      - /app/web
     environment:
       - YII_ENV=prod
       - DB_PORT_3306_TCP_ADDR=db
@@ -18,7 +17,7 @@ services:
         aliases:
           - web
   tester:
-    image: ${BUILD_PREFIX}_php
+    image: local/myapp/php:${BUILD_PREFIX}
     depends_on:
       - seleniumfirefox
     volumes:
