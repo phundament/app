@@ -6,7 +6,7 @@
  */
 return [
     // Adjust command/callback for JavaScript files compressing:
-    'jsCompressor' => 'java -jar /root/compiler.jar --js {from} --js_output_file {to}',
+    'jsCompressor' => 'java -jar /usr/lib/node_modules/google-closure-compiler/compiler.jar --js {from} --js_output_file {to}',
     // Adjust command/callback for CSS files compressing:
     'cssCompressor' => 'yui-compressor --type css {from} -o {to}',
     // The list of asset bundles to compress:

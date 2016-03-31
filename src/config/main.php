@@ -23,7 +23,7 @@ $common = [
             // Note: For using mounted volumes or shared folders
             'dirMode' => YII_ENV_PROD ? 0777 : null,
             'bundles' => getenv('APP_ASSET_USE_BUNDLED') ?
-                require(__DIR__.'/assets-gen/prod.php') :
+                require(__DIR__.'/gen/bundle-prod.php') :
                 [
                     // Note: if your asset bundle includes bootstrap, you can disable the default asset
                     #'yii\bootstrap\BootstrapAsset' => false,
