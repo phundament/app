@@ -59,7 +59,7 @@ lint:
       - set +e
       - bash build/scripts/lint.sh
       - set -e
-      - cp -r tests/_metrics/ /tmp/${BUILD_PREFIX}/${CI_BUILD_NAME} || EXIT_CODE=$?
+      - cp -r tests/_lint/ /tmp/${BUILD_PREFIX}/${CI_BUILD_NAME} || EXIT_CODE=$?
       - exit ${EXIT_CODE}
   allow_failure: true
   except:
