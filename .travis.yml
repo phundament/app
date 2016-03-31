@@ -46,7 +46,7 @@ before_script:
 
 script:
   - codecept -v run unit
-  - codecept -vv run functional prod
+  - codecept -vv run functional
 
 after_success:
   - php yii app/setup-docs --interactive=0
