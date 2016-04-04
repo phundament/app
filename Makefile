@@ -23,7 +23,7 @@ endif
 
 default: help
 
-all: diagnose init build up setup open    ##@docker build, setup, start & open application
+all: diagnose build init up setup open    ##@docker build, setup, start & open application
 
 diagnose: ##@system check requirements
 	bash build/scripts/requirements.sh
@@ -39,14 +39,14 @@ bash:	##@docker open application shell in container
 	$(DOCKER_COMPOSE) run --rm $(PHP_SERVICE) bash
 
 build:	##@docker build application images
-	$(DOCKER_COMPOSE) run --rm $(PHP_SERVICE) composer install
 	$(shell echo $(shell git describe --long --tags --dirty --always) > src/version)
 	@echo $(shell cat src/version)
 	$(DOCKER_COMPOSE) build
 
-init:
+init:   ##@docker setup config files and install composer vendor packages (host-volume required)
 	cp -n .env-dist .env &2>/dev/null
 	cp -n docker-compose.override-dist.yml docker-compose.override.yml &2>/dev/null
+	$(DOCKER_COMPOSE) run --rm $(PHP_SERVICE) composer install
 
 setup:	##@docker setup application packages and database
 	echo $(COMPOSE_FILE)
