@@ -17,7 +17,7 @@ services:
         aliases:
           - web
   tester:
-    image: local/phd/app:${BUILD_PREFIX}
+    image: local/phd/app${IMAGE_TAG}
     depends_on:
       - seleniumfirefox
     volumes:

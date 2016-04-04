@@ -31,7 +31,7 @@ docker-compose run --rm php composer show -i || EXIT_CODE=1
 docker-compose run --rm php climb || EXIT_CODE=1
 
 # PHP source
-docker-compose run --rm php vendor/bin/php-cs-fixer fix --dry-run --format=txt -v src || EXIT_CODE=1
+docker-compose run --rm php vendor/bin/php-cs-fixer fix --format=txt -v --dry-run src || EXIT_CODE=1
 docker run --rm -v "${PWD}:/project" jolicode/phaudit phpcpd src/
 docker run --rm -v "${PWD}:/project" jolicode/phaudit phploc src/ > tests/_lint/loc.txt
 docker run --rm -v "${PWD}:/project" jolicode/phaudit phpmd src html cleancode,codesize,controversial,design,naming,unusedcode > tests/_lint/mess.html
