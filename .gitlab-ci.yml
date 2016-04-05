@@ -85,3 +85,4 @@ deploy:
     - bash build/scripts/deploy.sh
   only:
     - master
+    - tags
