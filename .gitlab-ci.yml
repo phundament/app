@@ -22,8 +22,6 @@ build:
   script:
       - cp .env-dist .env
       - make build
-  except:
-    - tags
 
 test:
   stage: test
@@ -34,8 +32,6 @@ test:
       - set -e
       - cp -r tests/codeception/_output/ /tmp/${BUILD_PREFIX}/${CI_BUILD_NAME}
       - exit ${EXIT_CODE}
-  except:
-    - tags
 
 test-allow_failure:
   stage: test_pre
@@ -62,8 +58,6 @@ lint:
       - cp -r tests/_lint/ /tmp/${BUILD_PREFIX}/${CI_BUILD_NAME} || EXIT_CODE=$?
       - exit ${EXIT_CODE}
   allow_failure: true
-  except:
-    - tags
 
 report:
   stage: report
@@ -73,8 +67,6 @@ report:
     paths:
       - $(basename $PWD)-${CI_BUILD_REF}
   when: always
-  except:
-    - tags
 
 cleanup:
   stage: cleanup
@@ -86,8 +78,6 @@ cleanup:
     - make TEST clean
     - rm -rf /tmp/${BUILD_PREFIX}
   when: always
-  except:
-    - tags
 
 deploy:
   stage: deploy
@@ -95,5 +85,3 @@ deploy:
     - bash build/scripts/deploy.sh
   only:
     - master
-  except:
-    - tags
