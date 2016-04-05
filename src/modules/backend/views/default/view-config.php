@@ -8,18 +8,18 @@ use yii\widgets\ListView;
 
 ?>
 
-    <h1>Configuration</h1>
+<h1>Configuration</h1>
 
 <h2>Controllers</h2>
-    <div class="box">
-        <?= ListView::widget(
-            [
-                'dataProvider' => $loadedModulesDataProvider,
-                'itemView' => '_module',
-            ]
-        )
-        ?>
-    </div>
+<div class="box">
+    <?= ListView::widget(
+        [
+            'dataProvider' => $loadedModulesDataProvider,
+            'itemView' => '_module',
+        ]
+    )
+    ?>
+</div>
 
 
 <h2>Params</h2>
@@ -51,7 +51,7 @@ use yii\widgets\ListView;
     </div>
 <?php endforeach ?>
 
-    <h2>Modules</h2>
+<h2>Modules</h2>
 <?php foreach ($modules as $name => $element): ?>
     <div class="row">
         <div class="col-sm-2">

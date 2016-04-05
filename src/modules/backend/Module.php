@@ -11,8 +11,6 @@ namespace app\modules\backend;
  * file that was distributed with this source code.
  */
 
-use yii\helpers\ArrayHelper;
-
 /**
  * Class Module.
  *
@@ -20,5 +18,4 @@ use yii\helpers\ArrayHelper;
  */
 class Module extends \yii\base\Module
 {
-
 }

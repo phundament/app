@@ -167,7 +167,10 @@ $this->title = $this->title.' [Backend]';
     </div>
     <!-- /.content-wrapper -->
     <footer class="main-footer">
-        <strong><?= getenv('APP_NAME') ?>-<?= APP_VERSION ?></strong> built with <a href="http://phundament.com" target="_blank">phd</a>
+        <strong>
+        <?= getenv('APP_NAME') ?>-<?= APP_VERSION ?></strong> 
+        built with 
+        <a href="http://phundament.com" target="_blank">phd</a>
     </footer>
 </div>
 <!-- ./wrapper -->

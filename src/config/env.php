@@ -11,7 +11,9 @@ $dotenv->required(['APP_LANGUAGES']);
 $dotenv->required(['DATABASE_DSN', 'DATABASE_USER', 'DATABASE_PASSWORD']);
 
 if (!preg_match('/^[a-z0-9_-]{3,16}$/', getenv('APP_NAME'))) {
-    throw new \Dotenv\Exception\ValidationException('APP_NAME must only be lowercase, dash or underscore and 3-16 characters long.');
+    throw new \Dotenv\Exception\ValidationException(
+        'APP_NAME must only be lowercase, dash or underscore and 3-16 characters long.'
+    );
 }
 
 if (is_file(__DIR__.'/../version')) {
