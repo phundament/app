@@ -1,4 +1,4 @@
-FROM phundament/php-one:5.6-fpm-5.0.0-beta6
+FROM phundament/php-one:5.6-fpm-5.0.0-beta7
 
 # Clean eventually orphaned files and remove installation source
 RUN rm -rf /app/src /app/web /app-src
