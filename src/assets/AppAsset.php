@@ -21,21 +21,22 @@ class AppAsset extends AssetBundle
 {
     public $sourcePath = '@app/assets/web';
 
+    public $js = [
+        'js/app.js',
+    ];
+
     public $css = [
         // Note: less files require a compiler (available by default on Phundament Docker images)
         // use .css alternatively
         #'less/app.less',
     ];
 
-    public $js = [
-        'js/app.js',
-    ];
-
-    // we recompile the less files from 'yii\bootstrap\BootstrapAsset' and include the css in app.css
-    // therefore we set bundle to false in application config
     public $depends = [
-        'yii\bootstrap\BootstrapAsset',
         'yii\web\YiiAsset',
+        'yii\bootstrap\BootstrapPluginAsset',
+        // if we recompile the less files from 'yii\bootstrap\BootstrapAsset' and include the css in app.css
+        // we need set bundle to `false` in application config and remove the following line
+        'yii\bootstrap\BootstrapAsset',
     ];
 
     public function init()
