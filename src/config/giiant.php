@@ -46,7 +46,7 @@ return [
             'crudViewPath' => '@app/modules/crud/views',
             'crudPathPrefix' => '/crud/',
             'crudProviders' => [
-                'schmunk42\\giiant\\generators\\crud\\providers\\optsProvider',
+                'schmunk42\\giiant\\generators\\crud\\providers\\OptsProvider',
             ],
             'tablePrefix' => 'app_',
             /*'tables' => [
