@@ -30,13 +30,12 @@
   },
   "minimum-stability": "stable",
   "require": {
-    "dmstr/yii2-pages-module": "0.12.0-beta2",
-    "dmstr/yii2-cms-metapackage": "dev-master",
+    "dmstr/yii2-cms-metapackage": "^4.2.0",
     "vlucas/phpdotenv": "2.*",
     "yiisoft/yii2": "^2.0.7"
   },
   "require-dev": {
-    "dmstr/yii2-cms-dev-metapackage": "~1.0"
+    "dmstr/yii2-cms-dev-metapackage": "^1.1.0"
   },
   "extra": {
     "asset-installer-paths": {
