@@ -14,8 +14,8 @@ stages:
   - test_pre
   - test
   - report
-  - cleanup
   - deploy
+  - cleanup
 
 build:
   stage: build
