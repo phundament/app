@@ -5,7 +5,7 @@ RUN rm -rf /app/src /app/web /app-src
 
 # Prepare container
 # /!\ Note: Please add your own API token to config.json
-# Phundament comes with a public token for your convenince which may hit the GitHub rate limit
+# Phundament comes with a public token for your convenience which may hit the GitHub rate limit
 COPY ./build/container-files/ /
 
 # Install application packages, if there are changes the composer files
