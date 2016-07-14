@@ -3,7 +3,7 @@ coverage:
 #    enabled: true
 #    c3_url: http://web/
 #    remote: false
-    white_list:
+    whitelist:
         include:
             - src/*
     blacklist:
