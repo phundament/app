@@ -30,7 +30,7 @@
   },
   "minimum-stability": "stable",
   "require": {
-    "dmstr/yii2-cms-metapackage": "^4.2.0",
+    "dmstr/yii2-cms-metapackage": "^5.0.1",
     "vlucas/phpdotenv": "2.*",
     "yiisoft/yii2": "^2.0.7"
   },

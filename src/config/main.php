@@ -34,7 +34,7 @@ $common = [
             'class' => 'yii\rbac\DbManager',
         ],
         'cache' => [
-            'class' => 'yii\caching\FileCache',
+            'class' => 'yii\caching\DummyCache',
         ],
         'db' => [
             'class' => 'yii\db\Connection',
@@ -67,9 +67,9 @@ $common = [
             'useFileTransport' => YII_ENV_PROD ? false : true,
         ],
         // Note: enable db sessions, if multiple containers are running
-        #'session' => [
-        #    'class' => 'yii\web\DbSession'
-        #],
+        'session' => [
+            'class' => 'yii\web\Session'
+        ],
         'settings' => [
             'class' => 'pheme\settings\components\Settings',
         ],
