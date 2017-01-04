@@ -48,3 +48,4 @@ docker-compose.override.yml
 version
 .phptidy-cache
 src/config/gen
+tests/codeception/_support
