@@ -1,7 +1,14 @@
-Phundament 4
-============
+phd4
+====
 
-Phundament is a dockerized 12factor PHP application template for Yii Framework 2.0.
+---
+
+> [Version :five:](https://github.com/dmstr/phd5-app) is coming...
+
+---
+
+
+phd is a dockerized 12factor PHP application template for Yii Framework 2.0.
 
 - Full [documentation](https://github.com/phundament/docs)
 - [Demo](https://github.com/phundament/playground) at Phundament playground
