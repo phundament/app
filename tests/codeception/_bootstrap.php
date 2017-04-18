@@ -23,3 +23,4 @@ $_SERVER['SERVER_PORT'] =  parse_url(\Codeception\Configuration::config()['confi
 
 Yii::setAlias('@tests', dirname(__DIR__));
 
+new yii\console\Application( require(__DIR__ . '/../../src/config/main.php'));
