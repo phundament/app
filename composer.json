@@ -32,7 +32,8 @@
   "require": {
     "dmstr/yii2-cms-metapackage": "^5.0.1",
     "vlucas/phpdotenv": "2.*",
-    "yiisoft/yii2": "^2.0.7"
+    "yiisoft/yii2": "^2.0.7",
+    "yiisoft/yii2-codeception": "^2.0"
   },
   "require-dev": {
     "dmstr/yii2-cms-dev-metapackage": "^1.1.0"
