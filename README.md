@@ -1,12 +1,11 @@
+## :rotating_light: THIS PROJECT IS DEPRECATED - Next version [phd5](https://github.com/dmstr/phd5-app) is available
+
+---
+
 phd4
 ====
 
----
-
-> [Version :five:](https://github.com/dmstr/phd5-app) is coming...
-
----
-
+*formerly known as Phundament 4*
 
 phd is a dockerized 12factor PHP application template for Yii Framework 2.0.
 
