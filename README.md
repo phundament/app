@@ -2,7 +2,7 @@
 
 ---
 
-phd4
+PHD4
 ====
 
 *formerly known as Phundament 4*
@@ -12,7 +12,7 @@ phd is a dockerized 12factor PHP application template for Yii Framework 2.0.
 - Full [documentation](https://github.com/phundament/docs)
 - [Demo](https://github.com/phundament/playground) at Phundament playground
 
-Requirements
+Requirements :-
 ------------
 
 - [docker](https://docs.docker.com/engine/installation/)
@@ -21,7 +21,7 @@ Requirements
 > For alternative installation methods, such as composer, see the [docs](https://github.com/phundament/docs).  
 
 
-Installation
+Installation :-
 ------------
 
 [Download](https://github.com/phundament/app/releases) or clone the repository and go to the application directory
@@ -49,7 +49,7 @@ Run setup commands
 After startup is complete, open `http://<DOCKER_HOST>:40080` to access the application and login with `admin`/`admin`.
 
 
-Configuration
+Configuration :-
 -------------
 
 ### Environment overrides - `docker-compose.override.yml`
@@ -129,7 +129,7 @@ Web UI for application wide key-value store.
 :bulb: To enable public access you need to assign permissions, like `app_site`, `docs_default`, to the `Public` role. 
 
 
-Testing
+Testing :-
 -------
 
 First, build your application image
@@ -158,7 +158,7 @@ Run test suites *(container bash)*
 > :information_source: `YII_ENV` must be set to `test` when running codeception.
 
 
-Deployment
+Deployment :-
 ----------
 
 Required variables for building & pushing docker images.
@@ -169,7 +169,7 @@ Required variables for building & pushing docker images.
 - `IMAGE_NAME`
 
 
-Links
+Links :-
 -----
 
 - [Documentation](https://github.com/phundament/docs)
