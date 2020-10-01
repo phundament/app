@@ -1,4 +1,4 @@
-## :rotating_light: THIS PROJECT IS DEPRECATED - Next version [phd5](https://github.com/dmstr/phd5-app) is available
+## :rotating_light: This Project is deprecated  -- Next version [phd5](https://github.com/dmstr/phd5-app) is available...
 
 ---
 
