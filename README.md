@@ -7,7 +7,7 @@ phd4
 
 *formerly known as Phundament 4*
 
-phd is a dockerized 12factor PHP application template for Yii Framework 2.0.
+phd is a Dockerized 12factor PHP application Template for Yii Framework 2.0.
 
 - Full [documentation](https://github.com/phundament/docs)
 - [Demo](https://github.com/phundament/playground) at Phundament playground
@@ -32,7 +32,7 @@ Installation
 > Heads up! Phundament features `Makefile` targets for development and continuous integration, type `make help` to see 
 > all available targets or `make all` to run installation and setup.
 
-Create environment configuration files   
+Create Environment Configuration files   
     
     cp .env-dist .env
     cp docker-compose.override-dist.yml docker-compose.override.yml
